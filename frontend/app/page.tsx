@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ThumbnailRibbon from './components/ThumbnailRibbon'
 import AnnotationViewer from './components/AnnotationViewer'
 import { ImageData, Annotation, PromptAnnotation } from './types'
-import { Brain, Sparkles, ChevronDown, Loader2, ExternalLink } from 'lucide-react'
+import { Sparkles, ChevronDown, Loader2, ExternalLink } from 'lucide-react'
 
 export default function Dashboard() {
   const [images, setImages] = useState<ImageData[]>([])
@@ -129,31 +129,33 @@ export default function Dashboard() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-stone-100 flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-12 h-12 text-purple-400 animate-spin mx-auto mb-4" />
-          <div className="text-xl text-gray-200">Loading neural interface...</div>
+          <Loader2 className="w-12 h-12 text-agi-teal animate-spin mx-auto mb-4" />
+          <div className="text-xl text-agi-teal-800">Loading annotation interface...</div>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/50 to-stone-100 flex flex-col">
       {/* Header */}
-      <header className="bg-black/30 backdrop-blur-xl border-b border-purple-500/20">
+      <header className="bg-white/70 backdrop-blur-xl border-b border-agi-teal/10">
         <div className="px-3 md:px-6 py-3 md:py-4 flex flex-col md:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-2 md:gap-3">
-            <div className="p-1.5 md:p-2 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg">
-              <Brain className="w-5 h-5 md:w-6 md:h-6 text-white" />
-            </div>
-            <h1 className="text-lg md:text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              The Annotation Garden Project
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/AGI-square.svg`}
+              alt="AGI Logo"
+              className="w-8 h-8 md:w-10 md:h-10"
+            />
+            <h1 className="text-lg md:text-2xl font-bold text-agi-teal">
+              Annotation Garden
             </h1>
           </div>
-          <div className="flex items-center gap-2 text-xs md:text-sm text-gray-400">
-            <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-purple-400" />
-            <span>AI-Powered Vision Analysis</span>
+          <div className="flex items-center gap-2 text-xs md:text-sm text-agi-teal-600">
+            <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-agi-orange" />
+            <span>Collaborative Image Annotation</span>
           </div>
         </div>
       </header>
@@ -162,10 +164,10 @@ export default function Dashboard() {
         <div className="flex-1 p-3 md:p-6 flex flex-col lg:flex-row gap-4 md:gap-6 min-h-0">
           {/* Image Viewer - Full width on mobile, constrained on desktop */}
           <div className="flex flex-col gap-4 lg:max-w-[600px] lg:min-w-[400px] w-full">
-            <div className="relative bg-black/40 backdrop-blur-md rounded-2xl border border-purple-500/20 p-2 h-[50vh] md:h-full md:max-h-[600px] flex items-center justify-center">
+            <div className="relative bg-white/80 backdrop-blur-md rounded-2xl border border-agi-teal/10 shadow-sm p-2 h-[50vh] md:h-full md:max-h-[600px] flex items-center justify-center">
               {imageLoading && (
-                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-10 flex items-center justify-center rounded-2xl">
-                  <Loader2 className="w-8 h-8 text-purple-400 animate-spin" />
+                <div className="absolute inset-0 bg-white/80 backdrop-blur-sm z-10 flex items-center justify-center rounded-2xl">
+                  <Loader2 className="w-8 h-8 text-agi-teal animate-spin" />
                 </div>
               )}
               {images[selectedImageIndex] && (
@@ -180,15 +182,15 @@ export default function Dashboard() {
             </div>
 
             {/* Image Info Bar */}
-            <div className="bg-black/40 backdrop-blur-md rounded-xl border border-purple-500/20 px-4 py-3">
+            <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm px-4 py-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <span className="text-sm text-gray-400">Image ID:</span>
-                  <span className="text-sm font-mono text-purple-300">
+                  <span className="text-sm text-agi-teal-600">Image ID:</span>
+                  <span className="text-sm font-mono text-agi-teal">
                     {images[selectedImageIndex]?.id || 'Loading...'}
                   </span>
                 </div>
-                <div className="text-sm text-gray-400">
+                <div className="text-sm text-agi-teal-600">
                   {selectedImageIndex + 1} / {images.length}
                 </div>
               </div>
@@ -198,8 +200,8 @@ export default function Dashboard() {
           {/* Controls and Annotations - Full width on mobile, side panel on desktop */}
           <div className="flex-1 flex flex-col gap-4 min-w-0 w-full lg:w-auto">
             {/* Model Selection */}
-            <div className="bg-black/40 backdrop-blur-md rounded-xl border border-purple-500/20 p-4">
-              <label className="block text-sm font-medium text-gray-300 mb-2">
+            <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-4">
+              <label className="block text-sm font-medium text-agi-teal-700 mb-2">
                 Vision Model
               </label>
               <div className="relative">
@@ -210,54 +212,54 @@ export default function Dashboard() {
                     // Reset prompt selection when model changes
                     setSelectedPromptKey('')
                   }}
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-purple-500/30 rounded-lg text-gray-200 appearance-none focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all"
+                  className="w-full px-4 py-3 bg-stone-50 border border-agi-teal/20 rounded-lg text-agi-teal-800 appearance-none focus:outline-none focus:border-agi-teal focus:ring-2 focus:ring-agi-teal/20 transition-all"
                 >
                   <option value="">Select a model</option>
                   {availableModels.map(model => (
                     <option key={model} value={model}>{model}</option>
                   ))}
                 </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-agi-teal-500 pointer-events-none" />
               </div>
             </div>
 
             {/* Prompt Selection */}
-            <div className="bg-black/40 backdrop-blur-md rounded-xl border border-purple-500/20 p-4">
-              <label className="block text-sm font-medium text-gray-300 mb-2">
-                Analysis Type
+            <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-4">
+              <label className="block text-sm font-medium text-agi-teal-700 mb-2">
+                Annotation Type
               </label>
               <div className="relative">
                 <select
                   value={selectedPromptKey}
                   onChange={(e) => setSelectedPromptKey(e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-purple-500/30 rounded-lg text-gray-200 appearance-none focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all"
+                  className="w-full px-4 py-3 bg-stone-50 border border-agi-teal/20 rounded-lg text-agi-teal-800 appearance-none focus:outline-none focus:border-agi-teal focus:ring-2 focus:ring-agi-teal/20 transition-all"
                   disabled={!selectedModel}
                 >
-                  <option value="">Select analysis type</option>
+                  <option value="">Select annotation type</option>
                   {availablePromptKeys.map(key => (
                     <option key={key} value={key}>
                       {formatPromptKey(key)}
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-agi-teal-500 pointer-events-none" />
               </div>
             </div>
 
             {/* Annotation Display - Fixed height on mobile, flexible on desktop */}
-            <div className="h-[40vh] lg:h-auto lg:flex-1 bg-black/40 backdrop-blur-md rounded-xl border border-purple-500/20 p-4 overflow-hidden flex flex-col">
-              <h3 className="font-semibold text-gray-200 mb-3 flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-purple-400" />
-                AI Analysis
+            <div className="h-[40vh] lg:h-auto lg:flex-1 bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-4 overflow-hidden flex flex-col">
+              <h3 className="font-semibold text-agi-teal mb-3 flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-agi-orange" />
+                Annotation Details
               </h3>
               <div className="flex-1 overflow-auto">
                 {currentPromptAnnotation ? (
                   <AnnotationViewer annotation={currentPromptAnnotation} />
                 ) : (
-                  <div className="text-gray-500 text-center py-8">
-                    {!selectedModel ? 'Select a vision model to begin' : 
-                     !selectedPromptKey ? 'Choose an analysis type' :
-                     'No analysis available'}
+                  <div className="text-agi-teal-500 text-center py-8">
+                    {!selectedModel ? 'Select a vision model to explore annotations' :
+                     !selectedPromptKey ? 'Choose an annotation type to view' :
+                     'No annotations available for this selection'}
                   </div>
                 )}
               </div>
@@ -275,14 +277,14 @@ export default function Dashboard() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-black/30 backdrop-blur-xl border-t border-purple-500/20 px-6 py-3">
-          <div className="text-center text-sm text-gray-400">
+        <footer className="bg-white/70 backdrop-blur-xl border-t border-agi-teal/10 px-6 py-3">
+          <div className="text-center text-sm text-agi-teal-600">
             © 2025{' '}
-<a
+            <a
               href="https://annotation.garden"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-300 transition-colors inline-flex items-center gap-1"
+              className="text-agi-teal hover:text-agi-orange transition-colors inline-flex items-center gap-1"
             >
               Annotation Garden Initiative
               <ExternalLink className="w-3 h-3" />
