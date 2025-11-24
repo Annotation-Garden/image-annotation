@@ -1,0 +1,934 @@
+{
+  "image": {
+    "path": "images/original/shared0318_nsd25112.png",
+    "name": "shared0318_nsd25112.png",
+    "id": "shared0318_nsd25112"
+  },
+  "timestamp": "2025-08-30T18:37:02.922440+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a serene and natural setting, likely a savanna or a grassland, under a clear blue sky. The main elements are two elephants, their large, textured gray skin contrasting with the vibrant green grass beneath them. The elephants are engaged in what appears to be a gentle interaction, their trunks intertwined in a display of social bonding or possibly a playful exchange. The background is filled with lush greenery, including acacia trees and other shrubs, which add depth and texture to the scene. The lighting is natural and bright, suggesting it is daytime with the sun high in the sky, casting soft shadows and highlighting the elephants' features and the surrounding foliage. The overall composition is balanced, with the elephants positioned centrally, drawing the viewer's eye into the interaction and the expansive natural environment surrounding them. The colors are vivid, with the green of the grass and trees complementing the gray of the elephants and the blue of the sky, creating a harmonious and tranquil scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 199,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1545.812079,
+            "prompt_eval_duration_ms": 79.326439,
+            "generation_duration_ms": 1424.982921,
+            "load_duration_ms": 38.778456,
+            "tokens_per_second": 139.6507965585645
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, two elephants stand in a lush, vibrant green field, their bodies partially overlapping as they face each other, their trunks intertwined in a display of interaction or perhaps a gentle sparring. Their textured, wrinkled skin contrasts with the smooth, verdant grass beneath them, creating a dynamic interplay of textures. The elephants' ears, large and flapping, add to the sense of movement and life in the scene. The background is a serene expanse of trees and shrubs, their leaves a mix of greens and browns, suggesting a natural habitat rich in biodiversity. The sky above is a soft blue, dotted with a few wispy clouds, adding a sense of tranquility to the setting. The elephants in the foreground serve as a focal point, drawing the viewer's eye towards the lush greenery and the distant trees, which provide depth and context to the scene, creating a harmonious composition that highlights the beauty of nature and the peaceful coexistence of wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 200,
+            "total_tokens": 503
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1521.235525,
+            "prompt_eval_duration_ms": 31.106843,
+            "generation_duration_ms": 1445.978506,
+            "load_duration_ms": 41.324148,
+            "tokens_per_second": 138.31464241695994
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, two elephants are engaged in a playful interaction in a lush green savanna. The elephants, one slightly larger than the other, are facing each other with their trunks intertwined, suggesting a form of social bonding or a playful tussle. Their ears are flapping slightly, indicating movement and engagement. The surrounding environment is rich with tall grass and scattered acacia trees, providing a natural habitat that supports their presence. The elephants' interaction is the focal point, with their trunks and ears being the most dynamic elements in the scene. The background, though blurred, hints at a broader savanna landscape, emphasizing the elephants' natural habitat. There are no other animals or people visible in the image, focusing the viewer's attention solely on the elephants and their interaction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 158,
+            "total_tokens": 464
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1204.095953,
+            "prompt_eval_duration_ms": 29.944722,
+            "generation_duration_ms": 1133.210049,
+            "load_duration_ms": 38.30695,
+            "tokens_per_second": 139.42693160851064
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of peaceful coexistence and natural harmony, contributing to a predominantly positive emotional atmosphere. The two elephants, standing close to each other in a lush green field, suggest a bond of trust and mutual respect, which is further emphasized by their gentle interaction. The elephants' trunks are intertwined, a gesture often associated with greeting, play, or even a form of communication, indicating a positive social interaction. The vibrant greenery surrounding them adds to the serene and tranquil mood, evoking feelings of calmness and serenity. The clear blue sky in the background enhances the overall sense of openness and freedom, reinforcing the positive tone. The absence of any signs of distress or aggression in the elephants' posture and behavior further supports the interpretation of a positive emotional atmosphere, making the image a beautiful representation of nature's beauty and the gentle interactions within it.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 174,
+            "total_tokens": 482
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1341.309854,
+            "prompt_eval_duration_ms": 30.319666,
+            "generation_duration_ms": 1268.884642,
+            "load_duration_ms": 39.507719,
+            "tokens_per_second": 137.12830484396392
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"two elephants facing each other, trunks intertwined\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"green grassy field\"\n    },\n    \"trees\": {\n      \"count\": 2,\n      \"location\": \"top\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"trees with sparse leaves\"\n    }\n  },\n  \"man-made\": {\n    \"none\": {\n      \"count\": 0,\n      \"location\": \"any\",\n      \"color\": null,\n      \"size\": null,\n      \"description\": \"no man-made objects detected\"\n    }\n  },\n  \"human\": {\n    \"none\": {\n      \"count\": 0,\n      \"location\": \"any\",\n      \"color\": null,\n      \"size\": null,\n      \"description\": \"no humans detected\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "two elephants facing each other, trunks intertwined"
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "green grassy field"
+              },
+              "trees": {
+                "count": 2,
+                "location": "top",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "trees with sparse leaves"
+              }
+            },
+            "man-made": {
+              "none": {
+                "count": 0,
+                "location": "any",
+                "color": null,
+                "size": null,
+                "description": "no man-made objects detected"
+              }
+            },
+            "human": {
+              "none": {
+                "count": 0,
+                "location": "any",
+                "color": null,
+                "size": null,
+                "description": "no humans detected"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 263,
+            "total_tokens": 749
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1962.810025,
+            "prompt_eval_duration_ms": 44.423135,
+            "generation_duration_ms": 1876.400136,
+            "load_duration_ms": 39.250835,
+            "tokens_per_second": 140.16200220526952
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2694,
+        "total_time_ms": 7575.263436,
+        "average_speed": 138.9365355266537
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts two elephants engaged in what appears to be a playful or confrontational interaction in a lush, grassy savanna setting. The elephants are the central focus, with their large, textured bodies and prominent tusks clearly visible. One elephant is darker gray, while the other has a reddish-brown hue, likely due to dust or mud covering its skin. Both elephants have their trunks intertwined, suggesting a moment of interaction, possibly play or a mild display of dominance. The background features a mix of green grass and scattered trees, including a distinctive acacia tree with a curved trunk and sparse foliage, characteristic of a savanna ecosystem. The sky is bright and clear, indicating daytime with ample sunlight illuminating the scene. The lighting enhances the vibrant green of the grass and the earthy tones of the elephants and trees. The overall composition is balanced, with the elephants positioned centrally, drawing the viewer's attention to their dynamic interaction. The scene conveys a sense of natural behavior and the serene beauty of the savanna environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 209,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11403.091226,
+            "prompt_eval_duration_ms": 3582.836768,
+            "generation_duration_ms": 7777.28687,
+            "load_duration_ms": 40.252385,
+            "tokens_per_second": 26.873124714763158
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features two elephants engaged in what appears to be a playful or confrontational interaction. Their large, textured bodies and flapping ears are clearly visible, with one elephant slightly turned towards the other, suggesting a dynamic and lively moment. The grassy terrain they stand on is lush and green, indicating a vibrant, well-maintained natural environment. This layer is sharp and detailed, drawing immediate attention to the elephants as the primary subjects of the image.\n\nIn the background, the setting transitions into a more serene and expansive landscape. Trees with dense foliage and a distinctive acacia tree with a twisted trunk are scattered throughout, adding depth and a sense of wilderness to the scene. The sky is clear and bright, suggesting a sunny day, which enhances the overall clarity and vibrancy of the image. The distant horizon features faint outlines of hills or mountains, further emphasizing the vastness of the environment.\n\nThe relationship between the foreground and background is harmonious and complementary. The elephants in the foreground provide a focal point, while the background elements of trees, sky, and distant hills establish the context of their natural habitat. The lush green grass connects the two layers, creating a seamless transition and reinforcing the idea that the elephants are at home in this expansive savanna. The interplay of the lively foreground and tranquil background creates a balanced composition that highlights the beauty and complexity of the natural world.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 281,
+            "total_tokens": 584
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10583.47981,
+            "prompt_eval_duration_ms": 76.488684,
+            "generation_duration_ms": 10464.923107,
+            "load_duration_ms": 39.174614,
+            "tokens_per_second": 26.851606755910012
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a natural scene featuring two elephants in a lush, green savanna environment. There are no people visible in the image. The elephants are the primary focus, and they appear to be engaging in a social or playful interaction. Their trunks are intertwined, suggesting a display of affection, playfulness, or perhaps a mild form of sparring, which is common behavior among elephants, especially among younger individuals. The elephants' ears are slightly flared, which could indicate excitement or engagement in the interaction. The surrounding environment is rich with green grass and scattered trees, including a prominent acacia tree in the background, typical of a savanna ecosystem. The elephants' interaction appears peaceful and cooperative, highlighting the social nature of these animals. The scene captures a moment of connection and interaction between the two elephants, emphasizing their strong social bonds and the dynamic relationships within elephant herds. The natural setting provides a serene backdrop, emphasizing the harmony between the animals and their environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 195,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7386.825251,
+            "prompt_eval_duration_ms": 71.312301,
+            "generation_duration_ms": 7273.37264,
+            "load_duration_ms": 39.23589,
+            "tokens_per_second": 26.810120923489492
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of two elephants interacting in a lush, green savanna evokes a sense of natural harmony and vitality. The mood is predominantly positive, as the elephants appear to be engaged in a playful or social interaction, with their trunks intertwined in what could be a display of affection or gentle sparring. The vibrant green grass and the backdrop of trees and open sky contribute to a serene and peaceful atmosphere, suggesting a thriving ecosystem. The elephants' body language, with their ears slightly spread and trunks active, conveys curiosity, engagement, and a sense of connection. The overall tone is uplifting, as the image captures the beauty and majesty of wildlife in its natural habitat, emphasizing themes of companionship and the resilience of nature. The bright, clear lighting enhances the feeling of optimism and vitality, making the scene feel alive and dynamic. The absence of any visible threats or distress in the elephants' postures further reinforces the positive and neutral emotional atmosphere, inviting viewers to appreciate the simplicity and grace of the moment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 204,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7737.89082,
+            "prompt_eval_duration_ms": 78.096345,
+            "generation_duration_ms": 7614.149761,
+            "load_duration_ms": 42.907523,
+            "tokens_per_second": 26.79222321642486
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"gray\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Two elephants are interacting, possibly sparring or playing, with visible tusks and large ears.\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 3,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Tall trees with green foliage, providing a backdrop to the elephants.\"\n    },\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Lush green grass covering the ground.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky with no visible clouds.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "gray",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Two elephants are interacting, possibly sparring or playing, with visible tusks and large ears."
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 3,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Tall trees with green foliage, providing a backdrop to the elephants."
+              },
+              "grass": {
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Lush green grass covering the ground."
+              },
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky with no visible clouds."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 234,
+            "total_tokens": 720
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8849.286914,
+            "prompt_eval_duration_ms": 139.012387,
+            "generation_duration_ms": 8667.353287,
+            "load_duration_ms": 37.768782,
+            "tokens_per_second": 26.997861083033527
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2823,
+        "total_time_ms": 45960.57402100001,
+        "average_speed": 26.864987338724212
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a dramatic scene within a lush, green African savanna. Dominating the foreground are two large African elephants engaged in a fierce confrontation. Both elephants are massive, their thick, grey skin textured with deep wrinkles and folds, reflecting the dappled sunlight. One elephant is actively pushing its trunk forward, attempting to push the other away, while the other responds with a similar aggressive maneuver. The grass surrounding them is a vibrant, almost neon green, adding to the intensity of the scene. \n\nBehind the elephants, a line of tall, slender acacia trees provides a backdrop, their branches reaching upwards towards a bright, slightly overcast sky. The lighting is soft and diffused, creating gentle shadows and highlighting the textures of the elephants\u2019 skin. The overall composition is tightly focused on the two elephants, emphasizing the raw power and conflict of the moment. The image conveys a sense of wildness and the primal struggle for dominance within this natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 200,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1608.412295,
+            "prompt_eval_duration_ms": 306.7143,
+            "generation_duration_ms": 1204.212658,
+            "load_duration_ms": 94.109966,
+            "tokens_per_second": 166.08362208396582
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's elements, broken down as requested:\n\nIn the foreground, two magnificent African elephants are locked in a tense standoff. Their massive, grey bodies are covered in thick wrinkles of skin, and their trunks are intertwined in a fierce battle for dominance. The elephants are positioned in a lush, vibrant green field, the grass reaching up to their knees, suggesting a healthy, fertile environment. The grass blades are individually defined, adding texture to the scene. \n\nBehind the elephants, the setting is a dense, rolling hillside covered in a thick canopy of trees. The trees are a mix of greens and browns, creating a layered effect. The hillside rises gently into the distance, blurring slightly due to atmospheric perspective. The trees form a backdrop, contributing to the overall impression of a wild, untamed African savanna. The two elements \u2013 the elephants and the landscape \u2013 are inextricably linked, with the elephants clearly inhabiting and interacting with this natural environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 197,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1326.286318,
+            "prompt_eval_duration_ms": 50.559847,
+            "generation_duration_ms": 1183.482806,
+            "load_duration_ms": 89.281299,
+            "tokens_per_second": 166.457847128199
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph:\n\nThe image captures a dramatic moment in a lush, green African savanna. Two large African elephants are locked in a fierce battle, their massive bodies intertwined in a struggle for dominance. One elephant, positioned slightly to the right, is aggressively pushing its trunk forward, attempting to push the other elephant away. The second elephant responds with equal intensity, its trunk raised and extended, mirroring the attack. Their wrinkled, gray skin is damp, suggesting recent rain or a recent swim, adding to the raw energy of the scene. \n\nBehind them, a scattering of tall, green trees forms a dense backdrop, creating a sense of enclosure and amplifying the intensity of the confrontation. The grass is vibrant green, providing a stark contrast to the elephants' dark bodies. The overall impression is one of primal struggle and territorial defense, showcasing the powerful and often aggressive nature of these magnificent creatures in their natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 192,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1321.508731,
+            "prompt_eval_duration_ms": 58.001129,
+            "generation_duration_ms": 1168.638032,
+            "load_duration_ms": 89.049305,
+            "tokens_per_second": 164.29381445973684
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the mood and emotions conveyed by the image:\n\nThe image immediately evokes a palpable sense of tension and conflict. Two large African elephants are locked in a fierce struggle, their trunks intertwined in a desperate grapple. The raw physicality of the scene \u2013 the straining muscles, the bristling hair, and the intense focus in their eyes \u2013 communicates a powerful, primal battle. The overall tone is undeniably negative, reflecting a struggle for dominance or perhaps a defensive reaction. \n\nThe visual elements contribute significantly to this feeling. The close proximity of the elephants, the dark, textured skin contrasting with the bright green grass, and the upward angle of the shot emphasize the intensity of the confrontation. The lack of any other visible elements \u2013 no background, no other animals \u2013 further isolates the scene and heightens the drama. The image powerfully conveys a moment of raw, untamed aggression, leaving the viewer with a feeling of unease and a sense of the wildness of the natural world.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 200,
+            "total_tokens": 524
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1348.922148,
+            "prompt_eval_duration_ms": 54.138174,
+            "generation_duration_ms": 1204.656238,
+            "load_duration_ms": 87.423496,
+            "tokens_per_second": 166.0224665685913
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"\"\n    }\n  },\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Two elephants engaged in a physical confrontation, with one attempting to push the other away.\"\n    }\n  },\n  \"man-made\": {\n    \"object\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Dense, vibrant green grass covering the ground.\"\n    },\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"A single tree providing a backdrop to the scene.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"A blue sky in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": ""
+              }
+            },
+            "animal": {
+              "elephant": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Two elephants engaged in a physical confrontation, with one attempting to push the other away."
+              }
+            },
+            "man-made": {
+              "object": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": ""
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Dense, vibrant green grass covering the ground."
+              },
+              "tree": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "A single tree providing a backdrop to the scene."
+              },
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "A blue sky in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 371,
+            "total_tokens": 889
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2384.310539,
+            "prompt_eval_duration_ms": 64.890262,
+            "generation_duration_ms": 2228.942566,
+            "load_duration_ms": 87.836745,
+            "tokens_per_second": 166.44663961251658
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2954,
+        "total_time_ms": 7989.440031,
+        "average_speed": 165.8608779706019
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a heartwarming moment between two adult elephants in a lush, vibrant African savanna setting. The foreground is dominated by a thick carpet of bright green grass, indicating a healthy and thriving ecosystem. Two elephants are the central focus, appearing to playfully interact, their trunks intertwined in a gentle embrace. The elephants are a rich, earthy brown, contrasting beautifully with the vivid green of the grass. Behind them, a scattering of trees with characteristic flat-topped canopies creates a picturesque backdrop, fading into a hazy blue horizon. The lighting is soft and diffused, suggesting an overcast day or the golden hour, which casts a gentle glow on the scene. The composition is well-balanced, with the elephants positioned slightly off-center, drawing the viewer's eye into the interaction. The overall feeling is one of peace, connection, and the beauty of wildlife in its natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 188,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2842.427397,
+            "prompt_eval_duration_ms": 339.604262,
+            "generation_duration_ms": 2408.925756,
+            "load_duration_ms": 91.388331,
+            "tokens_per_second": 78.04308602361094
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationship:\n\nThe foreground is dominated by two adult elephants engaged in a playful interaction, their trunks intertwined in a gentle embrace. The vibrant green grass forms a lush carpet, providing a soft, textured base for the scene. The elephants' wrinkled skin and detailed trunk textures are sharply in focus, drawing the viewer's attention to their interaction. Behind the elephants, a dense thicket of trees and shrubs creates a mid-ground layer, blurring slightly to maintain focus on the main subjects. Further in the distance, rolling hills fade into a hazy blue, suggesting a vast landscape. The bright blue sky peeks through the trees, providing a contrasting backdrop. The elephants' presence within this expansive, natural setting emphasizes their scale and connection to the environment, creating a sense of wildness and tranquility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 175,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2375.806838,
+            "prompt_eval_duration_ms": 66.950816,
+            "generation_duration_ms": 2218.016968,
+            "load_duration_ms": 88.110996,
+            "tokens_per_second": 78.89930623831007
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the interactions and relationships between elements:\n\nThe image captures a heartwarming moment between two African elephants in a lush, green landscape. The elephants are the clear focal point, positioned centrally and engaged in a playful interaction \u2013 they appear to be gently touching trunks, a common display of affection and bonding amongst elephants. The vibrant green grass dominates the foreground, creating a soft, natural setting. Behind the elephants, a backdrop of dense foliage and scattered trees creates depth and suggests a savanna environment. A distinctive acacia tree, recognizable by its flat-topped canopy, stands prominently in the mid-ground, adding a characteristic touch to the African scenery. The sky is a soft blue, hinting at a clear, sunny day. The elephants' interaction is the central narrative, showcasing a connection and gentle playfulness within their species, set against the backdrop of a beautiful, natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 184,
+            "total_tokens": 505
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2496.557877,
+            "prompt_eval_duration_ms": 66.623228,
+            "generation_duration_ms": 2338.642364,
+            "load_duration_ms": 88.307694,
+            "tokens_per_second": 78.67812660559501
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of playful camaraderie and gentle interaction. It captures a heartwarming moment between two elephants engaged in what appears to be a playful greeting or bonding ritual, their trunks intertwined. The overall tone is overwhelmingly positive, radiating warmth and connection. The lush, vibrant green grass and the backdrop of a clear sky contribute to a sense of tranquility and abundance, enhancing the feeling of joy. The elephants' postures, with their heads tilted and trunks playfully entwined, suggest a lighthearted and affectionate exchange. The soft, natural lighting further softens the scene, creating a peaceful and inviting atmosphere. It's a moment of pure, unadulterated joy and connection in the natural world, leaving the viewer with a feeling of contentment and appreciation for the beauty of animal relationships.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 155,
+            "total_tokens": 479
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2163.68846,
+            "prompt_eval_duration_ms": 75.850631,
+            "generation_duration_ms": 1992.551181,
+            "load_duration_ms": 92.291172,
+            "tokens_per_second": 77.78972077505696
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": [\n    {\n      \"name\": \"elephant\",\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Engaged in a playful interaction, possibly sparring or greeting each other with trunks.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"name\": \"grass\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Lush, vibrant green grass covering the ground.\"\n    },\n    {\n      \"name\": \"tree\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A solitary tree with a distinctive branching pattern.\"\n    },\n    {\n      \"name\": \"sky\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Appears overcast, providing diffused lighting.\"\n    },\n    {\n      \"name\": \"vegetation\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Dense foliage in the background.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": [
+              {
+                "name": "elephant",
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Engaged in a playful interaction, possibly sparring or greeting each other with trunks."
+              }
+            ],
+            "natural": [
+              {
+                "name": "grass",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Lush, vibrant green grass covering the ground."
+              },
+              {
+                "name": "tree",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A solitary tree with a distinctive branching pattern."
+              },
+              {
+                "name": "sky",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Appears overcast, providing diffused lighting."
+              },
+              {
+                "name": "vegetation",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Dense foliage in the background."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 335,
+            "total_tokens": 853
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4448.911848,
+            "prompt_eval_duration_ms": 94.095054,
+            "generation_duration_ms": 4261.914938,
+            "load_duration_ms": 89.578679,
+            "tokens_per_second": 78.6031642755419
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2831,
+        "total_time_ms": 14327.39242,
+        "average_speed": 78.40268078362297
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a dynamic moment between two African elephants engaged in a playful or competitive interaction. They are facing each other, trunks intertwined, in a vibrant green grassy field. The setting appears to be a savanna or open woodland, with lush vegetation and scattered trees in the background. The elephants are a rich, earthy brown color, contrasting beautifully with the bright green grass. The lighting is soft and diffused, suggesting an overcast day or a time of day with indirect sunlight. This creates a natural and gentle illumination, highlighting the texture of the elephants\u2019 skin and the details of the surrounding foliage. The composition is centered around the two elephants, drawing the viewer's attention to their interaction. The background is slightly blurred, creating depth and emphasizing the main subjects. Overall, the image evokes a sense of wildness, power, and the beauty of African wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 181,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4764.17168,
+            "prompt_eval_duration_ms": 398.807148,
+            "generation_duration_ms": 4279.433114,
+            "load_duration_ms": 83.359708,
+            "tokens_per_second": 42.29532164151965
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by two African elephants engaged in a playful or testing interaction, their trunks intertwined. They stand in a vibrant, lush green field of tall grass, which fills the lower portion of the frame. The elephants\u2019 textured, grey-brown skin contrasts with the bright green of the grass, drawing immediate attention to the animals. \n\nIn the background, a dense, rolling landscape of green trees and shrubs extends into the distance. A single, taller tree with sparse foliage stands out against the backdrop, adding depth. The background is slightly blurred, emphasizing the elephants as the primary focus. The grassy field seamlessly connects the elephants to their natural habitat, creating a sense of immersion and highlighting the animals within their environment. The overall composition suggests a peaceful, natural scene within an African savanna or grassland.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 177,
+            "total_tokens": 495
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4359.022179,
+            "prompt_eval_duration_ms": 80.210343,
+            "generation_duration_ms": 4189.963698,
+            "load_duration_ms": 85.974889,
+            "tokens_per_second": 42.243802752870536
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image features two African elephants engaged in a playful or potentially competitive interaction. They are facing each other, their trunks intertwined in what appears to be a gentle push or test of strength. The elephants are standing in a vibrant green grassy field, suggesting a lush, natural habitat. In the background, there's dense green foliage and trees, indicating a savanna or woodland environment. The elephants are the central focus, and their interaction dominates the scene. Their connection is physical and likely social, as elephants are known for their complex social behaviors. The environment provides the backdrop for this interaction, highlighting the natural setting where these majestic animals thrive. There are no people visible in the image, emphasizing the wild, untamed nature of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 165,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4068.395744,
+            "prompt_eval_duration_ms": 85.050096,
+            "generation_duration_ms": 3893.219025,
+            "load_duration_ms": 87.503584,
+            "tokens_per_second": 42.381381304382174
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of raw power and playful aggression. Two elephants are locked in a gentle, yet forceful, trunk-to-trunk interaction, suggesting a display of dominance or a playful sparring match. The mood isn\u2019t overtly negative; rather, it feels dynamic and energetic. The lush, vibrant green of the grassy savanna provides a backdrop of life and vitality, contrasting with the elephants\u2019 earthy tones. This contrast emphasizes their strength and presence. The slightly blurred background and focus on the elephants\u2019 interaction draws the viewer into their world, creating a sense of immediacy. The elephants\u2019 postures\u2014leaning into each other with intertwined trunks\u2014suggest a complex relationship, perhaps one of familial bonding or establishing hierarchy. Overall, the image conveys a feeling of wildness, strength, and the natural behaviors of these magnificent creatures.\n\n\n\n",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 181,
+            "total_tokens": 505
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4462.549575,
+            "prompt_eval_duration_ms": 83.473131,
+            "generation_duration_ms": 4283.257895,
+            "load_duration_ms": 93.150886,
+            "tokens_per_second": 42.25755358118589
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Two elephants are facing each other, trunks intertwined in what appears to be a playful or testing interaction.\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"top left\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A single tree with sparse foliage.\"\n    },\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Lush, green grass covering the ground.\"\n    },\n    \"bushes\": {\n      \"count\": 5,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Dense bushes forming the background vegetation.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Two elephants are facing each other, trunks intertwined in what appears to be a playful or testing interaction."
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 1,
+                "location": "top left",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A single tree with sparse foliage."
+              },
+              "grass": {
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Lush, green grass covering the ground."
+              },
+              "bushes": {
+                "count": 5,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Dense bushes forming the background vegetation."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 266,
+            "total_tokens": 784
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6500.423935,
+            "prompt_eval_duration_ms": 146.650316,
+            "generation_duration_ms": 6266.319845,
+            "load_duration_ms": 84.141223,
+            "tokens_per_second": 42.449157811860786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2764,
+        "total_time_ms": 24154.563112999997,
+        "average_speed": 42.325443418363804
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts two elephants in a lush, green savanna setting. The elephants, with their characteristic gray skin, are the main focus of the image, standing on a vibrant green grassy field. The elephant on the left appears to be engaging with the other, possibly in a playful or social interaction, as their trunks are intertwined. The background features a scattering of trees, likely acacia, which are common in savanna landscapes, and a clear sky that suggests a bright, sunny day. The lighting is natural, casting soft shadows and highlighting the textures of the elephants' skin and the grass. The overall composition is balanced, with the elephants centrally positioned, drawing the viewer's attention immediately to their interaction. The scene conveys a sense of tranquility and natural beauty, capturing a moment of wildlife in their habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 168,
+            "total_tokens": 960
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6754.918316,
+            "prompt_eval_duration_ms": 2027.394768,
+            "generation_duration_ms": 4677.443525,
+            "load_duration_ms": 44.466001,
+            "tokens_per_second": 35.91705578102089
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, two elephants dominate the scene, closely interacting with each other. One elephant appears to be playfully or aggressively interlocking its tusks with the other, suggesting a moment of social behavior or conflict. Their large, textured bodies and prominent tusks are clearly visible, emphasizing their size and strength. The vibrant green grass beneath their feet indicates a lush, well-nourished environment, likely a savanna or grassland.\n\nIn the background, the setting shifts to a more distant, serene landscape. Tall, leafy trees and dense foliage create a natural backdrop, providing a sense of depth and context to the scene. The trees, possibly acacia or similar species, are scattered across the horizon, hinting at a typical African savanna ecosystem. The sky above is partly cloudy, adding to the overall tranquility of the setting. The interaction between the elephants in the foreground and the expansive, natural habitat in the background paints a vivid picture of wildlife in its natural environment, highlighting both the individual behavior of the animals and the broader ecological context in which they live.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 227,
+            "total_tokens": 1025
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6430.668989,
+            "prompt_eval_duration_ms": 55.322721,
+            "generation_duration_ms": 6325.947907,
+            "load_duration_ms": 45.718299,
+            "tokens_per_second": 35.88395025333869
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts two elephants standing on a grassy field, surrounded by trees and vegetation. The elephants appear to be interacting closely, with their trunks intertwined or touching each other. This behavior suggests a social interaction, possibly indicating communication, bonding, or playfulness between the two animals. Elephants are known for their complex social structures and strong familial bonds, so this interaction could be a display of affection or a form of greeting. The setting appears to be a natural habitat, likely a savanna or grassland, providing a serene backdrop to their interaction. There are no other animals, people, or distinct objects in the image, making the elephants the central focus of the scene. Their interaction seems peaceful and intimate, highlighting the intricate social dynamics of these majestic creatures.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 157,
+            "total_tokens": 957
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4456.656913,
+            "prompt_eval_duration_ms": 63.621172,
+            "generation_duration_ms": 4344.891193,
+            "load_duration_ms": 44.764428,
+            "tokens_per_second": 36.13439163975861
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of two elephants interacting in a lush, green field conveys a mood of curiosity and gentle engagement. The overall tone is positive, evoking feelings of connection and tranquility. The elephants appear to be in a playful or investigative interaction, with one using its trunk to touch the other\u2019s face, suggesting a sense of social bonding and affection. The vibrant green grass and the serene natural setting, with trees and a clear sky in the background, enhance the peaceful atmosphere. The body language of the elephants, with relaxed postures and no signs of aggression, further contributes to the calm and harmonious mood. This scene likely evokes feelings of warmth, curiosity, and a deep appreciation for the beauty of nature and wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 148,
+            "total_tokens": 951
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4206.804631,
+            "prompt_eval_duration_ms": 57.14402,
+            "generation_duration_ms": 4099.552346,
+            "load_duration_ms": 46.986591,
+            "tokens_per_second": 36.10150267855611
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 2,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"gray\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Two elephants interacting with each other, one with its trunk intertwined with the other's.\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"left, top, background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A single tree with a large canopy.\"\n    },\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"bottom, foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Green grass covering the ground.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"description\": \"Clear sky visible in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 2,
+                "location": "center, middle, foreground",
+                "color": [
+                  "gray",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Two elephants interacting with each other, one with its trunk intertwined with the other's."
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 1,
+                "location": "left, top, background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A single tree with a large canopy."
+              },
+              "grass": {
+                "count": 1,
+                "location": "bottom, foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Green grass covering the ground."
+              },
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "description": "Clear sky visible in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 227,
+            "total_tokens": 1209
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6458.51891,
+            "prompt_eval_duration_ms": 103.397229,
+            "generation_duration_ms": 6304.552294,
+            "load_duration_ms": 47.091568,
+            "tokens_per_second": 36.00572878363376
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5102,
+        "total_time_ms": 28307.567758999998,
+        "average_speed": 36.00852582726161
+      }
+    }
+  ]
+}

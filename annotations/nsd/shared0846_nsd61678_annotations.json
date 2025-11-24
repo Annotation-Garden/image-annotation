@@ -1,0 +1,1017 @@
+{
+  "image": {
+    "path": "images/original/shared0846_nsd61678.png",
+    "name": "shared0846_nsd61678.png",
+    "id": "shared0846_nsd61678"
+  },
+  "timestamp": "2025-08-30T23:27:50.421162+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a woman walking outdoors, engaged in a phone conversation. She is dressed casually in a light gray hoodie layered over a plaid shirt and blue jeans, carrying a yellow shopping bag in her left hand. Her curly hair frames her face as she smiles, suggesting a pleasant interaction. The setting appears to be a public space, possibly a park or a plaza, with a low wall and steps in the background, hinting at a structured urban environment. The lighting is natural and soft, indicating it might be daytime, with the shadows suggesting the sun is at a moderate angle. The background is slightly out of focus, drawing attention to the woman as the main subject. The colors are muted, with the earthy tones of the background contrasting subtly with the woman's lighter clothing and the vibrant yellow of her shopping bag. The overall composition is balanced, with the woman positioned slightly off-center, creating a dynamic and engaging visual.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 187,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1459.744743,
+            "prompt_eval_duration_ms": 78.639427,
+            "generation_duration_ms": 1340.260878,
+            "load_duration_ms": 38.740228,
+            "tokens_per_second": 139.52507535626208
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, a woman is the central figure, captured mid-stride as she walks and talks on her mobile phone. She is dressed casually in a light gray hoodie layered over a plaid shirt, paired with blue jeans, and she carries a yellow shopping bag in her left hand. Her curly hair is loose, and she appears to be in a cheerful mood, as indicated by her smile. The background, slightly out of focus, reveals a setting that suggests an urban or suburban environment, with a low wall and some greenery, possibly trees or bushes, hinting at a park or a garden area. The blurred background helps to emphasize the woman as the primary subject of the image, creating a sense of depth and drawing the viewer's attention to her actions and expressions. The contrast between the sharpness of the woman in the foreground and the softness of the background elements enhances the overall composition, making the scene feel dynamic and lively.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 190,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1442.199216,
+            "prompt_eval_duration_ms": 30.153561,
+            "generation_duration_ms": 1371.729105,
+            "load_duration_ms": 38.345414,
+            "tokens_per_second": 138.51131342729656
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a woman is the central figure, engaged in a phone conversation as she walks along a paved path. She is dressed casually in a light gray hoodie, a plaid shirt, and blue jeans, carrying a yellow shopping bag in her left hand, suggesting she might have been shopping. Her curly hair frames her face as she smiles, indicating a pleasant conversation. The background features a blurred natural setting with greenery and a stone wall, which provides a serene and somewhat urban environment. The woman's actions of walking and talking on the phone suggest she is multitasking, possibly heading home or to another destination while engaging in a phone call. There are no animals or other people visible in the image, and the focus is solely on the woman and her interaction with her phone and the environment around her.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 163,
+            "total_tokens": 469
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1262.853575,
+            "prompt_eval_duration_ms": 28.820399,
+            "generation_duration_ms": 1193.973123,
+            "load_duration_ms": 38.02852,
+            "tokens_per_second": 136.51898594705636
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a sense of casual positivity and contentment. The woman's smile, while not overtly joyful, suggests a relaxed and pleasant mood, possibly indicating a conversation that is light-hearted or satisfying. Her body language, with one hand holding a phone and the other casually in her pocket, further reinforces a laid-back and comfortable atmosphere. The outdoor setting, with its soft, natural light and blurred background of greenery, adds to the serene and tranquil feeling. The overall tone is decidedly positive, evoking feelings of ease and satisfaction. The visual elements, such as the natural light, the relaxed posture, and the smile, all contribute to this positive emotional atmosphere, suggesting a moment of simple pleasure or a pleasant interaction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 147,
+            "total_tokens": 455
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1127.804591,
+            "prompt_eval_duration_ms": 29.010794,
+            "generation_duration_ms": 1058.416804,
+            "load_duration_ms": 38.376155,
+            "tokens_per_second": 138.8866838134592
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"wearing a hoodie and jeans, holding a phone to her ear, smiling\"\n    }\n  },\n  \"man-made\": {\n    \"phone\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"small\",\n      \"description\": \"being held by the person\"\n    },\n    \"shopping_bag\": {\n      \"count\": 1,\n      \"location\": \"bottom right\",\n      \"color\": [\"yellow\"],\n      \"size\": \"small\",\n      \"description\": \"being carried by the person\"\n    },\n    \"stairs\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"concrete steps\"\n    }\n  },\n  \"natural\": {\n    \"trees\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"visible in the background\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "wearing a hoodie and jeans, holding a phone to her ear, smiling"
+              }
+            },
+            "man-made": {
+              "phone": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "small",
+                "description": "being held by the person"
+              },
+              "shopping_bag": {
+                "count": 1,
+                "location": "bottom right",
+                "color": [
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "being carried by the person"
+              },
+              "stairs": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "concrete steps"
+              }
+            },
+            "natural": {
+              "trees": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "visible in the background"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 274,
+            "total_tokens": 760
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2054.74163,
+            "prompt_eval_duration_ms": 43.238563,
+            "generation_duration_ms": 1971.380453,
+            "load_duration_ms": 38.008874,
+            "tokens_per_second": 138.98889967333972
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2661,
+        "total_time_ms": 7347.343755,
+        "average_speed": 138.48619164348278
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a woman walking outdoors in what appears to be a park or garden setting. The background features a series of light-colored stone steps leading upward, with a mix of greenery, including trees and shrubs, visible beyond the steps. The lighting suggests it is daytime, with soft, natural light illuminating the scene, indicating either a partly cloudy sky or a shaded area. The overall atmosphere is calm and serene.\n\nThe woman is the central focus of the image. She is walking while holding a phone to her ear, seemingly engaged in a conversation. She has curly, shoulder-length dark hair and is smiling, suggesting she is enjoying the call. Her attire includes a light gray cardigan over a plaid shirt with red, white, and blue patterns, paired with blue jeans. The colors in the image are muted and earthy, with the woman's clothing providing a subtle contrast to the neutral tones of the background. The composition is balanced, with the woman positioned slightly off-center, creating a dynamic feel as she moves through the scene. The steps and greenery in the background add depth and context, emphasizing the outdoor setting. The overall mood is casual and relaxed, capturing a candid moment in a tranquil environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 246,
+            "total_tokens": 543
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12852.239569,
+            "prompt_eval_duration_ms": 3669.421192,
+            "generation_duration_ms": 9142.324214,
+            "load_duration_ms": 37.885429,
+            "tokens_per_second": 26.90781843235121
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the closest elements to the viewer are a woman walking and holding a phone to her ear. She is dressed in a casual outfit consisting of a patterned shirt, a light gray cardigan, and blue jeans. Her curly hair is visible, and she appears to be engaged in a conversation, suggesting a moment of everyday life. The woman is positioned on a paved surface, likely a sidewalk or plaza, which is part of the immediate foreground.\n\nThe background elements are more distant and provide context for the setting. Behind the woman, there is a series of white, rectangular steps or platforms that create a layered effect, leading the eye further into the scene. Beyond these steps, a lush green area with trees and shrubs is visible, indicating a park or garden setting. The trees have bare branches, suggesting it might be autumn or winter. The background also includes a mix of natural and architectural elements, such as the greenery and the structured steps, which frame the woman and add depth to the image.\n\nThe relationship between the foreground and background is one of contrast and depth. The woman in the foreground is the focal point, drawing the viewer's attention with her dynamic pose and interaction with the phone. The background, with its structured steps and natural elements, provides a serene and open environment that contrasts with the woman's activity. The steps lead the viewer's eye from the foreground to the background, creating a sense of movement and space. The overall composition balances the human element in the foreground with the tranquil, natural setting in the background, emphasizing the coexistence of urban life and nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 324,
+            "total_tokens": 627
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12171.385424,
+            "prompt_eval_duration_ms": 76.188955,
+            "generation_duration_ms": 12055.99928,
+            "load_duration_ms": 37.231728,
+            "tokens_per_second": 26.874586873731133
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a single person, a woman, walking outdoors in what appears to be a park or garden setting. She is engaged in a phone conversation, holding a mobile phone to her ear with her right hand. Her expression suggests she is smiling, indicating an enjoyable or lighthearted conversation. She is dressed casually in a plaid shirt, a light gray cardigan, and blue jeans, suggesting a comfortable and relaxed atmosphere.\n\nThe background features a well-maintained outdoor environment with neatly trimmed hedges, trees, and a paved pathway. The setting is tranquil, with no other people or animals visible, emphasizing the solitude of the woman as she walks and talks on her phone. The steps and stone walls in the background add a structured, architectural element to the natural surroundings, creating a harmonious blend of nature and human-made elements.\n\nThere are no animals or other people in the image, so the focus remains solely on the woman and her interaction with her phone. The phone serves as the primary object in the scene, symbolizing communication and connection. The woman's posture and expression convey a sense of ease and engagement, highlighting the role of technology in facilitating personal interactions even in a solitary setting. The overall scene conveys a moment of everyday life, where technology bridges the gap between physical solitude and social connection.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 266,
+            "total_tokens": 572
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10038.413791,
+            "prompt_eval_duration_ms": 78.473481,
+            "generation_duration_ms": 9920.866544,
+            "load_duration_ms": 36.838376,
+            "tokens_per_second": 26.812173999142548
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a positive and cheerful mood, evoking feelings of happiness, confidence, and a sense of purpose. The woman in the foreground is smiling warmly while talking on her phone, suggesting a friendly or pleasant conversation. Her relaxed posture and the way she carries herself exude confidence and ease, indicating that she is comfortable in her environment. The bright lighting and the outdoor setting, with greenery and open space in the background, contribute to a sense of freedom and positivity. The neutral tones of her clothing\u2014blue jeans, a plaid shirt, and a light gray cardigan\u2014add to the calm and approachable atmosphere without being overly dramatic. The overall composition, with the woman positioned slightly off-center and walking forward, gives a dynamic sense of movement and progress, reinforcing the idea of optimism and forward momentum. The blurred background ensures that the focus remains on the woman, emphasizing her positive emotions and making the scene feel intimate and relatable. The combination of her cheerful expression, the natural setting, and the casual, everyday context creates a tone that is uplifting and inviting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 217,
+            "total_tokens": 525
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8247.185145,
+            "prompt_eval_duration_ms": 77.88924,
+            "generation_duration_ms": 8130.031855,
+            "load_duration_ms": 37.267326,
+            "tokens_per_second": 26.691162331245256
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"dark skin tone\", \"blue\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A person walking and talking on a phone, wearing a plaid shirt, gray sweater, and blue jeans.\"\n    }\n  },\n  \"man-made\": {\n    \"steps\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"A set of concrete steps.\"\n    },\n    \"phone\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"A mobile phone being held to the ear.\"\n    },\n    \"clothing\": {\n      \"count\": 3,\n      \"location\": \"center, foreground\",\n      \"color\": [\"blue\", \"gray\", \"plaid (red and white)\"],\n      \"size\": \"medium\",\n      \"description\": \"Includes jeans, a gray sweater, and a plaid shirt.\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A tree with green foliage in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center, foreground",
+                "color": [
+                  "dark skin tone",
+                  "blue",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A person walking and talking on a phone, wearing a plaid shirt, gray sweater, and blue jeans."
+              }
+            },
+            "man-made": {
+              "steps": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "A set of concrete steps."
+              },
+              "phone": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "A mobile phone being held to the ear."
+              },
+              "clothing": {
+                "count": 3,
+                "location": "center, foreground",
+                "color": [
+                  "blue",
+                  "gray",
+                  "plaid (red and white)"
+                ],
+                "size": "medium",
+                "description": "Includes jeans, a gray sweater, and a plaid shirt."
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A tree with green foliage in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 317,
+            "total_tokens": 803
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11945.291101,
+            "prompt_eval_duration_ms": 140.036327,
+            "generation_duration_ms": 11765.475839,
+            "load_duration_ms": 37.252382,
+            "tokens_per_second": 26.94323666444614
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3070,
+        "total_time_ms": 55254.51503,
+        "average_speed": 26.845795660183256
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a young Black woman walking outdoors, engaged in a conversation on her mobile phone. She is positioned slightly off-center, taking up a significant portion of the frame, and appears to be mid-stride, suggesting movement. She's wearing a light gray hooded sweatshirt with a pink and red plaid pattern, paired with blue jeans and a small yellow bag slung over her shoulder. Her dark, curly hair is pulled back, partially covering her ear as she speaks. \n\nThe setting appears to be a sidewalk or paved area, likely in an urban environment, with a light gray concrete barrier running horizontally behind her. The lighting is natural and diffused, suggesting an overcast day, creating soft shadows. The color palette is dominated by blues, grays, and pinks, with the woman\u2019s dark hair and clothing providing a strong contrast. The composition is dynamic, with the woman\u2019s movement and the angle of her head drawing the viewer's eye. Overall, the image conveys a sense of casual everyday activity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 219,
+            "total_tokens": 532
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1734.845503,
+            "prompt_eval_duration_ms": 307.178175,
+            "generation_duration_ms": 1339.852175,
+            "load_duration_ms": 85.808609,
+            "tokens_per_second": 163.45086725705391
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the image\u2019s foreground and background elements:\n\nIn the foreground, a young woman with dark, curly hair is captured mid-conversation, holding a mobile phone to her ear. She\u2019s wearing a light grey hooded sweatshirt with a pink and red plaid pattern, paired with blue jeans and a small yellow bag. Her expression is animated, suggesting she's engaged in a lively discussion. The immediate foreground is a concrete sidewalk, appearing slightly worn and textured. \n\nThe background reveals a park setting. Lush green trees and bushes fill the space, creating a natural backdrop. A light-colored concrete wall runs horizontally across the middle distance, providing a strong visual barrier. The trees and wall contribute to a sense of depth, while the sidewalk and woman are positioned in the foreground, drawing the viewer\u2019s attention to the central subject. The overall composition suggests an outdoor urban environment, likely a park or plaza.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 189,
+            "total_tokens": 507
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1283.185945,
+            "prompt_eval_duration_ms": 56.349763,
+            "generation_duration_ms": 1136.824732,
+            "load_duration_ms": 87.820145,
+            "tokens_per_second": 166.25254067748412
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph:\n\nThe image captures a young Black woman engaged in a conversation while walking outdoors. She is wearing a gray hooded sweatshirt with a red and black plaid pattern, light-wash blue jeans, and a small backpack. Her dark, curly hair is partially pulled back, and she\u2019s smiling while holding a mobile phone to her ear, seemingly in the middle of a discussion. The background consists of a concrete sidewalk and a gray wall, suggesting a public space like a street or plaza. \n\nThe woman's action \u2013 talking on the phone \u2013 immediately establishes a connection with an unseen person or people on the other end of the call. The phone itself is the central object facilitating this interaction. The sidewalk and wall provide a neutral backdrop, emphasizing the woman's solitary activity and the immediacy of her communication. The overall impression is one of a casual, everyday moment of connection in a public setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 193,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1310.053951,
+            "prompt_eval_duration_ms": 60.880343,
+            "generation_duration_ms": 1160.289837,
+            "load_duration_ms": 86.933484,
+            "tokens_per_second": 166.33774928082903
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed in the image:\n\nThe image evokes a sense of casual, optimistic energy. A young woman with vibrant, curly hair is smiling and animatedly speaking on a cell phone, suggesting a lively and engaging conversation. Her posture \u2013 leaning slightly forward with a relaxed arm \u2013 communicates openness and enthusiasm. The bright, genuine smile adds to the positive feeling, hinting at a pleasant or exciting exchange. The overall tone is decidedly upbeat and friendly. \n\nVisually, the bright colors of her clothing \u2013 the blue jeans and patterned shirt \u2013 contribute to the feeling of vibrancy. The slightly blurred background suggests movement and a dynamic scene. The focus on her face and expression draws the viewer into her moment, reinforcing the impression of a joyful and engaged interaction. It\u2019s a snapshot of a spontaneous and positive connection.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 171,
+            "total_tokens": 495
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1173.210158,
+            "prompt_eval_duration_ms": 54.737743,
+            "generation_duration_ms": 1027.00501,
+            "load_duration_ms": 89.498411,
+            "tokens_per_second": 166.50356944217828
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"gray\", \"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"A young woman with curly hair, smiling and talking on a cell phone.\"\n    }\n  },\n  \"man-made\": {\n    \"cell phone\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"black\", \"gray\"],\n      \"size\": \"small\",\n      \"description\": \"A smartphone being held in the hand.\"\n    },\n    \"jeans\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"Blue denim jeans worn by the person.\"\n    },\n    \"jacket\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A gray hooded jacket worn by the person.\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A tree in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gray",
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "A young woman with curly hair, smiling and talking on a cell phone."
+              }
+            },
+            "man-made": {
+              "cell phone": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "black",
+                  "gray"
+                ],
+                "size": "small",
+                "description": "A smartphone being held in the hand."
+              },
+              "jeans": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "Blue denim jeans worn by the person."
+              },
+              "jacket": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A gray hooded jacket worn by the person."
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A tree in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 333,
+            "total_tokens": 851
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2134.275072,
+            "prompt_eval_duration_ms": 69.99373,
+            "generation_duration_ms": 1978.322085,
+            "load_duration_ms": 83.962858,
+            "tokens_per_second": 168.32446168642957
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2899,
+        "total_time_ms": 7635.570629,
+        "average_speed": 166.173837668795
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image captures a young woman walking outdoors, engaged in a phone call. The setting appears to be a public space, possibly a park or urban area, with a paved walkway and a low concrete wall visible in the background. Lush greenery, including grass and trees, is present beyond the wall, suggesting a natural environment. The woman is wearing a gray hoodie over a red and black plaid shirt, paired with blue jeans and carrying a yellow bag over her shoulder. Her hair is dark and curly, blowing slightly in the breeze. She is smiling and looking off to the side, seemingly enjoying her conversation. \n\nThe lighting is soft and diffused, indicating an overcast day. The color palette is dominated by earthy tones \u2013 greens, browns, and grays \u2013 with pops of color from the woman's clothing and the yellow bag. The composition is dynamic, with the woman positioned slightly off-center, creating a sense of movement and energy. The shallow depth of field keeps the focus on the woman while blurring the background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 216,
+            "total_tokens": 529
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3123.5567,
+            "prompt_eval_duration_ms": 340.565783,
+            "generation_duration_ms": 2692.96978,
+            "load_duration_ms": 88.129264,
+            "tokens_per_second": 80.20884660651484
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a young woman walking towards the viewer, engaged in a phone call. She's dressed in a gray hoodie over a red and black plaid shirt, blue jeans, and appears to be carrying a yellow bag or object slung over her shoulder. Her hair is dark and curly, blowing slightly in the breeze. The concrete pavement she walks on is the immediate surface, creating a sense of movement and activity. \n\nThe background reveals a park-like setting. A low, beige wall runs horizontally, separating the walkway from a lush green area filled with grass and foliage. Beyond the wall, more trees and greenery extend into the distance, suggesting a larger park or natural space. The overall effect is that the woman is actively moving through a pleasant, outdoor environment, with the background providing a serene and natural contrast to her forward motion.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 188,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2520.530049,
+            "prompt_eval_duration_ms": 73.484735,
+            "generation_duration_ms": 2354.610868,
+            "load_duration_ms": 90.595628,
+            "tokens_per_second": 79.84334165572194
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe image features a young woman walking outdoors, engaged in a phone call. She's dressed casually in a gray hoodie over a red and black plaid shirt, paired with blue jeans, and appears to be carrying a yellow bag or folder. Her hair is dark and curly, blowing slightly in the breeze as she walks. She's smiling, suggesting a pleasant conversation on the phone. The background reveals a park-like setting with green grass and trees, indicating an outdoor environment. The woman is the central figure, actively interacting with the unseen person on the phone. The environment provides context for her activity, suggesting a leisurely stroll or commute. The yellow bag she carries is an accessory, likely containing personal belongings. Overall, the scene depicts a moment of everyday life, capturing a person in motion, connected through technology and surrounded by nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 184,
+            "total_tokens": 505
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2473.067737,
+            "prompt_eval_duration_ms": 67.151826,
+            "generation_duration_ms": 2316.868959,
+            "load_duration_ms": 85.647877,
+            "tokens_per_second": 79.41752565903319
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a feeling of cheerful optimism and relaxed energy. The woman's expression \u2013 a wide, genuine smile and engaged gaze \u2013 immediately conveys happiness and a sense of connection. She appears to be enjoying a pleasant conversation on her phone, suggesting a positive interaction. The slightly blurred background and her motion imply a feeling of being on the move, adding to the sense of vitality and a carefree attitude. The casual clothing \u2013 jeans, a plaid shirt, and a hoodie \u2013 contributes to the overall feeling of comfort and approachability. The natural light and green foliage in the background further enhance the positive and refreshing atmosphere. Overall, the tone is decidedly positive, leaving the viewer with a feeling of warmth and a sense of shared joy.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 162,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2172.184297,
+            "prompt_eval_duration_ms": 65.719538,
+            "generation_duration_ms": 2016.413251,
+            "load_duration_ms": 88.167311,
+            "tokens_per_second": 80.34067417463129
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"item\": \"person\",\n      \"count\": 1,\n      \"location\": \"right foreground\",\n      \"color\": [\"brown\", \"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"Smiling and talking on a phone, wearing a gray hoodie, a red and black plaid shirt, and blue jeans. Hair is curly and blowing in the wind.\"\n    }\n  ],\n  \"man-made\": [\n    {\n      \"item\": \"hoodie\",\n      \"count\": 1,\n      \"location\": \"right foreground\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Worn by the person.\"\n    },\n    {\n      \"item\": \"shirt\",\n      \"count\": 1,\n      \"location\": \"right foreground\",\n      \"color\": [\"red\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Worn under the hoodie.\"\n    },\n    {\n      \"item\": \"jeans\",\n      \"count\": 1,\n      \"location\": \"right foreground\",\n      \"color\": [\"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"Worn by the person.\"\n    },\n    {\n      \"item\": \"sidewalk\",\n      \"count\": 1,\n      \"location\": \"bottom center\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Concrete surface.\"\n    },\n    {\n      \"item\": \"wall\",\n      \"count\": 1,\n      \"location\": \"middle background\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"A long, white wall.\"\n    },\n    {\n      \"item\": \"phone\",\n      \"count\": 1,\n      \"location\": \"right foreground\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Held to the person's ear.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"trees\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Dense foliage.\"\n    },\n    {\n      \"item\": \"grass\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Lush green grass behind the wall.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "item": "person",
+                "count": 1,
+                "location": "right foreground",
+                "color": [
+                  "brown",
+                  "beige"
+                ],
+                "size": "medium",
+                "description": "Smiling and talking on a phone, wearing a gray hoodie, a red and black plaid shirt, and blue jeans. Hair is curly and blowing in the wind."
+              }
+            ],
+            "man-made": [
+              {
+                "item": "hoodie",
+                "count": 1,
+                "location": "right foreground",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Worn by the person."
+              },
+              {
+                "item": "shirt",
+                "count": 1,
+                "location": "right foreground",
+                "color": [
+                  "red",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Worn under the hoodie."
+              },
+              {
+                "item": "jeans",
+                "count": 1,
+                "location": "right foreground",
+                "color": [
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "Worn by the person."
+              },
+              {
+                "item": "sidewalk",
+                "count": 1,
+                "location": "bottom center",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Concrete surface."
+              },
+              {
+                "item": "wall",
+                "count": 1,
+                "location": "middle background",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "A long, white wall."
+              },
+              {
+                "item": "phone",
+                "count": 1,
+                "location": "right foreground",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "Held to the person's ear."
+              }
+            ],
+            "natural": [
+              {
+                "item": "trees",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Dense foliage."
+              },
+              {
+                "item": "grass",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Lush green grass behind the wall."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 600,
+            "total_tokens": 1118
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7735.905701,
+            "prompt_eval_duration_ms": 90.563871,
+            "generation_duration_ms": 7554.343056,
+            "load_duration_ms": 89.018362,
+            "tokens_per_second": 79.42451058314766
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3144,
+        "total_time_ms": 18025.244484,
+        "average_speed": 79.84697973580978
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a young woman with curly, dark hair, captured in mid-stride while talking on a mobile phone. She is dressed casually in a light-colored plaid shirt layered under a gray hooded sweatshirt and light-wash denim jeans. Her expression is cheerful and engaged, suggesting a pleasant conversation. The setting appears to be an outdoor urban area, likely a sidewalk or paved walkway, with a concrete retaining wall and greenery visible in the blurred background. The lighting is soft and diffused, indicating an overcast day or a shaded location. The color palette is dominated by neutral tones \u2013 grays, blues, and browns \u2013 with the woman's clothing providing a subtle pop of color. The composition is a medium shot, focusing on the woman as the primary subject, with the background intentionally blurred to draw attention to her. The dynamic pose and the blurred background create a sense of movement and energy.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 189,
+            "total_tokens": 502
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5007.574622,
+            "prompt_eval_duration_ms": 398.573717,
+            "generation_duration_ms": 4515.61744,
+            "load_duration_ms": 91.604194,
+            "tokens_per_second": 41.854741352934454
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nIn the foreground, a young woman with curly, dark hair is the primary focus. She's captured mid-stride, seemingly walking with purpose, and is actively engaged in a phone conversation, holding the device to her ear with a cheerful expression. She's dressed casually in a light gray hoodie over a pink and brown plaid shirt, paired with blue jeans. A glimpse of an orange tote bag is visible at the bottom of the frame, suggesting she may be carrying items. \n\nThe background consists of a blurred, outdoor setting. A light gray concrete wall or ledge runs horizontally, providing a neutral backdrop. Above this, a soft, out-of-focus expanse of green foliage and trees indicates a park or natural area. The blurred background emphasizes the woman as the central subject, while the outdoor setting suggests she's on the move in a public space. The relationship between the layers is one of subject and environment, with the woman's activity taking place within the broader context of the outdoor setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 220,
+            "total_tokens": 538
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5440.819412,
+            "prompt_eval_duration_ms": 85.551905,
+            "generation_duration_ms": 5264.352874,
+            "load_duration_ms": 89.07618,
+            "tokens_per_second": 41.79051162898925
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe primary subject of the image is a young woman with curly, dark hair, who appears to be engaged in a phone conversation. She is walking and looking towards the camera with a smile, suggesting a pleasant exchange. She is dressed casually in a light gray hoodie over a red and black plaid shirt, paired with blue jeans. She is holding a yellow bag or object, partially visible at the bottom of the frame. \n\nThe background features a concrete wall and some greenery, indicating an outdoor urban or suburban setting. The woman is the focal point, and her action of talking on the phone is the central activity. There are no other people or animals visible in the image, so her interaction is limited to the unseen person on the other end of the phone call. The setting provides context but doesn't directly interact with the woman; it simply serves as the backdrop for her activity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 188,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4675.918996,
+            "prompt_eval_duration_ms": 86.772071,
+            "generation_duration_ms": 4499.133469,
+            "load_duration_ms": 87.815389,
+            "tokens_per_second": 41.785824158220805
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of cheerful energy and lightheartedness. The woman is captured mid-stride while speaking on her phone, with a bright, genuine smile on her face. This suggests a positive conversation or good news. Her slightly windswept hair and dynamic pose contribute to a feeling of movement and vitality. The neutral background of concrete and greenery doesn't detract from the subject, allowing her expression to be the focal point. The color palette is soft and natural, enhancing the overall pleasant tone. There's a sense of everyday joy and connection, as if she's sharing a happy moment with someone on the phone. The overall mood is decidedly positive, conveying a feeling of optimism and contentment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 159,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3961.803634,
+            "prompt_eval_duration_ms": 79.80051,
+            "generation_duration_ms": 3790.855995,
+            "load_duration_ms": 89.2327,
+            "tokens_per_second": 41.94303350212068
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"gray\", \"pink\"],\n      \"size\": \"medium\",\n      \"description\": \"Woman talking on a mobile phone, walking with a bag.\"\n    }\n  },\n  \"man-made\": {\n    \"mobile phone\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"size\": \"small\",\n      \"description\": \"Held to the ear while talking.\"\n    },\n    \"bag\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"yellow\"],\n      \"size\": \"small\",\n      \"description\": \"Carried in hand.\"\n    },\n    \"pavement\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Concrete surface\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Out of focus in the background\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gray",
+                  "pink"
+                ],
+                "size": "medium",
+                "description": "Woman talking on a mobile phone, walking with a bag."
+              }
+            },
+            "man-made": {
+              "mobile phone": {
+                "count": 1,
+                "location": "left",
+                "size": "small",
+                "description": "Held to the ear while talking."
+              },
+              "bag": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Carried in hand."
+              },
+              "pavement": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Concrete surface"
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Out of focus in the background"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 307,
+            "total_tokens": 825
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7529.765181,
+            "prompt_eval_duration_ms": 143.177741,
+            "generation_duration_ms": 7299.203376,
+            "load_duration_ms": 85.208927,
+            "tokens_per_second": 42.05938431711948
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2857,
+        "total_time_ms": 26615.881845,
+        "average_speed": 41.88669899187693
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a young woman walking outdoors, engaged in a phone conversation. She is dressed casually in a light gray hoodie layered over a plaid shirt, paired with blue jeans. Her curly hair is blowing slightly in the wind, suggesting a breezy day. The background features a modern, minimalist setting with a series of concrete steps and a white wall, likely part of an urban park or public space. The area is surrounded by greenery, including trees and shrubs, adding a touch of nature to the urban environment. The lighting appears natural, possibly indicating an overcast day, as there are no harsh shadows. The overall composition is balanced, with the woman positioned centrally, drawing the viewer's attention. The colors are muted, with the gray and blue tones of her clothing complementing the neutral tones of the concrete and white wall. The image conveys a sense of movement and everyday life in an urban setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 187,
+            "total_tokens": 979
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7105.617898,
+            "prompt_eval_duration_ms": 1828.883226,
+            "generation_duration_ms": 5230.011937,
+            "load_duration_ms": 44.088955,
+            "tokens_per_second": 35.755176518251986
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a person is prominently featured, walking and talking on a mobile phone. They are dressed in a casual outfit consisting of a gray vest over a plaid shirt and blue jeans. Their curly hair is blowing slightly, suggesting movement or wind. The person appears to be the main subject of the image, drawing immediate attention due to their central position and the action of using the phone.\n\nIn the background, there is a more distant, blurred setting that provides context to the scene. The background includes a series of concrete steps or terraces, which are part of an outdoor public space. Beyond the steps, there are trees and greenery, indicating a park or garden area. The background elements are less detailed and softer in focus, which helps to emphasize the person in the foreground. The relationship between the foreground and background suggests that the person is walking through a public, possibly urban, green space, adding a sense of environment and activity to the overall composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 197,
+            "total_tokens": 995
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5583.693619,
+            "prompt_eval_duration_ms": 57.981136,
+            "generation_duration_ms": 5477.762433,
+            "load_duration_ms": 45.293342,
+            "tokens_per_second": 35.963589587821765
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, there is a woman who appears to be walking and talking on a mobile phone. She is dressed in a casual outfit consisting of a gray sweater, a plaid scarf, and blue jeans. The woman seems to be the main subject of the image, and her action of talking on the phone suggests she might be engaged in a conversation. The background features a concrete structure with steps and greenery, indicating an outdoor setting, possibly a park or a public space. There are no other people, animals, or distinct objects in the image that interact with the woman. The overall scene conveys a sense of everyday life, with the woman seemingly focused on her phone call amidst the urban environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 143,
+            "total_tokens": 943
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4075.323265,
+            "prompt_eval_duration_ms": 59.116358,
+            "generation_duration_ms": 3966.343477,
+            "load_duration_ms": 47.198121,
+            "tokens_per_second": 36.053357665372964
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood of casual contentment and ease. The woman appears relaxed and engaged, likely in a pleasant conversation, as she walks outdoors. Her smile and the way she holds the phone to her ear suggest a positive interaction, evoking feelings of warmth and connection. The natural, outdoor setting with greenery in the background adds to the serene and pleasant atmosphere, reinforcing a sense of calm and well-being. The overall tone is positive, with the bright lighting and open space contributing to an uplifting and carefree vibe. The woman's attire, which includes a cozy vest and scarf, further emphasizes a sense of comfort and everyday simplicity, making the scene feel relatable and heartwarming.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 146,
+            "total_tokens": 949
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4147.61997,
+            "prompt_eval_duration_ms": 56.47556,
+            "generation_duration_ms": 4044.500876,
+            "load_duration_ms": 44.085488,
+            "tokens_per_second": 36.09839742311877
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"blue\", \"white\", \"black\", \"denim\"],\n      \"size\": \"medium\",\n      \"description\": \"Woman walking, talking on a phone, wearing a gray jacket, plaid scarf, and blue jeans\"\n    }\n  },\n  \"man-made\": {\n    \"stairs\": {\n      \"count\": 1,\n      \"location\": \"bottom, background\",\n      \"size\": \"large\",\n      \"description\": \"Concrete stairs\"\n    },\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"White wall behind the stairs\"\n    },\n    \"phone\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"size\": \"small\",\n      \"description\": \"Woman holding a phone to her ear\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"top left, background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Tree with green leaves\"\n    },\n    \"bush\": {\n      \"count\": 1,\n      \"location\": \"top right, background\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Bush with green leaves\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center, foreground",
+                "color": [
+                  "blue",
+                  "white",
+                  "black",
+                  "denim"
+                ],
+                "size": "medium",
+                "description": "Woman walking, talking on a phone, wearing a gray jacket, plaid scarf, and blue jeans"
+              }
+            },
+            "man-made": {
+              "stairs": {
+                "count": 1,
+                "location": "bottom, background",
+                "size": "large",
+                "description": "Concrete stairs"
+              },
+              "wall": {
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "White wall behind the stairs"
+              },
+              "phone": {
+                "count": 1,
+                "location": "center, foreground",
+                "size": "small",
+                "description": "Woman holding a phone to her ear"
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 1,
+                "location": "top left, background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Tree with green leaves"
+              },
+              "bush": {
+                "count": 1,
+                "location": "top right, background",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Bush with green leaves"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 324,
+            "total_tokens": 1306
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9197.282432,
+            "prompt_eval_duration_ms": 107.672835,
+            "generation_duration_ms": 9042.166507,
+            "load_duration_ms": 44.729416,
+            "tokens_per_second": 35.8321205154954
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5172,
+        "total_time_ms": 30109.537184,
+        "average_speed": 35.94052834201217
+      }
+    }
+  ]
+}

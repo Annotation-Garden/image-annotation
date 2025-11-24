@@ -1,0 +1,819 @@
+{
+  "image": {
+    "path": "images/original/shared0107_nsd09148.png",
+    "name": "shared0107_nsd09148.png",
+    "id": "shared0107_nsd09148"
+  },
+  "timestamp": "2025-08-31T12:26:46.979730+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a seagull in mid-flight against a backdrop of a vibrant blue ocean. The bird, with its wings fully extended, is the focal point of the composition, positioned slightly off-center to the left, creating a dynamic sense of movement. The seagull's plumage is a mix of light and dark brown feathers, with a lighter underside and a sharp, curved beak that points towards the upper right corner of the frame. The ocean below is a deep, rich blue, with gentle ripples and reflections that add texture and depth to the scene. The lighting is natural and bright, suggesting a sunny day, which enhances the vividness of the blue and the contrast between the bird and its surroundings. The overall composition is balanced yet dynamic, with the seagull's flight path leading the viewer's eye across the frame, while the ocean provides a serene and expansive background. The image conveys a sense of freedom and the beauty of nature in motion.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 197,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1542.568392,
+            "prompt_eval_duration_ms": 80.263639,
+            "generation_duration_ms": 1422.27065,
+            "load_duration_ms": 36.014373,
+            "tokens_per_second": 138.51090859535068
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a seagull is captured in mid-flight, its wings fully extended as it glides gracefully over the water. The bird's plumage, a mix of light brown and white, contrasts sharply with the vibrant blue of the water below. The seagull's sharp, curved beak points forward, suggesting motion and direction. The background, which is the water, appears as a dynamic expanse of blue, with subtle ripples and reflections hinting at the seagull's movement and the gentle waves of the sea. The water's surface is slightly out of focus, creating a sense of depth and drawing the viewer's attention to the seagull in the foreground. The relationship between the foreground and background elements is one of contrast and depth; the seagull's detailed form and vibrant colors stand out against the more muted and textured backdrop of the water, emphasizing the bird's presence and the vastness of the seascape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 196,
+            "total_tokens": 499
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1532.578837,
+            "prompt_eval_duration_ms": 29.591165,
+            "generation_duration_ms": 1463.375942,
+            "load_duration_ms": 37.376482,
+            "tokens_per_second": 133.9368745751869
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a seagull is captured in mid-flight over a body of water, its wings spread wide as it glides gracefully. The bird, with its distinctive white head and grayish-brown wings, appears to be soaring effortlessly, perhaps searching for food or simply enjoying the freedom of flight. The water below is a deep blue, with gentle ripples indicating a calm yet lively environment. The seagull's interaction with the water is minimal, as it is focused on its flight path, but the reflection of the bird on the water's surface creates a subtle connection between the two elements, suggesting a harmonious coexistence. There are no other animals or people present in the image, allowing the seagull to be the sole subject of this serene scene. The overall composition highlights the beauty of nature and the simple yet profound actions of a bird in its natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 179,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1401.028147,
+            "prompt_eval_duration_ms": 30.029466,
+            "generation_duration_ms": 1330.408818,
+            "load_duration_ms": 36.661094,
+            "tokens_per_second": 134.54510942665746
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of freedom and tranquility, with a positive and uplifting mood. The seagull, captured in mid-flight against the backdrop of a vibrant blue ocean, conveys a sense of grace and effortless movement, symbolizing the joy of being alive and the beauty of nature. The sharp contrast between the bird's pale feathers and the deep blue of the water enhances the feeling of serenity and the vastness of the open sea. The blurred background of the ocean adds to the sense of depth and movement, making the viewer feel as though they are witnessing a fleeting moment of peace and harmony. The overall tone is decidedly positive, as the image suggests a harmonious relationship between the bird and its environment, evoking feelings of calmness, inspiration, and a connection to the natural world.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 163,
+            "total_tokens": 471
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1296.201153,
+            "prompt_eval_duration_ms": 33.214177,
+            "generation_duration_ms": 1222.300519,
+            "load_duration_ms": 38.242777,
+            "tokens_per_second": 133.35509350299145
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"seagull\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"in flight, wings spread, over water\"\n    }\n  },\n  \"natural\": {\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"calm, reflecting light\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "seagull": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "in flight, wings spread, over water"
+              }
+            },
+            "natural": {
+              "water": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "calm, reflecting light"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 121,
+            "total_tokens": 607
+          },
+          "performance_metrics": {
+            "total_duration_ms": 979.382005,
+            "prompt_eval_duration_ms": 45.507877,
+            "generation_duration_ms": 893.311946,
+            "load_duration_ms": 38.072201,
+            "tokens_per_second": 135.45100403258238
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2556,
+        "total_time_ms": 6751.7585340000005,
+        "average_speed": 135.15979802655377
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a serene and dynamic scene of a seagull in flight over a vast expanse of blue water. The setting appears to be a coastal or open-water environment, likely during the daytime, as the lighting is bright and natural, suggesting sunlight. The main element of the image is the seagull, which is positioned slightly off-center, creating a balanced yet dynamic composition. The bird's wings are fully extended, showcasing the intricate details of its feathers, which are a mix of light gray and white, with darker tips. The seagull's body is streamlined, and its head is slightly tilted forward, giving a sense of motion and purpose.\n\nThe background is dominated by the deep, rich blue of the water, which reflects the sunlight, creating a shimmering effect with varying shades of blue. The water's surface is relatively calm, with gentle ripples, adding texture and depth to the scene. The overall color palette is cool and calming, with the blues of the water contrasting beautifully against the lighter tones of the seagull's feathers. The lighting enhances the details of the bird and the reflective quality of the water, making the image visually striking and evocative of a peaceful coastal moment. The composition draws the viewer's eye to the seagull as the focal point, while the expansive water provides a sense of openness and tranquility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 275,
+            "total_tokens": 572
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13821.361386,
+            "prompt_eval_duration_ms": 3523.018148,
+            "generation_duration_ms": 10258.217654,
+            "load_duration_ms": 37.696599,
+            "tokens_per_second": 26.8077758998191
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features a seagull in flight, captured in sharp focus. The bird's wings are fully extended, showcasing a mix of light and dark feathers, with the lighter underside contrasting against the darker wingtips. The seagull's head is turned slightly, revealing its beak and eye, and its body is angled as if gliding effortlessly through the air. The bird's reflection is visible on the water's surface below, adding a sense of depth and realism to the image.\n\nIn the background, the setting is a vast expanse of blue water, likely an ocean or large body of water, with gentle ripples creating a textured, shimmering effect. The water's color transitions from a deeper blue in the distance to a lighter, more reflective hue closer to the foreground, indicating the interplay of light and water. The background is relatively uniform, with no other distinct elements or objects, which helps to emphasize the seagull as the primary subject.\n\nThe relationship between the foreground and background is harmonious and complementary. The seagull, as the focal point, is set against the expansive, tranquil backdrop of the water, creating a sense of freedom and natural beauty. The reflection of the bird on the water's surface further ties the two layers together, suggesting a seamless connection between the bird and its aquatic environment. The contrast between the sharp detail of the seagull and the softer, more abstract quality of the water enhances the visual impact of the image, highlighting the bird's dynamic movement and the serene setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 312,
+            "total_tokens": 615
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11713.693742,
+            "prompt_eval_duration_ms": 78.555835,
+            "generation_duration_ms": 11593.165756,
+            "load_duration_ms": 38.195429,
+            "tokens_per_second": 26.912407410247333
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a seagull in flight over a vast expanse of blue water, likely an ocean or large lake. There are no people visible in the image, so the focus is entirely on the seagull and its interaction with its environment. The seagull, with its wings fully extended, appears to be gliding gracefully, showcasing its natural aerodynamic capabilities. Its body is streamlined, and its feathers are slightly ruffled, indicating movement through the air. The bird's head is turned slightly to the side, suggesting it may be scanning the water below for potential food sources, such as fish or other marine life.\n\nThe water below reflects the bird, creating a mirror-like effect that adds depth and symmetry to the image. The ripples and waves on the water's surface suggest a gentle breeze, which may be aiding the seagull's flight. The interaction between the seagull and the water is one of coexistence and survival; the bird relies on the water for sustenance, while the water provides a vast, open space for the bird to fly and hunt. The overall scene conveys a sense of freedom and the beauty of nature, highlighting the seagull's adaptability and the serene environment it inhabits. There are no other animals or objects in the image, emphasizing the solitary nature of the seagull's flight and its connection to the natural world.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 281,
+            "total_tokens": 587
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10581.863575,
+            "prompt_eval_duration_ms": 74.470571,
+            "generation_duration_ms": 10465.253606,
+            "load_duration_ms": 39.757905,
+            "tokens_per_second": 26.850758766026985
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a serene and uplifting mood, evoking feelings of freedom, tranquility, and natural beauty. The overall tone is positive, as the scene captures a seagull in flight against a vibrant blue ocean backdrop. The bird's graceful posture, with its wings fully extended, symbolizes freedom and the joy of movement, while the expansive, undulating waves of the ocean suggest calmness and continuity. The contrast between the light, airy bird and the deep, rich blue of the water creates a harmonious balance, reinforcing a sense of peace and connection with nature. The bright lighting and clear sky further enhance the uplifting atmosphere, emphasizing a sense of openness and possibility. The reflection of the bird on the water's surface adds a touch of symmetry and beauty, enhancing the overall sense of harmony and balance. This image evokes a feeling of awe and appreciation for the natural world, inspiring a sense of wonder and serenity. The visual elements\u2014such as the bird's flight, the dynamic yet peaceful ocean, and the vivid colors\u2014work together to create an emotionally positive and uplifting atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 221,
+            "total_tokens": 529
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8366.936961,
+            "prompt_eval_duration_ms": 73.117417,
+            "generation_duration_ms": 8250.065342,
+            "load_duration_ms": 41.279743,
+            "tokens_per_second": 26.787666623065157
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"seagull\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Seagull in flight with wings spread wide, flying over water.\"\n    }\n  },\n  \"natural\": {\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Blue water with ripples, reflecting the seagull.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "seagull": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Seagull in flight with wings spread wide, flying over water."
+              }
+            },
+            "natural": {
+              "water": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Blue water with ripples, reflecting the seagull."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 132,
+            "total_tokens": 618
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5056.203459,
+            "prompt_eval_duration_ms": 140.600347,
+            "generation_duration_ms": 4874.380275,
+            "load_duration_ms": 38.048171,
+            "tokens_per_second": 27.080365616324425
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2921,
+        "total_time_ms": 49540.059123,
+        "average_speed": 26.887794863096598
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a moment of dynamic movement against a vibrant blue backdrop. The primary subject is a seagull, mid-flight, with its wings fully extended and slightly angled upwards. The seagull is predominantly a pale, warm beige color, with intricate patterns of darker brown feathers visible on its wings and head. Its beak is a darker gray, and its eye is a small, dark spot. \n\nThe seagull is set against a deep, shimmering blue ocean, likely a coastal scene. The water is rippled, creating a sense of movement and reflecting the sunlight, adding a subtle golden hue to the surface. The lighting appears to be bright and sunny, casting a strong reflection of the seagull directly below it. The composition is centered around the bird, drawing the viewer's eye immediately to its graceful flight. The overall effect is one of natural beauty and a fleeting moment of wildlife in its element.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 195,
+            "total_tokens": 508
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1569.497022,
+            "prompt_eval_duration_ms": 312.396237,
+            "generation_duration_ms": 1172.124062,
+            "load_duration_ms": 82.694019,
+            "tokens_per_second": 166.3646420390609
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the image\u2019s elements, broken down as requested:\n\nIn the foreground, the primary focus is a single seagull captured mid-flight. The bird is depicted with its wings fully extended, creating a dynamic and somewhat chaotic composition. Its plumage is a mottled mix of pale gray and white, with a darker head and beak. The seagull\u2019s body is angled slightly upwards, suggesting it\u2019s soaring through the air. A distinct reflection of the bird is visible in the water below, mirroring its form and adding to the sense of movement. \n\nThe background is dominated by a vast expanse of deep blue water, likely the ocean. The water appears choppy and textured, with subtle ripples and waves creating a sense of depth. The color is a rich, saturated blue, contrasting sharply with the lighter tones of the seagull. The seagull is positioned within this expansive background, creating a sense of scale and emphasizing its solitary movement against the immensity of the sea. The relationship between the elements is one of dynamic interaction \u2013 the bird\u2019s motion against the fluid background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 223,
+            "total_tokens": 541
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1493.977303,
+            "prompt_eval_duration_ms": 58.625457,
+            "generation_duration_ms": 1346.648323,
+            "load_duration_ms": 86.679443,
+            "tokens_per_second": 165.59631508188497
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image captures a moment of dynamic movement as a seagull is in mid-flight against a backdrop of shimmering blue water. The seagull, primarily a pale gray with intricate feather patterns, is captured in a powerful upward swoop, its wings fully extended, suggesting it's actively soaring through the air. Its beak is slightly open, perhaps in a call or a feeding motion. The water below reflects the sunlight, creating a dazzling, rippling effect that emphasizes the seagull's upward trajectory. \n\nThe seagull\u2019s action creates a clear relationship with the water, implying a search for food or a navigational maneuver. The reflection of the sun in the water adds a layer of visual interest, highlighting the natural beauty of the scene. The overall composition evokes a sense of freedom and movement, showcasing a simple yet captivating interaction between a bird and its environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 193,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1300.738113,
+            "prompt_eval_duration_ms": 59.71595,
+            "generation_duration_ms": 1153.494763,
+            "load_duration_ms": 85.24276,
+            "tokens_per_second": 167.31762136314094
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of approximately 200 words:\n\nThe image evokes a sense of serene freedom and quiet contemplation. The dominant blue of the water, shimmering with subtle ripples, creates a feeling of vastness and openness, suggesting limitless possibilities. The single seagull, captured mid-flight with its wings outstretched, embodies a spirit of liberation and effortless movement. Its pale, warm tones contrast beautifully against the cool blue, adding a touch of gentle warmth and optimism. The bird\u2019s posture \u2013 relaxed yet poised \u2013 suggests a moment of peaceful solitude and connection with nature. \n\nThe lighting appears bright and natural, contributing to a feeling of clarity and tranquility. The water\u2019s reflection adds depth and a sense of continuity, reinforcing the idea of movement and flow. There\u2019s no immediate sense of urgency or distress; instead, the image promotes a feeling of calm and stillness. The overall tone is decidedly positive, inviting the viewer to share in the seagull\u2019s freedom and appreciate the beauty of a natural moment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 222,
+            "total_tokens": 546
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1493.834308,
+            "prompt_eval_duration_ms": 57.232435,
+            "generation_duration_ms": 1344.730924,
+            "load_duration_ms": 89.801974,
+            "tokens_per_second": 165.08878916805514
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"item names\": [\n      \"person\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"white\",\n        \"gray\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"A person is captured mid-flight, appearing to be a seagull.\"\n    }\n  },\n  \"animal\": {\n    \"item names\": [\n      \"seagull\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"white\",\n        \"gray\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"A seagull in flight, wings spread, appearing to be captured in a dynamic moment.\"\n    }\n  },\n  \"natural\": {\n    \"item names\": [\n      \"water\",\n      \"sky\"\n    ],\n    \"attributes\": {\n      \"water\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\n          \"blue\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"The background is a large expanse of blue water.\"\n      },\n      \"sky\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\n          \"blue\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"The sky is a deep blue color.\"\n      }\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "item names": [
+                "person"
+              ],
+              "attributes": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A person is captured mid-flight, appearing to be a seagull."
+              }
+            },
+            "animal": {
+              "item names": [
+                "seagull"
+              ],
+              "attributes": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A seagull in flight, wings spread, appearing to be captured in a dynamic moment."
+              }
+            },
+            "natural": {
+              "item names": [
+                "water",
+                "sky"
+              ],
+              "attributes": {
+                "water": {
+                  "count": 1,
+                  "location": "background",
+                  "color": [
+                    "blue"
+                  ],
+                  "size": "large",
+                  "description": "The background is a large expanse of blue water."
+                },
+                "sky": {
+                  "count": 1,
+                  "location": "background",
+                  "color": [
+                    "blue"
+                  ],
+                  "size": "large",
+                  "description": "The sky is a deep blue color."
+                }
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 369,
+            "total_tokens": 887
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2380.834983,
+            "prompt_eval_duration_ms": 63.590419,
+            "generation_duration_ms": 2228.301334,
+            "load_duration_ms": 86.75074,
+            "tokens_per_second": 165.59699281677132
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2996,
+        "total_time_ms": 8238.881729,
+        "average_speed": 165.99287209378264
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe photograph captures a dynamic moment of a seagull in mid-flight over a vibrant, deep blue body of water, likely the ocean or a large lake. The seagull is the clear focal point, positioned centrally and angled upwards, its wings fully extended in a graceful, almost balletic pose. Its plumage is a mix of warm, earthy tones \u2013 creamy whites, pale tans, and touches of grey, creating a beautiful contrast against the intense blue backdrop. The lighting appears to be bright and natural, illuminating the bird\u2019s feathers and highlighting the texture of the water\u2019s surface, which is rippled with subtle reflections. The composition is simple yet effective, emphasizing the bird's movement and freedom. The blue water fills the entire background, creating a sense of vastness and depth, while the bird\u2019s reflection is faintly visible beneath it, adding another layer of visual interest. The overall impression is one of tranquility and the beauty of nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 202,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3041.738706,
+            "prompt_eval_duration_ms": 343.983898,
+            "generation_duration_ms": 2605.800684,
+            "load_duration_ms": 89.677719,
+            "tokens_per_second": 77.51935949679871
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a single seagull captured mid-flight, appearing to hover just above the water's surface. Its wings are fully extended, showcasing intricate feather patterns in shades of beige and brown, with a dark gray patch visible on its wingtips. The bird\u2019s head is turned slightly, and its beak is pointed downwards, suggesting it might be searching for food. The background consists entirely of a vast expanse of deep blue water, rippled by gentle waves. The water\u2019s surface reflects the light, creating a dynamic texture that contrasts with the stillness of the bird. The bird's presence against the expansive blue backdrop emphasizes its solitary nature and highlights the vastness of the environment it inhabits. The water's reflection subtly mirrors the bird's form, creating a sense of depth and connection between the foreground and background elements.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 188,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2566.690634,
+            "prompt_eval_duration_ms": 65.741653,
+            "generation_duration_ms": 2413.207898,
+            "load_duration_ms": 85.072491,
+            "tokens_per_second": 77.9046016531809
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image captures a single seagull in mid-flight over a vibrant blue body of water, likely the ocean or a large lake. The bird is positioned centrally, its wings outstretched in a dynamic pose, suggesting it's either taking off or landing. The seagull's plumage is a mix of beige, white, and grey, contrasting beautifully against the deep blue backdrop. The water\u2019s surface is rippled, creating a textured appearance that reflects the light and adds depth to the scene. The bird appears to be interacting with the water, as if it's about to touch down or has just risen from it. The overall impression is one of freedom and natural beauty, with the seagull as the focal point of a serene and picturesque moment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 171,
+            "total_tokens": 492
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2364.172583,
+            "prompt_eval_duration_ms": 71.027113,
+            "generation_duration_ms": 2198.241262,
+            "load_duration_ms": 92.477798,
+            "tokens_per_second": 77.78945967214767
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of freedom and tranquility, conveying a positive and uplifting mood. The central focus is a bird in mid-flight, its wings outstretched against a backdrop of deep blue water, which immediately suggests a sense of liberation and boundless space. The bird's posture, with its head tilted and wings fully extended, implies graceful movement and a joyful embrace of the moment. The vibrant blue of the water creates a calming and serene atmosphere, enhancing the feeling of peace and tranquility. The sharp focus on the bird contrasts with the slightly blurred water, drawing the viewer's attention to the subject and emphasizing its dynamic movement. Overall, the image inspires a feeling of lightness, hope, and a connection to nature's beauty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 147,
+            "total_tokens": 471
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2050.88138,
+            "prompt_eval_duration_ms": 73.411189,
+            "generation_duration_ms": 1885.675681,
+            "load_duration_ms": 89.131615,
+            "tokens_per_second": 77.95614138802695
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": [\n    {\n      \"name\": \"seagull\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"In mid-flight, wings outstretched, appearing to be gliding.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"name\": \"water\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Deep blue ocean surface with visible ripples.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": [
+              {
+                "name": "seagull",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "In mid-flight, wings outstretched, appearing to be gliding."
+              }
+            ],
+            "natural": [
+              {
+                "name": "water",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Deep blue ocean surface with visible ripples."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 148,
+            "total_tokens": 666
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2077.401494,
+            "prompt_eval_duration_ms": 92.631651,
+            "generation_duration_ms": 1894.28559,
+            "load_duration_ms": 88.251679,
+            "tokens_per_second": 78.12971854998908
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2650,
+        "total_time_ms": 12100.884797,
+        "average_speed": 77.85985615202867
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a seagull in mid-flight against a backdrop of deep blue water. The seagull is the clear focal point, its wings fully extended and feathers detailed with a mix of creamy white and light brown hues. The bird is positioned slightly off-center, creating a dynamic composition. Below the bird, a subtle reflection mirrors its form on the water's surface. The water itself is textured with small waves, adding depth and movement to the scene. \n\nThe lighting appears bright and natural, illuminating the seagull's plumage and creating a slight contrast between the bird and the dark water. The overall color palette is dominated by blues and whites, with the warm tones of the seagull providing a gentle contrast. The composition is simple yet effective, drawing the viewer's eye to the graceful flight of the bird and the vastness of the water. It evokes a sense of freedom and tranquility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 194,
+            "total_tokens": 507
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5073.260548,
+            "prompt_eval_duration_ms": 396.06662,
+            "generation_duration_ms": 4586.675014,
+            "load_duration_ms": 88.075182,
+            "tokens_per_second": 42.29643465208456
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements in the image:\n\nThe foreground is dominated by a seagull captured mid-flight, wings fully extended and angled slightly downwards. Its plumage is a mix of pale browns and whites, with darker wingtips, and its head is turned slightly to the right. The bird is the clear focal point, positioned centrally in the frame. Below the seagull, a faint reflection of its form is visible on the water's surface. \n\nThe background consists entirely of a deep, textured blue body of water, likely the ocean or a large lake. The water\u2019s surface is rippled with small waves, creating a dynamic and slightly blurred texture that contrasts with the sharp detail of the bird. The blue of the water serves as a strong, unifying backdrop, emphasizing the seagull's light coloration and creating a sense of freedom and movement. The relationship between the bird and the water is one of harmony, suggesting the seagull's natural habitat and its connection to the marine environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 210,
+            "total_tokens": 528
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5197.890099,
+            "prompt_eval_duration_ms": 83.545046,
+            "generation_duration_ms": 5025.954393,
+            "load_duration_ms": 85.960438,
+            "tokens_per_second": 41.78310895388979
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a single seagull in mid-flight against a backdrop of deep blue water. The seagull is captured with its wings fully extended, showcasing a beautiful pattern of light and dark feathers. It appears to be gliding or descending, possibly preparing to land on the water or search for food. The bird's reflection is visible on the water's surface, creating a mirrored image that emphasizes its movement. The water itself is textured with small waves, suggesting a gentle breeze. There are no other people or objects present in the image, focusing solely on the interaction between the bird and its aquatic environment. The seagull\u2019s position and the water\u2019s texture create a sense of freedom and natural beauty, highlighting the bird\u2019s connection to the sea.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 164,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4108.721287,
+            "prompt_eval_duration_ms": 85.194977,
+            "generation_duration_ms": 3932.62954,
+            "load_duration_ms": 88.579786,
+            "tokens_per_second": 41.70237708177313
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of freedom, serenity, and perhaps a touch of wistful solitude. The seagull, captured mid-flight against the vast expanse of deep blue water, immediately suggests liberation and boundless space. The bird's graceful posture and outstretched wings create a feeling of effortless movement and peacefulness. The deep blue of the water, while beautiful, also hints at the immensity of nature and the bird's smallness within it, contributing to a slightly melancholic undertone. The bright sunlight and clear focus on the bird create a positive, uplifting atmosphere, but the solitary nature of the subject also evokes a sense of quiet contemplation. Overall, the tone is predominantly positive and calming, with a subtle hint of wistfulness, inviting the viewer to reflect on themes of freedom, nature, and the beauty of solitude.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 183,
+            "total_tokens": 507
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4562.521711,
+            "prompt_eval_duration_ms": 86.64963,
+            "generation_duration_ms": 4384.16112,
+            "load_duration_ms": 89.085629,
+            "tokens_per_second": 41.74116666588203
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"seagull\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"brown\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"In flight with wings spread, appears to be descending or hovering above the water.\"\n    }\n  },\n  \"natural\": {\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Wavy water surface, reflecting light.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "seagull": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "brown",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "In flight with wings spread, appears to be descending or hovering above the water."
+              }
+            },
+            "natural": {
+              "water": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Wavy water surface, reflecting light."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 152,
+            "total_tokens": 670
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3849.523005,
+            "prompt_eval_duration_ms": 142.248865,
+            "generation_duration_ms": 3618.937832,
+            "load_duration_ms": 86.177122,
+            "tokens_per_second": 42.00127414623132
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2697,
+        "total_time_ms": 22791.91665,
+        "average_speed": 41.90487229997216
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a moment of a bird in flight over a body of water. The bird, likely a seagull, is the central focus of the composition, positioned slightly to the left of the frame. Its wings are spread wide, showcasing their light brown and white feathers, with darker brown accents near the wingtips. The bird's body is predominantly white, contrasting with its darker head and beak. The water beneath the bird is a deep, vibrant blue, with small ripples indicating a gentle breeze or the bird's movement. The lighting is natural, suggesting daytime, with the bird illuminated from above, casting subtle shadows on its underside. The background is a seamless expanse of blue water, creating a sense of depth and tranquility. The overall composition is balanced, with the bird's dynamic pose adding a sense of motion to the otherwise serene setting. The image evokes a sense of freedom and the beauty of nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 192,
+            "total_tokens": 984
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7513.644831,
+            "prompt_eval_duration_ms": 2135.145481,
+            "generation_duration_ms": 5330.870643,
+            "load_duration_ms": 44.763537,
+            "tokens_per_second": 36.01663083911376
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, there is a bird in mid-flight, captured in a dynamic and graceful pose. The bird's wings are spread wide, showcasing the intricate details of its feathers, and its body is angled slightly downward, suggesting it might be diving or skimming the water's surface. The bird's head is turned slightly, and its beak is pointed downward, adding to the sense of motion and purpose in its flight. The bird's feathers are a mix of light and dark brown, providing a natural and earthy contrast against the vibrant blue of the water.\n\nIn the background, the setting is a vast expanse of deep blue water, which stretches out to the horizon. The water's surface is slightly rippled, indicating a gentle breeze or the bird's movement through the air. The blue of the water is rich and vivid, creating a striking contrast with the bird's brown feathers and enhancing the overall visual impact of the image. The bird and the water together create a harmonious composition, with the bird's flight path seemingly cutting through the water's surface, symbolizing the interplay between air and water in nature. The image captures a moment of natural beauty and tranquility, highlighting the elegance of the bird in its element.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 253,
+            "total_tokens": 1051
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7151.230661,
+            "prompt_eval_duration_ms": 55.666582,
+            "generation_duration_ms": 7047.696758,
+            "load_duration_ms": 44.941456,
+            "tokens_per_second": 35.89825281753418
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a single bird, likely a seagull, captured in mid-flight over a body of water. The bird is the primary subject of the image, and it appears to be gliding effortlessly above the water's surface. Its wings are spread wide, showcasing their intricate feather patterns, and its body is angled slightly downward, suggesting it might be preparing to land or dive. The water beneath the bird is a deep blue, with small ripples indicating a gentle movement, possibly caused by the bird's flight or a light breeze. There are no other animals or people visible in the image, emphasizing the solitary nature of the bird's flight. The interaction between the bird and the water is subtle but evident; the bird's presence above the water creates a sense of harmony and tranquility. The image captures a moment of natural beauty, highlighting the bird's grace and the serene environment in which it exists.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 186,
+            "total_tokens": 986
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5271.156941,
+            "prompt_eval_duration_ms": 61.891307,
+            "generation_duration_ms": 5162.242521,
+            "load_duration_ms": 44.39329,
+            "tokens_per_second": 36.03085272405396
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of a bird in flight over a body of water evokes a sense of freedom, tranquility, and serenity. The bird, captured mid-flight with its wings spread wide, suggests a moment of grace and effortless motion, contributing to an overall positive and uplifting mood. The deep blue of the water creates a calming backdrop, enhancing the feeling of peace and openness. The absence of any other elements or distractions in the image allows the viewer to focus solely on the bird and its natural environment, further emphasizing themes of solitude and harmony with nature. The soft ripples on the water's surface add a gentle, rhythmic quality, reinforcing the soothing atmosphere. This visual composition evokes feelings of hope, freedom, and a connection to the natural world, making the tone of the image distinctly positive and inspiring.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 167,
+            "total_tokens": 970
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4756.521973,
+            "prompt_eval_duration_ms": 58.161539,
+            "generation_duration_ms": 4651.672426,
+            "load_duration_ms": 43.882809,
+            "tokens_per_second": 35.901066263086854
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"bird\": {\n      \"count\": 1,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Flying above the water with wings spread.\"\n    }\n  },\n  \"natural\": {\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"entire image\",\n      \"description\": \"Blue water surface with ripples.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "bird": {
+                "count": 1,
+                "location": "center, middle, foreground",
+                "color": [
+                  "brown",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Flying above the water with wings spread."
+              }
+            },
+            "natural": {
+              "water": {
+                "count": 1,
+                "location": "entire image",
+                "description": "Blue water surface with ripples."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 113,
+            "total_tokens": 1095
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3282.002271,
+            "prompt_eval_duration_ms": 107.881683,
+            "generation_duration_ms": 3125.076961,
+            "load_duration_ms": 45.922626,
+            "tokens_per_second": 36.159109490807836
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5086,
+        "total_time_ms": 27974.556677,
+        "average_speed": 36.00118242691932
+      }
+    }
+  ]
+}

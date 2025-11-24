@@ -1,0 +1,1031 @@
+{
+  "image": {
+    "path": "images/original/shared0142_nsd11838.png",
+    "name": "shared0142_nsd11838.png",
+    "id": "shared0142_nsd11838"
+  },
+  "timestamp": "2025-08-30T17:00:13.449427+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a scene set in a rural, open landscape under a clear blue sky, suggesting a sunny day. The main subject is a sleek, black and silver motorcycle parked on a dirt path, positioned slightly off-center to the left. The motorcycle, possibly a sportbike, features a prominent windshield, a yellow and black helmet resting on its handlebars, and a black saddlebag attached to the rear. The setting is characterized by dry, sparse grass and a few scattered trees, with a wooden fence running horizontally in the background, adding a rustic touch to the scene. The lighting is natural, with the sun casting soft shadows, enhancing the textures of the motorcycle and the surrounding environment. The overall composition is balanced, with the motorcycle as the focal point, and the expansive field and sky providing a sense of openness and tranquility. The colors are muted, with the earthy tones of the landscape contrasting against the vibrant blue of the sky and the striking black and silver of the motorcycle.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 199,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1558.457145,
+            "prompt_eval_duration_ms": 80.520671,
+            "generation_duration_ms": 1437.592019,
+            "load_duration_ms": 37.631455,
+            "tokens_per_second": 138.4259215200888
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, a sleek black and silver motorcycle stands prominently on a dirt path, its polished chrome and sharp lines reflecting the bright sunlight. The motorcycle, equipped with a windshield and a yellow and black helmet resting on its seat, suggests a rider's readiness for a journey. The ground beneath is a mix of dry grass and dirt, hinting at a rural or less-traveled setting. The background, slightly blurred due to the depth of field, reveals an expansive rural landscape. Sparse trees and a wooden fence line the horizon, with patches of dry, brown earth and a hint of greenery suggesting a season of transition, possibly late summer or early autumn. The clear blue sky above completes the scene, providing a sense of openness and tranquility. The motorcycle and its surroundings are in harmony, evoking a sense of adventure and freedom in a serene, natural setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 175,
+            "total_tokens": 478
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1337.763013,
+            "prompt_eval_duration_ms": 30.739339,
+            "generation_duration_ms": 1263.527996,
+            "load_duration_ms": 40.885959,
+            "tokens_per_second": 138.50108628697134
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a sleek black and silver motorcycle is parked on a gravel path, suggesting a pause in a journey. The motorcycle, equipped with a windshield and a yellow and black helmet resting on its handlebars, implies the rider has momentarily stepped away, perhaps to take in the serene rural landscape. The surrounding environment features a mix of dry grass and sparse trees, indicating a late autumn or early spring setting. The absence of people and animals in the frame focuses the viewer's attention on the motorcycle and its surroundings, creating a sense of solitude and tranquility. The motorcycle's position on the gravel path and the natural backdrop suggest a peaceful interlude in a ride, with the rider likely enjoying the quiet beauty of the countryside.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 146,
+            "total_tokens": 452
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1127.856865,
+            "prompt_eval_duration_ms": 31.434163,
+            "generation_duration_ms": 1054.111873,
+            "load_duration_ms": 39.615478,
+            "tokens_per_second": 138.50522296507705
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of adventure and freedom, with a slightly adventurous and slightly nostalgic tone. The sleek, modern motorcycle parked on a dirt path suggests a journey or a solo ride, hinting at the thrill and independence associated with motorcycling. The rural setting, with its dry, open fields and sparse trees, adds a touch of solitude and tranquility, evoking a feeling of escape from the hustle and bustle of city life. The bright yellow and black helmet resting on the seat introduces a pop of color, symbolizing safety and the excitement of the ride ahead. The clear sky and the well-maintained condition of the motorcycle contribute to a positive, optimistic mood, suggesting readiness for an adventure. The overall tone is positive, as the image conveys a sense of anticipation and the freedom of the open road, inviting the viewer to imagine themselves embarking on a journey.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 180,
+            "total_tokens": 488
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1384.661927,
+            "prompt_eval_duration_ms": 31.418989,
+            "generation_duration_ms": 1310.339996,
+            "load_duration_ms": 40.310346,
+            "tokens_per_second": 137.36892756801726
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"a sporty motorcycle with a windshield and a helmet resting on the handlebars\"\n    },\n    \"helmet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"a yellow and black motorcycle helmet\"\n    },\n    \"glove\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"a black glove resting on the motorcycle seat\"\n    },\n    \"cup\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\"],\n      \"size\": \"small\",\n      \"description\": \"a blue cup with a straw and a drink inside\"\n    },\n    \"fence\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"a wooden fence running horizontally across the image\"\n    }\n  },\n  \"natural\": {\n    \"field\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"an open field with dry grass and some patches of green\"\n    },\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"top right\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"a bare tree with no leaves\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "a sporty motorcycle with a windshield and a helmet resting on the handlebars"
+              },
+              "helmet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "a yellow and black motorcycle helmet"
+              },
+              "glove": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "a black glove resting on the motorcycle seat"
+              },
+              "cup": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "small",
+                "description": "a blue cup with a straw and a drink inside"
+              },
+              "fence": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "a wooden fence running horizontally across the image"
+              }
+            },
+            "natural": {
+              "field": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown",
+                  "green"
+                ],
+                "size": "large",
+                "description": "an open field with dry grass and some patches of green"
+              },
+              "tree": {
+                "count": 1,
+                "location": "top right",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "a bare tree with no leaves"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 387,
+            "total_tokens": 873
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2861.158271,
+            "prompt_eval_duration_ms": 43.944356,
+            "generation_duration_ms": 2771.096847,
+            "load_duration_ms": 40.750762,
+            "tokens_per_second": 139.65589128325402
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2787,
+        "total_time_ms": 8269.897221,
+        "average_speed": 138.4914099246817
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a sleek black motorcycle parked on a rural roadside, set against a backdrop of open fields and sparse vegetation. The motorcycle, likely a sport-touring model, features a glossy black finish with silver accents, including the exhaust pipes and side panels. The bike is equipped with a windshield, a large fuel tank, and a visible engine, suggesting it is designed for both performance and long-distance travel. A yellow and black motorcycle helmet is placed prominently on the handlebars, adding a pop of bright color to the otherwise dark tones of the bike.\n\nThe setting is a rural area, with dry, golden-brown fields stretching into the distance, bordered by a simple wooden fence. The ground is a mix of gravel and dirt, indicating a less-traveled road. In the background, there are a few scattered trees and a faint outline of a distant structure, possibly a barn or farmhouse. The lighting is bright and natural, suggesting a sunny day with clear skies, casting sharp shadows from the motorcycle and helmet. The overall composition is balanced, with the motorcycle as the central focus, framed by the expansive, tranquil landscape. The image conveys a sense of adventure and freedom, typical of a motorcycle journey through the countryside.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 246,
+            "total_tokens": 543
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12705.039594,
+            "prompt_eval_duration_ms": 3492.846965,
+            "generation_duration_ms": 9169.628197,
+            "load_duration_ms": 39.470766,
+            "tokens_per_second": 26.827696250594226
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a black motorcycle parked on a gravel road. The motorcycle is equipped with a windshield, a side-mounted helmet (yellow with black accents), and various accessories such as a cup holder and a small storage compartment. The bike's design suggests it is a sport-touring model, suitable for both long-distance travel and performance riding. The gravel road on which the motorcycle is parked appears slightly uneven, adding a rustic and natural feel to the scene.\n\nIn the background, the setting transitions into a rural landscape. The distant background features a mix of open fields, which appear to be agricultural land, with patches of dry, brown earth and sparse vegetation. A wooden fence runs horizontally across the middle ground, separating the fields from the road and adding a sense of depth and structure to the scene. Beyond the fence, there are a few scattered trees and a hint of a structure or building in the far distance, suggesting a quiet, countryside environment. The sky is clear and bright, indicating a sunny day, which enhances the overall serene and open atmosphere of the setting.\n\nThe relationship between the foreground and background is one of contrast and harmony. The modern, sleek motorcycle in the foreground stands out against the natural, rustic backdrop, creating a juxtaposition between technology and nature. The gravel road acts as a visual bridge, connecting the motorcycle to the expansive rural landscape, while the fence and fields provide a sense of context and setting, grounding the scene in a specific, tranquil environment. The clear sky unifies the composition, tying the elements together under a shared light and atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 319,
+            "total_tokens": 622
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12009.101166,
+            "prompt_eval_duration_ms": 74.522354,
+            "generation_duration_ms": 11891.33224,
+            "load_duration_ms": 40.30816,
+            "tokens_per_second": 26.826262487810194
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image shows a black motorcycle parked on a rural roadside, surrounded by an open, dry landscape with fields and sparse trees in the background. The motorcycle is a sport-touring model, featuring a windshield, saddlebags, and a visible engine. A bright yellow motorcycle helmet with a black visor is placed prominently on the handlebars, suggesting that the rider has recently stopped or is taking a break. The helmet's vibrant color contrasts sharply with the muted tones of the surrounding environment, drawing attention to it as a focal point.\n\nThere are no visible people or animals in the image, indicating that the rider is not present at the moment. The motorcycle is stationary, with its kickstand extended to keep it upright. The setting appears calm and quiet, with no signs of movement or activity beyond the parked motorcycle. The relationship between the motorcycle and the helmet suggests a connection to the rider, who is likely nearby, though not visible in the frame. The rural backdrop emphasizes a sense of solitude and freedom, common themes associated with motorcycle travel. The overall scene conveys a moment of pause during a journey, highlighting the solitude and self-reliance often experienced by motorcyclists in such settings.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 239,
+            "total_tokens": 545
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9061.054739,
+            "prompt_eval_duration_ms": 73.398444,
+            "generation_duration_ms": 8944.338934,
+            "load_duration_ms": 40.166972,
+            "tokens_per_second": 26.72081209842042
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a sense of freedom, adventure, and tranquility, evoking feelings of excitement and a desire for exploration. The motorcycle, parked on a quiet, rural road, suggests a journey or escape from the hustle of everyday life. The bright yellow helmet resting on the bike adds a pop of color, symbolizing energy, optimism, and readiness for action. The open landscape in the background, with its vast fields and sparse trees, contributes to a serene and expansive atmosphere, reinforcing the idea of solitude and connection with nature. The clear blue sky and the overall brightness of the scene further enhance the positive tone, suggesting a sunny, carefree day. The absence of other vehicles or people adds to the sense of calm and isolation, allowing the viewer to imagine the peaceful solitude of a long ride through the countryside. The overall mood is predominantly positive, with a neutral undertone of calmness, as the image does not evoke any strong negative emotions. The visual elements, such as the open space, the vibrant helmet, and the sunny weather, work together to create an atmosphere of adventure and relaxation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 222,
+            "total_tokens": 530
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8378.77657,
+            "prompt_eval_duration_ms": 74.916461,
+            "generation_duration_ms": 8262.062173,
+            "load_duration_ms": 39.127467,
+            "tokens_per_second": 26.86980506216532
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A black and silver motorcycle parked on a dirt road with a windshield and side bags.\"\n    },\n    \"helmet\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"yellow\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"A yellow and black motorcycle helmet placed on the handlebars of the motorcycle.\"\n    },\n    \"fence\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A wooden fence in the background.\"\n    },\n    \"road\": {\n      \"count\": 1,\n      \"location\": \"bottom, foreground\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A dirt road where the motorcycle is parked.\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 3,\n      \"location\": \"right, middle\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Dried or leafless trees in the background.\"\n    },\n    \"field\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"An open field with patches of brown and green vegetation.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"A clear blue sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A black and silver motorcycle parked on a dirt road with a windshield and side bags."
+              },
+              "helmet": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "yellow",
+                  "black"
+                ],
+                "size": "small",
+                "description": "A yellow and black motorcycle helmet placed on the handlebars of the motorcycle."
+              },
+              "fence": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A wooden fence in the background."
+              },
+              "road": {
+                "count": 1,
+                "location": "bottom, foreground",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A dirt road where the motorcycle is parked."
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 3,
+                "location": "right, middle",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Dried or leafless trees in the background."
+              },
+              "field": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown",
+                  "green"
+                ],
+                "size": "large",
+                "description": "An open field with patches of brown and green vegetation."
+              },
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "A clear blue sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 400,
+            "total_tokens": 886
+          },
+          "performance_metrics": {
+            "total_duration_ms": 15013.185996,
+            "prompt_eval_duration_ms": 139.933993,
+            "generation_duration_ms": 14830.930505,
+            "load_duration_ms": 39.107836,
+            "tokens_per_second": 26.9706610697924
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3126,
+        "total_time_ms": 57167.158065,
+        "average_speed": 26.843047393756514
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a sleek, black Kawasaki Ninja motorcycle parked on a slightly worn, dirt road. The setting is a rural landscape, dominated by a gently sloping, grassy hillside under a bright, clear sky. A weathered, metal fence runs along the edge of the hill, providing a natural backdrop. The motorcycle itself is a dark grey and black Ninja, featuring a distinctive aerodynamic fairing and a prominent windscreen. A bright yellow helmet rests on its fuel tank, adding a pop of color. The tires are black with silver rims, and the front disc brakes are visible. \n\nThe lighting is bright and even, suggesting a sunny day. Shadows are soft and subtle. The composition is balanced, with the motorcycle positioned slightly to the right of the frame, drawing the eye. The overall impression is one of a well-maintained motorcycle in a peaceful, open environment. The dirt road adds a sense of ruggedness and adventure to the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1595.748786,
+            "prompt_eval_duration_ms": 305.955681,
+            "generation_duration_ms": 1199.732903,
+            "load_duration_ms": 87.577893,
+            "tokens_per_second": 165.8702528724429
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the foreground and background elements of the image, presented as a continuous paragraph:\n\nIn the immediate foreground, a dark gray, somewhat weathered dirt road occupies the lower portion of the image. A sleek, black Kawasaki Ninja motorcycle dominates the center, its silver-colored fairing and wheels contrasting sharply with the dark road. A bright yellow helmet rests on the motorcycle\u2019s tank, adding a pop of color. The motorcycle\u2019s design is characterized by a streamlined body and prominent front fairing. \n\nBehind the motorcycle, a gently sloping, grassy hillside stretches into the distance. The hillside is covered in dry, golden-brown grasses and scattered shrubs, suggesting a rural or semi-rural setting. A rustic, weathered wooden fence runs along the crest of the hill, adding to the natural, somewhat wild feel of the scene. The overall composition creates a sense of depth, with the motorcycle positioned as a focal point within this expansive, natural backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 196,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1335.82572,
+            "prompt_eval_duration_ms": 62.848773,
+            "generation_duration_ms": 1178.905001,
+            "load_duration_ms": 91.20296,
+            "tokens_per_second": 166.2559746830695
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the image as a continuous paragraph:\n\nThe image depicts a sleek, black Kawasaki Ninja motorcycle parked on a dusty, dirt road. A bright yellow helmet rests on the bike\u2019s fuel tank, suggesting a recent rider. The motorcycle itself is positioned slightly angled towards the viewer, showcasing its aerodynamic design and silver accents. Behind the bike, a weathered, wooden fence stretches across the background, offering a rustic backdrop. The fence appears to be a boundary marker, perhaps delineating a property line. The overall scene evokes a sense of quiet solitude, possibly a rural road trip. The relationship between the motorcycle and the fence implies a journey through a natural landscape. The yellow helmet adds a pop of color and suggests a human presence, emphasizing the interaction between a machine and its environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 161,
+            "total_tokens": 482
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1112.771103,
+            "prompt_eval_duration_ms": 58.927396,
+            "generation_duration_ms": 964.254705,
+            "load_duration_ms": 86.951182,
+            "tokens_per_second": 166.96833229348877
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of around 200 words:\n\nThe image evokes a sense of quiet solitude and peaceful exploration. The muted, overcast sky and the slightly dusty, gravel road contribute to a calm, almost melancholic atmosphere. The motorcycle, a sleek black and silver Kawasaki, sits still, suggesting a moment of pause and reflection. The bright yellow helmet, a stark contrast against the muted tones, adds a touch of optimism and perhaps a hint of adventure. It\u2019s not a dramatic or exciting scene, but rather one of serene contemplation. \n\nThe gravel road and the sparse, dry grass in the background create a feeling of remoteness and open space, implying a journey undertaken alone. The overall tone is neutral, leaning slightly towards positive due to the helmet\u2019s color and the implied freedom of travel. There\u2019s a sense of potential, of a journey waiting to begin, but without any immediate urgency or stress. The stillness of the motorcycle and the expansive landscape foster a feeling of tranquility and a desire for a slow, deliberate pace.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 228,
+            "total_tokens": 552
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1519.146579,
+            "prompt_eval_duration_ms": 56.773094,
+            "generation_duration_ms": 1370.930576,
+            "load_duration_ms": 86.711436,
+            "tokens_per_second": 166.3103909063299
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"Wearing a yellow helmet, appears to be a rider.\"\n    }\n  },\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A black and silver Kawasaki Ninja motorcycle.\"\n    },\n    \"helmet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"A yellow helmet.\"\n    },\n    \"fence\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A wooden fence.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Tall grass covering the background.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "black"
+                ],
+                "size": "large",
+                "description": "Wearing a yellow helmet, appears to be a rider."
+              }
+            },
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A black and silver Kawasaki Ninja motorcycle."
+              },
+              "helmet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "A yellow helmet."
+              },
+              "fence": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A wooden fence."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Tall grass covering the background."
+              },
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 367,
+            "total_tokens": 885
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2359.822633,
+            "prompt_eval_duration_ms": 65.877861,
+            "generation_duration_ms": 2204.877441,
+            "load_duration_ms": 86.090891,
+            "tokens_per_second": 166.4491609264009
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2945,
+        "total_time_ms": 7923.314821,
+        "average_speed": 166.3708223363464
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image showcases a black and silver Kawasaki motorcycle parked on a gravel road in a rural setting. The backdrop consists of a gently sloping field of dry, golden-brown grass and sparse vegetation, punctuated by a weathered wooden fence running parallel to the road. A bright yellow motorcycle helmet sits atop the bike, contrasting sharply with the darker tones of the machine. The motorcycle itself is angled slightly, revealing its sleek, sporty design with a full fairing and comfortable-looking seat. The lighting appears to be soft and diffused, suggesting an overcast day or the early morning/late afternoon sun. The overall composition is balanced, with the motorcycle as the clear focal point, framed by the natural elements of the landscape. The color palette is dominated by earthy tones of brown and green, accented by the vibrant yellow of the helmet and the metallic silver of the motorcycle\u2019s bodywork.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 185,
+            "total_tokens": 498
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2752.38731,
+            "prompt_eval_duration_ms": 341.804365,
+            "generation_duration_ms": 2319.672239,
+            "load_duration_ms": 88.00222,
+            "tokens_per_second": 79.7526464686031
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe immediate foreground is dominated by a black and silver motorcycle, positioned slightly off-center. A bright yellow helmet sits atop the bike, adding a vibrant contrast to the darker tones. The motorcycle rests on a gravelly road surface, which is slightly uneven and dusty. A weathered wooden fence runs parallel to the road, creating a clear separation between the bike and the background. \n\nThe background consists of a vast, grassy field extending into the distance. The field appears dry and slightly overgrown, with rolling hills visible in the far distance. The sky is a clear, pale blue, suggesting a bright, sunny day. The motorcycle appears to be parked in a rural, possibly remote location, with the expansive field and fence contributing to a sense of solitude and open space. The bike\u2019s presence suggests a journey or a pause in a scenic, natural setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 188,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2524.988356,
+            "prompt_eval_duration_ms": 68.051426,
+            "generation_duration_ms": 2361.882768,
+            "load_duration_ms": 92.513744,
+            "tokens_per_second": 79.59751540047647
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image showcases a black and silver Kawasaki motorcycle parked on a gravel road, seemingly in a rural setting. A bright yellow motorcycle helmet sits atop the bike, suggesting a rider has recently dismounted. The motorcycle is the central focus, its sleek design contrasting with the rugged, natural backdrop. A weathered wooden fence runs parallel to the road, defining the edge of a field filled with dry grasses and vegetation. The field extends into the distance, creating a sense of openness and space. The gravel road appears to be a quiet, less-traveled path, possibly used for recreational riding. The helmet, positioned on the motorcycle, implies a pause in a journey, a moment of rest before continuing the ride. The overall scene conveys a sense of adventure and the freedom associated with motorcycle travel in a scenic, rural environment. There are no visible people or animals present.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 190,
+            "total_tokens": 511
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2552.1944,
+            "prompt_eval_duration_ms": 69.532825,
+            "generation_duration_ms": 2392.943157,
+            "load_duration_ms": 86.782794,
+            "tokens_per_second": 79.40013094092899
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of freedom, adventure, and perhaps a touch of solitude. The motorcycle, prominently displayed against a backdrop of expansive, grassy fields and a rustic fence, suggests a journey into the open road and a connection with nature. The bright yellow helmet adds a pop of optimism and a feeling of safety and preparedness. The overall tone is decidedly positive, hinting at a relaxed and enjoyable experience. The vastness of the landscape contributes to a feeling of limitless possibilities, while the motorcycle itself represents power and independence. The slightly muted colors and the natural setting create a calm and peaceful atmosphere, suggesting a moment of respite and appreciation for the simple pleasures of exploration. It\u2019s a scene that inspires wanderlust and a desire to escape the everyday.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 150,
+            "total_tokens": 474
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2046.735477,
+            "prompt_eval_duration_ms": 70.992955,
+            "generation_duration_ms": 1886.986793,
+            "load_duration_ms": 86.372189,
+            "tokens_per_second": 79.49181232027838
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"item\": \"motorcycle\",\n      \"count\": 1,\n      \"location\": \"center foreground\",\n      \"color\": [\"black\", \"silver\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Sport touring motorcycle, parked on a gravel road.\"\n    },\n    {\n      \"item\": \"helmet\",\n      \"count\": 1,\n      \"location\": \"top center\",\n      \"color\": [\"yellow\", \"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Full-face motorcycle helmet, resting on the motorcycle seat.\"\n    },\n    {\n      \"item\": \"fence\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Wooden fence running horizontally across the background.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"grass\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Tall, dry grass covering the landscape.\"\n    },\n    {\n      \"item\": \"ground\",\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Gravel road surface.\"\n    },\n    {\n      \"item\": \"sky\",\n      \"count\": 1,\n      \"location\": \"top background\",\n      \"size\": \"large\",\n      \"description\": \"Clear, blue sky.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "item": "motorcycle",
+                "count": 1,
+                "location": "center foreground",
+                "color": [
+                  "black",
+                  "silver",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Sport touring motorcycle, parked on a gravel road."
+              },
+              {
+                "item": "helmet",
+                "count": 1,
+                "location": "top center",
+                "color": [
+                  "yellow",
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Full-face motorcycle helmet, resting on the motorcycle seat."
+              },
+              {
+                "item": "fence",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Wooden fence running horizontally across the background."
+              }
+            ],
+            "natural": [
+              {
+                "item": "grass",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Tall, dry grass covering the landscape."
+              },
+              {
+                "item": "ground",
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Gravel road surface."
+              },
+              {
+                "item": "sky",
+                "count": 1,
+                "location": "top background",
+                "size": "large",
+                "description": "Clear, blue sky."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 400,
+            "total_tokens": 918
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5195.215217,
+            "prompt_eval_duration_ms": 89.566106,
+            "generation_duration_ms": 5017.743608,
+            "load_duration_ms": 85.372821,
+            "tokens_per_second": 79.71710618339749
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2907,
+        "total_time_ms": 15071.52076,
+        "average_speed": 79.59184226273689
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a black and silver Kawasaki motorcycle parked on a gravel or dirt road. A bright yellow helmet rests on the seat, providing a striking contrast against the darker tones of the bike. The motorcycle is a touring model, with a large windscreen and panniers suggesting it's equipped for long-distance travel. The background consists of a grassy, slightly hilly landscape with dry, golden-brown vegetation. A weathered, wooden fence runs horizontally across the mid-ground, adding a rustic touch. The lighting appears to be bright and natural, indicating a sunny day, with soft shadows cast on the road and the motorcycle. The composition is focused on the motorcycle, which is positioned slightly off-center, drawing the viewer's eye. The overall impression is one of adventure and travel, with the motorcycle poised and ready for a journey through the countryside. The color palette is dominated by blacks, silvers, yellows, and earthy tones of brown and green.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 202,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5304.141802,
+            "prompt_eval_duration_ms": 400.947885,
+            "generation_duration_ms": 4812.182949,
+            "load_duration_ms": 88.070144,
+            "tokens_per_second": 41.97679143557432
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nIn the foreground, a sleek, black and silver touring motorcycle dominates the view, positioned on a gravelly dirt road. A bright yellow helmet rests atop the seat, adding a striking contrast to the bike's darker tones. The motorcycle's front wheel and part of the engine are clearly visible, showcasing its mechanical details. The road surface is rough and uneven, suggesting a rural or off-road setting. \n\nThe background features a gently sloping, grassy hillside, bathed in sunlight. A weathered, wooden fence runs horizontally across the mid-ground, separating the road from the field. Beyond the fence, the hillside extends upwards, blending into a clear, pale blue sky. The relationship between the foreground and background is one of contrast\u2014the detailed, mechanical motorcycle is set against the natural, expansive landscape. The road acts as a visual connector, leading the eye from the bike into the distant scenery.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 198,
+            "total_tokens": 516
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4897.502889,
+            "prompt_eval_duration_ms": 82.747123,
+            "generation_duration_ms": 4723.309933,
+            "load_duration_ms": 88.469033,
+            "tokens_per_second": 41.91975602038055
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image features a black and silver BMW motorcycle parked on a dirt or gravel road. A bright yellow helmet rests on the motorcycle's seat, suggesting a rider has recently stopped. The motorcycle is positioned at an angle, facing towards the right of the frame. Behind the motorcycle, a grassy, slightly hilly landscape stretches out, with a weathered wooden fence running along the horizon. The scene conveys a sense of travel and perhaps a temporary pause during a journey. The motorcycle and helmet are the central focus, indicating a human presence and the potential for movement. The natural environment provides a backdrop, suggesting an outdoor adventure or a scenic route. There are no visible people or animals in the frame, but the presence of the helmet implies a rider is nearby or has just dismounted. The overall composition suggests a moment of rest or observation within a rural setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 188,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4651.81567,
+            "prompt_eval_duration_ms": 84.363004,
+            "generation_duration_ms": 4474.812345,
+            "load_duration_ms": 90.141615,
+            "tokens_per_second": 42.012934958058
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of freedom, adventure, and perhaps a touch of solitude. The sleek, black motorcycle, parked on a dusty, rural road, suggests a journey underway or a moment of peaceful respite. The bright yellow helmet adds a pop of energy and hints at the rider's personality \u2013 someone who enjoys standing out. The surrounding landscape of dry grass and a weathered fence contributes to a feeling of being away from it all, immersed in nature. The overall tone is positive and inviting, suggesting the promise of open roads and exploration. There's a quiet confidence in the scene, as if the motorcycle is ready to take on any challenge. The image doesn't feel rushed or frantic; instead, it conveys a sense of calm and the simple pleasure of being on the road. It's a visual invitation to escape and embrace the journey.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 172,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4269.773347,
+            "prompt_eval_duration_ms": 83.521703,
+            "generation_duration_ms": 4093.598058,
+            "load_duration_ms": 88.16333,
+            "tokens_per_second": 42.016826655432226
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A touring motorcycle with a windshield and saddlebags.\"\n    },\n    \"helmet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A bright yellow motorcycle helmet resting on the seat.\"\n    },\n    \"fence\": {\n      \"count\": 1,\n      \"location\": \"background, center\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A rustic wooden fence in the distance.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Tall, dry grass covering the hillside.\"\n    },\n    \"hill\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A gentle sloping hill covered in grass.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A touring motorcycle with a windshield and saddlebags."
+              },
+              "helmet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A bright yellow motorcycle helmet resting on the seat."
+              },
+              "fence": {
+                "count": 1,
+                "location": "background, center",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A rustic wooden fence in the distance."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Tall, dry grass covering the hillside."
+              },
+              "hill": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A gentle sloping hill covered in grass."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 323,
+            "total_tokens": 841
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7870.138388,
+            "prompt_eval_duration_ms": 138.918861,
+            "generation_duration_ms": 7639.392404,
+            "load_duration_ms": 88.891535,
+            "tokens_per_second": 42.28084943389956
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2877,
+        "total_time_ms": 26993.372096,
+        "average_speed": 42.04143170066893
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a black motorcycle parked on a dirt path in a rural setting. The motorcycle, which appears to be a sport-touring model, features a sleek design with a prominent windshield and dual exhaust pipes. A bright yellow helmet is placed on the seat of the motorcycle, adding a striking contrast to the black color of the bike. The background consists of a grassy area with patches of dry, brown earth, and a wooden fence running horizontally across the scene. The fence is constructed from wooden posts and wire, suggesting a pastoral or agricultural environment. The sky above is clear and blue, indicating a sunny day with good weather. The lighting in the image is natural, with sunlight casting soft shadows on the ground and the motorcycle, enhancing the overall composition. The image captures a sense of tranquility and adventure, with the motorcycle ready for a ride through the countryside.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 177,
+            "total_tokens": 969
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6965.951364,
+            "prompt_eval_duration_ms": 2009.150539,
+            "generation_duration_ms": 4909.155509,
+            "load_duration_ms": 44.583423,
+            "tokens_per_second": 36.05508109806346
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a black motorcycle is prominently displayed, taking up a significant portion of the visual space. The motorcycle is equipped with a windshield and has a sleek, modern design. A bright yellow helmet is placed on the seat, adding a pop of color to the otherwise monochrome setting. The motorcycle is parked on a dirt path, suggesting a rural or outdoor environment.\n\nIn the background, a rustic wooden fence stretches across the scene, separating the path from a field of dry grass and scattered bushes. The fence, made of rough-hewn logs, adds a sense of depth and context to the image, indicating that the motorcycle is likely in a countryside or semi-wild area. Beyond the fence, the landscape opens up to a vast, open field under a clear sky, reinforcing the sense of solitude and tranquility. The foreground elements, particularly the motorcycle and helmet, draw immediate attention, while the background elements provide a serene and natural setting that contrasts with the mechanical nature of the motorcycle. Together, these layers create a harmonious blend of human-made objects and natural beauty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 224,
+            "total_tokens": 1022
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6329.305896,
+            "prompt_eval_duration_ms": 53.648337,
+            "generation_duration_ms": 6227.333983,
+            "load_duration_ms": 45.018087,
+            "tokens_per_second": 35.97044908969033
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a black motorcycle parked on a dirt path in a rural setting. The motorcycle, which appears to be a sport-touring model, is equipped with a windshield and various accessories, including saddlebags. A bright yellow helmet is placed on the seat of the motorcycle, suggesting that the rider may have temporarily dismounted and is nearby. The helmet's vibrant color contrasts with the motorcycle's dark hue, making it a focal point in the image. The background consists of a grassy area with a wooden fence and some trees, indicating a countryside environment. There are no people or animals visible in the image, but the presence of the helmet implies human activity. The motorcycle and helmet are the primary objects, and their placement suggests a pause in a journey, perhaps for a rest or to explore the surrounding area. The overall scene conveys a sense of adventure and the open road.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 181,
+            "total_tokens": 981
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5125.690321,
+            "prompt_eval_duration_ms": 56.383864,
+            "generation_duration_ms": 5021.180782,
+            "load_duration_ms": 45.006363,
+            "tokens_per_second": 36.04729800784138
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a sense of adventure and freedom, evoking feelings of excitement and anticipation. The motorcycle, parked on a dirt path with an open field and clear sky in the background, suggests a journey or an escape from the ordinary. The bright yellow helmet placed on the seat adds a pop of color, symbolizing safety and readiness, while the natural surroundings create a serene and peaceful atmosphere. The overall tone is positive, as the scene suggests an opportunity for exploration and enjoyment of the outdoors. The combination of the motorcycle, the open space, and the clear weather all contribute to a mood of optimism and eagerness for the road ahead.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 131,
+            "total_tokens": 934
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3728.811856,
+            "prompt_eval_duration_ms": 54.466692,
+            "generation_duration_ms": 3624.030517,
+            "load_duration_ms": 46.468377,
+            "tokens_per_second": 36.14759847785244
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A black and silver motorcycle parked on a dirt path.\"\n    },\n    \"helmet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"A yellow helmet placed on the motorcycle seat.\"\n    },\n    \"fence\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A brown wooden fence in the background.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Green grass covering the ground.\"\n    },\n    \"trees\": {\n      \"count\": 2,\n      \"location\": \"top\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Two trees with green leaves and brown trunks in the background.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A black and silver motorcycle parked on a dirt path."
+              },
+              "helmet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "A yellow helmet placed on the motorcycle seat."
+              },
+              "fence": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A brown wooden fence in the background."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Green grass covering the ground."
+              },
+              "trees": {
+                "count": 2,
+                "location": "top",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Two trees with green leaves and brown trunks in the background."
+              },
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "size": "large",
+                "description": "Clear blue sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 319,
+            "total_tokens": 1301
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9047.181726,
+            "prompt_eval_duration_ms": 102.435735,
+            "generation_duration_ms": 8894.743638,
+            "load_duration_ms": 46.772572,
+            "tokens_per_second": 35.86387792416778
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5207,
+        "total_time_ms": 31196.941163000003,
+        "average_speed": 36.016860919523076
+      }
+    }
+  ]
+}

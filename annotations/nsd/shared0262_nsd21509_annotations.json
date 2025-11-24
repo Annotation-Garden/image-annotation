@@ -1,0 +1,883 @@
+{
+  "image": {
+    "path": "images/original/shared0262_nsd21509.png",
+    "name": "shared0262_nsd21509.png",
+    "id": "shared0262_nsd21509"
+  },
+  "timestamp": "2025-08-30T18:06:11.133677+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a freshly baked pizza, likely homemade, resting on a wooden surface, possibly a cutting board or table. The pizza is generously topped with chunks of sausage, diced tomatoes, and melted cheese that appears to be a blend of white and yellow varieties, suggesting the use of mozzarella and possibly cheddar. The crust is thin and slightly golden, indicating it has been baked to a crisp. The sauce underneath is a vibrant red, likely tomato-based, providing a rich contrast to the other toppings. The lighting in the image is warm and slightly dim, suggesting an indoor setting with soft, ambient light, which enhances the natural colors of the pizza. The composition is centered, with the pizza occupying most of the frame, inviting the viewer to focus on the details of the toppings and the texture of the crust. The overall impression is one of a simple yet appetizing meal, ready to be enjoyed.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 182,
+            "total_tokens": 479
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1405.807946,
+            "prompt_eval_duration_ms": 78.273201,
+            "generation_duration_ms": 1286.707667,
+            "load_duration_ms": 38.324535,
+            "tokens_per_second": 141.44626993972827
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, the most prominent element is the freshly baked pizza, with its golden-brown crust and vibrant toppings. The pizza is generously topped with chunks of sausage, diced tomatoes, and melted cheese, all glistening under the light, suggesting a warm and freshly prepared meal. The crust appears slightly crispy around the edges, indicating it has been baked to a perfect crisp. The background, though slightly out of focus, reveals a wooden surface, likely a table or countertop, which provides a rustic and homely setting for the pizza. The blurred background contrasts with the sharp details of the pizza, emphasizing its inviting appearance and making it the focal point of the image. The relationship between the foreground and background is one of depth and focus, with the pizza drawing the viewer's attention while the wooden surface provides context and a sense of place.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 169,
+            "total_tokens": 472
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1287.385913,
+            "prompt_eval_duration_ms": 29.819212,
+            "generation_duration_ms": 1215.869734,
+            "load_duration_ms": 39.104776,
+            "tokens_per_second": 138.99515324229628
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a freshly baked pizza, sliced and resting on a wooden surface, likely a table or countertop. The pizza is topped with a generous layer of melted cheese, vibrant red tomato slices, and chunks of what appears to be sausage or ground meat, all spread over a tomato-based sauce. There are no people or animals present in the image; the focus is entirely on the pizza. The pizza itself is the sole object in the frame, and it is stationary, suggesting it is ready to be served and enjoyed. The wooden surface beneath the pizza provides a rustic and warm backdrop, enhancing the visual appeal of the dish. The image captures a simple yet inviting scene, emphasizing the delicious and comforting nature of the food.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 146,
+            "total_tokens": 452
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1115.272656,
+            "prompt_eval_duration_ms": 29.647846,
+            "generation_duration_ms": 1045.020066,
+            "load_duration_ms": 38.027119,
+            "tokens_per_second": 139.7102359563687
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the freshly baked pizza evokes a sense of warmth and comfort, primarily due to the inviting appearance of the food. The golden-brown crust, the melted cheese, and the vibrant red of the tomato sauce create a visually appealing contrast that suggests a delicious and satisfying meal. The presence of chunks of sausage and diced tomatoes adds to the sense of hearty, home-cooked goodness, which can trigger feelings of nostalgia and contentment. The slightly charred edges of the crust and the slightly browned cheese hint at a well-cooked pizza, which can further enhance the feeling of anticipation and satisfaction. The overall tone is decidedly positive, as the image conveys a sense of comfort, indulgence, and the simple pleasure of a well-prepared meal. The warm lighting and the rustic wooden surface on which the pizza rests contribute to a cozy, inviting atmosphere, further enhancing the positive emotional response.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 181,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1382.244592,
+            "prompt_eval_duration_ms": 31.993292,
+            "generation_duration_ms": 1306.605242,
+            "load_duration_ms": 39.145282,
+            "tokens_per_second": 138.52692013002041
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"pizza\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"red\", \"yellow\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A freshly baked pizza with tomato sauce, melted cheese, diced tomatoes, and sausage\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "pizza": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "red",
+                  "yellow",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A freshly baked pizza with tomato sauce, melted cheese, diced tomatoes, and sausage"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 81,
+            "total_tokens": 567
+          },
+          "performance_metrics": {
+            "total_duration_ms": 656.247427,
+            "prompt_eval_duration_ms": 43.263104,
+            "generation_duration_ms": 571.851599,
+            "load_duration_ms": 38.605695,
+            "tokens_per_second": 141.64514035047753
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2459,
+        "total_time_ms": 5846.958534,
+        "average_speed": 140.06474392377825
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a freshly baked pizza placed on a wooden surface, likely a cutting board or table. The pizza is round and has been cut into triangular slices, with one slice slightly separated from the rest, suggesting it is ready to be served. The pizza is topped with a generous layer of melted cheese, vibrant red tomato slices, and crumbled pieces of sausage or ground meat, which appear to be seasoned with herbs, adding a touch of green to the mix. The crust is golden-brown, indicating it has been baked to a crisp texture. The background is simple and unfocused, drawing attention to the pizza as the central subject. The lighting is warm and slightly diffused, enhancing the rich colors of the toppings and giving the image a cozy, homemade feel. The overall composition is straightforward, with the pizza centered in the frame, creating a balanced and appetizing visual. The combination of the warm tones of the cheese, the bright red of the tomatoes, and the earthy brown of the sausage creates a visually appealing contrast, making the pizza look inviting and delicious.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 216,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11811.728778,
+            "prompt_eval_duration_ms": 3690.307402,
+            "generation_duration_ms": 8078.886727,
+            "load_duration_ms": 40.055979,
+            "tokens_per_second": 26.736357037674306
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features a freshly baked pizza, which is the central focus. The pizza is sliced into triangular portions, revealing a golden-brown crust and a melted cheese base topped with vibrant red tomato slices and crumbled sausage pieces. The toppings are evenly distributed, and the cheese appears slightly browned, suggesting it was baked to a crisp. The pizza is placed on a wooden surface, likely a cutting board or table, which adds a rustic, warm texture to the scene.\n\nIn the background, the setting is relatively minimal, with the wooden surface extending beyond the pizza, providing a neutral and unobtrusive backdrop. The lighting is warm, casting soft shadows that enhance the texture of both the pizza and the wooden surface. The background elements are simple and understated, ensuring that the pizza remains the primary subject of the image.\n\nThe relationship between the foreground and background is one of contrast and emphasis. The detailed, colorful, and textured pizza in the foreground draws the viewer's attention immediately, while the plain wooden surface in the background serves to highlight the pizza without competing for focus. The warm lighting and the natural wood texture create a cohesive and inviting atmosphere, making the pizza appear appetizing and freshly prepared. The simplicity of the background ensures that the viewer's gaze remains on the pizza, emphasizing its visual appeal and making it the undeniable focal point of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 276,
+            "total_tokens": 579
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10439.674543,
+            "prompt_eval_duration_ms": 73.009976,
+            "generation_duration_ms": 10323.28904,
+            "load_duration_ms": 40.670488,
+            "tokens_per_second": 26.735665244920817
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a freshly baked pizza, showcasing a vibrant and appetizing combination of ingredients. There are no people or animals visible in the image, as it focuses solely on the food item. The pizza is placed on a wooden surface, likely a cutting board or table, which adds a rustic and warm aesthetic to the presentation. The pizza itself is cut into triangular slices, revealing a golden-brown crust that appears crisp and well-cooked. The toppings are prominently displayed, featuring melted cheese as the base, with chunks of diced tomatoes and crumbled sausage pieces scattered across the surface. The cheese has a slightly browned, bubbly texture, indicating it was baked to perfection. The tomatoes add a pop of red color, while the sausage pieces provide a savory contrast. The toppings are evenly distributed, suggesting careful preparation and attention to detail. The overall composition highlights the pizza's inviting appearance, making it the central focus of the image. There are no interactions between elements since the image is static and focused on a single object\u2014the pizza.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 207,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7854.779244,
+            "prompt_eval_duration_ms": 72.393191,
+            "generation_duration_ms": 7742.063475,
+            "load_duration_ms": 37.794077,
+            "tokens_per_second": 26.73705797794431
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the pizza evokes a sense of warmth, comfort, and satisfaction, creating a predominantly positive mood. The vibrant colors of the toppings\u2014rich reds of the tomato sauce and chunks, bright yellows of melted cheese, and earthy browns of the sausage\u2014contribute to a visually appealing and appetizing presentation. The slightly uneven, homemade appearance of the pizza adds a touch of authenticity and informality, suggesting a casual, relaxed atmosphere. The golden-brown crust and the glistening cheese indicate that the pizza is freshly baked, enhancing the feeling of freshness and deliciousness. The wooden surface on which the pizza is placed further adds to the cozy, homey vibe, evoking memories of family gatherings or casual dining experiences. The overall composition, with the pizza slightly off-center and one slice pulled away, gives a dynamic and inviting feel, as if someone is about to enjoy a satisfying meal. The image does not contain any elements that suggest negativity or neutrality; instead, it focuses on the sensory appeal of food, which naturally elicits feelings of hunger, anticipation, and enjoyment. This creates a mood that is uplifting and positive, centered around the simple pleasure of good food.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 240,
+            "total_tokens": 548
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9045.395099,
+            "prompt_eval_duration_ms": 75.850041,
+            "generation_duration_ms": 8928.760973,
+            "load_duration_ms": 38.111965,
+            "tokens_per_second": 26.87942937723886
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"pizza\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"yellow\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Sliced pizza with toppings including tomato, sausage, and cheese.\"\n    },\n    \"pizza toppings\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Includes diced tomatoes and sausage pieces.\"\n    },\n    \"pizza crust\": {\n      \"count\": 1,\n      \"location\": \"edges\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Thin, golden-brown pizza crust.\"\n    }\n  },\n  \"natural\": {\n    \"tomato\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"Diced tomato pieces on the pizza.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "pizza": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "red",
+                  "yellow",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Sliced pizza with toppings including tomato, sausage, and cheese."
+              },
+              "pizza toppings": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "red",
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Includes diced tomatoes and sausage pieces."
+              },
+              "pizza crust": {
+                "count": 1,
+                "location": "edges",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Thin, golden-brown pizza crust."
+              }
+            },
+            "natural": {
+              "tomato": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "Diced tomato pieces on the pizza."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 230,
+            "total_tokens": 716
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8676.296595,
+            "prompt_eval_duration_ms": 134.402147,
+            "generation_duration_ms": 8498.611322,
+            "load_duration_ms": 39.861925,
+            "tokens_per_second": 27.063244956809427
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2869,
+        "total_time_ms": 47827.874259,
+        "average_speed": 26.830350918917542
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image showcases a freshly baked, circular pizza resting on a rustic, light-colored wooden cutting board. The pizza is divided into four triangular slices, suggesting it\u2019s ready to be served. The base is a golden-brown, slightly uneven crust, indicating a hand-crafted preparation.  A vibrant, thick layer of red tomato sauce covers the majority of the surface, speckled with small, glistening droplets. Scattered across the sauce are numerous small, round pieces of cooked sausage, appearing as dark brown and slightly shiny.  The cheese is a generous, melted white, forming creamy pools and patches, particularly around the sausage. \n\nThe lighting is warm and diffused, likely from an overhead source, creating soft shadows and highlighting the textures of the pizza. The overall composition is simple and inviting, focusing entirely on the delicious-looking pizza. The colors are rich and appetizing \u2013 the bright red of the sauce, the dark brown of the sausage, and the creamy white of the cheese. It evokes a feeling of comfort and a freshly prepared meal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 221,
+            "total_tokens": 534
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1730.638247,
+            "prompt_eval_duration_ms": 308.304751,
+            "generation_duration_ms": 1330.79475,
+            "load_duration_ms": 89.052653,
+            "tokens_per_second": 166.06617962687335
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements of the image, presented as a continuous paragraph:\n\nThe foreground is dominated by a freshly baked pizza, presented on a rustic, light-colored wooden cutting board. The pizza itself is circular and appears to be a standard size, with a golden-brown, slightly blistered crust. A vibrant, thick layer of red tomato sauce covers the base, speckled with small, glistening droplets. Scattered across the sauce are numerous, roughly spherical pieces of sausage, appearing dark brown and slightly shiny. Several triangular slices have been cut from the pizza, revealing the layers beneath. \n\nIn the background, the setting is blurred and indistinct, suggesting a kitchen environment. The lighting is warm and soft, likely from an overhead source, casting a gentle glow on the pizza. The blurred background elements \u2013 perhaps a countertop or other kitchen items \u2013 contribute to a sense of depth and focus the viewer's attention entirely on the pizza itself. The contrast between the sharp detail of the pizza and the soft, out-of-focus background creates a simple, appetizing composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 221,
+            "total_tokens": 539
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1447.792139,
+            "prompt_eval_duration_ms": 50.734611,
+            "generation_duration_ms": 1305.793078,
+            "load_duration_ms": 89.027142,
+            "tokens_per_second": 169.24580450257218
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe image presents a freshly prepared pizza, a circular expanse of culinary delight. The pizza\u2019s base is a golden-brown, slightly uneven crust, suggesting a homemade creation. A vibrant, thick layer of tomato sauce blankets the crust, punctuated by glistening, red tomato slices. Scattered across the surface are numerous small, spherical meatballs \u2013 the sausage \u2013 adding a savory element. The sausage pieces appear to be nestled amongst the tomato slices, creating a textural contrast. \n\nThe pizza is divided into four triangular slices, indicating it is ready to be shared. The overall impression is one of abundance and preparation, suggesting a moment of enjoyment is imminent. The pizza stands as the central focus, inviting consumption and connection through shared eating. It\u2019s a simple, inviting scene centered around a delicious meal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 175,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1182.070204,
+            "prompt_eval_duration_ms": 56.794408,
+            "generation_duration_ms": 1034.668128,
+            "load_duration_ms": 85.015495,
+            "tokens_per_second": 169.13635905483306
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of around 200 words:\n\nThe image of this pizza evokes a feeling of comforting warmth and simple satisfaction. The bright red tomato sauce and melted, bubbly mozzarella create a visually appealing and inviting scene, suggesting a moment of relaxed enjoyment. The scattered pieces of sausage add a rustic, hearty element, hinting at a satisfying, substantial meal. The pizza sits on a wooden surface, which further contributes to the feeling of home and casual comfort. There\u2019s a sense of abundance and indulgence, without feeling overly extravagant. The lighting is soft and diffused, contributing to a gentle, inviting atmosphere. The overall tone is decidedly positive, suggesting a moment of pleasure and contentment. It\u2019s a scene that invites the viewer to imagine a shared experience \u2013 perhaps a family dinner or a friendly gathering. The image doesn't carry any negative connotations; instead, it\u2019s a visual representation of simple pleasures and a feeling of well-being.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 208,
+            "total_tokens": 532
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1413.932814,
+            "prompt_eval_duration_ms": 64.234358,
+            "generation_duration_ms": 1259.923488,
+            "load_duration_ms": 87.296588,
+            "tokens_per_second": 165.08938993603394
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"No person detected in the image.\"\n    }\n  },\n  \"animal\": {\n    \"meatball\": {\n      \"count\": 6,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"grey\"],\n      \"size\": \"medium\",\n      \"description\": \"Several meatballs are visible in the center of the pizza.\"\n    }\n  },\n  \"man-made\": {\n    \"pizza\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"red\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A pizza with tomato sauce, cheese, and meatballs.\"\n    },\n    \"pizza_slice\": {\n      \"count\": 4,\n      \"location\": \"all\",\n      \"color\": [\"white\", \"red\", \"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Four pizza slices are visible.\"\n    }\n  },\n  \"natural\": {\n    \"tomato\": {\n      \"count\": 10,\n      \"location\": \"center\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"Several tomato slices are visible.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": "No person detected in the image."
+              }
+            },
+            "animal": {
+              "meatball": {
+                "count": 6,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "grey"
+                ],
+                "size": "medium",
+                "description": "Several meatballs are visible in the center of the pizza."
+              }
+            },
+            "man-made": {
+              "pizza": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "red",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A pizza with tomato sauce, cheese, and meatballs."
+              },
+              "pizza_slice": {
+                "count": 4,
+                "location": "all",
+                "color": [
+                  "white",
+                  "red",
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Four pizza slices are visible."
+              }
+            },
+            "natural": {
+              "tomato": {
+                "count": 10,
+                "location": "center",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "Several tomato slices are visible."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 340,
+            "total_tokens": 858
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2208.647397,
+            "prompt_eval_duration_ms": 70.007092,
+            "generation_duration_ms": 2048.226106,
+            "load_duration_ms": 87.955443,
+            "tokens_per_second": 165.9972983470996
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2959,
+        "total_time_ms": 7983.080801,
+        "average_speed": 167.10700629348244
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a pizza, presented in a close-up, slightly angled perspective. The pizza is cut into three slices, with the remaining portion dominating the frame. The crust appears golden brown and slightly crisp, while the surface is generously covered with a vibrant red tomato sauce. A thick layer of melted mozzarella cheese blankets the sauce, punctuated by evenly distributed, small, browned sausage meatballs. The colors are warm and inviting, with the red of the sauce contrasting against the creamy white cheese and the dark brown of the sausage. The lighting is somewhat diffused, creating soft shadows and highlighting the textures of the pizza's components. The background is a warm, wooden surface, providing a rustic and casual setting. The overall composition is focused and appetizing, emphasizing the pizza's delicious appearance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 167,
+            "total_tokens": 480
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2518.710851,
+            "prompt_eval_duration_ms": 340.154307,
+            "generation_duration_ms": 2088.062915,
+            "load_duration_ms": 87.446161,
+            "tokens_per_second": 79.97843302532864
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a pizza, cut into slices, presented directly to the viewer. The pizza features a base of melted mozzarella cheese, generously topped with a vibrant red tomato sauce and small, browned sausage meatballs. The crust has a slightly golden-brown color with a slightly charred edge. The pizza slices are arranged in a way that reveals the layers of ingredients. The background consists of a wooden surface, likely a table or cutting board, which provides a warm, rustic setting for the pizza. The wood grain is visible, adding texture and depth to the image. The pizza sits directly on the wooden surface, creating a simple and straightforward composition. The focus is clearly on the pizza, with the background serving as a neutral backdrop that highlights its colors and textures.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 169,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2268.333447,
+            "prompt_eval_duration_ms": 64.106697,
+            "generation_duration_ms": 2113.527331,
+            "load_duration_ms": 88.379303,
+            "tokens_per_second": 79.96111406803475
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe image showcases a pizza, the central object, presented on a wooden surface. The pizza is cut into three slices, suggesting it's ready to be enjoyed. A generous layer of bright red tomato sauce covers the crust, which is topped with melted mozzarella cheese, creating a bubbly, slightly browned surface. Scattered across the cheese are small, browned meatballs, adding a savory element to the dish. The wooden surface beneath the pizza provides a rustic backdrop, its grain visible and adding warmth to the scene. The pizza slices are arranged in a way that invites consumption, demonstrating a clear relationship between the food and the potential for enjoyment. The overall composition highlights the pizza as the focal point, emphasizing its appetizing appearance and the promise of a delicious meal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 165,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2217.20653,
+            "prompt_eval_duration_ms": 66.034346,
+            "generation_duration_ms": 2058.369629,
+            "load_duration_ms": 90.156568,
+            "tokens_per_second": 80.16052980735076
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of comforting indulgence and simple pleasure. The close-up shot of the pizza, with its melted cheese and savory sausage, creates a sense of warmth and satisfaction. The slightly rustic appearance, with the uneven distribution of toppings and the visible crust, suggests a homemade quality, adding to the feeling of cozy familiarity. The warm, slightly golden lighting contributes to the inviting atmosphere, making the pizza look appetizing and desirable. There's a nostalgic quality to the image, reminiscent of casual dinners and shared meals. Overall, the tone is overwhelmingly positive, conveying a feeling of contentment and the joy of enjoying a classic, comforting food. It's a visual representation of a moment of simple happiness and relaxation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 144,
+            "total_tokens": 468
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1963.289045,
+            "prompt_eval_duration_ms": 73.551471,
+            "generation_duration_ms": 1797.782693,
+            "load_duration_ms": 89.562189,
+            "tokens_per_second": 80.09866852133501
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"item\": \"pizza\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"yellow\", \"red\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Circular pizza with mozzarella cheese, tomato sauce, and crumbled sausage toppings. Cut into slices.\"\n    },\n    {\n      \"item\": \"slice\",\n      \"count\": 4,\n      \"location\": \"foreground\",\n      \"color\": [\"yellow\", \"red\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Portion of the pizza.\"\n    }\n  ],\n  \"animal\": [\n    {\n      \"item\": \"sausage\",\n      \"count\": 20,\n      \"location\": \"foreground\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Crumpled, cooked sausage pieces scattered across the pizza.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "item": "pizza",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "yellow",
+                  "red",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Circular pizza with mozzarella cheese, tomato sauce, and crumbled sausage toppings. Cut into slices."
+              },
+              {
+                "item": "slice",
+                "count": 4,
+                "location": "foreground",
+                "color": [
+                  "yellow",
+                  "red",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Portion of the pizza."
+              }
+            ],
+            "animal": [
+              {
+                "item": "sausage",
+                "count": 20,
+                "location": "foreground",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Crumpled, cooked sausage pieces scattered across the pizza."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 235,
+            "total_tokens": 753
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3106.673484,
+            "prompt_eval_duration_ms": 92.182564,
+            "generation_duration_ms": 2922.321593,
+            "load_duration_ms": 89.689288,
+            "tokens_per_second": 80.4155164041181
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2674,
+        "total_time_ms": 12074.213357,
+        "average_speed": 80.12285236523346
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a freshly baked pizza, sliced into six uneven pieces, resting on a light-colored wooden surface, likely a cutting board or tabletop. The pizza features a vibrant red tomato sauce base generously covered with melted, creamy white mozzarella cheese. Scattered across the surface are browned, crumbled pieces of what appears to be Italian sausage, adding texture and visual interest. The crust is golden-brown and slightly puffed up around the edges. The lighting is warm and somewhat diffused, creating highlights on the melted cheese and a slight shadow beneath the pizza. The composition is a close-up, focusing entirely on the pizza itself, with the wooden surface providing a neutral backdrop. The overall impression is appetizing and inviting, emphasizing the rustic and homemade quality of the pizza. The image is a simple yet effective food photograph, highlighting the ingredients and textures of the dish.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 180,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4770.605102,
+            "prompt_eval_duration_ms": 404.314367,
+            "generation_duration_ms": 4274.19324,
+            "load_duration_ms": 89.533121,
+            "tokens_per_second": 42.113210585677685
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a freshly baked pizza, taking up the majority of the frame. It's partially sliced into six pieces, revealing a generous layer of melted mozzarella cheese covering a vibrant red tomato sauce. Scattered across the pizza are browned, crumbled meatballs, concentrated more heavily on one side. The crust appears golden and slightly puffed, with a visible rim. The background is a simple, warm-toned wooden surface, likely a cutting board or tabletop. It provides a neutral backdrop that emphasizes the colors and textures of the pizza. The relationship between the elements is straightforward: the pizza is the clear subject, and the wooden surface serves as a supporting element, grounding the image and providing a natural setting for the food. The lighting appears to be somewhat warm, enhancing the appetizing appearance of the pizza.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 176,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4344.846572,
+            "prompt_eval_duration_ms": 82.291071,
+            "generation_duration_ms": 4169.060864,
+            "load_duration_ms": 91.056568,
+            "tokens_per_second": 42.21574252363805
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their relationships:\n\nThe image prominently features a freshly baked pizza, sliced into triangular portions. The pizza boasts a golden-brown crust, generously covered with melted mozzarella cheese and vibrant red tomato sauce. Scattered across the surface are small, browned meatballs, adding a meaty texture to the dish. The pizza rests on a light-colored wooden surface, likely a cutting board or serving tray. The arrangement suggests a meal ready to be enjoyed, with the slices inviting consumption. The interaction is purely visual\u2014the pizza is presented as a complete dish, awaiting interaction from a person who would consume it. The composition focuses on the appetizing appearance of the food, highlighting the textures and colors of the ingredients. The scene is static, capturing a moment before the pizza is eaten.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 166,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4104.132239,
+            "prompt_eval_duration_ms": 82.826648,
+            "generation_duration_ms": 3928.89254,
+            "load_duration_ms": 89.638562,
+            "tokens_per_second": 42.251091957837055
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the partially eaten pizza evokes a feeling of casual comfort and simple enjoyment. The warm tones of the melted cheese and tomato sauce, combined with the slightly messy, imperfect arrangement of the toppings, create a relaxed and inviting atmosphere. It feels like a moment of unpretentious indulgence, perhaps a cozy night in or a casual gathering with friends. The fact that slices have already been taken suggests a shared experience and a sense of contentment. The lighting is soft, contributing to the overall warmth and inviting feel. There isn't a strong emotional charge, but rather a gentle, positive mood of satisfaction and ease. It\u2019s a comforting image that speaks to the pleasure of good food and good company, or simply enjoying a moment of self-care.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 152,
+            "total_tokens": 476
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3806.541551,
+            "prompt_eval_duration_ms": 85.207324,
+            "generation_duration_ms": 3632.232252,
+            "load_duration_ms": 86.693037,
+            "tokens_per_second": 41.84754427977586
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"pizza\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"red\",\n        \"white\",\n        \"brown\"\n      ],\n      \"size\": \"large\",\n      \"description\": \"A circular pizza with tomato sauce, mozzarella cheese, and meatball toppings. It's been sliced into pieces.\"\n    },\n    \"meatballs\": {\n      \"count\": 8,\n      \"location\": \"scattered across pizza\",\n      \"color\": [\n        \"brown\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"Small, round meatballs are distributed across the pizza.\"\n    }\n  },\n  \"natural\": {\n    \"tomato\": {\n      \"count\": 10,\n      \"location\": \"scattered across pizza\",\n      \"color\": [\n        \"red\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"Sliced tomatoes are scattered across the pizza.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "pizza": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "red",
+                  "white",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A circular pizza with tomato sauce, mozzarella cheese, and meatball toppings. It's been sliced into pieces."
+              },
+              "meatballs": {
+                "count": 8,
+                "location": "scattered across pizza",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Small, round meatballs are distributed across the pizza."
+              }
+            },
+            "natural": {
+              "tomato": {
+                "count": 10,
+                "location": "scattered across pizza",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "Sliced tomatoes are scattered across the pizza."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 247,
+            "total_tokens": 765
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6083.814666,
+            "prompt_eval_duration_ms": 140.20108,
+            "generation_duration_ms": 5852.892344,
+            "load_duration_ms": 88.22002,
+            "tokens_per_second": 42.20135712101524
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2715,
+        "total_time_ms": 23109.940129999995,
+        "average_speed": 42.125789293588774
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a freshly baked pizza placed on a wooden surface. The pizza is cut into eight equal slices, showcasing a variety of toppings including chunks of sausage, slices of red bell peppers, and what appears to be diced onions or mushrooms. The cheese is melted and bubbly, with a rich golden-brown hue in some areas, indicating it has been baked to perfection. The crust is slightly charred at the edges, adding to the rustic appeal. The lighting is warm and natural, likely coming from above, which enhances the vibrant colors of the toppings and the melted cheese. The wooden surface underneath provides a contrasting texture to the smooth, gooey surface of the pizza, adding depth to the overall composition. The image captures the inviting and appetizing nature of the pizza, making it look ready to be enjoyed.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 171,
+            "total_tokens": 963
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6862.047849,
+            "prompt_eval_duration_ms": 2045.343596,
+            "generation_duration_ms": 4768.238784,
+            "load_duration_ms": 45.228838,
+            "tokens_per_second": 35.86229795659495
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the primary focus is a freshly baked pizza, which is sliced into eight even pieces and placed on a wooden surface. The pizza is topped with a variety of ingredients, including chunks of sausage, slices of red bell peppers, and what appears to be diced onions or another type of vegetable, all generously covered in melted cheese. The cheese has a slightly golden, bubbly texture, indicating it has been baked to perfection. The vibrant colors of the toppings contrast beautifully with the creamy cheese, making the pizza look appetizing and inviting.\n\nIn the background, the setting is minimalistic, featuring a plain wooden surface that extends beyond the pizza. The simplicity of the background ensures that the viewer's attention remains on the pizza, highlighting its details and textures without any distractions. The wooden surface provides a warm, rustic feel that complements the homemade or artisanal appeal of the pizza. Together, the foreground and background elements create a harmonious composition that emphasizes the pizza as the star of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 214,
+            "total_tokens": 1012
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6046.968115,
+            "prompt_eval_duration_ms": 55.111937,
+            "generation_duration_ms": 5943.215272,
+            "load_duration_ms": 45.599267,
+            "tokens_per_second": 36.007445499779976
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a pizza placed on a wooden surface. The pizza is topped with a variety of ingredients, including slices of red bell peppers, chunks of sausage, and green olives. The cheese is melted and slightly browned in spots, indicating it has been baked. The pizza is cut into eight slices, with some slices partially overlapping each other. The vibrant colors of the toppings contrast with the golden-brown crust, making the pizza visually appealing. There are no people or animals visible in the image, and the focus is solely on the pizza and its toppings. The arrangement of the toppings appears to be evenly distributed, suggesting careful preparation. The wooden surface beneath the pizza provides a rustic backdrop, enhancing the overall presentation. The image captures a moment of stillness, with the pizza ready to be served and enjoyed.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 169,
+            "total_tokens": 969
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4812.735149,
+            "prompt_eval_duration_ms": 55.534214,
+            "generation_duration_ms": 4706.988202,
+            "load_duration_ms": 47.281443,
+            "tokens_per_second": 35.90406279926342
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the pizza evokes a warm and inviting mood, primarily conveying feelings of comfort, satisfaction, and anticipation. The overall tone is positive, largely due to the vibrant colors and the inviting presentation of the food. The melted cheese, rich tomato sauce, and an assortment of toppings create a sense of abundance and indulgence, suggesting a hearty and delicious meal. The golden-brown crust adds to the appeal, indicating a perfect bake that promises a satisfying crunch. The way the pizza is sliced and ready to be served enhances the feeling of anticipation, as if inviting the viewer to partake in the meal. The casual setting on a wooden table further contributes to the cozy and homely atmosphere, making the scene feel approachable and comforting. Overall, the image elicits positive emotions associated with enjoyment, sharing, and the simple pleasures of good food.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 176,
+            "total_tokens": 979
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4997.93881,
+            "prompt_eval_duration_ms": 57.497811,
+            "generation_duration_ms": 4893.332158,
+            "load_duration_ms": 44.004664,
+            "tokens_per_second": 35.96731109133099
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"pizza\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"yellow\", \"white\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A pizza with various toppings including tomatoes, cheese, and ground meat.\"\n    },\n    \"pizza slice\": {\n      \"count\": 8,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"yellow\", \"white\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Individual slices of the pizza.\"\n    }\n  },\n  \"natural\": {\n    \"tomato\": {\n      \"count\": 10,\n      \"location\": \"center\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"Tomato slices as pizza topping.\"\n    },\n    \"cheese\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"Melted cheese covering the pizza.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "pizza": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "red",
+                  "yellow",
+                  "white",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A pizza with various toppings including tomatoes, cheese, and ground meat."
+              },
+              "pizza slice": {
+                "count": 8,
+                "location": "center",
+                "color": [
+                  "red",
+                  "yellow",
+                  "white",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Individual slices of the pizza."
+              }
+            },
+            "natural": {
+              "tomato": {
+                "count": 10,
+                "location": "center",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "Tomato slices as pizza topping."
+              },
+              "cheese": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "Melted cheese covering the pizza."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 248,
+            "total_tokens": 1230
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7063.726912,
+            "prompt_eval_duration_ms": 98.163329,
+            "generation_duration_ms": 6915.294894,
+            "load_duration_ms": 47.240887,
+            "tokens_per_second": 35.862534252179934
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5153,
+        "total_time_ms": 29783.416834999996,
+        "average_speed": 35.92073031982985
+      }
+    }
+  ]
+}

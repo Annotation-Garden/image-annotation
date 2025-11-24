@@ -1,0 +1,805 @@
+{
+  "image": {
+    "path": "images/original/shared0223_nsd18484.png",
+    "name": "shared0223_nsd18484.png",
+    "id": "shared0223_nsd18484"
+  },
+  "timestamp": "2025-08-30T17:45:06.382729+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a serene scene in a lush green savanna, likely taken during the day under natural sunlight. The main elements are two zebras, their distinctive black and white stripes standing out sharply against the vibrant green backdrop of the grassy field. The zebras are positioned close to each other, with one slightly in front of the other, creating a sense of depth and interaction. The zebra in the foreground appears to be younger, with a more slender build and a lighter coat, while the one in the background is larger and more robust, suggesting it might be an adult. The lighting is bright and even, suggesting a clear day with no harsh shadows, which enhances the vividness of the zebras' stripes and the lushness of the grass. The composition is natural and unposed, giving the impression of a snapshot from a wildlife documentary, capturing the beauty and tranquility of these animals in their natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 186,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1508.706611,
+            "prompt_eval_duration_ms": 80.180977,
+            "generation_duration_ms": 1383.55773,
+            "load_duration_ms": 41.19,
+            "tokens_per_second": 134.43602385857798
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, two zebras stand prominently, their black and white stripes sharply contrasting against the lush green grass beneath them. The zebra on the left appears slightly larger, suggesting it might be an adult, while the smaller zebra on the right could be a juvenile or a younger individual. Both zebras are facing towards the right side of the frame, their heads slightly turned as if observing something in the distance. The background is a soft blur of green, indicating a vast expanse of grassland, which provides a natural and serene setting for the zebras. This blurred background helps to emphasize the zebras as the primary subjects of the image, creating a sense of depth and drawing the viewer's attention directly to them. The overall composition suggests a peaceful moment in the wild, where the zebras are calmly coexisting in their natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 171,
+            "total_tokens": 474
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1345.807362,
+            "prompt_eval_duration_ms": 29.756568,
+            "generation_duration_ms": 1270.773401,
+            "load_duration_ms": 40.031621,
+            "tokens_per_second": 134.56372305671198
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, two zebras are captured in a grassy savanna, their black and white stripes contrasting sharply against the green backdrop. The zebra on the left is slightly ahead, its body angled as if it is leading the way, while the zebra on the right appears to be following closely behind, its head turned towards the other, possibly communicating or simply observing. Both zebras are standing on their hind legs, which is a common posture for zebras when they are alert or when they want to get a better view of their surroundings. The grassy field they are in suggests a natural habitat, likely a savanna or grassland where zebras are commonly found. There are no other animals or objects visible in the image, and the focus is solely on the two zebras and their interaction within their environment. The relationship between the two zebras seems to be that of companions, possibly a mother and her young, or two individuals in a social group. Their actions and positions suggest a sense of mutual awareness and cooperation, typical of their species in the wild.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 217,
+            "total_tokens": 523
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1702.658571,
+            "prompt_eval_duration_ms": 30.146574,
+            "generation_duration_ms": 1628.408644,
+            "load_duration_ms": 40.921833,
+            "tokens_per_second": 133.2589339902816
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of tranquility and harmony, with a positive tone that is accentuated by the natural setting and the peaceful interaction between the two zebras. The lush green grass and the open sky create a serene backdrop, suggesting a healthy, thriving environment. The zebras' relaxed postures and gentle proximity to each other convey a sense of companionship and mutual trust, which adds to the overall feeling of calm and contentment. The stripes of the zebras, a distinctive feature that stands out against the greenery, add a visual rhythm and pattern that is pleasing to the eye, further enhancing the positive and peaceful mood of the image. The absence of any signs of distress or conflict between the animals or in the environment contributes to the sense of a harmonious and idyllic scene, making the viewer feel a sense of well-being and appreciation for the beauty of nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 179,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1420.322461,
+            "prompt_eval_duration_ms": 30.18438,
+            "generation_duration_ms": 1344.942447,
+            "load_duration_ms": 42.047733,
+            "tokens_per_second": 133.09119687557902
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"zebra\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"two zebras standing close to each other in a grassy field\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"a lush green grassy field\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "zebra": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "large",
+                "description": "two zebras standing close to each other in a grassy field"
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "a lush green grassy field"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 126,
+            "total_tokens": 612
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1014.02174,
+            "prompt_eval_duration_ms": 43.789849,
+            "generation_duration_ms": 926.086324,
+            "load_duration_ms": 40.936189,
+            "tokens_per_second": 136.05643095535012
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2579,
+        "total_time_ms": 6991.516745,
+        "average_speed": 134.28126174730014
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a serene natural setting featuring two zebras standing in a grassy field. The main elements are the zebras, which are the focal point of the composition. The zebras are positioned side by side, with one slightly in front of the other, creating a sense of depth and interaction. Their distinctive black-and-white striped patterns are vivid and stand out against the lush green backdrop of the grassy field. The stripes vary in thickness and alignment, adding texture and visual interest to the scene.\n\nThe setting appears to be a savanna or open grassland, characterized by the expansive, flat terrain covered in short, vibrant green grass. The lighting is soft and natural, suggesting it might be taken during the early morning or late afternoon, as the light is diffused and not overly harsh. This lighting enhances the warm tones of the zebras' coats and the greenery, giving the image a tranquil and harmonious feel.\n\nThe overall composition is balanced, with the zebras centrally placed, drawing the viewer's attention to their striking patterns and the natural beauty of the scene. The background is slightly blurred, which emphasizes the zebras while still providing context for the environment. The image captures a peaceful moment in nature, highlighting the elegance and grace of the zebras in their natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 260,
+            "total_tokens": 557
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13316.518984,
+            "prompt_eval_duration_ms": 3615.848495,
+            "generation_duration_ms": 9656.295828,
+            "load_duration_ms": 40.891014,
+            "tokens_per_second": 26.925438556479158
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, two zebras are prominently featured, standing close to each other on a grassy plain. The zebra in the front is slightly turned, showcasing its distinctive black-and-white striped pattern, while the other zebra is positioned slightly behind and to the side, partially overlapping the first. The zebras' stripes are sharp and well-defined, creating a striking contrast against the green grass beneath them. Their posture and proximity suggest a sense of companionship or familial connection, as they appear to be standing together in a natural, relaxed manner.\n\nThe background consists of a vast, open grassland that stretches into the distance. The grass is lush and green, indicating a healthy, thriving ecosystem. The background is less detailed and slightly blurred, which helps to emphasize the zebras in the foreground. The horizon line is visible, with a hint of a slightly hilly or undulating landscape, adding depth to the scene. The overall setting appears to be a savanna or open plain, typical of the natural habitat of zebras.\n\nThe relationship between the foreground and background is one of contrast and harmony. The zebras, as the focal point, are sharply defined and detailed, drawing the viewer's attention immediately. The background, while less detailed, provides context and a sense of place, reinforcing the natural environment in which the zebras live. The green grass in both the foreground and background creates a visual continuity, tying the elements together and emphasizing the unity of the ecosystem. The blurred background also helps to create a sense of depth, making the zebras appear more prominent and emphasizing their presence in the vast landscape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 327,
+            "total_tokens": 630
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12226.047178,
+            "prompt_eval_duration_ms": 72.848902,
+            "generation_duration_ms": 12109.021008,
+            "load_duration_ms": 40.545658,
+            "tokens_per_second": 27.004660391947684
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts two zebras standing in a grassy field, likely in a savanna or similar natural habitat. There are no people visible in the image. The zebras are the primary subjects, and their actions and interactions are the focus. One zebra, positioned slightly behind and to the side of the other, appears to be nuzzling or gently interacting with the other zebra's neck or shoulder area. This behavior suggests a social or bonding interaction, which is common among zebras as a form of grooming or affection. The zebras' stripes are clearly visible, creating a striking contrast against the green grassy background. The animals seem calm and at ease, indicating a peaceful environment. There are no other animals or objects in the image, and the focus is entirely on the zebras and their interaction. The grassy field provides a natural setting, emphasizing the zebras' connection to their habitat. The overall scene conveys a sense of harmony and the social nature of these animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 201,
+            "total_tokens": 507
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7588.785373,
+            "prompt_eval_duration_ms": 71.364406,
+            "generation_duration_ms": 7472.019967,
+            "load_duration_ms": 41.860192,
+            "tokens_per_second": 26.900356381234495
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the two zebras standing close together in a lush, green grassy field conveys a mood of serenity, companionship, and natural harmony. The zebras' relaxed posture and proximity to each other suggest a sense of trust and mutual support, evoking feelings of warmth and connection. The vibrant greenery in the background adds to the overall positive tone, symbolizing vitality and the beauty of the natural world. The soft lighting enhances the tranquil atmosphere, creating a sense of calm and peacefulness.\n\nThe visual elements that contribute to this emotional atmosphere include the zebras' striking black-and-white stripes, which are visually striking yet harmonious, reflecting the balance and order found in nature. The expansive grassy field provides a sense of openness and freedom, reinforcing the idea of a carefree and untamed environment. The zebras' gentle interaction, with one appearing to nuzzle or rest its head on the other, adds a layer of tenderness and affection, further enhancing the positive emotional tone. Overall, the image evokes feelings of awe for the natural world, comfort in companionship, and a sense of being at peace with nature. The tone is decidedly positive, celebrating the beauty and interconnectedness of life.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 247,
+            "total_tokens": 555
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9349.743782,
+            "prompt_eval_duration_ms": 72.442747,
+            "generation_duration_ms": 9233.404754,
+            "load_duration_ms": 38.938673,
+            "tokens_per_second": 26.75069560803096
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"zebra\": {\n      \"count\": 2,\n      \"location\": \"center, foreground\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Two zebras standing close together, one partially behind the other, displaying their characteristic black and white stripes.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A grassy field covering the background, providing a natural habitat for the zebras.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "zebra": {
+                "count": 2,
+                "location": "center, foreground",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Two zebras standing close together, one partially behind the other, displaying their characteristic black and white stripes."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A grassy field covering the background, providing a natural habitat for the zebras."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 145,
+            "total_tokens": 631
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5548.940726,
+            "prompt_eval_duration_ms": 132.323306,
+            "generation_duration_ms": 5372.59808,
+            "load_duration_ms": 40.452128,
+            "tokens_per_second": 26.988804641794456
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2880,
+        "total_time_ms": 48030.036043,
+        "average_speed": 26.913991115897353
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a detailed description of the image:\n\nThe image captures a serene scene of two zebras standing in a lush, green pasture. The dominant color is a vibrant, almost emerald green, representing the dense grass that covers the ground. The zebras themselves are the focal point, showcasing their distinctive black and white striped coats. One zebra is positioned slightly to the left, with its head turned, while the other stands more centrally, gazing towards the viewer. Their coats display a classic pattern of bold black stripes against a creamy white background. \n\nThe lighting appears to be soft and diffused, suggesting an overcast day, which evenly illuminates the scene. The composition is balanced, with the zebras occupying a significant portion of the frame. The background is slightly blurred, drawing attention to the animals. The overall impression is one of tranquility and natural beauty, highlighting the majestic presence of these iconic African animals in their natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 186,
+            "total_tokens": 499
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1515.701201,
+            "prompt_eval_duration_ms": 306.012067,
+            "generation_duration_ms": 1120.243704,
+            "load_duration_ms": 86.063315,
+            "tokens_per_second": 166.03530047601143
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's elements, broken down as requested:\n\nIn the foreground, two zebras dominate the view. They are strikingly patterned with classic black and white stripes, the black being particularly prominent on their legs and around their eyes. The zebras are positioned in a relaxed stance, with one looking directly at the viewer and the other slightly to the side. Their coats appear slightly ruffled, suggesting a warm, humid environment. The grass beneath them is a vibrant, lush green, providing a strong contrast to the zebras' dark stripes. \n\nThe background establishes a vast, open savanna setting. The grass extends into the distance, blurring slightly due to the depth of field. Beyond the immediate grassy area, there's a hazy, undefined horizon line, indicating a wide-open space. The overall impression is of a vast, sun-drenched landscape, likely in Africa, where zebras naturally inhabit. The foreground and background elements are clearly linked through the zebras' natural habitat, creating a cohesive image of these magnificent animals in their environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 218,
+            "total_tokens": 536
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1452.185285,
+            "prompt_eval_duration_ms": 57.375529,
+            "generation_duration_ms": 1298.905399,
+            "load_duration_ms": 92.721658,
+            "tokens_per_second": 167.83362373259334
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph:\n\nThe image showcases two zebras standing in a lush, green pasture, suggesting a natural African savanna environment. The zebras, one slightly larger than the other, are positioned close together, exhibiting a relaxed and comfortable interaction. Their striped coats \u2013 a striking pattern of black and white \u2013 are clearly visible against the vibrant green grass. The larger zebra is positioned slightly in front, appearing to be observing the scene, while the smaller one stands attentively beside it. Their postures suggest a quiet companionship, possibly a mother and calf or simply two zebras sharing a moment of calm. The grass itself is dense and healthy, providing a rich backdrop for the animals. The overall impression is one of serenity and the natural harmony of wildlife in their habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 161,
+            "total_tokens": 482
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1112.729576,
+            "prompt_eval_duration_ms": 59.638142,
+            "generation_duration_ms": 960.085778,
+            "load_duration_ms": 87.348707,
+            "tokens_per_second": 167.69334958318694
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of approximately 200 words:\n\nThe image evokes a sense of serene tranquility and quiet contemplation. The two zebras, positioned slightly apart yet close enough to suggest a gentle connection, radiate a feeling of peacefulness. Their posture \u2013 relaxed, with heads slightly lowered \u2013 contributes to this calm atmosphere. The lush, vibrant green of the grass in the background further enhances the feeling of natural harmony and abundance. The stripes of the zebras, while striking, don\u2019t feel aggressive or imposing; instead, they blend subtly with the landscape, suggesting a harmonious coexistence. \n\nThe lighting is soft and diffused, adding to the overall feeling of calmness. There\u2019s no sense of urgency or tension, and the scene feels untouched by the stresses of the wild. The composition, with the zebras occupying a central position within the frame, invites the viewer to pause and appreciate the beauty of the natural world.  Ultimately, the image communicates a feeling of quiet wonder and a connection to the serenity of the African savanna.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 225,
+            "total_tokens": 549
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1484.872945,
+            "prompt_eval_duration_ms": 59.385454,
+            "generation_duration_ms": 1335.136483,
+            "load_duration_ms": 87.476749,
+            "tokens_per_second": 168.52209707762137
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"\"\n    }\n  },\n  \"animal\": {\n    \"zebra\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"white\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Two zebras standing in a grassy field. They have distinctive black and white stripes with brown markings on their legs.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Dense, green grass covering the foreground of the image.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": ""
+              }
+            },
+            "animal": {
+              "zebra": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "black",
+                  "white",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Two zebras standing in a grassy field. They have distinctive black and white stripes with brown markings on their legs."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Dense, green grass covering the foreground of the image."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 215,
+            "total_tokens": 733
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1454.702829,
+            "prompt_eval_duration_ms": 64.88317,
+            "generation_duration_ms": 1295.80007,
+            "load_duration_ms": 90.704149,
+            "tokens_per_second": 165.92065780641607
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2799,
+        "total_time_ms": 7020.191836,
+        "average_speed": 167.20100573516584
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image showcases two zebras standing in a lush, green grassy field. The zebras are the primary focus, their distinctive black and white stripes creating a striking pattern against the vibrant green backdrop. The lighting appears to be soft and diffused, suggesting an overcast day or a shaded area, as there are no harsh shadows. The zebras are positioned slightly off-center, with one zebra closer to the viewer than the other, creating a sense of depth. The composition is balanced, with the zebras filling a significant portion of the frame. The grass is dense and appears well-maintained, contributing to a natural and serene setting. The overall color palette is dominated by the contrasting black and white of the zebras and the bright green of the grass, creating a visually appealing and dynamic image. The zebras appear relaxed and alert, adding to the peaceful atmosphere of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 187,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2821.907733,
+            "prompt_eval_duration_ms": 340.143717,
+            "generation_duration_ms": 2387.622309,
+            "load_duration_ms": 90.89602,
+            "tokens_per_second": 78.32059505187007
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a zebra, positioned close to the viewer, creating a sense of immediacy. Its striking black and white stripes are sharply defined, and the texture of its fur is visible, suggesting a close-up perspective. The zebra is partially obscured by tall, vibrant green grass, which adds depth and a naturalistic feel to the scene. The background consists of a continuation of the lush green grassland, blending seamlessly into a slightly blurred horizon. The simplicity of the background emphasizes the zebra as the primary subject, preventing distractions and drawing the viewer's attention to its unique markings. The zebra's presence within this natural setting creates a harmonious relationship between the animal and its environment, conveying a sense of its wild habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 162,
+            "total_tokens": 480
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2237.150201,
+            "prompt_eval_duration_ms": 72.428138,
+            "generation_duration_ms": 2072.070737,
+            "load_duration_ms": 89.711708,
+            "tokens_per_second": 78.1826590700991
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image features two zebras standing in a lush, green grassy field. The zebras are the clear focal point, their striking black and white stripes creating a visually arresting pattern against the vibrant green backdrop. One zebra is positioned slightly in front of the other, suggesting a close relationship, perhaps a pair or a small group. They appear calm and relaxed, likely grazing or simply observing their surroundings. The grass, dense and healthy, provides a natural habitat for the zebras, and its texture contrasts with the smooth fur of the animals. There are no visible people or other objects in the scene, emphasizing the zebras' presence in their natural environment. The overall impression is one of peaceful coexistence and the beauty of wildlife in its habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 166,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2294.794298,
+            "prompt_eval_duration_ms": 68.969635,
+            "generation_duration_ms": 2132.351964,
+            "load_duration_ms": 90.379301,
+            "tokens_per_second": 77.84831153699727
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of peacefulness and quiet observation. The two zebras, captured in a moment of stillness against a vibrant green backdrop, create a feeling of serenity and natural harmony. The zebras' alert yet relaxed posture suggests a cautious awareness of their surroundings, but without any overt signs of stress or fear. The strong contrast of the black and white stripes against the lush green grass creates a visually striking and balanced composition, contributing to a feeling of order and tranquility. The overall tone is positive and evokes a sense of wonder at the beauty and grace of wildlife in their natural habitat. The image feels grounded and authentic, inviting the viewer to pause and appreciate the simple elegance of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 140,
+            "total_tokens": 464
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1943.630439,
+            "prompt_eval_duration_ms": 67.354865,
+            "generation_duration_ms": 1782.059031,
+            "load_duration_ms": 91.055287,
+            "tokens_per_second": 78.56080947073858
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": [\n    {\n      \"zebra\": [\n        {\n          \"count\": 1,\n          \"location\": \"center\",\n          \"color\": [\"black\", \"white\"],\n          \"size\": \"large\",\n          \"description\": \"Standing with head lowered, grazing in a grassy field. Distinctive black and white stripes visible.\"\n        }\n      ]\n    }\n  ],\n  \"natural\": [\n    {\n      \"grass\": [\n        {\n          \"count\": 1,\n          \"location\": \"foreground\",\n          \"color\": [\"green\"],\n          \"size\": \"large\",\n          \"description\": \"Lush green grass covering the ground.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": [
+              {
+                "zebra": [
+                  {
+                    "count": 1,
+                    "location": "center",
+                    "color": [
+                      "black",
+                      "white"
+                    ],
+                    "size": "large",
+                    "description": "Standing with head lowered, grazing in a grassy field. Distinctive black and white stripes visible."
+                  }
+                ]
+              }
+            ],
+            "natural": [
+              {
+                "grass": [
+                  {
+                    "count": 1,
+                    "location": "foreground",
+                    "color": [
+                      "green"
+                    ],
+                    "size": "large",
+                    "description": "Lush green grass covering the ground."
+                  }
+                ]
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 175,
+            "total_tokens": 693
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2420.244045,
+            "prompt_eval_duration_ms": 87.036565,
+            "generation_duration_ms": 2238.83265,
+            "load_duration_ms": 90.662165,
+            "tokens_per_second": 78.1657351656007
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2624,
+        "total_time_ms": 11717.726716,
+        "average_speed": 78.21562205906113
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases two zebras standing in a lush, green grassy field, likely a savanna or grassland environment. The zebras are the dominant elements, displaying their distinctive black and white striped patterns across their bodies. The stripes are sharply defined, creating a visually striking contrast. One zebra is positioned slightly in front, appearing more focused, while the other is partially obscured, creating depth. \n\nThe color palette is dominated by the vibrant green of the grass and the stark black and white of the zebras. Subtle shades of brown are visible in the manes and around the faces of the animals. The lighting appears to be soft and diffused, suggesting an overcast day or a time of day with indirect sunlight. This creates gentle shadows and highlights on the zebras' coats, enhancing their texture. The composition is relatively simple, focusing on the animals and their natural habitat, with a shallow depth of field that keeps the focus on the zebras.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5225.708186,
+            "prompt_eval_duration_ms": 397.698592,
+            "generation_duration_ms": 4736.478671,
+            "load_duration_ms": 88.274124,
+            "tokens_per_second": 42.01433466140483
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by two zebras, positioned closely together. The zebra on the left is more fully in view, showcasing its striking black and white stripes, muscular build, and attentive gaze. The second zebra, partially obscured, shares the same distinctive pattern. Both animals stand in a lush, vibrant green field, with the grass forming a textured base. \n\nThe background is a continuation of this grassy plain, extending into the distance. It appears relatively flat, with a slight variation in the green tones suggesting depth. The background serves as a natural habitat for the zebras, providing a sense of their environment and emphasizing their connection to the landscape. The contrast between the bold stripes of the zebras and the uniform green of the field draws the viewer's attention to the animals, making them the clear focal point of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 184,
+            "total_tokens": 502
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4566.300825,
+            "prompt_eval_duration_ms": 87.354226,
+            "generation_duration_ms": 4385.98477,
+            "load_duration_ms": 89.990326,
+            "tokens_per_second": 41.95181006066284
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features two zebras standing in a lush green field. The zebras are the primary focus, displaying their distinctive black and white striped patterns. One zebra is positioned slightly in front of the other, appearing to be looking towards the viewer with a curious expression. The second zebra is partially obscured, standing close behind. They seem to be calmly grazing or resting in the field, possibly interacting through subtle body language or simply enjoying each other's presence. The vibrant green grass forms the backdrop, providing a natural habitat for the animals. There are no people or other objects visible in the image, emphasizing the zebras' natural environment and their connection to it. The overall impression is one of peaceful coexistence and natural beauty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 155,
+            "total_tokens": 476
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3846.885136,
+            "prompt_eval_duration_ms": 80.03026,
+            "generation_duration_ms": 3668.38915,
+            "load_duration_ms": 92.498461,
+            "tokens_per_second": 42.25287821495165
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image of the zebras evokes a sense of peacefulness and natural harmony. The zebras, standing close together in a lush green field, suggest a feeling of companionship and tranquility. Their striking black and white stripes create a visually captivating pattern, adding to the overall aesthetic appeal. The soft, natural lighting and the vibrant green background contribute to a serene and calming atmosphere. There's a sense of wildness and freedom, but it's tempered by the gentle posture of the animals. The overall tone is decidedly positive and uplifting, inspiring feelings of wonder and appreciation for the beauty of nature. The image feels grounded and authentic, inviting the viewer to connect with the animals and their environment on an emotional level.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 159,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3950.562164,
+            "prompt_eval_duration_ms": 91.042479,
+            "generation_duration_ms": 3766.295622,
+            "load_duration_ms": 90.245729,
+            "tokens_per_second": 42.2165480243335
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"zebra\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Zebras are standing in a grassy field, displaying their characteristic black and white stripes.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A field of green grass covers the ground.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "zebra": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Zebras are standing in a grassy field, displaying their characteristic black and white stripes."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A field of green grass covers the ground."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 150,
+            "total_tokens": 668
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3759.790759,
+            "prompt_eval_duration_ms": 138.096835,
+            "generation_duration_ms": 3528.014692,
+            "load_duration_ms": 89.541203,
+            "tokens_per_second": 42.51682974567386
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2641,
+        "total_time_ms": 21349.247069999998,
+        "average_speed": 42.19048014140533
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts two zebras standing closely together in a grassy field. The zebras are the main elements of the scene, their bodies adorned with striking black and white stripes that create a visually captivating pattern. The stripes are sharp and well-defined, contrasting against each other and their surroundings. The zebra on the left appears slightly smaller, possibly a younger individual, while the one on the right is larger and more robust. The field they are standing in is lush and green, with tall grass swaying gently, suggesting a serene and natural environment. The background is a soft blur of greenery, likely bushes or trees, providing a sense of depth and emphasizing the zebras as the focal point. The lighting in the image is natural, casting a soft glow over the scene, which enhances the vibrant colors and the texture of the zebras' fur and the grass. The overall composition is balanced, with the zebras positioned centrally, drawing the viewer's attention immediately to their unique and beautiful patterns. The image exudes a sense of tranquility and the natural beauty of wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 222,
+            "total_tokens": 1014
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8251.157952,
+            "prompt_eval_duration_ms": 2012.483595,
+            "generation_duration_ms": 6187.321327,
+            "load_duration_ms": 47.630359,
+            "tokens_per_second": 35.87982396053115
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, two zebras are prominently displayed, standing closely together on a grassy field. Their distinctive black and white stripes are clearly visible, and they appear to be interacting with each other, possibly nuzzling or grooming. The zebras are the main focus of the image, drawing the viewer's attention with their striking patterns and close proximity. In the background, a vast expanse of green grass stretches out, providing a natural and serene setting. The background is slightly blurred, which helps to emphasize the zebras in the foreground and create a sense of depth in the image. The green grass in the background complements the zebras, creating a harmonious and cohesive scene. The relationship between the foreground and background elements is one of contrast and balance, with the detailed zebras in the foreground set against the soft, blurred greenery in the background. This composition guides the viewer's eye through the image, from the intricate details of the zebras to the expansive, tranquil landscape beyond.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 207,
+            "total_tokens": 1005
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5858.170511,
+            "prompt_eval_duration_ms": 57.954736,
+            "generation_duration_ms": 5746.744011,
+            "load_duration_ms": 48.111836,
+            "tokens_per_second": 36.02039687234644
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features two zebras standing in a grassy field. The zebras are positioned close to each other, with their bodies almost touching, indicating a sense of companionship or social interaction. One zebra is facing slightly to the left, while the other is facing more directly forward, suggesting they are attentive to their surroundings. Their striped patterns are prominent, with each zebra displaying unique black and white stripes, which are characteristic of their species. The zebras appear to be grazing or exploring the grassy area, as their heads are lowered slightly. The green field in the background provides a natural habitat setting, emphasizing the zebras' connection to their environment. There are no other people, animals, or distinct objects in the image, focusing the viewer's attention solely on the two zebras and their interaction within the grassy landscape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 171,
+            "total_tokens": 971
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4852.905551,
+            "prompt_eval_duration_ms": 57.820454,
+            "generation_duration_ms": 4744.80886,
+            "load_duration_ms": 46.191874,
+            "tokens_per_second": 36.03938642114237
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of two zebras standing close together in a grassy field conveys a mood of tranquility and companionship. The overall tone is positive, evoking feelings of peace, serenity, and connection with nature. The zebras' close proximity suggests a sense of bonding and mutual comfort, which contributes to the warm and harmonious atmosphere. Their relaxed postures, with one zebra gently nuzzling the other, further emphasize a sense of calm and affection. The lush green grass and open field in the background enhance the feeling of freedom and natural beauty, creating a serene and uplifting emotional response. The play of light and shadow on their striped coats adds a touch of elegance and intrigue, making the scene visually captivating. Overall, the image exudes a sense of harmony and well-being, inviting viewers to appreciate the simple yet profound beauty of these animals in their natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 186,
+            "total_tokens": 989
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5262.651673,
+            "prompt_eval_duration_ms": 53.30073,
+            "generation_duration_ms": 5160.053357,
+            "load_duration_ms": 45.2774,
+            "tokens_per_second": 36.04613889266805
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"zebra\": {\n      \"count\": 2,\n      \"location\": \"center, foreground\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Two zebras standing close to each other, facing different directions.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"bottom, background\",\n      \"size\": \"large\",\n      \"description\": \"Green grass covering the ground.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "zebra": {
+                "count": 2,
+                "location": "center, foreground",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Two zebras standing close to each other, facing different directions."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "bottom, background",
+                "size": "large",
+                "description": "Green grass covering the ground."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 122,
+            "total_tokens": 1104
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3534.760467,
+            "prompt_eval_duration_ms": 100.43904,
+            "generation_duration_ms": 3383.666302,
+            "load_duration_ms": 46.917923,
+            "tokens_per_second": 36.055564914273276
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5083,
+        "total_time_ms": 27759.646154000002,
+        "average_speed": 36.00826221219226
+      }
+    }
+  ]
+}

@@ -1,0 +1,935 @@
+{
+  "image": {
+    "path": "images/original/shared0596_nsd44053.png",
+    "name": "shared0596_nsd44053.png",
+    "id": "shared0596_nsd44053"
+  },
+  "timestamp": "2025-08-30T21:10:58.807524+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a close-up of two sheep, their woolly coats a rich, textured brown that contrasts with the pale, almost white background, suggesting a bright, possibly overcast day. The sheep are adorned with small, metallic bells attached to their collars, which are visible around their necks, adding a rustic charm to the scene. The sheep's faces are turned slightly towards each other, creating a sense of interaction or companionship. The lighting is soft and diffused, likely due to the cloudy sky, which enhances the natural colors and textures of the sheep's wool. The overall composition is simple yet evocative, focusing on the intimate details of the sheep's features and the subtle interplay of their wool against the plain backdrop. The simplicity of the setting and the close framing of the subjects emphasize the natural beauty and peacefulness of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 174,
+            "total_tokens": 471
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1408.799008,
+            "prompt_eval_duration_ms": 79.802588,
+            "generation_duration_ms": 1289.028345,
+            "load_duration_ms": 37.773752,
+            "tokens_per_second": 134.9853947548376
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, two sheep are prominently featured, their woolly coats a rich brown, contrasting with the pale, overcast sky in the background. Each sheep is adorned with a bell around its neck, suggesting a pastoral setting where such markings are used for identification and safety. The sheep's wool appears thick and dense, indicating a healthy and well-cared-for animal, and their close proximity to each other suggests a sense of companionship or a shared environment. The background is a simple, uncluttered expanse of sky, which serves to highlight the sheep and their immediate surroundings without any distractions. The relationship between the foreground and background is one of depth and focus, with the sheep in the foreground drawing the viewer's attention while the background provides a serene, natural setting that contextualizes the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 162,
+            "total_tokens": 465
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1269.589783,
+            "prompt_eval_duration_ms": 31.827997,
+            "generation_duration_ms": 1196.564532,
+            "load_duration_ms": 38.957955,
+            "tokens_per_second": 135.38759980560746
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, two sheep are the focal point, standing close together, their woolly coats a mix of brown and white, with the darker shades dominating. Both sheep are adorned with yellow ear tags and have metal bells attached to their collars, which jingle softly as they stand. Their heads are slightly tilted towards each other, suggesting a sense of companionship or mutual interest. The sheep's wool appears thick and fluffy, indicating a healthy coat, and their posture is relaxed, hinting at a calm and peaceful environment. The background is a plain, light sky, which keeps the focus squarely on the sheep and their interaction. There are no other people or animals in the image, and the sheep's interaction is solely with each other, creating a serene and intimate scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 157,
+            "total_tokens": 463
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1234.789861,
+            "prompt_eval_duration_ms": 32.139885,
+            "generation_duration_ms": 1163.370203,
+            "load_duration_ms": 36.768673,
+            "tokens_per_second": 134.9527429833958
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of calm and tranquility, with a slightly nostalgic undertone. The two sheep, adorned with their distinctive bells, stand close together, creating a feeling of companionship and mutual comfort. The soft, textured wool of their coats adds to the gentle and serene atmosphere, while the muted colors of their wool and the background contribute to a peaceful, pastoral mood. The simplicity of the scene, devoid of any distractions, allows the viewer to focus on the sheep and their bond, evoking feelings of contentment and a sense of belonging. The overall tone is positive, as the image suggests a harmonious relationship between the animals and their environment, and a quiet, idyllic moment captured in time. The visual elements, such as the close proximity of the sheep, the softness of their wool, and the simplicity of the background, all work together to create a soothing and positive emotional atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 185,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1450.882431,
+            "prompt_eval_duration_ms": 33.803198,
+            "generation_duration_ms": 1375.563045,
+            "load_duration_ms": 38.994296,
+            "tokens_per_second": 134.49038244553887
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"sheep\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"two sheep standing close together, facing forward\"\n    }\n  },\n  \"man-made\": {\n    \"bell\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"metallic bells attached to sheep's collars\"\n    },\n    \"tag\": {\n      \"count\": 2,\n      \"location\": \"top\",\n      \"color\": [\"yellow\", \"red\"],\n      \"size\": \"small\",\n      \"description\": \"identification tags on sheep's ears\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"clear sky above the sheep\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "sheep": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "white"
+                ],
+                "size": "large",
+                "description": "two sheep standing close together, facing forward"
+              }
+            },
+            "man-made": {
+              "bell": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "metallic bells attached to sheep's collars"
+              },
+              "tag": {
+                "count": 2,
+                "location": "top",
+                "color": [
+                  "yellow",
+                  "red"
+                ],
+                "size": "small",
+                "description": "identification tags on sheep's ears"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "clear sky above the sheep"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 228,
+            "total_tokens": 714
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1756.462655,
+            "prompt_eval_duration_ms": 44.75955,
+            "generation_duration_ms": 1670.662898,
+            "load_duration_ms": 38.208317,
+            "tokens_per_second": 136.4727739347929
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2606,
+        "total_time_ms": 7120.523738,
+        "average_speed": 135.25777878483456
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts two sheep standing close together in what appears to be an outdoor rural setting, likely a farm or pasture. The sheep are the central focus, with their thick, woolly coats in shades of brown and beige, indicating a healthy, well-groomed appearance. Both sheep wear traditional bell collars around their necks, with the bells prominently visible and adding a rustic charm to the scene. The sheep on the left has a yellow tag on its ear, while the one on the right has a red tag, suggesting they are part of a managed herd. The sheep's faces are dark brown, contrasting with their lighter wool, and they appear calm and alert, with one sheep slightly tilting its head toward the other, creating a sense of interaction between them.\n\nThe background is out of focus, but it appears to be an open, natural environment with a pale, possibly overcast sky, which provides soft, diffused lighting. This lighting enhances the texture of the sheep's wool, making it appear fluffy and dense. The overall composition is centered, with the sheep positioned symmetrically, drawing the viewer's attention to their detailed features and the bells. The image conveys a peaceful, pastoral atmosphere, emphasizing the simplicity and charm of rural life.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 253,
+            "total_tokens": 550
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13062.087537,
+            "prompt_eval_duration_ms": 3604.545658,
+            "generation_duration_ms": 9416.718142,
+            "load_duration_ms": 38.323533,
+            "tokens_per_second": 26.86710977060908
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features two sheep, positioned close to the viewer, making them the central focus. Both sheep are brown with thick, woolly coats and are adorned with bells around their necks, suggesting they might be part of a flock or used for grazing purposes. One sheep wears a hat with a yellow tag, while the other has a red tag, indicating some form of identification or management system, possibly for farming or research. The sheep are standing close to each other, creating a sense of companionship or herd behavior.\n\nThe background is relatively simple and unfocused, consisting of a pale, neutral sky that blends into the horizon. There are no distinct or detailed elements in the background, which helps to emphasize the sheep in the foreground. The lack of a complex background ensures that the viewer's attention remains on the sheep, highlighting their features and the bells they wear.\n\nThe relationship between the foreground and background is one of contrast and focus. The sharp, detailed depiction of the sheep in the foreground draws the viewer's eye immediately, while the soft, indistinct background provides a clean, uncluttered space that enhances the prominence of the sheep. This composition effectively isolates the subjects, making them the sole point of interest and allowing the viewer to appreciate the details of their appearance and the context implied by their accessories. The simplicity of the background also suggests an open, rural setting, which aligns with the natural habitat of sheep.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 292,
+            "total_tokens": 595
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11009.022948,
+            "prompt_eval_duration_ms": 80.455818,
+            "generation_duration_ms": 10886.014061,
+            "load_duration_ms": 37.101491,
+            "tokens_per_second": 26.82340830755611
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image shows two sheep standing close to each other, facing the camera. Both sheep are adorned with bells around their necks, which are likely used to track their movements or indicate their presence. The sheep on the left has a tag on its ear, marked with the number \"15,\" while the sheep on the right has a similar tag marked with the number \"13.\" These tags suggest they are part of a managed flock, possibly for agricultural or livestock purposes. The sheep appear calm and are standing still, with their woolly coats appearing thick and well-maintained, indicating they are likely healthy and cared for.\n\nThe sheep's proximity to each other suggests a sense of companionship or herd behavior, which is common in sheep as they are social animals. The bells on their necks not only serve a practical purpose but also add a rustic, pastoral charm to the scene. The overall atmosphere is serene, highlighting the natural and domesticated aspects of these animals. There are no people visible in the image, and the focus is entirely on the sheep and their interaction with their environment and each other. The image captures a moment of quiet coexistence and highlights the relationship between these animals and their role in human agricultural practices.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 247,
+            "total_tokens": 553
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9301.320276,
+            "prompt_eval_duration_ms": 72.420941,
+            "generation_duration_ms": 9186.820947,
+            "load_duration_ms": 39.672806,
+            "tokens_per_second": 26.886340925220605
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the two sheep with bells around their necks conveys a mood of tranquility and pastoral charm. The overall tone is positive, evoking feelings of peace, simplicity, and connection to nature. The sheep, with their soft, fluffy wool and calm demeanor, symbolize innocence and serenity, which are often associated with rural or pastoral settings. The bells add a touch of whimsy and nostalgia, reminiscent of traditional farming practices and the gentle, rhythmic sounds they produce, which can be soothing and comforting.\n\nThe visual elements that contribute to this emotional atmosphere include the warm, earthy tones of the sheep's wool, which create a sense of comfort and natural beauty. The bells, with their shiny, reflective surfaces, add a playful and slightly magical quality, enhancing the image's lightheartedness. The sheep's gentle expressions and the way they stand close to each other suggest companionship and harmony, reinforcing the positive and serene mood. The blurred background ensures that the focus remains on the sheep, further emphasizing their peaceful presence. Overall, the image evokes a sense of calm, warmth, and a deep appreciation for the simple beauty of nature and rural life.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 239,
+            "total_tokens": 547
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9037.848646,
+            "prompt_eval_duration_ms": 74.13187,
+            "generation_duration_ms": 8920.407619,
+            "load_duration_ms": 38.63848,
+            "tokens_per_second": 26.79249763104351
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"sheep\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Two sheep with thick woolly coats, wearing bells around their necks and tags on their ears.\"\n    }\n  },\n  \"man-made\": {\n    \"bell\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"gold\"],\n      \"size\": \"small\",\n      \"description\": \"Metal bells attached to the sheep's necks.\"\n    },\n    \"tag\": {\n      \"count\": 4,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"red\"],\n      \"size\": \"small\",\n      \"description\": \"Ear tags on the sheep, used for identification.\"\n    }\n  },\n  \"natural\": {\n    \"ground\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"dark\"],\n      \"size\": \"large\",\n      \"description\": \"The ground beneath the sheep, appearing dark in color.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "sheep": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Two sheep with thick woolly coats, wearing bells around their necks and tags on their ears."
+              }
+            },
+            "man-made": {
+              "bell": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "gold"
+                ],
+                "size": "small",
+                "description": "Metal bells attached to the sheep's necks."
+              },
+              "tag": {
+                "count": 4,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "red"
+                ],
+                "size": "small",
+                "description": "Ear tags on the sheep, used for identification."
+              }
+            },
+            "natural": {
+              "ground": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "dark"
+                ],
+                "size": "large",
+                "description": "The ground beneath the sheep, appearing dark in color."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 244,
+            "total_tokens": 730
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9236.159465,
+            "prompt_eval_duration_ms": 136.060315,
+            "generation_duration_ms": 9059.801535,
+            "load_duration_ms": 37.719819,
+            "tokens_per_second": 26.932157294767936
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2975,
+        "total_time_ms": 51646.438872,
+        "average_speed": 26.86030278583945
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures two brown sheep positioned very close to each other, creating a strikingly intimate portrait. The setting appears to be an outdoor farm or pasture, suggested by the muted, overcast sky visible in the background. The sheep are the central focus, both exhibiting thick, shaggy brown wool with a slightly darker, almost black, muzzle and eye area. Each sheep wears a dark, black leather collar with a small, golden bell attached to it, dangling down towards its chest. \n\nThe lighting is soft and diffused, likely due to an overcast day, which evenly illuminates the sheep's wool. The color palette is dominated by browns and blacks, with the golden bells providing a subtle contrast. The composition is tight, focusing on the sheep's faces and collars, emphasizing their closeness. The overall effect is one of quiet observation, with a sense of gentle curiosity and perhaps a touch of vulnerability conveyed by the sheep's expressions.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1596.275618,
+            "prompt_eval_duration_ms": 310.170152,
+            "generation_duration_ms": 1195.071693,
+            "load_duration_ms": 88.733483,
+            "tokens_per_second": 166.51720659573851
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements of the image, presented as a continuous paragraph:\n\nThe foreground is dominated by two sheep, positioned very close to the viewer, creating a sense of intimacy. Both sheep are a rich, dark brown with incredibly dense, shaggy wool that appears almost velvety. Each sheep wears a black leather collar with a small, golden bell attached to it, suggesting they are likely livestock being monitored or perhaps part of a performance. Their faces are turned slightly towards the viewer, giving them a curious and somewhat solemn expression. \n\nThe background is a blurred expanse of grey, likely a field or pasture. The lack of detail suggests a distant setting, perhaps a rural landscape. The grey background serves to isolate the sheep, drawing the viewer's attention entirely to their presence. The blurred background creates a shallow depth of field, further emphasizing the sheep and their close proximity to the camera. The overall effect is a simple, yet engaging, composition centered around these two curious animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 204,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1344.982384,
+            "prompt_eval_duration_ms": 55.705049,
+            "generation_duration_ms": 1202.888649,
+            "load_duration_ms": 83.676112,
+            "tokens_per_second": 169.59175744952933
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image captures a charming and slightly comical scene featuring two sheep, closely positioned and interacting. Both sheep are sporting dark, black collars with small, golden bells hanging from them, suggesting they are likely part of a flock or perhaps being monitored. Their faces are turned towards the viewer, creating a direct and engaging gaze. The sheep appear to be leaning slightly towards each other, almost as if they are sharing a moment of quiet contemplation or perhaps simply acknowledging each other's presence. \n\nTheir close proximity and focused expressions suggest a bond or familiarity between them. The bells, a practical element, could be used for tracking or herding, but in this context, they add to the overall feeling of a gentle, rural scene. The overall composition emphasizes the connection between the two animals, creating a heartwarming and simple moment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 183,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1227.587967,
+            "prompt_eval_duration_ms": 51.664722,
+            "generation_duration_ms": 1086.452952,
+            "load_duration_ms": 86.734281,
+            "tokens_per_second": 168.43803467340572
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "This image evokes a feeling of gentle melancholy and quiet contemplation. The two sheep, positioned close together, create a sense of intimacy and shared experience, almost as if they're lost in their own thoughts. Their dark, slightly furrowed brows and the way they\u2019re gazing slightly off-camera contribute to a feeling of introspection and perhaps a touch of sadness. The muted, earthy tones of their wool \u2013 browns and grays \u2013 reinforce this mood, suggesting a quiet, rural setting and a sense of timelessness. The small, worn black collars with the golden bells hanging from them add a subtle layer of nostalgia and perhaps a hint of vulnerability. The close proximity of the sheep, combined with their subdued expressions, creates a feeling of quiet solitude and a gentle, almost wistful atmosphere. The overall tone is decidedly neutral, leaning towards a peaceful but thoughtful sadness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 173,
+            "total_tokens": 497
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1180.610608,
+            "prompt_eval_duration_ms": 58.541706,
+            "generation_duration_ms": 1032.3311,
+            "load_duration_ms": 87.705928,
+            "tokens_per_second": 167.58189305737278
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"item names\": [\n      \"person\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"brown\",\n        \"gray\"\n      ],\n      \"size\": \"large\",\n      \"description\": \"A person (sheep) with a gray muzzle and brown wool. It is wearing a black collar with two bells.\"\n    }\n  },\n  \"animal\": {\n    \"item names\": [\n      \"sheep\"\n    ],\n    \"attributes\": {\n      \"count\": 2,\n      \"location\": [\n        \"left\",\n        \"right\"\n      ],\n      \"color\": [\n        \"brown\",\n        \"gray\"\n      ],\n      \"size\": \"large\",\n      \"description\": \"Two sheep, one on the left and one on the right, both with gray muzzles and brown wool. They are wearing a black collar with two bells.\"\n    }\n  },\n  \"man-made\": {\n    \"item names\": [\n      \"collar\",\n      \"bell\"\n    ],\n    \"attributes\": {\n      \"count\": 2,\n      \"location\": [\n        \"center\",\n        \"center\"\n      ],\n      \"color\": [\n        \"black\",\n        \"gold\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"A black collar with two gold bells attached to it. The collar is around the sheep's neck.\"\n    }\n  },\n  \"natural\": {\n    \"item names\": [],\n    \"attributes\": {}\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "item names": [
+                "person"
+              ],
+              "attributes": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A person (sheep) with a gray muzzle and brown wool. It is wearing a black collar with two bells."
+              }
+            },
+            "animal": {
+              "item names": [
+                "sheep"
+              ],
+              "attributes": {
+                "count": 2,
+                "location": [
+                  "left",
+                  "right"
+                ],
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Two sheep, one on the left and one on the right, both with gray muzzles and brown wool. They are wearing a black collar with two bells."
+              }
+            },
+            "man-made": {
+              "item names": [
+                "collar",
+                "bell"
+              ],
+              "attributes": {
+                "count": 2,
+                "location": [
+                  "center",
+                  "center"
+                ],
+                "color": [
+                  "black",
+                  "gold"
+                ],
+                "size": "small",
+                "description": "A black collar with two gold bells attached to it. The collar is around the sheep's neck."
+              }
+            },
+            "natural": {
+              "item names": [],
+              "attributes": {}
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 382,
+            "total_tokens": 900
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2423.422518,
+            "prompt_eval_duration_ms": 63.357439,
+            "generation_duration_ms": 2273.563321,
+            "load_duration_ms": 84.075205,
+            "tokens_per_second": 168.0181926193205
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2935,
+        "total_time_ms": 7772.879095,
+        "average_speed": 168.02941687907338
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image presents a close-up view of two sheep, dominating the frame with their textured faces. The setting appears to be an overcast, possibly snowy, outdoor environment, suggested by the muted, gray background. The sheep are a rich, warm brown color, with their wool appearing thick and fluffy. Each sheep wears a black collar adorned with two brass bells, adding a touch of rustic charm. The lighting is soft and diffused, creating a gentle illumination that highlights the sheep's woolly texture and the details of their faces. The composition is tightly cropped, focusing solely on the sheep's heads and collars, which creates a sense of intimacy and emphasizes their presence. Small, colorful tags are visible in their ears, likely for identification purposes. The overall impression is one of peacefulness and a connection to nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 175,
+            "total_tokens": 488
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2638.052593,
+            "prompt_eval_duration_ms": 343.992668,
+            "generation_duration_ms": 2205.921519,
+            "load_duration_ms": 85.782821,
+            "tokens_per_second": 79.33192477279606
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationship:\n\nThe image is dominated by two sheep in the foreground, positioned very close to the viewer, creating a sense of intimacy. Their thick, fluffy wool is a warm, earthy brown, and their faces are detailed with dark noses and expressive eyes. Each sheep wears a collar adorned with two brass bells, adding a touch of rustic charm. The sheep\u2019s ears have tags attached, suggesting they are part of a managed flock. The background is a stark, overcast sky, a pale grey that provides a simple, uncluttered backdrop. This minimalist setting emphasizes the sheep as the primary focus, highlighting their texture and form against the muted tones. The lack of detail in the background creates a sense of isolation and draws the viewer's attention entirely to the animals, creating a visually striking contrast between the detailed foreground and the plain background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 184,
+            "total_tokens": 502
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2496.00829,
+            "prompt_eval_duration_ms": 68.012342,
+            "generation_duration_ms": 2335.037786,
+            "load_duration_ms": 90.589361,
+            "tokens_per_second": 78.7995813614641
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image features two sheep as the primary subjects, positioned close together and filling the frame. Both sheep are a rich, warm brown color with thick, fluffy wool. They appear to be standing side-by-side, their heads nearly touching. Each sheep wears a collar from which two brass bells dangle, suggesting they are working animals or part of a flock. The sheep's expressions are gentle, and their eyes are dark and expressive. The background is a plain, light gray, which emphasizes the sheep and creates a simple, uncluttered composition. The sheep's close proximity implies a connection or familiarity, possibly indicating they are part of the same group. The bells on their collars suggest a purpose or function, perhaps signaling their location or movement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 169,
+            "total_tokens": 490
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2306.140353,
+            "prompt_eval_duration_ms": 69.379073,
+            "generation_duration_ms": 2142.994126,
+            "load_duration_ms": 88.764937,
+            "tokens_per_second": 78.86162540046085
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of gentle whimsy and rustic charm. The close-up shot of the two sheep, with their fluffy, brown wool and endearing expressions, creates a sense of closeness and innocence. The presence of the brass bells around their necks adds a touch of playful nostalgia, suggesting a pastoral scene and a connection to traditional farming practices. The soft, diffused lighting contributes to a warm and comforting atmosphere, while the neutral background keeps the focus entirely on the sheep, enhancing their endearing qualities. There's a feeling of peacefulness and contentment radiating from the animals, creating a positive and heartwarming tone. The image feels inviting and evokes a sense of simple joys and rural tranquility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 137,
+            "total_tokens": 461
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1873.450603,
+            "prompt_eval_duration_ms": 67.637875,
+            "generation_duration_ms": 1716.8864,
+            "load_duration_ms": 86.465037,
+            "tokens_per_second": 79.79561140445868
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": [\n    {\n      \"sheep\": [\n        {\n          \"count\": 1,\n          \"location\": \"foreground\",\n          \"color\": [\"brown\", \"tan\"],\n          \"size\": \"large\",\n          \"description\": \"Close-up view of a sheep's head and neck; wearing a collar with two brass bells.\"\n        }\n      ]\n    }\n  ],\n  \"man-made\": [\n    {\n      \"collar\": [\n        {\n          \"count\": 1,\n          \"location\": \"foreground\",\n          \"color\": [\"black\"],\n          \"size\": \"medium\",\n          \"description\": \"Leather collar around the sheep's neck.\"\n        }\n      ]\n    },\n    {\n      \"bell\": [\n        {\n          \"count\": 2,\n          \"location\": \"foreground\",\n          \"color\": [\"gold\", \"brass\"],\n          \"size\": \"small\",\n          \"description\": \"Hanging from the collar.\"\n        }\n      ]\n    }\n  ],\n  \"natural\": [\n    {\n      \"sky\": [\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"size\": \"large\",\n          \"description\": \"Overcast and bright.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": [
+              {
+                "sheep": [
+                  {
+                    "count": 1,
+                    "location": "foreground",
+                    "color": [
+                      "brown",
+                      "tan"
+                    ],
+                    "size": "large",
+                    "description": "Close-up view of a sheep's head and neck; wearing a collar with two brass bells."
+                  }
+                ]
+              }
+            ],
+            "man-made": [
+              {
+                "collar": [
+                  {
+                    "count": 1,
+                    "location": "foreground",
+                    "color": [
+                      "black"
+                    ],
+                    "size": "medium",
+                    "description": "Leather collar around the sheep's neck."
+                  }
+                ]
+              },
+              {
+                "bell": [
+                  {
+                    "count": 2,
+                    "location": "foreground",
+                    "color": [
+                      "gold",
+                      "brass"
+                    ],
+                    "size": "small",
+                    "description": "Hanging from the collar."
+                  }
+                ]
+              }
+            ],
+            "natural": [
+              {
+                "sky": [
+                  {
+                    "count": 1,
+                    "location": "background",
+                    "size": "large",
+                    "description": "Overcast and bright."
+                  }
+                ]
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 313,
+            "total_tokens": 831
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4146.636274,
+            "prompt_eval_duration_ms": 89.344947,
+            "generation_duration_ms": 3966.059951,
+            "load_duration_ms": 88.535827,
+            "tokens_per_second": 78.91963406177972
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2772,
+        "total_time_ms": 13460.288113,
+        "average_speed": 79.14167540019189
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features two sheep standing close together, filling most of the frame. They are covered in thick, curly, dark brown fleece, giving them a somewhat shaggy appearance. Each sheep wears a dark leather strap around its neck with a small, golden bell attached. Both sheep have yellow tags attached to their ears, likely for identification purposes. The lighting appears to be soft and diffused, suggesting an overcast day or a shaded area. The background is a muted, pale grey, possibly a cloudy sky or a stone wall, which is out of focus. The composition is a close-up shot, focusing on the faces and upper bodies of the sheep. The overall tone is rustic and natural, emphasizing the texture of the wool and the simple, pastoral life of the animals. The image evokes a sense of calm and tranquility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 175,
+            "total_tokens": 488
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4641.16185,
+            "prompt_eval_duration_ms": 403.621487,
+            "generation_duration_ms": 4144.079676,
+            "load_duration_ms": 91.155566,
+            "tokens_per_second": 42.22891780133815
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by the close-up view of two sheep, filling most of the frame. Their thick, curly, brown fleece is highly textured and detailed, and they are positioned very close together, almost touching noses. Each sheep wears a dark leather strap around its neck with a small, golden bell attached. The sheep's ears are visible, and one has a yellow tag attached. The background is indistinct and appears to be a muted, overcast sky, suggesting an outdoor setting, likely a field or pasture. The shallow depth of field keeps the focus firmly on the sheep, blurring the background and emphasizing their presence. The relationship between the layers is one of immediate intimacy\u2014the viewer is brought very close to the animals\u2014with the muted background serving as a neutral backdrop that doesn\u2019t distract from the sheep's textures and details.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 186,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4569.695848,
+            "prompt_eval_duration_ms": 81.033287,
+            "generation_duration_ms": 4399.077346,
+            "load_duration_ms": 87.200686,
+            "tokens_per_second": 42.281593473032785
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features two sheep standing close together, almost nose-to-nose. Both sheep are covered in thick, curly, brown fleece, giving them a fluffy appearance. Each sheep wears a dark leather strap around its neck with a small, golden bell attached. The bells suggest these sheep are part of a flock and likely roam freely, as bells are used for tracking and locating livestock. The sheep appear to be interacting with each other, possibly sniffing or nudging noses, indicating a social connection within the flock. The close proximity and shared adornment of the bells highlight their companionship and shared existence. The image captures a moment of peaceful interaction between these animals, emphasizing their natural behavior and connection within their environment. There are no people visible in the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 161,
+            "total_tokens": 482
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3990.533488,
+            "prompt_eval_duration_ms": 88.899074,
+            "generation_duration_ms": 3811.819098,
+            "load_duration_ms": 87.364479,
+            "tokens_per_second": 42.23705161781526
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image of the two sheep evokes a sense of rustic simplicity and gentle curiosity. Their close proximity and direct gaze towards the camera create an intimate and almost playful mood. The sheep\u2019s thick, textured wool suggests warmth and a connection to nature, contributing to a feeling of peacefulness. The small brass bells around their necks add a charming, slightly whimsical touch, hinting at a pastoral lifestyle. The overall tone is decidedly positive and heartwarming. There's a sense of quiet contentment and a subtle invitation to connect with the natural world. The image doesn\u2019t convey any sadness or tension; instead, it feels grounded and reassuring, like a glimpse into a tranquil rural scene. The soft, earthy tones further enhance this feeling of calm and serenity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 165,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4068.39403,
+            "prompt_eval_duration_ms": 83.799686,
+            "generation_duration_ms": 3896.444059,
+            "load_duration_ms": 85.903538,
+            "tokens_per_second": 42.3463028088093
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"sheep\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"Both sheep are wearing bells around their necks and have ear tags.\"\n    }\n  },\n  \"man-made\": {\n    \"bell\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"gold\"],\n      \"size\": \"small\",\n      \"description\": \"Attached to the sheep's collars.\"\n    },\n    \"ear tag\": {\n      \"count\": 2,\n      \"location\": \"top\",\n      \"color\": [\"yellow\", \"red\"],\n      \"size\": \"small\",\n      \"description\": \"Attached to the sheep's ears, likely for identification.\"\n    },\n    \"collar\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Securing the bells around the sheep's necks.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "sheep": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "beige"
+                ],
+                "size": "medium",
+                "description": "Both sheep are wearing bells around their necks and have ear tags."
+              }
+            },
+            "man-made": {
+              "bell": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "gold"
+                ],
+                "size": "small",
+                "description": "Attached to the sheep's collars."
+              },
+              "ear tag": {
+                "count": 2,
+                "location": "top",
+                "color": [
+                  "yellow",
+                  "red"
+                ],
+                "size": "small",
+                "description": "Attached to the sheep's ears, likely for identification."
+              },
+              "collar": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "Securing the bells around the sheep's necks."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 268,
+            "total_tokens": 786
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6522.965275,
+            "prompt_eval_duration_ms": 140.672524,
+            "generation_duration_ms": 6295.890169,
+            "load_duration_ms": 84.050622,
+            "tokens_per_second": 42.56745159240404
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2749,
+        "total_time_ms": 23792.750491,
+        "average_speed": 42.332263458679904
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features two sheep standing close together, with their heads almost touching, creating a sense of intimacy and connection. The sheep have thick, curly wool that appears to be a mix of brown and light tan colors, giving them a fluffy and textured appearance. Each sheep is adorned with a bell around its neck, which are metallic and hang down, adding a rustic charm to the scene. The bells are attached to leather straps that also hold tags, possibly for identification purposes. The background is a soft, blurred white, likely indicating a snowy or overcast setting, which provides a calm and serene atmosphere. The lighting is soft and diffused, highlighting the texture of the sheep's wool and creating gentle shadows that add depth to the image. The overall composition is balanced, with the two sheep being the central focus, drawing the viewer's attention to their expressive faces and the intricate details of their wool and accessories.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 188,
+            "total_tokens": 980
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7370.609313,
+            "prompt_eval_duration_ms": 2053.002086,
+            "generation_duration_ms": 5269.17166,
+            "load_duration_ms": 44.79103,
+            "tokens_per_second": 35.679232359645695
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, two sheep are prominently featured, positioned closely together and facing the viewer. Their woolly coats are thick and curly, with one sheep sporting a light brown hue and the other a darker shade. Each sheep has a bell attached to a collar around its neck, and the bells are clearly visible, adding a rustic charm to the scene. The sheep on the left has a red tag on its ear, while the one on the right has a yellow tag, possibly indicating identification or ownership details.\n\nIn the background, the setting appears to be a snowy landscape, providing a stark contrast to the warm tones of the sheep. The snow-covered ground extends into the distance, creating a sense of depth and emphasizing the pastoral environment. The background elements, though less detailed, complement the foreground by setting a serene, wintry atmosphere that highlights the sheep as the main subjects of the image. The relationship between the foreground and background layers is harmonious, with the sheep in sharp focus against the softly blurred snowy backdrop, creating a visually pleasing composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 216,
+            "total_tokens": 1014
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6118.366525,
+            "prompt_eval_duration_ms": 61.233173,
+            "generation_duration_ms": 6006.097018,
+            "load_duration_ms": 47.852768,
+            "tokens_per_second": 35.963455027892124
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features two sheep standing closely together, facing the camera. Each sheep is adorned with a bell around its neck, which are likely used for tracking or identification purposes. The bells are metallic and hang from straps that are fastened around the sheep's necks. The sheep on the left has a red tag on its ear, while the sheep on the right has a yellow tag. These tags are typically used for individual identification within a flock. The sheep appear to be calm and are looking directly at the camera, suggesting they are accustomed to human presence. Their close proximity indicates a sense of companionship or social bonding common among sheep. The bells and tags signify human intervention and care, highlighting the domesticated nature of these animals. The overall scene depicts a peaceful interaction between the sheep and their environment, with the bells and tags serving as indicators of their managed status within a pastoral setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 179,
+            "total_tokens": 979
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5067.312837,
+            "prompt_eval_duration_ms": 63.030099,
+            "generation_duration_ms": 4956.632502,
+            "load_duration_ms": 44.349594,
+            "tokens_per_second": 36.11322806921303
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of two sheep standing close together evokes a sense of calm and companionship, creating a predominantly positive mood. The sheep's woolly coats and gentle expressions convey a feeling of warmth and tranquility, suggesting a peaceful coexistence with nature. Their close proximity and the way they seem to be nuzzling each other imply a bond of friendship or familial connection, which further enhances the sense of harmony. The presence of bells around their necks adds a rustic charm, hinting at a pastoral lifestyle that is simple and unhurried. The soft, muted colors of their wool and the neutral background contribute to a serene and soothing atmosphere. Overall, the image elicits feelings of comfort, contentment, and a connection to the natural world, making it a heartwarming and uplifting scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 164,
+            "total_tokens": 967
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4659.72543,
+            "prompt_eval_duration_ms": 58.611343,
+            "generation_duration_ms": 4551.008007,
+            "load_duration_ms": 47.171208,
+            "tokens_per_second": 36.03597263457858
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"sheep\": {\n      \"count\": 2,\n      \"location\": \"center, foreground\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Two sheep with bells around their necks, facing each other.\"\n    }\n  },\n  \"man-made\": {\n    \"bell\": {\n      \"count\": 2,\n      \"location\": \"center, middle\",\n      \"color\": [\"gold\"],\n      \"size\": \"small\",\n      \"description\": \"Bells attached to the sheep's collars.\"\n    },\n    \"collar\": {\n      \"count\": 2,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Collars around the sheep's necks with bells attached.\"\n    },\n    \"tag\": {\n      \"count\": 2,\n      \"location\": \"top, middle\",\n      \"color\": [\"yellow\", \"red\"],\n      \"size\": \"small\",\n      \"description\": \"Tags attached to the sheep's ears.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "sheep": {
+                "count": 2,
+                "location": "center, foreground",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Two sheep with bells around their necks, facing each other."
+              }
+            },
+            "man-made": {
+              "bell": {
+                "count": 2,
+                "location": "center, middle",
+                "color": [
+                  "gold"
+                ],
+                "size": "small",
+                "description": "Bells attached to the sheep's collars."
+              },
+              "collar": {
+                "count": 2,
+                "location": "center, middle",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "Collars around the sheep's necks with bells attached."
+              },
+              "tag": {
+                "count": 2,
+                "location": "top, middle",
+                "color": [
+                  "yellow",
+                  "red"
+                ],
+                "size": "small",
+                "description": "Tags attached to the sheep's ears."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 239,
+            "total_tokens": 1221
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6806.488354,
+            "prompt_eval_duration_ms": 103.973799,
+            "generation_duration_ms": 6654.471291,
+            "load_duration_ms": 44.944008,
+            "tokens_per_second": 35.91570081957395
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5161,
+        "total_time_ms": 30022.502459000003,
+        "average_speed": 35.941517782180675
+      }
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+{
+  "image": {
+    "path": "images/original/shared0902_nsd65655.png",
+    "name": "shared0902_nsd65655.png",
+    "id": "shared0902_nsd65655"
+  },
+  "timestamp": "2025-08-30T23:59:18.857242+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a serene scene at an airport, with a Japan Airlines aircraft prominently positioned on the tarmac. The airplane, painted in a pristine white with the airline's logo and name clearly displayed on its fuselage, dominates the foreground. The aircraft appears to be a wide-body model, suggesting it is designed for long-haul flights. The setting is a clear day with a vivid blue sky that stretches across the upper portion of the frame, devoid of any clouds, indicating good weather conditions. The tarmac is a muted gray, providing a neutral backdrop that contrasts with the white of the airplane and the deep blue of the sky. In the mid-ground, the airport terminal is visible, featuring a long, low building with a dark gray roof and light-colored walls, which are partially obscured by the airplane. The terminal's structure is simple and functional, typical of airport architecture. The lighting is natural and bright, suggesting the photo was taken during the day under sunlight, which enhances the clarity and color saturation of the image. The overall composition is balanced, with the airplane centrally positioned, drawing the viewer's eye across the image from the foreground to the background, where the terminal and distant airport structures are faintly visible against the expansive sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 249,
+            "total_tokens": 546
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1907.035599,
+            "prompt_eval_duration_ms": 79.195662,
+            "generation_duration_ms": 1787.584239,
+            "load_duration_ms": 38.308156,
+            "tokens_per_second": 139.29413482594484
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, a Japan Airlines aircraft, prominently displaying the airline's logo and name, dominates the scene. Its sleek white fuselage and large jet engines are clearly visible, resting on the tarmac, suggesting it is either preparing for departure or has just landed. The aircraft's position and the visible ground service equipment nearby indicate it is at an airport gate. The background, a vast expanse of clear blue sky, provides a stark contrast to the grounded plane, emphasizing the vastness of the sky and the relative stillness of the ground. The distant horizon, faintly visible, hints at the airport's location, possibly near a body of water or a flat landscape, as there are no significant landmarks or structures in the immediate vicinity. The relationship between the foreground and background is one of scale and perspective, with the plane serving as a focal point that draws the viewer's eye towards the expansive sky and distant horizon, creating a sense of depth and vastness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 194,
+            "total_tokens": 497
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1477.029005,
+            "prompt_eval_duration_ms": 31.879925,
+            "generation_duration_ms": 1403.928517,
+            "load_duration_ms": 39.172472,
+            "tokens_per_second": 138.18367363500175
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a Japan Airlines aircraft is parked at a gate, indicating it is either preparing for departure or has just arrived. The plane, a large commercial jet, is stationary on the tarmac, with its engines and landing gear clearly visible. The airport terminal is in the background, featuring a series of jet bridges connected to the aircraft, suggesting passengers might be boarding or disembarking. The scene is devoid of visible people or animals, focusing solely on the interaction between the airplane and the airport infrastructure. The clear blue sky above and the absence of any visible activity suggest a calm moment in the airport's operations, with the plane and terminal serving as the primary subjects of this snapshot.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 138,
+            "total_tokens": 444
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1069.254304,
+            "prompt_eval_duration_ms": 30.893512,
+            "generation_duration_ms": 998.184682,
+            "load_duration_ms": 37.772467,
+            "tokens_per_second": 138.2509694734025
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of calm and anticipation, leaning slightly towards the positive. The clear blue sky and the absence of clouds contribute to a serene atmosphere, suggesting a bright and hopeful day ahead. The Japan Airlines plane, positioned on the tarmac, conveys a sense of readiness and the beginning of a journey, which can be associated with excitement and the promise of adventure. The clean lines of the aircraft and the orderly arrangement of the airport infrastructure further enhance the feeling of order and efficiency. The absence of any visible distress or urgency in the scene adds to the overall positive mood, as it suggests a smooth and well-managed operation. The image does not contain any elements that would typically evoke negative emotions, such as chaos or disappointment, making the overall tone decidedly positive.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 156,
+            "total_tokens": 464
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1208.322266,
+            "prompt_eval_duration_ms": 33.176283,
+            "generation_duration_ms": 1134.548551,
+            "load_duration_ms": 38.74402,
+            "tokens_per_second": 137.49962472958993
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"Japan Airlines aircraft parked at gate\"\n    },\n    \"airport_terminal\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"airport terminal building\"\n    },\n    \"aircraft_gate\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"aircraft gate connected to airplane\"\n    },\n    \"runway\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"aircraft runway\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"clear blue sky\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "Japan Airlines aircraft parked at gate"
+              },
+              "airport_terminal": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "airport terminal building"
+              },
+              "aircraft_gate": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "aircraft gate connected to airplane"
+              },
+              "runway": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "aircraft runway"
+              },
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "clear blue sky"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 246,
+            "total_tokens": 732
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1837.610866,
+            "prompt_eval_duration_ms": 44.101879,
+            "generation_duration_ms": 1753.052898,
+            "load_duration_ms": 38.210237,
+            "tokens_per_second": 140.32662692646255
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2683,
+        "total_time_ms": 7499.25204,
+        "average_speed": 138.7110059180803
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a clear, sunny day at an airport, showcasing a Japan Airlines (JAL) aircraft prominently in the foreground. The plane, a large commercial jet, is painted in a clean white livery with the JAL logo and \"Japan Airlines\" text in bold, dark letters on its fuselage. The aircraft's engines are visible, and the landing gear is deployed, suggesting it is either preparing for takeoff or has recently landed. The tarmac is smooth and gray, marked with white lines and symbols, indicating taxiways or parking areas.\n\nIn the background, airport infrastructure is visible, including a long terminal building with a glass facade and a flat roof. The terminal stretches horizontally across the image, featuring jet bridges and other support structures. The sky is a vibrant, gradient blue, transitioning from a lighter shade near the horizon to a deeper hue higher up, indicating clear weather conditions. The lighting is bright and natural, casting minimal shadows, which suggests the photo was taken during midday. The overall composition is balanced, with the airplane dominating the foreground and the terminal providing a sense of scale and context. The scene conveys a sense of order and efficiency typical of a modern airport environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 242,
+            "total_tokens": 539
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12557.867583,
+            "prompt_eval_duration_ms": 3527.12106,
+            "generation_duration_ms": 8990.900575,
+            "load_duration_ms": 37.713992,
+            "tokens_per_second": 26.916102339392182
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a large commercial airplane, specifically a Japan Airlines (JAL) aircraft, prominently displayed in sharp focus. The plane is a white Boeing 777, with the airline's logo and name clearly visible on its fuselage. Its engines and wings are detailed, and the aircraft appears to be stationary on the tarmac, suggesting it is either preparing for departure or has recently landed. The tarmac itself is smooth and marked with white lines, indicating taxiways or parking areas.\n\nIn the background, the setting transitions to a more distant view of the airport infrastructure. A long terminal building stretches across the image, featuring a modern design with a flat roof and large windows. The terminal is connected to the aircraft via jet bridges, which are visible extending towards the plane. Beyond the terminal, a line of trees and greenery marks the horizon, providing a natural contrast to the industrial airport environment. The sky above is clear and bright blue, indicating a sunny day with good weather conditions.\n\nThe relationship between the foreground and background elements is one of scale and context. The airplane in the foreground serves as the primary subject, drawing the viewer's attention, while the background provides the setting and context of the airport environment. The terminal and jet bridges establish the functional relationship between the plane and the airport facilities, emphasizing the operational aspect of air travel. The distant trees and clear sky add depth and a sense of openness to the scene, framing the busy airport activity within a broader, serene landscape. Together, these elements create a cohesive image that highlights the intersection of human engineering and natural surroundings.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 323,
+            "total_tokens": 626
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12166.475245,
+            "prompt_eval_duration_ms": 73.848809,
+            "generation_duration_ms": 12051.216384,
+            "load_duration_ms": 39.39924,
+            "tokens_per_second": 26.80227370482173
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a large commercial airplane, specifically a Japan Airlines (JAL) aircraft, parked at an airport gate. The plane is a wide-body jet, likely a Boeing 777, based on its size and design. It is positioned on the tarmac, connected to a jet bridge, which allows passengers to board or disembark. The jet bridge is visible in the background, extending from the terminal building to the aircraft's door, indicating that the plane is either preparing for departure or has recently arrived.\n\nThe terminal building in the background is a modern structure with a sleek, elongated design, featuring glass panels and metal frameworks. The airport infrastructure includes various support elements such as lighting poles, signage, and other ground equipment, which are essential for the aircraft's operations. The sky above is clear and blue, suggesting favorable weather conditions, which is ideal for air travel.\n\nThere are no visible people or animals in the image. The focus is entirely on the aircraft and the airport environment. The interaction between the elements is primarily functional: the plane is connected to the terminal via the jet bridge, indicating a typical airport operation where passengers and cargo are exchanged. The tarmac, jet bridge, and terminal work in unison to facilitate the smooth operation of the aircraft. The overall scene conveys a sense of order and efficiency, characteristic of a well-managed airport.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 276,
+            "total_tokens": 582
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10418.248036,
+            "prompt_eval_duration_ms": 73.344635,
+            "generation_duration_ms": 10303.395451,
+            "load_duration_ms": 39.259989,
+            "tokens_per_second": 26.787285930407798
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a Japan Airlines (JAL) aircraft parked at an airport gate, with a clear blue sky in the background and a calm, orderly airport environment. The mood conveyed by this image is predominantly neutral to slightly positive, evoking a sense of calmness, reliability, and routine. The bright, unblemished sky and the pristine condition of the aircraft suggest a sense of order and professionalism, which can instill confidence and reassurance in viewers. The clean lines of the airplane and the organized layout of the airport infrastructure contribute to a feeling of efficiency and precision, reinforcing the idea of a well-functioning system.\n\nThe overall tone is not particularly emotional or dramatic, as the image lacks any dynamic action or intense visual elements. Instead, it presents a serene and methodical scene, which might evoke feelings of anticipation or mild excitement for travelers, but primarily conveys a sense of normalcy and routine. The absence of crowds or visible stressors, such as delays or adverse weather conditions, further enhances the image's tranquil and reassuring atmosphere. The visual elements, including the clear blue sky, the orderly airport layout, and the sleek design of the aircraft, all work together to create a mood that is calm, orderly, and slightly optimistic.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 250,
+            "total_tokens": 558
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9456.778935,
+            "prompt_eval_duration_ms": 79.00699,
+            "generation_duration_ms": 9337.29518,
+            "load_duration_ms": 38.331166,
+            "tokens_per_second": 26.77434901442197
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\", \"red\"],\n      \"size\": \"large\",\n      \"description\": \"Japan Airlines aircraft on the tarmac\"\n    },\n    \"airport terminal\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Modern airport terminal building\"\n    },\n    \"runway/tarmac\": {\n      \"count\": 1,\n      \"location\": \"bottom, foreground\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Concrete surface with markings\"\n    },\n    \"lights\": {\n      \"count\": 3,\n      \"location\": \"center, middle\",\n      \"color\": [\"yellow\"],\n      \"size\": \"small\",\n      \"description\": \"Airport runway lights\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky\"\n    },\n    \"trees\": {\n      \"count\": 1,\n      \"location\": \"center, background\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Line of trees in the distance\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "white",
+                  "red"
+                ],
+                "size": "large",
+                "description": "Japan Airlines aircraft on the tarmac"
+              },
+              "airport terminal": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Modern airport terminal building"
+              },
+              "runway/tarmac": {
+                "count": 1,
+                "location": "bottom, foreground",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Concrete surface with markings"
+              },
+              "lights": {
+                "count": 3,
+                "location": "center, middle",
+                "color": [
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Airport runway lights"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky"
+              },
+              "trees": {
+                "count": 1,
+                "location": "center, background",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Line of trees in the distance"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 318,
+            "total_tokens": 804
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11947.246252,
+            "prompt_eval_duration_ms": 135.562291,
+            "generation_duration_ms": 11768.60214,
+            "load_duration_ms": 40.92387,
+            "tokens_per_second": 27.02105111695109
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3109,
+        "total_time_ms": 56546.616051000005,
+        "average_speed": 26.860212421198952
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a serene scene at an airport, dominated by a large, white Japan Airlines (JAL) Boeing 727 aircraft. The plane is positioned prominently on the tarmac, taking up a significant portion of the frame. The aircraft\u2019s livery is clearly visible, featuring the iconic JAL logo and the airline\u2019s name in bold lettering. The tarmac is a gray concrete surface, marked with red lines indicating taxiways. In the background, we see a modern airport terminal building with several jet bridges extending towards the aircraft. \n\nThe sky is a vibrant, clear blue, creating a strong contrast with the gray tarmac and white plane. The lighting appears to be bright and even, suggesting a sunny day. The overall composition is balanced, with the plane centered and the background providing context without distracting from the main subject. The scene evokes a sense of travel and anticipation, highlighting the scale and efficiency of modern air travel.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1612.896709,
+            "prompt_eval_duration_ms": 306.31796,
+            "generation_duration_ms": 1217.680093,
+            "load_duration_ms": 87.054331,
+            "tokens_per_second": 163.42551803546647
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, broken down into foreground and background elements:\n\nIn the foreground, a gleaming white Japan Airlines (JAL) Boeing 727 aircraft dominates the scene. The plane is parked on a gray tarmac, with its wings slightly angled, and its tail emblazoned with the airline's logo. Red painted lines mark the taxiway, leading towards the aircraft. Several ground support vehicles, including baggage carts and service trucks, are visible near the plane, suggesting activity and preparation for boarding. \n\nThe background reveals a modern airport terminal building, a large, multi-level structure with several jet bridges extending outwards. Beyond the terminal, a dense expanse of trees forms a dark, almost uniform horizon line, indicating a forested area. The sky is a vibrant, clear blue, creating a strong contrast with the dark trees and the gray tarmac. The aircraft and the terminal are positioned in front of the setting, emphasizing the scale of the airport and the transportation hub it represents.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 203,
+            "total_tokens": 521
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1387.886068,
+            "prompt_eval_duration_ms": 56.498765,
+            "generation_duration_ms": 1241.116459,
+            "load_duration_ms": 88.466428,
+            "tokens_per_second": 163.56241070524715
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph, focusing on actions, relationships, and connections:\n\nThe image depicts a Japan Airlines (JAL) Boeing 727 aircraft prominently positioned on a concrete tarmac under a clear, bright blue sky. The plane, painted in JAL's signature livery, appears to be stationary, awaiting its next flight. Several ground support vehicles, including baggage carts and service trucks, are scattered around the aircraft, suggesting a busy airport environment.  A small, orange service vehicle is positioned near the plane, likely providing assistance to passengers.  The tarmac itself is marked with red lines, indicating taxiways and designated routes.  In the background, a complex network of airport buildings and terminal structures rises, hinting at the flow of passengers and cargo.  The overall scene conveys a sense of organized activity and the interconnectedness of air travel, with the aircraft as a central element within a larger transportation system.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 192,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1280.326631,
+            "prompt_eval_duration_ms": 57.801948,
+            "generation_duration_ms": 1135.496263,
+            "load_duration_ms": 85.151762,
+            "tokens_per_second": 169.08906374797994
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of around 200 words:\n\nThe image evokes a sense of quiet anticipation and potential travel, leaning towards a neutral yet subtly optimistic mood. The dominant blue sky, a clear, almost sterile hue, contributes to this feeling of spaciousness and order. The large, modern aircraft, a Japan Airlines jet, stands prominently on the tarmac, symbolizing connection and journeys. The clean lines of the plane and the surrounding infrastructure suggest efficiency and reliability.  The presence of ground support equipment \u2013 baggage carts and service vehicles \u2013 adds a touch of activity, hinting at the logistical processes involved in air travel. \n\nDespite the potential for excitement associated with travel, the scene feels calm and controlled. The lack of visible passengers and the muted tones create a sense of detachment, perhaps reflecting the initial stages of a journey before the bustle of the terminal takes over. The overall impression is one of poised readiness, suggesting a smooth and dependable experience, fostering a feeling of trust and confidence.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 214,
+            "total_tokens": 538
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1419.025441,
+            "prompt_eval_duration_ms": 56.734625,
+            "generation_duration_ms": 1272.513343,
+            "load_duration_ms": 87.600267,
+            "tokens_per_second": 168.17112463079297
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"orange\", \"yellow\"],\n      \"size\": \"small\",\n      \"description\": \"Ground crew member holding a cone.\"\n    }\n  },\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"gray\", \"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Japan Airlines Boeing 787-9, parked on the tarmac.\"\n    },\n    \"terminal\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"beige\"],\n      \"size\": \"large\",\n      \"description\": \"Airport terminal building.\"\n    },\n    \"gate\": {\n      \"count\": 3,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Airport gates.\"\n    },\n    \"conveyor_belt\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"gray\"],\n      \"size\": \"small\",\n      \"description\": \"Conveyor belt for baggage handling.\"\n    },\n    \"ground_marking\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"Taxiway markings.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky.\"\n    },\n    \"trees\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Trees surrounding the airport.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "orange",
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Ground crew member holding a cone."
+              }
+            },
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "gray",
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Japan Airlines Boeing 787-9, parked on the tarmac."
+              },
+              "terminal": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "beige"
+                ],
+                "size": "large",
+                "description": "Airport terminal building."
+              },
+              "gate": {
+                "count": 3,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Airport gates."
+              },
+              "conveyor_belt": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "gray"
+                ],
+                "size": "small",
+                "description": "Conveyor belt for baggage handling."
+              },
+              "ground_marking": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "black"
+                ],
+                "size": "small",
+                "description": "Taxiway markings."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky."
+              },
+              "trees": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Trees surrounding the airport."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 483,
+            "total_tokens": 1001
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3042.168976,
+            "prompt_eval_duration_ms": 65.534204,
+            "generation_duration_ms": 2887.939001,
+            "load_duration_ms": 86.905274,
+            "tokens_per_second": 167.2472998331172
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3085,
+        "total_time_ms": 8742.303824999999,
+        "average_speed": 166.29908339052074
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image showcases a Japan Airlines (JAL) airplane parked on an airport tarmac. The setting appears to be a modern airport, with a terminal building visible in the background, complete with jet bridges and ground support equipment. The sky is a clear, bright blue, contrasting with the gray concrete of the tarmac. The airplane itself is predominantly white with the distinctive red JAL logo prominently displayed on its fuselage. The engine nacelles are a muted gray. The lighting is strong and direct, casting shadows underneath the aircraft and highlighting its sleek, aerodynamic form. The composition is centered on the plane, emphasizing its size and presence. The perspective is from a slightly low angle, making the aircraft appear imposing. The overall impression is one of modern aviation and efficiency, with a clean and uncluttered aesthetic.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 170,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2575.027616,
+            "prompt_eval_duration_ms": 344.209676,
+            "generation_duration_ms": 2139.711712,
+            "load_duration_ms": 89.241289,
+            "tokens_per_second": 79.44995535921991
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a large, white Japan Airlines (JAL) airplane, positioned centrally and taking up a significant portion of the frame. Its sleek fuselage and visible engine details are sharply in focus, highlighting its modern design. The gray concrete tarmac stretches out before the aircraft, marked with red and white lines, creating a sense of depth. In the mid-ground, a series of airport gates and jet bridges are visible, suggesting a bustling terminal area. The background features a blurred landscape of trees and a hazy sky, creating a soft, diffused backdrop. The airplane appears to be preparing for departure or has just arrived, with the terminal infrastructure providing context for its function. The contrast between the crisp detail of the plane and the blurred background emphasizes the aircraft as the primary subject, while the terminal and landscape establish the setting as an airport.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 185,
+            "total_tokens": 503
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2490.760843,
+            "prompt_eval_duration_ms": 69.50843,
+            "generation_duration_ms": 2334.999287,
+            "load_duration_ms": 84.117427,
+            "tokens_per_second": 79.22914624855729
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image showcases a Japan Airlines (JAL) airplane parked on an airport tarmac, dominating the foreground. The aircraft, primarily white with the distinctive JAL logo prominently displayed, is facing away from the viewer, revealing its fuselage and tail. It appears stationary, presumably awaiting boarding or departure. Behind the plane, a modern airport terminal building stretches across the midground, with various airport vehicles and equipment visible near the gate. These include baggage carts and ground service vehicles, suggesting ongoing airport operations. The sky is a clear, bright blue, providing a stark contrast to the white of the airplane and the gray of the tarmac. No people or animals are visible in the image, so there are no direct interactions between living beings and the objects present. The scene portrays a typical airport environment, emphasizing the scale and machinery involved in air travel.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 185,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2490.394134,
+            "prompt_eval_duration_ms": 69.679843,
+            "generation_duration_ms": 2334.566392,
+            "load_duration_ms": 84.384205,
+            "tokens_per_second": 79.24383758540802
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of calm and anticipation, tinged with a feeling of travel and possibility. The dominant mood is positive, suggesting a journey about to begin or recently concluded. The pristine white of the Japan Airlines aircraft against the gray tarmac creates a clean, modern aesthetic, contributing to a feeling of efficiency and order. The bright, clear sky in the background reinforces this sense of optimism and openness. The presence of the airport terminal in the distance, with its array of ground equipment, hints at the complex machinery that enables travel, adding a touch of wonder. Overall, the image conveys a feeling of quiet excitement and the promise of new experiences, typical of the anticipation one feels when traveling. The composition, with the aircraft centrally positioned and filling much of the frame, emphasizes its importance and the potential for adventure it represents.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 165,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2241.006323,
+            "prompt_eval_duration_ms": 69.756128,
+            "generation_duration_ms": 2082.212705,
+            "load_duration_ms": 87.252466,
+            "tokens_per_second": 79.24262473463297
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"item\": \"airplane\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Boeing 737 airplane with Japan Airlines livery, parked at a gate.\"\n    },\n    {\n      \"item\": \"airport terminal\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Modern airport terminal building with multiple gates and jet bridges.\"\n    },\n    {\n      \"item\": \"jet bridge\",\n      \"count\": 3,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Connected to the terminal, facilitating passenger boarding.\"\n    },\n    {\n      \"item\": \"taxiway\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Paved surface for aircraft movement.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"sky\",\n      \"count\": 1,\n      \"location\": \"top\",\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky.\"\n    },\n    {\n      \"item\": \"trees\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Dense foliage visible in the distance.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "item": "airplane",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Boeing 737 airplane with Japan Airlines livery, parked at a gate."
+              },
+              {
+                "item": "airport terminal",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Modern airport terminal building with multiple gates and jet bridges."
+              },
+              {
+                "item": "jet bridge",
+                "count": 3,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Connected to the terminal, facilitating passenger boarding."
+              },
+              {
+                "item": "taxiway",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Paved surface for aircraft movement."
+              }
+            ],
+            "natural": [
+              {
+                "item": "sky",
+                "count": 1,
+                "location": "top",
+                "size": "large",
+                "description": "Clear blue sky."
+              },
+              {
+                "item": "trees",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Dense foliage visible in the distance."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 400,
+            "total_tokens": 918
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5251.753176,
+            "prompt_eval_duration_ms": 92.55692,
+            "generation_duration_ms": 5068.005675,
+            "load_duration_ms": 89.189017,
+            "tokens_per_second": 78.92650988398903
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2899,
+        "total_time_ms": 15048.942092,
+        "average_speed": 79.21841476236145
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image depicts a Japan Airlines (JAL) passenger airplane parked at an airport gate. The aircraft, predominantly white with the distinctive JAL logo prominently displayed on its fuselage, is the main focus. It\u2019s a long, sleek jet with visible engines and landing gear. Behind the plane is a long, low airport terminal building, painted in neutral tones, with jet bridges extending towards the aircraft. The tarmac is a grey concrete surface marked with yellow and red lines. \n\nThe sky is a clear, deep teal-blue, suggesting a bright, sunny day. The lighting is strong and casts shadows under the plane and the terminal. The overall composition is straightforward, with the plane positioned horizontally across the frame. The image feels clean and modern, emphasizing the scale and technology of air travel. The color palette is dominated by white, grey, and blue, creating a calm and professional aesthetic.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 190,
+            "total_tokens": 503
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5019.782687,
+            "prompt_eval_duration_ms": 396.190033,
+            "generation_duration_ms": 4531.081032,
+            "load_duration_ms": 90.726959,
+            "tokens_per_second": 41.932598127942725
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nIn the foreground, a large, white Japan Airlines (JAL) passenger airplane dominates the view, positioned horizontally across the lower half of the frame. The aircraft is parked on a gray asphalt tarmac, marked with faint yellow and red lines indicating taxiways or parking spots. The plane\u2019s landing gear is visible, grounding it firmly on the surface. \n\nThe background features a long, low-lying airport terminal building, stretching across the mid-ground. It's a neutral gray color with multiple jet bridges extending towards the plane, suggesting passenger boarding or disembarking. Beyond the terminal, a line of trees and a hazy horizon create a distant backdrop, hinting at the surrounding landscape. The clear, deep blue sky above provides a stark contrast to the gray and white tones of the airport infrastructure and aircraft. The relationship between the elements is one of scale and function \u2013 the plane is the primary subject, utilizing the airport terminal for its operations.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 207,
+            "total_tokens": 525
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5119.414996,
+            "prompt_eval_duration_ms": 86.715368,
+            "generation_duration_ms": 4942.670732,
+            "load_duration_ms": 88.090582,
+            "tokens_per_second": 41.880192151954176
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image showcases a Japan Airlines (JAL) passenger airplane parked at an airport gate. The white aircraft with the distinctive red JAL logo dominates the foreground, appearing stationary and ready for boarding or disembarking passengers. Behind the plane, a long, low airport terminal stretches across the midground, featuring multiple jet bridges extending towards the aircraft. These bridges indicate the connection point for passengers to move between the plane and the terminal. The tarmac, marked with painted lines, provides the surface for the plane to sit and for ground crew to operate. In the distant background, a line of trees and a clear blue sky complete the scene. There are no visible people or animals in the image, but the arrangement of the elements implies a bustling airport environment where passengers and crew would interact to facilitate air travel. The plane and terminal are directly connected by the jet bridges, signifying the core function of the airport \u2013 enabling air transportation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 203,
+            "total_tokens": 524
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5019.8349,
+            "prompt_eval_duration_ms": 85.95376,
+            "generation_duration_ms": 4848.54501,
+            "load_duration_ms": 83.588898,
+            "tokens_per_second": 41.868230485912314
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of calm and anticipation, leaning towards a neutral-positive tone. The sleek, white Japan Airlines aircraft, grounded at the gate, suggests readiness for travel, but also a temporary pause. The clear, bright blue sky contributes to the peaceful atmosphere, hinting at good flying conditions. The orderly arrangement of the airport gate and tarmac markings reinforces a sense of control and efficiency. While there's no direct human presence, the image subtly suggests the excitement of journeys and connections. The overall impression is one of quiet competence and the promise of adventure, without being overly dramatic or emotional. It's a scene that feels both functional and subtly hopeful, capturing a moment of transition and potential.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 157,
+            "total_tokens": 481
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3898.969117,
+            "prompt_eval_duration_ms": 88.356204,
+            "generation_duration_ms": 3721.934162,
+            "load_duration_ms": 86.61884,
+            "tokens_per_second": 42.182368942183345
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"red\"],\n      \"size\": \"large\",\n      \"description\": \"Japan Airlines (JAL) airplane parked at the gate.\"\n    },\n    \"airport_terminal\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Long, low building with jet bridges.\"\n    },\n    \"jet_bridge\": {\n      \"count\": 3,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Connects the terminal to the airplane.\"\n    },\n    \"pavement_markings\": {\n      \"count\": 5,\n      \"location\": \"foreground\",\n      \"color\": [\"yellow\", \"white\", \"red\"],\n      \"size\": \"small\",\n      \"description\": \"Lines and symbols painted on the tarmac.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky.\"\n    },\n    \"trees\": {\n      \"count\": 5,\n      \"location\": \"background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Line of trees in the distance.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "red"
+                ],
+                "size": "large",
+                "description": "Japan Airlines (JAL) airplane parked at the gate."
+              },
+              "airport_terminal": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Long, low building with jet bridges."
+              },
+              "jet_bridge": {
+                "count": 3,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Connects the terminal to the airplane."
+              },
+              "pavement_markings": {
+                "count": 5,
+                "location": "foreground",
+                "color": [
+                  "yellow",
+                  "white",
+                  "red"
+                ],
+                "size": "small",
+                "description": "Lines and symbols painted on the tarmac."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky."
+              },
+              "trees": {
+                "count": 5,
+                "location": "background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Line of trees in the distance."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 384,
+            "total_tokens": 902
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9277.074591,
+            "prompt_eval_duration_ms": 144.159506,
+            "generation_duration_ms": 9043.23485,
+            "load_duration_ms": 87.741319,
+            "tokens_per_second": 42.46268137114674
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2935,
+        "total_time_ms": 28335.076291,
+        "average_speed": 42.06521421582786
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts an airport scene under a clear blue sky, suggesting a bright and sunny day. The main element in the foreground is a Japan Airlines (JAL) airplane, prominently displayed with its sleek, white fuselage adorned with the airline's logo and branding. The aircraft is parked on the tarmac, connected to the terminal via a jet bridge, indicating that it is either preparing for departure or has just arrived. The jet bridge, painted in shades of gray and white, extends from the terminal building, which is visible in the background. The terminal building is a long, rectangular structure with multiple jet bridges attached, suggesting a busy airport environment. The overall composition of the image captures the essence of modern air travel, with the airplane and terminal building as central focal points. The lighting is bright and natural, enhancing the visibility of details and creating a vibrant atmosphere. The image effectively conveys the bustling yet orderly nature of airport operations.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 190,
+            "total_tokens": 982
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7372.578702,
+            "prompt_eval_duration_ms": 2050.178062,
+            "generation_duration_ms": 5274.088689,
+            "load_duration_ms": 43.084407,
+            "tokens_per_second": 36.02518106991204
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a Japan Airlines (JAL) aircraft is prominently positioned on the tarmac. The airplane is connected to a jet bridge, indicating that it is either preparing for departure or has just arrived. The aircraft's sleek design and the visible markings of the airline are clear, emphasizing its readiness for travel. The foreground also includes some ground service equipment, such as a fuel truck and other maintenance vehicles, which are essential for preparing the plane for its next flight.\n\nIn the background, the airport terminal and additional airport infrastructure are visible. The terminal building, with its multiple jet bridges, suggests a busy and well-equipped airport capable of handling numerous flights. Beyond the terminal, the landscape features a mix of greenery and distant buildings, providing a sense of the airport's location within a broader setting. The background elements contextualize the airport's operations, showing how the foreground elements\u2014such as the airplane and service vehicles\u2014fit into the larger framework of air travel and airport management. Together, the foreground and background layers create a comprehensive view of an active airport environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 219,
+            "total_tokens": 1017
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6179.353916,
+            "prompt_eval_duration_ms": 53.472489,
+            "generation_duration_ms": 6078.52409,
+            "load_duration_ms": 44.271019,
+            "tokens_per_second": 36.02848269702259
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts an airport scene with a Japan Airlines (JAL) airplane prominently positioned on the tarmac. The aircraft, a large commercial jet, is connected to a jet bridge, indicating that it is either preparing for departure or has just arrived. Several ground service vehicles and equipment are visible around the airplane, suggesting ongoing maintenance or refueling activities. These vehicles are likely operated by airport staff who are not directly visible in the image but are implied by the presence of the equipment. The jet bridge, which facilitates passenger boarding and deplaning, connects the airplane to the terminal building in the background. The terminal itself is a large structure with multiple gates, hinting at a busy airport environment. The clear sky and distant trees add to the overall setting, suggesting a calm day at the airport. The interactions between the elements in the image highlight the coordinated efforts required to manage air travel efficiently.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 180,
+            "total_tokens": 980
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5094.52664,
+            "prompt_eval_duration_ms": 56.242317,
+            "generation_duration_ms": 4991.612712,
+            "load_duration_ms": 43.723951,
+            "tokens_per_second": 36.060489942914465
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the Japan Airlines plane parked at the gate conveys a mood of calm efficiency and anticipation. The clear blue sky and bright daylight suggest a positive, serene atmosphere, evoking feelings of excitement and readiness for travel. The sleek, modern design of the aircraft, along with the orderly arrangement of the jet bridge and ground support equipment, reinforces a sense of professionalism and reliability. The expansive tarmac and distant terminal buildings contribute to a feeling of openness and possibility, hinting at the adventure and exploration that await passengers. The overall tone is optimistic and uplifting, as the image captures a moment of preparation and the promise of journeys to come.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 136,
+            "total_tokens": 939
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3876.919075,
+            "prompt_eval_duration_ms": 56.641786,
+            "generation_duration_ms": 3770.124714,
+            "load_duration_ms": 47.402108,
+            "tokens_per_second": 36.073077236669896
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"Japan Airlines plane parked on the tarmac.\"\n    },\n    \"jet bridge\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Connected to the airplane.\"\n    },\n    \"terminal building\": {\n      \"count\": 1,\n      \"location\": \"center, background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Airport terminal building with multiple jet bridges.\"\n    },\n    \"light pole\": {\n      \"count\": 2,\n      \"location\": \"left, middle\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Two light poles near the airplane.\"\n    },\n    \"vehicle\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"Ground service vehicle near the airplane.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center, foreground",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "Japan Airlines plane parked on the tarmac."
+              },
+              "jet bridge": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Connected to the airplane."
+              },
+              "terminal building": {
+                "count": 1,
+                "location": "center, background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Airport terminal building with multiple jet bridges."
+              },
+              "light pole": {
+                "count": 2,
+                "location": "left, middle",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Two light poles near the airplane."
+              },
+              "vehicle": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "Ground service vehicle near the airplane."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "size": "large",
+                "description": "Clear blue sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 312,
+            "total_tokens": 1294
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8845.866875,
+            "prompt_eval_duration_ms": 106.176782,
+            "generation_duration_ms": 8692.263007,
+            "load_duration_ms": 44.561564,
+            "tokens_per_second": 35.89398983311275
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5212,
+        "total_time_ms": 31369.245208,
+        "average_speed": 36.016244155926344
+      }
+    }
+  ]
+}

@@ -1,0 +1,857 @@
+{
+  "image": {
+    "path": "images/original/shared0994_nsd72210.png",
+    "name": "shared0994_nsd72210.png",
+    "id": "shared0994_nsd72210"
+  },
+  "timestamp": "2025-08-31T00:51:11.469268+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a close-up of a person brushing their teeth, with a focus on their hand and the toothbrush. The individual is wearing an orange shirt, which contrasts with the darker background, creating a strong visual contrast. The background is softly blurred, featuring a bokeh effect with warm, golden hues, suggesting the presence of lights, possibly from a Christmas tree or decorative lights, adding a festive or cozy ambiance to the scene. The lighting is soft and diffused, highlighting the subject's hand and the toothbrush while keeping the background slightly out of focus. The toothbrush is held firmly, with the bristles near the person's mouth, and the image is taken from a slightly low angle, emphasizing the action of brushing. The overall composition is intimate and personal, drawing the viewer's attention to the simple act of dental hygiene against a backdrop that evokes warmth and comfort.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 178,
+            "total_tokens": 475
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1419.794447,
+            "prompt_eval_duration_ms": 79.140543,
+            "generation_duration_ms": 1302.39676,
+            "load_duration_ms": 36.067989,
+            "tokens_per_second": 136.67110166950968
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, a person is captured in a close-up shot, focusing on their face and hands as they brush their teeth. The individual is wearing an orange shirt, and their hand is holding a toothbrush with a blue handle, which is in motion, suggesting the act of brushing. The background, slightly blurred due to a shallow depth of field, features a bokeh effect with warm, golden lights, likely from Christmas tree lights, creating a festive and cozy atmosphere. The background elements, though out of focus, provide a contrast to the sharpness of the foreground, emphasizing the subject and their action while also hinting at a seasonal setting. The interplay between the sharp, detailed foreground and the softly glowing, blurred background creates a layered composition that draws the viewer's attention to the main subject while still conveying a broader context.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 168,
+            "total_tokens": 471
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1326.464017,
+            "prompt_eval_duration_ms": 30.825889,
+            "generation_duration_ms": 1254.840219,
+            "load_duration_ms": 38.626989,
+            "tokens_per_second": 133.8815870389312
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a person is the central figure, engaged in the act of brushing their teeth. They are holding a toothbrush with a blue handle and a white bristle head, which is positioned near their mouth, suggesting the action of brushing. The person's expression appears to be one of concentration or perhaps slight discomfort, as indicated by their wide eyes and slightly pursed lips. The background is softly blurred, featuring a bokeh effect with warm, golden lights that suggest a festive or celebratory atmosphere, possibly indicating a holiday or special occasion. There are no animals present in the image, and the focus is solely on the person and their interaction with the toothbrush. The interaction between the person and the toothbrush is the primary action, with the background elements serving to provide context and mood without any direct interaction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 165,
+            "total_tokens": 471
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1304.48164,
+            "prompt_eval_duration_ms": 30.466606,
+            "generation_duration_ms": 1233.604892,
+            "load_duration_ms": 38.195597,
+            "tokens_per_second": 133.75433339315907
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of curiosity and slight discomfort, leaning towards a neutral to slightly negative tone. The subject's direct gaze and the close-up perspective create an intimate and slightly unsettling atmosphere, as if the viewer is being scrutinized. The bright, almost blinding light on the subject's face contrasts sharply with the darker, out-of-focus background, which could symbolize a spotlight effect, drawing attention to the subject's actions. The toothbrush, a mundane object, held in a way that suggests a deliberate and perhaps slightly forced action, adds to the sense of unease. The subject's expression, while not overtly emotional, conveys a sense of concentration or perhaps even a hint of discomfort, which, combined with the stark lighting and the focused gaze, contributes to a mood that is neither entirely positive nor negative, but rather a contemplative and slightly tense atmosphere. The orange shirt, a vibrant color, stands out against the darker background, adding a touch of warmth but also drawing attention to the subject's actions, which might be seen as a deliberate choice to highlight the subject's behavior.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 222,
+            "total_tokens": 530
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1740.302008,
+            "prompt_eval_duration_ms": 30.645446,
+            "generation_duration_ms": 1666.941488,
+            "load_duration_ms": 40.850315,
+            "tokens_per_second": 133.17803990010236
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"large\",\n      \"description\": \"brushing teeth with a toothbrush\"\n    }\n  },\n  \"man-made\": {\n    \"toothbrush\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"small\",\n      \"description\": \"being held by the person\"\n    }\n  },\n  \"natural\": {\n    \"lights\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"orange\"],\n      \"size\": \"small\",\n      \"description\": \"blurred lights in the background\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "large",
+                "description": "brushing teeth with a toothbrush"
+              }
+            },
+            "man-made": {
+              "toothbrush": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "white"
+                ],
+                "size": "small",
+                "description": "being held by the person"
+              }
+            },
+            "natural": {
+              "lights": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "orange"
+                ],
+                "size": "small",
+                "description": "blurred lights in the background"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 175,
+            "total_tokens": 661
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1371.259542,
+            "prompt_eval_duration_ms": 44.110573,
+            "generation_duration_ms": 1285.741642,
+            "load_duration_ms": 38.914078,
+            "tokens_per_second": 136.10821512149482
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2608,
+        "total_time_ms": 7162.301654,
+        "average_speed": 134.71865542463942
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a close-up of a person brushing their teeth. The individual is wearing an orange shirt, which stands out prominently against the darker background. The main focus is on their face and hand, with the person holding a toothbrush with a blue handle and white bristles. The toothbrush is positioned near their mouth, suggesting they are in the act of brushing. The person's expression is somewhat exaggerated, with wide eyes and a slightly open mouth, giving the image a playful or humorous tone.\n\nThe background is softly blurred, featuring warm, out-of-focus bokeh lights that create a cozy, festive atmosphere, possibly indicating a holiday setting or a room decorated with string lights. The lighting is warm and subdued, with the background lights providing a gentle glow that contrasts with the darker tones of the person's hair and the shadows on their face. The overall composition is centered on the person's face and hand, drawing attention to the action of brushing teeth. The image has a candid, intimate feel, with the close-up perspective and the expressive face adding a sense of personality and emotion to the scene. The combination of the orange shirt, the blue toothbrush, and the warm background lights creates a visually engaging and balanced composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 246,
+            "total_tokens": 543
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12739.306801,
+            "prompt_eval_duration_ms": 3521.493683,
+            "generation_duration_ms": 9177.960225,
+            "load_duration_ms": 37.671975,
+            "tokens_per_second": 26.803341262028624
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a person wearing an orange shirt, with their face and hand prominently featured. The individual is holding a small object, possibly a toothbrush or a similar item, close to their mouth, creating a focal point of interaction. The person's expression is intense, with wide eyes and a slightly open mouth, suggesting a moment of surprise, concentration, or playfulness. The hand is detailed, with fingers gripping the object firmly, emphasizing the action taking place.\n\nIn the background, the setting is softly blurred, creating a bokeh effect with warm, out-of-focus lights that appear to be decorative, possibly Christmas lights or similar festive illumination. The background is dark, contrasting sharply with the bright, warm tones of the lights, which adds depth and draws attention to the foreground. The blurred lights create a cozy, intimate atmosphere, suggesting a domestic or celebratory environment.\n\nThe relationship between the foreground and background is one of contrast and focus. The sharpness and detail of the person in the foreground stand out against the soft, indistinct background, creating a strong visual hierarchy. The warm, festive lights in the background complement the orange shirt, tying the elements together visually and suggesting a time of celebration or a casual, homey setting. The overall composition emphasizes the person's action and expression, while the background provides context and mood without distracting from the main subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 279,
+            "total_tokens": 582
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10545.565654,
+            "prompt_eval_duration_ms": 73.178216,
+            "generation_duration_ms": 10432.067364,
+            "load_duration_ms": 38.27496,
+            "tokens_per_second": 26.744459201135964
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image shows a person brushing their teeth. The individual is wearing an orange shirt and is holding a toothbrush with a blue handle in their right hand, actively brushing their teeth. The person's facial expression appears exaggerated, with wide eyes and an open mouth, suggesting a playful or humorous demeanor. The background is softly blurred, featuring warm, out-of-focus lights that create a bokeh effect, giving the impression of a festive or cozy setting, possibly during the holiday season. There are no animals visible in the image. The primary focus is on the person and their action of brushing their teeth. The interaction between the person and the toothbrush is direct and purposeful, as the toothbrush is being used to clean the teeth. The background lights provide a contrasting backdrop, enhancing the overall visual appeal and adding a sense of warmth and context to the scene. The image conveys a lighthearted and relatable moment, emphasizing the routine activity of dental hygiene in a visually engaging manner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 200,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7647.841582,
+            "prompt_eval_duration_ms": 75.673226,
+            "generation_duration_ms": 7531.35906,
+            "load_duration_ms": 38.495245,
+            "tokens_per_second": 26.555632045512912
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a sense of playful mischief and lightheartedness, with a slightly surreal and whimsical tone. The person in the foreground is holding a toothbrush in a manner that suggests they are about to use it, but their exaggerated, wide-eyed expression and slightly open mouth create a humorous and unexpected juxtaposition. The blurred, warm bokeh lights in the background add a cozy, festive atmosphere, which contrasts with the slightly absurd nature of the subject's expression and action. This combination of elements\u2014playful expression, everyday object, and warm lighting\u2014creates a mood that is neither entirely positive nor negative but rather neutral with a leaning toward amusement. The overall tone is light-hearted, evoking feelings of curiosity and amusement rather than strong emotions like joy or sadness. The visual elements contributing to this atmosphere include the exaggerated facial expression, the ordinary yet oddly placed toothbrush, and the soft, warm background lighting, all of which work together to create a scene that is both relatable and slightly absurd.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 205,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7822.74235,
+            "prompt_eval_duration_ms": 76.289042,
+            "generation_duration_ms": 7706.859426,
+            "load_duration_ms": 37.471195,
+            "tokens_per_second": 26.59968070890307
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"large\",\n      \"description\": \"A person brushing their teeth with a blue toothbrush, wearing an orange shirt, and looking surprised or shocked.\"\n    }\n  },\n  \"man-made\": {\n    \"toothbrush\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\"],\n      \"size\": \"small\",\n      \"description\": \"A toothbrush being used to brush teeth.\"\n    }\n  },\n  \"natural\": {\n    \"eyes\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"blue\"],\n      \"size\": \"small\",\n      \"description\": \"Blue eyes of the person.\"\n    },\n    \"hair\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Short brown hair of the person.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "large",
+                "description": "A person brushing their teeth with a blue toothbrush, wearing an orange shirt, and looking surprised or shocked."
+              }
+            },
+            "man-made": {
+              "toothbrush": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "small",
+                "description": "A toothbrush being used to brush teeth."
+              }
+            },
+            "natural": {
+              "eyes": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "small",
+                "description": "Blue eyes of the person."
+              },
+              "hair": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Short brown hair of the person."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 235,
+            "total_tokens": 721
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8949.43694,
+            "prompt_eval_duration_ms": 142.130624,
+            "generation_duration_ms": 8766.911963,
+            "load_duration_ms": 38.162837,
+            "tokens_per_second": 26.805333621667167
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2865,
+        "total_time_ms": 47704.893327,
+        "average_speed": 26.701689367849546
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image presents a close-up portrait of a young woman with dark, slightly messy hair. She is positioned in the foreground, with a focused expression on her face, and her lips are slightly parted as if she is about to speak or blow out a bubble. Her skin tone is fair, and her eyes are a striking, bright blue, drawing immediate attention. She is wearing a bright orange t-shirt. \n\nBehind her, a blurred background of orange bokeh lights creates a warm, festive atmosphere, resembling a party scene. Her hand is delicately holding a blue bubble wand, with a small bubble forming at the end. The lighting is predominantly warm and soft, highlighting her face and the bubble. The composition is tightly focused on her face, emphasizing her expression and the delicate bubble. The overall effect is intimate and slightly surreal, creating a sense of wonder and playfulness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 188,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1526.841145,
+            "prompt_eval_duration_ms": 306.243888,
+            "generation_duration_ms": 1135.407701,
+            "load_duration_ms": 83.135689,
+            "tokens_per_second": 165.5792891262061
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a young woman's face, captured in a close-up shot. Her skin appears pale, and her expression is somewhat intense, with wide, slightly startled blue eyes. She is in the act of blowing into a clear plastic tube, her lips pursed and her hand delicately holding the tube. Her orange t-shirt is visible beneath her, adding a warm color contrast to her skin. \n\nThe background is a blurred, bokeh-filled expanse of warm orange lights. These lights appear to be scattered, creating a dreamy, out-of-focus effect. The bokeh pattern suggests a festive or celebratory setting, possibly a party or event with illuminated decorations. The orange lights in the background create a sense of depth and draw attention to the woman\u2019s face, while simultaneously adding a layer of mystery and ambiance to the scene. The combination of the focused woman and the blurred background creates a striking visual contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 205,
+            "total_tokens": 523
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1354.399789,
+            "prompt_eval_duration_ms": 56.614824,
+            "generation_duration_ms": 1212.982252,
+            "load_duration_ms": 82.734257,
+            "tokens_per_second": 169.0049460014688
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph:\n\nThe image focuses on a young woman with dark, slightly messy hair, her face partially in sharp focus. She is mid-action, seemingly blowing bubbles with a blue bubble wand. Her lips are slightly parted, and her eyes are wide and expressive, suggesting a moment of playful concentration. Her hand, pale and slender, delicately holds the bubble wand, while the other hand is visible, suggesting a relaxed posture. \n\nBehind her, a blurred background of orange bokeh lights creates a warm, festive atmosphere. The lights are out of focus, drawing attention to the woman and her activity. The interaction is simple \u2013 the woman is actively creating and engaging with the bubbles, and the lights provide a soft, ambient backdrop. The composition emphasizes the intimate, almost solitary, nature of the activity, highlighting a moment of quiet enjoyment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 179,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1217.294987,
+            "prompt_eval_duration_ms": 57.33879,
+            "generation_duration_ms": 1072.397703,
+            "load_duration_ms": 85.592475,
+            "tokens_per_second": 166.9156876215353
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed in the image, aiming for a continuous paragraph of around 200 words:\n\nThe image evokes a palpable sense of vulnerability and quiet sadness. The close-up shot of a young woman\u2019s face, partially obscured by a blue bubble blower, immediately draws the viewer in with a feeling of intimacy and introspection. Her expression is subtly melancholic, with a slight downturn of her lips and a focused gaze that suggests a moment of quiet contemplation or perhaps a suppressed emotion. The bubble blower, held delicately in her hand, adds to this feeling of fragility and fleeting beauty, as if she's trying to capture a moment of joy or escape a difficult feeling. \n\nThe warm, orange background, blurred into bokeh circles, creates a soft, dreamlike atmosphere, intensifying the emotional impact. The lighting is gentle, contributing to the overall sense of vulnerability. The composition itself\u2014the close-up, the soft focus, and the delicate object\u2014all work together to create a mood that is both tender and slightly unsettling, prompting a feeling of empathy and a desire to understand the unspoken emotions behind her gaze.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 234,
+            "total_tokens": 558
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1554.067922,
+            "prompt_eval_duration_ms": 59.741973,
+            "generation_duration_ms": 1404.164446,
+            "load_duration_ms": 88.184491,
+            "tokens_per_second": 166.64714782274154
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"skin tone\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A young person with a slightly surprised expression, holding a blue bubble wand.\"\n    }\n  },\n  \"man-made\": {\n    \"bubble wand\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"blue\", \"clear\"],\n      \"size\": \"small\",\n      \"description\": \"A plastic bubble wand with a clear tube and blue handle.\"\n    }\n  },\n  \"natural\": {\n    \"background\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"orange\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"A blurred orange background with bokeh lights.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "skin tone",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A young person with a slightly surprised expression, holding a blue bubble wand."
+              }
+            },
+            "man-made": {
+              "bubble wand": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "blue",
+                  "clear"
+                ],
+                "size": "small",
+                "description": "A plastic bubble wand with a clear tube and blue handle."
+              }
+            },
+            "natural": {
+              "background": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "orange",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "A blurred orange background with bokeh lights."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 225,
+            "total_tokens": 743
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1485.265298,
+            "prompt_eval_duration_ms": 66.945921,
+            "generation_duration_ms": 1333.158784,
+            "load_duration_ms": 83.20797,
+            "tokens_per_second": 168.77209429240798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2825,
+        "total_time_ms": 7137.869141000001,
+        "average_speed": 167.38383297287197
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image is a close-up portrait of a young woman applying lipstick. The setting appears to be indoors, with a blurred background of warm-toned bokeh lights, predominantly orange and yellow, creating a soft, festive atmosphere. The woman is positioned centrally, her face filling most of the frame. She has fair skin, dark eyebrows, and striking blue-green eyes that are wide and focused. Her lips are slightly parted as she carefully applies a vibrant red lipstick using a blue lipstick applicator. The lighting is soft and diffused, highlighting the texture of her skin and the glossy finish of the lipstick. The overall composition is intimate and focuses on the act of self-care and beauty. The contrast between the woman\u2019s fair complexion, the red lipstick, and the warm background creates visual interest.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 170,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2559.866334,
+            "prompt_eval_duration_ms": 340.575955,
+            "generation_duration_ms": 2128.183612,
+            "load_duration_ms": 89.293623,
+            "tokens_per_second": 79.88032566430645
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationship:\n\nThe foreground is dominated by a close-up of a person's face, specifically their mouth and the hand applying lipstick. The person has fair skin, light eyebrows, and striking blue eyes that are wide and focused. Their lips are parted as they apply a vibrant red lipstick with a blue-handled tube. The hand holding the lipstick is pale and appears delicate against the person's face. The focus is sharp on the mouth and lipstick, creating a sense of intimacy and detail. \n\nThe background is blurred and indistinct, consisting of a bokeh effect of warm orange and yellow circles. This creates a soft, dreamlike atmosphere and serves to isolate the person's face, drawing the viewer's attention to the action of applying lipstick. The warm tones of the background complement the red lipstick, creating a visually appealing contrast. The blurred background suggests a party or festive setting, but the focus remains firmly on the individual and their grooming ritual.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 209,
+            "total_tokens": 527
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2810.899995,
+            "prompt_eval_duration_ms": 66.049409,
+            "generation_duration_ms": 2652.456639,
+            "load_duration_ms": 90.344427,
+            "tokens_per_second": 78.79487902912331
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe image features a person, seemingly a young woman, in a close-up shot. She is actively applying lipstick, holding the tube in her hand and carefully painting her lips. Her expression is focused, with wide, alert eyes gazing directly at the viewer. The background is blurred, but appears to be a festive setting with numerous bokeh lights in warm orange and yellow tones, suggesting a party or celebratory atmosphere. The woman's hand, pale against the orange background, holds the blue lipstick tube, and her lips are coated with a glossy, pink hue. The interaction is straightforward: the woman is performing a grooming routine, enhancing her appearance within a celebratory environment. The bokeh lights contribute to a sense of occasion and visual warmth, contrasting with the cool blue of the lipstick tube and the pale skin tone of the subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 181,
+            "total_tokens": 502
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2455.957446,
+            "prompt_eval_duration_ms": 71.019994,
+            "generation_duration_ms": 2293.763731,
+            "load_duration_ms": 89.166598,
+            "tokens_per_second": 78.90960936987629
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a sense of focused self-care and perhaps a touch of playful indulgence. The woman's expression, with her slightly parted lips and focused gaze, suggests a moment of quiet routine, likely applying lipstick. There's a subtle hint of amusement or enjoyment in her expression, as if she's savoring the process. The warm, blurred background of orange bokeh lights creates a cozy and intimate atmosphere, softening the overall tone and preventing it from feeling clinical or sterile. The close-up framing emphasizes the detail of the lipstick application and draws the viewer into this personal moment. The overall mood is positive and gentle, evoking feelings of relaxation, pampering, and a touch of playful vanity. It's a snapshot of a simple pleasure, presented in a visually appealing and comforting way.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 161,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2217.325897,
+            "prompt_eval_duration_ms": 72.463958,
+            "generation_duration_ms": 2054.662581,
+            "load_duration_ms": 86.323385,
+            "tokens_per_second": 78.35836476938303
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"item\": \"person\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"fair\", \"pink\"],\n      \"size\": \"large\",\n      \"description\": \"Female applying lipstick, looking directly at the camera, slightly parted lips\"\n    }\n  ],\n  \"man-made\": [\n    {\n      \"item\": \"lipstick\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"blue\"],\n      \"size\": \"small\",\n      \"description\": \"Being used to apply color to lips\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"bokeh\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"orange\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"Blurred lights creating a bokeh effect\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "item": "person",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "fair",
+                  "pink"
+                ],
+                "size": "large",
+                "description": "Female applying lipstick, looking directly at the camera, slightly parted lips"
+              }
+            ],
+            "man-made": [
+              {
+                "item": "lipstick",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "blue"
+                ],
+                "size": "small",
+                "description": "Being used to apply color to lips"
+              }
+            ],
+            "natural": [
+              {
+                "item": "bokeh",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "orange",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "Blurred lights creating a bokeh effect"
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 229,
+            "total_tokens": 747
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3070.564863,
+            "prompt_eval_duration_ms": 92.261597,
+            "generation_duration_ms": 2889.085696,
+            "load_duration_ms": 87.341753,
+            "tokens_per_second": 79.26383087807167
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2744,
+        "total_time_ms": 13114.614535,
+        "average_speed": 79.04140194215215
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image is a close-up portrait of a young woman applying lipstick. She has fair skin, light eyes, and dark hair framing her face. She's wearing a bright orange shirt that dominates the right side of the frame. Her lips are slightly parted as she uses a blue lipstick applicator to apply a pink-toned lipstick. The background is blurred, featuring warm, golden bokeh lights, suggesting a festive or party-like setting. \n\nThe lighting is soft and focused on her face, creating a slight contrast between the illuminated skin and the darker background. The composition is tight, drawing attention to her lips and the act of applying makeup. The shallow depth of field further emphasizes the subject and creates a sense of intimacy. The overall mood is casual and intimate, capturing a moment of personal grooming.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 172,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4614.186616,
+            "prompt_eval_duration_ms": 404.157544,
+            "generation_duration_ms": 4118.007925,
+            "load_duration_ms": 89.851321,
+            "tokens_per_second": 41.76776808898444
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a close-up of a woman applying lipstick. Her face is the central focus, with her lips parted as she uses a blue-handled lipstick to color them. The detail is sharp, highlighting her skin texture and the application process. Her expression is somewhat neutral, and she's wearing an orange shirt. \n\nThe background is blurred and consists of warm, golden bokeh lights, creating a soft, out-of-focus effect. These lights suggest a festive or celebratory setting, perhaps a party or event. The contrast between the sharp focus on the woman and the blurred background draws the viewer's attention to her and the act of applying makeup. The warm tones of the background complement the orange of her shirt, creating a cohesive color palette. The relationship between the layers is one of contrast and focus, with the background providing context and atmosphere while the foreground presents the main subject and action.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 201,
+            "total_tokens": 519
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4990.983749,
+            "prompt_eval_duration_ms": 80.712472,
+            "generation_duration_ms": 4821.640049,
+            "load_duration_ms": 86.514834,
+            "tokens_per_second": 41.687060410427584
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe primary subject is a young woman with fair skin and light-colored eyes, who is applying lipstick. She holds a blue-handled lipstick applicator to her lips, carefully coloring them with a pinkish-red hue. Her expression is focused and intent as she concentrates on the task. The background is blurred, featuring warm, golden bokeh lights, suggesting a festive or celebratory atmosphere. The woman is wearing an orange shirt, which provides a vibrant contrast to her skin tone. The interaction is solely between the woman and the lipstick, as she uses the object to enhance her appearance. The blurred background serves to emphasize the woman as the central focus of the image, creating a sense of intimacy and highlighting the act of self-care or preparation. There are no other people or animals present in the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 170,
+            "total_tokens": 491
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4241.913735,
+            "prompt_eval_duration_ms": 87.599582,
+            "generation_duration_ms": 4061.195677,
+            "load_duration_ms": 91.025573,
+            "tokens_per_second": 41.85959345982038
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of vulnerability and perhaps a touch of anxiety or discomfort. The woman's direct, slightly wide-eyed gaze, combined with the act of applying lip balm, suggests a self-conscious moment of personal care. Her expression isn't necessarily unhappy, but there's a lack of joy or exuberance. The shallow depth of field and blurred, warm-toned lights in the background create a soft, intimate atmosphere, but also contribute to a feeling of isolation. The close-up framing emphasizes her face and draws attention to her lips, making the act of applying balm feel more exposed and intimate. The overall tone is somewhat neutral, leaning towards a slightly melancholic or introspective mood. It feels like a captured, private moment, rather than a celebratory or joyful one.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 177,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4411.823135,
+            "prompt_eval_duration_ms": 88.374595,
+            "generation_duration_ms": 4232.114553,
+            "load_duration_ms": 89.26354,
+            "tokens_per_second": 41.823064518546836
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"fair\"\n      ],\n      \"size\": \"large\",\n      \"description\": \"A woman applying lipstick. She is looking directly at the viewer.\"\n    }\n  },\n  \"man-made\": {\n    \"lipstick\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"blue\",\n        \"brown\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"A tube of lipstick being used on the woman's lips.\"\n    },\n    \"lights\": {\n      \"count\": 10,\n      \"location\": \"background, left\",\n      \"color\": [\n        \"orange\",\n        \"yellow\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"Blurred bokeh lights in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "fair"
+                ],
+                "size": "large",
+                "description": "A woman applying lipstick. She is looking directly at the viewer."
+              }
+            },
+            "man-made": {
+              "lipstick": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "brown"
+                ],
+                "size": "small",
+                "description": "A tube of lipstick being used on the woman's lips."
+              },
+              "lights": {
+                "count": 10,
+                "location": "background, left",
+                "color": [
+                  "orange",
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Blurred bokeh lights in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 234,
+            "total_tokens": 752
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5790.911934,
+            "prompt_eval_duration_ms": 146.046951,
+            "generation_duration_ms": 5552.558009,
+            "load_duration_ms": 90.123704,
+            "tokens_per_second": 42.14273846769639
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2748,
+        "total_time_ms": 24049.819169,
+        "average_speed": 41.856044989095125
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a close-up of a person brushing their teeth. The individual, who appears to be a woman, is wearing an orange shirt and has short, dark hair. She is holding a blue toothbrush in her right hand and is actively brushing her teeth, her lips slightly parted to reveal the toothbrush in motion. The background is blurred, featuring bokeh-style lights in warm tones of yellow and orange, suggesting an indoor setting, possibly a bathroom, with ambient lighting creating a cozy atmosphere. The focus is sharply on the person's face and hands, emphasizing the action of brushing teeth. The overall composition is intimate and candid, capturing a mundane yet essential daily routine with a soft, warm color palette that adds a sense of comfort and familiarity to the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 157,
+            "total_tokens": 949
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6450.159507,
+            "prompt_eval_duration_ms": 2003.045617,
+            "generation_duration_ms": 4398.516412,
+            "load_duration_ms": 46.245233,
+            "tokens_per_second": 35.693853402859595
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a person is prominently featured, brushing their teeth with a blue toothbrush. The individual is wearing an orange top, and their face is clearly visible, showing a focused expression as they perform the action. The foreground is sharply in focus, highlighting the details of the person's face and the toothbrush.\n\nIn contrast, the background is blurred, creating a bokeh effect with out-of-focus lights that appear as soft, glowing orbs. These lights are likely from a festive or decorative setting, suggesting a celebratory or cozy atmosphere. The blurred background provides a contrast to the sharp foreground, drawing attention to the person brushing their teeth while hinting at a warm, ambient setting. The combination of the focused foreground and the blurred background creates a layered composition that emphasizes the main subject while adding depth and context to the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 174,
+            "total_tokens": 972
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4937.006585,
+            "prompt_eval_duration_ms": 53.471667,
+            "generation_duration_ms": 4835.602316,
+            "load_duration_ms": 45.447346,
+            "tokens_per_second": 35.98310792106916
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a person who appears to be brushing their teeth. The individual is holding a blue toothbrush and is in the process of applying toothpaste to it. The person is wearing an orange shirt, and their facial expression suggests concentration or perhaps surprise. The background is blurred with bokeh lights, indicating an indoor setting, possibly a bathroom. The primary action in the image is the person brushing their teeth, which is a personal hygiene activity. There are no other people, animals, or distinct objects in the image, making the individual the sole focus. The interaction is solely between the person and the toothbrush, highlighting a routine self-care activity. The blurred background helps to emphasize the person and their action, drawing the viewer's attention directly to the act of brushing teeth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 157,
+            "total_tokens": 957
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4472.747121,
+            "prompt_eval_duration_ms": 64.180306,
+            "generation_duration_ms": 4361.722462,
+            "load_duration_ms": 44.106641,
+            "tokens_per_second": 35.99495414204096
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood that is a blend of curiosity and intensity. The woman\u2019s wide-eyed expression and focused gaze suggest a sense of wonder or surprise, while her slightly parted lips and the act of brushing her teeth imply a moment of personal reflection or routine. The background, blurred with bokeh lights, adds a dreamy and somewhat whimsical quality, softening the overall tone. The warm, glowing lights create a cozy and intimate atmosphere, evoking feelings of comfort and familiarity. The combination of these elements\u2014her concentrated expression, the mundane yet intimate action of brushing teeth, and the soft, glowing backdrop\u2014contributes to an emotional atmosphere that is both tender and intriguing. The overall tone is positive, with a hint of neutrality due to the everyday nature of the activity, but the dreamy background and her expressive eyes lend a touch of magic and warmth to the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 182,
+            "total_tokens": 985
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5154.263791,
+            "prompt_eval_duration_ms": 57.715101,
+            "generation_duration_ms": 5048.507199,
+            "load_duration_ms": 45.207508,
+            "tokens_per_second": 36.05026056733171
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"large\",\n      \"description\": \"A person is brushing their teeth with a toothbrush.\"\n    }\n  },\n  \"man-made\": {\n    \"toothbrush\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\"],\n      \"size\": \"small\",\n      \"description\": \"A blue toothbrush being used by the person.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "large",
+                "description": "A person is brushing their teeth with a toothbrush."
+              }
+            },
+            "man-made": {
+              "toothbrush": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "small",
+                "description": "A blue toothbrush being used by the person."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 125,
+            "total_tokens": 1107
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3614.575247,
+            "prompt_eval_duration_ms": 101.753337,
+            "generation_duration_ms": 3463.756544,
+            "load_duration_ms": 46.269852,
+            "tokens_per_second": 36.08798667346523
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 4970,
+        "total_time_ms": 24628.752251,
+        "average_speed": 35.96203254135334
+      }
+    }
+  ]
+}

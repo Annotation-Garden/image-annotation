@@ -1,0 +1,877 @@
+{
+  "image": {
+    "path": "images/original/shared0629_nsd46137.png",
+    "name": "shared0629_nsd46137.png",
+    "id": "shared0629_nsd46137"
+  },
+  "timestamp": "2025-08-30T21:29:16.280663+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a dramatic scene dominated by a clock tower, likely part of a historic building, set against a backdrop of a heavily clouded sky. The tower, with its ornate green dome and intricate architectural details, stands prominently in the foreground, its beige and brown hues contrasting sharply with the dark, brooding clouds above. The lighting is moody and atmospheric, with the clouds casting a diffuse, soft light that highlights the textures of the tower's facade and the clock's face. The clock, with its black hands and white face, is a focal point, adding a sense of timelessness and grandeur to the scene. The composition is vertical, emphasizing the height of the tower and the vastness of the sky, creating a sense of scale and grandeur. The overall mood is one of quiet contemplation, with the dark clouds suggesting an impending storm or a somber, reflective atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 182,
+            "total_tokens": 479
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1416.941518,
+            "prompt_eval_duration_ms": 79.20943,
+            "generation_duration_ms": 1299.325406,
+            "load_duration_ms": 36.291985,
+            "tokens_per_second": 140.07268630287987
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the clock tower stands prominently, its beige stone facade adorned with intricate architectural details and topped with a green dome. The clock face, marked with Roman numerals, is clearly visible, indicating the time as approximately 10:10. The tower's structure is symmetrical and detailed, suggesting a historical or significant architectural importance. The background is filled with a dramatic sky, heavy with dark, swirling clouds that hint at an impending storm, creating a stark contrast with the calm and structured appearance of the tower. The relationship between the foreground and background is one of juxtaposition; the man-made structure of the clock tower is set against the natural, dynamic backdrop of the sky, emphasizing the contrast between human creation and the forces of nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 155,
+            "total_tokens": 458
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1186.769729,
+            "prompt_eval_duration_ms": 30.25078,
+            "generation_duration_ms": 1117.295841,
+            "load_duration_ms": 36.624451,
+            "tokens_per_second": 138.7278053959927
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a clock tower against a dramatic sky filled with dark, swirling clouds, suggesting an impending storm. There are no people or animals present in the image, focusing solely on the architectural and natural elements. The clock tower, with its ornate green spire and intricate details, stands as a static, imposing structure, symbolizing time and permanence. The clock face, clearly visible, indicates the time, adding a dynamic element to the otherwise still scene. The sky, with its heavy, brooding clouds, creates a sense of tension and anticipation, contrasting with the tower's steady presence. The interaction between the tower and the sky is one of juxtaposition; the tower stands firm and unyielding, while the sky, though dark and foreboding, does not directly interact with the tower. The relationship between these elements is one of contrast and balance, where the tower represents human achievement and the sky represents the natural world's power and unpredictability.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 194,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1471.472568,
+            "prompt_eval_duration_ms": 30.795125,
+            "generation_duration_ms": 1399.914817,
+            "load_duration_ms": 38.677534,
+            "tokens_per_second": 138.57986046303844
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a mood of solemnity and contemplation, leaning slightly towards a negative tone. The towering clock tower, with its intricate details and the prominent clock face, stands as a silent sentinel against the backdrop of a brooding sky filled with heavy, dark clouds. The muted, almost sepia-toned lighting adds to the somber atmosphere, suggesting a sense of timelessness and perhaps even a touch of melancholy. The contrast between the rigid, structured architecture of the tower and the chaotic, ever-moving clouds above creates a dynamic tension, hinting at the relentless passage of time and the unpredictable nature of the world. The absence of people or other distractions further emphasizes the solitude and introspective quality of the scene, inviting the viewer to reflect on the fleeting nature of moments and the enduring presence of structures that witness them.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 167,
+            "total_tokens": 475
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1277.321698,
+            "prompt_eval_duration_ms": 30.808128,
+            "generation_duration_ms": 1205.5826,
+            "load_duration_ms": 38.676138,
+            "tokens_per_second": 138.52223812785618
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"clock_tower\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"tall clock tower with ornate details and a clock face\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"cloudy sky with dark clouds\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "clock_tower": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "green"
+                ],
+                "size": "large",
+                "description": "tall clock tower with ornate details and a clock face"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "cloudy sky with dark clouds"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 130,
+            "total_tokens": 616
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1008.412101,
+            "prompt_eval_duration_ms": 43.804565,
+            "generation_duration_ms": 922.089355,
+            "load_duration_ms": 39.218189,
+            "tokens_per_second": 140.98416741835177
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2528,
+        "total_time_ms": 6360.917614,
+        "average_speed": 139.3773515416238
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a tall, ornate clock tower set against a dramatic, overcast sky. The tower, constructed from light-colored stone, features intricate architectural details, including arched windows, decorative moldings, and a tiered structure that culminates in a green, spire-like roof. The clock face is prominently displayed on one side of the tower, with white dials and black hands, standing out against the darker tones of the stone. The sky is filled with heavy, dark gray clouds, creating a moody and somewhat foreboding atmosphere. The lighting is subdued, with soft, diffused light filtering through the clouds, casting a gentle glow on the tower and highlighting its vertical lines. The overall composition emphasizes the height and grandeur of the tower, with the viewer's perspective looking upward, accentuating its imposing presence. The contrast between the light-colored tower and the dark, brooding sky adds a sense of drama and visual interest to the scene. The setting appears to be urban, suggested by the partial view of a nearby building with a dark roofline in the lower-left corner. The image conveys a timeless, almost historical feel, evoking a sense of solemnity and grandeur.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 245,
+            "total_tokens": 542
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12718.103365,
+            "prompt_eval_duration_ms": 3524.301756,
+            "generation_duration_ms": 9154.179132,
+            "load_duration_ms": 37.550112,
+            "tokens_per_second": 26.763732331123016
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a tall clock tower, which stands prominently against the sky. The tower is constructed of stone, featuring a classic architectural design with arched windows and a pointed spire at the top, which is capped with a greenish dome. The clock face is clearly visible, indicating the time, and the structure's intricate details, such as the columns and decorative elements, are sharply defined. This clock tower serves as the primary focal point, drawing the viewer's attention immediately.\n\nIn the background, the sky is filled with dense, dark clouds, creating a dramatic and somewhat ominous atmosphere. The clouds are layered, with varying shades of gray, suggesting an overcast or stormy weather condition. The interplay of light and shadow in the clouds adds depth and texture to the background, contrasting sharply with the solid, structured form of the clock tower.\n\nThe relationship between the foreground and background is one of contrast and balance. The clock tower, with its rigid, man-made structure, stands in stark opposition to the fluid, natural form of the clouds. The dark, brooding sky enhances the imposing presence of the tower, making it appear even more monumental and timeless. The contrast between the solid, vertical lines of the tower and the soft, horizontal layers of the clouds creates a visually striking composition, emphasizing the tower's significance and the dynamic nature of the sky. Together, these elements create a powerful and evocative scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 291,
+            "total_tokens": 594
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10967.764193,
+            "prompt_eval_duration_ms": 78.671563,
+            "generation_duration_ms": 10845.734018,
+            "load_duration_ms": 38.875479,
+            "tokens_per_second": 26.830825789849275
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a tall clock tower set against a dramatic, overcast sky. The tower is the central focus, showcasing a classic architectural design with intricate details, including arched windows and ornate stonework. At the top, a green spire rises, adding a touch of color to the otherwise muted tones of the structure. The clock face is clearly visible, indicating the time, though the exact time is not discernible from the image. The sky is filled with thick, dark clouds, creating a moody and somewhat foreboding atmosphere, which contrasts sharply with the solid, enduring presence of the tower.\n\nThere are no people or animals visible in the image, as the focus is entirely on the clock tower and the sky. The interaction between the elements is primarily visual and atmospheric. The tower stands as a symbol of stability and timelessness, while the stormy sky suggests the passage of time and the ever-changing nature of the environment. The interplay between the architectural structure and the natural elements creates a sense of harmony and tension, highlighting the contrast between human-made and natural forces. The image evokes a sense of history, resilience, and the relentless march of time.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 238,
+            "total_tokens": 544
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8986.197328,
+            "prompt_eval_duration_ms": 80.512853,
+            "generation_duration_ms": 8864.679665,
+            "load_duration_ms": 39.087917,
+            "tokens_per_second": 26.84812187175632
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the clock tower against a moody, overcast sky evokes a sense of solemnity and introspection. The dark, brooding clouds create a somber and slightly melancholic atmosphere, suggesting a tone that leans toward the negative or neutral rather than positive. The clock tower, with its imposing height and intricate architectural details, stands as a symbol of time and permanence, which can evoke feelings of nostalgia or reflection on the passage of time. The contrast between the bright, illuminated clock face and the dark surroundings adds a touch of mystery and intrigue, further enhancing the image's emotional depth. The overall composition, with the tower reaching toward the cloudy sky, gives a sense of aspiration or reaching for something beyond the mundane, yet the oppressive clouds temper this with a feeling of constraint or uncertainty. The lack of vibrant colors and the dominance of grays and muted tones contribute to the subdued and contemplative mood, making the image feel weighty and thought-provoking. This combination of visual elements creates an emotional atmosphere that is both awe-inspiring and slightly melancholic, inviting the viewer to reflect on the themes of time, history, and the human condition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 235,
+            "total_tokens": 543
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8866.187064,
+            "prompt_eval_duration_ms": 81.370189,
+            "generation_duration_ms": 8745.436277,
+            "load_duration_ms": 37.13461,
+            "tokens_per_second": 26.87115800249287
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"clock_tower\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"Tall clock tower with a green spire and a clock face visible.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"dark gray\"],\n      \"size\": \"large\",\n      \"description\": \"Cloudy sky with dark clouds and some light breaking through.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "clock_tower": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "green"
+                ],
+                "size": "large",
+                "description": "Tall clock tower with a green spire and a clock face visible."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "dark gray"
+                ],
+                "size": "large",
+                "description": "Cloudy sky with dark clouds and some light breaking through."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 138,
+            "total_tokens": 624
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5270.813904,
+            "prompt_eval_duration_ms": 136.536676,
+            "generation_duration_ms": 5094.498203,
+            "load_duration_ms": 37.599931,
+            "tokens_per_second": 27.088045672238312
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2847,
+        "total_time_ms": 46809.065854,
+        "average_speed": 26.88037673349196
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image depicts a towering, aged clock tower dramatically silhouetted against a heavily clouded sky. The tower is constructed of warm, reddish-brown stone, exhibiting a weathered and slightly crumbling appearance, suggesting a historic building. Multiple arched windows punctuate the lower sections of the tower, each framed by dark stone. At the very top sits a prominent green clock face, displaying the time, and a rounded, green turret capped with a decorative dome. \n\nThe sky is a dramatic expanse of dark gray clouds, partially illuminated by a bright, diffused light source from above, creating a halo effect around the tower. This lighting emphasizes the tower's verticality and adds a sense of grandeur. The composition is dominated by the tower's upward thrust, drawing the viewer's eye towards the sky. The overall mood is one of solemnity and perhaps a hint of mystery, enhanced by the dark, stormy backdrop. The image evokes a sense of history and timelessness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 206,
+            "total_tokens": 519
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1641.047741,
+            "prompt_eval_duration_ms": 308.414476,
+            "generation_duration_ms": 1242.735541,
+            "load_duration_ms": 87.769209,
+            "tokens_per_second": 165.76334481770485
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's elements, as requested:\n\nThe foreground is dominated by a towering, aged clock tower, rendered in warm browns and reds, suggesting a historic building. The tower\u2019s intricate design is highlighted by several rectangular windows, some of which appear slightly broken, adding to its weathered appearance. A prominent, dark brown clock face is visible, displaying the time, and a dark green, ornate spire tops the structure, with a light emitting from its peak. \n\nThe background is entirely defined by a dramatic, overcast sky. Thick, swirling grey clouds fill the majority of the frame, creating a sense of depth and emphasizing the tower\u2019s verticality. A sliver of bright, diffused light breaks through the clouds above the tower, casting a subtle glow on its upper portion and creating a stark contrast with the darker tones of the tower and sky. The tower itself acts as a focal point, anchoring the image and drawing the viewer's eye upwards, while the cloudy sky provides a powerful, atmospheric backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 211,
+            "total_tokens": 529
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1415.972866,
+            "prompt_eval_duration_ms": 58.675948,
+            "generation_duration_ms": 1268.038208,
+            "load_duration_ms": 87.533594,
+            "tokens_per_second": 166.3987714792897
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe imposing silhouette of a weathered clock tower dominates the frame, its aged brickwork and arched windows hinting at a long history. The clock face, frozen at a specific time, appears solemn and static against the turbulent sky. Above, a vibrant green clock tower dome, topped with a small, ornate lantern, stands as a beacon of time. The sky itself is a dramatic canvas of dark, brooding clouds, illuminated by a sliver of light breaking through, suggesting a moment of transition or perhaps impending rain. \n\nThe tower seems to stand in stark contrast to the dynamic sky, representing stability and permanence. The light filtering through the clouds casts a soft glow on the tower, highlighting its architectural details. The relationship between the tower and the sky is one of dominance and vulnerability, with the tower asserting its presence against the powerful, shifting clouds. The image evokes a sense of quiet contemplation and the passage of time.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 202,
+            "total_tokens": 523
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1341.334256,
+            "prompt_eval_duration_ms": 53.745891,
+            "generation_duration_ms": 1199.133059,
+            "load_duration_ms": 86.556599,
+            "tokens_per_second": 168.45503381289066
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of around 200 words:\n\nThe image evokes a distinctly melancholic and somewhat ominous mood. The dominant grey sky, filled with heavy, swirling clouds, immediately establishes a sense of foreboding and isolation. The towering clock tower, rendered in muted browns and reds, further amplifies this feeling. The clock face, frozen at a specific time, suggests a stillness and a sense of being stuck in the past, adding to the overall feeling of unease. The verticality of the tower, reaching upwards into the stormy sky, can be interpreted as a symbol of ambition or perhaps a yearning for something unattainable, further contributing to the sense of longing and sadness. \n\nThe lack of any human presence and the stark contrast between the dark sky and the tower's structure create a feeling of loneliness and quiet contemplation. There's a subtle tension in the image, a feeling that something significant, perhaps a lost opportunity or a forgotten memory, is associated with this imposing structure. The overall tone is undeniably negative, leaning towards a contemplative sadness rather than outright fear.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 235,
+            "total_tokens": 559
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1557.951137,
+            "prompt_eval_duration_ms": 55.858506,
+            "generation_duration_ms": 1414.434122,
+            "load_duration_ms": 85.938756,
+            "tokens_per_second": 166.14418186384788
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"Implied presence of people within the building\"\n    }\n  },\n  \"animal\": {},\n  \"man-made\": {\n    \"clock_tower\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"brown\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A tall, brick clock tower with a prominent clock face and a green dome. It appears to be an older structure.\"\n    },\n    \"clock\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A circular clock face with black numbers and hands.\"\n    },\n    \"dome\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A green dome atop the clock tower.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Overcast sky with clouds.\"\n    },\n    \"clouds\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Cumulus clouds filling the sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": "Implied presence of people within the building"
+              }
+            },
+            "animal": {},
+            "man-made": {
+              "clock_tower": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A tall, brick clock tower with a prominent clock face and a green dome. It appears to be an older structure."
+              },
+              "clock": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A circular clock face with black numbers and hands."
+              },
+              "dome": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A green dome atop the clock tower."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Overcast sky with clouds."
+              },
+              "clouds": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Cumulus clouds filling the sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 402,
+            "total_tokens": 920
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2601.554836,
+            "prompt_eval_duration_ms": 65.812492,
+            "generation_duration_ms": 2444.514495,
+            "load_duration_ms": 89.061664,
+            "tokens_per_second": 164.44983280821168
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3050,
+        "total_time_ms": 8557.860836,
+        "average_speed": 166.24223295638893
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a dramatic, upward-angled view of a tall clock tower set against a turbulent, overcast sky. The tower itself is constructed of reddish-brown brick, exhibiting a classic architectural style with multiple tiers and numerous rectangular windows. A large, ornate clock face is prominently displayed on the tower's midsection, its hands indicating a time around 10:43. The tower\u2019s top features a green-colored lantern and spire, adding a contrasting element to the overall composition. The sky is dominated by dark, swirling clouds, with a patch of lighter, diffused light breaking through, creating a sense of foreboding and drama. The lighting is subdued, with the tower appearing somewhat shadowed, emphasizing its height and imposing presence. The composition is striking, with the tower occupying a significant portion of the frame and the sky providing a powerful, atmospheric backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 186,
+            "total_tokens": 499
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2732.841467,
+            "prompt_eval_duration_ms": 340.02069,
+            "generation_duration_ms": 2301.502037,
+            "load_duration_ms": 89.396809,
+            "tokens_per_second": 80.81678704158365
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationship:\n\nThe foreground is dominated by a tall, ornate clock tower, rendered in a warm, reddish-brown hue. Its architectural details are intricate, featuring multiple tiers with arched windows and decorative moldings. The clock face is prominently displayed, showing the time. The tower's structure appears solid and imposing, rising vertically and taking up a significant portion of the frame. Contrasting sharply with the tower, the background is a dramatic, stormy sky. Dark, swirling clouds fill the entire upper portion of the image, creating a sense of foreboding and intensity. Patches of lighter gray suggest breaks in the cloud cover, but the overall impression is one of a turbulent atmosphere. The tower\u2019s warm tones and detailed structure are set against the cool, chaotic backdrop of the sky, creating a visual contrast that emphasizes the tower\u2019s steadfastness against the power of nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 192,
+            "total_tokens": 510
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2562.082572,
+            "prompt_eval_duration_ms": 66.756291,
+            "generation_duration_ms": 2402.122505,
+            "load_duration_ms": 91.098687,
+            "tokens_per_second": 79.92931234787295
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on elements and their interactions:\n\nThe image prominently features a tall, ornate clock tower, its reddish-brown brickwork contrasting sharply against a dramatic, overcast sky. The tower's architecture is detailed, with numerous arched windows and a decorative top section culminating in a green-capped spire. The clock face is visible, displaying a time around 9:40. The tower appears to be rising from a lower building structure, partially obscured by the frame. The sky dominates the background, filled with dark, swirling clouds that create a sense of foreboding. The clouds are illuminated by a break in the overcast, creating a diffused light that highlights the tower's form. There are no people or animals present in the scene. The tower stands alone, a silent sentinel against the turbulent sky, its presence evoking a feeling of timelessness and resilience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 182,
+            "total_tokens": 503
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2426.990916,
+            "prompt_eval_duration_ms": 65.938672,
+            "generation_duration_ms": 2273.839715,
+            "load_duration_ms": 85.328158,
+            "tokens_per_second": 80.0408220506431
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a mood of solemnity and perhaps a touch of melancholy. The towering clock tower, rendered in warm, reddish-brown tones, stands starkly against a dramatically dark and stormy sky. The heavy, swirling clouds create a sense of foreboding and isolation, suggesting a moment of quiet contemplation or even a hint of impending change. The clock face, displaying a time around 10:44, adds to the feeling of suspended time and a sense of something paused or waiting. The architectural details of the tower, while impressive, are somewhat obscured by the gloom, contributing to a feeling of age and perhaps a touch of mystery. Overall, the tone is predominantly negative, leaning towards a somber and slightly unsettling atmosphere, but the architectural grandeur prevents it from being entirely bleak.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 160,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2152.865196,
+            "prompt_eval_duration_ms": 66.262692,
+            "generation_duration_ms": 1995.978358,
+            "load_duration_ms": 88.745036,
+            "tokens_per_second": 80.16118980384256
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"item\": \"clock tower\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"gold\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"Tall, ornate clock tower with visible clock face displaying the time. The tower has multiple levels with windows and a decorative top.\"\n    },\n    {\n      \"item\": \"clock\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gold\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Visible on the clock tower, showing the time.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"sky\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Dramatic, cloudy sky with a mix of dark and lighter gray tones.\"\n    },\n    {\n      \"item\": \"clouds\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Dominant feature of the sky, creating a sense of drama and foreboding.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "item": "clock tower",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "gold",
+                  "green"
+                ],
+                "size": "large",
+                "description": "Tall, ornate clock tower with visible clock face displaying the time. The tower has multiple levels with windows and a decorative top."
+              },
+              {
+                "item": "clock",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gold",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Visible on the clock tower, showing the time."
+              }
+            ],
+            "natural": [
+              {
+                "item": "sky",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Dramatic, cloudy sky with a mix of dark and lighter gray tones."
+              },
+              {
+                "item": "clouds",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Dominant feature of the sky, creating a sense of drama and foreboding."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 297,
+            "total_tokens": 815
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3895.511232,
+            "prompt_eval_duration_ms": 93.977279,
+            "generation_duration_ms": 3710.261399,
+            "load_duration_ms": 89.14123,
+            "tokens_per_second": 80.04826831878968
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2811,
+        "total_time_ms": 13770.291383,
+        "average_speed": 80.19927591254638
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a tall, ornate clock tower dominating the frame, set against a dramatically stormy sky. The tower is constructed from a warm, reddish-brown stone, with multiple tiers of arched windows diminishing in size as they ascend. A classic clock face is visible, displaying the time, and the tower is crowned with a small, green-colored dome. The sky is filled with dark, swirling storm clouds, creating a moody and ominous atmosphere. A patch of brighter, diffused light breaks through the clouds, illuminating a portion of the tower and adding a sense of contrast. The lighting is low-key, emphasizing the textures of the stone and the dramatic cloud formations. The composition is a low-angle shot, making the tower appear imposing and grand. The overall impression is one of historical architecture meeting the power of nature, with a strong emphasis on mood and atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 184,
+            "total_tokens": 497
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4871.375887,
+            "prompt_eval_duration_ms": 402.668665,
+            "generation_duration_ms": 4376.814345,
+            "load_duration_ms": 89.786941,
+            "tokens_per_second": 42.039708677659256
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a tall, ornate clock tower constructed from a warm, reddish-brown stone. The tower features multiple levels with arched windows, gradually narrowing as it ascends. A prominent clock face is visible, displaying the time, and the tower is capped with a green, conical roof and a decorative spire. The lower left corner hints at a portion of a building constructed from similar stone, suggesting the tower is part of a larger structure. \n\nThe background is entirely filled with a dramatic, stormy sky. Dark, heavy clouds swirl and gather, creating a sense of impending weather. A small patch of brighter, diffused light breaks through the clouds, offering a slight contrast to the overall darkness. The tower stands in stark silhouette against this turbulent sky, emphasizing its height and architectural detail. The relationship between the elements is one of contrast \u2013 the solid, man-made structure against the vast, natural power of the storm \u2013 creating a visually striking and somewhat ominous scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 211,
+            "total_tokens": 529
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5198.038227,
+            "prompt_eval_duration_ms": 84.336451,
+            "generation_duration_ms": 5022.202291,
+            "load_duration_ms": 89.487738,
+            "tokens_per_second": 42.01344107108568
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their relationships:\n\nThe image prominently features a tall, ornate clock tower, constructed from a warm-toned stone. The tower dominates the frame, rising upwards against a dramatically overcast sky. The clock face is visible, though the hands are difficult to discern, suggesting a paused or obscured moment in time. The tower\u2019s architectural details\u2014arched windows and layered structure\u2014are highlighted by the contrast with the dark, swirling clouds. \n\nThe sky is filled with heavy, grey storm clouds, creating a moody and somewhat ominous atmosphere. There is a bright patch of light breaking through the clouds, illuminating the top of the tower. The clouds and tower don\u2019t interact directly, but their juxtaposition creates a sense of scale and emphasizes the tower\u2019s enduring presence against the volatile weather. No people or animals are visible in the image; the focus is entirely on the architectural structure and the natural elements surrounding it.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 197,
+            "total_tokens": 518
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4875.150108,
+            "prompt_eval_duration_ms": 90.245065,
+            "generation_duration_ms": 4694.110115,
+            "load_duration_ms": 88.720938,
+            "tokens_per_second": 41.967485886299876
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of somber grandeur and impending drama. A tall, ornate clock tower dominates the frame, its aged stone appearing almost melancholic against a dramatically stormy sky. The dark, swirling clouds create a heavy, oppressive atmosphere, suggesting a sense of foreboding or perhaps a reflection on the passage of time. The tower itself, while architecturally impressive, feels isolated and somewhat vulnerable against the turbulent backdrop. The limited color palette\u2014mostly muted browns and grays\u2014further reinforces the somber tone. While not overtly negative, the image leans towards a feeling of quiet contemplation, perhaps tinged with a hint of sadness or anticipation. The overall mood is one of powerful stillness, as if the tower is bracing itself against an approaching storm, both literal and metaphorical.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 172,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4265.894339,
+            "prompt_eval_duration_ms": 85.380776,
+            "generation_duration_ms": 4091.317887,
+            "load_duration_ms": 87.356737,
+            "tokens_per_second": 42.040243449799675
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"clock tower\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"beige\", \"dark brown\"],\n      \"size\": \"large\",\n      \"description\": \"Tall, ornate clock tower with a clock face visible. Features multiple levels of windows and a green dome at the top.\"\n    },\n    \"windows\": {\n      \"count\": 10,\n      \"location\": \"center\",\n      \"color\": [\"dark brown\"],\n      \"size\": \"small\",\n      \"description\": \"Rectangular windows distributed across the tower's levels.\"\n    }\n  },\n  \"natural\": {\n    \"clouds\": {\n      \"count\": 1,\n      \"location\": \"top/background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Dark, stormy clouds filling the sky. A patch of lighter clouds is visible towards the center.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Dark and overcast sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "clock tower": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "beige",
+                  "dark brown"
+                ],
+                "size": "large",
+                "description": "Tall, ornate clock tower with a clock face visible. Features multiple levels of windows and a green dome at the top."
+              },
+              "windows": {
+                "count": 10,
+                "location": "center",
+                "color": [
+                  "dark brown"
+                ],
+                "size": "small",
+                "description": "Rectangular windows distributed across the tower's levels."
+              }
+            },
+            "natural": {
+              "clouds": {
+                "count": 1,
+                "location": "top/background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Dark, stormy clouds filling the sky. A patch of lighter clouds is visible towards the center."
+              },
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Dark and overcast sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 280,
+            "total_tokens": 798
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6840.330927,
+            "prompt_eval_duration_ms": 141.383733,
+            "generation_duration_ms": 6607.271529,
+            "load_duration_ms": 89.852664,
+            "tokens_per_second": 42.37755308996323
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2838,
+        "total_time_ms": 26050.789488,
+        "average_speed": 42.08768643496154
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a tall, ornate clock tower set against a dramatic sky filled with dark, brooding clouds. The tower is constructed from light-colored stone, giving it a weathered yet majestic appearance. At the top of the tower, there is a greenish copper dome that has likely oxidized over time, adding a touch of patina to the structure. Below the dome, a large clock face is prominently displayed, its black hands and Roman numerals standing out against the lighter background. The clock face is framed by an intricate architectural design, with arched windows and decorative elements that enhance the tower's classical aesthetic. The lighting in the image is subdued, with the clouds casting a gloomy, overcast light that accentuates the tower's details and creates a moody atmosphere. The overall composition is balanced, with the tower dominating the frame and the sky providing a striking backdrop that highlights the architectural beauty of the structure.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 187,
+            "total_tokens": 979
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7274.395927,
+            "prompt_eval_duration_ms": 2042.452844,
+            "generation_duration_ms": 5185.98636,
+            "load_duration_ms": 43.390138,
+            "tokens_per_second": 36.05871419993476
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image prominently features a tall clock tower in the foreground, which is the closest element to the viewer. The tower is constructed from light-colored stone and has a classical architectural design, including a large clock face displaying the time. The clock face is black with white numerals and hands, and the tower is topped with a greenish dome and a spire. The intricate details of the stonework and the clock face suggest a historical or significant building. In the background, the sky is filled with dramatic, dark clouds, creating a moody and somewhat ominous atmosphere. The clouds are thick and textured, indicating an overcast or stormy weather condition. The contrast between the light-colored tower and the dark sky emphasizes the tower's prominence and adds depth to the image. The relationship between the foreground and background elements is one of stark contrast, with the solid, structured tower standing out against the fluid, chaotic sky. This juxtaposition highlights the tower's stability and permanence amidst the changing weather.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 200,
+            "total_tokens": 998
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5657.264542,
+            "prompt_eval_duration_ms": 58.687416,
+            "generation_duration_ms": 5550.93649,
+            "load_duration_ms": 44.878582,
+            "tokens_per_second": 36.02995645154643
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image prominently features a tall clock tower, which appears to be a historical or architectural landmark. The tower is constructed from stone and has a clock face near the top, displaying the time. Above the clock, there is a greenish dome with intricate detailing, culminating in a spire. The sky in the background is filled with dramatic, dark clouds, suggesting an overcast or stormy weather. There are no visible people or animals in the image. The clock tower stands alone, with no other objects or structures interacting with it directly. The overall scene conveys a sense of solitude and grandeur, with the tower as the central focus against the backdrop of the moody sky. The absence of people or animals emphasizes the architectural details and the imposing presence of the clock tower.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 156,
+            "total_tokens": 956
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4439.97676,
+            "prompt_eval_duration_ms": 57.602282,
+            "generation_duration_ms": 4335.939041,
+            "load_duration_ms": 43.955408,
+            "tokens_per_second": 35.978365591602426
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the tall clock tower against a dramatic, cloud-filled sky evokes a sense of solemnity and introspection. The overcast sky, with its dark, brooding clouds, creates a mood of melancholy and anticipation, as if a storm is about to break. The tower itself, with its intricate architectural details and the prominent clock face, exudes a sense of timelessness and history, adding to the reflective atmosphere. The contrast between the light-colored stone of the tower and the dark sky enhances the feeling of isolation and quiet grandeur. Overall, the tone of the image is neutral to slightly negative, leaning towards a contemplative and somewhat somber emotional atmosphere. The visual elements, such as the looming clouds and the imposing structure of the clock tower, contribute to this mood by emphasizing themes of time, solitude, and the passage of moments.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 176,
+            "total_tokens": 979
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4996.128966,
+            "prompt_eval_duration_ms": 57.593312,
+            "generation_duration_ms": 4890.148476,
+            "load_duration_ms": 45.703339,
+            "tokens_per_second": 35.99072724760351
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"clock tower\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"beige\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"A tall clock tower with a clock face visible on the front.\"\n    },\n    \"clock face\": {\n      \"count\": 1,\n      \"location\": \"middle\",\n      \"color\": [\"white\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A round clock face with black numbers and hands.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"description\": \"Cloudy sky with dark clouds.\"\n    },\n    \"clouds\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"description\": \"Dark clouds covering most of the sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "clock tower": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "beige",
+                  "green"
+                ],
+                "size": "large",
+                "description": "A tall clock tower with a clock face visible on the front."
+              },
+              "clock face": {
+                "count": 1,
+                "location": "middle",
+                "color": [
+                  "white",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A round clock face with black numbers and hands."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "description": "Cloudy sky with dark clouds."
+              },
+              "clouds": {
+                "count": 1,
+                "location": "top",
+                "description": "Dark clouds covering most of the sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 202,
+            "total_tokens": 1184
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5768.708185,
+            "prompt_eval_duration_ms": 102.722695,
+            "generation_duration_ms": 5618.866869,
+            "load_duration_ms": 44.457497,
+            "tokens_per_second": 35.950308969671376
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5096,
+        "total_time_ms": 28136.47438,
+        "average_speed": 36.0016144920717
+      }
+    }
+  ]
+}

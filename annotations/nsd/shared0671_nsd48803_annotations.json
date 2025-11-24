@@ -1,0 +1,927 @@
+{
+  "image": {
+    "path": "images/original/shared0671_nsd48803.png",
+    "name": "shared0671_nsd48803.png",
+    "id": "shared0671_nsd48803"
+  },
+  "timestamp": "2025-08-30T21:52:21.771293+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a sleek, dark blue cruiser motorcycle parked on a smooth asphalt surface, likely a parking lot or a quiet street, under the clear, bright sunlight of what appears to be a sunny day. The motorcycle, with its polished chrome accents, stands out against the muted tones of the pavement. The handlebars are equipped with round mirrors and controls, and the front features a clear windshield and a prominent headlight. The engine, visible beneath the seat, gleams with a metallic finish, reflecting the sunlight, while the exhaust pipes run along the side, adding to the bike's robust and powerful aesthetic. The seat is a deep, dark color, contrasting with the blue body of the motorcycle. The overall composition is simple yet striking, with the motorcycle as the central focus, its shiny surfaces catching the light and creating a sense of motion and readiness for a ride. The shadow cast by the motorcycle on the ground adds depth to the image, emphasizing the bright, sunny conditions.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 197,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1529.936529,
+            "prompt_eval_duration_ms": 83.407155,
+            "generation_duration_ms": 1402.03485,
+            "load_duration_ms": 41.68636,
+            "tokens_per_second": 140.51005936122058
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the dominant element is a sleek, dark blue cruiser motorcycle, positioned at a slight angle to the viewer, showcasing its chrome exhaust pipes and handlebars. The motorcycle's design features a prominent front headlight and a windshield, suggesting it is built for both style and comfort. The seat is a two-tone black, and the engine is visible, indicating a powerful and robust build. The ground beneath the motorcycle is a smooth, light gray asphalt surface, which reflects the sunlight, adding a sense of depth and realism to the scene. The motorcycle's shadow stretches across the asphalt, further emphasizing its presence and the direction of the light source. In the background, the setting appears to be a wide, open paved area, possibly an airport tarmac or a large parking lot, with faint lines marking the boundaries and directions. The background is less detailed, with the focus remaining firmly on the motorcycle, which serves as the central and most detailed element of the image. The contrast between the sharp, reflective details of the motorcycle and the blurred, expansive background creates a clear distinction between the foreground and background elements, highlighting the subject while providing context for its environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 236,
+            "total_tokens": 539
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1776.286143,
+            "prompt_eval_duration_ms": 30.309536,
+            "generation_duration_ms": 1702.653723,
+            "load_duration_ms": 40.722349,
+            "tokens_per_second": 138.6071617569887
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a single object, a dark blue cruiser-style motorcycle, parked on a paved surface under clear daylight. The motorcycle is the central focus, with no people or animals present in the scene. The bike's shiny chrome handlebars, headlight, and exhaust pipes reflect the sunlight, emphasizing its polished and well-maintained condition. The seat is unoccupied, suggesting the motorcycle is stationary and ready for a ride. The surrounding pavement is smooth and clean, indicating a well-maintained area, possibly a parking lot or a quiet street. The absence of any individuals or animals in the image implies that the motorcycle is the sole subject of interest, highlighting its design and features in a serene, undisturbed environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 146,
+            "total_tokens": 452
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1115.755798,
+            "prompt_eval_duration_ms": 29.723178,
+            "generation_duration_ms": 1043.984281,
+            "load_duration_ms": 39.512102,
+            "tokens_per_second": 139.84884893108847
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the sleek, dark blue motorcycle exudes a sense of freedom and adventure, evoking feelings of excitement and anticipation. The polished chrome and the well-maintained condition of the bike suggest a sense of pride and care, which can inspire admiration and a desire for similar experiences. The open road in the background further amplifies the feeling of exploration and the thrill of the journey, making the viewer feel a bit adventurous themselves. The sunlight casting a sharp shadow on the asphalt adds a dynamic element to the scene, enhancing the feeling of movement and energy. The overall tone is decidedly positive, as the image conveys a sense of liberation and the joy of riding, with the motorcycle serving as a symbol of personal freedom and the open road as a metaphor for endless possibilities.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 156,
+            "total_tokens": 464
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1190.442814,
+            "prompt_eval_duration_ms": 29.533466,
+            "generation_duration_ms": 1118.869009,
+            "load_duration_ms": 39.040447,
+            "tokens_per_second": 139.42650904186408
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A blue and silver motorcycle with chrome details and a windshield.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A blue and silver motorcycle with chrome details and a windshield."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 71,
+            "total_tokens": 557
+          },
+          "performance_metrics": {
+            "total_duration_ms": 594.818034,
+            "prompt_eval_duration_ms": 44.60606,
+            "generation_duration_ms": 509.671331,
+            "load_duration_ms": 37.538622,
+            "tokens_per_second": 139.30546154262697
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2506,
+        "total_time_ms": 6207.239318,
+        "average_speed": 139.53960812675774
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a sleek, dark blue cruiser-style motorcycle parked on a smooth, light-colored asphalt surface, likely a parking lot or an open area near a road. The setting appears to be outdoors during the daytime, as indicated by the bright lighting and the shadows cast by the motorcycle. The overall composition is well-balanced, with the motorcycle positioned slightly off-center, creating a dynamic and visually appealing perspective.\n\nThe motorcycle features a polished chrome exhaust system that reflects light, adding a shiny contrast to the dark blue body. The engine is prominently displayed, showcasing its intricate details and metallic components, which also reflect light, enhancing the overall aesthetic. The front of the motorcycle includes a clear windshield, a pair of large, round headlights, and chrome mirrors, all contributing to its classic yet modern design. The tires are black with visible treads, and the wheels have a polished, reflective finish. The seat is black and appears to be made of leather or a similar material, complementing the overall color scheme.\n\nThe lighting in the image is natural, likely from the sun, which creates sharp, defined shadows on the ground, emphasizing the motorcycle's contours and design. The background is minimal, with a blurred view of the asphalt and a faint line of what might be a curb or road marking, ensuring the motorcycle remains the focal point. The overall color palette is dominated by dark blue, black, and chrome, with the light asphalt providing a neutral backdrop that highlights the motorcycle's details. The image conveys a sense of power, style, and sophistication.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 310,
+            "total_tokens": 607
+          },
+          "performance_metrics": {
+            "total_duration_ms": 15145.234085,
+            "prompt_eval_duration_ms": 3570.105728,
+            "generation_duration_ms": 11532.579825,
+            "load_duration_ms": 38.932128,
+            "tokens_per_second": 26.88036889439003
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a sleek, dark blue motorcycle, positioned prominently in the center. The motorcycle features a shiny chrome exhaust pipe, handlebars with mirrors, and a large, circular headlight. The engine is visible, showcasing a polished, metallic finish that reflects light, adding to the bike's striking appearance. The tires are black with visible treads, and the overall design suggests a classic cruiser style. The motorcycle is stationary, casting a clear shadow on the ground, indicating bright sunlight.\n\nIn the background, the setting appears to be an open, paved area, likely a parking lot or an airport tarmac, given the smooth, expansive surface and the lack of surrounding structures. The background is relatively plain, with a light-colored asphalt surface that contrasts with the dark blue of the motorcycle. There are faint lines on the ground, possibly indicating parking spaces or markings, but they are subtle and do not distract from the main subject. The horizon is visible in the distance, showing a flat, open space with no significant landmarks or features.\n\nThe relationship between the foreground and background is one of contrast and focus. The motorcycle, with its bold colors and reflective surfaces, draws immediate attention, while the neutral, uncluttered background ensures that the viewer's focus remains on the bike. The lighting and shadow play further emphasize the motorcycle's details, making it stand out against the simpler, more subdued backdrop. This composition effectively highlights the motorcycle as the central subject, with the background serving to enhance its prominence and aesthetic appeal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 308,
+            "total_tokens": 611
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11613.892873,
+            "prompt_eval_duration_ms": 78.250285,
+            "generation_duration_ms": 11491.084489,
+            "load_duration_ms": 41.217732,
+            "tokens_per_second": 26.803388339441526
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a sleek, blue cruiser-style motorcycle parked on a paved surface, likely an airport tarmac or a similar open area. The motorcycle is the central focus of the image, showcasing its polished chrome details, including the exhaust pipes, handlebars, and front headlight. The bike features a large, shiny engine with visible components, emphasizing its powerful build. The handlebars are equipped with mirrors, and the front wheel is prominently displayed, with a visible tire and wheel rim. The seat is black and appears to be designed for comfort, suitable for long rides. There are no people or animals visible in the image, and the motorcycle stands alone, suggesting it is stationary and not in use at the moment. The surroundings are minimal, with a clear, open space and no other objects or individuals interacting with the motorcycle. The lighting indicates a sunny day, casting a distinct shadow of the motorcycle on the ground, adding depth and dimension to the scene. The overall composition highlights the motorcycle's design and craftsmanship, emphasizing its aesthetic appeal and robust construction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 211,
+            "total_tokens": 517
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8014.404258,
+            "prompt_eval_duration_ms": 76.162878,
+            "generation_duration_ms": 7894.453969,
+            "load_duration_ms": 40.926766,
+            "tokens_per_second": 26.72762433330492
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the motorcycle conveys a mood of freedom, power, and adventure, evoking feelings of excitement and independence. The overall tone is positive, as the motorcycle's sleek design and vibrant blue color suggest a sense of energy and dynamism. The chrome accents, including the exhaust pipes and mirrors, add a touch of sophistication and allure, enhancing the visual appeal and contributing to a feeling of luxury and performance. The motorcycle is positioned on a wide, open road, which symbolizes the freedom of the open road and the thrill of exploration. The clear sky and bright lighting further enhance the positive atmosphere, suggesting a sunny, carefree day perfect for a ride. The clean, polished appearance of the motorcycle also conveys a sense of pride and care, indicating that the owner takes great pleasure in their vehicle. The overall composition, with the motorcycle as the focal point, emphasizes its presence and allure, making it a symbol of adventure and personal expression. These visual elements collectively create an emotional atmosphere that is uplifting and inspiring, encouraging a sense of wanderlust and the desire to embark on new journeys.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 220,
+            "total_tokens": 528
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8312.060494,
+            "prompt_eval_duration_ms": 79.649047,
+            "generation_duration_ms": 8190.821115,
+            "load_duration_ms": 38.882791,
+            "tokens_per_second": 26.859333992425984
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A blue motorcycle with chrome accents, parked on a paved surface.\"\n    }\n  },\n  \"natural\": {\n    \"ground\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A paved surface, likely a parking lot or road.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A blue motorcycle with chrome accents, parked on a paved surface."
+              }
+            },
+            "natural": {
+              "ground": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A paved surface, likely a parking lot or road."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 130,
+            "total_tokens": 616
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4977.034942,
+            "prompt_eval_duration_ms": 138.169739,
+            "generation_duration_ms": 4797.128244,
+            "load_duration_ms": 38.789031,
+            "tokens_per_second": 27.099546517772854
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2879,
+        "total_time_ms": 48062.626652,
+        "average_speed": 26.874052415467066
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image showcases a sleek, dark blue cruiser motorcycle parked on a paved surface, likely a parking lot or roadway. The motorcycle is a substantial model, appearing to be a Harley-Davidson or similar cruiser, with a prominent windshield casting a long, dark shadow across the asphalt. The bike\u2019s body is a deep, glossy blue, contrasting sharply with the chrome accents of its engine, exhaust pipes, and wheels. The engine is fully visible, gleaming with polished chrome, and the exhaust pipes curve dramatically downwards. The wheels are large and dark, with a silver-colored rim. \n\nThe seat is black and plush, and the handlebars are wrapped in black grips. The lighting is warm and golden, suggesting late afternoon or early morning sunlight, which creates a soft, diffused glow. The composition is focused on the motorcycle, with the surrounding pavement blurred slightly, emphasizing the vehicle as the central subject. The overall impression is one of power, style, and a sense of movement, even in a static image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 214,
+            "total_tokens": 527
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1693.956689,
+            "prompt_eval_duration_ms": 308.125474,
+            "generation_duration_ms": 1297.715486,
+            "load_duration_ms": 85.337705,
+            "tokens_per_second": 164.90517552473747
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements, along with their relationship:\n\nThe foreground is dominated by a sleek, dark blue cruiser motorcycle, likely a Yamaha, positioned slightly to the right of the frame. The motorcycle\u2019s polished chrome engine and exhaust pipes gleam brightly, reflecting the sunlight. The dark blue paintwork contrasts sharply with the chrome, and the seat is a deep black. The motorcycle\u2019s handlebars are extended, and a clear windshield provides a protective barrier. The tires are black and appear to be high-quality, with prominent rims. \n\nIn the background, a paved road stretches out, suggesting a highway or main street. The asphalt is a warm gray, and a subtle shadow cast by the motorcycle extends across the road, indicating the direction of the sunlight. The road extends into the distance, blurring slightly, creating a sense of depth. The overall setting appears to be an outdoor environment, likely a sunny day, with the motorcycle as the primary focal point. The road and lighting contribute to the sense of movement and space, complementing the powerful presence of the motorcycle.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 222,
+            "total_tokens": 540
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1481.497337,
+            "prompt_eval_duration_ms": 54.863432,
+            "generation_duration_ms": 1333.600057,
+            "load_duration_ms": 90.675464,
+            "tokens_per_second": 166.46669954363986
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph, focusing on actions, relationships, and connections:\n\nThe image showcases a sleek, dark blue cruiser motorcycle dominating the foreground, casting a long, sharp shadow across a textured asphalt surface. The motorcycle, likely a Yamaha, is positioned slightly angled towards the viewer, highlighting its chrome engine components and polished exhaust pipes. A prominent, tinted windshield extends upwards, offering protection from the sun. The motorcycle\u2019s black saddle and seat suggest a comfortable riding position. \n\nThe shadow indicates the sun\u2019s position, likely low in the sky, creating a dramatic effect. The motorcycle appears to be stationary, perhaps paused for a moment before continuing its journey. There are no people or animals visible in the scene, suggesting a solitary ride or a moment of quiet contemplation. The overall impression is one of power, elegance, and the potential for open roads.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 181,
+            "total_tokens": 502
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1242.13049,
+            "prompt_eval_duration_ms": 58.787831,
+            "generation_duration_ms": 1093.285466,
+            "load_duration_ms": 86.964393,
+            "tokens_per_second": 165.55602871244974
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of approximately 200 words:\n\nThe image evokes a sense of relaxed freedom and quiet contemplation. The dominant dark blue motorcycle, bathed in warm, golden sunlight, suggests a journey, perhaps a contemplative ride through a scenic landscape. The smooth, rounded lines of the bike and its chrome accents contribute to a feeling of calm and sophistication. The extended windshield and comfortable seat imply a leisurely pace, inviting the viewer to imagine a moment of escape and tranquility. The shadow cast by the motorcycle adds to the stillness, reinforcing the sense of a paused moment. \n\nThe overall tone is decidedly positive, leaning towards a nostalgic and serene feeling. The lighting is key \u2013 the warm sunlight softens the edges and creates a sense of optimism. There's no immediate sense of urgency or tension; instead, the image promotes a feeling of peace and self-indulgence. The motorcycle itself, a classic cruiser, symbolizes adventure and the open road, but in this context, it represents a deliberate choice for relaxation and enjoyment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 222,
+            "total_tokens": 546
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1473.628066,
+            "prompt_eval_duration_ms": 53.709612,
+            "generation_duration_ms": 1331.887711,
+            "load_duration_ms": 85.19115,
+            "tokens_per_second": 166.68071802638624
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Sitting on the motorcycle, appears to be the rider.\"\n    }\n  },\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"dark blue\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A dark blue motorcycle with chrome accents and a windshield. It appears to be a cruiser style motorcycle.\"\n    },\n    \"windshield\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"transparent\"],\n      \"size\": \"large\",\n      \"description\": \"A clear windshield providing wind protection.\"\n    },\n    \"seat\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Black motorcycle seat.\"\n    },\n    \"chrome\": {\n      \"count\": 3,\n      \"location\": \"right\",\n      \"color\": [\"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Chrome accents on the motorcycle, including the engine and exhaust pipes.\"\n    }\n  },\n  \"natural\": {\n    \"road\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Asphalt road surface.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Sitting on the motorcycle, appears to be the rider."
+              }
+            },
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "dark blue",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A dark blue motorcycle with chrome accents and a windshield. It appears to be a cruiser style motorcycle."
+              },
+              "windshield": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "transparent"
+                ],
+                "size": "large",
+                "description": "A clear windshield providing wind protection."
+              },
+              "seat": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Black motorcycle seat."
+              },
+              "chrome": {
+                "count": 3,
+                "location": "right",
+                "color": [
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Chrome accents on the motorcycle, including the engine and exhaust pipes."
+              }
+            },
+            "natural": {
+              "road": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Asphalt road surface."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 389,
+            "total_tokens": 907
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2484.348491,
+            "prompt_eval_duration_ms": 63.045963,
+            "generation_duration_ms": 2326.980817,
+            "load_duration_ms": 91.870158,
+            "tokens_per_second": 167.1694055911936
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3022,
+        "total_time_ms": 8375.561073,
+        "average_speed": 166.15560547968138
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image showcases a dark blue Yamaha V-Star motorcycle, prominently displayed against a backdrop of a paved surface, likely a road or parking lot. The setting appears to be outdoors, with a slightly overcast sky casting a soft, diffused light. The motorcycle dominates the frame, presented in a side profile that emphasizes its muscular design. The color palette is primarily dark blue for the bodywork, contrasted sharply with the gleaming chrome accents on the engine, exhaust pipes, fenders, and wheels. The lighting highlights the curves and contours of the bike, creating a sense of depth and dimension. The composition is well-balanced, with the motorcycle positioned slightly off-center, drawing the viewer's eye along its length. The overall impression is one of power, elegance, and classic motorcycle aesthetics.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 168,
+            "total_tokens": 481
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2547.957446,
+            "prompt_eval_duration_ms": 344.538676,
+            "generation_duration_ms": 2109.773116,
+            "load_duration_ms": 90.822601,
+            "tokens_per_second": 79.62941546933618
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, broken down by foreground and background elements:\n\nThe foreground is dominated by a gleaming, dark blue Yamaha V-Star motorcycle. Its chrome components, including the exhaust pipes, engine detailing, and front forks, are highly reflective, showcasing the sunlight. The motorcycle\u2019s profile is presented from a side angle, highlighting its muscular design and large windscreen. The tires and wheels are prominently displayed, adding to the overall impression of power and presence. The motorcycle sits on a paved surface, likely a road or parking lot, with a visible shadow cast by the bike itself. \n\nThe background is relatively simple, consisting of a flat, grassy area that fades into a slightly blurred horizon. The sky is a soft, warm tone, suggesting either sunrise or sunset. The background serves to isolate the motorcycle, emphasizing its form and color. The contrast between the detailed foreground and the blurred background draws the viewer's attention directly to the motorcycle, creating a visually striking composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 201,
+            "total_tokens": 519
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2724.250423,
+            "prompt_eval_duration_ms": 66.421737,
+            "generation_duration_ms": 2562.821762,
+            "load_duration_ms": 92.293737,
+            "tokens_per_second": 78.42917637906338
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their relationships:\n\nThe image prominently features a dark blue Yamaha V-Star motorcycle, positioned on a paved surface that appears to be a road or parking lot. The motorcycle is the central object, showcasing its chrome accents, including the exhaust pipes, engine components, and front forks. The bike's large windscreen is angled forward, suggesting a focus on comfortable riding. The motorcycle is stationary, seemingly awaiting a rider or simply displayed. The paved surface reflects the sunlight, creating a warm, slightly hazy atmosphere. The background is blurred, indicating a shallow depth of field and drawing attention solely to the motorcycle. There are no people or animals present in the image, so there are no interactions between living beings and the motorcycle. The focus is entirely on the machine itself and its aesthetic qualities.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 171,
+            "total_tokens": 492
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2321.333953,
+            "prompt_eval_duration_ms": 69.454563,
+            "generation_duration_ms": 2159.668421,
+            "load_duration_ms": 89.523681,
+            "tokens_per_second": 79.17882131221846
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of freedom, power, and a touch of luxury. The gleaming, dark blue motorcycle, a Yamaha V-Star, dominates the frame, its chrome accents reflecting the sunlight and emphasizing its polished appearance. The overall tone is decidedly positive, suggesting a sense of adventure and the open road. The large windscreen hints at long journeys and a comfortable ride, while the powerful engine and robust build convey a feeling of strength and capability. The clean lines and classic design contribute to a sense of timeless appeal and sophistication. The background, a simple stretch of pavement, focuses attention entirely on the motorcycle, reinforcing the feeling of escape and individuality. It\u2019s an image that inspires a desire for exploration and a feeling of confident self-expression.\n\n\n\nIf you\u2019re interested, I can analyze another image!",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 163,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2215.027302,
+            "prompt_eval_duration_ms": 67.564041,
+            "generation_duration_ms": 2055.449561,
+            "load_duration_ms": 88.909601,
+            "tokens_per_second": 79.30138646686062
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"motorcycle\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"blue\", \"silver\", \"chrome\"],\n        \"size\": \"large\",\n        \"description\": \"Yamaha V-Star motorcycle, side view, with chrome accents, windscreen, and saddlebags.\"\n      }\n    },\n    {\n      \"tire\": {\n        \"count\": 2,\n        \"location\": \"bottom\",\n        \"color\": [\"black\"],\n        \"size\": \"medium\",\n        \"description\": \"Black tires on the motorcycle.\"\n      }\n    },\n    {\n      \"windscreen\": {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"color\": [\"clear\"],\n        \"size\": \"medium\",\n        \"description\": \"Clear windscreen attached to the motorcycle.\"\n      }\n    },\n    {\n      \"saddlebags\": {\n        \"count\": 2,\n        \"location\": \"right\",\n        \"color\": [\"black\"],\n        \"size\": \"medium\",\n        \"description\": \"Black saddlebags attached to the motorcycle.\"\n      }\n    }\n  ],\n  \"natural\": [\n    {\n      \"ground\": {\n        \"count\": 1,\n        \"location\": \"bottom\",\n        \"color\": [\"brown\", \"gray\"],\n        \"size\": \"large\",\n        \"description\": \"Paved surface, possibly asphalt or concrete.\"\n      }\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "motorcycle": {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "blue",
+                    "silver",
+                    "chrome"
+                  ],
+                  "size": "large",
+                  "description": "Yamaha V-Star motorcycle, side view, with chrome accents, windscreen, and saddlebags."
+                }
+              },
+              {
+                "tire": {
+                  "count": 2,
+                  "location": "bottom",
+                  "color": [
+                    "black"
+                  ],
+                  "size": "medium",
+                  "description": "Black tires on the motorcycle."
+                }
+              },
+              {
+                "windscreen": {
+                  "count": 1,
+                  "location": "top",
+                  "color": [
+                    "clear"
+                  ],
+                  "size": "medium",
+                  "description": "Clear windscreen attached to the motorcycle."
+                }
+              },
+              {
+                "saddlebags": {
+                  "count": 2,
+                  "location": "right",
+                  "color": [
+                    "black"
+                  ],
+                  "size": "medium",
+                  "description": "Black saddlebags attached to the motorcycle."
+                }
+              }
+            ],
+            "natural": [
+              {
+                "ground": {
+                  "count": 1,
+                  "location": "bottom",
+                  "color": [
+                    "brown",
+                    "gray"
+                  ],
+                  "size": "large",
+                  "description": "Paved surface, possibly asphalt or concrete."
+                }
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 357,
+            "total_tokens": 875
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4690.133826,
+            "prompt_eval_duration_ms": 89.857783,
+            "generation_duration_ms": 4508.798755,
+            "load_duration_ms": 88.412285,
+            "tokens_per_second": 79.17851725010068
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2854,
+        "total_time_ms": 14498.702949999999,
+        "average_speed": 79.14346337551586
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a dark blue Yamaha V Star motorcycle parked on a paved surface, likely a parking lot or road. The motorcycle is positioned at a slight angle, highlighting its side profile. The main elements are the sleek, chrome-accented engine, the dark blue fuel tank with a silver emblem, and the large windshield. Polished chrome exhaust pipes run along the side, reflecting the surrounding light. The front wheel and fender are visible, along with a portion of the black leather seat and backrest. \n\nThe lighting appears to be from a low-angle sun, casting a long, soft shadow of the motorcycle onto the pavement. The colors are dominated by the dark blue of the bodywork, contrasted by the bright chrome and the black of the tires and seat. The overall composition is focused on the motorcycle's design and features, with the paved surface providing a neutral background. The image has a clean, polished look, suggesting the motorcycle is well-maintained.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 206,
+            "total_tokens": 519
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5405.021205,
+            "prompt_eval_duration_ms": 402.432069,
+            "generation_duration_ms": 4909.160373,
+            "load_duration_ms": 88.894561,
+            "tokens_per_second": 41.96236919310764
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a sleek, dark blue cruiser motorcycle, prominently showcasing its engine, fuel tank, and front wheel. The chrome engine components and exhaust pipes gleam in the sunlight, contrasting with the dark blue bodywork. The motorcycle's seat and a portion of its saddlebags are also visible, suggesting it's geared for long-distance riding. A long, clear windscreen extends upwards, hinting at protection from the elements. \n\nThe background consists of a paved surface, likely a road or parking lot, bathed in warm sunlight. The pavement exhibits a slight texture and subtle color variations. The setting appears to be outdoors, possibly a suburban or rural area, as there are no distinct buildings or landmarks visible. The motorcycle is the clear focal point, positioned against the simple backdrop of the paved surface, emphasizing its design and features. The warm lighting suggests it's either early morning or late afternoon.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 200,
+            "total_tokens": 518
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4944.945382,
+            "prompt_eval_duration_ms": 85.971693,
+            "generation_duration_ms": 4766.436329,
+            "load_duration_ms": 89.936118,
+            "tokens_per_second": 41.960069577171936
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image prominently features a dark blue Yamaha V Star motorcycle, positioned on an asphalt surface. The motorcycle is the central focus, showcasing its chrome engine, sleek fuel tank, and a tall, clear windscreen. A black leather seat and saddlebags are visible, suggesting it's equipped for long rides. The motorcycle is stationary, casting a long shadow on the pavement, indicating a low sun angle, likely during early morning or late afternoon. The chrome components of the engine and exhaust gleam in the light. The front wheel and fender are also visible, completing the motorcycle's profile. There are no people or animals in the image; the scene is solely focused on the motorcycle and its interaction with the environment through light and shadow. The overall impression is one of a well-maintained, ready-to-ride machine.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 175,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4344.70862,
+            "prompt_eval_duration_ms": 84.124959,
+            "generation_duration_ms": 4166.922431,
+            "load_duration_ms": 91.304382,
+            "tokens_per_second": 41.99742205376321
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image of the motorcycle evokes a sense of freedom, adventure, and perhaps a touch of nostalgia. The gleaming chrome and deep blue paint suggest a well-maintained machine, hinting at pride and care. The long, sleek lines of the bike, combined with the windshield, imply a readiness for open-road travel and the promise of escape. The warm lighting and the long shadow cast by the motorcycle create a sense of tranquility and a peaceful, solitary journey. There\u2019s a subtle feeling of power and capability, but it's tempered by the overall calm atmosphere. The image doesn't feel overly aggressive or frantic; instead, it leans towards a more contemplative and relaxed mood, inviting the viewer to imagine the possibilities of the road ahead. The overall tone is decidedly positive and aspirational.\n\n\n\n",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 176,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4335.166466,
+            "prompt_eval_duration_ms": 85.499778,
+            "generation_duration_ms": 4158.664521,
+            "load_duration_ms": 87.992474,
+            "tokens_per_second": 42.32127864877129
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"silver\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"A cruiser-style motorcycle with a windshield, chrome exhaust pipes, and a black seat. It appears to be parked on asphalt.\"\n    },\n    \"windshield\": {\n      \"count\": 1,\n      \"location\": \"top-center\",\n      \"color\": [\"clear\"],\n      \"size\": \"medium\",\n      \"description\": \"Transparent windshield attached to the motorcycle.\"\n    },\n    \"exhaust pipe\": {\n      \"count\": 2,\n      \"location\": \"bottom-center\",\n      \"color\": [\"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Chrome exhaust pipes running along the side of the motorcycle.\"\n    },\n    \"tire\": {\n      \"count\": 1,\n      \"location\": \"right-bottom\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Motorcycle tire.\"\n    }\n  },\n  \"natural\": {\n    \"asphalt\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"The motorcycle is parked on a paved asphalt surface.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "silver",
+                  "black"
+                ],
+                "size": "large",
+                "description": "A cruiser-style motorcycle with a windshield, chrome exhaust pipes, and a black seat. It appears to be parked on asphalt."
+              },
+              "windshield": {
+                "count": 1,
+                "location": "top-center",
+                "color": [
+                  "clear"
+                ],
+                "size": "medium",
+                "description": "Transparent windshield attached to the motorcycle."
+              },
+              "exhaust pipe": {
+                "count": 2,
+                "location": "bottom-center",
+                "color": [
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Chrome exhaust pipes running along the side of the motorcycle."
+              },
+              "tire": {
+                "count": 1,
+                "location": "right-bottom",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Motorcycle tire."
+              }
+            },
+            "natural": {
+              "asphalt": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "The motorcycle is parked on a paved asphalt surface."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 338,
+            "total_tokens": 856
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8180.911055,
+            "prompt_eval_duration_ms": 139.649831,
+            "generation_duration_ms": 7953.234167,
+            "load_duration_ms": 85.358806,
+            "tokens_per_second": 42.498434335361125
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2889,
+        "total_time_ms": 27210.752728,
+        "average_speed": 42.14791476163504
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a classic cruiser-style motorcycle parked on a paved surface, likely a parking lot or driveway. The motorcycle is the central focus, showcasing a sleek, dark blue body with chrome accents that highlight its robust and polished design. The front of the motorcycle features a large, round headlight encased in a chrome shell, flanked by dual side mirrors. The engine, prominently displayed, is adorned with chrome detailing that adds to the bike's luxurious appearance. The seat, upholstered in black leather, complements the overall dark color scheme. The tires are black with silver rims, and the front fender is also chrome, enhancing the motorcycle's vintage charm. The lighting in the image suggests it is daytime, with natural sunlight casting soft shadows and illuminating the motorcycle's glossy finish. The background is blurred, ensuring the motorcycle remains the primary subject, emphasizing its intricate details and elegant design. The composition is balanced, with the motorcycle positioned slightly off-center, creating a dynamic yet harmonious visual effect.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 208,
+            "total_tokens": 1000
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7883.563545,
+            "prompt_eval_duration_ms": 2047.022859,
+            "generation_duration_ms": 5787.050825,
+            "load_duration_ms": 45.413745,
+            "tokens_per_second": 35.942314365279486
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features a sleek, dark-colored motorcycle with chrome accents. The motorcycle is positioned at an angle, showcasing its detailed design, including the polished engine, handlebars, and windshield. The reflective surfaces of the chrome parts catch the light, adding a sense of depth and shine to the foreground. The motorcycle's design suggests a blend of style and functionality, likely appealing to enthusiasts who appreciate both aesthetics and performance.\n\nIn contrast, the background of the image is relatively simple and uncluttered, providing a neutral setting that allows the motorcycle to stand out. It appears to be an open, paved area, possibly a parking lot or a roadway, with faint markings visible on the ground. The background lacks distinct features or objects, which helps to draw the viewer's focus entirely to the motorcycle in the foreground. The relationship between the foreground and background elements is one of contrast and emphasis, where the detailed and visually appealing motorcycle is set against a plain, unobtrusive backdrop, enhancing its prominence in the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 212,
+            "total_tokens": 1010
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5994.640598,
+            "prompt_eval_duration_ms": 55.787118,
+            "generation_duration_ms": 5890.196622,
+            "load_duration_ms": 45.358034,
+            "tokens_per_second": 35.99200733099059
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a motorcycle as the primary object, parked on a paved surface. The motorcycle is a classic cruiser style with a shiny, dark finish, chrome details, and a large engine visible at the front. It has a comfortable-looking seat designed for a single rider, and the handlebars are equipped with mirrors and controls. The motorcycle appears to be stationary, with no people or animals present in the scene. The setting seems to be an open area, possibly a parking lot or a driveway, with no other objects or elements interacting with the motorcycle. The focus is solely on the motorcycle itself, highlighting its design and details without any dynamic actions or interactions between different elements.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 136,
+            "total_tokens": 936
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3879.483157,
+            "prompt_eval_duration_ms": 56.157764,
+            "generation_duration_ms": 3774.629438,
+            "load_duration_ms": 45.304285,
+            "tokens_per_second": 36.03002685001579
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the motorcycle evokes a sense of freedom, adventure, and nostalgia. The sleek, polished design of the bike, with its shiny chrome details and classic cruiser style, suggests a timeless appeal that can stir feelings of wanderlust and excitement. The empty parking lot and clear sky in the background enhance the mood of open roads and endless possibilities, inviting the viewer to imagine long rides and scenic journeys. The overall tone is positive, as the motorcycle symbolizes independence, power, and the joy of exploration. The well-maintained appearance of the bike also conveys a sense of pride and care, adding to the uplifting atmosphere. The combination of these elements creates an emotional atmosphere that is inspiring and aspirational, encouraging the viewer to embrace the spirit of adventure.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 159,
+            "total_tokens": 962
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4510.3263,
+            "prompt_eval_duration_ms": 60.733407,
+            "generation_duration_ms": 4400.173871,
+            "load_duration_ms": 46.27944,
+            "tokens_per_second": 36.134935723316104
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"motorcycle\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"black\", \"silver\"],\n      \"size\": \"large\",\n      \"description\": \"A parked motorcycle with chrome details and a windshield.\"\n    },\n    \"mirror\": {\n      \"count\": 2,\n      \"location\": \"top left and top right\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Two rearview mirrors attached to the handlebars.\"\n    },\n    \"seat\": {\n      \"count\": 1,\n      \"location\": \"middle left\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A black leather seat for the rider.\"\n    },\n    \"wheel\": {\n      \"count\": 2,\n      \"location\": \"bottom left and bottom right\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Two black wheels with silver rims.\"\n    },\n    \"headlight\": {\n      \"count\": 1,\n      \"location\": \"top right\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"A round headlight on the front of the motorcycle.\"\n    },\n    \"exhaust\": {\n      \"count\": 2,\n      \"location\": \"middle left\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Two chrome exhaust pipes.\"\n    }\n  },\n  \"natural\": {\n    \"shadow\": {\n      \"count\": 1,\n      \"location\": \"bottom center\",\n      \"description\": \"Shadow cast by the motorcycle on the ground.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "motorcycle": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "black",
+                  "silver"
+                ],
+                "size": "large",
+                "description": "A parked motorcycle with chrome details and a windshield."
+              },
+              "mirror": {
+                "count": 2,
+                "location": "top left and top right",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Two rearview mirrors attached to the handlebars."
+              },
+              "seat": {
+                "count": 1,
+                "location": "middle left",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A black leather seat for the rider."
+              },
+              "wheel": {
+                "count": 2,
+                "location": "bottom left and bottom right",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Two black wheels with silver rims."
+              },
+              "headlight": {
+                "count": 1,
+                "location": "top right",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "A round headlight on the front of the motorcycle."
+              },
+              "exhaust": {
+                "count": 2,
+                "location": "middle left",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Two chrome exhaust pipes."
+              }
+            },
+            "natural": {
+              "shadow": {
+                "count": 1,
+                "location": "bottom center",
+                "description": "Shadow cast by the motorcycle on the ground."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 376,
+            "total_tokens": 1358
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10658.541855,
+            "prompt_eval_duration_ms": 101.641069,
+            "generation_duration_ms": 10508.353744,
+            "load_duration_ms": 45.383108,
+            "tokens_per_second": 35.781056591731726
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5266,
+        "total_time_ms": 32926.555454999994,
+        "average_speed": 35.97606817226674
+      }
+    }
+  ]
+}

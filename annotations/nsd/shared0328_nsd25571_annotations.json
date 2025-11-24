@@ -1,0 +1,777 @@
+{
+  "image": {
+    "path": "images/original/shared0328_nsd25571.png",
+    "name": "shared0328_nsd25571.png",
+    "id": "shared0328_nsd25571"
+  },
+  "timestamp": "2025-08-30T18:42:31.822161+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a close-up view of a broccoli plant, showcasing its vibrant green florets and large, serrated leaves. The broccoli head, a cluster of tightly packed green florets, is the focal point, with its textured surface and varying shades of green adding depth and detail. The surrounding leaves are broad and deeply lobed, with prominent veins running through them, creating a rich, textured background. The lighting is natural, suggesting the photo was taken outdoors during the day, as the light highlights the glossy surface of the leaves and the intricate details of the florets. The background is softly blurred, drawing the viewer's attention to the broccoli and its leaves, and the overall composition is balanced, with the broccoli head slightly off-center, giving the image a dynamic feel. The colors are predominantly shades of green, with subtle variations in tone and texture, creating a visually appealing and naturalistic scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 181,
+            "total_tokens": 478
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1418.052473,
+            "prompt_eval_duration_ms": 81.874197,
+            "generation_duration_ms": 1292.803126,
+            "load_duration_ms": 41.010279,
+            "tokens_per_second": 140.00584958362796
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground elements, closest to the viewer, are the vibrant green leaves of a broccoli plant, showcasing their detailed veins and slightly serrated edges. The leaves are layered and overlapping, creating a sense of depth and texture. The broccoli head, a compact cluster of tightly packed florets, is prominently displayed in the center, adding a focal point to the composition. The background elements, slightly out of focus, appear to be the soil and other plants, providing a natural setting that contrasts with the sharpness of the broccoli plant in the foreground. This layered effect emphasizes the broccoli's prominence and highlights its natural growth environment, suggesting a healthy and thriving plant in its habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 134,
+            "total_tokens": 437
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1026.918293,
+            "prompt_eval_duration_ms": 29.710906,
+            "generation_duration_ms": 955.389191,
+            "load_duration_ms": 39.707512,
+            "tokens_per_second": 140.25697722175715
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a broccoli plant in its natural growth stage, with no people or animals present. The broccoli plant is the sole object in the image, displaying its vibrant green florets and large, broad leaves that are slightly curled at the edges. The plant appears healthy and is situated in what seems to be a garden or agricultural setting, indicated by the blurred background that suggests soil and possibly other plants. The broccoli plant is in the process of maturing, with the florets forming tightly packed clusters, ready for harvest. There are no interactions between the plant and any other elements or beings, as it is a still life image focusing solely on the plant itself. The relationship between the plant and its environment is symbiotic; the plant absorbs nutrients and water from the soil and uses sunlight to produce energy through photosynthesis, while the environment provides the necessary conditions for its growth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 175,
+            "total_tokens": 481
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1325.486904,
+            "prompt_eval_duration_ms": 30.690568,
+            "generation_duration_ms": 1255.199601,
+            "load_duration_ms": 37.314687,
+            "tokens_per_second": 139.42005706548977
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the broccoli plant evokes a sense of freshness and vitality, contributing to a predominantly positive mood. The vibrant green color of the leaves and the tightly packed florets of the broccoli suggest health and growth, which are universally associated with positive attributes such as vitality and well-being. The natural setting, with the blurred background, emphasizes the plant's prominence and its connection to nature, further enhancing the serene and wholesome feeling. The intricate details of the leaves and the delicate structure of the broccoli florets add a layer of complexity and beauty, making the image visually appealing and evoking a sense of curiosity and appreciation for the natural world. The overall tone is uplifting and optimistic, as the image captures a moment of natural abundance and the promise of a healthy harvest.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 153,
+            "total_tokens": 461
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1164.668007,
+            "prompt_eval_duration_ms": 29.377659,
+            "generation_duration_ms": 1094.504859,
+            "load_duration_ms": 38.659972,
+            "tokens_per_second": 139.78923779268484
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"broccoli\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"young broccoli plant with a dense head and large green leaves\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "broccoli": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "young broccoli plant with a dense head and large green leaves"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 67,
+            "total_tokens": 553
+          },
+          "performance_metrics": {
+            "total_duration_ms": 565.28033,
+            "prompt_eval_duration_ms": 45.40686,
+            "generation_duration_ms": 476.969552,
+            "load_duration_ms": 39.859352,
+            "tokens_per_second": 140.4701824656514
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2410,
+        "total_time_ms": 5500.406007,
+        "average_speed": 139.98846082584222
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a close-up view of a broccoli plant in its natural growing environment. The setting appears to be an outdoor garden or field, with the background slightly blurred, emphasizing the plant as the focal point. The main elements include the broccoli head, which is small and tightly clustered, indicating it is still in its early stages of growth. The head is a vibrant green, surrounded by large, broad leaves that are also green but with a slightly lighter, more translucent appearance, suggesting they are healthy and well-nourished. The leaves have a serrated edge and a slightly waxy texture, which is characteristic of broccoli plants. The lighting is natural, likely from sunlight, casting soft shadows and highlighting the texture of the leaves and the broccoli head. The overall composition is centered, with the broccoli head positioned slightly off-center to create a balanced and visually appealing arrangement. The image conveys a sense of freshness and vitality, emphasizing the plant's natural beauty and growth. The colors are predominantly shades of green, with subtle variations in tone and texture, creating a harmonious and earthy palette.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 219,
+            "total_tokens": 516
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11646.678686,
+            "prompt_eval_duration_ms": 3430.524448,
+            "generation_duration_ms": 8175.178585,
+            "load_duration_ms": 38.523461,
+            "tokens_per_second": 26.78840562600383
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a close-up view of a broccoli plant. The central focus is a small, developing broccoli head, which is tightly packed with green florets. Surrounding the head are several large, vibrant green leaves with a ruffled, serrated edge, characteristic of broccoli plants. These leaves are prominently displayed, occupying much of the foreground space, and their texture and color are vivid, indicating healthy growth. The leaves appear to be slightly wet, possibly from dew or recent watering, adding a glossy sheen to their surface.\n\nIn the background, the setting is less defined but still visible. The background consists of more greenery, likely other plants or parts of the same broccoli plant, though they are out of focus and less detailed. The background elements are blurred, creating a sense of depth and emphasizing the sharpness of the foreground. The blurred greenery suggests a garden or farm environment, where the broccoli is growing. The background's soft focus contrasts with the crisp details of the foreground, drawing the viewer's attention to the developing broccoli head and its surrounding leaves.\n\nThe relationship between the foreground and background is one of contrast and depth. The sharp, detailed foreground elements stand out against the softer, out-of-focus background, creating a visual hierarchy that highlights the broccoli plant's growth and development. The background provides context, suggesting a natural, outdoor setting, while the foreground offers a detailed, intimate look at the plant's structure and health. Together, these layers create a cohesive image that emphasizes the broccoli plant's vitality and the environment in which it thrives.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 318,
+            "total_tokens": 621
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11948.74257,
+            "prompt_eval_duration_ms": 77.067994,
+            "generation_duration_ms": 11829.956119,
+            "load_duration_ms": 39.534156,
+            "tokens_per_second": 26.880911205516874
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a close-up view of a broccoli plant in its natural growing state. There are no people or animals present in the image. The primary focus is on the plant itself, showcasing its vibrant green color and intricate structure. The broccoli head, which is the edible part, is prominently displayed in the center, surrounded by large, leafy green leaves that are characteristic of the plant. These leaves are broad and slightly serrated, providing protection and support to the developing broccoli head. The leaves appear healthy and robust, indicating that the plant is thriving in its environment.\n\nThe broccoli head is still in its early stages of development, with tightly packed florets that are compact and green. This suggests that the plant is growing in optimal conditions, with sufficient sunlight, water, and nutrients. The relationship between the leaves and the broccoli head is symbiotic; the leaves play a crucial role in photosynthesis, converting sunlight into energy that supports the growth of the broccoli head. The plant's structure demonstrates a natural balance, with the leaves providing shade and nutrients to the central head, ensuring its healthy development.\n\nOverall, the image captures the essence of a thriving broccoli plant, highlighting the interconnectedness of its various parts and the importance of a nurturing environment for its growth. There are no interactions with people or animals, as the focus remains solely on the plant's natural state.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 273,
+            "total_tokens": 579
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10287.888767,
+            "prompt_eval_duration_ms": 72.683057,
+            "generation_duration_ms": 10170.36225,
+            "load_duration_ms": 40.716792,
+            "tokens_per_second": 26.842701694327555
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the broccoli plant conveys a mood of tranquility and natural vitality. The vibrant green color of the leaves and the tightly packed florets of the broccoli head evoke a sense of freshness and health, which can be associated with positive emotions such as renewal and vitality. The orderly arrangement of the leaves and the central focus on the developing broccoli head suggest growth and potential, reinforcing a feeling of optimism and abundance. The soft lighting and the slightly blurred background create a sense of calm and focus, drawing the viewer's attention to the plant's intricate details and textures. The overall tone is decidedly positive, as the image highlights the beauty and complexity of nature, evoking feelings of appreciation for the natural world. The visual elements, such as the lush green hues, the symmetry of the leaves, and the organic form of the broccoli, all contribute to an atmosphere that is serene and uplifting, encouraging a sense of connection with nature and its life-giving qualities.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 192,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7280.290476,
+            "prompt_eval_duration_ms": 74.411691,
+            "generation_duration_ms": 7166.481147,
+            "load_duration_ms": 36.826897,
+            "tokens_per_second": 26.79139120883255
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"broccoli\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"A developing broccoli head surrounded by leaves.\"\n    },\n    \"leaves\": {\n      \"count\": 10,\n      \"location\": \"surrounding the broccoli\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Large, green leaves with visible veins.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "broccoli": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "A developing broccoli head surrounded by leaves."
+              },
+              "leaves": {
+                "count": 10,
+                "location": "surrounding the broccoli",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Large, green leaves with visible veins."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 117,
+            "total_tokens": 603
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4487.597256,
+            "prompt_eval_duration_ms": 134.838447,
+            "generation_duration_ms": 4311.887914,
+            "load_duration_ms": 38.515327,
+            "tokens_per_second": 27.134286032834947
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2819,
+        "total_time_ms": 45651.197755,
+        "average_speed": 26.88753915350315
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image presents a close-up, almost immersive view of a young broccoli plant, sharply focused and filling the frame. The dominant color is a vibrant, fresh green, showcasing the intricate details of the plant\u2019s leaves. These leaves are deeply textured, with prominent, ruffled edges and prominent veins, displaying a healthy, robust appearance. At the center, a small, tightly-packed head of broccoli is just beginning to form, a pale, creamy-green color, with tightly clustered florets. \n\nThe lighting is soft and diffused, suggesting an overcast day, which evenly illuminates the plant, minimizing harsh shadows. The background is blurred, featuring hints of reddish-brown foliage, likely other plants in a garden setting. The composition is tightly focused on the broccoli head, drawing the viewer\u2019s eye to its delicate structure. The overall impression is one of freshness, vitality, and the promise of a bountiful harvest.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 197,
+            "total_tokens": 510
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1586.279626,
+            "prompt_eval_duration_ms": 306.922019,
+            "generation_duration_ms": 1192.083675,
+            "load_duration_ms": 85.015129,
+            "tokens_per_second": 165.2568558159309
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the foreground and background elements in the image:\n\nThe foreground is dominated by a vibrant green head of broccoli, sharply in focus and filling the majority of the frame. The broccoli head itself is a tight, compact cluster of tightly packed florets, showcasing a rich, saturated green color. The leaves surrounding the head are similarly green, exhibiting a characteristic ruffled, slightly crinkled texture with prominent veins. These leaves are layered and overlapping, creating a sense of depth and texture. \n\nIn the background, a blurred expanse of dark green foliage suggests a garden setting. The depth of field is shallow, causing the background to appear soft and out of focus. The dark green color of the background contrasts with the bright green of the broccoli, drawing the viewer\u2019s eye directly to the central subject. The blurred background provides context, implying that the broccoli is part of a larger, lush garden environment. The layers of the image work together to create a sense of three-dimensionality and highlight the broccoli as the primary focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 211,
+            "total_tokens": 529
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1417.725901,
+            "prompt_eval_duration_ms": 53.621022,
+            "generation_duration_ms": 1274.156713,
+            "load_duration_ms": 87.743809,
+            "tokens_per_second": 165.59972399564637
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image presents a close-up view of a young broccoli plant, its vibrant green florets emerging from a dense cluster of leaves. The leaves themselves are a rich, saturated green, exhibiting a slightly crinkled texture indicative of fresh growth. The broccoli head is still developing, with tightly packed florets suggesting its potential for future expansion. The leaves are arranged in a spiral pattern, characteristic of broccoli growth, and they appear to be reaching outwards, absorbing sunlight. \n\nBehind the broccoli, a blurred background of reddish-brown foliage hints at the plant's environment \u2013 likely a garden or farm. The blurred background suggests a sense of depth and context, implying the broccoli is part of a larger, thriving ecosystem. The overall impression is one of nascent life and growth, with the broccoli actively reaching for the sun and establishing itself within its surroundings.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 190,
+            "total_tokens": 511
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1289.914615,
+            "prompt_eval_duration_ms": 60.64541,
+            "generation_duration_ms": 1140.767041,
+            "load_duration_ms": 86.121273,
+            "tokens_per_second": 166.55460157180332
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of approximately 200 words:\n\nThe image evokes a sense of quiet, nascent potential and gentle anticipation. The dominant green of the broccoli head and surrounding leaves creates a feeling of freshness, vitality, and new beginnings. The tightly packed, slightly ruffled leaves suggest a controlled energy, a promise of growth and development. There's a subtle feeling of vulnerability too, as the young florets are still forming, hinting at the process of unfolding and revealing. The soft, diffused light contributes to a calm and serene atmosphere, avoiding any harshness or intensity. The close-up perspective draws the viewer in, fostering a feeling of intimacy and connection with the plant. \n\nThe overall tone is decidedly positive, leaning towards hopeful and contemplative. It\u2019s not a dramatic or overwhelming image, but rather one that invites a quiet appreciation for the simple beauty and inherent promise of life. The image suggests a moment of stillness before the full potential of the broccoli is realized, creating a feeling of peaceful expectation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 221,
+            "total_tokens": 545
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1469.959835,
+            "prompt_eval_duration_ms": 60.294875,
+            "generation_duration_ms": 1321.050445,
+            "load_duration_ms": 86.202955,
+            "tokens_per_second": 167.29111355017181
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"item\": \"person\",\n    \"count\": 1,\n    \"location\": \"background\",\n    \"color\": [\"green\", \"brown\"],\n    \"size\": \"small\",\n    \"description\": \"A person is visible in the background, likely a gardener or observer.\"\n  },\n  \"natural\": {\n    \"item\": \"broccoli\",\n    \"count\": 1,\n    \"location\": \"center\",\n    \"color\": [\"green\", \"yellow\"],\n    \"size\": \"medium\",\n    \"description\": \"A young broccoli head with tightly packed florets. It appears healthy and vibrant.\"\n  },\n  \"natural\": {\n    \"item\": \"leaf\",\n    \"count\": 10,\n    \"location\": \"foreground\",\n    \"color\": [\"green\"],\n    \"size\": \"small\",\n    \"description\": \"Numerous leaves surround the broccoli head, creating a dense, leafy backdrop.\"\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "item": "person",
+              "count": 1,
+              "location": "background",
+              "color": [
+                "green",
+                "brown"
+              ],
+              "size": "small",
+              "description": "A person is visible in the background, likely a gardener or observer."
+            },
+            "natural": {
+              "item": "leaf",
+              "count": 10,
+              "location": "foreground",
+              "color": [
+                "green"
+              ],
+              "size": "small",
+              "description": "Numerous leaves surround the broccoli head, creating a dense, leafy backdrop."
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 225,
+            "total_tokens": 743
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1500.293709,
+            "prompt_eval_duration_ms": 63.170952,
+            "generation_duration_ms": 1347.62222,
+            "load_duration_ms": 87.09697,
+            "tokens_per_second": 166.9607377058535
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2838,
+        "total_time_ms": 7264.173686,
+        "average_speed": 166.33260652788118
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image presents a close-up, top-down view of a young broccoli plant, likely in a garden or field setting. The dominant element is the tightly clustered, miniature broccoli head, a vibrant, almost lime-green color, emerging from the center of the frame. Surrounding the head are large, deeply lobed, dark green leaves, creating a textured and somewhat chaotic frame. The leaves exhibit varying shades of green, hinting at different levels of sunlight exposure. The background is blurred, suggesting a shallow depth of field, and reveals hints of reddish-brown soil and other foliage. The lighting appears soft and diffused, casting gentle shadows and highlighting the intricate details of the plant's structure. The composition is centered around the broccoli head, drawing the viewer's eye to its delicate form and emphasizing its freshness. The overall impression is one of natural beauty and the promise of a healthy harvest.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 191,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2801.602897,
+            "prompt_eval_duration_ms": 347.482035,
+            "generation_duration_ms": 2362.68637,
+            "load_duration_ms": 89.326286,
+            "tokens_per_second": 80.8401836253874
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe image prominently features a vibrant, young broccoli floret in the foreground, dominating the view with its tightly clustered, miniature buds. The floret is surrounded by large, deeply lobed green leaves, creating a textured and layered effect. These leaves are slightly blurred, suggesting a shallow depth of field and emphasizing the broccoli as the focal point. The leaves appear healthy and fresh, with visible veins adding detail. In the background, a blurred expanse of greenery and reddish-brown tones hints at a garden or field setting. The background is out of focus, creating a soft, diffused backdrop that allows the broccoli to stand out. The relationship between the foreground and background is one of contrast \u2013 the sharp detail of the broccoli is juxtaposed with the gentle blur of the surrounding environment, drawing the viewer's eye directly to the developing vegetable.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 183,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2437.571171,
+            "prompt_eval_duration_ms": 65.342233,
+            "generation_duration_ms": 2284.363812,
+            "load_duration_ms": 85.64627,
+            "tokens_per_second": 80.10983147197571
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image showcases a vibrant, close-up view of a young broccoli plant thriving in what appears to be a garden setting. The central focus is the tightly clustered, pale green broccoli head, its florets just beginning to form. Surrounding the head are large, deeply lobed green leaves, characteristic of the plant. The leaves partially obscure the background, which hints at other plants and soil, suggesting a healthy, cultivated environment. The broccoli head seems to be reaching upwards, drawing sustenance from the unseen sunlight and soil below. The leaves act as protective foliage, shielding the developing head. The overall impression is one of growth, vitality, and the natural cycle of a plant maturing in its environment. There are no animals or people present in the image; it's a purely botanical scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 177,
+            "total_tokens": 498
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2387.826553,
+            "prompt_eval_duration_ms": 74.575805,
+            "generation_duration_ms": 2223.382161,
+            "load_duration_ms": 87.579266,
+            "tokens_per_second": 79.6084465840958
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of quiet growth and natural abundance, creating a predominantly positive and serene mood. The tightly packed, vibrant green florets of the broccoli head are the focal point, symbolizing potential and nourishment. The surrounding broad, textured leaves add a feeling of lushness and organic vitality. The close-up perspective creates a feeling of intimacy, as if the viewer is observing a delicate and precious moment in nature's cycle. The soft, diffused lighting contributes to a gentle and calming atmosphere, devoid of harshness. There\u2019s a feeling of freshness and health, suggesting a connection to the earth and the simple pleasures of growing food. Overall, the image conveys a feeling of peacefulness and appreciation for the beauty and bounty of the natural world.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 151,
+            "total_tokens": 475
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2041.961794,
+            "prompt_eval_duration_ms": 68.642121,
+            "generation_duration_ms": 1881.960724,
+            "load_duration_ms": 89.035429,
+            "tokens_per_second": 80.23546829343927
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": [\n    {\n      \"item\": \"broccoli\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\", \"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"Developing head of broccoli, tightly clustered florets\"\n    },\n    {\n      \"item\": \"leaves\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Large, broad leaves surrounding the broccoli head\"\n    },\n    {\n      \"item\": \"stem\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Thick, green stem supporting the broccoli head\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": [
+              {
+                "item": "broccoli",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green",
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "Developing head of broccoli, tightly clustered florets"
+              },
+              {
+                "item": "leaves",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Large, broad leaves surrounding the broccoli head"
+              },
+              {
+                "item": "stem",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Thick, green stem supporting the broccoli head"
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 206,
+            "total_tokens": 724
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2749.31772,
+            "prompt_eval_duration_ms": 97.241506,
+            "generation_duration_ms": 2561.108588,
+            "load_duration_ms": 89.069413,
+            "tokens_per_second": 80.43391871988834
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2702,
+        "total_time_ms": 12418.280135,
+        "average_speed": 80.2455697389573
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a close-up view of a young broccoli plant, likely growing in a garden or farm setting. The main element is the tightly clustered, pale green broccoli floret, still developing and surrounded by large, textured, light-green leaves. These leaves have a slightly ruffled edge and prominent veins, creating a dynamic pattern. The color palette is dominated by various shades of green, with hints of a reddish-brown tone visible in the background, possibly from soil or other plants. The lighting appears to be soft and diffused, suggesting an overcast day or a shaded area, which evenly illuminates the plant without harsh shadows. The composition is centered around the broccoli head, drawing the viewer's eye to its developing form, and the surrounding leaves create a natural frame. The overall impression is one of freshness, growth, and natural beauty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 179,
+            "total_tokens": 492
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4743.644098,
+            "prompt_eval_duration_ms": 402.735856,
+            "generation_duration_ms": 4252.97512,
+            "load_duration_ms": 85.787,
+            "tokens_per_second": 42.08818414155218
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by the lush, vibrant green leaves of a broccoli plant, tightly clustered around a developing head. These leaves are broad, textured with visible veins, and exhibit a slightly ruffled edge, creating a dynamic, organic shape. The developing broccoli head itself is a tightly packed cluster of tiny, pale green florets, positioned centrally within the leaf arrangement. \n\nThe background is softer and less defined, appearing as a blurred field of similar green foliage, suggesting more broccoli plants or other garden vegetation. Hints of reddish-brown tones are visible amongst the green, possibly indicating soil or other plants. The relationship between the layers is one of depth and focus; the foreground is sharp and detailed, drawing the viewer's eye to the developing broccoli, while the background provides context and suggests a larger garden setting. The overall composition emphasizes the plant's growth and its place within a natural environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 196,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4838.190497,
+            "prompt_eval_duration_ms": 85.477379,
+            "generation_duration_ms": 4662.694385,
+            "load_duration_ms": 87.95507,
+            "tokens_per_second": 42.035780991895315
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image prominently features a head of broccoli in its early stages of development, nestled amongst its large, textured, green leaves. The broccoli head is a tightly clustered, pale green bud, indicating it's not yet fully mature. The leaves surrounding it are broad and slightly ruffled, with visible veins running through them. They cradle and protect the developing broccoli head. The overall composition suggests a focus on growth and natural processes within a garden or agricultural setting. There are no people or animals visible in the image; the interaction is entirely between the plant's components\u2014the leaves supporting and sheltering the developing head. The image captures a moment of organic development, highlighting the plant's inherent structure and potential for growth. The background is slightly blurred, suggesting an outdoor environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 164,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4079.806627,
+            "prompt_eval_duration_ms": 85.259934,
+            "generation_duration_ms": 3901.357637,
+            "load_duration_ms": 90.973178,
+            "tokens_per_second": 42.0366485873133
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image of the developing broccoli head evokes a sense of freshness, growth, and natural vitality. The vibrant green hues of the leaves and the tightly clustered florets create a feeling of optimism and potential. There's a quiet, peaceful mood, suggesting the slow, deliberate process of nature unfolding. The close-up perspective draws the viewer into the heart of the plant, fostering a sense of intimacy and connection to the natural world. The image isn't overly dramatic or emotionally charged; instead, it presents a serene and wholesome tone. The visual elements \u2013 the soft lighting, the organic shapes, and the abundance of green \u2013 all contribute to this feeling of calm and renewal. It feels like a celebration of simple, natural beauty and the promise of nourishment.\n\n\n\n",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 169,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4193.076201,
+            "prompt_eval_duration_ms": 84.06511,
+            "generation_duration_ms": 4015.705236,
+            "load_duration_ms": 90.740788,
+            "tokens_per_second": 42.08476221933537
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"broccoli\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"A head of broccoli, still growing, surrounded by its leaves.\"\n    },\n    \"leaves\": {\n      \"count\": 10,\n      \"location\": \"surrounding broccoli\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Large, textured leaves of the broccoli plant.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "broccoli": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "A head of broccoli, still growing, surrounded by its leaves."
+              },
+              "leaves": {
+                "count": 10,
+                "location": "surrounding broccoli",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Large, textured leaves of the broccoli plant."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 137,
+            "total_tokens": 655
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3471.088784,
+            "prompt_eval_duration_ms": 142.997806,
+            "generation_duration_ms": 3234.570813,
+            "load_duration_ms": 91.520259,
+            "tokens_per_second": 42.354923704061754
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2639,
+        "total_time_ms": 21325.806207,
+        "average_speed": 42.12005992883159
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a close-up view of a broccoli plant. The central focus is a small, light green broccoli head, which is still in its early stages of growth, surrounded by vibrant, dark green leaves. The leaves are broad and slightly wavy along the edges, with visible veins running through them, adding texture and depth to the image. The background is blurred, drawing attention to the broccoli head and the immediate leaves around it. The lighting appears to be natural, possibly from sunlight, casting a soft glow on the plant and highlighting the intricate details of the leaves and the broccoli head. The overall composition is well-balanced, with the broccoli head centrally positioned, creating a harmonious and visually appealing image that emphasizes the natural beauty of the plant.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 163,
+            "total_tokens": 955
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6580.311089,
+            "prompt_eval_duration_ms": 1998.137536,
+            "generation_duration_ms": 4533.437908,
+            "load_duration_ms": 45.97095,
+            "tokens_per_second": 35.95505294389487
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the viewer's attention is immediately drawn to a young broccoli head, which is still in its early stages of growth. This broccoli head is small, compact, and vibrant green, with tiny florets tightly clustered together. Surrounding the broccoli head are several large, broad leaves that are also green but exhibit a slightly darker hue and a waxy texture. These leaves are positioned close to the viewer, partially enveloping the broccoli head and providing a sense of protection and nurturing.\n\nIn the background, the image reveals a more expansive view of the plant's foliage. Additional leaves, similar in appearance to those in the foreground but slightly more distant, create a lush, verdant setting. These background leaves are slightly blurred, which helps to emphasize the broccoli head in the foreground and gives depth to the image. The relationship between the foreground and background elements suggests a healthy, thriving plant, with the young broccoli head as the central focus, surrounded and supported by its robust leaves. The overall composition conveys a sense of natural growth and vitality.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 231,
+            "total_tokens": 1029
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6558.853858,
+            "prompt_eval_duration_ms": 61.799667,
+            "generation_duration_ms": 6448.939329,
+            "load_duration_ms": 45.496474,
+            "tokens_per_second": 35.81984388676515
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a close-up view of a broccoli plant. The central focus is on the small, developing broccoli head, which is surrounded by large, green leaves. The leaves are broad and slightly wavy along the edges, providing a protective and supportive structure for the growing broccoli. The stems connecting the leaves to the main plant are sturdy and green, indicating healthy growth. The broccoli head itself is compact and tightly clustered with tiny florets, suggesting it is in the early stages of development. The leaves and stems create a natural framework that supports the growth of the broccoli, showcasing the interconnectedness of the plant's components. There are no people or animals visible in the image, and the primary interaction is the botanical relationship between the leaves, stems, and the developing broccoli head.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 171,
+            "total_tokens": 971
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4863.088499,
+            "prompt_eval_duration_ms": 57.151554,
+            "generation_duration_ms": 4759.572845,
+            "load_duration_ms": 43.406388,
+            "tokens_per_second": 35.92759383431603
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the young broccoli plant evokes a sense of freshness, growth, and natural beauty, creating an overall positive and calming mood. The vibrant green leaves and the small, tightly packed broccoli floret in the center convey a feeling of vitality and renewal, as if capturing a moment of nature's quiet strength. The intricate details of the plant's texture and the delicate dew-like droplets on the leaves add to the serene and peaceful atmosphere, suggesting purity and the simple wonders of the natural world. The soft, diffused lighting and the lush greenery contribute to a sense of tranquility and harmony, evoking feelings of relaxation and connection to the earth. This image does not contain any elements that might provoke negative emotions; instead, it inspires a sense of optimism and appreciation for the beauty found in everyday natural elements.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 173,
+            "total_tokens": 976
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4921.461318,
+            "prompt_eval_duration_ms": 59.857447,
+            "generation_duration_ms": 4814.183457,
+            "load_duration_ms": 44.63876,
+            "tokens_per_second": 35.93548138437716
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"broccoli\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"A single broccoli head attached to a stem with large leaves around it.\"\n    },\n    \"leaves\": {\n      \"count\": 8,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Large green leaves surrounding the broccoli head.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "broccoli": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "A single broccoli head attached to a stem with large leaves around it."
+              },
+              "leaves": {
+                "count": 8,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Large green leaves surrounding the broccoli head."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 123,
+            "total_tokens": 1105
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3568.26327,
+            "prompt_eval_duration_ms": 103.474321,
+            "generation_duration_ms": 3416.838689,
+            "load_duration_ms": 45.104273,
+            "tokens_per_second": 35.998187563252564
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5036,
+        "total_time_ms": 26491.978034000003,
+        "average_speed": 35.92723192252116
+      }
+    }
+  ]
+}

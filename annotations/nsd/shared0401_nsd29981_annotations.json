@@ -1,0 +1,961 @@
+{
+  "image": {
+    "path": "images/original/shared0401_nsd29981.png",
+    "name": "shared0401_nsd29981.png",
+    "id": "shared0401_nsd29981"
+  },
+  "timestamp": "2025-08-30T19:23:47.238564+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a scene at a train station, with a focus on a modern electric locomotive, specifically a Class 67, painted in a striking yellow and dark blue livery, which is characteristic of British Rail's InterCity Express Program (IEP) trains. The locomotive, numbered 67001, is positioned on the platform, facing towards the camera, with its front end prominently displayed. The train's design features a sleek, aerodynamic shape with large windows for passenger visibility and a streamlined roof. The platform itself is clean and well-maintained, with a yellow safety line marking the edge for passengers. The station building in the background is partially visible, with large windows and a modern architectural style, suggesting a contemporary setting. The lighting in the image is natural, indicating it was taken during the day, with the sunlight casting soft shadows and highlighting the vibrant colors of the train. The overall composition is balanced, with the train as the central element, and the platform and station building providing context and depth to the scene. The image conveys a sense of order and readiness, typical of a well-managed railway station.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 233,
+            "total_tokens": 530
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1793.064806,
+            "prompt_eval_duration_ms": 80.403529,
+            "generation_duration_ms": 1672.063267,
+            "load_duration_ms": 38.260067,
+            "tokens_per_second": 139.3487941506223
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the viewer's attention is immediately drawn to the front of a Class 67 diesel locomotive, specifically the 67001, as indicated by the number on its front. The locomotive, painted in a striking yellow and blue livery, stands out against the darker green of its body. The front of the train features a large windshield, windshield wipers, and a set of headlights, all of which are clearly visible. The locomotive is stationed on a railway track, with the platform and the edge of the station building visible to the right. The platform is marked with a yellow safety line, indicating the boundary for passengers to wait behind. The background, slightly out of focus, reveals the station building with its large windows and the roof structure, suggesting an urban setting. The relationship between the foreground and background elements creates a sense of depth, with the locomotive in sharp focus and the station building receding into the distance, providing context to the setting and emphasizing the scale and purpose of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 213,
+            "total_tokens": 516
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1606.605166,
+            "prompt_eval_duration_ms": 30.287115,
+            "generation_duration_ms": 1533.486442,
+            "load_duration_ms": 38.849886,
+            "tokens_per_second": 138.89917391261812
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a scene at a train station where a Class 67 electric locomotive, specifically unit 67001, is stationed on the platform. The train, painted in a distinctive yellow and blue livery, is the central focus of the image, positioned on the tracks, ready for departure or having just arrived. The platform, marked with a yellow safety line, is devoid of people, suggesting the train might be stationary at the moment the photo was taken. The station building in the background, with its large windows, adds to the urban setting of the scene. There are no animals visible in the image, and the train itself is inanimate, serving as a static object in the environment. The interaction between the train and the station is one of anticipation and readiness, as the train is poised to either pick up passengers or depart for its next destination. The absence of people and animals in the image emphasizes the train's role as a key element in the transportation infrastructure.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 200,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1525.305296,
+            "prompt_eval_duration_ms": 29.662103,
+            "generation_duration_ms": 1452.795647,
+            "load_duration_ms": 38.462029,
+            "tokens_per_second": 137.66561072302
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the train at the station evokes a sense of calm and anticipation, leaning slightly towards the positive. The bright yellow and blue colors of the train's front, coupled with the clean, modern design, suggest reliability and efficiency, which can be comforting to travelers. The train's position at the platform, ready for departure, conveys a sense of readiness and the promise of journey and adventure. The soft lighting and the clear visibility of the station's architecture add to the tranquil atmosphere, making the scene feel welcoming and orderly. The absence of crowds or chaos in the image further enhances the feeling of peace and order, suggesting a moment of quiet before the hustle and bustle of travel begins. Overall, the image's tone is positive, as it captures a moment of transition that is both hopeful and serene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 164,
+            "total_tokens": 472
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1247.121727,
+            "prompt_eval_duration_ms": 29.947287,
+            "generation_duration_ms": 1175.527873,
+            "load_duration_ms": 39.324151,
+            "tokens_per_second": 139.5117919079746
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"train\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"blue\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"a modern passenger train with visible headlights and windows\"\n    },\n    \"platform\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\", \"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"a train station platform with tactile paving and a yellow safety line\"\n    },\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"top left\",\n      \"color\": [\"gray\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"a multi-story building with large windows and a sign reading 'RUTLAND'\"\n    },\n    \"tracks\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"brown\", \"gray\"],\n      \"size\": \"small\",\n      \"description\": \"a section of railway tracks adjacent to the train\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "train": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "blue",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "a modern passenger train with visible headlights and windows"
+              },
+              "platform": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray",
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "a train station platform with tactile paving and a yellow safety line"
+              },
+              "building": {
+                "count": 1,
+                "location": "top left",
+                "color": [
+                  "gray",
+                  "green"
+                ],
+                "size": "large",
+                "description": "a multi-story building with large windows and a sign reading 'RUTLAND'"
+              },
+              "tracks": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "brown",
+                  "gray"
+                ],
+                "size": "small",
+                "description": "a section of railway tracks adjacent to the train"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 240,
+            "total_tokens": 726
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1802.181297,
+            "prompt_eval_duration_ms": 45.314478,
+            "generation_duration_ms": 1712.967109,
+            "load_duration_ms": 41.554647,
+            "tokens_per_second": 140.10776899277872
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2750,
+        "total_time_ms": 7974.278292,
+        "average_speed": 139.10662793740275
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a modern train at a station platform, showcasing a well-maintained and organized setting. The train, prominently displayed in the foreground, features a sleek, dark blue body with a bright yellow front section, which includes the number \"67001\" in bold black digits. The front of the train is equipped with large, clear windows, flanked by black wipers, and a set of red and white headlights at the bottom. The train's design is streamlined, with a smooth, aerodynamic shape, and it appears to be a diesel or electric locomotive, given its robust build and the visible exhaust pipes at the rear.\n\nThe platform is clean and well-lit, with a yellow safety line running along its edge, indicating the boundary for passengers. The platform surface is made of gray tiles, and the train tracks are visible in the background, with gravel ballast surrounding them. The station building in the background has a modern architectural style, featuring large glass windows and a light-colored facade, suggesting a contemporary urban setting. The lighting in the image is bright, likely from natural daylight, which enhances the clarity and vibrancy of the colors. The overall composition is balanced, with the train as the central focus, and the platform and station providing context and depth to the scene. The image conveys a sense of order, efficiency, and modern transportation infrastructure.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 279,
+            "total_tokens": 576
+          },
+          "performance_metrics": {
+            "total_duration_ms": 14006.484652,
+            "prompt_eval_duration_ms": 3580.611063,
+            "generation_duration_ms": 10385.066137,
+            "load_duration_ms": 38.019867,
+            "tokens_per_second": 26.865500548520963
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a train station platform, which is the closest element to the viewer. The platform is made of gray tiles and features a prominent yellow safety line running along its edge, indicating the boundary between the platform and the tracks. The train itself is positioned on the tracks, with its front facing the viewer. The train's design includes a yellow lower section, a blue upper section, and a gray roof, with the number \"67001\" clearly visible on the front. The train's headlights and front windows are also noticeable, adding to the sense of depth and proximity.\n\nIn the background, the setting shifts to a more distant view of the station. The station building is visible, featuring a modern architectural style with large windows and a mix of glass and concrete elements. The building appears to be multi-storied, with a clean and structured design. The roof of the platform extends over the tracks, providing shelter, and its underside is visible, adding to the depth of the scene. The background also includes some greenery, suggesting the presence of trees or landscaping near the station, which contrasts with the industrial and urban elements of the train and station.\n\nThe relationship between the foreground and background elements is one of spatial depth and context. The train and platform in the foreground provide a focal point and immediate sense of location, while the station building and surrounding environment in the background establish the setting and context of the scene. The alignment of the train tracks and the platform's edge guide the viewer's eye from the foreground to the background, creating a cohesive visual narrative that connects the train's presence to the broader station environment. The interplay between the man-made structures and the natural elements in the background further enhances the overall composition, highlighting the blend of urban infrastructure and the surrounding landscape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 364,
+            "total_tokens": 667
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13668.760318,
+            "prompt_eval_duration_ms": 72.645881,
+            "generation_duration_ms": 13554.724372,
+            "load_duration_ms": 38.569388,
+            "tokens_per_second": 26.85410562474549
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a train station scene featuring a modern diesel-electric locomotive, numbered 67001, parked at a platform. The train is painted in a striking color scheme, with a yellow front and a dark blue body, indicating it is part of a specific railway company's fleet. The locomotive is stationary, with no visible movement or activity, suggesting it is either waiting for passengers or undergoing maintenance.\n\nThe platform is clean and well-maintained, with a yellow safety line marking the boundary between the platform edge and the tracks. The platform appears unoccupied by people, as no individuals are visible in the image. The absence of people suggests a quiet moment at the station, possibly during off-peak hours or in a less frequented area.\n\nThe train's design includes large windows, which are clear and unobstructed, allowing for visibility of the train's interior. The front of the locomotive features a prominent headlight and various warning lights, indicating its readiness for operation. The train's wheels and undercarriage are visible, showcasing the robust engineering required for heavy-duty transportation.\n\nIn the background, there are buildings with large windows, likely part of the station infrastructure or adjacent commercial spaces. The architecture suggests a modern, urban setting. The overall atmosphere is calm and orderly, with no visible animals or additional objects interacting with the train or platform.\n\nThe image emphasizes the train as the central focus, highlighting its design and functionality within the context of a typical railway station environment. The lack of human or animal presence underscores the train's role as a solitary, powerful machine, ready to serve its purpose when called upon.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 330,
+            "total_tokens": 636
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12415.99476,
+            "prompt_eval_duration_ms": 75.513383,
+            "generation_duration_ms": 12296.950818,
+            "load_duration_ms": 40.522257,
+            "tokens_per_second": 26.83592094366625
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a modern train at a station, with a clean and structured environment that conveys a sense of order and efficiency. The mood is neutral to slightly positive, as the scene lacks any overtly emotional or dramatic elements. The train, with its sleek design and vibrant yellow front, suggests a sense of reliability and progress, often associated with transportation and connectivity. The bright lighting and clear visibility of the station platform contribute to a feeling of safety and transparency. The organized layout of the tracks and the clean surroundings evoke a sense of calm and routine, typical of daily commuting or travel. The absence of crowds or visible activity on the platform adds to the serene atmosphere, suggesting a moment of quiet anticipation or calm before departure. The overall tone is professional and functional, with no strong emotional undertones, reflecting the practical and methodical nature of public transportation. The image does not evoke strong emotions but rather a sense of normalcy and reliability, which can be reassuring for viewers.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 195,
+            "total_tokens": 503
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7426.825172,
+            "prompt_eval_duration_ms": 79.087457,
+            "generation_duration_ms": 7302.898863,
+            "load_duration_ms": 39.656559,
+            "tokens_per_second": 26.701725391263984
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"train\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"A blue and yellow train with the number 67001 on the front, parked at a station platform.\"\n    },\n    \"platform\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A gray platform with a yellow safety line.\"\n    },\n    \"tracks\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Rail tracks running parallel to the platform.\"\n    },\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A multi-story building with large windows in the background.\"\n    },\n    \"overhead structure\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"An overhead structure providing shade over the platform.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"A bright, clear sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "train": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "A blue and yellow train with the number 67001 on the front, parked at a station platform."
+              },
+              "platform": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A gray platform with a yellow safety line."
+              },
+              "tracks": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Rail tracks running parallel to the platform."
+              },
+              "building": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A multi-story building with large windows in the background."
+              },
+              "overhead structure": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "An overhead structure providing shade over the platform."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "A bright, clear sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 337,
+            "total_tokens": 823
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12724.034063,
+            "prompt_eval_duration_ms": 135.722699,
+            "generation_duration_ms": 12547.937227,
+            "load_duration_ms": 37.903758,
+            "tokens_per_second": 26.857003976307826
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3205,
+        "total_time_ms": 60242.098965,
+        "average_speed": 26.822851296900904
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a striking scene at a railway station, likely in the United Kingdom, given the style of the locomotive. The primary subject is a large, dark blue and yellow Class 67 locomotive, number 67001, positioned on a concrete platform. The locomotive dominates the frame, its powerful front end clearly visible with its prominent headlights and yellow warning panels. The dark blue livery contrasts sharply with the yellow, creating a bold visual impact. \n\nThe platform is constructed of light-colored, patterned concrete, marked with thick, bright yellow lines running down the center. The background is blurred, suggesting a depth of field, and reveals a building with a tiled facade. The lighting is diffused, likely from an overcast sky, casting a soft glow across the scene. The composition is balanced, with the locomotive centered and the platform providing a strong horizontal element. The overall impression is one of industrial strength and movement, hinting at the bustling activity of a busy railway station.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 209,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1652.537489,
+            "prompt_eval_duration_ms": 304.676357,
+            "generation_duration_ms": 1258.244209,
+            "load_duration_ms": 87.031981,
+            "tokens_per_second": 166.10447996109158
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the image\u2019s foreground and background elements, presented as a continuous paragraph:\n\nThe foreground is dominated by a concrete railway platform, characterized by its smooth, light grey surface and prominent yellow lines running down its center, creating a strong directional element. The platform\u2019s surface is slightly textured with small aggregate, suggesting a busy railway environment. Immediately in front of the viewer is the imposing front of a large, dark blue locomotive, specifically a Class 67000 locomotive. The locomotive\u2019s yellow front section, featuring the number \u201c67001\u201d in bold black lettering, draws the eye. \n\nThe background reveals a typical railway station setting. Behind the locomotive, we see a building with a tiled fa\u00e7ade, likely a station building, and further in the distance, more buildings and structures contribute to the urban landscape. The overall composition creates a sense of depth, with the locomotive positioned centrally, emphasizing its scale and presence within the railway environment. The layers of the image\u2014the platform, the locomotive, and the distant buildings\u2014work together to convey a scene of modern railway transport.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 228,
+            "total_tokens": 546
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1522.539816,
+            "prompt_eval_duration_ms": 60.788275,
+            "generation_duration_ms": 1371.284997,
+            "load_duration_ms": 87.846673,
+            "tokens_per_second": 166.26740648282612
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph, focusing on actions, relationships, and connections:\n\nThe image captures a powerful Class 67 locomotive, number 67001, dominating the foreground of a railway platform. The locomotive, painted in a striking dark green and yellow livery, appears to be paused, its large front windscreen reflecting the bright daylight. A long, dark passenger coach extends behind it, suggesting a train journey is about to begin or has just ended. The platform itself is tiled with a geometric pattern, marked with prominent yellow lines that guide the flow of movement. The lines converge towards the train, emphasizing its central role. The scene evokes a sense of anticipation and travel, with the train poised to embark on its route. The relationship between the train and the platform highlights the infrastructure that enables transportation, while the yellow lines subtly direct the flow of people and vehicles.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 183,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1236.010893,
+            "prompt_eval_duration_ms": 57.152185,
+            "generation_duration_ms": 1088.690665,
+            "load_duration_ms": 87.961178,
+            "tokens_per_second": 168.09182431999636
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of approximately 200 words:\n\nThe image evokes a sense of quiet anticipation and perhaps a subtle melancholy. The dominant mood is one of stillness and potential movement, captured in the moment before a train departs. The dark, almost brooding, grey of the locomotive contrasts sharply with the bright yellow and blue accents, creating a visual tension that subtly mirrors a feeling of restrained energy. The long, straight platform and the receding lines of the train create a sense of distance and isolation, suggesting a journey into the unknown. The muted lighting and the slightly blurred background contribute to a feeling of detachment, as if the viewer is observing a scene from afar. \n\nThe overall tone is neither overtly positive nor negative, but leans towards a contemplative and slightly somber atmosphere. The image speaks to the transient nature of travel and the inherent loneliness of journeys. The clean lines and geometric composition add to this feeling of order and control, yet the stillness hints at a deeper, unspoken narrative. It\u2019s a moment frozen in time, inviting the viewer to ponder the possibilities held within the train\u2019s path.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 239,
+            "total_tokens": 563
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1576.038513,
+            "prompt_eval_duration_ms": 56.19462,
+            "generation_duration_ms": 1431.837767,
+            "load_duration_ms": 85.536788,
+            "tokens_per_second": 166.91835172133716
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"grey\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Standing near the train, appearing to be observing it.\"\n    }\n  },\n  \"man-made\": {\n    \"train\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"dark green\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"A dark green locomotive with a yellow front. Number 67001 is visible on the front.\"\n    },\n    \"platform\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"grey\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Concrete platform with yellow lines.\"\n    },\n    \"sign\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"A sign is visible on the left side of the image.\"\n    },\n    \"track\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"grey\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"Railway tracks are visible at the bottom of the image.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "grey",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Standing near the train, appearing to be observing it."
+              }
+            },
+            "man-made": {
+              "train": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "dark green",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "A dark green locomotive with a yellow front. Number 67001 is visible on the front."
+              },
+              "platform": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "grey",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Concrete platform with yellow lines."
+              },
+              "sign": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white",
+                  "black"
+                ],
+                "size": "small",
+                "description": "A sign is visible on the left side of the image."
+              },
+              "track": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "grey",
+                  "black"
+                ],
+                "size": "large",
+                "description": "Railway tracks are visible at the bottom of the image."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 342,
+            "total_tokens": 860
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2217.750972,
+            "prompt_eval_duration_ms": 62.933161,
+            "generation_duration_ms": 2067.782914,
+            "load_duration_ms": 84.840171,
+            "tokens_per_second": 165.39453812316393
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2995,
+        "total_time_ms": 8204.877682999999,
+        "average_speed": 166.55532012168302
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph showcases a British Rail Class 57 locomotive, number 57001, positioned on a train platform. The setting appears to be a covered railway station, evidenced by the arched, skylit roof overhead and the glimpse of buildings visible through the open end. The locomotive is the dominant element, angled slightly away from the viewer, revealing its distinctive green and yellow livery. The yellow front panel displays the number \"67001\" in bold black numerals, along with various warning signs. The train cars behind the locomotive are dark grey or black, blending into the shadows. \n\nThe lighting is a mix of natural light filtering in from the open end of the station and artificial light from above, creating a contrast between the brightly lit front of the locomotive and the darker areas of the train and platform. The platform itself is tiled with a grey surface marked with prominent yellow lines. The overall composition is balanced, with the locomotive taking up a significant portion of the frame and drawing the viewer's eye.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 218,
+            "total_tokens": 531
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3137.860385,
+            "prompt_eval_duration_ms": 343.811254,
+            "generation_duration_ms": 2698.858037,
+            "load_duration_ms": 92.91326,
+            "tokens_per_second": 80.77490442673476
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationship:\n\nThe immediate foreground is dominated by a section of a railway platform, paved with grey tiles marked by bright yellow lines delineating the edge of the track. A large, dark green locomotive, numbered 67001, takes center stage, its front facing the viewer. The locomotive\u2019s yellow front panel is clearly visible, displaying various warning signs and the identification number. Behind the locomotive, a string of dark passenger carriages stretches into the distance. The background reveals a covered railway station, with a high, arched roof supported by steel beams. Through the gaps in the roof, glimpses of a bright, overcast sky and distant buildings, including what appears to be a church steeple, are visible. The locomotive and carriages are positioned on the tracks, integrated into the station's infrastructure, creating a sense of transit and functionality. The station's architecture provides context, suggesting a historical or traditional railway setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 201,
+            "total_tokens": 519
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2673.493206,
+            "prompt_eval_duration_ms": 66.196304,
+            "generation_duration_ms": 2514.145025,
+            "load_duration_ms": 89.83859,
+            "tokens_per_second": 79.94765536646001
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on elements and their interactions:\n\nThe image showcases a British Rail Class 37 diesel locomotive, number 67001, positioned on a railway platform. The locomotive is the dominant element, its dark green livery contrasting with the yellow front panel and red marker lights. It's connected to a string of dark passenger carriages, suggesting it's ready for or has just completed a journey. The platform itself is paved with grey tiles marked with yellow lines, indicating track boundaries. A section of a building with a sign reading \"NEWPORT\" is visible in the background, suggesting the train is at Newport station. The scene is bathed in diffused light filtering through a roof structure, creating a slightly muted atmosphere. There are no people or animals present in the image, so the interaction is solely between the train and the station infrastructure. The train's presence implies a connection to a wider transportation network and a potential journey for passengers.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 199,
+            "total_tokens": 520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2654.189019,
+            "prompt_eval_duration_ms": 67.407522,
+            "generation_duration_ms": 2496.674318,
+            "load_duration_ms": 87.478744,
+            "tokens_per_second": 79.70603076472227
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of nostalgic melancholy and quiet observation. The scene, featuring a vintage British Rail diesel locomotive at a station platform, carries a feeling of faded grandeur and a bygone era. The muted colors\u2014primarily dark green, grey, and yellow\u2014contribute to a somber, almost subdued atmosphere. The locomotive\u2019s age and the slightly worn appearance of the platform suggest a history of travel and a sense of time passing. The absence of people amplifies the feeling of solitude and stillness, inviting contemplation. While not overtly negative, the image doesn's exude joy or excitement; instead, it conveys a gentle sadness and a feeling of remembering a time that is no longer present. The strong lines of the platform and the locomotive\u2019s imposing presence create a feeling of stability, but also a sense of being rooted in the past.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 170,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2298.137949,
+            "prompt_eval_duration_ms": 69.384521,
+            "generation_duration_ms": 2137.78264,
+            "load_duration_ms": 88.566212,
+            "tokens_per_second": 79.52164865554339
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"train\": [\n        {\n          \"count\": 1,\n          \"location\": \"center\",\n          \"color\": [\"green\", \"yellow\", \"black\"],\n          \"size\": \"large\",\n          \"description\": \"Locomotive with number 67001 visible on the front, positioned on train tracks.\"\n        },\n        {\n          \"count\": 1,\n          \"location\": \"center\",\n          \"color\": [\"black\"],\n          \"size\": \"large\",\n          \"description\": \"Passenger carriage connected to the locomotive.\"\n        },\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"color\": [\"yellow\"],\n          \"size\": \"medium\",\n          \"description\": \"Train tracks with yellow lines marking the edges.\"\n        },\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"color\": [\"gray\"],\n          \"size\": \"large\",\n          \"description\": \"Platform with tiled surface.\"\n        }\n      ]\n    },\n    {\n      \"building\": [\n        {\n          \"count\": 1,\n          \"location\": \"top\",\n          \"color\": [\"green\", \"white\"],\n          \"size\": \"small\",\n          \"description\": \"Partially visible building with windows.\"\n        }\n      ]\n    }\n  ],\n  \"natural\": [\n    {\n      \"sky\": [\n        {\n          \"count\": 1,\n          \"location\": \"top\",\n          \"size\": \"medium\",\n          \"description\": \"Overcast sky.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "train": [
+                  {
+                    "count": 1,
+                    "location": "center",
+                    "color": [
+                      "green",
+                      "yellow",
+                      "black"
+                    ],
+                    "size": "large",
+                    "description": "Locomotive with number 67001 visible on the front, positioned on train tracks."
+                  },
+                  {
+                    "count": 1,
+                    "location": "center",
+                    "color": [
+                      "black"
+                    ],
+                    "size": "large",
+                    "description": "Passenger carriage connected to the locomotive."
+                  },
+                  {
+                    "count": 1,
+                    "location": "background",
+                    "color": [
+                      "yellow"
+                    ],
+                    "size": "medium",
+                    "description": "Train tracks with yellow lines marking the edges."
+                  },
+                  {
+                    "count": 1,
+                    "location": "background",
+                    "color": [
+                      "gray"
+                    ],
+                    "size": "large",
+                    "description": "Platform with tiled surface."
+                  }
+                ]
+              },
+              {
+                "building": [
+                  {
+                    "count": 1,
+                    "location": "top",
+                    "color": [
+                      "green",
+                      "white"
+                    ],
+                    "size": "small",
+                    "description": "Partially visible building with windows."
+                  }
+                ]
+              }
+            ],
+            "natural": [
+              {
+                "sky": [
+                  {
+                    "count": 1,
+                    "location": "top",
+                    "size": "medium",
+                    "description": "Overcast sky."
+                  }
+                ]
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 391,
+            "total_tokens": 909
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5126.146362,
+            "prompt_eval_duration_ms": 91.596565,
+            "generation_duration_ms": 4943.602876,
+            "load_duration_ms": 88.657527,
+            "tokens_per_second": 79.09211354702676
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2973,
+        "total_time_ms": 15889.826921,
+        "average_speed": 79.80847055209743
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image depicts a dark green and yellow diesel locomotive, numbered 67001, positioned on a railway platform. The train is the dominant element, stretching across the frame and partially obscured by its length. The locomotive\u2019s front is a bright yellow with black detailing, contrasting sharply with the deep green of the rest of the engine. The train car behind it is dark grey. The platform is tiled with light grey square tiles, marked with a bright yellow line running parallel to the tracks. The setting appears to be a covered railway station, as evidenced by the overhead structure and the visible windows of a building in the background. The lighting is somewhat diffused, suggesting an overcast day or the shade of the station roof. The composition is a side view of the train, emphasizing its length and power. The overall impression is one of a classic, well-maintained locomotive in a functional railway environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 191,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5056.873725,
+            "prompt_eval_duration_ms": 400.21762,
+            "generation_duration_ms": 4565.481951,
+            "load_duration_ms": 88.732577,
+            "tokens_per_second": 41.835670811964185
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nIn the foreground, a dark green and yellow diesel locomotive dominates the view, its front facing slightly towards the right. The number \"67001\" is prominently displayed on the yellow front panel. The train is positioned on a light grey tiled platform, marked with a bright yellow line running parallel to the tracks. The undercarriage of the locomotive, with its complex network of wheels and mechanisms, is visible, grounding the image. \n\nThe background reveals a covered railway platform structure, with a series of arched windows and a building facade visible beyond. The architecture suggests a classic railway station setting. The platform extends into the distance, hinting at further tracks and potential destinations. The relationship between foreground and background is one of scale and perspective; the locomotive is the immediate subject, while the station provides the context and environment for its operation. The lines of the platform and tracks converge, drawing the viewer's eye into the distance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 203,
+            "total_tokens": 521
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5022.756143,
+            "prompt_eval_duration_ms": 88.248861,
+            "generation_duration_ms": 4846.013147,
+            "load_duration_ms": 86.054807,
+            "tokens_per_second": 41.89010509095922
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image prominently features a dark green and yellow diesel locomotive, numbered 67001, positioned on a railway platform. The train is stationary, appearing to be either arriving or departing from the station. The locomotive\u2019s front is detailed with lights, buffers, and a prominent yellow front end for visibility. The train car behind the locomotive is dark and appears to be a passenger car. The platform itself is tiled with a light gray surface and marked with a bright yellow line indicating the edge. In the background, a building with multiple windows is visible, suggesting a station building or adjacent structure. There are no people or animals visible in the image, so the interaction is limited to the train and its environment. The train is connected to the platform via the rails, and the station building provides the context for its presence. The overall scene conveys a sense of transit and travel, with the train as the central element.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 203,
+            "total_tokens": 524
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5026.701977,
+            "prompt_eval_duration_ms": 89.848393,
+            "generation_duration_ms": 4844.189025,
+            "load_duration_ms": 89.153557,
+            "tokens_per_second": 41.90587917861029
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of quiet anticipation and perhaps a touch of nostalgia. The powerful, dark green and yellow locomotive dominating the frame suggests a journey about to begin or recently completed. The train\u2019s imposing presence, combined with the empty platform and the linear perspective of the tracks, creates a feeling of transience and movement. The muted colors and the slightly overcast lighting contribute to a subdued, almost melancholic mood. There's a sense of solitude, as if the train is momentarily paused in a vast space. The clean lines of the platform and the orderly arrangement of the tracks suggest efficiency and order, but also a certain detachment. Overall, the tone is neutral leaning towards positive, hinting at the excitement of travel and the possibilities that lie ahead, while also acknowledging the fleeting nature of time and place.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 162,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4035.459054,
+            "prompt_eval_duration_ms": 81.919612,
+            "generation_duration_ms": 3863.836205,
+            "load_duration_ms": 87.607453,
+            "tokens_per_second": 41.92724313477983
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"train\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"dark green\", \"yellow\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"Diesel locomotive with number 67001 visible. Appears to be stationary on a platform.\"\n    },\n    \"railway track\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"Metal rails running along the platform.\"\n    },\n    \"platform\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Tiled platform with yellow safety line.\"\n    },\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Building visible in the background with multiple windows.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "train": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "dark green",
+                  "yellow",
+                  "black"
+                ],
+                "size": "large",
+                "description": "Diesel locomotive with number 67001 visible. Appears to be stationary on a platform."
+              },
+              "railway track": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray",
+                  "black"
+                ],
+                "size": "small",
+                "description": "Metal rails running along the platform."
+              },
+              "platform": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Tiled platform with yellow safety line."
+              },
+              "building": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Building visible in the background with multiple windows."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 268,
+            "total_tokens": 786
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6594.702456,
+            "prompt_eval_duration_ms": 140.764685,
+            "generation_duration_ms": 6360.669199,
+            "load_duration_ms": 89.016882,
+            "tokens_per_second": 42.133931448932124
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2821,
+        "total_time_ms": 25736.493355,
+        "average_speed": 41.938565933049134
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a train station setting with a prominent train occupying the scene. The train, positioned on the left side of the image, is primarily dark green with a bright yellow front, featuring the number \"67001\" and a triangular warning light at the top. The train's design includes large windows and various mechanical components visible on its side. The station platform, located on the right, is covered by a roof supported by columns, providing shelter for passengers. The platform itself is paved with light-colored tiles, and a yellow tactile paving strip runs along the edge, indicating safety precautions for visually impaired individuals. The lighting in the image suggests it is daytime, with natural light illuminating the scene, casting soft shadows and highlighting the details of the train and platform. The overall composition is balanced, with the train and platform each occupying distinct halves of the image, creating a clear and organized visual narrative of a typical train station environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 189,
+            "total_tokens": 981
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7382.951343,
+            "prompt_eval_duration_ms": 2040.016126,
+            "generation_duration_ms": 5294.215961,
+            "load_duration_ms": 45.687648,
+            "tokens_per_second": 35.69933704863461
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the closest elements to the viewer are the front of a train and part of its side. The train is predominantly blue and yellow, with the number \"67001\" prominently displayed on its front. The train is positioned on the tracks, and its headlights and windshield wipers are clearly visible, indicating it is ready for departure or arrival. The platform edge is also visible in the foreground, marked by a yellow line, which is a common safety feature in train stations.\n\nIn the background, the setting includes a train station platform with a roof providing shelter. The platform appears to be relatively empty, with no visible passengers or station staff. Beyond the platform, there are buildings that likely house station facilities or commercial establishments, suggesting an urban environment. The background elements provide context to the train's location, indicating it is at a station, possibly in a city. The relationship between the foreground and background elements is that the train in the foreground is the main subject, with the station platform and buildings in the background providing the necessary context for its setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 220,
+            "total_tokens": 1018
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6232.741816,
+            "prompt_eval_duration_ms": 56.397538,
+            "generation_duration_ms": 6128.300071,
+            "load_duration_ms": 45.034066,
+            "tokens_per_second": 35.8990254150693
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a train at a station platform. The train, which is the primary object, is stationary on the tracks, positioned parallel to the platform. It has a distinctive blue and yellow color scheme with the number \"67001\" visible on its front. The train appears to be a locomotive, likely used for pulling passenger or freight cars. There are no visible people or animals in the image, suggesting the platform is currently devoid of passengers or staff. The platform itself is equipped with a yellow tactile paving strip along the edge, which serves as a safety feature to alert visually impaired individuals of the platform's edge. The station building in the background has a modern design, with large windows and a covered roof extending over the platform, providing shelter for waiting passengers. The overall scene suggests a quiet moment at the station, with the train possibly waiting for departure or having just arrived.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 180,
+            "total_tokens": 980
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5116.270706,
+            "prompt_eval_duration_ms": 54.447286,
+            "generation_duration_ms": 5014.093396,
+            "load_duration_ms": 44.750055,
+            "tokens_per_second": 35.89881276315979
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the train at the station conveys a mood of calm efficiency and quiet anticipation. The overall tone is neutral, leaning slightly towards positive due to the clean, organized environment and the sense of orderliness. The train, with its bright yellow and blue colors, appears well-maintained and modern, suggesting reliability and progress. The empty platform and the absence of people contribute to a serene, unhurried atmosphere, evoking feelings of tranquility and solitude. The clear sky and natural light further enhance this sense of calm, creating a peaceful setting. The image does not evoke strong emotions but rather a subtle, understated feeling of readiness and routine, as if the train is poised to embark on its next journey, embodying the everyday rhythm of travel and transportation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 157,
+            "total_tokens": 960
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4469.260962,
+            "prompt_eval_duration_ms": 59.019229,
+            "generation_duration_ms": 4361.814502,
+            "load_duration_ms": 45.550923,
+            "tokens_per_second": 35.99419460135492
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"train\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"A train with a blue and yellow front, parked at a station.\"\n    },\n    \"station\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"A train station platform with a roof and buildings in the background.\"\n    },\n    \"tracks\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Train tracks on which the train is parked.\"\n    },\n    \"platform\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A train station platform next to the train.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "train": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "A train with a blue and yellow front, parked at a station."
+              },
+              "station": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "green"
+                ],
+                "size": "large",
+                "description": "A train station platform with a roof and buildings in the background."
+              },
+              "tracks": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Train tracks on which the train is parked."
+              },
+              "platform": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A train station platform next to the train."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 226,
+            "total_tokens": 1208
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6451.234311,
+            "prompt_eval_duration_ms": 103.519171,
+            "generation_duration_ms": 6298.009685,
+            "load_duration_ms": 46.733819,
+            "tokens_per_second": 35.88435256590114
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5147,
+        "total_time_ms": 29652.459138,
+        "average_speed": 35.87514447882395
+      }
+    }
+  ]
+}

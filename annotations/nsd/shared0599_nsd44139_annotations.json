@@ -1,0 +1,947 @@
+{
+  "image": {
+    "path": "images/original/shared0599_nsd44139.png",
+    "name": "shared0599_nsd44139.png",
+    "id": "shared0599_nsd44139"
+  },
+  "timestamp": "2025-08-30T21:12:37.303856+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image presents a close-up view of a woven basket filled with a variety of fresh fruits, bathed in the warm, natural light of what appears to be a sunny day. The basket, made of light brown, tightly woven straw, sits on a smooth, light gray surface, possibly a countertop or table. Inside the basket, a vibrant assortment of fruits is arranged: several ripe bananas with their yellow peels and slight brown spots, a mix of red and green apples, and a few round, orange-colored fruits that resemble tangerines or oranges. The sunlight streaming in from the upper left corner of the frame casts distinct shadows of the fruits onto the basket and the surface below, adding depth and a sense of time of day. The overall composition is simple yet inviting, with the natural colors of the fruits contrasting beautifully against the neutral tones of the basket and the surface, creating a visually appealing and fresh scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 186,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1484.019449,
+            "prompt_eval_duration_ms": 79.636015,
+            "generation_duration_ms": 1361.522697,
+            "load_duration_ms": 40.389361,
+            "tokens_per_second": 136.61175124721404
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, a woven wicker basket dominates the scene, its texture and natural color providing a rustic backdrop. Inside the basket, a vibrant assortment of fruits\u2014bananas with their yellow peels, red and green apples, and oranges with their bright orange hue\u2014create a colorful and inviting display. The sunlight casts a warm glow, highlighting the textures and colors of the fruits and the basket, suggesting a natural, outdoor setting. The background, though slightly out of focus, reveals a light-colored surface, possibly a table or countertop, which subtly contrasts with the darker tones of the basket and the rich colors of the fruits, further emphasizing the foreground elements and creating a sense of depth. The interplay of light and shadow, along with the natural hues, evokes a sense of freshness and abundance, connecting the viewer to the simple pleasures of nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 173,
+            "total_tokens": 476
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1352.223647,
+            "prompt_eval_duration_ms": 29.937799,
+            "generation_duration_ms": 1279.535707,
+            "load_duration_ms": 39.953657,
+            "tokens_per_second": 135.20529286800124
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a woven basket sits on a surface, filled with a variety of fruits. The basket, with its natural texture and warm tones, serves as the central object, holding the fruits in a harmonious arrangement. Inside the basket, there are bananas, apples, and oranges, each contributing to the vibrant and colorful display. The bananas, with their yellow hue and slightly curved shape, are positioned towards the bottom left, while the apples, with their red and green skin, are scattered around the middle and top of the basket. The oranges, with their bright orange color, are nestled among the apples, adding a pop of color to the mix. The sunlight casts shadows within the basket, creating a play of light and dark that enhances the visual appeal of the scene. There are no people or animals present in the image; the focus is entirely on the basket and its contents. The interaction between the elements is one of stillness and tranquility, with each fruit occupying its own space within the basket, yet contributing to a unified and visually pleasing composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 214,
+            "total_tokens": 520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1664.279054,
+            "prompt_eval_duration_ms": 31.520277,
+            "generation_duration_ms": 1591.350239,
+            "load_duration_ms": 38.875689,
+            "tokens_per_second": 134.4769961730593
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of warmth and contentment, primarily due to the natural and inviting arrangement of fresh fruits in a woven basket. The sunlight streaming through, casting soft shadows and highlighting the vibrant colors of the bananas, apples, and oranges, creates a feeling of freshness and vitality. The natural textures of the basket and the organic shapes of the fruits contribute to a rustic and wholesome atmosphere, suggesting a connection to nature and simplicity. The overall tone is decidedly positive, as the image conveys a sense of abundance and the simple pleasures of life. The composition, with its natural light and the harmonious blend of colors, evokes feelings of joy and satisfaction, making the viewer feel as though they are part of a peaceful, sunlit moment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 151,
+            "total_tokens": 459
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1186.729736,
+            "prompt_eval_duration_ms": 30.220345,
+            "generation_duration_ms": 1115.954467,
+            "load_duration_ms": 37.966375,
+            "tokens_per_second": 135.3101801778083
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"basket\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"woven basket holding fruits\"\n    }\n  },\n  \"natural\": {\n    \"banana\": {\n      \"count\": 4,\n      \"location\": \"left\",\n      \"color\": [\"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"ripe bananas with brown spots\"\n    },\n    \"apple\": {\n      \"count\": 3,\n      \"location\": \"right\",\n      \"color\": [\"red\", \"green\"],\n      \"size\": \"medium\",\n      \"description\": \"red and green apples\"\n    },\n    \"orange\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"medium\",\n      \"description\": \"ripe oranges\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "basket": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "woven basket holding fruits"
+              }
+            },
+            "natural": {
+              "banana": {
+                "count": 4,
+                "location": "left",
+                "color": [
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "ripe bananas with brown spots"
+              },
+              "apple": {
+                "count": 3,
+                "location": "right",
+                "color": [
+                  "red",
+                  "green"
+                ],
+                "size": "medium",
+                "description": "red and green apples"
+              },
+              "orange": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "medium",
+                "description": "ripe oranges"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 205,
+            "total_tokens": 691
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1570.060383,
+            "prompt_eval_duration_ms": 44.65393,
+            "generation_duration_ms": 1480.118514,
+            "load_duration_ms": 42.259495,
+            "tokens_per_second": 138.50242265127156
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2629,
+        "total_time_ms": 7257.312269000001,
+        "average_speed": 136.02132862347088
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a rustic, woven wicker basket filled with a variety of fresh fruits, placed on a flat surface, likely indoors. The basket is round and made of light brown, tightly woven material, which gives it a natural and textured appearance. The fruits inside include several bananas, a few apples (both red and green), and a couple of oranges. The bananas are ripe, with their characteristic yellow color and some brown spots, indicating they are ready to eat. The apples vary in color, with one red apple and a green apple, while the oranges provide a bright orange hue. The fruits are arranged casually, with the bananas prominently in the foreground and the apples and oranges scattered behind them.\n\nThe lighting in the image is soft and natural, suggesting it might be taken near a window or in a well-lit room. The light creates gentle shadows within the basket, adding depth and dimension to the composition. The overall color palette is warm and earthy, dominated by the browns of the basket, the yellows of the bananas, the reds and greens of the apples, and the oranges of the fruits. The setting appears simple and uncluttered, focusing entirely on the basket and its contents. The composition is balanced, with the fruits filling the basket evenly, creating a visually pleasing and inviting scene. The image evokes a sense of freshness, abundance, and natural simplicity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 281,
+            "total_tokens": 578
+          },
+          "performance_metrics": {
+            "total_duration_ms": 14089.633279,
+            "prompt_eval_duration_ms": 3554.213325,
+            "generation_duration_ms": 10494.030308,
+            "load_duration_ms": 38.845738,
+            "tokens_per_second": 26.77712868675279
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a wicker basket filled with a variety of fruits, including bananas, apples, and oranges. The bananas are prominently positioned in the front, with their bright yellow color and distinct curved shapes drawing immediate attention. Behind the bananas, a mix of red and green apples is visible, adding a pop of contrasting colors. Two oranges are nestled among the apples, their vibrant orange hue complementing the overall composition. The basket itself is woven from natural materials, giving it a rustic and organic feel, and its texture is clearly visible, adding depth and tactile interest to the foreground.\n\nIn the background, the setting is minimal and somewhat ambiguous, suggesting a simple, uncluttered environment. The basket appears to be placed on a flat surface, likely a table or countertop, which is partially visible at the bottom of the image. The background is mostly out of focus, emphasizing the fruits in the basket as the main subject. The lighting in the image creates a play of shadows and highlights, with sunlight streaming in from the left, casting distinct shadows of the fruits and basket onto the surface beneath. This interplay of light and shadow enhances the three-dimensional quality of the fruits and the basket, making the foreground elements stand out sharply against the softer, more subdued background. The relationship between the foreground and background is one of contrast, with the detailed, vibrant fruits in the basket serving as the focal point, while the background provides a neutral, supporting role that ensures the viewer's attention remains on the main subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 308,
+            "total_tokens": 611
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11575.680189,
+            "prompt_eval_duration_ms": 74.328276,
+            "generation_duration_ms": 11459.499868,
+            "load_duration_ms": 39.065905,
+            "tokens_per_second": 26.877263715502316
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a wicker basket filled with various fruits, including bananas, apples, oranges, and a green apple. There are no people or animals present in the image. The focus is entirely on the fruits and the basket they are contained in. The bananas are clustered together in the foreground, their yellow peel showing some brown spots, indicating ripeness. Behind the bananas, there are several apples of varying colors\u2014red and green\u2014along with a couple of oranges. The fruits are arranged in a casual, natural manner, suggesting they were placed in the basket without a specific pattern or design. The basket itself is woven from natural materials, giving it a rustic and organic appearance. The lighting in the image is bright, casting shadows that emphasize the textures of the fruits and the basket, creating a warm and inviting atmosphere. The fruits appear fresh and vibrant, suggesting they are ready to be eaten. There are no interactions between elements since there are no living beings present, but the arrangement of the fruits within the basket creates a sense of abundance and natural beauty. The image evokes a feeling of simplicity and the joys of fresh produce.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 227,
+            "total_tokens": 533
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8607.497121,
+            "prompt_eval_duration_ms": 83.47929,
+            "generation_duration_ms": 8479.817621,
+            "load_duration_ms": 41.39816,
+            "tokens_per_second": 26.769443653816523
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a warm, inviting, and positive mood, evoking feelings of freshness, abundance, and natural simplicity. The basket of fruit, bathed in soft, natural sunlight, creates a sense of tranquility and contentment. The vibrant colors of the apples, bananas, and oranges\u2014ranging from bright red and yellow to rich green and orange\u2014immediately draw the eye and suggest vitality and health. The sunlight filtering through, casting gentle shadows, adds a serene and almost nostalgic quality, reminiscent of a peaceful morning or afternoon spent outdoors. The rustic woven basket enhances the natural and homely feel, evoking a sense of tradition and simplicity. The arrangement of the fruit, with the bananas curving gently and the apples and oranges nestled together, gives a sense of harmony and balance, further contributing to the positive atmosphere. The overall tone is decidedly positive, as the image radiates warmth, nourishment, and a connection to nature, making it feel uplifting and refreshing. The combination of light, color, and composition creates an emotional atmosphere that is both calming and inspiring.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 218,
+            "total_tokens": 526
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8233.492471,
+            "prompt_eval_duration_ms": 72.696047,
+            "generation_duration_ms": 8118.708129,
+            "load_duration_ms": 37.327274,
+            "tokens_per_second": 26.851562654568735
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"basket\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Woven basket containing various fruits\"\n    }\n  },\n  \"natural\": {\n    \"banana\": {\n      \"count\": 5,\n      \"location\": \"center\",\n      \"color\": [\"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"Cluster of ripe bananas\"\n    },\n    \"apple\": {\n      \"count\": 4,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Red and green apples\"\n    },\n    \"orange\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"medium\",\n      \"description\": \"Two oranges\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "basket": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Woven basket containing various fruits"
+              }
+            },
+            "natural": {
+              "banana": {
+                "count": 5,
+                "location": "center",
+                "color": [
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "Cluster of ripe bananas"
+              },
+              "apple": {
+                "count": 4,
+                "location": "center",
+                "color": [
+                  "red",
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Red and green apples"
+              },
+              "orange": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "medium",
+                "description": "Two oranges"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 205,
+            "total_tokens": 691
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7772.883471,
+            "prompt_eval_duration_ms": 138.629017,
+            "generation_duration_ms": 7592.651997,
+            "load_duration_ms": 38.926912,
+            "tokens_per_second": 26.999788753784497
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2939,
+        "total_time_ms": 50279.186531,
+        "average_speed": 26.855037492884968
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image presents a vibrant still life of fresh fruit nestled within a rustic, woven wicker basket. The basket itself is a warm, medium brown, with a tightly woven texture that adds to the natural feel of the scene. Inside, a generous bunch of ripe, yellow bananas dominates the composition, their curved forms overlapping and creating a sense of abundance. Scattered around the bananas are several pieces of fruit: a bright red apple, a vibrant green apple, a juicy orange, and a reddish-orange apple. \n\nThe lighting is strong and directional, casting a dramatic shadow from the fruit onto the dark surface beneath the basket. This creates a high-contrast effect, emphasizing the colors and textures of the fruit. The overall composition is quite dense, with the fruit filling the majority of the frame. The colors are rich and saturated, contributing to a feeling of freshness and health. The scene evokes a sense of a simple, wholesome meal or snack.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 200,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1608.055294,
+            "prompt_eval_duration_ms": 303.690487,
+            "generation_duration_ms": 1212.75635,
+            "load_duration_ms": 88.995242,
+            "tokens_per_second": 164.9135871356188
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements, as requested:\n\nThe foreground is dominated by a cluster of ripe, yellow bananas, their peels displaying a slight sheen from the sunlight. They are tightly bunched together, creating a warm, inviting focal point.  Several red apples are scattered amongst the bananas, their vibrant color contrasting sharply with the yellow. A green apple sits prominently towards the right, adding another layer of color to the composition. \n\nThe background is a simple, dark grey surface, likely a countertop or table. It serves as a neutral backdrop, emphasizing the fruit within the woven basket. The basket itself is a light brown, with a textured weave that adds depth to the image. The fruit within the basket is the primary subject, and the dark background helps to isolate and highlight the freshness and abundance of the produce. The arrangement suggests a still-life composition, with the fruit presented as a simple, appealing offering.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 191,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1296.120855,
+            "prompt_eval_duration_ms": 54.018637,
+            "generation_duration_ms": 1152.173676,
+            "load_duration_ms": 87.409103,
+            "tokens_per_second": 165.77361901123663
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph, focusing on actions, relationships, and connections within the scene:\n\nWithin a rustic, woven basket, a vibrant assortment of fruit basks in a warm, sunlit glow. Several ripe bananas, a cluster of yellow curves, are the dominant feature, seemingly inviting a gentle touch. Nestled amongst them are a bright red apple, a luscious orange, and a green apple, creating a colorful contrast. The apples appear to be in a state of quiet repose, awaiting consumption. The bananas, with their slightly curved shapes, suggest a readiness for eating. There is a sense of abundance and freshness, as if the fruit is waiting to be enjoyed. The basket itself provides a stable and comforting environment for this collection of natural treats. The light emphasizes the textures and colors of the fruit, creating a visually appealing composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 176,
+            "total_tokens": 497
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1208.463038,
+            "prompt_eval_duration_ms": 55.628862,
+            "generation_duration_ms": 1061.862041,
+            "load_duration_ms": 88.796242,
+            "tokens_per_second": 165.74657837307512
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of approximately 200 words:\n\nThe image evokes a feeling of simple, wholesome abundance and a quiet sense of domestic comfort. The bright, natural light streaming into the scene contributes significantly to this positive mood, suggesting freshness and vitality. The basket itself, woven from a warm, golden-brown material, adds to the feeling of naturalness and rustic charm. The arrangement of the fruit \u2013 a cluster of ripe, yellow bananas, alongside a vibrant red apple, a green apple, a bright orange, and a juicy orange \u2013 speaks to a healthy and nourishing lifestyle. There\u2019s a feeling of abundance and generosity, as if this is a treat waiting to be enjoyed. The fruit\u2019s colors are particularly uplifting, contributing to a sense of optimism and well-being. The overall composition is calm and inviting, suggesting a moment of relaxation and simple pleasure. It\u2019s a scene that promotes feelings of contentment and a connection to the natural world, fostering a sense of gratitude for the bounty of the earth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 223,
+            "total_tokens": 547
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1482.238429,
+            "prompt_eval_duration_ms": 55.836867,
+            "generation_duration_ms": 1338.781446,
+            "load_duration_ms": 85.102121,
+            "tokens_per_second": 166.56938342421574
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"\"\n    }\n  },\n  \"animal\": {\n    \"banana\": {\n      \"count\": 6,\n      \"location\": \"center\",\n      \"color\": [\"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"Ripe bananas in a bunch\"\n    }\n  },\n  \"man-made\": {\n    \"basket\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Wicker basket containing the fruit\"\n    }\n  },\n  \"natural\": {\n    \"apple\": {\n      \"count\": 3,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"green\", \"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"Fresh apples\"\n    },\n    \"orange\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"medium\",\n      \"description\": \"Oranges\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": ""
+              }
+            },
+            "animal": {
+              "banana": {
+                "count": 6,
+                "location": "center",
+                "color": [
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "Ripe bananas in a bunch"
+              }
+            },
+            "man-made": {
+              "basket": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Wicker basket containing the fruit"
+              }
+            },
+            "natural": {
+              "apple": {
+                "count": 3,
+                "location": "center",
+                "color": [
+                  "red",
+                  "green",
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "Fresh apples"
+              },
+              "orange": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "medium",
+                "description": "Oranges"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 305,
+            "total_tokens": 823
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1975.035707,
+            "prompt_eval_duration_ms": 68.406316,
+            "generation_duration_ms": 1811.909745,
+            "load_duration_ms": 90.830541,
+            "tokens_per_second": 168.3306802900384
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2889,
+        "total_time_ms": 7569.913323,
+        "average_speed": 166.26676964683693
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a woven basket overflowing with a vibrant assortment of fruit, set against a concrete surface. Dominating the foreground are several ripe bananas, their yellow peels displaying subtle brown speckling, arranged in a curved, cascading manner. Nestled amongst the bananas are bright red apples, a single green apple, and a cluster of orange citrus fruits. The basket itself is a warm, golden-brown hue, its texture clearly visible through the light. The lighting is strong and directional, casting distinct shadows that emphasize the three-dimensional form of the fruit and the basket's weave. The overall composition is full and inviting, with the fruit spilling out of the basket, creating a sense of abundance. The color palette is warm and cheerful, with the yellows, reds, greens, and oranges creating a visually appealing contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 174,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2620.068338,
+            "prompt_eval_duration_ms": 340.143001,
+            "generation_duration_ms": 2184.335658,
+            "load_duration_ms": 93.304072,
+            "tokens_per_second": 79.65808705394488
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe image prominently features a woven basket overflowing with fruit as the closest elements. A cluster of ripe bananas dominates the foreground, their bright yellow skins catching the light. Mixed amongst them are several apples \u2013 a vibrant red one and a green one \u2013 along with a few oranges, adding pops of color. The fruit appears fresh and appealing, suggesting a harvest or a still-life arrangement. Behind the basket, the background is softly blurred, revealing a concrete surface, likely a patio or walkway. The light source seems to be coming from the left, casting shadows and highlighting the textures of the basket and the fruit. The blurred background creates a shallow depth of field, drawing the viewer's attention to the colorful fruit in the foreground, emphasizing their freshness and abundance against a simple, neutral setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 174,
+            "total_tokens": 492
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2345.236039,
+            "prompt_eval_duration_ms": 67.554681,
+            "generation_duration_ms": 2189.202149,
+            "load_duration_ms": 86.139577,
+            "tokens_per_second": 79.48101096076532
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image showcases a woven basket overflowing with a vibrant assortment of fruit. Dominating the foreground are several ripe bananas, their yellow peels curving gracefully and clustered together, suggesting a sense of abundance and ripeness. Nestled amongst the bananas are bright red apples and green apples, their smooth surfaces contrasting with the textured peel of the bananas. A few bright orange fruits are also present, adding to the colorful display. The basket itself, with its intricate woven pattern, acts as a container, holding and presenting the fruit. The arrangement suggests a still life composition, highlighting the natural beauty and textures of the fruit. The lighting casts shadows, emphasizing the three-dimensional form of the fruit and the basket, creating a warm and inviting scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 164,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2213.38372,
+            "prompt_eval_duration_ms": 67.350859,
+            "generation_duration_ms": 2060.136556,
+            "load_duration_ms": 83.216429,
+            "tokens_per_second": 79.60637343304344
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of abundance, warmth, and simple joy. The overflowing basket of fruit \u2013 bananas, apples (both red and green), and oranges \u2013 creates a sense of generosity and plenty. The bright, natural light streaming in enhances this feeling, casting warm highlights on the fruit and creating a cheerful atmosphere. The close-up perspective and the slightly chaotic arrangement of the fruit contribute to a feeling of relaxed informality and a sense of everyday happiness. The colors are vibrant and inviting, further amplifying the positive mood. Overall, the image conveys a feeling of contentment and the pleasure found in simple, natural things, creating a decidedly positive and uplifting emotional tone.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 133,
+            "total_tokens": 457
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1828.920039,
+            "prompt_eval_duration_ms": 67.095572,
+            "generation_duration_ms": 1673.574365,
+            "load_duration_ms": 85.91464,
+            "tokens_per_second": 79.47062453959134
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"banana\": [\n      {\n        \"count\": 6,\n        \"location\": \"foreground, center\",\n        \"color\": [\"yellow\"],\n        \"size\": \"medium\",\n        \"description\": \"Ripe, clustered together\"\n      }\n    ],\n    \"apple\": [\n      {\n        \"count\": 2,\n        \"location\": \"foreground, left\",\n        \"color\": [\"red\"],\n        \"size\": \"medium\",\n        \"description\": \"Shiny, round\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"foreground, right\",\n        \"color\": [\"green\"],\n        \"size\": \"medium\",\n        \"description\": \"Shiny, round\"\n      }\n    ],\n    \"orange\": [\n      {\n        \"count\": 4,\n        \"location\": \"foreground, middle\",\n        \"color\": [\"orange\"],\n        \"size\": \"medium\",\n        \"description\": \"Round, clustered\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"basket\": [\n      {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"brown\"],\n        \"size\": \"large\",\n        \"description\": \"Woven, holds fruit\"\n      }\n    ]\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "banana": [
+                {
+                  "count": 6,
+                  "location": "foreground, center",
+                  "color": [
+                    "yellow"
+                  ],
+                  "size": "medium",
+                  "description": "Ripe, clustered together"
+                }
+              ],
+              "apple": [
+                {
+                  "count": 2,
+                  "location": "foreground, left",
+                  "color": [
+                    "red"
+                  ],
+                  "size": "medium",
+                  "description": "Shiny, round"
+                },
+                {
+                  "count": 1,
+                  "location": "foreground, right",
+                  "color": [
+                    "green"
+                  ],
+                  "size": "medium",
+                  "description": "Shiny, round"
+                }
+              ],
+              "orange": [
+                {
+                  "count": 4,
+                  "location": "foreground, middle",
+                  "color": [
+                    "orange"
+                  ],
+                  "size": "medium",
+                  "description": "Round, clustered"
+                }
+              ]
+            },
+            "man-made": {
+              "basket": [
+                {
+                  "count": 1,
+                  "location": "background",
+                  "color": [
+                    "brown"
+                  ],
+                  "size": "large",
+                  "description": "Woven, holds fruit"
+                }
+              ]
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 316,
+            "total_tokens": 834
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4180.708647,
+            "prompt_eval_duration_ms": 95.354802,
+            "generation_duration_ms": 3996.629727,
+            "load_duration_ms": 86.219312,
+            "tokens_per_second": 79.06661902282347
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2755,
+        "total_time_ms": 13188.316783000002,
+        "average_speed": 79.45654300203368
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a woven, brown wicker basket brimming with a colorful assortment of fruit. Dominating the foreground are several ripe, yellow bananas, their curved shapes creating a dynamic arrangement. Nestled amongst the bananas are vibrant red apples, a bright green apple, and a couple of orange citrus fruits. The fruit appears fresh and inviting. The basket itself has a textured, rustic appearance, with visible weaving patterns. \n\nThe lighting is strong and directional, casting dramatic shadows within the basket and highlighting the textures of the fruit and wicker. This creates a high-contrast effect, emphasizing the shapes and colors. The composition is a close-up, overhead shot, filling the frame with the abundance of fruit and the basket. The background is out of focus, drawing the viewer's attention entirely to the fruit arrangement. Overall, the image evokes a sense of natural abundance and healthy eating.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 187,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4952.673979,
+            "prompt_eval_duration_ms": 403.953245,
+            "generation_duration_ms": 4461.627512,
+            "load_duration_ms": 84.533276,
+            "tokens_per_second": 41.91295653817907
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a cluster of ripe, yellow bananas, curving and filling much of the lower half of the frame. Their bright color immediately draws the eye. Nestled amongst and behind the bananas are several pieces of fruit\u2014red and green apples, and bright orange citrus fruits\u2014creating a colorful medley. These fruits are partially obscured by the bananas, suggesting depth within the basket. \n\nThe background consists of the woven texture of a round, brown wicker basket. The basket\u2019s intricate pattern provides a warm, rustic setting for the fruit. The lighting creates strong shadows within the basket, emphasizing its woven structure and the contours of the fruit. The arrangement suggests a still life, perhaps a harvest bounty or a simple display of fresh produce. The fruit is contained within the basket, establishing a clear relationship between the contents and their container.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 185,
+            "total_tokens": 503
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4586.62598,
+            "prompt_eval_duration_ms": 88.402928,
+            "generation_duration_ms": 4408.098047,
+            "load_duration_ms": 87.434958,
+            "tokens_per_second": 41.9682135078426
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a woven, brown wicker basket brimming with a colorful assortment of fruit. A bunch of ripe, yellow bananas dominates the foreground, curving and nestled within the basket. Alongside the bananas are several apples\u2014a vibrant red one, a green apple, and a couple of paler, yellowish-white apples. Scattered amongst the apples are a few bright orange citrus fruits, likely oranges or tangerines. The fruit is simply contained within the basket, creating a still life composition. There are no people or animals present. The interaction is purely between the fruits themselves as they share space within the container, and the basket serves as a unifying element, holding them all together. The lighting creates strong shadows, highlighting the textures of the basket weave and the fruit skins.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 162,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4037.695599,
+            "prompt_eval_duration_ms": 81.124207,
+            "generation_duration_ms": 3860.996933,
+            "load_duration_ms": 90.640429,
+            "tokens_per_second": 41.95807528759827
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a feeling of simple abundance and wholesome goodness. The warm, golden light bathing the fruit creates a cozy and inviting atmosphere. The overflowing basket, brimming with ripe bananas, apples, and oranges, suggests a sense of nourishment and generosity. The natural textures of the woven basket and the fruit themselves contribute to a rustic, down-to-earth feeling. There's a sense of health and vitality associated with fresh fruit, promoting positive emotions. The composition, viewed from above, feels intimate and personal, like a glimpse into a comforting domestic scene. The overall tone is decidedly positive and cheerful, suggesting a moment of simple pleasure and appreciation for nature's bounty. It feels like a celebration of everyday life and the joy of sharing fresh, healthy food.\n\n\n\n",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 170,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4237.763068,
+            "prompt_eval_duration_ms": 85.840934,
+            "generation_duration_ms": 4061.0513,
+            "load_duration_ms": 87.900848,
+            "tokens_per_second": 41.861081636668814
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"fruit\": [\n      {\n        \"count\": 1,\n        \"location\": \"top-left\",\n        \"color\": [\"red\"],\n        \"size\": \"medium\",\n        \"description\": \"Shiny red apple\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"top-right\",\n        \"color\": [\"green\"],\n        \"size\": \"medium\",\n        \"description\": \"Green apple\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"orange\"],\n        \"size\": \"medium\",\n        \"description\": \"Orange citrus fruit\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"center-right\",\n        \"color\": [\"red\", \"orange\"],\n        \"size\": \"medium\",\n        \"description\": \"Red and orange apple\"\n      },\n      {\n        \"count\": 5,\n        \"location\": \"bottom-center\",\n        \"color\": [\"yellow\"],\n        \"size\": \"medium\",\n        \"description\": \"Bunch of ripe bananas\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"basket\": [\n      {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\"brown\"],\n        \"size\": \"large\",\n        \"description\": \"Woven basket containing fruit\"\n      }\n    ]\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "fruit": [
+                {
+                  "count": 1,
+                  "location": "top-left",
+                  "color": [
+                    "red"
+                  ],
+                  "size": "medium",
+                  "description": "Shiny red apple"
+                },
+                {
+                  "count": 1,
+                  "location": "top-right",
+                  "color": [
+                    "green"
+                  ],
+                  "size": "medium",
+                  "description": "Green apple"
+                },
+                {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "orange"
+                  ],
+                  "size": "medium",
+                  "description": "Orange citrus fruit"
+                },
+                {
+                  "count": 1,
+                  "location": "center-right",
+                  "color": [
+                    "red",
+                    "orange"
+                  ],
+                  "size": "medium",
+                  "description": "Red and orange apple"
+                },
+                {
+                  "count": 5,
+                  "location": "bottom-center",
+                  "color": [
+                    "yellow"
+                  ],
+                  "size": "medium",
+                  "description": "Bunch of ripe bananas"
+                }
+              ]
+            },
+            "man-made": {
+              "basket": [
+                {
+                  "count": 1,
+                  "location": "foreground",
+                  "color": [
+                    "brown"
+                  ],
+                  "size": "large",
+                  "description": "Woven basket containing fruit"
+                }
+              ]
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 349,
+            "total_tokens": 867
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8508.906017,
+            "prompt_eval_duration_ms": 141.246765,
+            "generation_duration_ms": 8278.004389,
+            "load_duration_ms": 86.921361,
+            "tokens_per_second": 42.15991966176765
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2847,
+        "total_time_ms": 26323.664643000004,
+        "average_speed": 41.97204932641128
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a wicker basket filled with a variety of fresh fruits, placed on a neutral surface. The basket, with its light brown, woven texture, serves as a rustic container for the vibrant fruits inside. The main elements include three ripe bananas, two apples, and three oranges. The bananas, with their bright yellow hue, are positioned prominently in the foreground, with one slightly peeling back to reveal its creamy interior. The apples, one red and one green, add a pop of color with their glossy, smooth surfaces, while the oranges, with their bright orange color, provide a warm contrast. The lighting in the image is natural, casting soft shadows and highlighting the textures of the fruits and the basket. The overall composition is balanced, with the fruits arranged in a way that draws the viewer's eye across the image, creating a visually appealing still life that emphasizes the natural beauty and variety of the fruits.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 193,
+            "total_tokens": 985
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7525.976881,
+            "prompt_eval_duration_ms": 2113.437998,
+            "generation_duration_ms": 5364.491611,
+            "load_duration_ms": 44.69929,
+            "tokens_per_second": 35.97731416044151
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, there is a woven basket filled with various fruits. The basket contains a bunch of ripe bananas, characterized by their bright yellow color and slight brown spots, indicating their readiness to eat. Alongside the bananas, there are several apples and oranges, their vibrant red, green, and orange hues adding a splash of color to the scene. The fruits are arranged in a somewhat overlapping manner, creating a sense of abundance and freshness. The basket itself, with its intricate weave, provides a natural and rustic container for the fruits, enhancing their visual appeal.\n\nIn the background, the setting appears to be a simple, neutral surface, possibly a table or countertop. The background is blurred, drawing the viewer's focus to the basket of fruits in the foreground. The soft, diffused light suggests a natural light source, perhaps from a nearby window, which gently illuminates the scene, highlighting the textures and colors of the fruits and the basket. The relationship between the foreground and background elements is one of contrast and emphasis, with the detailed, colorful fruits in the basket standing out against the subdued, blurred background. This composition creates a harmonious balance, making the fruits the undeniable focal point of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 255,
+            "total_tokens": 1053
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7210.143541,
+            "prompt_eval_duration_ms": 57.01252,
+            "generation_duration_ms": 7103.924385,
+            "load_duration_ms": 45.940782,
+            "tokens_per_second": 35.895652343715085
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a woven basket filled with various fruits. The basket, which is the central object, contains a mix of bananas, apples, and oranges. The bananas, with their characteristic yellow color and slight curvature, are positioned prominently in the foreground, with one banana partially peeking out of the basket. The apples, exhibiting a mix of red and green hues, are nestled among the oranges, which have a vibrant orange color. The fruits are arranged in a somewhat haphazard manner, with some overlapping each other, creating a sense of abundance and natural disorder. The basket's woven texture provides a contrasting backdrop to the smooth surfaces of the fruits. There are no people or animals visible in the image, and the focus is solely on the still-life arrangement of the fruits within the basket. The interplay of colors and textures adds visual interest, while the absence of any dynamic action emphasizes the simplicity and tranquility of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 191,
+            "total_tokens": 991
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5434.213693,
+            "prompt_eval_duration_ms": 56.480551,
+            "generation_duration_ms": 5328.314843,
+            "load_duration_ms": 46.406146,
+            "tokens_per_second": 35.84623011737447
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of a wicker basket filled with fresh fruits, including bananas, apples, and oranges, conveys a mood of warmth, freshness, and natural abundance. The overall tone is distinctly positive, evoking feelings of health, vitality, and contentment. The vibrant colors of the fruits\u2014bright yellow bananas, red and green apples, and orange oranges\u2014add to the cheerful and inviting atmosphere. The sunlight streaming in and casting gentle shadows on the fruits enhances the sense of freshness and natural beauty, suggesting a connection to the outdoors and the simplicity of wholesome living. The wicker basket itself, with its rustic and earthy texture, contributes to a sense of homeliness and comfort. Together, these elements create an emotional atmosphere that is uplifting and soothing, reminding viewers of the simple pleasures and benefits of fresh, natural produce.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 178,
+            "total_tokens": 981
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5051.382254,
+            "prompt_eval_duration_ms": 59.777435,
+            "generation_duration_ms": 4943.014147,
+            "load_duration_ms": 45.606859,
+            "tokens_per_second": 36.01041686438046
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"banana\": {\n      \"count\": 2,\n      \"location\": \"foreground, middle\",\n      \"color\": [\"yellow\"],\n      \"size\": \"medium\",\n      \"description\": \"One banana is partially peeled.\"\n    },\n    \"apple\": {\n      \"count\": 2,\n      \"location\": \"foreground, middle\",\n      \"color\": [\"red\", \"green\"],\n      \"size\": \"medium\",\n      \"description\": \"One red apple and one green apple.\"\n    },\n    \"orange\": {\n      \"count\": 2,\n      \"location\": \"foreground, middle\",\n      \"color\": [\"orange\"],\n      \"size\": \"medium\"\n    }\n  },\n  \"man-made\": {\n    \"basket\": {\n      \"count\": 1,\n      \"location\": \"foreground, filling the frame\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Woven basket containing fruits.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "banana": {
+                "count": 2,
+                "location": "foreground, middle",
+                "color": [
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "One banana is partially peeled."
+              },
+              "apple": {
+                "count": 2,
+                "location": "foreground, middle",
+                "color": [
+                  "red",
+                  "green"
+                ],
+                "size": "medium",
+                "description": "One red apple and one green apple."
+              },
+              "orange": {
+                "count": 2,
+                "location": "foreground, middle",
+                "color": [
+                  "orange"
+                ],
+                "size": "medium"
+              }
+            },
+            "man-made": {
+              "basket": {
+                "count": 1,
+                "location": "foreground, filling the frame",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Woven basket containing fruits."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 213,
+            "total_tokens": 1195
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6088.927291,
+            "prompt_eval_duration_ms": 102.105367,
+            "generation_duration_ms": 5937.590763,
+            "load_duration_ms": 46.064376,
+            "tokens_per_second": 35.873135839422616
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5205,
+        "total_time_ms": 31310.643659999998,
+        "average_speed": 35.92054986506683
+      }
+    }
+  ]
+}

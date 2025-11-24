@@ -1,0 +1,1147 @@
+{
+  "image": {
+    "path": "images/original/shared0124_nsd10394.png",
+    "name": "shared0124_nsd10394.png",
+    "id": "shared0124_nsd10394"
+  },
+  "timestamp": "2025-08-30T16:50:19.302409+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image presents a modern kitchen setting, characterized by a minimalist design with a neutral color palette. The dominant colors are beige and white, creating a clean and bright atmosphere. The kitchen features dark brown wooden cabinets with silver handles, which contrast sharply with the white countertops and sink. A sleek, stainless steel faucet is centered over the sink, adding a touch of modernity. Above the sink, a built-in microwave is neatly tucked into the cabinetry, maintaining the streamlined look. To the left, a large window allows natural light to flood the space, illuminating the beige walls and wooden floor, which adds warmth to the otherwise cool tones. On the right, a smaller window provides additional light and a view of the outside. A small black shelf with glassware adds a subtle decorative element. The overall composition is balanced and uncluttered, emphasizing functionality and contemporary style.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 176,
+            "total_tokens": 473
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1428.315749,
+            "prompt_eval_duration_ms": 82.944413,
+            "generation_duration_ms": 1302.468367,
+            "load_duration_ms": 41.058766,
+            "tokens_per_second": 135.12804184671612
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the viewer is drawn to the sleek, modern kitchen counter and sink area. The countertop, a pristine white, contrasts sharply with the dark, glossy cabinets beneath it, which are neatly arranged with silver handles. A stainless steel sink with a high-arc faucet is centrally positioned, reflecting the light and adding a touch of elegance. Above the sink, a small built-in microwave is installed, seamlessly blending into the cabinetry. The background, slightly out of focus, reveals a large window that floods the space with natural light, highlighting the clean lines and minimalist design of the kitchen. The window's frame is simple and unobtrusive, allowing the light to enhance the overall brightness and spaciousness of the room. The background also includes a glimpse of the exterior, suggesting a calm, urban setting, which complements the modern and serene atmosphere of the interior. The relationship between the foreground and background elements creates a layered effect, emphasizing the kitchen's functionality and aesthetic appeal while providing context to the setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 208,
+            "total_tokens": 511
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1593.812603,
+            "prompt_eval_duration_ms": 29.894486,
+            "generation_duration_ms": 1522.880549,
+            "load_duration_ms": 39.07344,
+            "tokens_per_second": 136.58326658422638
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a modern kitchen with no visible people or animals. The primary objects in the scene are the kitchen fixtures and appliances. A sleek, stainless steel sink is positioned under a window, with a modern faucet above it. To the left of the sink, there is a built-in microwave nestled between dark brown cabinets, which contrast with the light-colored countertops. On the right side of the sink, a small black shelf holds a few items, including what appears to be a wine glass and a bottle, suggesting a space for casual dining or entertaining. The window above the sink allows natural light to flood the room, illuminating the clean and minimalist design of the kitchen. The overall interaction between the elements is one of functionality and aesthetics, with each object serving a specific purpose while contributing to the overall modern and organized appearance of the space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 168,
+            "total_tokens": 474
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1316.643088,
+            "prompt_eval_duration_ms": 31.255643,
+            "generation_duration_ms": 1245.862635,
+            "load_duration_ms": 37.511215,
+            "tokens_per_second": 134.84632677823265
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a sense of modern minimalism and tranquility, evoking feelings of calmness and order. The neutral color palette of beige walls and white countertops, contrasted with the dark wooden cabinets, creates a balanced and sophisticated atmosphere. The natural light streaming in through the large window enhances the serene mood, suggesting a peaceful and inviting space. The absence of clutter and the clean lines of the kitchen design contribute to a feeling of simplicity and efficiency, which can be associated with a positive emotional state. The presence of a calendar and a small shelf with neatly arranged items adds a personal touch, making the space feel lived-in and comfortable. Overall, the tone is positive, as the image evokes a sense of calm, order, and modern elegance, which are generally associated with positive emotions and a pleasant environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 164,
+            "total_tokens": 472
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1281.9351,
+            "prompt_eval_duration_ms": 31.794506,
+            "generation_duration_ms": 1209.908393,
+            "load_duration_ms": 36.072798,
+            "tokens_per_second": 135.54745214499889
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"human\": [],\n    \"animal\": [],\n    \"man-made\": {\n      \"cabinet\": {\n        \"count\": 2,\n        \"location\": \"left\",\n        \"color\": [\"black\"],\n        \"size\": \"large\",\n        \"description\": \"dark wooden cabinets with silver handles\"\n      },\n      \"cabinet\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"black\"],\n        \"size\": \"large\",\n        \"description\": \"dark wooden cabinet with silver handles\"\n      },\n      \"sink\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"silver\"],\n        \"size\": \"medium\",\n        \"description\": \"single-basin kitchen sink with modern faucet\"\n      },\n      \"countertop\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"white\"],\n        \"size\": \"large\",\n        \"description\": \"white kitchen countertop\"\n      },\n      \"microwave\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"white\"],\n        \"size\": \"small\",\n        \"description\": \"built-in microwave oven\"\n      },\n      \"window\": {\n        \"count\": 2,\n        \"location\": \"left\",\n        \"color\": [\"white\"],\n        \"size\": \"large\",\n        \"description\": \"large windows allowing natural light into the room\"\n      },\n      \"calendar\": {\n        \"count\": 1,\n        \"location\": \"left\",\n        \"color\": [\"white\"],\n        \"size\": \"small\",\n        \"description\": \"calendar mounted on the wall\"\n      },\n      \"shelf\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"black\"],\n        \"size\": \"small\",\n        \"description\": \"black wall shelf with glassware\"\n      }\n    },\n    \"natural\": {\n      \"floor\": {\n        \"count\": 1,\n        \"location\": \"bottom\",\n        \"color\": [\"brown\"],\n        \"size\": \"large\",\n        \"description\": \"wooden floor\"\n      }\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "human": [],
+              "animal": [],
+              "man-made": {
+                "cabinet": {
+                  "count": 1,
+                  "location": "right",
+                  "color": [
+                    "black"
+                  ],
+                  "size": "large",
+                  "description": "dark wooden cabinet with silver handles"
+                },
+                "sink": {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "silver"
+                  ],
+                  "size": "medium",
+                  "description": "single-basin kitchen sink with modern faucet"
+                },
+                "countertop": {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "large",
+                  "description": "white kitchen countertop"
+                },
+                "microwave": {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "small",
+                  "description": "built-in microwave oven"
+                },
+                "window": {
+                  "count": 2,
+                  "location": "left",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "large",
+                  "description": "large windows allowing natural light into the room"
+                },
+                "calendar": {
+                  "count": 1,
+                  "location": "left",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "small",
+                  "description": "calendar mounted on the wall"
+                },
+                "shelf": {
+                  "count": 1,
+                  "location": "right",
+                  "color": [
+                    "black"
+                  ],
+                  "size": "small",
+                  "description": "black wall shelf with glassware"
+                }
+              },
+              "natural": {
+                "floor": {
+                  "count": 1,
+                  "location": "bottom",
+                  "color": [
+                    "brown"
+                  ],
+                  "size": "large",
+                  "description": "wooden floor"
+                }
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 464,
+            "total_tokens": 950
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3485.074825,
+            "prompt_eval_duration_ms": 43.932199,
+            "generation_duration_ms": 3401.583236,
+            "load_duration_ms": 37.385422,
+            "tokens_per_second": 136.40706924038946
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2880,
+        "total_time_ms": 9105.781365,
+        "average_speed": 135.70243131891272
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a modern, minimalist kitchen with a clean and sleek design. The setting appears to be a residential space, characterized by its contemporary aesthetic and functional layout. The main elements include dark, matte-finished cabinetry, a white countertop, and a stainless steel sink with a modern faucet. Above the sink, there is a built-in microwave integrated into the cabinetry, and to the right, a recessed shelf displays a collection of glassware, including wine glasses and a martini glass, adding a touch of elegance. \n\nThe walls are painted a neutral, light beige color, which contrasts with the dark cabinetry and creates a balanced, airy feel. The lighting is soft and natural, streaming in through large windows on both sides of the image, which also feature white frames that complement the overall color scheme. The flooring is a light wood tone, contributing to the warm and inviting atmosphere. The composition is symmetrical and well-organized, with the sink and cabinetry positioned centrally, drawing the eye. The overall color palette is muted, dominated by whites, beiges, and dark tones, creating a sophisticated and understated look. The space feels open and functional, with a focus on simplicity and modern design.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 247,
+            "total_tokens": 544
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12813.876725,
+            "prompt_eval_duration_ms": 3567.963702,
+            "generation_duration_ms": 9207.120208,
+            "load_duration_ms": 36.901219,
+            "tokens_per_second": 26.827063665942312
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by the kitchen's countertop and sink area, which are the closest elements to the viewer. The countertop is a clean, white surface that provides a stark contrast to the dark, sleek cabinetry below. The sink is a modern, stainless steel undermount design, complemented by a contemporary faucet with a curved spout. The cabinetry features dark, flat-panel doors with minimalist silver handles, contributing to a modern and streamlined aesthetic. The lower cabinets are visible, with additional handles and a smooth, uninterrupted surface.\n\nIn the background, the setting includes several elements that establish the context of the kitchen. The dark upper cabinets continue the sleek design, housing a built-in microwave and a small open shelf that displays glassware, adding a touch of functionality and style. A calendar is mounted on the wall near the left window, providing a practical touch. The windows on both sides of the image allow natural light to flood the space, enhancing the brightness and openness of the room. The walls are painted a neutral, light color, which helps to create a bright and airy atmosphere. The floor appears to be made of light wood, adding warmth to the otherwise cool-toned space.\n\nThe relationship between the foreground and background is harmonious, with the dark cabinetry and metallic fixtures in the foreground echoing the design elements in the background. The light walls and windows in the background balance the darker tones, creating a cohesive and modern kitchen design. The overall layout and elements work together to create a functional yet stylish space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 309,
+            "total_tokens": 612
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11611.660667,
+            "prompt_eval_duration_ms": 75.721008,
+            "generation_duration_ms": 11495.69312,
+            "load_duration_ms": 38.222516,
+            "tokens_per_second": 26.87963194341082
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a modern, minimalist kitchen with no visible people or animals. The focus is entirely on the objects and their arrangement within the space. The kitchen features sleek, dark brown cabinetry with metallic handles, creating a clean and sophisticated aesthetic. The countertops are a smooth, white surface, likely made of quartz or a similar material, which contrasts sharply with the dark cabinetry. A stainless steel sink is centrally positioned in the countertop, accompanied by a modern faucet with a single lever handle.\n\nAbove the sink, there is a built-in microwave integrated into the cabinetry, blending seamlessly with the design. To the left of the microwave, a white calendar is mounted on the wall, adding a functional yet subtle decorative element. On the right side of the image, a built-in open shelving unit houses various glassware, including wine glasses and other drinking glasses, arranged neatly. This shelving unit adds both functionality and visual interest to the space.\n\nThe kitchen is well-lit, with natural light streaming in from large windows on both sides, which also provide a view of the outdoors. The walls are painted in a neutral, light color, enhancing the brightness and openness of the space. The overall design emphasizes simplicity, functionality, and a cohesive color scheme, creating a harmonious and inviting environment. There are no visible interactions between elements, as the focus is on the static arrangement and design of the kitchen components. The space appears clean, organized, and ready for use.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 296,
+            "total_tokens": 602
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11107.179284,
+            "prompt_eval_duration_ms": 74.74085,
+            "generation_duration_ms": 10992.310772,
+            "load_duration_ms": 38.031931,
+            "tokens_per_second": 26.92791407917447
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the kitchen conveys a mood of modern elegance and calm sophistication, evoking feelings of order, cleanliness, and tranquility. The overall tone is positive, as the space appears inviting and well-maintained. The sleek, dark cabinetry contrasts sharply with the bright white countertops and backsplash, creating a visually striking and balanced aesthetic. The minimalist design, characterized by clean lines and a lack of clutter, contributes to a sense of serenity and efficiency. The large windows allow natural light to flood the space, enhancing the brightness and making the room feel open and airy. This natural illumination adds warmth and a connection to the outside world, further elevating the positive atmosphere. The inclusion of subtle details, such as the built-in microwave and the neatly arranged glassware in the open shelving, suggests functionality and thoughtfulness, reinforcing the impression of a well-designed and practical space. The neutral color palette, with its blend of dark wood tones and white surfaces, promotes a sense of neutrality that is both calming and timeless. Overall, the image evokes feelings of comfort, modernity, and a peaceful domestic environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 226,
+            "total_tokens": 534
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8541.369853,
+            "prompt_eval_duration_ms": 77.640754,
+            "generation_duration_ms": 8423.776283,
+            "load_duration_ms": 37.817712,
+            "tokens_per_second": 26.82882265713656
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"cabinets\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\"],\n      \"size\": \"large\",\n      \"description\": \"Dark wooden cabinets with silver handles\"\n    },\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Stainless steel sink with a single basin\"\n    },\n    \"faucet\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Modern kitchen faucet with a single handle\"\n    },\n    \"countertop\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White countertop with a smooth surface\"\n    },\n    \"microwave\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Built-in microwave oven\"\n    },\n    \"wine rack\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Built-in wine rack with glasses\"\n    },\n    \"calendar\": {\n      \"count\": 1,\n      \"location\": \"left, top\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"Wall-mounted calendar\"\n    },\n    \"window\": {\n      \"count\": 2,\n      \"location\": \"left and right, top\",\n      \"color\": [\"clear\"],\n      \"size\": \"large\",\n      \"description\": \"Large windows with a view of the outdoors\"\n    },\n    \"floor\": {\n      \"count\": 1,\n      \"location\": \"bottom, foreground\",\n      \"color\": [\"wood\"],\n      \"size\": \"large\",\n      \"description\": \"Wooden floor\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Visible through the windows\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "cabinets": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "black"
+                ],
+                "size": "large",
+                "description": "Dark wooden cabinets with silver handles"
+              },
+              "sink": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Stainless steel sink with a single basin"
+              },
+              "faucet": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Modern kitchen faucet with a single handle"
+              },
+              "countertop": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White countertop with a smooth surface"
+              },
+              "microwave": {
+                "count": 1,
+                "location": "center, top",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Built-in microwave oven"
+              },
+              "wine rack": {
+                "count": 1,
+                "location": "center, top",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Built-in wine rack with glasses"
+              },
+              "calendar": {
+                "count": 1,
+                "location": "left, top",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "Wall-mounted calendar"
+              },
+              "window": {
+                "count": 2,
+                "location": "left and right, top",
+                "color": [
+                  "clear"
+                ],
+                "size": "large",
+                "description": "Large windows with a view of the outdoors"
+              },
+              "floor": {
+                "count": 1,
+                "location": "bottom, foreground",
+                "color": [
+                  "wood"
+                ],
+                "size": "large",
+                "description": "Wooden floor"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Visible through the windows"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 516,
+            "total_tokens": 1002
+          },
+          "performance_metrics": {
+            "total_duration_ms": 19328.391735,
+            "prompt_eval_duration_ms": 134.128057,
+            "generation_duration_ms": 19154.065249,
+            "load_duration_ms": 37.931824,
+            "tokens_per_second": 26.93945088377202
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3294,
+        "total_time_ms": 63402.47826399999,
+        "average_speed": 26.88057664588724
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph depicts a modern kitchen corner, bathed in soft, natural light streaming through a large, rectangular window. The walls are a warm, pale beige, providing a neutral backdrop to the sleek design. The focal point is a dark brown kitchen island with a glossy white quartz countertop that reflects the light, creating bright highlights. A stainless steel sink with a brushed chrome faucet sits neatly beneath the counter, and a small, integrated microwave is mounted above. The dark brown cabinetry extends upwards, featuring simple, recessed panel doors. \n\nA small, framed calendar is mounted on the wall beside the cabinetry. The overall composition is clean and minimalist, emphasizing the functionality and contemporary aesthetic of the space. The lighting is diffused, creating a calm and inviting atmosphere. The dark cabinetry contrasts effectively with the light countertop and walls, adding depth and visual interest to the scene. The space appears well-maintained and stylish.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 191,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1540.279177,
+            "prompt_eval_duration_ms": 303.576855,
+            "generation_duration_ms": 1151.116838,
+            "load_duration_ms": 83.934868,
+            "tokens_per_second": 165.92581542969316
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the scene, broken down into foreground and background elements:\n\nIn the foreground, we see a modern kitchen setup. The dominant feature is a sleek, white quartz countertop reflecting bright light, creating a glossy surface. Below it sits a stainless steel sink with a chrome faucet. Dark, flat-panel cabinets, painted in a deep charcoal gray, flank the sink, providing storage. A built-in microwave is mounted above the countertop. A light gray wall is visible behind the cabinets. \n\nThe background reveals a larger, open kitchen space. A large window dominates the back wall, offering a glimpse of an exterior view \u2013 likely a cityscape or a natural landscape, partially obscured by the window frame. The overall impression is of a contemporary, well-lit kitchen with a minimalist aesthetic. The foreground elements are clearly the focal point, while the background establishes the context and scale of the room, suggesting a spacious and stylish interior.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 191,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1280.132362,
+            "prompt_eval_duration_ms": 49.680982,
+            "generation_duration_ms": 1141.053362,
+            "load_duration_ms": 87.677823,
+            "tokens_per_second": 167.38919174228766
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the scene in the image, focusing on actions and relationships:\n\nThe image depicts a modern kitchen space bathed in natural light streaming through a large window. A sleek, white quartz countertop dominates the scene, reflecting the light and creating a glossy surface. A stainless steel sink sits beneath a stylish faucet, suggesting someone is likely washing dishes or preparing food. Above the counter, dark, flat-panel cabinets provide storage. A built-in microwave is mounted within one of the cabinets, indicating a functional space for heating food. \n\nA calendar is mounted on the wall above the cabinets, displaying a date. The overall impression is one of a clean, contemporary kitchen designed for efficiency and style. The elements are arranged to create a practical and aesthetically pleasing cooking environment, ready for use.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 162,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1120.536629,
+            "prompt_eval_duration_ms": 57.768939,
+            "generation_duration_ms": 977.131417,
+            "load_duration_ms": 83.328339,
+            "tokens_per_second": 165.79141472840394
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of calm, modern functionality, and understated luxury. The overall tone is decidedly neutral, leaning towards positive due to the clean lines and bright, reflective surfaces. The predominantly white kitchen, with its gleaming countertop and stainless steel sink, creates a feeling of spaciousness and hygiene. The dark wood cabinetry adds a touch of warmth and sophistication, while the sleek, minimalist design contributes to a sense of order and control. The bright light reflecting off the surfaces suggests a bright, airy space, promoting a feeling of well-being. The absence of clutter and the focus on essential elements \u2013 the sink, faucet, and countertop \u2013 reinforce this sense of tranquility and efficiency. It\u2019s a space designed for practical use, but with an aesthetic that\u2019s both pleasing and inviting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 174,
+            "total_tokens": 498
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1191.32806,
+            "prompt_eval_duration_ms": 63.067088,
+            "generation_duration_ms": 1042.967781,
+            "load_duration_ms": 83.771463,
+            "tokens_per_second": 166.83161567384985
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Standing at the kitchen counter, appearing to be looking at the sink.\"\n    }\n  },\n  \"man-made\": {\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Stainless steel sink with a chrome faucet.\"\n    },\n    \"countertop\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White quartz countertop with reflective surface.\"\n    },\n    \"cabinet\": {\n      \"count\": 2,\n      \"location\": \"left/right\",\n      \"color\": [\"dark brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Dark brown kitchen cabinets with handles.\"\n    },\n    \"microwave\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"Built-in microwave oven.\"\n    },\n    \"calendar\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"multicolor\"],\n      \"size\": \"small\",\n      \"description\": \"Wall-mounted calendar.\"\n    },\n    \"faucet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"chrome\"],\n      \"size\": \"small\",\n      \"description\": \"Chrome faucet attached to the sink.\"\n    },\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"beige\"],\n      \"size\": \"large\",\n      \"description\": \"Light beige wall.\"\n    }\n  },\n  \"natural\": {}\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Standing at the kitchen counter, appearing to be looking at the sink."
+              }
+            },
+            "man-made": {
+              "sink": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Stainless steel sink with a chrome faucet."
+              },
+              "countertop": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White quartz countertop with reflective surface."
+              },
+              "cabinet": {
+                "count": 2,
+                "location": "left/right",
+                "color": [
+                  "dark brown"
+                ],
+                "size": "medium",
+                "description": "Dark brown kitchen cabinets with handles."
+              },
+              "microwave": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "Built-in microwave oven."
+              },
+              "calendar": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "multicolor"
+                ],
+                "size": "small",
+                "description": "Wall-mounted calendar."
+              },
+              "faucet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "chrome"
+                ],
+                "size": "small",
+                "description": "Chrome faucet attached to the sink."
+              },
+              "wall": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "beige"
+                ],
+                "size": "large",
+                "description": "Light beige wall."
+              }
+            },
+            "natural": {}
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 481,
+            "total_tokens": 999
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3068.981577,
+            "prompt_eval_duration_ms": 64.400147,
+            "generation_duration_ms": 2916.382416,
+            "load_duration_ms": 86.587134,
+            "tokens_per_second": 164.930359393581
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2993,
+        "total_time_ms": 8201.257805,
+        "average_speed": 166.17367939356313
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe photograph showcases a modern kitchen corner, likely part of a larger island or countertop. The setting appears to be a well-lit, contemporary space with a large window providing natural light. The dominant feature is a dark, possibly walnut-stained, cabinetry unit, which includes drawers and cabinets with sleek, minimalist hardware. Above the cabinets, a built-in microwave is visible. To the right, a glass-fronted cabinet displays glassware. A stainless steel sink with a modern faucet is centrally positioned on the countertop. The countertop itself is a bright, white material, likely quartz or a similar engineered stone, which reflects the light and creates a clean, spacious feel. The walls are painted a warm, creamy yellow. The overall composition is balanced, with the window providing a blurred background and the focus being on the functional and stylish kitchen elements. The lighting is a combination of natural light from the window and potentially recessed lighting, creating a bright and inviting atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 202,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2935.293149,
+            "prompt_eval_duration_ms": 342.137342,
+            "generation_duration_ms": 2505.856941,
+            "load_duration_ms": 85.435673,
+            "tokens_per_second": 80.61114610931814
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationship:\n\nThe foreground is dominated by a sleek, modern kitchen setup. A pristine white countertop stretches across the view, showcasing a stainless steel sink with chrome fixtures. Below, dark wood cabinetry provides storage, with a built-in microwave nestled between the cabinets. The countertop's reflective surface mirrors the surrounding elements, creating a sense of depth. \n\nIn the background, a large window offers a glimpse of the outdoors, with visible trees and a calendar affixed to the glass. The window frame is dark, contrasting with the warm, beige wall color. The window's presence suggests a bright, airy space, and its placement behind the countertop creates a layered perspective. The overall composition highlights the modern aesthetic of the kitchen, with the natural light from the window softening the otherwise stark lines of the cabinetry and countertop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 180,
+            "total_tokens": 498
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2418.099132,
+            "prompt_eval_duration_ms": 67.079536,
+            "generation_duration_ms": 2259.28272,
+            "load_duration_ms": 89.86338,
+            "tokens_per_second": 79.67130381982473
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their relationships:\n\nThe image showcases a modern kitchen corner, dominated by dark wood cabinetry and a sleek countertop. A stainless steel sink with chrome fixtures sits prominently on the countertop, suggesting a functional space for food preparation. Above the sink, a microwave is nestled within the cabinetry, indicating a convenient appliance placement. To the right, a glass-fronted cabinet displays a collection of glassware, adding a touch of elegance. A calendar hangs on the wall beside the cabinetry, hinting at daily routines and schedules. \n\nNatural light streams in through a large window, illuminating the scene and reflecting off the glossy countertop. The window frames a blurred view of the outside, suggesting a connection to the broader environment. The overall impression is one of a well-designed, modern kitchen space, where functionality and aesthetics blend seamlessly.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 176,
+            "total_tokens": 497
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2354.082455,
+            "prompt_eval_duration_ms": 71.068513,
+            "generation_duration_ms": 2190.564565,
+            "load_duration_ms": 90.021039,
+            "tokens_per_second": 80.34458459342422
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood of understated elegance and modern functionality. A sense of calm and order prevails, suggesting a well-organized and thoughtfully designed space. The overall tone is positive, evoking feelings of cleanliness, efficiency, and a touch of luxury. The dark, sleek cabinetry contrasts beautifully with the bright, reflective countertop, creating a visually appealing and contemporary aesthetic. The large window allows natural light to flood the area, contributing to a feeling of openness and serenity. The presence of a calendar on the wall hints at a life lived with intention and planning. The minimalist design and lack of clutter contribute to a sense of peacefulness and a feeling that this is a space dedicated to practicality and refined taste. It\u2019s a space that feels both inviting and sophisticated.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 151,
+            "total_tokens": 475
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2037.111676,
+            "prompt_eval_duration_ms": 68.524762,
+            "generation_duration_ms": 1879.684433,
+            "load_duration_ms": 86.860152,
+            "tokens_per_second": 80.3326331532161
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"item\": \"cabinet\",\n      \"count\": 5,\n      \"location\": \"foreground\",\n      \"color\": [\"dark brown\"],\n      \"size\": \"large\",\n      \"description\": \"Modern kitchen cabinets with handles\"\n    },\n    {\n      \"item\": \"sink\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"gray\", \"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Stainless steel sink with faucet\"\n    },\n    {\n      \"item\": \"faucet\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Modern faucet with sprayer\"\n    },\n    {\n      \"item\": \"countertop\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White quartz countertop\"\n    },\n    {\n      \"item\": \"microwave\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Built-in microwave oven\"\n    },\n    {\n      \"item\": \"window\",\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Large window with multiple panes\"\n    },\n    {\n      \"item\": \"calendar\",\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\", \"various\"],\n      \"size\": \"small\",\n      \"description\": \"Calendar hanging on the wall\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"sky\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Cloudy sky visible through the window\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "item": "cabinet",
+                "count": 5,
+                "location": "foreground",
+                "color": [
+                  "dark brown"
+                ],
+                "size": "large",
+                "description": "Modern kitchen cabinets with handles"
+              },
+              {
+                "item": "sink",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "gray",
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Stainless steel sink with faucet"
+              },
+              {
+                "item": "faucet",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Modern faucet with sprayer"
+              },
+              {
+                "item": "countertop",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White quartz countertop"
+              },
+              {
+                "item": "microwave",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Built-in microwave oven"
+              },
+              {
+                "item": "window",
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Large window with multiple panes"
+              },
+              {
+                "item": "calendar",
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white",
+                  "various"
+                ],
+                "size": "small",
+                "description": "Calendar hanging on the wall"
+              }
+            ],
+            "natural": [
+              {
+                "item": "sky",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Cloudy sky visible through the window"
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 496,
+            "total_tokens": 1014
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6402.012121,
+            "prompt_eval_duration_ms": 87.308944,
+            "generation_duration_ms": 6224.072621,
+            "load_duration_ms": 88.315528,
+            "tokens_per_second": 79.69058688783574
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2999,
+        "total_time_ms": 16146.598533,
+        "average_speed": 80.13005091272377
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image depicts a modern kitchen corner, likely a wet bar or secondary kitchen area. The setting is a room with pale yellow walls and dark hardwood flooring. The main elements are dark brown cabinetry, a white countertop, and a stainless steel sink with a gooseneck faucet. A built-in microwave is nestled within an upper cabinet, and an adjacent tall cabinet features open shelving displaying glassware and kitchen items. The countertop is clean and reflective, with a bright glare from a window. A calendar hangs on the wall beside the cabinetry. The lighting appears to be a mix of natural light from the windows and potentially some overhead artificial lighting. The composition is a close-up shot focusing on the corner, creating a sense of intimacy and highlighting the sleek, contemporary design. The overall impression is one of clean lines, functionality, and a minimalist aesthetic.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 180,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4795.883812,
+            "prompt_eval_duration_ms": 405.241587,
+            "generation_duration_ms": 4305.452814,
+            "load_duration_ms": 83.256044,
+            "tokens_per_second": 41.80744924545351
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nIn the foreground, a sleek, modern kitchen counter dominates the view. It\u2019s a bright white, reflecting light and creating a clean aesthetic. Built-in dark wood cabinetry runs along the counter\u2019s base, featuring both drawers and doors with silver handles. A stainless steel sink with a gooseneck faucet is centered on the counter, with soap dispensers to the right. Above the counter, a built-in microwave is nestled within a dark wood cabinet unit, which is flanked by open shelving displaying glassware and kitchen items. \n\nThe background reveals the setting as a contemporary kitchen space. Two large windows with black frames provide natural light and glimpses of the outdoors. The walls are painted a pale yellow, complementing the dark wood cabinetry. The overall relationship between foreground and background is one of functional design within a bright, modern setting. The dark cabinetry provides contrast against the light walls and counter, creating a visually appealing and organized space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 204,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5051.942205,
+            "prompt_eval_duration_ms": 77.178461,
+            "generation_duration_ms": 4885.560017,
+            "load_duration_ms": 87.282608,
+            "tokens_per_second": 41.7557044208142
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on objects and their relationships:\n\nThe image showcases a modern kitchen corner with dark cabinetry and a bright white countertop. A stainless steel sink with a gooseneck faucet is the focal point, positioned beneath a built-in microwave and open shelving unit. The cabinetry extends along the corner, featuring both drawers and doors with sleek silver handles. A calendar hangs on the wall beside the cabinetry. The open shelving displays glassware and other kitchen items, suggesting a functional space for storage and display. Two windows with dark frames provide natural light, highlighting the clean lines and minimalist aesthetic of the kitchen. The countertop appears to extend beyond the visible frame, hinting at a larger workspace. The overall impression is one of a contemporary, well-organized kitchen designed for both practicality and visual appeal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 165,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4117.05559,
+            "prompt_eval_duration_ms": 89.421117,
+            "generation_duration_ms": 3937.321589,
+            "load_duration_ms": 88.386629,
+            "tokens_per_second": 41.90666072615792
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood of understated modernity and quiet functionality. The color palette\u2014dark wood cabinetry contrasted with a bright white countertop and pale yellow walls\u2014creates a sense of calm and cleanliness. There's a lack of clutter, contributing to a feeling of order and serenity. The sleek, minimalist design, particularly the integrated microwave and display cabinet, suggests a focus on practicality and efficiency. While not overtly warm or inviting, the space feels comfortable and well-maintained. The natural light streaming in from the windows adds a touch of brightness, preventing the dark cabinetry from feeling oppressive. Overall, the image evokes a sense of peaceful, contemporary living\u2014a space designed for ease and quiet enjoyment, rather than boisterous activity. It\u2019s a neutral to slightly positive tone, suggesting a comfortable and functional environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 162,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4038.620942,
+            "prompt_eval_duration_ms": 84.25389,
+            "generation_duration_ms": 3866.952319,
+            "load_duration_ms": 84.824144,
+            "tokens_per_second": 41.89345681973484
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"cabinet\": {\n      \"count\": 3,\n      \"location\": \"center\",\n      \"color\": [\"dark brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Dark brown kitchen cabinets, one with a built-in microwave.\"\n    },\n    \"microwave\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Built-in microwave within a cabinet.\"\n    },\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Stainless steel kitchen sink with a gooseneck faucet.\"\n    },\n    \"faucet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Gooseneck style kitchen faucet.\"\n    },\n    \"countertop\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White kitchen countertop.\"\n    },\n    \"window\": {\n      \"count\": 2,\n      \"location\": \"left/right\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Rectangular windows with black frames.\"\n    },\n    \"calendar\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"small\",\n      \"description\": \"Wall-mounted calendar.\"\n    },\n    \"electrical outlet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"Standard electrical outlet on the wall.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "cabinet": {
+                "count": 3,
+                "location": "center",
+                "color": [
+                  "dark brown"
+                ],
+                "size": "medium",
+                "description": "Dark brown kitchen cabinets, one with a built-in microwave."
+              },
+              "microwave": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Built-in microwave within a cabinet."
+              },
+              "sink": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Stainless steel kitchen sink with a gooseneck faucet."
+              },
+              "faucet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Gooseneck style kitchen faucet."
+              },
+              "countertop": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White kitchen countertop."
+              },
+              "window": {
+                "count": 2,
+                "location": "left/right",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Rectangular windows with black frames."
+              },
+              "calendar": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "brown",
+                  "white"
+                ],
+                "size": "small",
+                "description": "Wall-mounted calendar."
+              },
+              "electrical outlet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "Standard electrical outlet on the wall."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 472,
+            "total_tokens": 990
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11492.646834,
+            "prompt_eval_duration_ms": 146.305209,
+            "generation_duration_ms": 11258.47244,
+            "load_duration_ms": 85.982846,
+            "tokens_per_second": 41.92398236221112
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2977,
+        "total_time_ms": 29496.149383,
+        "average_speed": 41.85745071487432
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a modern kitchen with a clean and minimalist design. The setting features a window on the left side, allowing natural light to illuminate the space, creating a bright and airy atmosphere. The main elements include a stainless steel sink with a sleek, curved faucet mounted on a white countertop. Above the sink, there is a microwave oven integrated into the cabinetry, which is dark gray with a glossy finish, providing a striking contrast to the white countertop. To the right of the microwave, there is a wall-mounted spice rack holding various bottles, and next to it, a glass-front cabinet displays an assortment of glassware. The cabinet handles are modern and minimalistic, complementing the overall design. The lighting appears to be soft and diffused, enhancing the warm and inviting ambiance of the kitchen. The overall composition is balanced, with the window, sink, and cabinetry aligned in a harmonious layout, creating a functional and aesthetically pleasing space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 203,
+            "total_tokens": 995
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7751.715958,
+            "prompt_eval_duration_ms": 2060.408684,
+            "generation_duration_ms": 5638.605915,
+            "load_duration_ms": 50.131172,
+            "tokens_per_second": 36.001806662879716
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of this image, we see a modern kitchen countertop with a stainless steel sink and a sleek faucet. The countertop is white, contrasting with the dark cabinetry below, which features several drawers and cabinets with silver handles. Above the countertop, there is a microwave oven integrated into the cabinetry, and to the right, a section of the cabinetry is designed with glass doors, likely for displaying glassware or dishes. The foreground elements are primarily functional, designed for food preparation and storage, and they create a clean, contemporary aesthetic.\n\nIn the background, there are two large windows that let in natural light, brightening the space and making it feel more open. The windows frame an outdoor view, suggesting that the kitchen is likely situated in a quiet, possibly residential area. The background elements provide context and enhance the overall ambiance of the kitchen, making it feel welcoming and well-lit. The combination of the functional foreground and the airy background creates a harmonious balance, making the kitchen both practical and inviting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 214,
+            "total_tokens": 1012
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6037.905035,
+            "prompt_eval_duration_ms": 53.309773,
+            "generation_duration_ms": 5936.590211,
+            "load_duration_ms": 45.634664,
+            "tokens_per_second": 36.047628755556694
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a modern kitchen setting with various objects but no people or animals present. On the left side, there is a microwave oven installed above the countertop, with a glassware display cabinet positioned to its right. Below the countertop, there are several cabinets and drawers, providing storage space. The countertop features a stainless steel sink with a faucet, and a paper towel holder is mounted on the wall next to the sink. The window behind the sink allows natural light to illuminate the area. The objects in the image are stationary and serve functional purposes typical of a kitchen environment. The microwave, cabinets, and sink are arranged to facilitate efficient food preparation and cleaning. The glassware display cabinet adds an aesthetic element, showcasing items that might be used for serving beverages. The overall layout suggests a well-organized and practical kitchen design.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 172,
+            "total_tokens": 972
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4875.206094,
+            "prompt_eval_duration_ms": 52.45381,
+            "generation_duration_ms": 4776.814631,
+            "load_duration_ms": 43.168586,
+            "tokens_per_second": 36.007258662242194
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the kitchen evokes a sense of calm and modern simplicity, creating a neutral to slightly positive emotional atmosphere. The clean lines of the white countertops and dark cabinetry contribute to a minimalist aesthetic, suggesting order and functionality. The natural light streaming in through the windows adds a warm, inviting touch, enhancing the feeling of openness and tranquility. The sleek design elements, such as the stainless steel microwave and faucet, reinforce a contemporary feel, which can evoke feelings of efficiency and sophistication. The overall tone is balanced, with no overly vibrant or chaotic elements, making the space feel serene and practical. This setting likely inspires a sense of comfort and ease, ideal for everyday use and relaxation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 148,
+            "total_tokens": 951
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4208.748695,
+            "prompt_eval_duration_ms": 56.321229,
+            "generation_duration_ms": 4105.302179,
+            "load_duration_ms": 44.458438,
+            "tokens_per_second": 36.05093938201912
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"kitchen_cabinet\": {\n      \"count\": 7,\n      \"location\": \"bottom, middle, right\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Kitchen cabinets with black doors and white countertop\"\n    },\n    \"microwave\": {\n      \"count\": 1,\n      \"location\": \"top, left\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver microwave oven installed in the cabinet\"\n    },\n    \"glassware\": {\n      \"count\": 6,\n      \"location\": \"top, right\",\n      \"color\": [\"clear\"],\n      \"size\": \"small\",\n      \"description\": \"Glassware stored in a wall-mounted glass cabinet\"\n    },\n    \"faucet\": {\n      \"count\": 1,\n      \"location\": \"middle, center\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver kitchen faucet over the sink\"\n    },\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"middle, center\",\n      \"color\": [\"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Stainless steel kitchen sink\"\n    },\n    \"paper_towel_holder\": {\n      \"count\": 1,\n      \"location\": \"top, left\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver paper towel holder mounted on the wall\"\n    },\n    \"paper_towel\": {\n      \"count\": 1,\n      \"location\": \"top, left\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"White paper towel roll\"\n    },\n    \"window\": {\n      \"count\": 2,\n      \"location\": \"left, right\",\n      \"color\": [\"clear\"],\n      \"size\": \"large\",\n      \"description\": \"Large windows allowing natural light into the kitchen\"\n    }\n  },\n  \"natural\": {\n    \"light\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"description\": \"Natural light coming through the windows\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "kitchen_cabinet": {
+                "count": 7,
+                "location": "bottom, middle, right",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Kitchen cabinets with black doors and white countertop"
+              },
+              "microwave": {
+                "count": 1,
+                "location": "top, left",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver microwave oven installed in the cabinet"
+              },
+              "glassware": {
+                "count": 6,
+                "location": "top, right",
+                "color": [
+                  "clear"
+                ],
+                "size": "small",
+                "description": "Glassware stored in a wall-mounted glass cabinet"
+              },
+              "faucet": {
+                "count": 1,
+                "location": "middle, center",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver kitchen faucet over the sink"
+              },
+              "sink": {
+                "count": 1,
+                "location": "middle, center",
+                "color": [
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Stainless steel kitchen sink"
+              },
+              "paper_towel_holder": {
+                "count": 1,
+                "location": "top, left",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver paper towel holder mounted on the wall"
+              },
+              "paper_towel": {
+                "count": 1,
+                "location": "top, left",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "White paper towel roll"
+              },
+              "window": {
+                "count": 2,
+                "location": "left, right",
+                "color": [
+                  "clear"
+                ],
+                "size": "large",
+                "description": "Large windows allowing natural light into the kitchen"
+              }
+            },
+            "natural": {
+              "light": {
+                "count": 1,
+                "location": "background",
+                "description": "Natural light coming through the windows"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 484,
+            "total_tokens": 1466
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13662.03424,
+            "prompt_eval_duration_ms": 103.925802,
+            "generation_duration_ms": 13511.42316,
+            "load_duration_ms": 43.970048,
+            "tokens_per_second": 35.821541096637525
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5396,
+        "total_time_ms": 36535.610022,
+        "average_speed": 35.98583491186705
+      }
+    }
+  ]
+}

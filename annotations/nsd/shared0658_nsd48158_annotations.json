@@ -1,0 +1,1196 @@
+{
+  "image": {
+    "path": "images/original/shared0658_nsd48158.png",
+    "name": "shared0658_nsd48158.png",
+    "id": "shared0658_nsd48158"
+  },
+  "timestamp": "2025-08-30T21:45:14.259860+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a compact, modern bathroom with a neutral color palette. The walls and floor are covered in beige tiles, creating a warm and cohesive look. The bathroom is well-lit, likely by natural light coming through the frosted glass window above the toilet, which diffuses the light and adds a soft, ambient glow to the space. The window frame is white, contrasting subtly with the beige tiles. A white pedestal sink with a sleek, modern faucet is positioned to the left of the toilet, which is also white and simple in design. To the right of the toilet, there is a white bathtub with a glass shower screen, adding a contemporary touch. A small, light-colored towel hangs neatly on a towel rack above the bathtub, and a green potted plant sits on the windowsill, introducing a touch of nature and color to the otherwise monochromatic scheme. The door to the bathroom is white with a gold handle, adding a subtle metallic accent to the room. The overall composition is clean and orderly, with each element thoughtfully placed to maximize functionality in a small space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 220,
+            "total_tokens": 517
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1693.790946,
+            "prompt_eval_duration_ms": 82.10127,
+            "generation_duration_ms": 1569.332557,
+            "load_duration_ms": 40.217945,
+            "tokens_per_second": 140.1869852369347
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the closest elements to the viewer include the white pedestal sink with a simple faucet, positioned to the left, and the white toilet with a closed lid, situated centrally. To the right, a white bathtub with a glass shower screen is partially visible, hinting at a compact yet functional bathroom layout. The floor is covered with beige tiles that match the walls, creating a cohesive and neutral color scheme. \n\nThe background elements, which are the distant or setting parts of the image, include a frosted glass window with a white frame, allowing natural light to filter into the space without compromising privacy. A small green plant is placed near the window, adding a touch of life and color to the otherwise monochromatic scheme. The door, partially open, frames the scene, suggesting an entry point into this compact bathroom. The arrangement of these elements in the foreground and background creates a sense of depth and perspective, emphasizing the compactness and functionality of the space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 198,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1507.286112,
+            "prompt_eval_duration_ms": 30.440946,
+            "generation_duration_ms": 1435.381691,
+            "load_duration_ms": 39.362821,
+            "tokens_per_second": 137.94240322381262
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a neatly arranged bathroom with no visible people or animals. The primary objects in the scene are a white toilet, a white sink with a modern faucet, a white bathtub with a glass shower screen, and a white towel hanging on a towel rack. The walls and floor are covered in beige tiles, and a frosted glass window allows natural light to enter the room while maintaining privacy. The arrangement of the objects suggests a functional and clean space, with the sink positioned next to the toilet and the bathtub to the right, all designed for efficient use. The towel rack, located near the bathtub, indicates a place for convenience, suggesting the room is prepared for daily use. The overall interaction between the elements is one of order and utility, with no active interaction as the scene is static.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 160,
+            "total_tokens": 466
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1225.058143,
+            "prompt_eval_duration_ms": 31.409322,
+            "generation_duration_ms": 1152.275297,
+            "load_duration_ms": 39.16022,
+            "tokens_per_second": 138.85570611169666
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the bathroom evokes a sense of cleanliness, order, and tranquility, contributing to a positive emotional atmosphere. The neutral color palette, dominated by beige tiles and white fixtures, creates a calm and serene environment, reminiscent of a peaceful retreat. The presence of a small potted plant adds a touch of life and vibrancy, subtly breaking the monotony and enhancing the feeling of well-being. The glass shower screen, reflecting light and space, contributes to the perception of openness and airiness, further amplifying the positive mood. The neatly folded towel and the absence of clutter suggest a space that is both functional and aesthetically pleasing, evoking feelings of comfort and satisfaction. Overall, the image conveys a mood of simplicity and tranquility, making it a positive visual experience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 160,
+            "total_tokens": 468
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1223.514369,
+            "prompt_eval_duration_ms": 30.617291,
+            "generation_duration_ms": 1151.803219,
+            "load_duration_ms": 38.944907,
+            "tokens_per_second": 138.9126175032855
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"human\": {\n      \"count\": 0,\n      \"location\": \"none\",\n      \"color\": [],\n      \"size\": \"none\",\n      \"description\": \"no humans detected\"\n    },\n    \"animal\": {\n      \"count\": 0,\n      \"location\": \"none\",\n      \"color\": [],\n      \"size\": \"none\",\n      \"description\": \"no animals detected\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"bathroom sink with faucet\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"toilet\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"bathtub with glass shower screen\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"window with frosted glass\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"towel hanging on rack\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"plant in corner\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"door with handle\"\n    },\n    \"man-made\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"tile flooring\"\n    }\n  },\n  \"natural\": {\n    \"human\": {\n      \"count\": 0,\n      \"location\": \"none\",\n      \"color\": [],\n      \"size\": \"none\",\n      \"description\": \"no humans detected\"\n    },\n    \"animal\": {\n      \"count\": 0,\n      \"location\": \"none\",\n      \"color\": [],\n      \"size\": \"none\",\n      \"description\": \"no animals detected\"\n    },\n    \"man-made\": {\n      \"count\": 0,\n      \"location\": \"none\",\n      \"color\": [],\n      \"size\": \"none\",\n      \"description\": \"no natural items detected\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "human": {
+                "count": 0,
+                "location": "none",
+                "color": [],
+                "size": "none",
+                "description": "no humans detected"
+              },
+              "animal": {
+                "count": 0,
+                "location": "none",
+                "color": [],
+                "size": "none",
+                "description": "no animals detected"
+              },
+              "man-made": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "tile flooring"
+              }
+            },
+            "natural": {
+              "human": {
+                "count": 0,
+                "location": "none",
+                "color": [],
+                "size": "none",
+                "description": "no humans detected"
+              },
+              "animal": {
+                "count": 0,
+                "location": "none",
+                "color": [],
+                "size": "none",
+                "description": "no animals detected"
+              },
+              "man-made": {
+                "count": 0,
+                "location": "none",
+                "color": [],
+                "size": "none",
+                "description": "no natural items detected"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 601,
+            "total_tokens": 1087
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4407.49478,
+            "prompt_eval_duration_ms": 44.33384,
+            "generation_duration_ms": 4317.629525,
+            "load_duration_ms": 43.269681,
+            "tokens_per_second": 139.19675055955616
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3039,
+        "total_time_ms": 10057.144349999999,
+        "average_speed": 139.01889252705715
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a clean, modern bathroom with a minimalist and functional design. The setting is a compact, rectangular space with beige-toned tiles covering both the walls and floor, creating a cohesive and warm aesthetic. The lighting is soft and natural, likely coming from a frosted glass window located at the back of the room, which adds privacy while allowing diffused light to illuminate the space.\n\nThe main elements in the bathroom include a white pedestal sink on the left side, a white toilet positioned centrally, and a bathtub with a glass shower screen on the right. The sink and toilet are sleek and contemporary, with simple, rounded designs that complement the overall minimalist style. The bathtub is partially visible, with a glass partition that enhances the sense of openness and modernity. A towel is neatly hung on a towel rack beside the bathtub, adding a touch of practicality and comfort.\n\nThe color palette is neutral, dominated by beige tiles, white fixtures, and a subtle gold accent on the sink faucet and toilet flush handle, which adds a touch of elegance. The composition is balanced, with the fixtures and elements arranged symmetrically, creating a sense of order and harmony. The frosted glass window adds a layer of visual interest while maintaining privacy, and the overall atmosphere is one of cleanliness, simplicity, and functionality.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 262,
+            "total_tokens": 559
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13419.543457,
+            "prompt_eval_duration_ms": 3616.496979,
+            "generation_duration_ms": 9761.947715,
+            "load_duration_ms": 37.452501,
+            "tokens_per_second": 26.83890629709237
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the closest elements to the viewer include the white door frame on the left, which partially obscures the view into the bathroom. The door frame is simple and clean, featuring a gold-colored doorknob that adds a subtle touch of elegance. Adjacent to the door frame is a white pedestal sink with a matching gold faucet, positioned to the left of the toilet. The toilet, also white, is centrally located in the foreground, with its lid closed. The floor is covered with light beige tiles that complement the neutral color scheme of the room.\n\nIn the background, the setting includes a bathtub on the right side, partially visible with a glass shower screen that reflects some of the room's elements. A white towel is neatly hung on a towel rack above the bathtub, adding to the organized and tidy appearance. The wall behind the toilet and sink is tiled with the same light beige tiles, creating a cohesive look. A frosted glass window is situated above the toilet, allowing natural light to enter the space while maintaining privacy. A small potted plant is placed near the bathtub, adding a touch of greenery and life to the otherwise sterile environment.\n\nThe elements in the foreground and background relate to each other through their shared color palette and design, contributing to a harmonious and functional bathroom space. The light beige tiles and white fixtures create a clean and bright atmosphere, while the gold accents provide a subtle contrast and sophistication. The layout is efficient, with the sink, toilet, and bathtub arranged in a compact yet practical manner, typical of a modern bathroom design. The natural light from the window enhances the overall brightness and openness of the space, tying the foreground and background together seamlessly.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 343,
+            "total_tokens": 646
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12882.846459,
+            "prompt_eval_duration_ms": 77.047861,
+            "generation_duration_ms": 12765.187394,
+            "load_duration_ms": 38.450103,
+            "tokens_per_second": 26.869954150553227
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a clean, modern bathroom with no visible people or animals. The focus is on the arrangement and design of the space, which includes several key objects:\n\n1. **Toilet**: Positioned centrally, the toilet is white and appears to be a standard model with a closed lid. It is situated between the sink and the bathtub, indicating a typical layout for a compact bathroom.\n\n2. **Sink and Vanity**: To the left of the toilet, there is a white pedestal sink with a sleek, modern design. The faucet is visible, and the sink is mounted on a narrow, white vanity unit that complements the overall aesthetic.\n\n3. **Bathtub**: To the right of the toilet, there is a rectangular bathtub with a glass shower screen. The screen is partially visible, suggesting a shower area within the bathtub. The bathtub is white, matching the toilet and sink.\n\n4. **Towel Rack and Towel**: A towel rack is mounted on the wall above the bathtub, holding a neatly folded white towel. This adds to the organized and tidy appearance of the bathroom.\n\n5. **Window**: A frosted glass window is located above the toilet, allowing natural light to enter the room while maintaining privacy. The frosted design ensures that the view is obscured.\n\n6. **Tiling**: The walls and floor are covered in beige or light brown tiles, creating a warm and cohesive look. The tiles are uniform in size and pattern, contributing to the clean and minimalist design.\n\n7. **Decorative Plant**: A small potted plant is placed on the edge of the bathtub, adding a touch of greenery and life to the space. It is positioned near the towel rack, enhancing the overall aesthetic without cluttering the area.\n\n8. **Doors and Hardware**: The bathroom door is partially open, revealing a white frame with a gold-colored handle and lock, which adds a subtle touch of elegance to the space.\n\nThe objects in the image are arranged in a functional and aesthetically pleasing manner, emphasizing cleanliness, simplicity, and practicality. There are no visible interactions between elements since no people or animals are present, but the layout suggests a well-thought-out design prioritizing usability and comfort. The combination of neutral tones, natural light, and minimal decor creates a serene and inviting atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 465,
+            "total_tokens": 771
+          },
+          "performance_metrics": {
+            "total_duration_ms": 17428.989309,
+            "prompt_eval_duration_ms": 75.333463,
+            "generation_duration_ms": 17310.59776,
+            "load_duration_ms": 40.655313,
+            "tokens_per_second": 26.862157300800224
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a clean, well-maintained bathroom with a neutral and calming mood. The overall tone is positive, evoking feelings of tranquility, order, and cleanliness. The beige tile flooring and walls create a warm, inviting atmosphere, while the white fixtures, including the toilet, sink, and bathtub, contribute to a sense of purity and simplicity. The frosted window allows natural light to filter in softly, enhancing the serene ambiance without being harsh or overwhelming. The neatly hung white towel adds to the organized and tidy appearance, reinforcing a sense of care and attention to detail. The glass shower door and the small potted plant in the corner introduce a touch of modernity and life, making the space feel fresh and welcoming. The overall layout is functional yet aesthetically pleasing, with a balance of symmetry and simplicity that promotes a feeling of relaxation and comfort. The absence of clutter and the harmonious color palette further emphasize a peaceful and stress-free environment, making the space feel both inviting and refreshing.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 203,
+            "total_tokens": 511
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7694.4797,
+            "prompt_eval_duration_ms": 74.817285,
+            "generation_duration_ms": 7577.014724,
+            "load_duration_ms": 40.392952,
+            "tokens_per_second": 26.79155411391807
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"toilet\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Standard white toilet with closed lid\"\n    },\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"Pedestal sink with faucet\"\n    },\n    \"bathtub\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White bathtub with glass shower door\"\n    },\n    \"towel\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"White towel hanging on towel rack\"\n    },\n    \"towel_rack\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Metal towel rack\"\n    },\n    \"door\": {\n      \"count\": 2,\n      \"location\": \"left and right, top to bottom\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White doors with glass panels\"\n    },\n    \"window\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"white\", \"clear\"],\n      \"size\": \"medium\",\n      \"description\": \"Frosted glass window with white frame\"\n    },\n    \"tiles\": {\n      \"count\": 1,\n      \"location\": \"center, top to bottom\",\n      \"color\": [\"beige\"],\n      \"size\": \"large\",\n      \"description\": \"Beige wall and floor tiles\"\n    },\n    \"mirror\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"silver\"],\n      \"size\": \"large\",\n      \"description\": \"Wall-mounted mirror above sink\"\n    },\n    \"shower_head\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver shower head\"\n    },\n    \"soap_dispenser\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver soap dispenser on the wall\"\n    }\n  },\n  \"natural\": {\n    \"plant\": {\n      \"count\": 1,\n      \"location\": \"right, top\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Green plant in a pot\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "toilet": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Standard white toilet with closed lid"
+              },
+              "sink": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "Pedestal sink with faucet"
+              },
+              "bathtub": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White bathtub with glass shower door"
+              },
+              "towel": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "White towel hanging on towel rack"
+              },
+              "towel_rack": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Metal towel rack"
+              },
+              "door": {
+                "count": 2,
+                "location": "left and right, top to bottom",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White doors with glass panels"
+              },
+              "window": {
+                "count": 1,
+                "location": "center, top",
+                "color": [
+                  "white",
+                  "clear"
+                ],
+                "size": "medium",
+                "description": "Frosted glass window with white frame"
+              },
+              "tiles": {
+                "count": 1,
+                "location": "center, top to bottom",
+                "color": [
+                  "beige"
+                ],
+                "size": "large",
+                "description": "Beige wall and floor tiles"
+              },
+              "mirror": {
+                "count": 1,
+                "location": "center, top",
+                "color": [
+                  "silver"
+                ],
+                "size": "large",
+                "description": "Wall-mounted mirror above sink"
+              },
+              "shower_head": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver shower head"
+              },
+              "soap_dispenser": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver soap dispenser on the wall"
+              }
+            },
+            "natural": {
+              "plant": {
+                "count": 1,
+                "location": "right, top",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Green plant in a pot"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 623,
+            "total_tokens": 1109
+          },
+          "performance_metrics": {
+            "total_duration_ms": 23316.405693,
+            "prompt_eval_duration_ms": 135.327565,
+            "generation_duration_ms": 23138.587224,
+            "load_duration_ms": 40.172984,
+            "tokens_per_second": 26.924720769200928
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3596,
+        "total_time_ms": 74742.26461799999,
+        "average_speed": 26.85745852631296
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a detailed description of the image:\n\nThe photograph depicts a modern, minimalist bathroom. A white, paneled door with a simple design is visible in the foreground, framing the scene. The bathroom itself is tiled with a warm, beige-toned ceramic tile, creating a soothing and neutral atmosphere. A pristine white bathtub dominates the space, positioned beneath a large, frosted glass window. The window features a delicate, textured pattern, likely designed to diffuse light. \n\nA sleek, white toilet sits on a light-colored floor, alongside a matching white pedestal sink with a chrome faucet. A white toilet roll holder is positioned next to the toilet. A pale pink towel is neatly draped over a chrome towel rack. A small, potted bamboo plant adds a touch of greenery to the room. The lighting appears to be soft and diffused, likely from the window, contributing to the calm and inviting ambiance. The overall composition is clean and organized, emphasizing the room's contemporary design.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1604.765314,
+            "prompt_eval_duration_ms": 308.708035,
+            "generation_duration_ms": 1207.432503,
+            "load_duration_ms": 86.360803,
+            "tokens_per_second": 164.81252534246215
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the bathroom scene, broken down into foreground and background elements:\n\nIn the foreground, the scene is dominated by a modern, white bathroom. The walls are covered in warm, beige-toned ceramic tiles, creating a sense of warmth and cleanliness. A pristine white toilet sits centrally, paired with a matching white pedestal sink. The sink is positioned beneath a clear, rectangular window, allowing natural light to flood the space. A pale pink towel is neatly draped over a chrome towel rail beside the sink.  A small potted bamboo plant adds a touch of greenery to the composition. \n\nThe background reveals a small, tiled bathroom space. The window is frosted with a subtle, textured pattern, likely designed to reduce glare. The overall impression is one of a newly renovated, contemporary bathroom, with a focus on clean lines and neutral tones. The arrangement of the elements \u2013 the sink, toilet, and window \u2013 creates a functional and aesthetically pleasing space, suggesting a comfortable and inviting environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 202,
+            "total_tokens": 520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1364.188284,
+            "prompt_eval_duration_ms": 62.034824,
+            "generation_duration_ms": 1212.46499,
+            "load_duration_ms": 87.563536,
+            "tokens_per_second": 166.60274866988118
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image presents a modern, minimalist bathroom. A white, paneled door stands slightly ajar, suggesting entry into the space. Inside, the walls are covered in warm, beige-toned tiles, creating a calming atmosphere. A pristine white toilet sits centrally, connected to a sleek, white sink with a chrome faucet. The sink is positioned beneath a rectangular, frosted glass window, allowing diffused natural light to enter. A pale pink towel hangs on a chrome towel rail, seemingly awaiting use. Beside the towel, a small potted plant with glossy green leaves adds a touch of life to the room. The arrangement suggests a space designed for relaxation and hygiene. The objects are arranged in a functional manner, with the sink and toilet positioned to facilitate daily routines. The overall impression is one of cleanliness, order, and a comfortable, inviting space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 187,
+            "total_tokens": 508
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1279.841016,
+            "prompt_eval_duration_ms": 60.158218,
+            "generation_duration_ms": 1125.128371,
+            "load_duration_ms": 92.016784,
+            "tokens_per_second": 166.20325717482064
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of calm and understated serenity within a modern bathroom. The overall tone is neutral, leaning slightly towards peacefulness. The color palette of warm beige tiles, white fixtures, and a pale pink towel contributes to this feeling. The clean lines of the fixtures and the simple design create a sense of order and tranquility. The window, with its frosted glass, adds a touch of privacy and softens the light, further enhancing the feeling of quiet relaxation. There\u2019s a subtle impression of a fresh, uncluttered space, suggesting a place for quiet contemplation or a restorative soak. The lack of overtly stimulating elements\u2014no bright colors or busy patterns\u2014contributes to the calm and inviting atmosphere. It\u2019s a space designed for simple, comfortable enjoyment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 169,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1149.81586,
+            "prompt_eval_duration_ms": 54.714734,
+            "generation_duration_ms": 1006.212117,
+            "load_duration_ms": 85.688179,
+            "tokens_per_second": 167.95663374027924
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Standing in front of the toilet, appearing to be observing the scene.\"\n    }\n  },\n  \"animal\": {\n    \"plant\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"A small potted plant, adding a touch of greenery to the bathroom.\"\n    }\n  },\n  \"man-made\": {\n    \"toilet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A modern white toilet with a white seat.\"\n    },\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A white pedestal sink with a white ceramic basin.\"\n    },\n    \"toilet_paper_holder\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"A white toilet paper holder.\"\n    },\n    \"bath\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"A white bathtub, appearing to be filled with water.\"\n    },\n    \"mirror\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"A mirror above the sink.\"\n    },\n    \"toilet_paper_roll\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"A roll of toilet paper.\"\n    },\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"The bathroom walls are tiled with brown tiles.\"\n    },\n    \"door\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"A white door.\"\n    }\n  },\n  \"natural\": {\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Water filling the bathtub.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Standing in front of the toilet, appearing to be observing the scene."
+              }
+            },
+            "animal": {
+              "plant": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "A small potted plant, adding a touch of greenery to the bathroom."
+              }
+            },
+            "man-made": {
+              "toilet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A modern white toilet with a white seat."
+              },
+              "sink": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A white pedestal sink with a white ceramic basin."
+              },
+              "toilet_paper_holder": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "A white toilet paper holder."
+              },
+              "bath": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "A white bathtub, appearing to be filled with water."
+              },
+              "mirror": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "A mirror above the sink."
+              },
+              "toilet_paper_roll": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "A roll of toilet paper."
+              },
+              "wall": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "The bathroom walls are tiled with brown tiles."
+              },
+              "door": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "A white door."
+              }
+            },
+            "natural": {
+              "water": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Water filling the bathtub."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 666,
+            "total_tokens": 1184
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4153.002144,
+            "prompt_eval_duration_ms": 63.680719,
+            "generation_duration_ms": 4002.743845,
+            "load_duration_ms": 84.469029,
+            "tokens_per_second": 166.38586574355222
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3217,
+        "total_time_ms": 9551.612618,
+        "average_speed": 166.39220613419909
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a modern, well-lit bathroom with a warm, inviting aesthetic. The setting appears to be a standard-sized bathroom, with a focus on clean lines and a contemporary design. Dominating the view is a freestanding bathtub with a sleek, white exterior, positioned against a wall tiled in a light brown, textured pattern. Adjacent to the tub is a pedestal sink with chrome fixtures and a matching toilet, both in a crisp white. A partially open door, painted white with raised panel detailing, is visible on the left side of the frame. Natural light streams in through a frosted window, illuminating the space and highlighting the warm tones of the tiled walls and floor. A small potted plant and a neatly folded towel on a chrome towel rail add a touch of life and practicality. The overall composition is balanced, creating a sense of spaciousness and tranquility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 183,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2694.328563,
+            "prompt_eval_duration_ms": 339.043025,
+            "generation_duration_ms": 2264.783033,
+            "load_duration_ms": 88.490172,
+            "tokens_per_second": 80.80244214722532
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground of the image is dominated by a pristine white bathroom suite. Closest to the viewer is a portion of a white, paneled door, slightly ajar, hinting at the room's entrance. A pedestal sink with chrome fixtures and a modern toilet stand prominently feature, creating a clean and minimalist aesthetic. A bathtub, also white, occupies a significant portion of the foreground, its curved edge visible. \n\nThe background establishes the setting as a well-tiled bathroom. Warm, tan-colored tiles cover the walls and floor, creating a cozy and inviting atmosphere. A frosted window allows diffused natural light, adding brightness to the space. A small potted plant with green leaves is visible on the wall near the bathtub, adding a touch of nature. The overall composition creates a sense of depth, with the bathroom fixtures appearing close and the tiled walls receding into the distance, establishing a functional and aesthetically pleasing bathroom environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 202,
+            "total_tokens": 520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2691.841061,
+            "prompt_eval_duration_ms": 69.065752,
+            "generation_duration_ms": 2531.614626,
+            "load_duration_ms": 89.000792,
+            "tokens_per_second": 79.79097526354708
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their relationships:\n\nThe image depicts a modern, tiled bathroom. A partially open white door frames the scene, leading the eye into the space. Dominating the foreground is a pristine white pedestal sink, with a chrome faucet and soap dispenser. Beside it sits a matching white toilet, neatly positioned. A bathtub, also white, occupies the back wall, its glass screen reflecting the room's light. A small potted plant with green leaves is placed on the wall above the bathtub, adding a touch of nature. A folded pink towel hangs from a chrome towel rail beside the bathtub, suggesting a recently used or prepared bathing area. The walls are covered in a warm, brown tiled pattern, creating a cozy and clean aesthetic. The window, with its frosted glass, provides natural light while maintaining privacy. The overall impression is one of a well-maintained and stylish bathroom, designed for functionality and a sense of calm.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 197,
+            "total_tokens": 518
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2628.836353,
+            "prompt_eval_duration_ms": 65.429462,
+            "generation_duration_ms": 2470.068646,
+            "load_duration_ms": 91.279781,
+            "tokens_per_second": 79.75486848068756
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of calm, cleanliness, and understated luxury. The overall mood is positive and relaxing, suggesting a tranquil personal sanctuary. The color palette, dominated by warm beige and cream tones in the tiled walls and fixtures, contributes to this feeling of serenity. The crisp, white porcelain of the toilet and sink further emphasizes the feeling of hygiene and freshness. The presence of a plush, folded towel on the heated towel rail hints at comfort and indulgence. The frosted window adds a touch of privacy and softness, while the potted plant introduces a subtle element of nature. The overall impression is one of a well-maintained, modern bathroom designed for relaxation and personal care, creating a feeling of peaceful retreat from the outside world.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 145,
+            "total_tokens": 469
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1979.165358,
+            "prompt_eval_duration_ms": 69.532679,
+            "generation_duration_ms": 1816.410551,
+            "load_duration_ms": 91.061667,
+            "tokens_per_second": 79.82776796807981
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"toilet\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"white\"],\n        \"size\": \"medium\",\n        \"description\": \"Modern toilet with a close-coupled cistern.\"\n      }\n    },\n    {\n      \"sink\": {\n        \"count\": 1,\n        \"location\": \"left\",\n        \"color\": [\"white\"],\n        \"size\": \"medium\",\n        \"description\": \"Pedestal sink with chrome fixtures.\"\n      }\n    },\n    {\n      \"bathtub\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"white\"],\n        \"size\": \"large\",\n        \"description\": \"Built-in bathtub with a glass screen.\"\n      }\n    },\n    {\n      \"door\": {\n        \"count\": 1,\n        \"location\": \"left\",\n        \"color\": [\"white\"],\n        \"size\": \"large\",\n        \"description\": \"Panelled door slightly ajar.\"\n      }\n    },\n    {\n      \"towel_rail\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"silver\"],\n        \"size\": \"medium\",\n        \"description\": \"Chrome towel rail with a towel hanging on it.\"\n      }\n    },\n    {\n      \"towel\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"pink\"],\n        \"size\": \"medium\",\n        \"description\": \"Folded towel hanging on the towel rail.\"\n      }\n    },\n    {\n      \"window\": {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"color\": [\"white\", \"grey\"],\n        \"size\": \"medium\",\n        \"description\": \"Window with patterned glass.\"\n      }\n    },\n    {\n      \"tiles\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"beige\", \"brown\"],\n        \"size\": \"large\",\n        \"description\": \"Wall and floor tiles covering the bathroom.\"\n      }\n    }\n  ],\n  \"natural\": [\n    {\n      \"plant\": {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"color\": [\"green\"],\n        \"size\": \"small\",\n        \"description\": \"Potted plant on the wall.\"\n      }\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "toilet": {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "medium",
+                  "description": "Modern toilet with a close-coupled cistern."
+                }
+              },
+              {
+                "sink": {
+                  "count": 1,
+                  "location": "left",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "medium",
+                  "description": "Pedestal sink with chrome fixtures."
+                }
+              },
+              {
+                "bathtub": {
+                  "count": 1,
+                  "location": "right",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "large",
+                  "description": "Built-in bathtub with a glass screen."
+                }
+              },
+              {
+                "door": {
+                  "count": 1,
+                  "location": "left",
+                  "color": [
+                    "white"
+                  ],
+                  "size": "large",
+                  "description": "Panelled door slightly ajar."
+                }
+              },
+              {
+                "towel_rail": {
+                  "count": 1,
+                  "location": "right",
+                  "color": [
+                    "silver"
+                  ],
+                  "size": "medium",
+                  "description": "Chrome towel rail with a towel hanging on it."
+                }
+              },
+              {
+                "towel": {
+                  "count": 1,
+                  "location": "right",
+                  "color": [
+                    "pink"
+                  ],
+                  "size": "medium",
+                  "description": "Folded towel hanging on the towel rail."
+                }
+              },
+              {
+                "window": {
+                  "count": 1,
+                  "location": "top",
+                  "color": [
+                    "white",
+                    "grey"
+                  ],
+                  "size": "medium",
+                  "description": "Window with patterned glass."
+                }
+              },
+              {
+                "tiles": {
+                  "count": 1,
+                  "location": "background",
+                  "color": [
+                    "beige",
+                    "brown"
+                  ],
+                  "size": "large",
+                  "description": "Wall and floor tiles covering the bathroom."
+                }
+              }
+            ],
+            "natural": [
+              {
+                "plant": {
+                  "count": 1,
+                  "location": "top",
+                  "color": [
+                    "green"
+                  ],
+                  "size": "small",
+                  "description": "Potted plant on the wall."
+                }
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 587,
+            "total_tokens": 1105
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7610.599128,
+            "prompt_eval_duration_ms": 92.56809,
+            "generation_duration_ms": 7429.96006,
+            "load_duration_ms": 85.978202,
+            "tokens_per_second": 79.00446237392022
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3108,
+        "total_time_ms": 17604.770463,
+        "average_speed": 79.836103246692
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image depicts a small, fully tiled bathroom, likely within a residential setting. The color palette is dominated by warm, earthy tones of beige and brown, achieved through the consistent use of patterned ceramic tiles on the floor and walls. The main elements include a white porcelain pedestal sink, a close-coupled toilet, and a bathtub with a clear glass shower screen. A white paneled door is partially open, revealing a glimpse of the hallway. \n\nThe lighting appears to be a combination of natural light from a frosted window and potentially recessed ceiling lights, creating a soft, diffused illumination. A towel hangs on a stainless steel towel rack next to the bathtub, and a small potted plant adds a touch of greenery. The composition is somewhat tight, emphasizing the compact size of the bathroom, but it is generally neat and well-maintained. The overall impression is of a functional, cozy, and clean bathroom space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 192,
+            "total_tokens": 505
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5053.696913,
+            "prompt_eval_duration_ms": 396.621081,
+            "generation_duration_ms": 4566.072933,
+            "load_duration_ms": 88.914497,
+            "tokens_per_second": 42.04926264150849
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the bathroom image, separating foreground and background elements:\n\nThe foreground is dominated by a partially open, white paneled door, revealing the corner of a small bathroom. Immediately visible is a white pedestal sink with a silver faucet and a bar of soap resting on it. Adjacent to the sink is a white toilet, positioned near the corner of the room. The floor is tiled with a warm, beige patterned ceramic. \n\nThe background features the rest of the bathroom, including a bathtub with a glass screen. The walls are fully tiled in a similar beige pattern as the floor, creating a cohesive look. A small window, frosted for privacy, is centered above the bathtub, providing natural light. A towel hangs on a silver towel rack near the tub, and a small potted plant sits on the wall. The arrangement suggests a compact, functional bathroom space, with the sink and toilet in the foreground leading the eye towards the bathing area in the background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 196,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4833.816231,
+            "prompt_eval_duration_ms": 82.403963,
+            "generation_duration_ms": 4660.924718,
+            "load_duration_ms": 88.248815,
+            "tokens_per_second": 42.05174120128322
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their relationships:\n\nThe image depicts a small, fully tiled bathroom. A white pedestal sink and a white toilet are positioned near each other, creating a functional area for hygiene. A bathtub with a clear glass screen is situated along the right wall, suggesting a combined shower and bath facility. A small window, frosted for privacy, is centered above the toilet, providing natural light. A towel hangs on a silver towel rack beside the tub. The entire room is covered in beige and brown tiles, creating a warm, neutral aesthetic. \n\nThere are no people or animals present in the image. The objects are arranged to maximize space within the compact bathroom. The placement of the sink, toilet, and tub suggests a logical flow for bathroom use. The towel rack and the plant on the ledge above the toilet add a touch of comfort and decoration to the otherwise functional space. The open door suggests the bathroom is accessible and ready for use.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 201,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4955.213027,
+            "prompt_eval_duration_ms": 84.910942,
+            "generation_duration_ms": 4782.941458,
+            "load_duration_ms": 85.314475,
+            "tokens_per_second": 42.0243487747075
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of clean, understated comfort and practicality. The bathroom appears functional and well-maintained, creating a neutral, yet inviting atmosphere. The warm, earthy tones of the tiled walls and floor contribute to a feeling of coziness and stability, while the white sanitaryware\u2014the toilet, sink, and bathtub\u2014provides a crisp, clean contrast. The small window, though frosted, suggests a connection to the outside world, preventing the space from feeling too enclosed. There's a lack of excessive decoration, which reinforces the sense of simplicity and functionality. The overall tone is positive, leaning towards calm and serene, suggesting a space designed for everyday use and personal hygiene, rather than luxurious indulgence. It feels like a comfortable, reliable space, promoting a sense of well-being and cleanliness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 161,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4005.513939,
+            "prompt_eval_duration_ms": 82.82846,
+            "generation_duration_ms": 3831.375262,
+            "load_duration_ms": 88.543319,
+            "tokens_per_second": 42.021464615282056
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"door\": {\n      \"count\": 1,\n      \"location\": \"left, foreground\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Panel door, partially open\"\n    },\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Pedestal sink with faucet\"\n    },\n    \"toilet\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Standard flush toilet\"\n    },\n    \"bathtub\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"Rectangular bathtub with glass screen\"\n    },\n    \"tiles\": {\n      \"count\": 1,\n      \"location\": \"all, background\",\n      \"color\": [\"beige\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Ceramic tiles covering walls and floor\"\n    },\n    \"towel rack\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Metal towel rack with a pink towel\"\n    },\n    \"window\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"Frosted glass window\"\n    }\n  },\n  \"natural\": {\n    \"plant\": {\n      \"count\": 1,\n      \"location\": \"right, top\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Small potted plant\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "door": {
+                "count": 1,
+                "location": "left, foreground",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Panel door, partially open"
+              },
+              "sink": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Pedestal sink with faucet"
+              },
+              "toilet": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Standard flush toilet"
+              },
+              "bathtub": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "Rectangular bathtub with glass screen"
+              },
+              "tiles": {
+                "count": 1,
+                "location": "all, background",
+                "color": [
+                  "beige",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Ceramic tiles covering walls and floor"
+              },
+              "towel rack": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Metal towel rack with a pink towel"
+              },
+              "window": {
+                "count": 1,
+                "location": "center, top",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "Frosted glass window"
+              }
+            },
+            "natural": {
+              "plant": {
+                "count": 1,
+                "location": "right, top",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Small potted plant"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 474,
+            "total_tokens": 992
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11508.219679,
+            "prompt_eval_duration_ms": 143.497746,
+            "generation_duration_ms": 11275.575884,
+            "load_duration_ms": 85.730996,
+            "tokens_per_second": 42.03776417953111
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3018,
+        "total_time_ms": 30356.459789,
+        "average_speed": 42.03691628246248
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a compact, well-organized bathroom with a clean and modern design. The setting features beige and light brown tiles on the walls and floor, creating a warm and inviting atmosphere. The main elements include a white toilet positioned next to a white sink with a sleek, contemporary faucet. Above the sink, there is a small, rectangular window with a white frame, allowing natural light to filter into the room, enhancing the brightness and openness. Adjacent to the toilet is a bathtub with a clear glass partition, adding a touch of elegance and functionality. A beige towel hangs neatly on a towel rack mounted on the glass partition. The lighting appears soft and diffused, likely supplemented by natural light from the window, which illuminates the space evenly. The overall composition is balanced, with each element strategically placed to maximize the use of the limited space, creating a harmonious and efficient bathroom environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 188,
+            "total_tokens": 980
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7360.903856,
+            "prompt_eval_duration_ms": 2063.67318,
+            "generation_duration_ms": 5250.709023,
+            "load_duration_ms": 43.734512,
+            "tokens_per_second": 35.80468831475753
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of this bathroom image, the most prominent elements are the toilet and the sink. The toilet is positioned to the right of the sink, both of which are mounted against the wall with beige tiles. The sink has a simple design with a white basin and a gold-colored faucet, while the toilet is a standard white model. These elements are closest to the viewer, creating a sense of immediate proximity. In the background, a bathtub with a clear glass partition is visible, extending towards the right side of the image. Above the bathtub, a window with a white frame allows natural light to enter the room, illuminating the space. A towel hangs on a rail next to the bathtub, adding a touch of everyday life to the scene. The background elements provide context and depth, contrasting with the more utilitarian foreground elements. Together, these layers create a cohesive view of a compact, functional bathroom.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 189,
+            "total_tokens": 987
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5359.510214,
+            "prompt_eval_duration_ms": 56.802848,
+            "generation_duration_ms": 5252.982208,
+            "load_duration_ms": 46.822568,
+            "tokens_per_second": 35.97956218320395
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a small, neatly arranged bathroom. On the left side, there is a white pedestal sink with a faucet, positioned next to a white toilet. Above the sink, a window with a white frame allows natural light to enter the room, illuminating the space. Adjacent to the toilet, on the right side, is a bathtub with a transparent glass partition. A beige towel hangs on a rail attached to the glass partition, suggesting it is ready for use after a bath. Near the bathtub, a small potted plant adds a touch of greenery, enhancing the room's aesthetic. The objects in the bathroom are stationary and serve their typical functions, creating a harmonious and functional space. The sink, toilet, and bathtub are essential fixtures, while the towel and plant contribute to the room's practicality and decor, respectively. The window not only provides light but also likely offers ventilation, connecting the indoor space with the outside environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 199,
+            "total_tokens": 999
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5638.900459,
+            "prompt_eval_duration_ms": 55.964311,
+            "generation_duration_ms": 5534.895158,
+            "load_duration_ms": 45.062557,
+            "tokens_per_second": 35.95370721925425
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the bathroom conveys a sense of calm and cleanliness, evoking feelings of relaxation and tranquility. The overall tone is positive, primarily due to the neutral, earthy color palette of the tiles, which creates a soothing and inviting atmosphere. The natural light streaming in through the window adds to this serene ambiance, suggesting freshness and openness. The neatly arranged elements, such as the pristine white toilet and sink, contribute to a sense of order and tidiness, which can be emotionally reassuring. The presence of a towel and a small plant adds a touch of warmth and homeliness, making the space feel lived-in and comfortable. These visual elements collectively foster a peaceful and refreshing mood, making the bathroom appear as a sanctuary for relaxation and self-care.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 159,
+            "total_tokens": 962
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4516.365763,
+            "prompt_eval_duration_ms": 54.162124,
+            "generation_duration_ms": 4413.349232,
+            "load_duration_ms": 46.168473,
+            "tokens_per_second": 36.02706054783385
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"toilet\": {\n      \"count\": 1,\n      \"location\": \"bottom center\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Standard white toilet with a closed lid.\"\n    },\n    \"bathtub\": {\n      \"count\": 1,\n      \"location\": \"bottom right\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White bathtub with a clear glass partition.\"\n    },\n    \"sink\": {\n      \"count\": 1,\n      \"location\": \"bottom left\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"White sink with a silver faucet.\"\n    },\n    \"towel\": {\n      \"count\": 1,\n      \"location\": \"top right\",\n      \"color\": [\"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"Beige towel hanging on a silver rail.\"\n    },\n    \"window\": {\n      \"count\": 1,\n      \"location\": \"top left\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"White-framed window with a view of trees outside.\"\n    },\n    \"door\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"White door with a gold handle.\"\n    },\n    \"towel rack\": {\n      \"count\": 1,\n      \"location\": \"top right\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver towel rack mounted on the wall.\"\n    },\n    \"shower head\": {\n      \"count\": 1,\n      \"location\": \"top right\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver shower head attached to the wall.\"\n    },\n    \"faucet\": {\n      \"count\": 1,\n      \"location\": \"bottom left\",\n      \"color\": [\"silver\"],\n      \"size\": \"small\",\n      \"description\": \"Silver faucet attached to the sink.\"\n    }\n  },\n  \"natural\": {\n    \"plant\": {\n      \"count\": 1,\n      \"location\": \"top right\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Green plant placed on the edge of the bathtub.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "toilet": {
+                "count": 1,
+                "location": "bottom center",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Standard white toilet with a closed lid."
+              },
+              "bathtub": {
+                "count": 1,
+                "location": "bottom right",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White bathtub with a clear glass partition."
+              },
+              "sink": {
+                "count": 1,
+                "location": "bottom left",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "White sink with a silver faucet."
+              },
+              "towel": {
+                "count": 1,
+                "location": "top right",
+                "color": [
+                  "beige"
+                ],
+                "size": "medium",
+                "description": "Beige towel hanging on a silver rail."
+              },
+              "window": {
+                "count": 1,
+                "location": "top left",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "White-framed window with a view of trees outside."
+              },
+              "door": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "White door with a gold handle."
+              },
+              "towel rack": {
+                "count": 1,
+                "location": "top right",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver towel rack mounted on the wall."
+              },
+              "shower head": {
+                "count": 1,
+                "location": "top right",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver shower head attached to the wall."
+              },
+              "faucet": {
+                "count": 1,
+                "location": "bottom left",
+                "color": [
+                  "silver"
+                ],
+                "size": "small",
+                "description": "Silver faucet attached to the sink."
+              }
+            },
+            "natural": {
+              "plant": {
+                "count": 1,
+                "location": "top right",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Green plant placed on the edge of the bathtub."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 538,
+            "total_tokens": 1520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 15181.105674,
+            "prompt_eval_duration_ms": 102.070222,
+            "generation_duration_ms": 15031.531314,
+            "load_duration_ms": 44.720287,
+            "tokens_per_second": 35.791429945591766
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5448,
+        "total_time_ms": 38056.785965999996,
+        "average_speed": 35.91128964212827
+      }
+    }
+  ]
+}

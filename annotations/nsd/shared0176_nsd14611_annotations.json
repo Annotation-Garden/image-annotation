@@ -1,0 +1,891 @@
+{
+  "image": {
+    "path": "images/original/shared0176_nsd14611.png",
+    "name": "shared0176_nsd14611.png",
+    "id": "shared0176_nsd14611"
+  },
+  "timestamp": "2025-08-30T17:18:52.555742+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a moment of an Aeroflot aircraft in flight, prominently featuring the airline's branding in bold yellow and blue against the backdrop of a clear sky. The aircraft, a wide-body jet, is depicted in mid-flight, with its landing gear retracted, suggesting it is either ascending or descending. The fuselage is painted in a striking yellow with the name \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" (Aeroflot) written in Cyrillic script, and the website \"www.aeroflot.com\" is visible near the tail. The wings are a deep blue, complementing the yellow body, and the engines are a contrasting bright blue, adding to the vibrant color palette. The sky in the background is a soft gradient of light blue, indicating a daytime setting with ample natural light. The overall composition is dynamic, with the aircraft positioned slightly off-center, drawing the viewer's eye towards the horizon. The image is marked with a copyright notice in the bottom left corner, indicating it was taken by Christopher Chao in 2012. The clarity and sharpness of the image suggest it was taken from a distance with a telephoto lens, capturing the details of the aircraft against the vastness of the sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 251,
+            "total_tokens": 548
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1961.780275,
+            "prompt_eval_duration_ms": 79.730301,
+            "generation_duration_ms": 1842.509992,
+            "load_duration_ms": 37.725257,
+            "tokens_per_second": 136.22721238409434
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a large aircraft dominates the view, captured in mid-flight against a backdrop of a clear blue sky. The plane, painted in a striking blue and yellow livery with the name \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" prominently displayed on its fuselage, is the central focus, with its landing gear extended, suggesting it is either approaching for landing or has just taken off. The aircraft's engines, visible beneath the wings, add to the sense of motion and scale. The background, in contrast, is a simple, expansive sky, which serves to highlight the airplane and provides a serene, uncluttered setting that contrasts with the detailed and dynamic foreground. The relationship between the two layers is one of depth and perspective, with the foreground elements drawing the viewer's eye towards the distant horizon, creating a sense of vastness and movement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 176,
+            "total_tokens": 479
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1402.938093,
+            "prompt_eval_duration_ms": 31.055069,
+            "generation_duration_ms": 1331.781359,
+            "load_duration_ms": 37.887777,
+            "tokens_per_second": 132.1538245077659
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a moment of an Aeroflot aircraft in mid-flight, with the focus on the aircraft itself. There are no people or animals visible in the image. The aircraft, painted in the distinctive blue and yellow livery of Aeroflot, is the central object, with its landing gear extended, suggesting it is either taking off or preparing to land. The sky forms the backdrop, indicating the aircraft is in the upper atmosphere. The image does not depict any interaction between the aircraft and other elements, as it is a solitary shot of the plane against the sky. The photograph is credited to Christopher Chao, as indicated by the text in the bottom left corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 136,
+            "total_tokens": 442
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1087.036285,
+            "prompt_eval_duration_ms": 30.904319,
+            "generation_duration_ms": 1014.809035,
+            "load_duration_ms": 38.821935,
+            "tokens_per_second": 134.01536181632437
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of anticipation and excitement, primarily due to the sleek and powerful presence of the Aeroflot aircraft in mid-flight. The vibrant blue and yellow livery, along with the bold lettering, conveys a feeling of national pride and professionalism. The clear sky and the aircraft's smooth, aerodynamic design contribute to a positive and uplifting mood, suggesting a journey of discovery and adventure. The absence of any visible distress or turbulence further enhances the optimistic tone, making the viewer feel confident and eager for the journey ahead. The image's overall positive atmosphere is accentuated by the crispness of the photograph and the clarity of the details, which evoke a sense of trust and reliability in the airline.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 144,
+            "total_tokens": 452
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1161.504355,
+            "prompt_eval_duration_ms": 30.606541,
+            "generation_duration_ms": 1089.074542,
+            "load_duration_ms": 39.050305,
+            "tokens_per_second": 132.2223543445936
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"Aircraft in flight with visible landing gear extended\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"white\", \"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Cloudy sky with no visible features other than clouds\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "Aircraft in flight with visible landing gear extended"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "white",
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Cloudy sky with no visible features other than clouds"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 130,
+            "total_tokens": 616
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1042.136484,
+            "prompt_eval_duration_ms": 43.99191,
+            "generation_duration_ms": 957.97664,
+            "load_duration_ms": 37.874813,
+            "tokens_per_second": 135.70268268754444
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2537,
+        "total_time_ms": 6655.395492,
+        "average_speed": 134.06428714806452
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a commercial airplane in flight, captured from a side perspective against a backdrop of a clear, light blue sky with scattered, wispy clouds. The aircraft belongs to the Ukrainian airline \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" (AeroSvit), as indicated by the prominent Cyrillic text on its fuselage. The plane's livery features a striking color scheme of blue and yellow, with the word \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" written in bold blue letters on a yellow background, and \"\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u0410\u0437\u0456\u0457\" (Ukrainian Asia) in yellow on a blue background. The registration number \"UR-...\" is visible near the tail, though the full number is not entirely clear.\n\nThe aircraft appears to be a wide-body jet, likely a Boeing 777, characterized by its large engines mounted under the wings and its sleek, aerodynamic design. The wings are extended outward, with visible flaps and ailerons. The landing gear is deployed, suggesting the plane is either preparing for landing or has recently taken off. The lighting is natural, with soft sunlight illuminating the aircraft, creating subtle highlights and shadows that emphasize its contours. The overall composition is balanced, with the airplane positioned slightly off-center, allowing the expansive sky to dominate the background and provide a sense of openness and freedom. The image conveys a sense of travel and modern aviation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 290,
+            "total_tokens": 587
+          },
+          "performance_metrics": {
+            "total_duration_ms": 14381.789844,
+            "prompt_eval_duration_ms": 3573.629262,
+            "generation_duration_ms": 10766.488098,
+            "load_duration_ms": 39.025367,
+            "tokens_per_second": 26.93543125300727
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features a large commercial airplane in flight, painted in the distinctive blue and yellow livery of Ukraine International Airlines (AeroSvit). The aircraft, a Boeing 777, is shown from a side perspective, with its engines, wings, and landing gear clearly visible. The registration number and airline branding are visible on the fuselage, emphasizing the plane's identity and operational context. The foreground elements are sharp and detailed, drawing immediate attention to the aircraft's design and features.\n\nIn the background, the sky serves as the primary setting, appearing mostly clear with a soft gradient of light blue hues. The sky's vastness contrasts with the structured, mechanical form of the airplane, creating a sense of depth and scale. The lack of other visible elements in the background further emphasizes the airplane's prominence and isolates it within the scene. The subtle presence of faint clouds adds texture to the sky without detracting from the focus on the aircraft.\n\nThe relationship between the foreground and background is one of contrast and emphasis. The sharp, detailed airplane in the foreground stands out against the soft, expansive backdrop of the sky, highlighting the plane's movement and the vastness of the airspace. The clear sky provides a clean canvas that accentuates the airplane's colors and design, while the absence of additional elements ensures that the viewer's attention remains fixed on the aircraft. This composition effectively conveys the grandeur and isolation of air travel, with the airplane as the central subject against the infinite backdrop of the sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 307,
+            "total_tokens": 610
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11481.957656,
+            "prompt_eval_duration_ms": 74.934741,
+            "generation_duration_ms": 11367.427515,
+            "load_duration_ms": 37.450819,
+            "tokens_per_second": 27.00698989238288
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a commercial airplane in flight, specifically an aircraft operated by Ukraine International Airlines (Aeroflot Ukraine). The plane is a Boeing 777, identifiable by its twin engines, large wings, and distinctive fuselage design. The aircraft's livery features a vibrant color scheme with a blue and yellow gradient, along with the airline's logo and name prominently displayed on the fuselage. The plane is captured mid-flight against a backdrop of a clear sky, suggesting it is cruising at a high altitude.\n\nThere are no visible people or animals in the image, as the photograph focuses solely on the aircraft. The plane's landing gear is extended, indicating it is either preparing for landing or has recently taken off. The engines are visible, and the wings are spread wide, showcasing the aircraft's aerodynamic design. The interaction between the elements in the image is primarily mechanical and structural, with the wings providing lift, the engines generating thrust, and the landing gear ensuring stability during takeoff or landing. The overall composition emphasizes the engineering and design of the aircraft, highlighting its role in air travel and transportation. The image does not depict any human interaction or animal presence, focusing instead on the technical and aesthetic aspects of the aircraft.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 248,
+            "total_tokens": 554
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9329.784764,
+            "prompt_eval_duration_ms": 78.603348,
+            "generation_duration_ms": 9211.5992,
+            "load_duration_ms": 37.553448,
+            "tokens_per_second": 26.922578220728493
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a commercial airplane in flight, painted in the vibrant livery of Ukraine International Airlines, featuring a striking combination of blue and gold colors. The mood conveyed by this image is predominantly neutral to slightly positive, evoking a sense of calmness and routine associated with air travel. The clear blue sky in the background contributes to a serene and open atmosphere, suggesting a smooth and uneventful flight. The airplane's sleek design and polished appearance further enhance the impression of reliability and professionalism, which can instill confidence in viewers.\n\nThe bright colors of the aircraft, particularly the bold blue and gold, add a touch of optimism and energy, subtly elevating the mood from neutral to slightly positive. These colors are often associated with strength, stability, and prosperity, which align with the airline's branding and the general perception of travel as an exciting or hopeful experience. The image does not contain any elements that suggest urgency, distress, or negativity, such as stormy weather or signs of mechanical issues. Instead, the overall tone is one of calm efficiency, reflecting the routine nature of air travel and the trust placed in modern aviation technology. The image effectively captures the essence of a typical flight, evoking feelings of anticipation, safety, and the promise of reaching a destination.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 254,
+            "total_tokens": 562
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9581.950038,
+            "prompt_eval_duration_ms": 74.361666,
+            "generation_duration_ms": 9466.277001,
+            "load_duration_ms": 38.844253,
+            "tokens_per_second": 26.83209037440674
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"A commercial airplane in flight, featuring the branding of 'Aeroflot' and 'Ukrainian Air'.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"A clear sky with some scattered clouds.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "A commercial airplane in flight, featuring the branding of 'Aeroflot' and 'Ukrainian Air'."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue",
+                  "white"
+                ],
+                "size": "large",
+                "description": "A clear sky with some scattered clouds."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 142,
+            "total_tokens": 628
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5425.606721,
+            "prompt_eval_duration_ms": 135.969856,
+            "generation_duration_ms": 5247.138801,
+            "load_duration_ms": 39.826509,
+            "tokens_per_second": 27.06236777516494
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2941,
+        "total_time_ms": 50201.08902300001,
+        "average_speed": 26.951891503138064
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a commercial airliner, specifically a Boeing 737, in mid-flight against a bright, slightly overcast sky. The aircraft, belonging to Ukraine International Airlines (AeroSvit), dominates the frame, positioned roughly in the center. Its fuselage is predominantly a vibrant yellow, accented by large, deep blue engine nacelles and a blue tail fin. The airline\u2019s logo, \u201cAeroSvit,\u201d is prominently displayed on the fuselage. The aircraft is in motion, creating a blurred streak across the sky, suggesting speed. \n\nThe lighting is bright and diffused, typical of a partly cloudy day, casting subtle shadows on the aircraft\u2019s surface. The composition is dynamic, emphasizing the plane's movement. The background is a pale blue, providing a clean and uncluttered backdrop that highlights the aircraft. The overall impression is one of travel and flight, with a strong focus on the sleek design of the airliner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 201,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1607.75379,
+            "prompt_eval_duration_ms": 308.320859,
+            "generation_duration_ms": 1210.53909,
+            "load_duration_ms": 87.058176,
+            "tokens_per_second": 166.04172608750702
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's elements, as requested:\n\nThe foreground is dominated by a Boeing 737 aircraft, specifically an Aerocivil Ukrainian Airlines plane, captured in mid-flight. The aircraft\u2019s fuselage is a striking combination of bright yellow and deep blue, with the airline\u2019s logo prominently displayed. The wings are a lighter shade of blue, and the engines are a dark, glossy blue. The plane appears to be descending, with its landing gear extended. \n\nThe background is a vast expanse of pale, overcast sky, suggesting a cloudy day. There are no other discernible features in the distance, creating a sense of depth and emphasizing the scale of the aircraft. The sky\u2019s muted tones provide a neutral backdrop, allowing the vibrant colors of the plane to stand out. The composition effectively isolates the aircraft, drawing the viewer's attention to its movement and the details of its design, while the sky serves as a simple, yet effective, setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 202,
+            "total_tokens": 520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1345.534856,
+            "prompt_eval_duration_ms": 55.723138,
+            "generation_duration_ms": 1202.782528,
+            "load_duration_ms": 85.097901,
+            "tokens_per_second": 167.943909474548
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph, focusing on actions, relationships, and connections:\n\nThe image captures a Boeing 737 aircraft, painted in the vibrant colors of Ukraine International Airlines (AeroSvit). The plane is in mid-flight, soaring through a clear, pale blue sky, suggesting a journey across vast distances. The aircraft\u2019s prominent blue engine nacelles are positioned prominently, while the fuselage is adorned with the airline\u2019s logo and the words \u201cUkraine International Airlines.\u201d The plane is actively moving through the air, propelled by the powerful thrust of its engines. The interaction between the aircraft and the sky is one of movement and elevation, a classic representation of aviation. The relationship between the plane and the sky is one of dynamic interaction, showcasing the plane\u2019s ability to overcome gravity and travel through the atmosphere. The image effectively communicates the essence of flight and the airline\u2019s presence in the global aviation landscape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 194,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1307.79553,
+            "prompt_eval_duration_ms": 53.193243,
+            "generation_duration_ms": 1166.63243,
+            "load_duration_ms": 86.215158,
+            "tokens_per_second": 166.29059420198016
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of approximately 200 words:\n\nThe image evokes a sense of awe and perhaps a touch of apprehension, primarily due to the sheer scale of the aircraft dominating the frame. The bright yellow and blue livery of the \u201cAeroSvit\u201d Ukrainian airline creates a bold, optimistic visual, suggesting travel and connection. However, the aircraft\u2019s immense size and its position in the sky \u2013 a powerful, distant object \u2013 also subtly introduce a feeling of vulnerability and the vastness of the world. The blurred background emphasizes the aircraft's speed and movement, contributing to a dynamic, slightly unsettling feeling. \n\nThe clean lines and modern design of the plane contribute to a sense of technological advancement and efficiency, yet the distance and the implied motion create a feeling of detachment. The overall tone is predominantly neutral, leaning slightly towards positive due to the vibrant colors, but the visual elements subtly hint at the complexities and potential uncertainties associated with air travel. It\u2019s a powerful image that captures both the excitement and the inherent drama of flight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 228,
+            "total_tokens": 552
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1512.816953,
+            "prompt_eval_duration_ms": 53.85894,
+            "generation_duration_ms": 1370.222967,
+            "load_duration_ms": 86.773957,
+            "tokens_per_second": 166.3962767309242
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"\"\n    }\n  },\n  \"animal\": {\n    \"engine\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Jet engines of the aircraft\"\n    }\n  },\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Boeing 737-800 aircraft of Aerobalt, Ukrainian airline\"\n    },\n    \"tail_fin\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"The tail fin of the aircraft\"\n    },\n    \"wings\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"The wings of the aircraft\"\n    },\n    \"landing_gear\": {\n      \"count\": 4,\n      \"location\": \"bottom\",\n      \"color\": [\"gray\"],\n      \"size\": \"small\",\n      \"description\": \"Landing gear of the aircraft\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": ""
+              }
+            },
+            "animal": {
+              "engine": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Jet engines of the aircraft"
+              }
+            },
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Boeing 737-800 aircraft of Aerobalt, Ukrainian airline"
+              },
+              "tail_fin": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "blue",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "The tail fin of the aircraft"
+              },
+              "wings": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "The wings of the aircraft"
+              },
+              "landing_gear": {
+                "count": 4,
+                "location": "bottom",
+                "color": [
+                  "gray"
+                ],
+                "size": "small",
+                "description": "Landing gear of the aircraft"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 435,
+            "total_tokens": 953
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2756.432299,
+            "prompt_eval_duration_ms": 65.010749,
+            "generation_duration_ms": 2606.095289,
+            "load_duration_ms": 83.452675,
+            "tokens_per_second": 166.9163832328312
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3054,
+        "total_time_ms": 8530.333428,
+        "average_speed": 166.7177779455581
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a Boeing 737 aircraft in mid-flight against a backdrop of a clear, pale blue sky. The plane is prominently featured, angled slightly to the left, showcasing its distinctive livery. The fuselage is a vibrant blue, accented by a broad, horizontal band of bright yellow that runs along the body. \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" (Aerostat) is written in bold, white lettering along the yellow band, indicating the airline. The aircraft's engines are visible beneath the wings, appearing dark and powerful. The landing gear is extended, suggesting a landing approach. The lighting is even, with no harsh shadows, indicating a bright, overcast day. The composition is well-balanced, with the aircraft taking up a significant portion of the frame, emphasizing its size and presence. The overall impression is one of a dynamic and colorful aviation scene. The watermark \"Christopher Chau \u00a9 2012\" is visible in the lower-left corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 205,
+            "total_tokens": 518
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3055.131544,
+            "prompt_eval_duration_ms": 339.715455,
+            "generation_duration_ms": 2624.860513,
+            "load_duration_ms": 88.753778,
+            "tokens_per_second": 78.09938813308668
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a large commercial airplane, specifically a Boeing 737, in mid-flight. The aircraft is painted in a striking blue and yellow livery, prominently displaying the \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" (Aerostat) logo along its fuselage. The plane is angled slightly, showcasing its wings and engines, and appears to be in the process of landing or taking off, with its landing gear partially extended. The bright yellow accents contrast sharply against the blue, making the aircraft visually arresting. The background consists entirely of a pale, overcast sky, providing a uniform and somewhat muted backdrop. This lack of detail in the background emphasizes the plane as the primary subject, isolating it against the sky and creating a sense of depth. The relationship between the foreground and background is one of stark contrast, with the vibrant aircraft standing out against the plain sky, drawing the viewer's attention directly to the plane.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 199,
+            "total_tokens": 517
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2723.497299,
+            "prompt_eval_duration_ms": 64.508019,
+            "generation_duration_ms": 2571.371316,
+            "load_duration_ms": 85.778701,
+            "tokens_per_second": 77.3906120682572
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe image captures a Boeing 737 airplane, specifically an Aeroflot-Ukraine aircraft, in mid-flight against a backdrop of a clear, pale blue sky. The plane is angled slightly, showcasing its distinctive blue and yellow livery, with the \"Aeroflot-Ukraine\" logo prominently displayed. The aircraft appears to be descending, its landing gear deployed and touching down, suggesting an imminent landing. The powerful engines are visible, hinting at the thrust propelling the plane forward. The aircraft is the sole focus of the image, dominating the frame and conveying a sense of motion and travel. The clear sky provides a neutral background, emphasizing the plane's vibrant colors and highlighting its presence in the vastness of the atmosphere. The image captures a moment of transition, the plane moving from the air to the ground, symbolizing a journey's end.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 188,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2576.194988,
+            "prompt_eval_duration_ms": 66.439261,
+            "generation_duration_ms": 2419.703853,
+            "load_duration_ms": 88.214796,
+            "tokens_per_second": 77.69545837888947
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of awe and perhaps a touch of melancholy. The airplane, an Aeroflot aircraft, is captured mid-flight against a vast, pale sky, suggesting a journey and a feeling of expansive possibility. The bright yellow and blue livery is striking, conveying a sense of vibrancy and national pride, yet the aircraft's position \u2013 seemingly in a moment of transition \u2013 hints at a fleeting nature. The overall tone is largely positive, celebrating the marvel of aviation and the promise of travel, but there's an underlying feeling of transience, a reminder that moments pass quickly. The vastness of the sky emphasizes the smallness of the aircraft and, by extension, the individual, fostering a contemplative mood. The crispness of the image and the clear visibility of the plane's details contribute to a feeling of clarity and precision, while the slight angle of the aircraft adds a dynamic element, suggesting movement and momentum.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 188,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2577.326923,
+            "prompt_eval_duration_ms": 72.768481,
+            "generation_duration_ms": 2416.724516,
+            "load_duration_ms": 85.866422,
+            "tokens_per_second": 77.791241308366
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"item\": \"airplane\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"Boeing 737, Aerocvit livery, in flight, landing gear deployed\"\n    },\n    {\n      \"item\": \"text\",\n      \"count\": 1,\n      \"location\": \"top-left\",\n      \"color\": [\"yellow\"],\n      \"size\": \"small\",\n      \"description\": \"Aerocvit logo on the airplane\"\n    },\n    {\n      \"item\": \"text\",\n      \"count\": 1,\n      \"location\": \"bottom-right\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"Website address on the airplane\"\n    },\n    {\n      \"item\": \"text\",\n      \"count\": 1,\n      \"location\": \"top-center\",\n      \"color\": [\"blue\"],\n      \"size\": \"small\",\n      \"description\": \"Ukrainian Aerocvit text on the airplane\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"sky\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Cloudy sky\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "item": "airplane",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "Boeing 737, Aerocvit livery, in flight, landing gear deployed"
+              },
+              {
+                "item": "text",
+                "count": 1,
+                "location": "top-left",
+                "color": [
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Aerocvit logo on the airplane"
+              },
+              {
+                "item": "text",
+                "count": 1,
+                "location": "bottom-right",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "Website address on the airplane"
+              },
+              {
+                "item": "text",
+                "count": 1,
+                "location": "top-center",
+                "color": [
+                  "blue"
+                ],
+                "size": "small",
+                "description": "Ukrainian Aerocvit text on the airplane"
+              }
+            ],
+            "natural": [
+              {
+                "item": "sky",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Cloudy sky"
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 336,
+            "total_tokens": 854
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4527.899475,
+            "prompt_eval_duration_ms": 91.197043,
+            "generation_duration_ms": 4346.620678,
+            "load_duration_ms": 88.335951,
+            "tokens_per_second": 77.3014313626748
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2910,
+        "total_time_ms": 15460.050229000002,
+        "average_speed": 77.65562625025483
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a side view of an AeroSvit Boeing 767 aircraft in flight, likely during takeoff or landing. The plane dominates the frame, showcasing its vibrant color scheme of a bright yellow fuselage contrasting with a deep blue upper section and tail. The aircraft\u2019s engines are visible, with their dark interiors providing a strong contrast. The underside of the wings and the landing gear are also visible, suggesting a low altitude. \n\nThe setting appears to be an open sky with a pale, slightly overcast background. The lighting is bright and even, illuminating the aircraft\u2019s details without harsh shadows. The composition is dynamic, with the plane angled slightly, conveying a sense of movement. Text on the plane includes the airline name \"AeroSvit\" and \"\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u0410\u0432\u0456\u0430\u043b\u0456\u043d\u0456\u0457\" (Ukrainian Airlines), along with its website address. A watermark with the photographer's name and year (Christopher Chau \u00a9 2012) is visible in the lower left corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 213,
+            "total_tokens": 526
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5556.273687,
+            "prompt_eval_duration_ms": 397.876003,
+            "generation_duration_ms": 5070.049151,
+            "load_duration_ms": 86.634866,
+            "tokens_per_second": 42.011427040700106
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by the underside of a bright yellow and blue airplane, identified as AeroSvit by the prominent lettering on its fuselage. The plane is captured mid-flight, with its landing gear extended, suggesting it's either taking off or landing. Details like the two large engine nacelles and the wing flaps are clearly visible. The background is a pale, overcast sky, appearing almost white. There are no distinct features in the sky, creating a simple, uncluttered backdrop that emphasizes the aircraft. \n\nThe relationship between the layers is one of focus and context. The vibrant colors and detailed form of the plane immediately draw the viewer's attention, while the muted sky provides a neutral space that allows the aircraft to stand out. The plane is the clear subject, and the sky serves as a setting that indicates its airborne environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 186,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4600.359048,
+            "prompt_eval_duration_ms": 81.443616,
+            "generation_duration_ms": 4430.581945,
+            "load_duration_ms": 86.683183,
+            "tokens_per_second": 41.98094117408317
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe primary subject of the image is a large passenger airplane, specifically a Boeing 737, belonging to AeroSvit, a Ukrainian airline, as indicated by the prominent branding on its fuselage. The aircraft is in mid-flight, captured from a low angle, suggesting it's either taking off or landing. Its landing gear is extended, with the wheels visible beneath the body. The plane's engines are running, indicated by the slight blur and the exhaust visible beneath them. The aircraft is positioned against a pale, overcast sky, creating a sense of movement and altitude. There are no visible people or animals in the frame, and the interaction is solely between the aircraft and the environment\u2014the plane is navigating through the air, utilizing its engines and aerodynamic design to maintain flight. The image captures a moment of dynamic action, showcasing the power and scale of modern aviation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 193,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4753.480166,
+            "prompt_eval_duration_ms": 88.164042,
+            "generation_duration_ms": 4574.622223,
+            "load_duration_ms": 87.463286,
+            "tokens_per_second": 42.18927609577172
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of dynamism and aspiration. The airplane, captured mid-flight with its landing gear extended, suggests movement, travel, and the potential for new experiences. The bright, bold color scheme of blue and yellow on the aircraft creates a cheerful and optimistic tone. The clear, bright sky further enhances this positive feeling, suggesting clear skies ahead. While the landing gear being down implies a moment of transition\u2014either landing or taking off\u2014it doesn't convey any sense of tension or danger. Instead, it feels like a controlled and confident maneuver. The overall mood is therefore positive and uplifting, hinting at the excitement of flight and the possibilities of reaching a destination. The image feels hopeful and energetic, celebrating the freedom and adventure associated with air travel.\n\n\n\n",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 170,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4221.073885,
+            "prompt_eval_duration_ms": 91.562437,
+            "generation_duration_ms": 4038.37822,
+            "load_duration_ms": 89.139606,
+            "tokens_per_second": 42.09610659003604
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"AeroSvit branded Boeing 737 aircraft in flight with landing gear extended.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Pale blue sky, providing the backdrop for the aircraft.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "AeroSvit branded Boeing 737 aircraft in flight with landing gear extended."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Pale blue sky, providing the backdrop for the aircraft."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 147,
+            "total_tokens": 665
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3686.751484,
+            "prompt_eval_duration_ms": 140.721824,
+            "generation_duration_ms": 3453.953328,
+            "load_duration_ms": 90.004376,
+            "tokens_per_second": 42.55992656540031
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2703,
+        "total_time_ms": 22817.93827,
+        "average_speed": 42.167535493198265
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures an airplane in mid-flight against a backdrop of a cloudy sky. The aircraft, painted in vibrant hues of blue and yellow, prominently displays the text \"\u0410\u0435\u0440o\u0421\u0438\u0442\" on its fuselage, indicating it is likely associated with AeroSvit, a Ukrainian airline. The plane's landing gear is extended, suggesting it is either approaching for landing or has recently taken off. The wingspan is wide, and the engines are clearly visible, adding to the sense of motion and dynamism in the scene. The lighting appears natural, likely from daylight, casting soft shadows and highlighting the bright colors of the plane. The overall composition is balanced, with the airplane centrally positioned, drawing the viewer's attention to its details and the intricate design on its body. The cloudy sky provides a neutral background, ensuring the airplane remains the focal point of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 175,
+            "total_tokens": 967
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7042.738174,
+            "prompt_eval_duration_ms": 2094.967858,
+            "generation_duration_ms": 4900.596528,
+            "load_duration_ms": 44.315771,
+            "tokens_per_second": 35.70993837181284
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the most prominent element is an airplane, specifically a large commercial jet, which appears to be in the process of landing or taking off. The airplane is painted in a striking blue and yellow color scheme, with the name \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" (AeroSvit) prominently displayed on its fuselage. The landing gear is extended, indicating that the plane is close to the ground. The foreground is dominated by the detailed view of the aircraft's engines, wings, and landing gear, providing a clear and close-up perspective of the plane.\n\nIn the background, the setting is a cloudy sky, which serves as a neutral backdrop that contrasts with the vibrant colors of the airplane. The clouds are scattered, suggesting a partly cloudy day. The background elements are relatively simple, with the sky providing a sense of depth and space, emphasizing the airplane as the main subject of the image. The relationship between the foreground and background elements is one of contrast and focus; the detailed and colorful airplane in the foreground draws the viewer's attention, while the expansive and relatively featureless sky in the background provides context and a sense of scale.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 235,
+            "total_tokens": 1033
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6642.364406,
+            "prompt_eval_duration_ms": 55.424132,
+            "generation_duration_ms": 6538.851294,
+            "load_duration_ms": 45.118237,
+            "tokens_per_second": 35.939034156600904
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image prominently features an airplane, specifically a large commercial jet, in mid-flight. The aircraft, painted in a distinctive blue and yellow livery with the text \"\u0410\u0435\u0440\u043e\u0421\u0432\u0456\u0442\" (AeroSvit) visible on its fuselage, is captured from a side view with its landing gear extended, indicating it is either approaching for landing or has just taken off. The sky in the background is mostly clear with a few scattered clouds, providing a serene backdrop for the airplane. There are no visible people, animals, or other objects in the image. The primary focus is on the airplane itself, showcasing its sleek design and vibrant colors against the sky. The absence of other elements emphasizes the solitary journey of the aircraft, highlighting its prominence and the sense of motion within the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 161,
+            "total_tokens": 961
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4578.810234,
+            "prompt_eval_duration_ms": 54.651872,
+            "generation_duration_ms": 4474.507362,
+            "load_duration_ms": 46.643835,
+            "tokens_per_second": 35.98161472865178
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the airplane in flight conveys a mood of excitement and anticipation, evoking feelings of adventure and freedom. The overall tone is positive, largely due to the vibrant blue and yellow colors of the aircraft, which are often associated with energy and optimism. The clear sky in the background adds to this uplifting atmosphere, suggesting smooth sailing and a sense of openness. The airplane itself, captured mid-flight, symbolizes movement and progress, which can inspire a sense of possibility and exploration. The perspective of the image, looking up at the plane, enhances the feeling of aspiration and reaching for the skies. The bright, natural lighting further contributes to the cheerful and dynamic mood, making the scene feel fresh and invigorating. Overall, the image exudes a sense of joy and the promise of new experiences, making it visually uplifting and emotionally engaging.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 172,
+            "total_tokens": 975
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4891.897645,
+            "prompt_eval_duration_ms": 58.271678,
+            "generation_duration_ms": 4787.144706,
+            "load_duration_ms": 44.05276,
+            "tokens_per_second": 35.92955938524746
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"airplane\": {\n      \"count\": 1,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"A commercial airplane in flight with landing gear extended.\"\n    },\n    \"engine\": {\n      \"count\": 2,\n      \"location\": \"left and right sides of the airplane, middle, foreground\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Two jet engines attached to the wings of the airplane.\"\n    },\n    \"wing\": {\n      \"count\": 2,\n      \"location\": \"left and right sides of the airplane, middle, foreground\",\n      \"color\": [\"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"Wings of the airplane with distinctive blue and yellow colors.\"\n    },\n    \"text\": {\n      \"count\": 2,\n      \"location\": \"left and right sides of the airplane, middle, foreground\",\n      \"color\": [\"yellow\"],\n      \"size\": \"small\",\n      \"description\": \"Text written in yellow on the wings of the airplane.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"description\": \"Cloudy sky in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "airplane": {
+                "count": 1,
+                "location": "center, middle, foreground",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "A commercial airplane in flight with landing gear extended."
+              },
+              "engine": {
+                "count": 2,
+                "location": "left and right sides of the airplane, middle, foreground",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Two jet engines attached to the wings of the airplane."
+              },
+              "wing": {
+                "count": 2,
+                "location": "left and right sides of the airplane, middle, foreground",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "Wings of the airplane with distinctive blue and yellow colors."
+              },
+              "text": {
+                "count": 2,
+                "location": "left and right sides of the airplane, middle, foreground",
+                "color": [
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Text written in yellow on the wings of the airplane."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "description": "Cloudy sky in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 300,
+            "total_tokens": 1282
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8507.591819,
+            "prompt_eval_duration_ms": 105.250947,
+            "generation_duration_ms": 8354.27934,
+            "load_duration_ms": 45.289088,
+            "tokens_per_second": 35.90974012128256
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5218,
+        "total_time_ms": 31663.402278,
+        "average_speed": 35.893977352719105
+      }
+    }
+  ]
+}

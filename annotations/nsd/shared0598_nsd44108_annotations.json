@@ -1,0 +1,1090 @@
+{
+  "image": {
+    "path": "images/original/shared0598_nsd44108.png",
+    "name": "shared0598_nsd44108.png",
+    "id": "shared0598_nsd44108"
+  },
+  "timestamp": "2025-08-30T21:12:05.961582+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a tender moment indoors, likely in a home setting, with a man and a dog as the central focus. The man, dressed in a white t-shirt and khaki shorts, is bending slightly forward, extending his right hand towards the dog's mouth. The dog, a medium-sized breed with a light brown and white coat, sits attentively on the floor, its head tilted upwards, eagerly anticipating the treat. The backdrop features a wooden cabinet with a reddish-brown hue, and a small section of a maroon wall, adding a warm and cozy ambiance to the scene. The lighting is soft and natural, suggesting the photo was taken during the day with ambient light filtering in, possibly from a nearby window. The overall composition is simple yet intimate, emphasizing the bond between the man and his pet. The colors are muted and earthy, with the reds and browns of the furniture and wall complementing the dog's fur and the man's attire, creating a harmonious and inviting visual.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 206,
+            "total_tokens": 503
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1662.541933,
+            "prompt_eval_duration_ms": 81.540071,
+            "generation_duration_ms": 1538.834124,
+            "load_duration_ms": 39.761677,
+            "tokens_per_second": 133.86757986918673
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, a man in a white t-shirt and khaki shorts is interacting with a dog. The man is bending slightly forward, extending his right hand towards the dog, who is attentively looking up at him. The dog, wearing a collar, appears to be in a domestic setting, possibly a home, as suggested by the wooden furniture and the maroon wall in the background. The background elements include a wooden cabinet with various items on top, such as a box and some fruit, which further reinforces the domestic environment. The maroon wall provides a vibrant backdrop that contrasts with the lighter tones of the man's clothing and the dog's fur. The relationship between the foreground and background is one of depth and perspective, with the man and dog in the foreground creating a sense of intimacy and interaction, while the background elements provide context and a sense of space within the room.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 178,
+            "total_tokens": 481
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1403.78778,
+            "prompt_eval_duration_ms": 30.625543,
+            "generation_duration_ms": 1332.427342,
+            "load_duration_ms": 38.324694,
+            "tokens_per_second": 133.59077406263555
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a man and a dog are the central figures, engaging in a tender interaction. The man, dressed in a white t-shirt and khaki shorts, is bending slightly towards the dog, offering a treat with his right hand. The dog, a medium-sized breed with a light brown and white coat, attentively looks up at the man, its mouth slightly open as if anticipating the treat. The setting appears to be a domestic interior, with a wooden cabinet and a bright pink wall in the background. On the cabinet, there are a few items, including a box of tissues and a plastic bag, suggesting a lived-in space. The man's posture and the dog's focused gaze indicate a bond of trust and mutual understanding, highlighting a moment of connection between human and animal. The overall scene portrays a simple yet meaningful interaction, emphasizing the positive relationship between the two.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 178,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1390.79594,
+            "prompt_eval_duration_ms": 31.40601,
+            "generation_duration_ms": 1318.453642,
+            "load_duration_ms": 38.701636,
+            "tokens_per_second": 135.00664288050865
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of warmth and affection, suggesting a positive and emotionally uplifting mood. The man's gentle gesture of offering a treat to the dog conveys a nurturing and caring attitude, highlighting a bond of trust and companionship between the two. The dog's attentive posture and the man's focused expression suggest a moment of mutual engagement and understanding, further enhancing the positive emotional atmosphere. The vibrant magenta wall in the background adds a touch of vibrancy and liveliness to the scene, complementing the overall positive tone. The wooden furniture and the casual attire of the man contribute to a relaxed and homely setting, reinforcing the sense of comfort and intimacy that the image conveys. The interaction between the man and the dog, combined with the warm colors and the cozy environment, collectively create an atmosphere of happiness and contentment, making the image feel like a snapshot of a cherished moment of connection and joy.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 184,
+            "total_tokens": 492
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1417.528443,
+            "prompt_eval_duration_ms": 30.47643,
+            "generation_duration_ms": 1346.975858,
+            "load_duration_ms": 37.907376,
+            "tokens_per_second": 136.60229981642328
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\", \"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"man wearing a white t-shirt and beige shorts, interacting with a dog\"\n    }\n  },\n  \"animal\": {\n    \"dog\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"white\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"sitting dog with a collar, looking up at the man\"\n    }\n  },\n  \"man-made\": {\n    \"cabinet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"wooden cabinet with items on top\"\n    },\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"purple\"],\n      \"size\": \"large\",\n      \"description\": \"solid purple wall\"\n    },\n    \"light switch\": {\n      \"count\": 1,\n      \"location\": \"center-top\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"light switch on the wall\"\n    },\n    \"items on cabinet\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"blue\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"various items on the cabinet, including a red box and a blue bag\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white",
+                  "beige"
+                ],
+                "size": "medium",
+                "description": "man wearing a white t-shirt and beige shorts, interacting with a dog"
+              }
+            },
+            "animal": {
+              "dog": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "white",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "sitting dog with a collar, looking up at the man"
+              }
+            },
+            "man-made": {
+              "cabinet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "wooden cabinet with items on top"
+              },
+              "wall": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "purple"
+                ],
+                "size": "large",
+                "description": "solid purple wall"
+              },
+              "light switch": {
+                "count": 1,
+                "location": "center-top",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "light switch on the wall"
+              },
+              "items on cabinet": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "red",
+                  "blue",
+                  "black"
+                ],
+                "size": "small",
+                "description": "various items on the cabinet, including a red box and a blue bag"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 349,
+            "total_tokens": 835
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2609.91732,
+            "prompt_eval_duration_ms": 45.399099,
+            "generation_duration_ms": 2524.19759,
+            "load_duration_ms": 37.947842,
+            "tokens_per_second": 138.2617594528327
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2795,
+        "total_time_ms": 8484.571416,
+        "average_speed": 135.46581121631738
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a casual indoor scene featuring a man and a dog interacting in a cozy, domestic setting. The man, dressed in a light pink T-shirt and beige shorts, is bending down to feed or pet a Siberian Husky. The dog, with its distinctive white and gray fur, black nose, and alert expression, is looking up at the man, appearing eager and engaged. The background consists of a wooden cabinet with a warm, natural tone, which holds various items, including a bag of oranges, a box, and other miscellaneous objects. The wall behind them is painted a vibrant magenta, adding a bold splash of color to the otherwise neutral tones of the room. The lighting is soft and warm, suggesting an indoor environment with artificial light, possibly from a ceiling fixture, which casts gentle shadows and highlights the textures of the wood and the fur of the dog. The overall composition is intimate and focused, with the interaction between the man and the dog being the central point of interest. The setting feels lived-in and personal, emphasizing a sense of companionship and everyday life. The magenta wall adds a playful and slightly unconventional element to the otherwise traditional and warm tones of the room.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 241,
+            "total_tokens": 538
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12560.224614,
+            "prompt_eval_duration_ms": 3502.605004,
+            "generation_duration_ms": 9015.244005,
+            "load_duration_ms": 38.907345,
+            "tokens_per_second": 26.732498850429064
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the most prominent elements are a man and a husky dog interacting closely. The man, dressed in a light pink T-shirt and beige shorts, is bending down to feed or pet the dog, which is sitting on the floor. The husky, with its distinctive white and gray fur and erect ears, is looking up at the man, creating a sense of connection and affection between them. This interaction is the focal point of the image, drawing the viewer's attention to the bond between the human and the animal.\n\nIn the background, the setting appears to be a domestic interior, likely a kitchen or dining area. A wooden cabinet is visible, with various items on top, including a box of tea, a bag of oranges, and other miscellaneous objects. The wall behind the cabinet is painted a vibrant magenta color, adding a bold and warm tone to the scene. A light switch is also visible on the wall, further emphasizing the indoor environment. The background elements, while less detailed, provide context for the interaction in the foreground, suggesting a casual, everyday moment in a home setting. The man and the dog are positioned in front of the cabinet, creating a clear visual hierarchy where the foreground interaction is the primary subject, while the background elements serve to ground the scene in a recognizable domestic space. The overall composition effectively combines the intimate moment in the foreground with the familiar setting in the background, creating a cohesive and relatable image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 295,
+            "total_tokens": 598
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11084.975178,
+            "prompt_eval_duration_ms": 72.554029,
+            "generation_duration_ms": 10971.665241,
+            "load_duration_ms": 38.56864,
+            "tokens_per_second": 26.887440832373823
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a man and a dog interacting in a domestic setting. The man, dressed casually in a white t-shirt and light-colored shorts, is bending down to feed or pet the dog. He appears to be holding something in his hand, possibly a treat or a small object, which he is offering to the dog. The dog, a Siberian Husky with distinctive black and white fur, is attentively looking up at the man, seemingly focused on what he is offering. The dog's posture suggests anticipation or curiosity, indicating a positive and engaged interaction.\n\nThe setting is a room with a wooden cabinet in the background, which contains various items, including a box of tea and some fruits. The wall is painted a vibrant magenta color, adding a warm and lively atmosphere to the scene. The interaction between the man and the dog is gentle and affectionate, highlighting a bond of trust and companionship. The man's posture and the dog's attentive gaze suggest a mutual understanding and a shared moment of connection. The overall scene conveys a sense of warmth and domestic harmony, emphasizing the relationship between the human and the animal. The objects in the background, such as the tea box and fruits, add context to the setting, suggesting a home environment where daily life unfolds. The interaction is simple yet meaningful, showcasing the bond between a pet owner and their dog.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 275,
+            "total_tokens": 581
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10358.131651,
+            "prompt_eval_duration_ms": 76.625076,
+            "generation_duration_ms": 10237.110456,
+            "load_duration_ms": 40.897172,
+            "tokens_per_second": 26.863049019737957
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a warm, affectionate, and positive mood, evoking feelings of companionship, trust, and mutual understanding between the man and the dog. The man is leaning forward, extending his hand toward the dog, which is sitting calmly and attentively, looking up at him. This posture suggests a gentle interaction, possibly a moment of bonding or play. The dog's relaxed demeanor and the man's focused expression indicate a sense of comfort and familiarity between them. The setting, with its cozy wooden cabinet and vibrant red wall, adds a homely and inviting atmosphere, further enhancing the warmth of the scene. The casual attire of the man, including a simple white shirt and light-colored shorts, contributes to the informal and relaxed tone. The overall composition, with the man and dog as the central focus, emphasizes their connection, making the image feel intimate and heartwarming. The lack of any harsh or tense elements in the scene ensures that the mood remains positive and uplifting, highlighting the joy and simplicity of human-animal relationships.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 209,
+            "total_tokens": 517
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7898.368366,
+            "prompt_eval_duration_ms": 77.523613,
+            "generation_duration_ms": 7781.434064,
+            "load_duration_ms": 36.832277,
+            "tokens_per_second": 26.858802411102715
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"white\", \"tan\"],\n      \"size\": \"medium\",\n      \"description\": \"A man wearing a white t-shirt and beige shorts, interacting with a dog.\"\n    }\n  },\n  \"animal\": {\n    \"dog\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A husky-like dog wearing a collar, interacting with a person.\"\n    }\n  },\n  \"man-made\": {\n    \"cabinet\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A wooden cabinet with shelves containing various items.\"\n    },\n    \"box\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"small\",\n      \"description\": \"A black box with white text on the cabinet.\"\n    },\n    \"bag\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"blue\"],\n      \"size\": \"small\",\n      \"description\": \"A blue plastic bag on the cabinet.\"\n    },\n    \"fruits\": {\n      \"count\": 1,\n      \"location\": \"left, middle\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"A pile of red fruits (possibly apples) on the cabinet.\"\n    },\n    \"switch\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"A light switch on the wall.\"\n    },\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"pink\"],\n      \"size\": \"large\",\n      \"description\": \"A solid pink wall.\"\n    }\n  },\n  \"natural\": {}\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "white",
+                  "tan"
+                ],
+                "size": "medium",
+                "description": "A man wearing a white t-shirt and beige shorts, interacting with a dog."
+              }
+            },
+            "animal": {
+              "dog": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A husky-like dog wearing a collar, interacting with a person."
+              }
+            },
+            "man-made": {
+              "cabinet": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A wooden cabinet with shelves containing various items."
+              },
+              "box": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "small",
+                "description": "A black box with white text on the cabinet."
+              },
+              "bag": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "blue"
+                ],
+                "size": "small",
+                "description": "A blue plastic bag on the cabinet."
+              },
+              "fruits": {
+                "count": 1,
+                "location": "left, middle",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "A pile of red fruits (possibly apples) on the cabinet."
+              },
+              "switch": {
+                "count": 1,
+                "location": "center, top",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "A light switch on the wall."
+              },
+              "wall": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "pink"
+                ],
+                "size": "large",
+                "description": "A solid pink wall."
+              }
+            },
+            "natural": {}
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 463,
+            "total_tokens": 949
+          },
+          "performance_metrics": {
+            "total_duration_ms": 17392.623752,
+            "prompt_eval_duration_ms": 136.686541,
+            "generation_duration_ms": 17214.681664,
+            "load_duration_ms": 38.72948,
+            "tokens_per_second": 26.89564692725299
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3183,
+        "total_time_ms": 59294.323561000005,
+        "average_speed": 26.847487608179314
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a heartwarming moment within a warmly lit interior. The background is dominated by a deep, rich burgundy wall, providing a striking contrast to the scene. A dark, wooden, multi-shelved bookcase stands prominently in the background, filled with various items including a black canister and a few colorful objects. A man with short, dark hair and a beard is kneeling on the floor, extending his hand towards a large, fluffy Siberian Husky. He is wearing a light gray t-shirt and khaki shorts. The Husky is sitting attentively, its head tilted upwards as it eagerly awaits a treat. \n\nThe lighting appears to be soft and diffused, likely from a window, casting gentle shadows. The overall composition is focused on the interaction between the man and the dog, creating a sense of connection and playfulness. The colors are warm, with the burgundy wall, the wood tones, and the dog's fur creating a cozy and inviting atmosphere. The image has a candid, intimate feel.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 211,
+            "total_tokens": 524
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1670.493895,
+            "prompt_eval_duration_ms": 306.53638,
+            "generation_duration_ms": 1276.024776,
+            "load_duration_ms": 85.626277,
+            "tokens_per_second": 165.35729083680425
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements, presented as a continuous paragraph:\n\nThe foreground is dominated by a man with dark hair and a beard, wearing a light grey t-shirt and shorts. He is actively feeding a large, fluffy Siberian Husky dog. He is holding a small piece of food, likely a treat, extending it towards the dog's mouth. The dog is sitting attentively, its head tilted upwards, anticipating the offering. The wooden furniture immediately behind the man \u2013 a dark brown bookshelf and a small table \u2013 provides a warm, rustic backdrop to the scene. \n\nThe background is a solid, deep burgundy red wall, creating a strong contrast with the warm tones of the furniture and the dog. A white electrical outlet is visible on the wall, adding a small, functional detail. The man and the dog are positioned in front of this wall, creating a simple, intimate domestic setting. The red wall serves as a neutral backdrop, emphasizing the interaction between the man and his pet.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 208,
+            "total_tokens": 526
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1383.347447,
+            "prompt_eval_duration_ms": 54.39952,
+            "generation_duration_ms": 1238.447188,
+            "load_duration_ms": 88.205592,
+            "tokens_per_second": 167.95225667709295
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image captures a heartwarming moment between a man and his Siberian Husky. A young man with dark hair and a beard is kneeling, holding a small piece of what appears to be a treat \u2013 likely a piece of meat \u2013 extending it towards the dog. The husky, a large, fluffy animal with striking blue eyes, is intently focused on the man, its head tilted upwards as it eagerly awaits the offering. The dog's posture and expression clearly indicate excitement and anticipation. \n\nThe scene takes place in a room with a dark wooden cabinet in the background, partially obscured by the dog. A small, black can sits on the cabinet, suggesting a feeding routine. The man's interaction with the dog highlights a bond of affection and trust, a typical demonstration of the connection between a pet and its owner. The entire scene is bathed in warm light, emphasizing the positive and playful nature of the interaction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 201,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1339.855344,
+            "prompt_eval_duration_ms": 57.225041,
+            "generation_duration_ms": 1194.71188,
+            "load_duration_ms": 85.728676,
+            "tokens_per_second": 168.2414005961002
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of around 200 words:\n\nThe image evokes a feeling of gentle, playful connection and quiet contentment. A young man with a slightly messy beard and wearing light green shorts is carefully offering a piece of food to a large, fluffy Siberian Husky. The husky\u2019s head is tilted upwards, its eyes focused intently on the man, suggesting a deep level of trust and anticipation. The overall tone is decidedly positive, radiating warmth and affection. \n\nThe visual elements contribute significantly to this feeling. The close proximity of the man and dog, combined with the intimate act of feeding, creates a sense of vulnerability and connection. The husky\u2019s relaxed posture and attentive gaze further enhance this impression. The dark, rich red wall in the background provides a simple, uncluttered backdrop, drawing all attention to the interaction between the two subjects. The lighting is soft and diffused, adding to the gentle and peaceful atmosphere. It\u2019s a moment of simple joy and companionship, a quiet scene that speaks of a bond between human and animal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 227,
+            "total_tokens": 551
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1490.27616,
+            "prompt_eval_duration_ms": 56.794173,
+            "generation_duration_ms": 1344.265946,
+            "load_duration_ms": 85.962943,
+            "tokens_per_second": 168.86539503247968
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A man is holding a piece of food towards a dog.\"\n    }\n  },\n  \"animal\": {\n    \"dog\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"white\", \"gray\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A Siberian Husky is intently watching the man and awaiting food.\"\n    }\n  },\n  \"man-made\": {\n    \"wooden_shelf\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A dark wooden shelf with a can of food on it.\"\n    },\n    \"can\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"A can of food is sitting on the shelf.\"\n    },\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"red\"],\n      \"size\": \"large\",\n      \"description\": \"A dark red wall serves as the background.\"\n    },\n    \"electrical_outlet\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"small\",\n      \"description\": \"A standard electrical outlet is visible on the wall.\"\n    }\n  },\n  \"natural\": {\n    \"food\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"A piece of food, likely meat, is being offered to the dog.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A man is holding a piece of food towards a dog."
+              }
+            },
+            "animal": {
+              "dog": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "white",
+                  "gray",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A Siberian Husky is intently watching the man and awaiting food."
+              }
+            },
+            "man-made": {
+              "wooden_shelf": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A dark wooden shelf with a can of food on it."
+              },
+              "can": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "A can of food is sitting on the shelf."
+              },
+              "wall": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "red"
+                ],
+                "size": "large",
+                "description": "A dark red wall serves as the background."
+              },
+              "electrical_outlet": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "small",
+                "description": "A standard electrical outlet is visible on the wall."
+              }
+            },
+            "natural": {
+              "food": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "A piece of food, likely meat, is being offered to the dog."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 475,
+            "total_tokens": 993
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2989.665716,
+            "prompt_eval_duration_ms": 66.065853,
+            "generation_duration_ms": 2837.005567,
+            "load_duration_ms": 84.522038,
+            "tokens_per_second": 167.43005566333457
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3116,
+        "total_time_ms": 8873.638562,
+        "average_speed": 167.56927976116233
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe photograph captures a domestic scene featuring a man and a husky dog. The setting appears to be a kitchen or pantry, indicated by the wooden cabinetry dominating the background. The cabinets are a warm, medium-toned wood, contrasting sharply with the deep burgundy-red walls. The man, wearing a white t-shirt and olive-green shorts, is positioned to the left, holding a treat towards the dog. He is slightly blurred, suggesting movement or a shallow depth of field. The husky, with its characteristic thick fur and striking blue eyes, is the focal point, intently gazing upwards towards the treat. A black collar adorns its neck. \n\nThe lighting seems to be a mix of natural and artificial, casting soft shadows and highlighting the dog's fur. The composition is centered around the interaction between the man and the dog, creating a sense of connection and anticipation. A few items, including what appears to be fruit, are visible on the cabinet tops, adding a touch of realism to the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 214,
+            "total_tokens": 527
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3117.242176,
+            "prompt_eval_duration_ms": 341.751986,
+            "generation_duration_ms": 2684.895264,
+            "load_duration_ms": 88.366376,
+            "tokens_per_second": 79.70515754166863
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationships:\n\nThe foreground is dominated by a man and a husky dog, creating a clear focal point. The man, wearing a white t-shirt and olive-green shorts, is bent over, holding a treat towards the dog. The husky, with its striking blue eyes and thick fur, is eagerly looking up at the treat, its mouth slightly open in anticipation. A black collar encircles its neck. The man's posture and the dog's focused gaze create a sense of interaction and anticipation. \n\nThe background consists of a wooden cabinet with several shelves, partially filled with various items including a red tomato and a bottle. The cabinet is set against a deep burgundy-red wall, which provides a stark contrast to the lighter tones of the man and dog. A light switch is visible on the wall as well. The cabinet and wall establish the setting as an interior space, likely a kitchen or pantry, and contribute to the overall warm, domestic feel of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 214,
+            "total_tokens": 532
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2849.415895,
+            "prompt_eval_duration_ms": 63.571502,
+            "generation_duration_ms": 2695.444697,
+            "load_duration_ms": 88.252187,
+            "tokens_per_second": 79.39320745039942
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on interactions and relationships:\n\nThe image captures a heartwarming moment between a man and his husky dog. The man, wearing a white t-shirt and olive-green shorts, is kneeling and holding a treat towards the dog, who is eagerly anticipating it with its mouth open. The dog, a beautiful husky with striking blue eyes, is intently focused on the treat, its posture conveying excitement and anticipation. They are positioned in front of a wooden cabinet with a dark red wall behind them. The cabinet has several shelves with various items, including what appear to be fruits and a bottle. The man's gesture of offering the treat demonstrates a caring and playful relationship between the two, highlighting a bond of trust and affection. The dog's focused gaze and open mouth emphasize its eagerness and dependence on the man. The scene evokes a sense of domesticity and companionship.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 183,
+            "total_tokens": 504
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2449.837595,
+            "prompt_eval_duration_ms": 70.108708,
+            "generation_duration_ms": 2292.423839,
+            "load_duration_ms": 84.81633,
+            "tokens_per_second": 79.82817002977433
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a warm and playful mood, radiating a sense of gentle connection and anticipation. The man, dressed casually in a white t-shirt and green shorts, is clearly engaged in a moment of interaction with his husky, who is eagerly awaiting a treat. The dog's focused gaze and slightly open mouth convey excitement and a hopeful expectation, while the man's relaxed posture and outstretched hand suggest a loving and playful relationship. The warm, reddish-brown tones of the wooden cabinetry and the deep red wall create a cozy and inviting atmosphere, further enhancing the feeling of comfort and contentment. The overall tone is decidedly positive, capturing a simple yet heartwarming scene of companionship and affection between a person and their pet. It\u2019s a snapshot of a happy, everyday moment filled with trust and mutual enjoyment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 161,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2185.209956,
+            "prompt_eval_duration_ms": 69.799458,
+            "generation_duration_ms": 2027.591569,
+            "load_duration_ms": 83.870171,
+            "tokens_per_second": 79.40455191348252
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"item\": \"person\",\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\", \"tan\"],\n      \"size\": \"medium\",\n      \"description\": \"Standing, holding food, facing towards the dog.\"\n    }\n  ],\n  \"animal\": [\n    {\n      \"item\": \"dog\",\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"white\", \"gray\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"Sitting, looking up at the person, wearing a collar.\"\n    }\n  ],\n  \"man-made\": [\n    {\n      \"item\": \"cabinet\",\n      \"count\": 1,\n      \"location\": \"middle\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Wooden cabinet with drawers and shelves.\"\n    },\n    {\n      \"item\": \"light switch\",\n      \"count\": 1,\n      \"location\": \"top-center\",\n      \"color\": [\"white\", \"beige\"],\n      \"size\": \"small\",\n      \"description\": \"Mounted on the wall.\"\n    },\n    {\n      \"item\": \"collar\",\n      \"count\": 1,\n      \"location\": \"middle\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Around the dog's neck.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"wall\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"red\", \"purple\"],\n      \"size\": \"large\",\n      \"description\": \"Solid colored wall.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "item": "person",
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white",
+                  "tan"
+                ],
+                "size": "medium",
+                "description": "Standing, holding food, facing towards the dog."
+              }
+            ],
+            "animal": [
+              {
+                "item": "dog",
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "white",
+                  "gray",
+                  "black"
+                ],
+                "size": "large",
+                "description": "Sitting, looking up at the person, wearing a collar."
+              }
+            ],
+            "man-made": [
+              {
+                "item": "cabinet",
+                "count": 1,
+                "location": "middle",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Wooden cabinet with drawers and shelves."
+              },
+              {
+                "item": "light switch",
+                "count": 1,
+                "location": "top-center",
+                "color": [
+                  "white",
+                  "beige"
+                ],
+                "size": "small",
+                "description": "Mounted on the wall."
+              },
+              {
+                "item": "collar",
+                "count": 1,
+                "location": "middle",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "Around the dog's neck."
+              }
+            ],
+            "natural": [
+              {
+                "item": "wall",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "red",
+                  "purple"
+                ],
+                "size": "large",
+                "description": "Solid colored wall."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 422,
+            "total_tokens": 940
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5531.13723,
+            "prompt_eval_duration_ms": 91.724873,
+            "generation_duration_ms": 5348.851952,
+            "load_duration_ms": 88.424091,
+            "tokens_per_second": 78.89543471888562
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2988,
+        "total_time_ms": 16132.842852,
+        "average_speed": 79.4453043308421
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a heartwarming moment between a man and his husky dog indoors, likely in a kitchen or dining area. The man, with short dark hair and wearing a white t-shirt and light green shorts, is leaning forward, offering a treat to the dog. The husky is sitting upright, gazing intently at the man\u2019s hand with its mouth open, eagerly awaiting the treat. The dog wears a green and black collar. Behind the man is a wooden shelving unit displaying various items, including a bowl of fruit and a jar. The wall is painted a deep, rich burgundy color, creating a strong contrast with the lighter tones of the wood and the man\u2019s clothing. The lighting appears to be natural, casting soft shadows and highlighting the textures of the dog\u2019s fur and the wooden furniture. The composition is centered around the interaction between the man and the dog, drawing the viewer's attention to their connection. The overall mood is warm, playful, and affectionate.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 207,
+            "total_tokens": 520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5388.1195,
+            "prompt_eval_duration_ms": 396.530256,
+            "generation_duration_ms": 4901.946512,
+            "load_duration_ms": 86.663045,
+            "tokens_per_second": 42.22812294937583
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nIn the foreground, a large husky dog is the most prominent feature, captured mid-action with its mouth open, eagerly anticipating a treat. The dog is wearing a green collar and is positioned slightly to the right of the frame, looking upwards. A man, partially visible from the waist up, is bending down to offer the dog a small item, likely a treat, held between his fingers. \n\nThe background consists of a wooden shelving unit against a deep maroon wall. The shelving unit appears to hold various items, including a plastic container with colorful contents and a dark-colored jar. The maroon wall provides a strong contrast to the warm tones of the wood and the dog's fur. The interaction between the man and the dog is the central focus, with the shelving unit and wall serving as a simple backdrop that doesn't distract from the moment. The scene suggests a casual, affectionate relationship between the owner and his pet.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 204,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5010.538347,
+            "prompt_eval_duration_ms": 82.782275,
+            "generation_duration_ms": 4836.907635,
+            "load_duration_ms": 88.835691,
+            "tokens_per_second": 42.17570716543153
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a heartwarming interaction between a man and a husky dog. The man, wearing a white t-shirt and khaki shorts, is leaning forward, offering a treat to the dog. The husky is sitting upright, gazing intently at the man with its mouth open, eagerly awaiting the snack. A green collar is visible around the dog\u2019s neck. They are positioned in front of a wooden shelving unit, which holds various items, including a bowl of fruit and a container. The wall behind them is painted a deep burgundy color. The scene suggests a close bond between the man and his pet, as they engage in a playful feeding moment. The man\u2019s gesture and the dog\u2019s focused attention highlight their connection and the trust between them. It\u2019s a casual, intimate moment captured indoors.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 172,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4238.833974,
+            "prompt_eval_duration_ms": 83.142235,
+            "generation_duration_ms": 4065.057866,
+            "load_duration_ms": 88.170738,
+            "tokens_per_second": 42.31182080791565
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a heartwarming and playful mood, evoking feelings of affection and trust between a man and his dog. The man is leaning down, offering a treat to a husky who is eagerly looking up with its mouth open, creating a sense of connection and joyful anticipation. The soft lighting and warm tones of the wooden cabinet contribute to a cozy and intimate atmosphere. The dog\u2019s focused gaze and open mouth suggest excitement and a strong bond with its owner. The man's slightly bent posture and gentle gesture indicate care and fondness. The deep burgundy wall color provides a contrasting backdrop that emphasizes the interaction between the man and the dog. Overall, the image radiates positivity, highlighting a loving and playful relationship, and evokes feelings of warmth and happiness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 148,
+            "total_tokens": 472
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3678.54744,
+            "prompt_eval_duration_ms": 84.567628,
+            "generation_duration_ms": 3500.645701,
+            "load_duration_ms": 90.676506,
+            "tokens_per_second": 42.27791460236096
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"white\", \"khaki\"],\n      \"size\": \"medium\",\n      \"description\": \"Man bending over and offering something to the dog.\"\n    }\n  },\n  \"animal\": {\n    \"dog\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"gray\", \"white\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"Husky looking up and attempting to catch a treat.\"\n    }\n  },\n  \"man-made\": {\n    \"furniture\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Wooden shelf with items on it.\"\n    },\n    \"treat\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"size\": \"small\",\n      \"description\": \"Small object being held by the man, presumably a treat for the dog.\"\n    },\n    \"collar\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Dog is wearing a green collar.\"\n    },\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"purple\"],\n      \"size\": \"large\",\n      \"description\": \"Purple wall in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "white",
+                  "khaki"
+                ],
+                "size": "medium",
+                "description": "Man bending over and offering something to the dog."
+              }
+            },
+            "animal": {
+              "dog": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "gray",
+                  "white",
+                  "black"
+                ],
+                "size": "large",
+                "description": "Husky looking up and attempting to catch a treat."
+              }
+            },
+            "man-made": {
+              "furniture": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Wooden shelf with items on it."
+              },
+              "treat": {
+                "count": 1,
+                "location": "center",
+                "size": "small",
+                "description": "Small object being held by the man, presumably a treat for the dog."
+              },
+              "collar": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Dog is wearing a green collar."
+              },
+              "wall": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "purple"
+                ],
+                "size": "large",
+                "description": "Purple wall in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 378,
+            "total_tokens": 896
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9177.963927,
+            "prompt_eval_duration_ms": 139.292941,
+            "generation_duration_ms": 8948.660214,
+            "load_duration_ms": 87.857856,
+            "tokens_per_second": 42.240960206381125
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2903,
+        "total_time_ms": 27494.003188,
+        "average_speed": 42.246905146293024
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a cozy indoor setting with a man and a dog as the main subjects. The man, dressed in a white t-shirt and light-colored shorts, is standing next to a wooden cabinet or dresser. He appears to be feeding the dog, which is a husky, a treat from his hand. The dog is sitting attentively, looking up at the man with its mouth open, ready to receive the treat. The cabinet behind the man has several drawers and shelves, with various items placed on top, including what looks like a bottle of sauce and some vegetables. The wall in the background is painted a deep, rich red color, which contrasts with the warm tones of the wooden furniture. The lighting in the room is soft and natural, creating a warm and inviting atmosphere. The overall composition of the image suggests a moment of interaction and bonding between the man and his dog in a comfortable home environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 186,
+            "total_tokens": 978
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7174.052432,
+            "prompt_eval_duration_ms": 1905.631575,
+            "generation_duration_ms": 5219.831431,
+            "load_duration_ms": 45.85574,
+            "tokens_per_second": 35.633334612180505
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a man dressed in a white t-shirt and light-colored shorts is prominently featured. He is leaning forward, extending his hand towards a dog that is eagerly looking up at him. The dog, which appears to be a husky, is sitting on the floor, attentively focused on the man's hand, possibly anticipating a treat. The man's hand holds a piece of food, and nearby on the wooden surface, there are more food items, including tomatoes and a bottle of sauce, suggesting that he might be preparing a meal.\n\nIn the background, the setting is a kitchen or dining area with a wooden cabinet that has several shelves. The cabinet contains various items, adding to the homely atmosphere. The wall behind the cabinet is painted a deep red color, which contrasts with the wooden tones of the furniture and adds warmth to the scene. The man and the dog are the main subjects in the foreground, creating a sense of interaction and connection, while the background elements provide context, indicating that this moment is taking place in a domestic environment. The overall composition suggests a casual, everyday moment shared between the man and his pet.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 234,
+            "total_tokens": 1032
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6641.43881,
+            "prompt_eval_duration_ms": 54.566452,
+            "generation_duration_ms": 6536.963382,
+            "load_duration_ms": 47.161251,
+            "tokens_per_second": 35.796437325063785
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a man is standing in a kitchen area, interacting with a dog. The man is wearing a white t-shirt and light-colored shorts, and he appears to be holding a piece of food, possibly a tomato, which he is offering to the dog. The dog, which looks like a Siberian Husky, is sitting attentively and looking up at the man, seemingly eager to receive the food. The man and the dog are the main subjects of the image, and their interaction suggests a moment of connection and trust between them. Behind the man, there is a wooden cabinet with several items on top, including what looks like bottles and possibly some vegetables. The background wall is painted a deep red color, which contrasts with the wooden cabinet and adds a warm tone to the scene. The overall atmosphere of the image is one of casual domesticity and companionship.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 177,
+            "total_tokens": 977
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5017.107065,
+            "prompt_eval_duration_ms": 56.905741,
+            "generation_duration_ms": 4910.420323,
+            "load_duration_ms": 46.936399,
+            "tokens_per_second": 36.04579411887547
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a warm and affectionate mood, evoking feelings of care and companionship. The overall tone is positive, primarily due to the interaction between the man and the dog. The man is seen feeding the dog, suggesting a nurturing and loving relationship. The dog appears attentive and eager, with its eyes focused on the treat, which adds to the sense of anticipation and trust. The man\u2019s relaxed posture and gentle gesture further emphasize the bond they share. The setting, with its wooden furniture and soft lighting, contributes to a cozy and homely atmosphere. The rich, deep red wall in the background adds a touch of warmth and intimacy to the scene. These visual elements collectively create a heartwarming and comforting emotional atmosphere, highlighting the simple yet profound joy of the connection between humans and their pets.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 166,
+            "total_tokens": 969
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4729.604083,
+            "prompt_eval_duration_ms": 58.781659,
+            "generation_duration_ms": 4623.700634,
+            "load_duration_ms": 44.142409,
+            "tokens_per_second": 35.90197833729388
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"left, middle, foreground\",\n      \"color\": [\"white\", \"khaki\"],\n      \"size\": \"medium\",\n      \"description\": \"Wearing a white t-shirt and khaki shorts, feeding a dog\"\n    }\n  },\n  \"animal\": {\n    \"dog\": {\n      \"count\": 1,\n      \"location\": \"right, middle, foreground\",\n      \"color\": [\"white\", \"gray\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Sitting, looking up, wearing a collar\"\n    }\n  },\n  \"man-made\": {\n    \"drawer\": {\n      \"count\": 1,\n      \"location\": \"center, bottom, foreground\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Wooden, with a handle\"\n    },\n    \"shelf\": {\n      \"count\": 1,\n      \"location\": \"center, top, background\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Wooden, mounted on wall\"\n    },\n    \"wall socket\": {\n      \"count\": 1,\n      \"location\": \"center, top, background\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"White, mounted on wall\"\n    },\n    \"bottle\": {\n      \"count\": 1,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Black bottle on the drawer\"\n    },\n    \"tomato\": {\n      \"count\": 2,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"Red tomatoes on the drawer\"\n    }\n  },\n  \"natural\": {\n    \"tomato\": {\n      \"count\": 2,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"Red tomatoes on the drawer\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "left, middle, foreground",
+                "color": [
+                  "white",
+                  "khaki"
+                ],
+                "size": "medium",
+                "description": "Wearing a white t-shirt and khaki shorts, feeding a dog"
+              }
+            },
+            "animal": {
+              "dog": {
+                "count": 1,
+                "location": "right, middle, foreground",
+                "color": [
+                  "white",
+                  "gray",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Sitting, looking up, wearing a collar"
+              }
+            },
+            "man-made": {
+              "drawer": {
+                "count": 1,
+                "location": "center, bottom, foreground",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Wooden, with a handle"
+              },
+              "shelf": {
+                "count": 1,
+                "location": "center, top, background",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Wooden, mounted on wall"
+              },
+              "wall socket": {
+                "count": 1,
+                "location": "center, top, background",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "White, mounted on wall"
+              },
+              "bottle": {
+                "count": 1,
+                "location": "center, middle, foreground",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "Black bottle on the drawer"
+              },
+              "tomato": {
+                "count": 2,
+                "location": "center, middle, foreground",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "Red tomatoes on the drawer"
+              }
+            },
+            "natural": {
+              "tomato": {
+                "count": 2,
+                "location": "center, middle, foreground",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "Red tomatoes on the drawer"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 470,
+            "total_tokens": 1452
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13328.070682,
+            "prompt_eval_duration_ms": 106.481809,
+            "generation_duration_ms": 13172.525865,
+            "load_duration_ms": 45.86655,
+            "tokens_per_second": 35.680324701340034
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5408,
+        "total_time_ms": 36890.273071999996,
+        "average_speed": 35.811573818950734
+      }
+    }
+  ]
+}

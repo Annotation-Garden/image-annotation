@@ -1,0 +1,866 @@
+{
+  "image": {
+    "path": "images/original/shared0517_nsd39096.png",
+    "name": "shared0517_nsd39096.png",
+    "id": "shared0517_nsd39096"
+  },
+  "timestamp": "2025-08-30T20:28:21.423106+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a serene natural scene set in a grassy meadow, likely in a temperate forested area. The foreground is dominated by lush green grass interspersed with patches of wildflowers, suggesting a spring or summer season. The vibrant green of the grass is contrasted by the darker, more subdued tones of the distant trees, which appear as a dense line of evergreen foliage, possibly pines, framing the horizon. A single black bear is the focal point of the image, positioned slightly off-center and walking towards the right, adding a sense of life and movement to the otherwise tranquil setting. The lighting is natural and bright, indicative of a sunny day, casting soft shadows that enhance the three-dimensional quality of the scene. The overall composition is balanced, with the bear and the expansive meadow leading the viewer's eye towards the forested backdrop, creating a harmonious and peaceful depiction of wildlife in its natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 189,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1470.432028,
+            "prompt_eval_duration_ms": 80.04914,
+            "generation_duration_ms": 1346.651315,
+            "load_duration_ms": 39.926614,
+            "tokens_per_second": 140.34813458746
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the viewer is presented with a patch of ground that appears to be a mix of dirt and small rocks, interspersed with sparse vegetation. This area is the closest to the viewer, and its texture contrasts with the lush greenery of the meadow in the mid-ground. Moving into the mid-ground, a vibrant green meadow stretches out, dotted with wildflowers and various shades of green grass. This layer provides a stark contrast to the foreground's earthy tones and adds depth to the scene. The background is dominated by a dense line of tall evergreen trees, which form a natural border and create a sense of enclosure. The trees are bathed in sunlight, suggesting a clear day with good visibility. The relationship between these layers is one of depth and perspective, with the foreground leading the eye towards the middle ground and then to the background, creating a sense of space and distance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 186,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1427.977591,
+            "prompt_eval_duration_ms": 30.386605,
+            "generation_duration_ms": 1350.01632,
+            "load_duration_ms": 44.404561,
+            "tokens_per_second": 137.77611221766566
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a solitary black bear is seen traversing a lush, green meadow dotted with wildflowers and patches of grass. The bear, appearing to be foraging or exploring, moves with a steady, purposeful gait, its dark fur contrasting sharply with the vibrant greenery. The meadow, expansive and open, stretches out towards a line of tall, verdant trees in the background, suggesting a natural, undisturbed habitat. The bear is the sole animal in the scene, and its interaction with the environment is one of quiet exploration, as it moves through the field, possibly searching for food or simply navigating its surroundings. The absence of other animals or people in the image emphasizes the bear's solitary nature and the peacefulness of the wilderness setting. The relationship between the bear and its environment is one of coexistence, with the bear adapting to and interacting with the natural landscape in a way that is both harmonious and instinctual.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 193,
+            "total_tokens": 499
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1464.949519,
+            "prompt_eval_duration_ms": 29.587779,
+            "generation_duration_ms": 1387.747575,
+            "load_duration_ms": 39.409705,
+            "tokens_per_second": 139.07428373636324
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of tranquility and serenity, with a positive emotional tone. The vast, open field of lush green grass under a clear blue sky suggests a peaceful and idyllic setting. The solitary black bear walking through the field adds a touch of wildness and natural beauty, enhancing the feeling of being in harmony with nature. The vibrant colors of the grass and the bear's dark fur create a striking contrast, drawing the viewer's eye and adding a dynamic element to the otherwise calm scene. The absence of human presence or signs of urban life further emphasizes the untouched and pristine quality of the environment, evoking a sense of freedom and escape from the hustle and bustle of city life. The overall atmosphere is one of calmness and appreciation for the natural world, making the viewer feel a sense of awe and connection to the wilderness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 172,
+            "total_tokens": 480
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1317.875401,
+            "prompt_eval_duration_ms": 31.35095,
+            "generation_duration_ms": 1242.053569,
+            "load_duration_ms": 41.47628,
+            "tokens_per_second": 138.4803395706035
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"bear\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"walking on grass\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"field with wildflowers\"\n    },\n    \"trees\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"evergreen trees in the background\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "bear": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "walking on grass"
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "field with wildflowers"
+              },
+              "trees": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "evergreen trees in the background"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 157,
+            "total_tokens": 643
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1212.461501,
+            "prompt_eval_duration_ms": 44.471719,
+            "generation_duration_ms": 1122.514191,
+            "load_duration_ms": 38.979019,
+            "tokens_per_second": 139.8646014979422
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2597,
+        "total_time_ms": 6893.69604,
+        "average_speed": 139.10869432200693
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a serene, natural setting featuring a black bear walking through a lush, open meadow. The bear, positioned slightly off-center and in the mid-ground, is the focal point of the composition. Its dark fur contrasts sharply with the vibrant green grass and wildflowers scattered across the field. The meadow is expansive, with a mix of tall grasses and patches of wildflowers, including some yellow and white blooms that add subtle pops of color.\n\nIn the background, a dense line of evergreen trees creates a natural border, providing depth and framing the scene. The trees are a deep green, suggesting a forested area beyond the meadow. The lighting is bright and natural, indicative of a sunny day, casting soft shadows on the ground and highlighting the textures of the grass and the bear's fur. The overall atmosphere is calm and peaceful, with the bear appearing to move leisurely through the landscape. The composition balances the bear's presence with the expansive meadow and the distant forest, creating a harmonious and tranquil scene. The earthy tones of the foreground, combined with the greenery and the bear's dark silhouette, contribute to a cohesive and visually appealing image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 239,
+            "total_tokens": 536
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12520.757316,
+            "prompt_eval_duration_ms": 3545.040967,
+            "generation_duration_ms": 8931.102023,
+            "load_duration_ms": 39.356066,
+            "tokens_per_second": 26.7604153870945
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a patch of wet ground, likely a shallow puddle or a small waterlogged area, reflecting the surrounding environment. This reflective surface creates a mirror-like effect, subtly distorting the grass and other elements above it. The grass in the foreground is a mix of green and brown, indicating a natural, slightly rugged terrain. Small wildflowers and patches of bare earth are interspersed throughout, adding texture and detail to the immediate view.\n\nIn the background, the scene transitions to a more expansive and vibrant meadow. The grass is lush and green, dotted with colorful wildflowers, creating a vibrant and lively atmosphere. A black bear is visible in the mid-ground, walking through the meadow, adding a sense of scale and life to the landscape. The bear's presence contrasts with the stillness of the foreground, emphasizing the dynamic nature of the scene. Beyond the meadow, a line of tall evergreen trees forms a dense forest, providing a natural boundary and depth to the setting. The trees are dark green and appear to be coniferous, suggesting a forested, mountainous region.\n\nThe relationship between the foreground and background is one of contrast and connection. The reflective wet ground in the foreground anchors the viewer's perspective, while the bear and meadow in the mid-ground draw the eye deeper into the scene. The forest in the background completes the composition, framing the open meadow and providing a sense of enclosure and natural beauty. The layers work together to create a harmonious and immersive landscape, showcasing the interplay between water, land, and wildlife in a serene, natural setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 329,
+            "total_tokens": 632
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12357.770935,
+            "prompt_eval_duration_ms": 74.063508,
+            "generation_duration_ms": 12239.940742,
+            "load_duration_ms": 40.554205,
+            "tokens_per_second": 26.879215098735973
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a serene natural landscape featuring a black bear in a grassy meadow. The bear is the central focus, standing amidst a lush expanse of green grass dotted with wildflowers. The bear appears to be foraging or exploring the area, its posture suggesting it is either sniffing the ground or observing its surroundings. The bear's solitary presence emphasizes its connection to the natural environment, highlighting its role as a wild animal in its habitat.\n\nThe meadow is expansive, with a mix of grasses and wildflowers, indicating a healthy ecosystem. In the background, a dense forest of tall evergreen trees provides a stark contrast to the open meadow, suggesting a transition zone between forest and open land. The bear's position in the meadow, away from the forest, implies it may be seeking food or simply enjoying the open space.\n\nThere are no people visible in the image, reinforcing the untouched, wild nature of the scene. The bear's interaction with the environment is purely natural, as it moves through the grass, possibly searching for food such as plants, insects, or small animals. The overall atmosphere is peaceful, with the bear's presence adding a sense of life and dynamism to the tranquil landscape. The image captures a moment of coexistence between wildlife and nature, showcasing the bear's adaptability and the beauty of its natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 273,
+            "total_tokens": 579
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10274.281046,
+            "prompt_eval_duration_ms": 74.586404,
+            "generation_duration_ms": 10152.750812,
+            "load_duration_ms": 43.184458,
+            "tokens_per_second": 26.8892643043429
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a serene and contemplative mood, characterized by a sense of calm and solitude. The expansive green meadow, dotted with wildflowers and bathed in soft, natural light, creates a peaceful and tranquil atmosphere. The presence of the black bear, calmly walking through the field, adds a touch of wildness and mystery, reminding viewers of the beauty and majesty of nature. The bear's solitary figure amidst the vast landscape conveys a sense of quiet introspection and harmony with the environment. The background of tall evergreen trees and the clear sky further enhance the feeling of openness and freedom, suggesting a connection to the natural world that is both grounding and uplifting. The overall tone is neutral yet positive, as the image does not evoke strong emotions like fear or excitement but instead inspires a gentle appreciation for the quiet beauty of nature. The soft focus and natural lighting contribute to the image's soothing quality, inviting viewers to pause and reflect on the simple, unspoiled beauty of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 202,
+            "total_tokens": 510
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7650.053827,
+            "prompt_eval_duration_ms": 71.858212,
+            "generation_duration_ms": 7536.038604,
+            "load_duration_ms": 38.664592,
+            "tokens_per_second": 26.804533603740015
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"black_bear\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A black bear standing and walking in a grassy field.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"entire image\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A lush, green grassy field covering the majority of the image.\"\n    },\n    \"flowers\": {\n      \"count\": 1,\n      \"location\": \"middle, background\",\n      \"color\": [\"white\", \"yellow\"],\n      \"size\": \"small\",\n      \"description\": \"Scattered wildflowers in the grassy field.\"\n    },\n    \"trees\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A line of tall evergreen trees in the distance.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "black_bear": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A black bear standing and walking in a grassy field."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "entire image",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A lush, green grassy field covering the majority of the image."
+              },
+              "flowers": {
+                "count": 1,
+                "location": "middle, background",
+                "color": [
+                  "white",
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Scattered wildflowers in the grassy field."
+              },
+              "trees": {
+                "count": 1,
+                "location": "top, background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A line of tall evergreen trees in the distance."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 241,
+            "total_tokens": 727
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9134.038424,
+            "prompt_eval_duration_ms": 134.309215,
+            "generation_duration_ms": 8952.492502,
+            "load_duration_ms": 41.0722,
+            "tokens_per_second": 26.919877335408014
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2984,
+        "total_time_ms": 51936.901547999994,
+        "average_speed": 26.85066114586428
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph depicts a serene, expansive meadow bathed in bright, natural daylight. The dominant feature is a dense expanse of vibrant green grass, speckled with small white wildflowers, creating a textured and lively foreground. Behind the meadow, a dark, coniferous forest rises sharply, providing a strong contrast in color and depth. A large, dark brown grizzly bear is the focal point, positioned roughly in the center of the frame, partially obscured by the tall grass. It appears to be standing on its hind legs, with its forepaws planted firmly on the ground, suggesting it\u2019s surveying its surroundings. \n\nThe lighting is soft and diffused, indicating an overcast day, which evenly illuminates the scene. The color palette is dominated by greens and browns, with the white flowers adding a subtle pop of color. The composition utilizes the rule of thirds, with the bear positioned slightly off-center, drawing the viewer\u2019s eye. The overall impression is one of wilderness, tranquility, and the raw beauty of nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 212,
+            "total_tokens": 525
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1690.596619,
+            "prompt_eval_duration_ms": 306.706399,
+            "generation_duration_ms": 1285.494141,
+            "load_duration_ms": 92.632399,
+            "tokens_per_second": 164.91712660400216
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements, presented as a continuous paragraph:\n\nIn the immediate foreground, a patch of vibrant green grass dominates, speckled with small white wildflowers, creating a textured and lively base. A narrow, reddish-brown dirt path winds its way through the grass, suggesting a trail or access route. Further back, the grassy expanse continues, rising gently to form a rolling hillside. The background is dominated by a dense, dark green forest, a wall of towering evergreen trees stretching into the distance. The trees create a deep, shadowed backdrop, emphasizing the brightness of the foreground and providing a sense of scale. The forest appears to be a thick, undisturbed woodland, likely a mountainous area. The grass and the forest are in direct relation, with the grassy patch acting as a transition between the forest and the open space, creating a natural and serene landscape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 181,
+            "total_tokens": 499
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1236.337917,
+            "prompt_eval_duration_ms": 62.891508,
+            "generation_duration_ms": 1082.293013,
+            "load_duration_ms": 87.980524,
+            "tokens_per_second": 167.23752054749707
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph, focusing on actions, relationships, and connections:\n\nThe image depicts a solitary brown bear standing within a vibrant meadow, dominated by lush green grasses speckled with white wildflowers. The bear, a large, imposing figure, is positioned centrally, its head lowered as if foraging or examining the ground. Its dark fur contrasts sharply with the bright green of the meadow, drawing immediate attention. The bear\u2019s posture suggests a deliberate action, perhaps searching for food amongst the grasses. The meadow itself appears undisturbed, a tranquil setting for the animal\u2019s activity. The dense trees in the background, likely a forest, create a sense of depth and suggest the bear\u2019s habitat. There are no other visible people or animals, emphasizing the bear's isolation and dominance within this natural environment. The scene evokes a feeling of wilderness and the bear's connection to its surroundings.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 185,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1247.210688,
+            "prompt_eval_duration_ms": 55.056912,
+            "generation_duration_ms": 1102.609581,
+            "load_duration_ms": 86.418931,
+            "tokens_per_second": 167.78377694869675
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, aiming for a continuous paragraph of around 200 words:\n\nThe image evokes a profound sense of solitude and quiet contemplation, leaning towards a slightly melancholic yet peaceful mood. The dominant visual element, a large brown bear partially obscured within a dense field of bright green wildflowers, immediately establishes a feeling of being dwarfed by nature\u2019s scale. The bear\u2019s posture \u2013 seemingly still and watchful \u2013 suggests a cautious observation, perhaps a moment of reflection or simply existing within the vastness of the landscape. \n\nThe vibrant green of the wildflowers contrasts with the bear\u2019s dark fur, creating a visual tension that subtly amplifies the feeling of isolation. The blurred background of trees hints at a remote, untouched wilderness, further contributing to the sense of serenity and distance. There\u2019s a quiet dignity in the bear's presence, suggesting resilience and a connection to the natural world. While not overtly negative, the image carries a subtle undercurrent of vulnerability and the awareness of being a small part of a much larger, potentially unpredictable, ecosystem.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 226,
+            "total_tokens": 550
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1513.596515,
+            "prompt_eval_duration_ms": 60.285467,
+            "generation_duration_ms": 1360.380807,
+            "load_duration_ms": 90.049848,
+            "tokens_per_second": 166.1299533462177
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A large brown bear is standing on a grassy hillside.\"\n    }\n  },\n  \"animal\": {\n    \"bear\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A large brown bear is standing on a grassy hillside.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 100,\n      \"location\": \"ground\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Dense, green grass covers the ground.\"\n    },\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A large evergreen tree is visible in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A large brown bear is standing on a grassy hillside."
+              }
+            },
+            "animal": {
+              "bear": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A large brown bear is standing on a grassy hillside."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 100,
+                "location": "ground",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Dense, green grass covers the ground."
+              },
+              "tree": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A large evergreen tree is visible in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 266,
+            "total_tokens": 784
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1748.533129,
+            "prompt_eval_duration_ms": 63.339354,
+            "generation_duration_ms": 1593.97148,
+            "load_duration_ms": 88.286931,
+            "tokens_per_second": 166.87877000158122
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2864,
+        "total_time_ms": 7436.274868,
+        "average_speed": 166.58942948959898
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe photograph captures a scene of a bear foraging in a lush, vibrant meadow. The setting appears to be a forest clearing, with a backdrop of dense, dark green trees suggesting a wilderness environment. The dominant element is the bear, a dark brown or black color, positioned slightly off-center in the frame, seemingly engrossed in its activity within the tall grass. The meadow itself is a sea of bright, almost neon green, punctuated by the bear's dark silhouette. The lighting is diffused, creating a soft glow across the scene, with highlights on the grass blades and subtle shadows defining the bear's form. The composition is simple and naturalistic, emphasizing the bear's integration within its habitat. The overall impression is one of tranquility and wildness, showcasing a moment of undisturbed nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 171,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2574.050462,
+            "prompt_eval_duration_ms": 337.886146,
+            "generation_duration_ms": 2142.726512,
+            "load_duration_ms": 90.0786,
+            "tokens_per_second": 79.80486498969496
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, broken down by foreground and background elements and their relationship:\n\nThe foreground is dominated by a vibrant, lush expanse of green grass, densely covering the lower portion of the frame. The grass appears tall and slightly overgrown, creating a textured surface that fills the view. Within this grassy foreground, a dark brown bear is visible, seemingly foraging or moving through the vegetation. The bear's presence adds a focal point and a sense of wildlife within the scene. The background consists of a dense forest of tall, dark green trees, which create a solid, somewhat blurred line across the upper portion of the image. The trees establish the setting as a woodland environment, providing a natural backdrop to the grassy foreground. The relationship between the layers creates a sense of depth, with the bear appearing as a subject within a larger, natural habitat. The contrast between the bright green grass and the dark forest further emphasizes the bear's presence and the overall feeling of a wild, undisturbed landscape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 203,
+            "total_tokens": 521
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2715.570659,
+            "prompt_eval_duration_ms": 66.578862,
+            "generation_duration_ms": 2555.229243,
+            "load_duration_ms": 90.748107,
+            "tokens_per_second": 79.44492673450513
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image captures a solitary brown bear foraging within a lush, vibrant meadow. The bear, the central focus, appears to be actively searching for food, its posture suggesting a focused search amongst the tall grasses. The meadow itself dominates the scene, a sea of bright green punctuated by the dark silhouette of the bear. The tall grasses sway gently, hinting at a light breeze. A line of dark green trees forms a backdrop, creating a natural boundary to the meadow. The bear's presence within this expansive, natural setting highlights the animal's connection to its environment, demonstrating a symbiotic relationship where it relies on the meadow for sustenance. The overall impression is one of tranquility and the raw beauty of wildlife in its natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 163,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2195.576004,
+            "prompt_eval_duration_ms": 64.293562,
+            "generation_duration_ms": 2038.478645,
+            "load_duration_ms": 86.923978,
+            "tokens_per_second": 79.96159312230617
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of quiet solitude and a touch of wildness. The dominant color palette of vibrant green, punctuated by the dark silhouette of a bear, creates a feeling of being immersed in nature's embrace. There's a subtle feeling of awe and respect for the power and presence of the animal, while also hinting at a sense of vulnerability as it moves through the tall grass. The bear's posture suggests a focused, perhaps cautious, exploration of its surroundings. The overall tone is neutral, leaning towards positive, as it celebrates the beauty and serenity of a natural habitat. The vastness of the grassy expanse and the bear's solitary figure contribute to a feeling of peaceful isolation, inviting the viewer to contemplate the untamed spirit of the wilderness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 154,
+            "total_tokens": 478
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2089.362165,
+            "prompt_eval_duration_ms": 67.093698,
+            "generation_duration_ms": 1936.760464,
+            "load_duration_ms": 82.215156,
+            "tokens_per_second": 79.51422122792775
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": [\n    {\n      \"name\": \"bear\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"Appears to be foraging or walking through tall grass.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"name\": \"grass\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"Tall, dense grass covering the majority of the image.\"\n    },\n    {\n      \"name\": \"trees\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Dense forest visible in the background.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": [
+              {
+                "name": "bear",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "black"
+                ],
+                "size": "large",
+                "description": "Appears to be foraging or walking through tall grass."
+              }
+            ],
+            "natural": [
+              {
+                "name": "grass",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "Tall, dense grass covering the majority of the image."
+              },
+              {
+                "name": "trees",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "Dense forest visible in the background."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 221,
+            "total_tokens": 739
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2957.892687,
+            "prompt_eval_duration_ms": 91.153409,
+            "generation_duration_ms": 2774.257542,
+            "load_duration_ms": 89.059136,
+            "tokens_per_second": 79.66095312141717
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2706,
+        "total_time_ms": 12532.451977,
+        "average_speed": 79.67731183917024
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a vast, undulating meadow bathed in warm, diffused sunlight. The dominant color is a vibrant, lush green, created by a dense carpet of low-lying vegetation and small white wildflowers scattered throughout. In the center of the frame, a dark brown bear is visible, appearing as a relatively small figure within the expansive landscape. The bear is positioned slightly off-center, moving from left to right, and seems to be foraging or traversing the field. \n\nThe background features a line of dark green coniferous trees, forming a natural border to the meadow. The lighting is soft and even, suggesting an overcast day or a time of day when the sun is not directly overhead. The composition emphasizes the scale of the natural environment, with the bear appearing as a small part of a much larger ecosystem. The foreground is a slightly drier, more reddish-brown patch of grass, providing a subtle contrast to the vibrant green of the meadow.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5234.94559,
+            "prompt_eval_duration_ms": 397.625738,
+            "generation_duration_ms": 4746.645142,
+            "load_duration_ms": 87.412657,
+            "tokens_per_second": 41.92434741733217
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground of the image is dominated by a field of lush, vibrant green vegetation, appearing as a dense carpet of grasses and small wildflowers. The texture is quite uniform, with subtle variations in tone suggesting gentle undulations in the terrain. A patch of drier, reddish-brown earth is visible at the very bottom edge, providing a slight contrast. In the middle ground, a dark brown bear is visible, seemingly foraging or moving through the field. \n\nThe background consists of a dense, dark green forest line, forming a clear horizon. The trees are tightly packed, creating a solid wall of foliage that contrasts with the open field. The relationship between the layers is one of expansive openness transitioning to enclosed density. The field provides a natural habitat for the bear, while the forest serves as a backdrop and potentially a source of shelter or further foraging grounds. The composition emphasizes the bear's presence within its natural environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 200,
+            "total_tokens": 518
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4925.863855,
+            "prompt_eval_duration_ms": 78.593212,
+            "generation_duration_ms": 4755.408396,
+            "load_duration_ms": 88.906143,
+            "tokens_per_second": 42.05737622203584
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image features a dark brown bear positioned in the middle of a vast, lush green meadow. The bear appears to be foraging or moving through the tall grass, its form somewhat obscured by the dense vegetation. The meadow is covered in a carpet of small, light-colored wildflowers, adding texture and vibrancy to the scene. In the background, a line of dark green coniferous trees forms a natural border, suggesting a forested area beyond the meadow. There are no people visible in the image, and the bear is the sole animal present. The interaction is primarily between the bear and its environment; it is actively navigating and likely feeding within the meadow, utilizing the vegetation for sustenance or cover. The scene conveys a sense of wildness and the bear's natural integration into its habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 174,
+            "total_tokens": 495
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4319.651332,
+            "prompt_eval_duration_ms": 84.744397,
+            "generation_duration_ms": 4138.976987,
+            "load_duration_ms": 89.550556,
+            "tokens_per_second": 42.03937362940452
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of wildness, tranquility, and a touch of cautious awe. The vast, undulating field of lush green vegetation creates a peaceful, natural atmosphere. The presence of the dark-furred bear, though small in the frame, introduces a subtle tension and reminds the viewer of the raw power and unpredictability of nature. It\u2019s not a frightening image, but rather one that inspires respect and a healthy distance. The overall tone is neutral leaning towards positive; it\u2019s a beautiful scene that highlights the harmony of wildlife in its natural habitat. The soft, diffused lighting and expansive landscape contribute to the feeling of serenity, while the bear serves as a reminder of the untamed wilderness. The image feels remote and untouched, fostering a sense of escape and connection with the natural world.\n\n\n\n",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 178,
+            "total_tokens": 502
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4415.656981,
+            "prompt_eval_duration_ms": 86.053274,
+            "generation_duration_ms": 4235.748482,
+            "load_duration_ms": 91.013353,
+            "tokens_per_second": 42.023269501581325
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"bear\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A bear is walking through a field of green vegetation.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A field of lush green grass covers most of the image.\"\n    },\n    \"trees\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"A line of trees forms the backdrop of the scene.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "bear": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A bear is walking through a field of green vegetation."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A field of lush green grass covers most of the image."
+              },
+              "trees": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "A line of trees forms the backdrop of the scene."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 205,
+            "total_tokens": 723
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5055.405214,
+            "prompt_eval_duration_ms": 138.872486,
+            "generation_duration_ms": 4824.430596,
+            "load_duration_ms": 88.903517,
+            "tokens_per_second": 42.49206117090134
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2750,
+        "total_time_ms": 23951.522972,
+        "average_speed": 42.10728558825104
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a serene natural setting, likely a meadow or open field in a forested area. The foreground is dominated by a lush, green expanse of grass interspersed with delicate wildflowers, adding splashes of white and light purple to the verdant landscape. In the center of the image, a dark brown bear is captured mid-stride, walking through the grass, seemingly undisturbed and at ease in its environment. The bear's presence adds a sense of wilderness and natural beauty to the scene. The background features a dense cluster of tall, dark green trees, likely conifers, which form a natural boundary and add depth to the image. The lighting appears to be soft and diffused, suggesting an overcast day or early morning light, which gently illuminates the scene without harsh shadows. The overall composition is balanced, with the bear serving as the focal point, drawing the viewer's eye into the heart of the image. The combination of colors, textures, and the tranquil setting creates a harmonious and captivating visual experience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 217,
+            "total_tokens": 1009
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8176.867657,
+            "prompt_eval_duration_ms": 2094.076223,
+            "generation_duration_ms": 6033.032211,
+            "load_duration_ms": 45.882128,
+            "tokens_per_second": 35.96864601590306
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, there is a bear walking through a grassy field. The bear is the most prominent feature in this layer, and its dark fur contrasts with the green and yellow hues of the grass. The grass appears to be tall and slightly overgrown, with some wildflowers scattered throughout, adding small splashes of white and purple to the scene. The bear seems to be moving slowly, possibly grazing or exploring the area.\n\nIn the background, a dense forest of tall evergreen trees stretches across the horizon. The trees are dark green and appear to be quite dense, creating a natural boundary for the grassy field. The forest extends upwards, with some trees reaching high into the sky, suggesting a mountainous or hilly terrain. The relationship between the foreground and background elements is one of natural harmony; the bear in the open field is part of the same ecosystem as the forest in the distance, creating a serene and untouched wilderness scene. The grassy field provides a clear, unobstructed view of the bear, while the forest in the background adds depth and context to the environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 227,
+            "total_tokens": 1025
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6418.821485,
+            "prompt_eval_duration_ms": 61.29793,
+            "generation_duration_ms": 6308.159975,
+            "load_duration_ms": 45.693208,
+            "tokens_per_second": 35.985136854427985
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a solitary black bear wandering through a grassy field. The bear appears to be grazing or foraging, moving slowly and methodically through the tall grass and wildflowers. The field is lush and verdant, suggesting a natural, possibly forested environment in the background. The bear is the only animal visible in the scene, and there are no people or other objects present. The bear's actions seem independent, with no interaction with other elements in the image. The surrounding vegetation and the distant trees provide a serene and undisturbed backdrop, emphasizing the bear's solitary journey through the landscape. The overall atmosphere is one of tranquility and natural beauty, with the bear as the central figure in this peaceful setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 148,
+            "total_tokens": 948
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4223.008192,
+            "prompt_eval_duration_ms": 55.540676,
+            "generation_duration_ms": 4115.264772,
+            "load_duration_ms": 48.619742,
+            "tokens_per_second": 35.963664113906496
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a serene and tranquil mood, evoking feelings of peace and solitude. The lush green field dotted with wildflowers and the dense forest in the background create a sense of natural beauty and harmony. The bear, calmly grazing, adds a touch of wildness that feels untamed yet peaceful, suggesting a moment of quiet reflection in the midst of nature. The overall tone is positive, as the scene exudes a sense of calmness and connection with the natural world. The soft, muted colors and the expansive, open space contribute to the soothing atmosphere, making the viewer feel at ease and inspired by the simplicity and purity of the landscape. The absence of any human presence further enhances the feeling of being in a pristine, untouched environment, fostering a sense of wonder and appreciation for the beauty of the wilderness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 171,
+            "total_tokens": 974
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4846.232424,
+            "prompt_eval_duration_ms": 57.459969,
+            "generation_duration_ms": 4737.84618,
+            "load_duration_ms": 47.217729,
+            "tokens_per_second": 36.09234945656256
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"bear\": {\n      \"count\": 1,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"bear walking through grassy field\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"entire image\",\n      \"description\": \"green grass covering the entire field\"\n    },\n    \"trees\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"description\": \"dense forest of trees in the background\"\n    },\n    \"flowers\": {\n      \"count\": 1,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"white\"],\n      \"description\": \"small white flowers scattered throughout the grass\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "bear": {
+                "count": 1,
+                "location": "center, middle, foreground",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "bear walking through grassy field"
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "entire image",
+                "description": "green grass covering the entire field"
+              },
+              "trees": {
+                "count": 1,
+                "location": "top, background",
+                "description": "dense forest of trees in the background"
+              },
+              "flowers": {
+                "count": 1,
+                "location": "center, middle, foreground",
+                "color": [
+                  "white"
+                ],
+                "description": "small white flowers scattered throughout the grass"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 192,
+            "total_tokens": 1174
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5507.468152,
+            "prompt_eval_duration_ms": 101.54408,
+            "generation_duration_ms": 5354.087738,
+            "load_duration_ms": 47.822117,
+            "tokens_per_second": 35.86045081728917
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5130,
+        "total_time_ms": 29172.39791,
+        "average_speed": 35.97404945161786
+      }
+    }
+  ]
+}

@@ -1,0 +1,913 @@
+{
+  "image": {
+    "path": "images/original/shared0189_nsd15794.png",
+    "name": "shared0189_nsd15794.png",
+    "id": "shared0189_nsd15794"
+  },
+  "timestamp": "2025-08-30T17:25:46.071644+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a close-up interaction between a person and a giraffe, set against a plain, overcast sky. The giraffe, with its distinctive brown coat dotted with darker brown spots, dominates the left side of the frame, its head angled towards the person, almost as if it is about to nuzzle or kiss them. The person, positioned on the right, is smiling broadly, their face partially obscured by the giraffe's head. They are wearing glasses and a dark jacket with a red logo on the sleeve. The lighting is soft and diffused, likely due to the cloudy sky, which casts an even light across the scene without harsh shadows. The overall composition is intimate and playful, with the giraffe's large, expressive eyes and the person's joyful expression creating a sense of connection and warmth. The simplicity of the background ensures that the focus remains on the interaction between the person and the giraffe, emphasizing the gentle and friendly nature of the encounter.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 196,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1520.881552,
+            "prompt_eval_duration_ms": 77.258785,
+            "generation_duration_ms": 1405.035874,
+            "load_duration_ms": 35.805192,
+            "tokens_per_second": 139.49821753803846
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the most prominent elements are a close-up of a giraffe's head and a woman smiling. The giraffe's head, with its distinctive long neck and patterned coat, dominates the left side of the frame, while the woman, wearing glasses and a dark jacket, is positioned on the right, her face partially obscured by the giraffe's nose. The woman's smile and the giraffe's gentle proximity suggest a moment of interaction or a shared experience. The background, which is less distinct due to the shallow depth of field, appears to be an open sky, possibly overcast, with a faint outline of trees and possibly another giraffe in the distance, hinting at a zoo or wildlife setting. The background elements provide a sense of place and context, framing the interaction between the woman and the giraffe in a natural environment. The relationship between the foreground and background is one of depth and perspective, with the foreground elements drawing the viewer's attention while the background offers a broader context for the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 210,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1604.862809,
+            "prompt_eval_duration_ms": 27.897678,
+            "generation_duration_ms": 1536.140113,
+            "load_duration_ms": 38.570302,
+            "tokens_per_second": 136.70627973504392
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a woman with short brown hair and glasses is interacting closely with a giraffe. The woman, wearing a dark jacket with a red logo, is smiling broadly, her hand gently touching the giraffe's nose, suggesting a friendly and trusting relationship. The giraffe, with its distinctive brown and white patterned coat, leans in closely to the woman, its long neck and large, dark eyes indicating a sense of curiosity or affection. The background is a plain white, which puts the focus entirely on the interaction between the woman and the giraffe. The woman's hand and the giraffe's nose are the primary points of contact, emphasizing the gentle and harmonious interaction between the human and the animal. The overall scene conveys a sense of connection and mutual respect, highlighting the positive interaction between humans and wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 167,
+            "total_tokens": 473
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1285.800287,
+            "prompt_eval_duration_ms": 29.257951,
+            "generation_duration_ms": 1216.364465,
+            "load_duration_ms": 36.774995,
+            "tokens_per_second": 137.29437582673873
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a mood of joy and wonder, primarily due to the interaction between the woman and the giraffe. The woman's wide smile and the giraffe's gentle proximity suggest a moment of connection and mutual affection. The giraffe's large, expressive eyes and the woman's relaxed posture contribute to the sense of harmony and peace. The soft, natural lighting and the blurred background emphasize the intimate and serene atmosphere, further enhancing the positive emotional tone. The overall impression is one of happiness and tranquility, as the image captures a fleeting moment of human-animal interaction that is both heartwarming and calming.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 124,
+            "total_tokens": 432
+          },
+          "performance_metrics": {
+            "total_duration_ms": 964.514935,
+            "prompt_eval_duration_ms": 28.806407,
+            "generation_duration_ms": 895.342662,
+            "load_duration_ms": 36.706017,
+            "tokens_per_second": 138.49446168801012
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"black\", \"red\"],\n      \"size\": \"medium\",\n      \"description\": \"wearing glasses and smiling\"\n    }\n  },\n  \"animal\": {\n    \"giraffe\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"nose close to person's face\"\n    }\n  },\n  \"man-made\": {\n    \"glasses\": {\n      \"count\": 1,\n      \"location\": \"on person\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"on person's face\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "black",
+                  "red"
+                ],
+                "size": "medium",
+                "description": "wearing glasses and smiling"
+              }
+            },
+            "animal": {
+              "giraffe": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "brown",
+                  "white"
+                ],
+                "size": "large",
+                "description": "nose close to person's face"
+              }
+            },
+            "man-made": {
+              "glasses": {
+                "count": 1,
+                "location": "on person",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "on person's face"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 178,
+            "total_tokens": 664
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1361.023038,
+            "prompt_eval_duration_ms": 43.086239,
+            "generation_duration_ms": 1278.009189,
+            "load_duration_ms": 37.775631,
+            "tokens_per_second": 139.27912375910154
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2575,
+        "total_time_ms": 6737.0826210000005,
+        "average_speed": 138.25449170938654
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a playful and lighthearted moment between a woman and a giraffe, set against a bright, open sky. The woman, positioned on the right side of the frame, has short, dark brown hair and is wearing glasses and a black jacket with red accents. She is smiling broadly, her expression radiating joy and amusement. Her hand is raised in a thumbs-up gesture, adding to the cheerful tone of the scene. \n\nThe giraffe, occupying the left side of the image, is the focal point. Its head and neck are prominently featured, with its distinctive brown and white patterned coat clearly visible. The giraffe appears to be leaning in toward the woman, as if playfully interacting with her, creating a sense of closeness and connection. Its large, expressive eye and long eyelashes add to the charm of the moment.\n\nIn the background, another giraffe is partially visible, suggesting that the setting is likely a zoo, wildlife park, or safari area. The background is mostly white, indicating a bright, sunny day with clear skies, which enhances the overall brightness and warmth of the image. The lighting is natural and even, highlighting the textures of the giraffe's coat and the woman's features without harsh shadows.\n\nThe composition is dynamic and engaging, with the giraffe's head and the woman's face forming a diagonal line that draws the viewer's eye across the image. The contrast between the giraffe's large, textured form and the woman's smaller, more human presence creates a sense of scale and interaction. The overall mood is joyful and whimsical, capturing a memorable and heartwarming interaction between human and animal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 336,
+            "total_tokens": 633
+          },
+          "performance_metrics": {
+            "total_duration_ms": 16033.028312,
+            "prompt_eval_duration_ms": 3520.172264,
+            "generation_duration_ms": 12473.649506,
+            "load_duration_ms": 37.19212,
+            "tokens_per_second": 26.93678380480222
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the most prominent elements are a giraffe and a woman. The giraffe, with its distinctive spotted pattern and long neck, is positioned very close to the camera, occupying a significant portion of the frame. Its head and part of its neck are clearly visible, and it appears to be interacting playfully with the woman, who is smiling and holding a small object, possibly a leaf or a piece of food, near the giraffe's mouth. The woman, wearing glasses and a dark jacket, is also in sharp focus, suggesting she is the primary subject of the photograph along with the giraffe. Her expression conveys joy and engagement, emphasizing the interaction between her and the animal.\n\nIn the background, the setting appears to be an open, naturalistic environment, likely a zoo or wildlife park. Another giraffe is visible in the distance, standing further away and partially obscured by the foreground elements. The background is relatively simple, with a pale, almost white sky and minimal vegetation, which helps to keep the focus on the giraffe and the woman in the foreground. The blurred background contrasts with the sharpness of the foreground, creating a sense of depth and emphasizing the intimate moment between the woman and the giraffe. The overall composition suggests a lighthearted and engaging interaction, with the giraffe's proximity and the woman's smile creating a sense of connection and wonder. The background elements, while less detailed, provide context and reinforce the idea of a natural or semi-natural habitat for the giraffe.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 312,
+            "total_tokens": 615
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11736.859829,
+            "prompt_eval_duration_ms": 73.864427,
+            "generation_duration_ms": 11621.5958,
+            "load_duration_ms": 39.132314,
+            "tokens_per_second": 26.846571277242322
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a lively and playful interaction between a person and a giraffe. A woman with short brown hair and glasses is smiling brightly, her face close to the giraffe's head, suggesting a moment of joy and connection. She appears to be feeding or engaging with the giraffe, as her hand is raised near the animal's mouth, holding what looks like a leaf or a piece of food. The giraffe, with its characteristic long neck and patterned coat, leans in toward the woman, seemingly interested in the food she is offering. The giraffe's large, gentle eyes and relaxed posture indicate a calm and friendly demeanor.\n\nIn the background, another giraffe is visible, standing slightly behind the woman and the first giraffe. This second giraffe is also looking in the direction of the woman, adding to the sense of a shared moment. The overall atmosphere of the image is one of curiosity and mutual engagement, highlighting a harmonious interaction between humans and animals. The woman's enthusiasm and the giraffes' calm interest create a scene that emphasizes the wonder and joy of connecting with wildlife. The image captures a moment of connection and mutual curiosity, showcasing the gentle nature of giraffes and the delight of human-animal interactions.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 251,
+            "total_tokens": 557
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9465.068642,
+            "prompt_eval_duration_ms": 72.289398,
+            "generation_duration_ms": 9350.808024,
+            "load_duration_ms": 39.730969,
+            "tokens_per_second": 26.842600057211907
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a lighthearted and joyful mood, evoking feelings of amusement, wonder, and connection with nature. The central focus is a woman smiling brightly while playfully interacting with a giraffe, which leans in close to her face, creating a sense of intimacy and curiosity. The giraffe's gentle proximity and the woman's enthusiastic expression suggest a moment of shared delight and mutual interest. The background, featuring another giraffe and a clear sky, adds to the serene and open atmosphere, reinforcing the sense of wonder and adventure. The overall tone is decidedly positive, as the image captures a spontaneous and heartwarming interaction between a human and an animal. The visual elements contributing to this emotional atmosphere include the woman's bright smile, the giraffe's calm demeanor, the natural setting, and the playful composition, all of which work together to create a warm and uplifting scene. The image invites viewers to feel a sense of joy and appreciation for the beauty of wildlife and the unexpected moments of connection it can bring.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 207,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7861.924062,
+            "prompt_eval_duration_ms": 78.777078,
+            "generation_duration_ms": 7740.661074,
+            "load_duration_ms": 40.201419,
+            "tokens_per_second": 26.741902018587204
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"brown\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A woman wearing glasses and a black jacket, smiling, holding a phone.\"\n    }\n  },\n  \"animal\": {\n    \"giraffe\": {\n      \"count\": 2,\n      \"location\": \"left, middle\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"One giraffe is in the foreground, close to the person, and another is in the background.\"\n    }\n  },\n  \"man-made\": {\n    \"phone\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Held by the person.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"Clear sky in the background.\"\n    },\n    \"tree\": {\n      \"count\": 1,\n      \"location\": \"left, bottom\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Partially visible in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "brown",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A woman wearing glasses and a black jacket, smiling, holding a phone."
+              }
+            },
+            "animal": {
+              "giraffe": {
+                "count": 2,
+                "location": "left, middle",
+                "color": [
+                  "brown",
+                  "white"
+                ],
+                "size": "large",
+                "description": "One giraffe is in the foreground, close to the person, and another is in the background."
+              }
+            },
+            "man-made": {
+              "phone": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "Held by the person."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "Clear sky in the background."
+              },
+              "tree": {
+                "count": 1,
+                "location": "left, bottom",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Partially visible in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 306,
+            "total_tokens": 792
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11519.283963,
+            "prompt_eval_duration_ms": 133.975051,
+            "generation_duration_ms": 11345.165409,
+            "load_duration_ms": 37.785878,
+            "tokens_per_second": 26.971841217692024
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3112,
+        "total_time_ms": 56616.164808,
+        "average_speed": 26.867939675107134
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a joyful and intimate moment at a zoo or wildlife park. The primary focus is a close-up shot of a young woman with dark, curly hair and glasses, beaming with excitement as she reaches up to feed a giraffe. The giraffe\u2019s massive head dominates the frame, showcasing its distinctive patterned hide \u2013 a rich, mottled brown with irregular, dark spots. The giraffe\u2019s long neck curves gracefully upwards, and its large, dark eyes are visible, suggesting a gentle curiosity. \n\nBehind the woman, another giraffe is partially visible, adding depth to the scene. The background is a soft, overcast gray, creating a muted and slightly hazy atmosphere. The lighting is diffused, minimizing harsh shadows and highlighting the textures of the giraffe\u2019s skin. The woman is wearing a red shirt with a logo on it, and she's holding a green leafy branch in her hand, offering it to the giraffe. The overall composition is dynamic, emphasizing the connection between the human and the animal, and creating a sense of wonder.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 220,
+            "total_tokens": 533
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1724.077089,
+            "prompt_eval_duration_ms": 305.099109,
+            "generation_duration_ms": 1334.983799,
+            "load_duration_ms": 81.919977,
+            "tokens_per_second": 164.79600738585444
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the image\u2019s elements, broken down as requested:\n\nIn the foreground, a young woman with dark, curly hair and glasses is captured in a moment of joyful interaction. She's smiling broadly, holding a green leafy branch towards the giraffe's mouth. Her red shirt has a logo on it, suggesting a zoo or wildlife organization. Her proximity to the giraffe emphasizes the intimate, almost playful, nature of the encounter. \n\nThe background reveals a zoo setting. Partially visible behind the woman is another giraffe, also reaching for a branch, and some trees and foliage are blurred in the distance. The overall setting is a grassy area, likely within a zoo enclosure. The woman and the giraffe are positioned close together, creating a sense of connection and highlighting the zoo\u2019s purpose of providing close-up animal encounters. The blurred background reinforces the focus on the immediate interaction between the human and the animal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 189,
+            "total_tokens": 507
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1286.263554,
+            "prompt_eval_duration_ms": 60.703407,
+            "generation_duration_ms": 1138.263375,
+            "load_duration_ms": 85.359399,
+            "tokens_per_second": 166.0424152714217
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and interactions:\n\nThe image captures a joyful moment at a zoo or wildlife encounter. A young woman with dark, curly hair and glasses is grinning broadly, extending a green treat towards the face of a towering giraffe. The giraffe, with its distinctive patterned coat, is actively reaching out to take the treat from her hand, its long neck bending down to meet her offering. Behind the main giraffe, another giraffe is visible, partially obscured, suggesting a group of animals. The woman\u2019s expression and outstretched hand indicate a direct interaction, a playful exchange of food between a human and a wild animal. The relationship is one of offering and acceptance, a brief, intimate connection between species. The background is a blurred expanse of greenery, likely trees, further emphasizing the setting of a natural environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 170,
+            "total_tokens": 491
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1166.780898,
+            "prompt_eval_duration_ms": 60.544429,
+            "generation_duration_ms": 1017.623168,
+            "load_duration_ms": 86.767324,
+            "tokens_per_second": 167.05594501559145
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed in the image:\n\nThe image radiates a palpable sense of joy and wonder, creating a decidedly positive emotional atmosphere. A young woman with dark, curly hair and glasses is beaming, her face close to the camera, and even closer to the snout of a giraffe. The giraffe itself appears relaxed and accepting of the interaction, adding to the feeling of gentle connection. The close-up perspective intensifies the experience, drawing the viewer into the moment. The woman's smile is infectious, and the giraffe's calm demeanor suggests a peaceful encounter. The bright, neutral background further emphasizes the vibrant interaction. The visual elements\u2014the woman\u2019s delighted expression, the giraffe\u2019s relaxed posture, and the close proximity\u2014combine to evoke feelings of excitement, curiosity, and a sense of childlike amazement. It\u2019s a heartwarming snapshot of a special, shared experience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 184,
+            "total_tokens": 508
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1245.476258,
+            "prompt_eval_duration_ms": 55.565447,
+            "generation_duration_ms": 1102.095429,
+            "load_duration_ms": 86.221476,
+            "tokens_per_second": 166.95468936565203
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"brown\", \"red\"],\n      \"size\": \"medium\",\n      \"description\": \"A smiling woman wearing glasses and a red shirt, holding a green stick and reaching out to feed a giraffe.\"\n    }\n  },\n  \"animal\": {\n    \"giraffe\": {\n      \"count\": 2,\n      \"location\": \"foreground\",\n      \"color\": [\"brown\", \"beige\"],\n      \"size\": \"large\",\n      \"description\": \"Two giraffes, one in the foreground and one slightly behind, reaching for a green stick. They have distinctive spotted patterns.\"\n    }\n  },\n  \"man-made\": {\n    \"stick\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"A green stick held by the woman, used to feed the giraffes.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"white\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A cloudy, overcast sky in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "brown",
+                  "red"
+                ],
+                "size": "medium",
+                "description": "A smiling woman wearing glasses and a red shirt, holding a green stick and reaching out to feed a giraffe."
+              }
+            },
+            "animal": {
+              "giraffe": {
+                "count": 2,
+                "location": "foreground",
+                "color": [
+                  "brown",
+                  "beige"
+                ],
+                "size": "large",
+                "description": "Two giraffes, one in the foreground and one slightly behind, reaching for a green stick. They have distinctive spotted patterns."
+              }
+            },
+            "man-made": {
+              "stick": {
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "A green stick held by the woman, used to feed the giraffes."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "white",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A cloudy, overcast sky in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 315,
+            "total_tokens": 833
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2032.349713,
+            "prompt_eval_duration_ms": 67.431774,
+            "generation_duration_ms": 1875.850056,
+            "load_duration_ms": 87.235423,
+            "tokens_per_second": 167.92386949716837
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2872,
+        "total_time_ms": 7454.947512000001,
+        "average_speed": 166.5545853071376
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe photograph captures a playful and intimate moment between a young woman and a giraffe. The setting appears to be an outdoor enclosure, likely at a zoo or wildlife park, with a slightly overcast sky creating a soft, diffused light. The primary focus is on the giraffe's head, which dominates the foreground and fills a significant portion of the frame, positioned very close to the camera, creating a slightly distorted perspective. The woman, wearing glasses and a black shirt with a red logo, is positioned beside the giraffe, her face beaming with excitement as the giraffe gently nuzzles her cheek. In the blurred background, other giraffes can be seen, adding depth to the scene. The color palette is dominated by the giraffe\u2019s distinctive brown and tan patterns, contrasted with the woman\u2019s dark clothing and the muted tones of the sky. The lighting is even, minimizing harsh shadows and contributing to a cheerful and heartwarming atmosphere. The overall composition emphasizes the connection between humans and animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 205,
+            "total_tokens": 518
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2991.678889,
+            "prompt_eval_duration_ms": 337.061545,
+            "generation_duration_ms": 2561.894101,
+            "load_duration_ms": 91.037613,
+            "tokens_per_second": 80.0189203449046
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements and their relationship:\n\nThe photograph's foreground is dominated by a close-up interaction between a person and a giraffe. The person, a young woman with dark, cropped hair and glasses, is positioned very close to the camera, creating a sense of immediacy and playful interaction. She's smiling broadly and appears to be feeding the giraffe, holding something in her hand. The giraffe's head, with its distinctive patterned coat, fills a significant portion of the frame, its nose almost touching the woman's face. In the background, slightly blurred, are more giraffes, suggesting a zoo or wildlife park setting. The backdrop is a muted, overcast sky and hints of greenery, creating a soft, diffused light. The close proximity of the woman and giraffe in the foreground contrasts with the more distant, less defined background, emphasizing the unique and intimate moment captured.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 189,
+            "total_tokens": 507
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2523.700287,
+            "prompt_eval_duration_ms": 64.100957,
+            "generation_duration_ms": 2370.468695,
+            "load_duration_ms": 87.247158,
+            "tokens_per_second": 79.73106769925093
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on interactions and relationships:\n\nThe image captures a playful moment between a young woman and a giraffe. The woman, wearing glasses and a black shirt with a red logo, stands close to the giraffe, her face beaming with excitement as the giraffe gently nuzzles her cheek with its snout. She holds a green object, likely food, which seems to be the reason for the giraffe's approach. In the blurred background, two more giraffes are visible, suggesting they are part of a group. The composition creates a sense of intimacy and connection between the woman and the giraffe, highlighting the playful interaction between humans and animals. The background is a slightly overcast sky and foliage, creating a natural setting for this heartwarming encounter. The overall feeling is one of joy and a close bond with wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 168,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2267.20272,
+            "prompt_eval_duration_ms": 67.642648,
+            "generation_duration_ms": 2104.500187,
+            "load_duration_ms": 93.331372,
+            "tokens_per_second": 79.82893089664525
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image radiates a joyful and playful mood, instantly evoking feelings of excitement and wonder. The close-up perspective, with the giraffe's snout nearly touching the viewer's face, creates a sense of intimacy and shared experience. The girl's beaming smile and wide eyes convey pure delight and amusement, suggesting a moment of genuine connection with the animal. The giraffe's gentle interaction, seemingly accepting a treat from the girl, further enhances the positive atmosphere. The background, blurred and featuring other giraffes, hints at a larger, vibrant environment, adding to the overall sense of adventure and fun. The bright, natural lighting contributes to the cheerful tone, making the image feel warm and inviting. Overall, the photograph captures a heartwarming and memorable encounter, leaving the viewer with a feeling of happiness and a desire to share in the girl's joyful experience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 172,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2317.249831,
+            "prompt_eval_duration_ms": 68.33869,
+            "generation_duration_ms": 2156.988841,
+            "load_duration_ms": 89.903782,
+            "tokens_per_second": 79.74079268776337
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"item\": \"person\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"fair\", \"red\"],\n      \"size\": \"medium\",\n      \"description\": \"Smiling woman with short dark hair, wearing glasses and a black shirt with a logo.\"\n    }\n  ],\n  \"animal\": [\n    {\n      \"item\": \"giraffe\",\n      \"count\": 3,\n      \"location\": \"foreground/background\",\n      \"color\": [\"brown\", \"beige\", \"black\"],\n      \"size\": [\"large\", \"medium\"],\n      \"description\": \"Giraffe head is very close to the camera, appearing to interact with the person. Other giraffes are visible in the background.\"\n    }\n  ],\n  \"man-made\": [\n    {\n      \"item\": \"shirt\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Black shirt worn by the person, with a logo visible on the chest.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"sky\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Overcast sky.\"\n    },\n    {\n      \"item\": \"trees\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"medium\",\n      \"description\": \"Green trees visible in the background.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "item": "person",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "fair",
+                  "red"
+                ],
+                "size": "medium",
+                "description": "Smiling woman with short dark hair, wearing glasses and a black shirt with a logo."
+              }
+            ],
+            "animal": [
+              {
+                "item": "giraffe",
+                "count": 3,
+                "location": "foreground/background",
+                "color": [
+                  "brown",
+                  "beige",
+                  "black"
+                ],
+                "size": [
+                  "large",
+                  "medium"
+                ],
+                "description": "Giraffe head is very close to the camera, appearing to interact with the person. Other giraffes are visible in the background."
+              }
+            ],
+            "man-made": [
+              {
+                "item": "shirt",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Black shirt worn by the person, with a logo visible on the chest."
+              }
+            ],
+            "natural": [
+              {
+                "item": "sky",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Overcast sky."
+              },
+              {
+                "item": "trees",
+                "count": 1,
+                "location": "background",
+                "size": "medium",
+                "description": "Green trees visible in the background."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 374,
+            "total_tokens": 892
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4867.589825,
+            "prompt_eval_duration_ms": 89.36764,
+            "generation_duration_ms": 4684.393199,
+            "load_duration_ms": 91.783787,
+            "tokens_per_second": 79.83958308193249
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2902,
+        "total_time_ms": 14967.421552,
+        "average_speed": 79.83185894209933
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe photograph captures a close-up, playful interaction between a woman and a giraffe. The giraffe\u2019s head dominates the frame, extending towards the woman\u2019s face as if to gently \u201ckiss\u201d her. The woman, with short, dark hair and glasses, is beaming with delight, clearly enjoying the moment. She's wearing a red shirt with a logo on it. Behind her, slightly blurred, are other giraffes, suggesting a zoo or wildlife park setting. The color palette is dominated by the warm browns and tans of the giraffes, contrasted by the woman\u2019s red shirt and the neutral background. The lighting appears to be overcast or diffused, creating soft shadows and minimizing harsh highlights. The composition is dynamic, with the giraffe\u2019s head angled towards the viewer, drawing the eye directly to the interaction. The close proximity between the woman and the giraffe creates a sense of intimacy and wonder.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 193,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5084.239949,
+            "prompt_eval_duration_ms": 400.684705,
+            "generation_duration_ms": 4597.250547,
+            "load_duration_ms": 84.512915,
+            "tokens_per_second": 41.981614451260405
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by the head and neck of a giraffe, filling much of the frame and appearing to almost touch the viewer. A smiling woman with short, dark hair and glasses is positioned to the right of the giraffe\u2019s head, holding a green leaf and seemingly offering it to the animal. The giraffe is focused on the leaf, its nose nearly touching the woman\u2019s face. In the mid-ground, slightly blurred, are the heads and necks of two additional giraffes, indicating a group or herd. The background is a soft, out-of-focus expanse of green foliage and trees, suggesting a natural habitat or zoo enclosure. The composition emphasizes the close interaction between the woman and the giraffe, creating a sense of intimacy and wonder. The blurred background helps to draw attention to the main subjects in the foreground and mid-ground, highlighting the connection between humans and wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 195,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4806.770534,
+            "prompt_eval_duration_ms": 82.40264,
+            "generation_duration_ms": 4635.573133,
+            "load_duration_ms": 86.898794,
+            "tokens_per_second": 42.065995812216215
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a heartwarming interaction between a woman and a giraffe. A smiling woman with short, dark hair and glasses is reaching out to feed a giraffe a green vegetable. The giraffe is leaning its head towards her, seemingly eager to accept the treat. The giraffe\u2019s patterned coat is prominently displayed, and its large, dark eyes are visible. In the background, there are other giraffes, slightly blurred, suggesting they are also part of the scene, possibly at a wildlife park or zoo. The woman appears delighted by the close encounter with the animal, creating a sense of joy and connection. The focus is on the gentle interaction between human and animal, highlighting a moment of trust and affection. The scene is set against a bright, overcast sky, and the overall impression is one of a positive and memorable experience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 174,
+            "total_tokens": 495
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4313.289924,
+            "prompt_eval_duration_ms": 85.544223,
+            "generation_duration_ms": 4135.967929,
+            "load_duration_ms": 89.861435,
+            "tokens_per_second": 42.06995871026252
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image radiates pure joy and delight. The woman's beaming smile and open expression clearly convey happiness and excitement as she interacts with the giraffe. The giraffe itself appears gentle and curious, leaning its head towards the woman as if enjoying the interaction. The close proximity between the woman and the giraffe creates a sense of connection and trust. The bright, natural lighting and the soft focus contribute to a warm and inviting atmosphere. The presence of other giraffes in the background suggests a peaceful and natural setting. Overall, the image evokes feelings of wonder, playfulness, and a deep appreciation for the beauty of nature and animal companionship. The tone is overwhelmingly positive, capturing a heartwarming moment of connection between humans and animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 158,
+            "total_tokens": 482
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3924.836481,
+            "prompt_eval_duration_ms": 82.154776,
+            "generation_duration_ms": 3754.564611,
+            "load_duration_ms": 85.764028,
+            "tokens_per_second": 42.082109743722825
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\n        \"brown\",\n        \"red\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"Smiling woman with glasses, holding green vegetation.\"\n    }\n  },\n  \"animal\": {\n    \"giraffe\": {\n      \"count\": 3,\n      \"location\": \"left/center/background\",\n      \"color\": [\n        \"brown\",\n        \"tan\"\n      ],\n      \"size\": \"large\",\n      \"description\": \"Giraffes with distinctive spotted patterns. One giraffe is very close to the camera and appears to be eating from the woman's hand.\"\n    }\n  },\n  \"natural\": {\n    \"vegetation\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"green\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"Green leaves being held by the woman, likely as food for the giraffe.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "brown",
+                  "red"
+                ],
+                "size": "medium",
+                "description": "Smiling woman with glasses, holding green vegetation."
+              }
+            },
+            "animal": {
+              "giraffe": {
+                "count": 3,
+                "location": "left/center/background",
+                "color": [
+                  "brown",
+                  "tan"
+                ],
+                "size": "large",
+                "description": "Giraffes with distinctive spotted patterns. One giraffe is very close to the camera and appears to be eating from the woman's hand."
+              }
+            },
+            "natural": {
+              "vegetation": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "Green leaves being held by the woman, likely as food for the giraffe."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 261,
+            "total_tokens": 779
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6399.607004,
+            "prompt_eval_duration_ms": 138.496144,
+            "generation_duration_ms": 6171.670307,
+            "load_duration_ms": 87.668651,
+            "tokens_per_second": 42.29001016207394
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2775,
+        "total_time_ms": 24528.743892,
+        "average_speed": 42.09793777590718
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a delightful moment at what appears to be a zoo or wildlife park. The main focus is a woman with short, dark hair and glasses, who is joyfully interacting with a giraffe. She is positioned close to the giraffe, her face lit up with a smile as she leans in to kiss or nuzzle the giraffe's neck. The giraffe, with its distinctive brown patches separated by light tan lines, stands tall and calm, its long neck arched gracefully towards the woman. The background is a soft, overcast sky, providing a neutral backdrop that allows the subjects to stand out. The lighting is natural, diffused by the cloud cover, which softens the overall appearance and highlights the textures of the giraffe's fur and the woman's skin. The composition is balanced, with the woman and giraffe occupying the central space, creating a heartwarming and intimate scene that emphasizes the connection between humans and wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 193,
+            "total_tokens": 985
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7451.908654,
+            "prompt_eval_duration_ms": 2027.401114,
+            "generation_duration_ms": 5378.752782,
+            "load_duration_ms": 43.21794,
+            "tokens_per_second": 35.88192427171493
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a woman wearing glasses and a dark jacket is prominently featured. She is smiling and appears to be interacting closely with a giraffe, which is also in the foreground. The giraffe's head is turned towards the woman, suggesting a moment of connection or feeding. The woman's hand is extended towards the giraffe, possibly holding food, which further emphasizes the interaction between them. Behind the woman and the giraffe, another giraffe can be seen, slightly blurred, indicating it is further away. The background consists of a cloudy sky and some indistinct greenery, likely trees or bushes, which provides a natural setting for the scene. The foreground elements, the woman and the giraffe, are the main focus and draw attention due to their clarity and proximity to the viewer, while the background elements provide context, suggesting that the interaction is taking place in a zoo or a wildlife park. The relationship between the foreground and background elements creates a sense of depth and highlights the central moment of human-animal interaction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 210,
+            "total_tokens": 1008
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5955.992001,
+            "prompt_eval_duration_ms": 59.3514,
+            "generation_duration_ms": 5848.758754,
+            "load_duration_ms": 44.948217,
+            "tokens_per_second": 35.90505418887038
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, there is a woman wearing glasses and a black jacket, who is closely interacting with a giraffe. The woman appears to be smiling and is holding out her hand, possibly feeding or petting the giraffe. The giraffe, with its distinctive long neck and spotted coat, is leaning down towards the woman, seemingly engaging with her in a friendly manner. In the background, there is another giraffe, which is partially visible and appears to be standing nearby, observing the interaction between the woman and the first giraffe. The setting seems to be an outdoor environment, likely a zoo or a wildlife park, where such close encounters with animals are possible. The woman and the giraffes are the main subjects of the image, and their interaction suggests a moment of connection and curiosity between humans and wildlife.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 165,
+            "total_tokens": 965
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4697.692787,
+            "prompt_eval_duration_ms": 53.94638,
+            "generation_duration_ms": 4596.804672,
+            "load_duration_ms": 44.441963,
+            "tokens_per_second": 35.894498847220106
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood of joy and wonder, evoking feelings of happiness and curiosity. The overall tone is distinctly positive, primarily due to the woman's bright smile and the close interaction with the giraffe. Her expression of delight and the playful closeness of the giraffe create a sense of connection and excitement. The visual elements that contribute to this emotional atmosphere include the woman's animated facial expression, her relaxed posture, and the gentle, almost affectionate proximity of the giraffe. The natural setting in the background adds to the serene and uplifting feel of the image. The combination of human joy and the majestic presence of the giraffe fosters a sense of harmony and positivity, making the scene heartwarming and engaging.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 150,
+            "total_tokens": 953
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4263.092307,
+            "prompt_eval_duration_ms": 52.79103,
+            "generation_duration_ms": 4161.390288,
+            "load_duration_ms": 46.241703,
+            "tokens_per_second": 36.0456457142575
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"right, middle, foreground\",\n      \"color\": [\"black\", \"red\"],\n      \"size\": \"medium\",\n      \"description\": \"Wearing glasses and a black jacket with a red design, smiling, holding a giraffe's head close to their face.\"\n    }\n  },\n  \"animal\": {\n    \"giraffe\": {\n      \"count\": 2,\n      \"location\": \"left, middle, foreground and left, middle, background\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"One giraffe is prominently in the foreground with its head close to the person. The other giraffe is partially visible in the background.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"description\": \"Clear sky visible in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "right, middle, foreground",
+                "color": [
+                  "black",
+                  "red"
+                ],
+                "size": "medium",
+                "description": "Wearing glasses and a black jacket with a red design, smiling, holding a giraffe's head close to their face."
+              }
+            },
+            "animal": {
+              "giraffe": {
+                "count": 2,
+                "location": "left, middle, foreground and left, middle, background",
+                "color": [
+                  "brown",
+                  "white"
+                ],
+                "size": "large",
+                "description": "One giraffe is prominently in the foreground with its head close to the person. The other giraffe is partially visible in the background."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "description": "Clear sky visible in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 218,
+            "total_tokens": 1200
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6239.036308,
+            "prompt_eval_duration_ms": 104.948904,
+            "generation_duration_ms": 6087.666822,
+            "load_duration_ms": 43.849955,
+            "tokens_per_second": 35.81010695463451
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5111,
+        "total_time_ms": 28607.722056999995,
+        "average_speed": 35.907445995339486
+      }
+    }
+  ]
+}

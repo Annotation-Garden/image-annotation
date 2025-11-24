@@ -1,0 +1,930 @@
+{
+  "image": {
+    "path": "images/original/shared0584_nsd43446.png",
+    "name": "shared0584_nsd43446.png",
+    "id": "shared0584_nsd43446"
+  },
+  "timestamp": "2025-08-30T21:04:39.696644+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a young boy standing on a lush, vibrant green grassy field, likely a soccer pitch, under what appears to be the warm, golden light of either early morning or late afternoon, suggesting a serene and peaceful setting. The boy, positioned slightly off-center to the left, is wearing a white soccer jersey with black stripes on the sleeves and black shorts, which contrast subtly against the bright green of the field. He holds a bright yellow soccer ball with black stripes in his right hand, which stands out vividly against his white jersey and the green backdrop. His expression is neutral, with a slight smile, and his dark hair is neatly styled. The overall composition is simple and balanced, with the boy and the ball as the focal points, and the expansive field providing a sense of openness and space. The lighting enhances the natural colors, making the scene feel lively yet calm.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 179,
+            "total_tokens": 476
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1388.951763,
+            "prompt_eval_duration_ms": 79.023917,
+            "generation_duration_ms": 1269.970838,
+            "load_duration_ms": 37.754969,
+            "tokens_per_second": 140.94811836931328
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, a young boy stands prominently, dressed in a white and black sports jersey paired with black shorts, holding a bright yellow soccer ball with black stripes. His attire suggests he is a soccer player, and the ball, a key element of the sport, indicates his involvement. The boy's position and attire clearly establish him as the primary subject of the image. The background, consisting of a vast expanse of lush green grass, serves as a serene and natural setting, providing a stark contrast to the boy's vibrant attire and the bold yellow of the soccer ball. The grassy field, likely a soccer pitch, frames the boy and the ball, emphasizing the outdoor sports environment. The relationship between the foreground and background is one of depth and context; the boy and his soccer ball are the focal point, while the expansive grassy field sets the stage, suggesting a peaceful and open space for the sport.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 184,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1397.09807,
+            "prompt_eval_duration_ms": 30.603288,
+            "generation_duration_ms": 1325.605972,
+            "load_duration_ms": 38.553885,
+            "tokens_per_second": 138.80444407050393
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a young boy stands on a grassy field, holding a bright yellow soccer ball with black stripes. He is dressed in a white soccer jersey and black shorts, suggesting he is either a player or a fan of the sport. The boy appears to be posing for the photo, with a slight smile on his face, indicating a sense of pride or enjoyment. The soccer ball, held securely in his right hand, is the focal point of the image, symbolizing his connection to the sport. The background is a uniform expanse of green grass, which provides a simple and uncluttered backdrop that emphasizes the subject. There are no other people or animals in the image, and the boy's interaction with the ball is the primary action depicted. The overall scene suggests a moment of leisure or practice, capturing a snapshot of a young athlete's passion for soccer.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 177,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1340.656223,
+            "prompt_eval_duration_ms": 30.807893,
+            "generation_duration_ms": 1267.273082,
+            "load_duration_ms": 40.248652,
+            "tokens_per_second": 139.66997525163248
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of youthful energy and optimism, contributing to an overall positive mood. The bright green soccer ball held by the child, along with the vibrant green field in the background, symbolize the joy and excitement associated with outdoor activities and sports. The child's relaxed posture and gentle smile suggest a feeling of contentment and happiness, indicating a moment of simple pleasure and accomplishment. The soft lighting and the natural setting further enhance the serene and uplifting atmosphere, making the image feel like a snapshot of a carefree and joyful moment. The contrast between the child's white and black sports attire and the lush green field creates a visually appealing and harmonious composition, reinforcing the positive and uplifting tone of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 144,
+            "total_tokens": 452
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1107.896578,
+            "prompt_eval_duration_ms": 33.301645,
+            "generation_duration_ms": 1033.034527,
+            "load_duration_ms": 39.154506,
+            "tokens_per_second": 139.39514724467674
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"child holding a soccer ball\"\n    }\n  },\n  \"man-made\": {\n    \"soccer_ball\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"child holding the ball\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"field where the child is standing\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "child holding a soccer ball"
+              }
+            },
+            "man-made": {
+              "soccer_ball": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "black"
+                ],
+                "size": "small",
+                "description": "child holding the ball"
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "field where the child is standing"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 175,
+            "total_tokens": 661
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1341.091876,
+            "prompt_eval_duration_ms": 50.509156,
+            "generation_duration_ms": 1250.466324,
+            "load_duration_ms": 37.866102,
+            "tokens_per_second": 139.94779118897728
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2559,
+        "total_time_ms": 6575.694509999999,
+        "average_speed": 139.75309522502076
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a young individual standing outdoors on a lush, expansive green field, likely a soccer or sports field. The setting is bright and sunny, with even, natural lighting that suggests it is daytime. The individual is dressed in athletic attire, consisting of a white long-sleeve shirt with a black logo on the chest and black shorts. The shirt appears to be made of a lightweight, breathable fabric suitable for sports. The person is holding a vibrant yellow soccer ball with black stripes, which stands out vividly against the green background. The ball is positioned prominently in the foreground, suggesting its importance in the scene.\n\nThe individual has short, dark hair and is smiling gently, exuding a sense of confidence and enjoyment. The background is a vast, open field with neatly mowed grass, indicating a well-maintained sports facility. The composition is straightforward, with the person centered in the frame, drawing the viewer's attention directly to them and the soccer ball. The overall color palette is dominated by the bright green of the grass, the white and black of the clothing, and the striking yellow of the ball, creating a visually appealing contrast. The image conveys a sense of youth, energy, and a love for sports, particularly soccer. The lighting is soft and diffused, enhancing the clarity and vibrancy of the colors without harsh shadows. The scene feels balanced and harmonious, with the subject and the ball as the focal points against the expansive, serene backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 297,
+            "total_tokens": 594
+          },
+          "performance_metrics": {
+            "total_duration_ms": 14676.920353,
+            "prompt_eval_duration_ms": 3556.492722,
+            "generation_duration_ms": 11079.650779,
+            "load_duration_ms": 38.072291,
+            "tokens_per_second": 26.805899023724095
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features a young individual standing on a grassy field. The person is dressed in a white sports jersey with black accents, including a black logo on the chest, and black shorts. They are holding a bright yellow soccer ball with black stripes, which stands out vividly against the green backdrop. The individual appears to be outdoors, likely on a sports field, given the attire and the presence of the soccer ball.\n\nIn the background, the setting is a vast, open grassy field, which stretches out to the horizon. The grass is uniformly green and well-maintained, suggesting a sports field or a similar recreational area. The field appears expansive, providing a sense of depth and openness to the image. There are no other significant objects or people visible in the background, which keeps the focus on the individual in the foreground.\n\nThe relationship between the foreground and background is clear: the individual and the soccer ball in the foreground are the primary subjects, drawing immediate attention. The expansive, open field in the background serves as a neutral and uncluttered setting, emphasizing the subject and creating a sense of space. The green field complements the bright yellow soccer ball, enhancing the visual contrast and making the ball and the individual stand out even more. Overall, the composition effectively uses the contrast between the vibrant foreground elements and the muted background to highlight the subject and the context of a sports activity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 285,
+            "total_tokens": 588
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10725.864828,
+            "prompt_eval_duration_ms": 74.283391,
+            "generation_duration_ms": 10607.149371,
+            "load_duration_ms": 41.681436,
+            "tokens_per_second": 26.868670368609255
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a young person standing on a grassy field, likely a soccer or sports field, holding a bright yellow soccer ball. The individual is dressed in a white sports jersey with a black logo on the chest, paired with black shorts, suggesting they are participating in or preparing for a soccer activity. The person is holding the ball securely with both hands, indicating readiness or a pause in play. The bright yellow ball, with its bold black stripes, stands out vividly against the green backdrop of the field, drawing attention to the central focus of the image.\n\nThere are no animals visible in the image, and the primary interaction is between the person and the soccer ball. The individual appears to be engaged in a sporting activity, possibly practicing or preparing for a game. The setting is open and spacious, typical of a sports field, which emphasizes the recreational or competitive nature of the scene. The person's posture and grip on the ball suggest a sense of focus and determination, highlighting their connection to the sport. The overall composition of the image conveys a sense of youth, athleticism, and the joy of participating in team sports. The interaction between the person and the ball is central, symbolizing the relationship between the individual and their chosen activity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 250,
+            "total_tokens": 556
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9407.310239,
+            "prompt_eval_duration_ms": 73.853482,
+            "generation_duration_ms": 9291.626526,
+            "load_duration_ms": 39.266232,
+            "tokens_per_second": 26.905945832029023
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a positive and uplifting mood, evoking feelings of joy, confidence, and enthusiasm. The young individual is standing outdoors on a bright, expansive grassy field, which suggests a sense of freedom and openness. The vibrant yellow soccer ball, held securely in their hand, symbolizes energy, playfulness, and a love for sports. The individual's attire\u2014a white shirt with a black logo and black shorts\u2014appears casual and sporty, reinforcing the theme of youth and activity. Their posture is upright and confident, with a slight smile on their face, indicating a sense of happiness and pride. The bright, natural lighting enhances the overall warmth and positivity of the scene, making it feel lively and inviting. The green field in the background adds a sense of calm and connection to nature, balancing the energy of the subject. The combination of these elements\u2014the bright colors, the outdoor setting, the confident posture, and the joyful expression\u2014creates a tone that is overwhelmingly positive and inspiring. The image evokes feelings of hope, optimism, and the simple joys of childhood and outdoor play.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 221,
+            "total_tokens": 529
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8333.308205,
+            "prompt_eval_duration_ms": 77.233853,
+            "generation_duration_ms": 8215.540449,
+            "load_duration_ms": 38.241624,
+            "tokens_per_second": 26.900238806188366
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A young person wearing a white shirt and black shorts, holding a soccer ball.\"\n    }\n  },\n  \"man-made\": {\n    \"soccer_ball\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"yellow\", \"orange\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"A colorful soccer ball with black stripes.\"\n    },\n    \"shirt\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A white shirt with a black logo on the chest.\"\n    },\n    \"shorts\": {\n      \"count\": 1,\n      \"location\": \"center, bottom\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Black shorts.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A large field of green grass.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A young person wearing a white shirt and black shorts, holding a soccer ball."
+              }
+            },
+            "man-made": {
+              "soccer_ball": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "yellow",
+                  "orange",
+                  "black"
+                ],
+                "size": "small",
+                "description": "A colorful soccer ball with black stripes."
+              },
+              "shirt": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A white shirt with a black logo on the chest."
+              },
+              "shorts": {
+                "count": 1,
+                "location": "center, bottom",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Black shorts."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A large field of green grass."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 294,
+            "total_tokens": 780
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11069.411379,
+            "prompt_eval_duration_ms": 133.413816,
+            "generation_duration_ms": 10895.28421,
+            "load_duration_ms": 38.225739,
+            "tokens_per_second": 26.98415152219329
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3047,
+        "total_time_ms": 54212.815004,
+        "average_speed": 26.892981110548806
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph depicts a young Asian boy, likely a youth soccer player, standing on a bright green grass field. He is wearing a white Puma soccer jersey with black side stripes and a black long-sleeved base layer underneath. His black shorts also feature prominent black side stripes. He is holding a yellow soccer ball in his right hand, with a slight smile on his face. The ball has black stripes running vertically down its surface. \n\nThe lighting appears to be soft and diffused, suggesting an overcast day or a shaded area. The background is a blurred expanse of green grass, indicating a soccer field. The composition is straightforward, with the boy positioned slightly to the right of the frame, allowing for a comfortable amount of negative space. The focus is sharp on the boy and the ball, while the background is intentionally blurred. The overall impression is one of youthful energy and athletic potential.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 189,
+            "total_tokens": 502
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1528.270849,
+            "prompt_eval_duration_ms": 310.340538,
+            "generation_duration_ms": 1128.555465,
+            "load_duration_ms": 87.245682,
+            "tokens_per_second": 167.4707232931613
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nIn the foreground, a young Asian boy with dark hair is the primary focus. He is wearing a white Puma soccer jersey with black side stripes and a black long-sleeved shirt. He is holding a yellow soccer ball with black stripes, presenting it towards the viewer. His expression is slightly smiling, suggesting a confident or friendly demeanor. The ball is positioned close to the camera, drawing immediate attention. \n\nThe background consists of a grassy field, likely a soccer field, extending into the distance. The grass is a vibrant green, indicating a healthy and well-maintained surface. The field occupies the majority of the background, creating a sense of depth and suggesting an outdoor setting. The boy and the soccer ball are positioned within this expansive field, reinforcing the context of a soccer game or practice. The overall composition creates a clear and balanced image, with the boy and ball acting as the central subject against the backdrop of the field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 203,
+            "total_tokens": 521
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1344.514647,
+            "prompt_eval_duration_ms": 54.311585,
+            "generation_duration_ms": 1203.252052,
+            "load_duration_ms": 85.073288,
+            "tokens_per_second": 168.70945672819013
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph:\n\nThe image features a young Asian boy, approximately 10-12 years old, standing on a lush green lawn. He is wearing a white Puma soccer jersey with black side stripes and a black long-sleeved shirt underneath. In his right hand, he holds a bright yellow soccer ball, appearing to be in the midst of a game or practice. The ball is slightly tilted, suggesting a moment of action or a recent kick. The background is a blurred expanse of green grass, indicating an outdoor setting, likely a sports field. \n\nThe boy's expression is relaxed and focused, suggesting he is engaged in the activity. There are no other visible people or animals in the frame, creating a solitary scene centered around the boy and the soccer ball. The interaction is simple \u2013 the boy is holding and potentially preparing to play with the ball, embodying the essence of a young athlete.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 194,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1305.262582,
+            "prompt_eval_duration_ms": 60.635292,
+            "generation_duration_ms": 1155.812251,
+            "load_duration_ms": 86.7536,
+            "tokens_per_second": 167.8473297303716
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of youthful optimism and potential, leaning towards a positive emotional tone. The young boy, with a slight smile, holding a soccer ball suggests a feeling of aspiration and engagement with a sport. The bright, slightly worn soccer ball itself contributes to this feeling \u2013 it\u2019s a symbol of play, competition, and striving for achievement. The boy's relaxed posture and the soft lighting create a comfortable and inviting atmosphere. The neutral green background of the grass further enhances this feeling, suggesting a natural and open space for growth and development. There\u2019s a quiet confidence in his stance, hinting at a positive self-image and a readiness to embrace challenges. Overall, the image communicates a feeling of hope and the simple joy of pursuing a passion.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 169,
+            "total_tokens": 493
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1150.781455,
+            "prompt_eval_duration_ms": 63.237711,
+            "generation_duration_ms": 1001.487967,
+            "load_duration_ms": 82.673737,
+            "tokens_per_second": 168.74890719480806
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"black\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A young boy wearing a white Puma jersey with black side stripes and black shorts, holding a soccer ball. He is smiling slightly.\"\n    }\n  },\n  \"man-made\": {\n    \"soccer_ball\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"yellow\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"A standard soccer ball with black stripes.\"\n    },\n    \"jersey\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"black\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A Puma jersey with black side stripes.\"\n    },\n    \"shorts\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Black shorts with gray side stripes.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A green lawn, likely a sports field.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "black",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A young boy wearing a white Puma jersey with black side stripes and black shorts, holding a soccer ball. He is smiling slightly."
+              }
+            },
+            "man-made": {
+              "soccer_ball": {
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "yellow",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "A standard soccer ball with black stripes."
+              },
+              "jersey": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "black",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A Puma jersey with black side stripes."
+              },
+              "shorts": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Black shorts with gray side stripes."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A green lawn, likely a sports field."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 351,
+            "total_tokens": 869
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2251.009837,
+            "prompt_eval_duration_ms": 66.206855,
+            "generation_duration_ms": 2097.981842,
+            "load_duration_ms": 84.752595,
+            "tokens_per_second": 167.30364056220466
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2900,
+        "total_time_ms": 7579.83937,
+        "average_speed": 168.01601150174716
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a young boy standing on a vibrant green lawn, likely a sports field or park. He's holding a bright yellow and green soccer ball in his right hand, positioned slightly in front of him. The boy is wearing a white Puma athletic shirt with black accents, layered over a long-sleeved black undershirt, and black athletic shorts with white stripes down the sides. His hair is dark and neatly styled. The lighting appears to be natural and soft, suggesting an overcast day or a time of day with diffused sunlight. The composition is straightforward, with the boy centered in the frame and taking up most of the space. The background is blurred, emphasizing the subject and creating a shallow depth of field. The overall impression is one of a casual, sporty portrait, likely taken during a recreational activity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 176,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2620.046398,
+            "prompt_eval_duration_ms": 339.584617,
+            "generation_duration_ms": 2190.875168,
+            "load_duration_ms": 87.202469,
+            "tokens_per_second": 80.33319404531223
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a young boy standing on a vibrant green lawn. He's holding a bright yellow and green soccer ball in his left hand, and is wearing a white Puma athletic shirt over a long-sleeved black undershirt, paired with black shorts featuring white stripes. His posture is relaxed, and he's looking directly at the camera with a slight smile. The grass immediately surrounding him is sharply in focus, highlighting the texture and color. \n\nThe background consists of a continuation of the same green lawn, stretching into the distance. The background is slightly blurred, creating a shallow depth of field that keeps the focus on the boy. The simplicity of the background emphasizes the subject and creates a clean, uncluttered composition. The boy's presence on the lawn suggests a recreational or athletic setting, and the soccer ball reinforces this theme, creating a cohesive and visually appealing image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 197,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2626.58091,
+            "prompt_eval_duration_ms": 65.893799,
+            "generation_duration_ms": 2468.419361,
+            "load_duration_ms": 90.376227,
+            "tokens_per_second": 79.8081570386775
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe image features a young boy standing on a lush green field. He's holding a bright yellow and green soccer ball in his right hand, appearing to be a player or enthusiast. He's dressed in a white Puma soccer jersey over a long-sleeved black shirt, paired with black shorts that have white stripes down the sides. The boy\u2019s posture suggests a relaxed, confident stance. The field serves as the backdrop, providing a natural and open setting for the scene. The interaction between the boy and the ball is central, indicating a connection to the sport of soccer. The boy\u2019s expression is pleasant and engaging, as if he's ready to play or share his love for the game. There are no animals present in the image, and the focus remains entirely on the boy and his interaction with the soccer ball within the natural environment of the field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 192,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2563.964172,
+            "prompt_eval_duration_ms": 65.995466,
+            "generation_duration_ms": 2404.262167,
+            "load_duration_ms": 91.710447,
+            "tokens_per_second": 79.8581796258827
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood of quiet confidence and youthful enthusiasm. The boy's slight smile and direct gaze suggest a sense of self-assurance and readiness, hinting at a playful and energetic spirit. The overall tone is decidedly positive, evoking feelings of optimism and potential. The bright green background of the grassy field contributes to this feeling of vibrancy and freshness, symbolizing growth and possibility. The boy's athletic attire \u2013 a white Puma jersey over a long-sleeved black shirt and black shorts \u2013 reinforces a sense of activity and preparedness. The presence of the soccer ball in his hand further emphasizes his engagement in a sport he likely enjoys. The lighting is soft and even, avoiding harsh shadows and contributing to a welcoming and approachable atmosphere. It's a snapshot of a young person poised and ready to play, radiating a feeling of simple joy and anticipation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 170,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2278.553503,
+            "prompt_eval_duration_ms": 70.728126,
+            "generation_duration_ms": 2122.59162,
+            "load_duration_ms": 82.943131,
+            "tokens_per_second": 80.09077129966244
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"item\": \"person\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"tan\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Young boy holding a soccer ball, wearing a white and black athletic uniform with long sleeves underneath.\"\n    }\n  ],\n  \"man-made\": [\n    {\n      \"item\": \"soccer ball\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"yellow\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Standard soccer ball with black pentagons.\"\n    },\n    {\n      \"item\": \"uniform\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Athletic uniform with Puma logo visible.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"grass\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Well-maintained lawn.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "item": "person",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "tan",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Young boy holding a soccer ball, wearing a white and black athletic uniform with long sleeves underneath."
+              }
+            ],
+            "man-made": [
+              {
+                "item": "soccer ball",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "yellow",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Standard soccer ball with black pentagons."
+              },
+              {
+                "item": "uniform",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Athletic uniform with Puma logo visible."
+              }
+            ],
+            "natural": [
+              {
+                "item": "grass",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Well-maintained lawn."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 296,
+            "total_tokens": 814
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3894.993782,
+            "prompt_eval_duration_ms": 95.699872,
+            "generation_duration_ms": 3710.240878,
+            "load_duration_ms": 86.682123,
+            "tokens_per_second": 79.7791867787189
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2825,
+        "total_time_ms": 13984.138765,
+        "average_speed": 79.97389775765075
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a young Asian boy standing on a vibrant green grass field, likely a soccer pitch. He is the central focus, holding a bright yellow and black soccer ball under his arm. He's dressed in a white short-sleeved soccer jersey with black detailing around the collar and sleeves, paired with black shorts that have a white stripe down the side. He appears to be wearing dark-colored long sleeves underneath his jersey. The boy has dark hair neatly styled and is looking directly at the camera with a slight smile. \n\nThe lighting appears to be soft and natural, suggesting it's either early morning or late afternoon. The background is blurred, emphasizing the boy as the main subject. The composition is a straightforward portrait, with the boy positioned slightly off-center. The overall color palette is dominated by green, white, yellow, and black, creating a clean and sporty aesthetic. The image conveys a sense of youth, athleticism, and a relaxed, approachable demeanor.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 208,
+            "total_tokens": 521
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5416.025695,
+            "prompt_eval_duration_ms": 399.82077,
+            "generation_duration_ms": 4926.456198,
+            "load_duration_ms": 87.181402,
+            "tokens_per_second": 42.22101885011015
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nIn the foreground, a young Asian boy is the primary focus, positioned slightly off-center. He's dressed in a white and black Puma soccer jersey and black shorts, with long black sleeves visible underneath the jersey. He's holding a bright yellow soccer ball with black stripes, cradled in one hand. His expression is pleasant and he appears to be looking directly at the viewer. \n\nThe background consists entirely of a lush, green grass field, likely a soccer pitch. The field is evenly lit and extends into the distance, creating a simple, uncluttered backdrop. The boy is clearly positioned *on* the field, suggesting he is a soccer player or involved in a soccer-related activity. The green of the field contrasts with the boy\u2019s clothing and the yellow ball, making him stand out as the central subject. The overall composition is straightforward, emphasizing the boy and his connection to the sport.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 201,
+            "total_tokens": 519
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4920.939808,
+            "prompt_eval_duration_ms": 77.794319,
+            "generation_duration_ms": 4752.386368,
+            "load_duration_ms": 88.656719,
+            "tokens_per_second": 42.29454098122689
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a young Asian boy standing on a green grassy field, likely a soccer pitch. He is the central figure, holding a bright yellow and black soccer ball under his arm. He's dressed in a white short-sleeved soccer jersey with black detailing, paired with black shorts that have a white stripe down the side. He appears to be looking directly at the camera with a slight smile, suggesting a friendly and approachable demeanor. The boy's posture and the presence of the soccer ball indicate he is a soccer player or enthusiast. The background is entirely composed of the green field, providing a simple and uncluttered setting that emphasizes the boy and his connection to the sport. There are no other people or animals visible in the frame, making the boy the sole focus of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 170,
+            "total_tokens": 491
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4206.915176,
+            "prompt_eval_duration_ms": 85.633218,
+            "generation_duration_ms": 4027.790055,
+            "load_duration_ms": 91.037257,
+            "tokens_per_second": 42.20676789967396
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of youthful optimism and quiet confidence. The young boy, likely a soccer player, stands with a gentle smile, holding a bright yellow soccer ball. His posture is relaxed yet engaged, suggesting a comfortable self-assurance. The bright, natural light and the vibrant green of the field contribute to a positive and energetic atmosphere. The contrast between his white and black athletic wear is visually striking, emphasizing his presence. There's a sense of potential and anticipation in his gaze, as if he's ready for a game or practice. The overall tone is decidedly positive and hopeful, capturing a moment of youthful enthusiasm and the simple joy of playing sports. It's a heartwarming image that evokes feelings of encouragement and the promise of future success.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 168,
+            "total_tokens": 492
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4153.139687,
+            "prompt_eval_duration_ms": 90.868237,
+            "generation_duration_ms": 3971.542844,
+            "load_duration_ms": 88.499801,
+            "tokens_per_second": 42.300941120100376
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"tan\",\n        \"black\",\n        \"white\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"Young boy holding a soccer ball, wearing athletic clothing.\"\n    }\n  },\n  \"man-made\": {\n    \"soccer ball\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\n        \"yellow\",\n        \"black\",\n        \"white\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"A patterned soccer ball.\"\n    },\n    \"clothing\": {\n      \"count\": 2,\n      \"location\": \"center\",\n      \"color\": [\n        \"white\",\n        \"black\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"Athletic clothing consisting of a shirt and shorts.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\n        \"green\"\n      ],\n      \"size\": \"large\",\n      \"description\": \"A field of green grass.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "tan",
+                  "black",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Young boy holding a soccer ball, wearing athletic clothing."
+              }
+            },
+            "man-made": {
+              "soccer ball": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "yellow",
+                  "black",
+                  "white"
+                ],
+                "size": "small",
+                "description": "A patterned soccer ball."
+              },
+              "clothing": {
+                "count": 2,
+                "location": "center",
+                "color": [
+                  "white",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Athletic clothing consisting of a shirt and shorts."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A field of green grass."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 308,
+            "total_tokens": 826
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7475.045631,
+            "prompt_eval_duration_ms": 139.41783,
+            "generation_duration_ms": 7245.823688,
+            "load_duration_ms": 87.781888,
+            "tokens_per_second": 42.50724462286971
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2849,
+        "total_time_ms": 26172.065997,
+        "average_speed": 42.30610269479622
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a young boy standing on a grassy field, likely a soccer field, given the context of his attire and the ball he is holding. He is wearing a white short-sleeve shirt with black accents and a small Puma logo on the chest, paired with black shorts. The boy is holding a yellow and green soccer ball in his left hand, and he is smiling slightly, giving off a relaxed and cheerful vibe. The background features a well-maintained grassy area with a bright green hue, indicating a sunny day with good lighting. The lighting in the image is natural, casting soft shadows and highlighting the vibrant colors of the field and the boy's clothing. The overall composition is balanced, with the boy positioned centrally, drawing the viewer's attention to him and the soccer ball, suggesting a moment of calm before or after a game.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 174,
+            "total_tokens": 966
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6918.027305,
+            "prompt_eval_duration_ms": 2030.639122,
+            "generation_duration_ms": 4838.071049,
+            "load_duration_ms": 46.663308,
+            "tokens_per_second": 35.964746742602046
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a young boy stands prominently, holding a yellow and black soccer ball in his left hand. He is dressed in a white and black sports uniform, consisting of a long-sleeved shirt and shorts, suggesting he is ready for a game or practice session. His expression is calm and focused, indicating his engagement in the sport. The background features a well-maintained grassy field, which serves as the setting for the scene. The green expanse of the field extends into the distance, providing a natural and open environment typical of a soccer pitch. The boy and the soccer ball in the foreground are directly related to the setting in the background, as the field is where he would typically play or practice soccer. The combination of the boy's attire and the field suggests an active and sporty atmosphere, with the foreground elements highlighting the individual participant and the background elements providing the context for his activity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 186,
+            "total_tokens": 984
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5278.702819,
+            "prompt_eval_duration_ms": 55.92448,
+            "generation_duration_ms": 5175.522931,
+            "load_duration_ms": 44.660197,
+            "tokens_per_second": 35.93839742954469
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, there is a young boy standing on a grassy field, likely a soccer field. He is holding a yellow and black soccer ball in his right hand. The boy is wearing a white and black sports uniform, which includes a long-sleeved shirt and shorts. The uniform has a logo on the chest, suggesting it might be part of a sports team. The boy appears to be smiling slightly, indicating he might be enjoying the moment or is ready to engage in a soccer activity. There are no other people or animals visible in the image. The primary interaction is between the boy and the soccer ball, as he holds it, possibly preparing to play or practice. The grassy field in the background suggests an outdoor setting, likely a sports field or park, which is typical for soccer activities. The overall scene conveys a sense of readiness and enjoyment related to playing soccer.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 180,
+            "total_tokens": 980
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5091.810774,
+            "prompt_eval_duration_ms": 58.02378,
+            "generation_duration_ms": 4984.126346,
+            "load_duration_ms": 46.962419,
+            "tokens_per_second": 36.11465430535456
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a positive and cheerful mood, evoking feelings of joy and enthusiasm. The young boy, dressed in a sports uniform, stands confidently on a grassy field, holding a soccer ball. His slight smile and relaxed posture suggest a sense of contentment and readiness for play. The bright green field and clear background contribute to the overall uplifting tone, emphasizing a sense of openness and freedom. The casual yet purposeful grip on the ball indicates his engagement in a favorite activity, reinforcing a sense of happiness and fulfillment. The simplicity of the scene, with its focus on the boy and his environment, creates a serene and optimistic atmosphere, highlighting the pure enjoyment of outdoor play and sports.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 142,
+            "total_tokens": 945
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4046.301338,
+            "prompt_eval_duration_ms": 57.092739,
+            "generation_duration_ms": 3939.220755,
+            "load_duration_ms": 47.451871,
+            "tokens_per_second": 36.04773858376972
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A young boy wearing a white and black sports uniform, holding a soccer ball.\"\n    }\n  },\n  \"man-made\": {\n    \"soccer ball\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"yellow\", \"black\", \"red\"],\n      \"size\": \"medium\",\n      \"description\": \"A soccer ball held by the boy.\"\n    }\n  },\n  \"natural\": {\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"A grassy field in the background.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A young boy wearing a white and black sports uniform, holding a soccer ball."
+              }
+            },
+            "man-made": {
+              "soccer ball": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "yellow",
+                  "black",
+                  "red"
+                ],
+                "size": "medium",
+                "description": "A soccer ball held by the boy."
+              }
+            },
+            "natural": {
+              "grass": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "A grassy field in the background."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 193,
+            "total_tokens": 1175
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5529.393138,
+            "prompt_eval_duration_ms": 103.357901,
+            "generation_duration_ms": 5379.78658,
+            "load_duration_ms": 43.29663,
+            "tokens_per_second": 35.87502907968516
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5050,
+        "total_time_ms": 26864.235374,
+        "average_speed": 35.98811322819124
+      }
+    }
+  ]
+}

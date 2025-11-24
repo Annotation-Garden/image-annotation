@@ -1,0 +1,793 @@
+{
+  "image": {
+    "path": "images/original/shared0583_nsd43430.png",
+    "name": "shared0583_nsd43430.png",
+    "id": "shared0583_nsd43430"
+  },
+  "timestamp": "2025-08-30T21:04:12.807755+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image presents a close-up view of a hand holding three small, round, orange fruits, likely tangerines or mandarins, against a plain, light-colored background. The hand, with its natural skin tone, appears to be that of an adult, with fingers slightly curved to securely hold the fruits. The fruits are vibrant orange, with a smooth, slightly textured surface that reflects light, giving them a glossy appearance. Each fruit has a small, green stem at the top, indicating their freshness. The lighting is bright and even, casting subtle shadows on the hand and fruits, which enhances the three-dimensional quality of the image. The background is a soft, off-white or light gray, ensuring that the focus remains on the fruits and the hand holding them. The composition is simple and straightforward, with the fruits centrally positioned and the hand slightly angled, creating a balanced and visually appealing image. The overall effect is one of simplicity and natural beauty, emphasizing the freshness and appeal of the fruits.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 201,
+            "total_tokens": 498
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1553.903568,
+            "prompt_eval_duration_ms": 78.432511,
+            "generation_duration_ms": 1433.270946,
+            "load_duration_ms": 39.975186,
+            "tokens_per_second": 140.2386621740674
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a hand is prominently displayed, holding three small, bright orange tangerines. The tangerines are the main focus, with their glossy, smooth skin reflecting light, and their small, green stems adding a subtle contrast to the vibrant orange. The hand appears to be that of an adult, with fingers slightly curled around the fruit, suggesting a gentle and careful handling. The background is a plain, off-white surface, which provides a neutral backdrop that accentuates the vivid color of the tangerines and the hand holding them. This simple background ensures that the viewer's attention remains on the tangerines and the hand, creating a clear and uncluttered composition. The relationship between the foreground and background is one of contrast and focus, with the detailed, close-up view of the tangerines and hand in the foreground drawing the viewer's eye and the plain background serving to isolate and highlight the subject matter.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 192,
+            "total_tokens": 495
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1444.290322,
+            "prompt_eval_duration_ms": 29.250404,
+            "generation_duration_ms": 1374.846295,
+            "load_duration_ms": 37.986,
+            "tokens_per_second": 139.6519746958332
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a hand is prominently featured, holding three ripe tangerines. The hand appears to be that of an adult, with visible fingers and a thumb, suggesting a human interaction with the fruit. The tangerines are bright orange, smooth-skinned, and glossy, indicating they are fresh and ready for consumption. The hand is positioned in such a way that the tangerines are the focal point, with the thumb and fingers gently cradling them. There is no indication of any animals or other objects in the image, and the interaction is solely between the hand and the tangerines, highlighting a simple yet intimate connection between human and fruit. The background is plain and white, which further emphasizes the vibrant color of the tangerines and the hand holding them, creating a visually striking and simple composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 167,
+            "total_tokens": 473
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1275.104123,
+            "prompt_eval_duration_ms": 29.954218,
+            "generation_duration_ms": 1203.819001,
+            "load_duration_ms": 38.909136,
+            "tokens_per_second": 138.72517368580728
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of warmth and simplicity, primarily due to the vibrant orange hue of the tangerines, which are often associated with energy and vitality. The soft, natural light that bathes the fruits enhances this feeling, creating a gentle and inviting atmosphere. The hand holding the tangerines adds a personal touch, suggesting care and attention, which can evoke feelings of comfort and nurturing. The simplicity of the composition, with its focus on the natural beauty of the fruits and the gentle curve of the hand, contributes to a neutral to positive tone. The image does not contain any complex or conflicting elements, which helps maintain a calm and pleasant mood. Overall, the image conveys a mood of simplicity, warmth, and a touch of optimism, likely evoking feelings of contentment and a desire for something fresh and natural.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 168,
+            "total_tokens": 476
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1266.897203,
+            "prompt_eval_duration_ms": 30.493481,
+            "generation_duration_ms": 1193.679883,
+            "load_duration_ms": 40.617951,
+            "tokens_per_second": 140.74125097741972
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"hand holding oranges\"\n    }\n  },\n  \"natural\": {\n    \"orange\": {\n      \"count\": 3,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"medium\",\n      \"description\": \"three oranges held in hand\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "hand holding oranges"
+              }
+            },
+            "natural": {
+              "orange": {
+                "count": 3,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "medium",
+                "description": "three oranges held in hand"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 111,
+            "total_tokens": 597
+          },
+          "performance_metrics": {
+            "total_duration_ms": 869.459227,
+            "prompt_eval_duration_ms": 43.040651,
+            "generation_duration_ms": 783.641353,
+            "load_duration_ms": 39.790716,
+            "tokens_per_second": 141.646429932597
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2539,
+        "total_time_ms": 6409.654443,
+        "average_speed": 140.2006982931449
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a close-up of a hand holding three bright orange clementines or mandarins against a plain, light-colored background, likely white or off-white. The hand is positioned in the foreground, with fingers gently cradling the fruits, showcasing their smooth, glossy surfaces and vibrant orange hue. The lighting is bright and even, highlighting the fruits' natural sheen and emphasizing their round, plump shapes. The central fruit is slightly elevated, creating a triangular composition with the other two fruits resting below it. The skin of the fruits appears smooth with a few minor imperfections, such as small dimples or natural blemishes, which add to their authenticity. The overall setting is minimalistic, with no additional elements or distractions, focusing solely on the hand and the fruits. The warm orange tones of the clementines contrast sharply with the pale background and the skin tone of the hand, making the fruits the clear focal point of the image. The composition is simple yet visually appealing, conveying a sense of freshness and natural beauty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 212,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11606.27901,
+            "prompt_eval_duration_ms": 3668.080873,
+            "generation_duration_ms": 7897.50324,
+            "load_duration_ms": 38.227295,
+            "tokens_per_second": 26.843926942155964
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, the most prominent elements are three bright orange clementines held securely in a person's hand. The clementines are the closest objects to the viewer, with their vibrant, glossy surfaces reflecting light, emphasizing their freshness and juiciness. The hand holding them is partially visible, with fingers gently gripping the fruits, suggesting a human interaction with the natural elements. The clementines are arranged in a triangular formation, with two at the bottom and one at the top, creating a visually balanced composition.\n\nThe background is relatively simple and unobtrusive, consisting of a plain, light-colored surface, likely a wall or a table, which serves as a neutral backdrop. This simplicity ensures that the focus remains on the clementines in the foreground. The background's lack of detail and texture contrasts sharply with the detailed, textured surface of the clementines, further highlighting their prominence.\n\nThe relationship between the foreground and background is one of contrast and emphasis. The bright, vivid colors and tactile texture of the clementines stand out sharply against the plain, neutral background. This contrast draws the viewer's attention directly to the fruits, making them the central subject of the image. The background's simplicity ensures that there are no distractions, allowing the viewer to fully appreciate the natural beauty and vibrant color of the clementines. The overall composition effectively uses depth and contrast to create a visually appealing and focused image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 289,
+            "total_tokens": 592
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10875.941884,
+            "prompt_eval_duration_ms": 76.248854,
+            "generation_duration_ms": 10758.524704,
+            "load_duration_ms": 38.818888,
+            "tokens_per_second": 26.862419146795318
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image shows a close-up of a person's hand holding three bright orange clementines. The hand is positioned in the foreground, with the fingers gently cradling the fruits, showcasing their smooth, shiny surfaces and vibrant color. The clementines are arranged in a triangular formation, with two at the bottom and one on top, creating a visually balanced composition. The person's hand appears to be presenting the fruits, likely to highlight their freshness and appeal. There are no animals visible in the image, and the focus is entirely on the interaction between the hand and the clementines. The hand's gentle grip suggests care and appreciation for the fruits, emphasizing their natural beauty and inviting the viewer to consider their taste or texture. The lighting is bright, enhancing the oranges' vivid hue and making them stand out prominently against the neutral background. The overall scene conveys a sense of simplicity and natural abundance, with the hand and clementines forming a harmonious and visually pleasing relationship.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 199,
+            "total_tokens": 505
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7549.862938,
+            "prompt_eval_duration_ms": 81.07556,
+            "generation_duration_ms": 7427.973525,
+            "load_duration_ms": 38.49182,
+            "tokens_per_second": 26.790617835434464
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a positive and cheerful mood, evoking feelings of warmth, abundance, and natural vitality. The bright, vibrant orange color of the three tangerines is visually striking and immediately draws attention, symbolizing energy, freshness, and health. The glossy surface of the fruit reflects light, adding a sense of freshness and juiciness, which can stimulate feelings of hunger and satisfaction. The way the hand gently holds the tangerines suggests care and appreciation, further enhancing the positive tone. The simplicity of the composition, with a clean white background, focuses all attention on the fruit, emphasizing their natural beauty and appealing texture. The arrangement of the tangerines in a triangular formation creates a sense of balance and harmony, contributing to the overall pleasant and inviting atmosphere. The image lacks any negative or neutral elements, making the tone unequivocally positive. The visual elements collectively evoke a sense of joy, nourishment, and connection to nature, making the viewer feel uplifted and content.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 200,
+            "total_tokens": 508
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7607.133953,
+            "prompt_eval_duration_ms": 79.66863,
+            "generation_duration_ms": 7487.677595,
+            "load_duration_ms": 37.538353,
+            "tokens_per_second": 26.710551764882712
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"hand\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"light skin tone\"],\n      \"size\": \"medium\",\n      \"description\": \"Holding three oranges\"\n    }\n  },\n  \"natural\": {\n    \"orange\": {\n      \"count\": 3,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"small\",\n      \"description\": \"Round, smooth, and bright\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "hand": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "light skin tone"
+                ],
+                "size": "medium",
+                "description": "Holding three oranges"
+              }
+            },
+            "natural": {
+              "orange": {
+                "count": 3,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "small",
+                "description": "Round, smooth, and bright"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 115,
+            "total_tokens": 601
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4443.200517,
+            "prompt_eval_duration_ms": 138.139487,
+            "generation_duration_ms": 4264.284032,
+            "load_duration_ms": 38.288785,
+            "tokens_per_second": 26.968184843462137
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2715,
+        "total_time_ms": 42082.41830199999,
+        "average_speed": 26.835140106546117
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a detailed description of the image:\n\nThe image presents a close-up shot of three vibrant, ripe tangerines held within a human hand. The hand, with fair skin and slightly pinkish tones, is gently cupping the fruit, suggesting a casual or perhaps a moment of selection. The tangerines themselves are a brilliant, saturated orange, exhibiting a smooth, glossy skin texture that reflects the light intensely. Their round shapes are perfectly formed, with slight variations in color intensity adding to their natural appearance. The lighting is bright and even, illuminating the fruit and the hand with a soft glow, creating highlights and shadows that accentuate the roundness and texture. \n\nThe background is a plain, neutral white, which isolates the tangerines and hand, drawing the viewer's attention directly to the subject. The composition is simple and direct, emphasizing the tactile quality of the fruit. The overall impression is one of freshness, vibrancy, and a sense of abundance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 196,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1574.843277,
+            "prompt_eval_duration_ms": 306.00547,
+            "generation_duration_ms": 1177.172962,
+            "load_duration_ms": 89.57949,
+            "tokens_per_second": 166.50059619700983
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements in the image:\n\nThe foreground is dominated by three vibrant, ripe tangerines held within a human hand. The tangerines themselves are a deep, saturated orange color, exhibiting a smooth, glossy texture with subtle variations in tone suggesting a slight sheen. Their round shapes are perfectly formed, and they appear plump and juicy. The hand, a pale beige color, gently cradles the fruit, providing a sense of tactile realism. \n\nThe background is a simple, clean white, serving solely as a neutral backdrop to isolate the tangerines. It\u2019s completely devoid of any other objects or details, creating a shallow depth of field that emphasizes the central subject. The white background effectively directs the viewer's attention entirely to the three tangerines, which are positioned centrally within the frame. The relationship between the foreground and background is one of stark contrast, highlighting the vibrant color and texture of the fruit against the simplicity of the white space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 199,
+            "total_tokens": 517
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1334.696995,
+            "prompt_eval_duration_ms": 56.557986,
+            "generation_duration_ms": 1187.691463,
+            "load_duration_ms": 88.088715,
+            "tokens_per_second": 167.5519326352184
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image presents a vibrant scene centered around three ripe tangerines held within a human hand. The hand, with its pale skin and slightly curved fingers, firmly grips the fruit, suggesting a deliberate action \u2013 perhaps holding, examining, or preparing them for consumption. The tangerines themselves are a brilliant, saturated orange, reflecting a bright light source, likely from above. Their smooth, textured surfaces are subtly glistening, indicating a fresh and juicy quality. \n\nThe interaction is simple yet significant: the hand is the active agent, holding and containing the tangerines. There's no apparent relationship between the tangerines themselves, as they are isolated within the hand. The overall impression is one of a moment of possession and potential enjoyment, with the hand representing the human element and the tangerines the object of focus.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 180,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1214.48152,
+            "prompt_eval_duration_ms": 58.616284,
+            "generation_duration_ms": 1068.679382,
+            "load_duration_ms": 85.180348,
+            "tokens_per_second": 168.43218184216826
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of simple, bright joy and a sense of abundance. The three oranges, tightly held in a human hand, immediately convey a feeling of warmth and positivity. Their vibrant, saturated orange color is inherently cheerful and associated with energy and vitality. The smooth, glossy texture of the fruit suggests freshness and a pleasant tactile experience, further contributing to a feeling of comfort and delight. The close proximity of the oranges within the hand creates a sense of intimacy and perhaps a feeling of sharing a special treat. The overall tone is undeniably positive, suggesting a moment of small pleasure or a reminder of something sweet and delicious. The image is uncomplicated and serene, offering a gentle, optimistic visual experience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 140,
+            "total_tokens": 464
+          },
+          "performance_metrics": {
+            "total_duration_ms": 990.388674,
+            "prompt_eval_duration_ms": 55.667566,
+            "generation_duration_ms": 845.025086,
+            "load_duration_ms": 87.295458,
+            "tokens_per_second": 165.67555486749183
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"item_names\": [\n      \"person\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"skin_tone\"],\n      \"size\": \"medium\",\n      \"description\": \"Holding three oranges.\"\n    }\n  },\n  \"natural\": {\n    \"item_names\": [\n      \"orange\"\n    ],\n    \"attributes\": {\n      \"count\": 3,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"small\",\n      \"description\": \"Three oranges, likely tangerines, held in the hand.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "item_names": [
+                "person"
+              ],
+              "attributes": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "skin_tone"
+                ],
+                "size": "medium",
+                "description": "Holding three oranges."
+              }
+            },
+            "natural": {
+              "item_names": [
+                "orange"
+              ],
+              "attributes": {
+                "count": 3,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "small",
+                "description": "Three oranges, likely tangerines, held in the hand."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 171,
+            "total_tokens": 689
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1164.222795,
+            "prompt_eval_duration_ms": 65.67226,
+            "generation_duration_ms": 1011.490142,
+            "load_duration_ms": 85.191479,
+            "tokens_per_second": 169.05750525841506
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2680,
+        "total_time_ms": 6278.633261,
+        "average_speed": 167.44355416006067
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image showcases three vibrant mandarin oranges held in a hand against a plain white background. The oranges are the focal point, displaying a rich, saturated orange hue with subtle variations in tone suggesting texture and light reflection. Each orange has a small, green stem nub protruding from its top. The hand, with its pale skin tone, gently cradles the fruit, providing a sense of scale and intimacy. The lighting appears to be soft and diffused, highlighting the glossy surfaces of the oranges and creating gentle highlights. The composition is simple and direct, with the oranges arranged in a slightly overlapping cluster. The white background provides a clean, uncluttered backdrop that emphasizes the bright colors and smooth forms of the fruit. The overall impression is one of freshness, simplicity, and a close-up, intimate view of nature's bounty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 175,
+            "total_tokens": 488
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2604.963653,
+            "prompt_eval_duration_ms": 344.526047,
+            "generation_duration_ms": 2166.561881,
+            "load_duration_ms": 90.735999,
+            "tokens_per_second": 80.7731371693971
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a hand gently cradling three vibrant mandarin oranges. The hand, with its pale skin and visible knuckles, is positioned centrally, providing a sense of scale and intimacy. The oranges themselves are the primary focus, their smooth, textured skin reflecting light and showcasing a rich, orange hue. Each orange has a small green stem protruding from its top. The oranges are clustered together, creating a sense of abundance and warmth. \n\nThe background is a simple, plain white surface, which serves to isolate the oranges and hand, preventing distractions. The stark contrast between the bright oranges and the white background further emphasizes the oranges' color and texture. The background's simplicity allows the viewer's attention to remain focused on the foreground elements, creating a clean and visually appealing composition. The hand and oranges appear to be floating against this neutral backdrop, creating a sense of lightness and freshness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 196,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2619.02778,
+            "prompt_eval_duration_ms": 67.720028,
+            "generation_duration_ms": 2458.025299,
+            "load_duration_ms": 91.070794,
+            "tokens_per_second": 79.73880499917507
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions and relationships:\n\nThe image features a human hand gently cradling three vibrant oranges. The hand, with a visible thumb and fingers, appears to be holding the fruit in a protective and supportive manner. The oranges themselves are the central focus, their bright orange hues contrasting against the plain white background. Each orange has a small green stem protruding from its top, indicating freshness. The oranges are clustered together, suggesting a sense of abundance and perhaps a gesture of offering or sharing. The interaction between the hand and the oranges is one of care and display, highlighting the fruit's appealing texture and color. The oranges are presented as a group, creating a visual connection between them, emphasizing their shared identity as a delicious and healthy treat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 158,
+            "total_tokens": 479
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2123.837931,
+            "prompt_eval_duration_ms": 65.465289,
+            "generation_duration_ms": 1973.103723,
+            "load_duration_ms": 83.028643,
+            "tokens_per_second": 80.07688504067559
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of simple joy and wholesome abundance. The bright, vibrant orange hues of the three mandarin oranges immediately create a positive and cheerful mood. The way they are held in a hand suggests care and a connection to nature's bounty. There's a sense of freshness and vitality, hinting at a healthy and nourishing experience. The close-up perspective emphasizes the texture of the fruit, making them appear appealing and inviting. The overall tone is decidedly positive, conveying a feeling of contentment and a celebration of simple pleasures. It\u2019s a comforting image, reminiscent of a snack enjoyed on a sunny day, and inspires feelings of warmth and well-being. The image feels neutral in its presentation, avoiding any complex narrative or deeper meaning, and focusing solely on the pleasantness of the fruit.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 161,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2177.424464,
+            "prompt_eval_duration_ms": 72.396511,
+            "generation_duration_ms": 2017.656869,
+            "load_duration_ms": 85.306771,
+            "tokens_per_second": 79.79553038658923
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"item\": \"hand\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"flesh\", \"pink\"],\n      \"size\": \"medium\",\n      \"description\": \"Holding three oranges\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"orange\",\n      \"count\": 3,\n      \"location\": \"foreground\",\n      \"color\": [\"orange\"],\n      \"size\": \"small\",\n      \"description\": \"Ripe and round, with visible stems\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "item": "hand",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "flesh",
+                  "pink"
+                ],
+                "size": "medium",
+                "description": "Holding three oranges"
+              }
+            ],
+            "natural": [
+              {
+                "item": "orange",
+                "count": 3,
+                "location": "foreground",
+                "color": [
+                  "orange"
+                ],
+                "size": "small",
+                "description": "Ripe and round, with visible stems"
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 147,
+            "total_tokens": 665
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2019.751062,
+            "prompt_eval_duration_ms": 92.782477,
+            "generation_duration_ms": 1836.597222,
+            "load_duration_ms": 88.253204,
+            "tokens_per_second": 80.03932394056513
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2631,
+        "total_time_ms": 11545.004889999998,
+        "average_speed": 80.08473630728042
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a close-up shot of three vibrant, round mandarin oranges held in a pale-skinned hand. The oranges are the dominant element, displaying a rich, saturated orange hue with subtle variations in tone, suggesting a slightly textured peel. Each orange has a small, green stem remnant visible at the top. The hand, partially visible, appears soft and smooth, providing a contrast to the fruit's texture. The background is a plain, bright white, which emphasizes the oranges\u2019 color and creates a clean, minimalist aesthetic. \n\nThe lighting appears to be soft and diffused, creating gentle highlights on the oranges\u2019 surfaces and minimizing harsh shadows. This lighting enhances the fruit\u2019s appealing appearance. The composition is simple and direct, focusing entirely on the oranges and the hand holding them. The arrangement of the oranges is slightly triangular, creating a visually balanced and pleasing effect. Overall, the image conveys a sense of freshness and natural simplicity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 200,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5218.100931,
+            "prompt_eval_duration_ms": 398.432108,
+            "generation_duration_ms": 4732.445059,
+            "load_duration_ms": 85.074193,
+            "tokens_per_second": 42.26145206263873
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a human hand gently holding three vibrant, round mandarin oranges. The oranges are a rich, deep orange color, with small, slightly raised stems visible on each. They appear fresh and slightly glossy, suggesting they may have been recently washed or are covered in a natural wax. The hand is pale-skinned and partially visible, cradling the fruit with a soft grip. \n\nThe background is a simple, bright white surface, likely a wall or tabletop. This stark white provides a clean and uncluttered backdrop, effectively isolating the oranges and emphasizing their color and texture. The relationship between the elements is one of focus and contrast. The bright oranges immediately draw the eye against the neutral background, and the hand serves to showcase the fruit, suggesting a sense of freshness and natural goodness. The overall composition is simple and direct, highlighting the beauty of the oranges themselves.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 193,
+            "total_tokens": 511
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4736.993283,
+            "prompt_eval_duration_ms": 78.165488,
+            "generation_duration_ms": 4571.506371,
+            "load_duration_ms": 85.025493,
+            "tokens_per_second": 42.218031505834254
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a human hand holding three vibrant, round oranges. The hand, with neatly manicured nails, gently cradles the fruit, suggesting a careful and deliberate action. The oranges are the focal point, their bright orange color and smooth, slightly glossy skin immediately drawing the eye. Each orange has a small, green stem remnant, indicating they are whole fruits. The hand's interaction with the oranges is one of possession and presentation, as if showcasing the fresh produce. The arrangement of the oranges in the hand creates a triangular composition, visually balancing the image. The plain, white background emphasizes the oranges' color and texture, making them stand out. Overall, the image conveys a sense of freshness, health, and simple enjoyment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 158,
+            "total_tokens": 479
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3912.760046,
+            "prompt_eval_duration_ms": 85.541631,
+            "generation_duration_ms": 3741.025787,
+            "load_duration_ms": 83.798203,
+            "tokens_per_second": 42.23440548018869
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of simple, wholesome positivity. The vibrant, saturated orange of the three clementines immediately draws the eye and suggests freshness and vitality. The way they are held in a hand creates a feeling of intimacy and accessibility, as if offering a healthy treat. The smooth, slightly glossy texture of the fruit contributes to a sense of pleasantness and natural goodness. The overall tone is decidedly upbeat and cheerful, hinting at warmth and nourishment. There's a feeling of everyday joy associated with the image \u2013 a small, bright moment captured. The composition is uncomplicated, reinforcing the sense of purity and unpretentious happiness. It feels like a celebration of simple pleasures and healthy living.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 155,
+            "total_tokens": 479
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3830.783501,
+            "prompt_eval_duration_ms": 83.509583,
+            "generation_duration_ms": 3658.179681,
+            "load_duration_ms": 86.806972,
+            "tokens_per_second": 42.370800101767884
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"fruit\": {\n      \"count\": 3,\n      \"location\": \"center\",\n      \"color\": [\"orange\"],\n      \"size\": \"small\",\n      \"description\": \"Round, citrus fruits, likely tangerines or oranges, held in a hand.\"\n    }\n  },\n  \"human\": {\n    \"hand\": {\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"Holding the three fruits.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "fruit": {
+                "count": 3,
+                "location": "center",
+                "color": [
+                  "orange"
+                ],
+                "size": "small",
+                "description": "Round, citrus fruits, likely tangerines or oranges, held in a hand."
+              }
+            },
+            "human": {
+              "hand": {
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "beige"
+                ],
+                "size": "medium",
+                "description": "Holding the three fruits."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 142,
+            "total_tokens": 660
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3564.85962,
+            "prompt_eval_duration_ms": 144.595501,
+            "generation_duration_ms": 3328.382972,
+            "load_duration_ms": 89.728291,
+            "tokens_per_second": 42.66335971388331
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2642,
+        "total_time_ms": 21263.497380999997,
+        "average_speed": 42.34960977286257
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a close-up view of three bright orange-colored fruits, which appear to be oranges or a similar variety of citrus fruit. The oranges are held in a person's hand, with the fingers gently supporting them from below, suggesting a casual and natural presentation. The background is a plain, light-colored surface, possibly white or a very light gray, which contrasts sharply with the vibrant orange hue of the fruits, making them stand out prominently. The lighting is soft and even, illuminating the oranges evenly and highlighting their smooth, slightly textured skin and the subtle shadows around their natural dimples and stems. The overall composition is simple yet effective, focusing the viewer's attention solely on the oranges and their vivid color. The image conveys a sense of freshness and simplicity, with the natural beauty of the fruit being the central theme.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 172,
+            "total_tokens": 964
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6806.861213,
+            "prompt_eval_duration_ms": 1980.250732,
+            "generation_duration_ms": 4778.929731,
+            "load_duration_ms": 44.991073,
+            "tokens_per_second": 35.991322258678345
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, three bright orange fruits, likely mandarin oranges, are prominently displayed. They are held by a hand, with the fingers gently supporting them from below, making them the central focus of the image. The oranges are vibrant and fresh-looking, with a smooth, glossy skin that reflects light, drawing immediate attention. The background is a plain, light-colored surface, possibly a wall or table, which provides a neutral backdrop that further emphasizes the oranges. This simplicity in the background ensures that the viewer's attention remains on the foreground elements without any distractions. The relationship between the foreground and background is one of contrast and emphasis, where the vivid colors and texture of the oranges stand out against the muted, uncluttered background, creating a visually appealing composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 163,
+            "total_tokens": 961
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4623.082192,
+            "prompt_eval_duration_ms": 55.92707,
+            "generation_duration_ms": 4519.995571,
+            "load_duration_ms": 44.13204,
+            "tokens_per_second": 36.061982238610476
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a human hand is prominently displayed, holding three bright orange fruits, which appear to be oranges. The hand is positioned in such a way that it cradles the oranges gently, with the thumb and fingers supporting them from below. The oranges are arranged in a triangular formation, with one orange at the top and two at the bottom. The hand's interaction with the oranges is one of support and presentation, highlighting the freshness and vibrant color of the fruits. There are no other people, animals, or objects in the image, making the hand and the oranges the central focus. The simplicity of the image emphasizes the natural beauty of the oranges and the careful handling by the hand.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 147,
+            "total_tokens": 947
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4175.476447,
+            "prompt_eval_duration_ms": 55.525405,
+            "generation_duration_ms": 4071.569169,
+            "load_duration_ms": 45.590692,
+            "tokens_per_second": 36.10401638739789
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of a hand holding three vibrant, fresh oranges conveys a mood of warmth, freshness, and positivity. The bright, vivid color of the oranges evokes feelings of vitality and natural goodness, suggesting health and nourishment. The smooth, unblemished skin of the oranges adds to the sense of purity and wholesomeness, while the hand gently cradling them implies care and attention. The overall tone is distinctly positive, as the image suggests abundance, natural beauty, and the simple pleasures of life. The visual elements, such as the bright orange hue, the natural texture of the fruit, and the gentle human touch, all contribute to creating an emotional atmosphere that is uplifting and comforting. This image might inspire feelings of contentment, well-being, and a connection to nature's bounty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 167,
+            "total_tokens": 970
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4732.594501,
+            "prompt_eval_duration_ms": 57.868779,
+            "generation_duration_ms": 4626.902898,
+            "load_duration_ms": 44.901715,
+            "tokens_per_second": 36.09325799168738
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"natural\": {\n    \"orange\": {\n      \"count\": 3,\n      \"location\": \"center, foreground\",\n      \"color\": [\"orange\"],\n      \"size\": \"medium\",\n      \"description\": \"Three oranges held in a hand, with visible stems.\"\n    }\n  },\n  \"human\": {\n    \"hand\": {\n      \"count\": 1,\n      \"location\": \"top, foreground\",\n      \"color\": [\"skin tone\"],\n      \"size\": \"medium\",\n      \"description\": \"A hand holding three oranges.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "natural": {
+              "orange": {
+                "count": 3,
+                "location": "center, foreground",
+                "color": [
+                  "orange"
+                ],
+                "size": "medium",
+                "description": "Three oranges held in a hand, with visible stems."
+              }
+            },
+            "human": {
+              "hand": {
+                "count": 1,
+                "location": "top, foreground",
+                "color": [
+                  "skin tone"
+                ],
+                "size": "medium",
+                "description": "A hand holding three oranges."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 125,
+            "total_tokens": 1107
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3606.027287,
+            "prompt_eval_duration_ms": 101.81014,
+            "generation_duration_ms": 3454.821744,
+            "load_duration_ms": 46.071373,
+            "tokens_per_second": 36.18131679791813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 4949,
+        "total_time_ms": 23944.04164,
+        "average_speed": 36.08637913485844
+      }
+    }
+  ]
+}

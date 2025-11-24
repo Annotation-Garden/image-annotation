@@ -1,0 +1,967 @@
+{
+  "image": {
+    "path": "images/original/shared0255_nsd21193.png",
+    "name": "shared0255_nsd21193.png",
+    "id": "shared0255_nsd21193"
+  },
+  "timestamp": "2025-08-30T18:02:18.909260+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a person dressed in a vintage or formal style, set against a simple, gradient background that transitions from a light yellow at the bottom to a darker blue at the top. The individual is wearing a black bowler hat, which contrasts sharply with the lighter background, drawing attention to the subject. The person is also sporting a pair of rectangular glasses with thin frames, adding a touch of intellectual charm to the overall look. A neatly trimmed mustache and a small earring in the left ear add unique details to the appearance. The subject is dressed in a dark suit with a light blue shirt and a black bow tie, completing the formal and somewhat vintage aesthetic. The lighting is soft and even, casting gentle shadows that enhance the three-dimensional quality of the subject's face and attire without creating harsh contrasts. The overall composition is simple yet striking, focusing the viewer's attention on the subject's attire and expression, which appears relaxed and slightly amused. The gradient background ensures that the subject stands out prominently, making the image visually engaging and well-composed.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 212,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1631.510473,
+            "prompt_eval_duration_ms": 79.380802,
+            "generation_duration_ms": 1513.467333,
+            "load_duration_ms": 36.462158,
+            "tokens_per_second": 140.07570257877512
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, the viewer is drawn to a man dressed in a classic, vintage-inspired outfit. He wears a black bowler hat, a pair of rectangular-framed glasses, and a neatly trimmed mustache and goatee, all contributing to a sophisticated and slightly eccentric appearance. His attire includes a light blue collared shirt and a dark blazer, with a black bow tie adding a touch of formality. The background is a simple, gradient backdrop, transitioning from a light yellow at the bottom to a darker gray at the top, which helps to emphasize the subject without distraction. The subject's attire and pose suggest a deliberate choice to evoke a sense of nostalgia or a specific character, possibly from a historical or theatrical context, with the background serving as a neutral stage that allows the viewer to focus on the subject's expression and attire.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 169,
+            "total_tokens": 472
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1281.566999,
+            "prompt_eval_duration_ms": 29.155324,
+            "generation_duration_ms": 1212.573301,
+            "load_duration_ms": 37.667076,
+            "tokens_per_second": 139.37301758221707
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a single person, a man, who is the central subject of the photograph. He is wearing a black bowler hat, glasses, and a bow tie, suggesting a formal or vintage style. His facial expression is relaxed and slightly amused, with a subtle smile and a raised eyebrow, giving the impression of a playful or confident demeanor. The man's attire, including the hat and bow tie, along with his glasses and mustache, suggests a deliberate choice of clothing that might be associated with a specific era or a costume. The background is plain and neutral, which helps to keep the focus on the man himself, emphasizing his attire and expression. There are no animals or other objects in the image, and the man does not appear to be interacting with anything or anyone else. The image is a portrait, likely intended to showcase the man's appearance and personality.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 176,
+            "total_tokens": 482
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1330.322058,
+            "prompt_eval_duration_ms": 29.30474,
+            "generation_duration_ms": 1261.057963,
+            "load_duration_ms": 37.736954,
+            "tokens_per_second": 139.56535319066853
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of playful sophistication and lightheartedness, leaning towards a positive emotional tone. The subject's attire, a classic black bowler hat and a neatly tied black bow tie, paired with a light blue shirt, suggests a formal yet whimsical approach to style, hinting at a sense of fun and eccentricity. The subtle smile and the slightly tilted head contribute to a relaxed and approachable demeanor, while the glasses add a touch of intellectual charm. The background, a simple gradient of soft yellow and blue, does not detract from the subject but rather complements the overall mood, creating a calm and inviting atmosphere. The combination of these elements\u2014formal yet quirky attire, the subject's gentle smile, and the soothing background\u2014conveys a mood of confidence and ease, making the viewer feel a sense of warmth and amusement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 176,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1331.551052,
+            "prompt_eval_duration_ms": 30.820658,
+            "generation_duration_ms": 1258.664316,
+            "load_duration_ms": 40.087438,
+            "tokens_per_second": 139.8307696203886
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"gray\", \"blue\"],\n      \"size\": \"large\",\n      \"description\": \"wearing a black bowler hat, glasses, and a black bow tie\"\n    }\n  },\n  \"man-made\": {\n    \"hat\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"black\"],\n      \"size\": \"medium\",\n      \"description\": \"black bowler hat\"\n    },\n    \"glasses\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"small\",\n      \"description\": \"worn by the person\"\n    },\n    \"bow_tie\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"worn by the person\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "gray",
+                  "blue"
+                ],
+                "size": "large",
+                "description": "wearing a black bowler hat, glasses, and a black bow tie"
+              }
+            },
+            "man-made": {
+              "hat": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "black bowler hat"
+              },
+              "glasses": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "silver"
+                ],
+                "size": "small",
+                "description": "worn by the person"
+              },
+              "bow_tie": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "worn by the person"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 227,
+            "total_tokens": 713
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1709.19924,
+            "prompt_eval_duration_ms": 47.789025,
+            "generation_duration_ms": 1618.337711,
+            "load_duration_ms": 39.896395,
+            "tokens_per_second": 140.2673857607462
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2660,
+        "total_time_ms": 7284.149821999999,
+        "average_speed": 139.8224457465591
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a close-up portrait of a man with a warm, inviting expression. The setting appears to be indoors, with a plain, softly lit background that transitions from a light yellowish hue at the bottom to a cooler, bluish tone at the top, suggesting a gradient or subtle lighting effect. The lighting is soft and even, highlighting the man's facial features without creating harsh shadows, giving the image a gentle and approachable feel.\n\nThe man is wearing a black bowler hat, which sits slightly tilted on his head, adding a touch of vintage or classic style to his appearance. His glasses have a sleek, metallic frame with a thin, rectangular design, complementing his overall look. He has a neatly groomed mustache and goatee, both of which are dark and well-defined, contributing to his distinguished appearance. His ear is adorned with a small, simple earring, adding a subtle detail to his style. He is dressed in a formal outfit, including a blue dress shirt and a black bow tie, which enhances the sophisticated and polished aesthetic of the image.\n\nThe overall composition is centered, focusing entirely on the man's face and upper torso. The image is cropped closely, emphasizing his facial features and attire, creating an intimate and engaging portrait. The color palette is a mix of neutral and warm tones, with the black of his hat and bow tie contrasting against the lighter background and his skin tone, making the subject stand out prominently. The lighting and color choices work together to create a balanced and visually appealing image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 309,
+            "total_tokens": 606
+          },
+          "performance_metrics": {
+            "total_duration_ms": 15118.913316,
+            "prompt_eval_duration_ms": 3547.367523,
+            "generation_duration_ms": 11530.625534,
+            "load_duration_ms": 38.415759,
+            "tokens_per_second": 26.798199203404987
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image prominently features a man dressed in formal attire, including a black bowler hat, a pair of glasses with a metallic frame, and a bow tie. His facial expression is playful, with a slight smirk and a raised eyebrow, suggesting a lighthearted or humorous mood. His attire, combined with his confident pose, creates a strong visual focus, drawing the viewer's attention directly to him. The man's presence dominates the foreground, making him the central subject of the image.\n\nThe background is relatively simple and unobtrusive, consisting of a plain, muted yellowish wall that provides a neutral backdrop. This simplicity ensures that the background does not distract from the subject in the foreground. The lack of additional elements in the background emphasizes the man's prominence and allows his attire and expression to stand out clearly.\n\nThe relationship between the foreground and background is one of contrast and balance. The detailed, sharp focus on the man in the foreground contrasts with the soft, unfocused background, creating depth and ensuring the subject remains the primary point of interest. The neutral background complements the man's formal attire, allowing his features and expression to be the focal point without competing elements. Together, the foreground and background work harmoniously to highlight the subject while maintaining a clean and straightforward composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 262,
+            "total_tokens": 565
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9888.993665,
+            "prompt_eval_duration_ms": 72.34196,
+            "generation_duration_ms": 9776.302913,
+            "load_duration_ms": 38.121359,
+            "tokens_per_second": 26.799496939851007
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image shows a single person, a man, who is the central focus of the photograph. He is wearing a black bowler hat, a pair of glasses with a thin metallic frame, and a black bow tie over a light blue collared shirt. His facial expression is cheerful and playful, with a slight smirk and a twinkle in his eye, suggesting a sense of humor or lightheartedness. He has a neatly groomed mustache and goatee, adding to his distinctive appearance. The man's pose is casual, with his head slightly tilted, which enhances the friendly and approachable vibe of the image.\n\nThere are no animals or other people visible in the image, so the focus is entirely on the man and his attire. The objects in the image include the bowler hat, glasses, bow tie, and shirt, all of which contribute to a classic, somewhat vintage or formal style. The background is plain and neutral, which helps to emphasize the subject without any distractions.\n\nThe interaction in the image is primarily between the man and the viewer. His playful expression and stylish attire suggest he is engaging with the audience in a lighthearted and confident manner, possibly aiming to entertain or connect with them. The overall composition of the image conveys a sense of personality and character, highlighting the man's unique style and demeanor.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 273,
+            "total_tokens": 579
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10283.369148,
+            "prompt_eval_duration_ms": 73.672956,
+            "generation_duration_ms": 10167.040993,
+            "load_duration_ms": 40.616204,
+            "tokens_per_second": 26.851470372545982
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a playful and slightly mischievous mood, evoking a sense of lightheartedness and confidence. The man's expression, characterized by a subtle smirk and slightly raised eyebrows, suggests a sense of humor or a playful attitude. His direct gaze at the camera adds a touch of engagement and personality, making the image feel approachable and engaging. The combination of the black bowler hat and bow tie gives a classic, slightly formal yet whimsical appearance, reinforcing the playful tone. The warm lighting enhances the overall positive atmosphere, casting a gentle glow on his face and contributing to a sense of friendliness. The slight asymmetry in his facial features, including the visible ear piercing, adds a unique and individualistic touch, further emphasizing his personality and confidence. The neutral background ensures that the focus remains on the subject, allowing his expression and attire to dominate the emotional narrative. Overall, the image strikes a balance between formality and fun, evoking feelings of amusement, approachability, and a touch of sophistication. The tone is predominantly positive, with a playful and engaging emotional atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 223,
+            "total_tokens": 531
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8425.587586,
+            "prompt_eval_duration_ms": 76.08962,
+            "generation_duration_ms": 8310.007283,
+            "load_duration_ms": 36.79,
+            "tokens_per_second": 26.835114868815698
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"brown\", \"black\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A man wearing a black bowler hat, glasses, a blue shirt, and a black bow tie. He has a mustache, goatee, and a nose piercing.\"\n    }\n  },\n  \"man-made\": {\n    \"bowler hat\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"A traditional black bowler hat.\"\n    },\n    \"glasses\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"silver\", \"black\"],\n      \"size\": \"small\",\n      \"description\": \"Spectacles with a silver frame.\"\n    },\n    \"shirt\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"A collared blue shirt.\"\n    },\n    \"bow tie\": {\n      \"count\": 1,\n      \"location\": \"center, bottom\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"A black bow tie.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center, foreground",
+                "color": [
+                  "brown",
+                  "black",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A man wearing a black bowler hat, glasses, a blue shirt, and a black bow tie. He has a mustache, goatee, and a nose piercing."
+              }
+            },
+            "man-made": {
+              "bowler hat": {
+                "count": 1,
+                "location": "center, top",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "A traditional black bowler hat."
+              },
+              "glasses": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "silver",
+                  "black"
+                ],
+                "size": "small",
+                "description": "Spectacles with a silver frame."
+              },
+              "shirt": {
+                "count": 1,
+                "location": "center, middle",
+                "color": [
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "A collared blue shirt."
+              },
+              "bow tie": {
+                "count": 1,
+                "location": "center, bottom",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "A black bow tie."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 306,
+            "total_tokens": 792
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11511.483608,
+            "prompt_eval_duration_ms": 135.113356,
+            "generation_duration_ms": 11336.529073,
+            "load_duration_ms": 37.571868,
+            "tokens_per_second": 26.992388766398925
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3073,
+        "total_time_ms": 55228.347323,
+        "average_speed": 26.855334030203316
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image presents a close-up portrait of a man wearing a classic black bowler hat, set against a softly blurred, warm yellow-green background. The man has a noticeable, bushy, dark brown mustache and a friendly, slightly amused expression. He is wearing rectangular, dark-framed glasses, adding to the vintage aesthetic. He's dressed in a light blue button-down shirt with a dark gray jacket, and a small black bow tie. The lighting is soft and diffused, casting subtle shadows and highlighting the texture of his mustache and the fabric of his clothing. \n\nThe composition is centered on the man\u2019s face, emphasizing his expression and features. The blurred background creates a shallow depth of field, drawing the viewer's attention directly to him. The overall effect is reminiscent of a classic portrait, possibly a staged or posed photograph. The colors are muted, with the dark hat and glasses contrasting against the warm background, creating a visually engaging image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 205,
+            "total_tokens": 518
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1637.736109,
+            "prompt_eval_duration_ms": 304.845767,
+            "generation_duration_ms": 1241.742903,
+            "load_duration_ms": 89.22782,
+            "tokens_per_second": 165.09053484801757
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's elements, broken down as requested:\n\nIn the foreground, the primary focus is a man with a warm, slightly amused expression. He\u2019s wearing a dark gray suit jacket, a light blue dress shirt with a black bow tie, and dark gray trousers. Most prominently, he sports a large, black, classic bowler hat casting a shadow over his forehead. He wears rectangular, dark-framed glasses, and a substantial, bushy, dark brown mustache adds to his character. His eyes are slightly upward-looking, contributing to a friendly, approachable feel. \n\nThe background is a soft, blurred gradient of yellow and green, suggesting a studio setting or perhaps a stage. The color palette is muted and creates a gentle, diffused light. The background is intentionally out of focus to draw the viewer\u2019s attention to the man in the foreground. The combination of the man's attire and the blurred background creates a slightly theatrical or posed effect, as if he is a character in a scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 210,
+            "total_tokens": 528
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1397.102602,
+            "prompt_eval_duration_ms": 54.081152,
+            "generation_duration_ms": 1258.1156,
+            "load_duration_ms": 82.802007,
+            "tokens_per_second": 166.91629926534574
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image presents a man, likely in his late 30s or early 40s, wearing a classic black bowler hat, a light blue button-down shirt, and a dark grey suit jacket. He\u2019s smiling slightly, with a relaxed and amiable expression. His dark, bushy mustache is prominent, adding to his character. He\u2019s wearing rectangular, dark-framed glasses, which accentuate his eyes. \n\nThe bowler hat sits squarely on his head, suggesting a formal or perhaps theatrical setting. The light blue shirt contrasts with the dark suit, creating a subtle visual balance. The man appears to be the central figure, drawing the viewer's attention with his expression and attire. The overall impression is one of a confident and perhaps slightly quirky individual. There are no other visible elements or people in the image, focusing solely on this singular subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 194,
+            "total_tokens": 515
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1311.394205,
+            "prompt_eval_duration_ms": 52.277637,
+            "generation_duration_ms": 1171.95731,
+            "load_duration_ms": 85.027564,
+            "tokens_per_second": 165.5350398386098
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed in the image:\n\nThe image evokes a feeling of amiable amusement and perhaps a touch of self-assuredness. The man's slight smile and relaxed expression suggest a comfortable, friendly demeanor. His prominent, bushy mustache adds to this impression, contributing a slightly comical and approachable vibe. The dark, slightly blurred background emphasizes the subject, drawing attention to his face and expression. The lighting is soft and warm, further enhancing the feeling of approachability. The overall tone is decidedly positive, leaning towards neutral with a hint of playful charm. The visual elements\u2014the smile, mustache, and soft lighting\u2014work together to create a sense of warmth and invitation, suggesting a person who is open, friendly, and perhaps a little bit mischievous.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 159,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1105.228591,
+            "prompt_eval_duration_ms": 54.910735,
+            "generation_duration_ms": 959.687838,
+            "load_duration_ms": 88.602128,
+            "tokens_per_second": 165.67887359222738
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\", \"blue\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Smiling man wearing a black top hat, glasses, and a blue shirt with a black bow tie.  He appears to be looking slightly to the left.\"\n    }\n  },\n  \"man-made\": {\n    \"hat\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\"],\n      \"size\": \"large\",\n      \"description\": \"A classic black top hat.\"\n    },\n    \"glasses\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"silver\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Framed eyeglasses.\"\n    },\n    \"shirt\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"A light blue button-down shirt.\"\n    },\n    \"bow tie\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"A black bow tie.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray",
+                  "blue",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Smiling man wearing a black top hat, glasses, and a blue shirt with a black bow tie.  He appears to be looking slightly to the left."
+              }
+            },
+            "man-made": {
+              "hat": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black"
+                ],
+                "size": "large",
+                "description": "A classic black top hat."
+              },
+              "glasses": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "silver",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Framed eyeglasses."
+              },
+              "shirt": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "A light blue button-down shirt."
+              },
+              "bow tie": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "A black bow tie."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 328,
+            "total_tokens": 846
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2126.373008,
+            "prompt_eval_duration_ms": 64.731754,
+            "generation_duration_ms": 1976.137489,
+            "load_duration_ms": 83.632964,
+            "tokens_per_second": 165.98035401169398
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2890,
+        "total_time_ms": 7577.8345150000005,
+        "average_speed": 165.84022031117888
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image presents a close-up portrait of a man, likely a head and shoulders shot. He's dressed in a formal attire, featuring a light blue dress shirt, a dark gray suit jacket, and a black bow tie, topped with a classic black bowler hat. He wears distinctive, silver-rimmed glasses perched on his nose, and sports a neatly trimmed mustache and goatee. The man appears to be smiling slightly, with a playful glint in his eyes. The background is a soft, blurred gradient of yellow and green, creating a warm and slightly surreal atmosphere. The lighting is diffused, highlighting the man's face and creating gentle shadows. The composition is centered, drawing immediate attention to the subject's face and emphasizing his confident and slightly whimsical expression. The overall impression is one of formality mixed with a touch of eccentricity and charm.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 183,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2718.286964,
+            "prompt_eval_duration_ms": 335.515634,
+            "generation_duration_ms": 2293.806765,
+            "load_duration_ms": 86.831138,
+            "tokens_per_second": 79.78004197751157
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a man's portrait, presented in a close-up shot. He's wearing a classic black bowler hat, stylish glasses with a metallic frame, a light blue collared shirt, and a black bow tie, creating a formal and somewhat whimsical appearance. His facial hair, a neatly trimmed mustache and goatee, adds to the distinguished look. He's smiling slightly, engaging the viewer with a friendly expression. The background is a soft, blurred gradient of yellow and green, creating a simple and non-distracting backdrop. This blurred effect isolates the man as the central focus, preventing the background from competing for attention. The lighting is even, highlighting his features and creating a warm tone. The overall effect is a portrait that emphasizes the man's personality and style against a muted, atmospheric setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 183,
+            "total_tokens": 501
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2467.142814,
+            "prompt_eval_duration_ms": 64.192578,
+            "generation_duration_ms": 2313.525148,
+            "load_duration_ms": 87.43526,
+            "tokens_per_second": 79.10006950138413
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image features a man in a formal attire, centered in the frame. He's wearing a classic black bowler hat, a light blue dress shirt, a dark suit jacket, and a black bow tie, creating a distinguished and slightly whimsical appearance. He wears stylish, silver-rimmed glasses perched on his nose, and a neatly trimmed goatee adorns his face. The man is looking slightly off-camera with a subtle, almost playful smile, suggesting a relaxed and confident demeanor. The background is a blurred, warm yellow-green, which contrasts with his dark clothing and draws focus to the man. There are no animals or other people present, so the interaction is solely between the man and the camera, creating a portrait-like feel. The bowler hat sits squarely on his head, completing the overall formal and slightly eccentric aesthetic.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 187,
+            "total_tokens": 508
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2524.48196,
+            "prompt_eval_duration_ms": 69.210625,
+            "generation_duration_ms": 2364.609813,
+            "load_duration_ms": 88.771516,
+            "tokens_per_second": 79.0828148356331
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a playful and slightly mischievous mood, tinged with a sense of quirky confidence. The man's subtle smile and the twinkle in his eyes suggest a lighthearted and approachable personality. The overall tone is decidedly positive, evoking feelings of amusement and a touch of whimsy. Several visual elements contribute to this atmosphere. The bowler hat and bow tie create a vintage, almost theatrical aesthetic, adding to the playful feel. The man's well-groomed mustache and glasses add a touch of sophistication, but the overall effect is not overly serious. The warm, yellow-green background creates a soft, inviting glow that enhances the positive feeling. The slightly off-center composition and the man's direct gaze create a sense of connection with the viewer, further contributing to the approachable and playful mood.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 161,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2190.298023,
+            "prompt_eval_duration_ms": 67.647227,
+            "generation_duration_ms": 2031.131477,
+            "load_duration_ms": 89.383238,
+            "tokens_per_second": 79.26616362511326
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"person\": [\n        {\n          \"count\": 1,\n          \"location\": \"foreground\",\n          \"color\": [\"fair\", \"reddish\"],\n          \"size\": \"large\",\n          \"description\": \"Man wearing a black bowler hat, glasses, bow tie, and a mustache. Smiling slightly.\"\n        }\n      ]\n    }\n  ],\n  \"man-made\": [\n    {\n      \"hat\": [\n        {\n          \"count\": 1,\n          \"location\": \"foreground\",\n          \"color\": [\"black\"],\n          \"size\": \"medium\",\n          \"description\": \"Bowler hat worn by the person.\"\n        }\n      ]\n    },\n    {\n      \"glasses\": [\n        {\n          \"count\": 1,\n          \"location\": \"foreground\",\n          \"color\": [\"black\", \"silver\"],\n          \"size\": \"medium\",\n          \"description\": \"Wire-rimmed glasses worn by the person.\"\n        }\n      ]\n    },\n    {\n      \"bow tie\": [\n        {\n          \"count\": 1,\n          \"location\": \"foreground\",\n          \"color\": [\"black\"],\n          \"size\": \"small\",\n          \"description\": \"Black bow tie worn by the person.\"\n        }\n      ]\n    }\n  ],\n  \"natural\": [\n    {\n      \"background\": [\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"color\": [\"yellow\", \"green\"],\n          \"size\": \"large\",\n          \"description\": \"Plain, textured background.\"\n        }\n      ]\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "person": [
+                  {
+                    "count": 1,
+                    "location": "foreground",
+                    "color": [
+                      "fair",
+                      "reddish"
+                    ],
+                    "size": "large",
+                    "description": "Man wearing a black bowler hat, glasses, bow tie, and a mustache. Smiling slightly."
+                  }
+                ]
+              }
+            ],
+            "man-made": [
+              {
+                "hat": [
+                  {
+                    "count": 1,
+                    "location": "foreground",
+                    "color": [
+                      "black"
+                    ],
+                    "size": "medium",
+                    "description": "Bowler hat worn by the person."
+                  }
+                ]
+              },
+              {
+                "glasses": [
+                  {
+                    "count": 1,
+                    "location": "foreground",
+                    "color": [
+                      "black",
+                      "silver"
+                    ],
+                    "size": "medium",
+                    "description": "Wire-rimmed glasses worn by the person."
+                  }
+                ]
+              },
+              {
+                "bow tie": [
+                  {
+                    "count": 1,
+                    "location": "foreground",
+                    "color": [
+                      "black"
+                    ],
+                    "size": "small",
+                    "description": "Black bow tie worn by the person."
+                  }
+                ]
+              }
+            ],
+            "natural": [
+              {
+                "background": [
+                  {
+                    "count": 1,
+                    "location": "background",
+                    "color": [
+                      "yellow",
+                      "green"
+                    ],
+                    "size": "large",
+                    "description": "Plain, textured background."
+                  }
+                ]
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 394,
+            "total_tokens": 912
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5174.194877,
+            "prompt_eval_duration_ms": 93.106936,
+            "generation_duration_ms": 4990.055062,
+            "load_duration_ms": 89.168291,
+            "tokens_per_second": 78.95704458260745
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2902,
+        "total_time_ms": 15074.404638,
+        "average_speed": 79.2372269044499
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image is a close-up portrait of a man wearing a black bowler hat and glasses. He has a distinctive mustache and goatee, and a small earring is visible in his left ear. He is wearing a light blue collared shirt and a dark gray jacket, with a black bow tie completing his attire. The background is a soft, blurred gradient of yellow and green, creating a slightly dreamlike or theatrical atmosphere. The lighting appears to be somewhat diffused, highlighting the man's face and features while leaving the background softer. The composition is focused tightly on the man's face, with the bowler hat adding a touch of vintage or whimsical character. His expression is a slight smile, suggesting a playful or confident demeanor. The overall impression is a portrait with a touch of eccentricity and a hint of old-world charm.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 176,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4656.053976,
+            "prompt_eval_duration_ms": 400.141738,
+            "generation_duration_ms": 4163.984283,
+            "load_duration_ms": 89.759441,
+            "tokens_per_second": 42.26721044998719
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground is dominated by a close-up portrait of a man wearing a black bowler hat and glasses. He has a distinctive mustache and goatee, and a small earring is visible in his left ear. He is dressed in a dark suit jacket with a light blue shirt and a black bow tie, suggesting a formal or theatrical style. The man's expression is a slight smile, and he is looking slightly upwards. \n\nThe background is a blurred, gradient wash of yellow and green, lacking any distinct features or objects. This creates a soft, diffused backdrop that emphasizes the man as the primary subject. The blurred background serves to isolate the man, drawing the viewer's attention to his face and attire. The contrast between the sharp focus of the man and the soft blur of the background enhances the depth of the image and creates a visually appealing composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 188,
+            "total_tokens": 506
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4619.602765,
+            "prompt_eval_duration_ms": 80.665634,
+            "generation_duration_ms": 4447.795411,
+            "load_duration_ms": 89.366544,
+            "tokens_per_second": 42.26813120384327
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a man as the central figure, captured in a close-up portrait. He is wearing a black bowler hat, which adds a touch of classic style to his appearance. He also sports eyeglasses with a unique, somewhat ornate frame, and a distinctive mustache and goatee combination. He is wearing a light blue collared shirt, topped with a dark gray jacket and a black bow tie. The man is looking slightly upwards and to the side with a gentle smile, creating a warm and inviting expression. \n\nThe background is a soft, blurred gradient of yellow and green, which doesn't distract from the man but provides a subtle backdrop. The focus is entirely on the man and his expression, suggesting a portrait intended to capture his personality and style. There are no other people or animals present in the image, so the interaction is solely with the viewer through his gaze and expression.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 189,
+            "total_tokens": 510
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4644.531128,
+            "prompt_eval_duration_ms": 84.191924,
+            "generation_duration_ms": 4468.227688,
+            "load_duration_ms": 88.771302,
+            "tokens_per_second": 42.298650202536415
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a playful and slightly mischievous mood. The man\u2019s direct gaze, combined with a subtle, knowing smile and raised eyebrows, suggests a sense of amusement and perhaps a hint of self-awareness. His distinctive facial hair \u2013 a handlebar mustache and goatee \u2013 adds to the whimsical, almost theatrical quality of the portrait. The bowler hat further contributes to this impression, hinting at a character with a unique personality. The lighting and color palette are relatively neutral, allowing the man\u2019s expression and attire to take center stage. Overall, the tone is decidedly positive and lighthearted, inviting the viewer to share in the man\u2019s playful energy. It feels like a portrait of someone who enjoys life and doesn't take themselves too seriously.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 165,
+            "total_tokens": 489
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4072.454181,
+            "prompt_eval_duration_ms": 81.788869,
+            "generation_duration_ms": 3901.522548,
+            "load_duration_ms": 87.038675,
+            "tokens_per_second": 42.291181960381685
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"tan\",\n        \"white\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"Man wearing a bowler hat and glasses, with a distinctive mustache and goatee. He is smiling.\"\n    }\n  },\n  \"man-made\": {\n    \"hat\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\n        \"black\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"Black bowler hat.\"\n    },\n    \"glasses\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"silver\",\n        \"brown\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"Wire-frame glasses.\"\n    },\n    \"bow tie\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\n        \"black\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"Black bow tie.\"\n    },\n    \"shirt\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"blue\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"Blue collared shirt.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "tan",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Man wearing a bowler hat and glasses, with a distinctive mustache and goatee. He is smiling."
+              }
+            },
+            "man-made": {
+              "hat": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Black bowler hat."
+              },
+              "glasses": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "silver",
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Wire-frame glasses."
+              },
+              "bow tie": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "Black bow tie."
+              },
+              "shirt": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "Blue collared shirt."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 342,
+            "total_tokens": 860
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8268.197879,
+            "prompt_eval_duration_ms": 141.362207,
+            "generation_duration_ms": 8036.47335,
+            "load_duration_ms": 87.640119,
+            "tokens_per_second": 42.55598010537794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2854,
+        "total_time_ms": 26260.839928999998,
+        "average_speed": 42.3362307844253
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a man wearing a black bowler hat, which contrasts sharply with the soft, blurred background. His face is prominently displayed, with a well-groomed mustache and a slight smile that gives off a friendly and approachable vibe. He is also wearing glasses with a thin, dark frame, and a small earring in his left ear adds a touch of individuality to his appearance. The lighting is warm and slightly directional, casting a soft glow on his face, particularly highlighting his eyes and the left side of his face. The background is a gradient of muted colors, transitioning from a light yellow near the top to a soft gray at the bottom, which helps to keep the focus on the man. The overall composition is balanced, with the man's face centered in the frame, creating a harmonious and visually appealing image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 171,
+            "total_tokens": 963
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6834.309412,
+            "prompt_eval_duration_ms": 2019.663544,
+            "generation_duration_ms": 4767.274377,
+            "load_duration_ms": 44.822578,
+            "tokens_per_second": 35.86955280463817
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, the image prominently features a man who appears to be smiling gently. He is wearing a black bowler hat, which is slightly tilted, adding a playful touch to his appearance. His face is adorned with a well-groomed mustache and a small earring in his left ear. He is dressed in a light blue shirt with a dark tie, suggesting a semi-formal or professional attire. The lighting highlights his face, making him the central focus of the image. In the background, there is a blurred, neutral-colored wall that provides a simple and unobtrusive setting. The soft focus on the background ensures that the viewer's attention remains on the man in the foreground. The relationship between the foreground and background elements is such that the background serves to enhance the prominence of the man, creating a clear distinction between the subject and his surroundings. This composition effectively draws the viewer's eye directly to the man, emphasizing his features and expression.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 194,
+            "total_tokens": 992
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5479.367568,
+            "prompt_eval_duration_ms": 53.072493,
+            "generation_duration_ms": 5374.656652,
+            "load_duration_ms": 47.27838,
+            "tokens_per_second": 36.09532897842123
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a single person who is the central focus. The individual is wearing a black bowler hat, which is slightly tilted, adding a playful touch to the overall appearance. They have a mustache and are wearing glasses, which give them a distinguished look. The person is also dressed in a formal attire, including a bow tie, suggesting a sense of style and sophistication. The background is blurred, drawing attention to the person, and creating a shallow depth of field effect. The individual appears to be smiling, conveying a friendly and approachable demeanor. There are no other people, animals, or distinct objects in the image, making the person the sole subject of the photograph. The interaction within the image is minimal, as the person is alone, but the elements of their attire and expression create a harmonious composition that is visually appealing.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 171,
+            "total_tokens": 971
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4843.659611,
+            "prompt_eval_duration_ms": 60.852892,
+            "generation_duration_ms": 4732.886502,
+            "load_duration_ms": 47.485408,
+            "tokens_per_second": 36.13017128717108
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood that is primarily positive and cheerful. The person in the photo is wearing a bowler hat, glasses, and a bow tie, which adds a playful and whimsical touch to the overall appearance. The slight smile on the person's face suggests a sense of contentment and happiness, contributing to the warm and friendly atmosphere. The lighting in the image is soft and diffused, creating a gentle and inviting ambiance that enhances the positive emotions. The background is blurred, drawing focus to the person's face and expressions, which further emphasizes the joyful and approachable demeanor. The combination of these visual elements\u2014such as the attire, the smile, and the lighting\u2014creates an emotional atmosphere that evokes feelings of warmth, friendliness, and lightheartedness. Overall, the tone of the image is uplifting and pleasant, making it easy for viewers to connect with the positive energy it radiates.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 191,
+            "total_tokens": 994
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5396.564815,
+            "prompt_eval_duration_ms": 64.273063,
+            "generation_duration_ms": 5285.889984,
+            "load_duration_ms": 43.734664,
+            "tokens_per_second": 36.13393403535506
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"gray\", \"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"A person wearing a black bowler hat, glasses, and a bow tie.\"\n    }\n  },\n  \"man-made\": {\n    \"hat\": {\n      \"count\": 1,\n      \"location\": \"top center\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"A black bowler hat.\"\n    },\n    \"glasses\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"gold\"],\n      \"size\": \"small\",\n      \"description\": \"Black glasses with gold details.\"\n    },\n    \"bow tie\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"A black bow tie.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "gray",
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "A person wearing a black bowler hat, glasses, and a bow tie."
+              }
+            },
+            "man-made": {
+              "hat": {
+                "count": 1,
+                "location": "top center",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "A black bowler hat."
+              },
+              "glasses": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "gold"
+                ],
+                "size": "small",
+                "description": "Black glasses with gold details."
+              },
+              "bow tie": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black"
+                ],
+                "size": "small",
+                "description": "A black bow tie."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 225,
+            "total_tokens": 1207
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6406.527204,
+            "prompt_eval_duration_ms": 101.225128,
+            "generation_duration_ms": 6256.368717,
+            "load_duration_ms": 46.072337,
+            "tokens_per_second": 35.96335353263675
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5127,
+        "total_time_ms": 28960.428609999995,
+        "average_speed": 36.03846812764446
+      }
+    }
+  ]
+}

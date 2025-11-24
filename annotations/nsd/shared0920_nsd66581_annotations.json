@@ -1,0 +1,934 @@
+{
+  "image": {
+    "path": "images/original/shared0920_nsd66581.png",
+    "name": "shared0920_nsd66581.png",
+    "id": "shared0920_nsd66581"
+  },
+  "timestamp": "2025-08-31T00:09:18.198118+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a young girl, likely in a school setting, dressed in a dark blazer with a striped tie, suggesting a formal or school uniform. Her curly hair is slightly tousled, and she is smiling broadly, conveying a sense of joy and innocence. The background features a brick building with large windows, which are partially obscured by the angle of the photograph, giving a dynamic and slightly tilted perspective. The lighting is natural, possibly from an overcast sky, as it is soft and diffused, casting even illumination across the scene without harsh shadows. The overall color palette is muted, with the dark tones of the girl's blazer and the brick wall contrasting subtly against the lighter tones of the windows and the girl's skin. The composition is centered on the girl, with the building and windows framing her, creating a sense of depth and drawing the viewer's attention to her cheerful expression. The slight tilt of the image adds a dynamic element, making the photograph feel energetic and lively.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 200,
+            "total_tokens": 497
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1548.25523,
+            "prompt_eval_duration_ms": 82.911038,
+            "generation_duration_ms": 1420.811517,
+            "load_duration_ms": 42.324315,
+            "tokens_per_second": 140.76462472819327
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a young girl dressed in a school uniform, complete with a dark blazer, white shirt, and striped tie, is the central focus. Her curly hair is slightly tousled, and she is smiling broadly, her eyes sparkling with joy. The blazer, adorned with badges, suggests a sense of pride and belonging to a particular school or institution. The background, slightly blurred due to the shallow depth of field, reveals the exterior of a school building with large windows and brick walls, indicating an urban or suburban setting. The building's architecture, with its clean lines and structured appearance, contrasts with the organic and dynamic pose of the girl, creating a harmonious balance between the individual and the environment. The interplay of light and shadow on the girl's face and the building's facade adds depth and dimension to the scene, emphasizing the connection between the subject and her surroundings.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 183,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1383.965816,
+            "prompt_eval_duration_ms": 29.098765,
+            "generation_duration_ms": 1311.788783,
+            "load_duration_ms": 40.939928,
+            "tokens_per_second": 139.504165892841
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a young girl, dressed in a school uniform consisting of a dark blazer, white shirt, and striped tie, is the central figure. She is smiling broadly, her eyes sparkling with joy, suggesting a moment of happiness or excitement. The background reveals a school setting, with a brick building and a window with horizontal bars, indicating an outdoor school environment. The girl appears to be standing in a courtyard or open area of the school, possibly during a break or a special event. There are no other people or animals visible in the image, focusing all attention on the girl and her expression. The interaction between the girl and her environment is one of connection and engagement, as she seems to be enjoying her time at school. The overall scene conveys a sense of youthful energy and school life.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 163,
+            "total_tokens": 469
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1239.108918,
+            "prompt_eval_duration_ms": 28.852241,
+            "generation_duration_ms": 1168.412088,
+            "load_duration_ms": 39.910368,
+            "tokens_per_second": 139.5055748516015
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood of joy and innocence, evoking feelings of warmth and positivity. The young girl's radiant smile, with her eyes crinkling at the corners, suggests a genuine happiness and contentment. Her bright, open expression and the way she is dressed in a school uniform, complete with a striped tie, indicate a sense of pride and belonging. The outdoor setting, with its brick building and clear sky, adds to the cheerful atmosphere, suggesting a pleasant day. The slight tilt of the photograph adds a dynamic and playful element, enhancing the overall sense of liveliness and positivity. The contrast between the bright sunlight and the shadowed areas of her uniform creates a visually appealing interplay of light and dark, further emphasizing the vibrant and uplifting mood of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 157,
+            "total_tokens": 465
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1200.44309,
+            "prompt_eval_duration_ms": 29.9384,
+            "generation_duration_ms": 1129.564545,
+            "load_duration_ms": 37.8917,
+            "tokens_per_second": 138.9916146845774
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"black\", \"white\", \"blue\", \"yellow\"],\n      \"size\": \"large\",\n      \"description\": \"child wearing a school uniform, smiling\"\n    }\n  },\n  \"man-made\": {\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"white\", \"red\"],\n      \"size\": \"large\",\n      \"description\": \"brick and concrete structure with windows\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "black",
+                  "white",
+                  "blue",
+                  "yellow"
+                ],
+                "size": "large",
+                "description": "child wearing a school uniform, smiling"
+              }
+            },
+            "man-made": {
+              "building": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "white",
+                  "red"
+                ],
+                "size": "large",
+                "description": "brick and concrete structure with windows"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 129,
+            "total_tokens": 615
+          },
+          "performance_metrics": {
+            "total_duration_ms": 993.672297,
+            "prompt_eval_duration_ms": 44.109527,
+            "generation_duration_ms": 911.046386,
+            "load_duration_ms": 36.327476,
+            "tokens_per_second": 141.5954247580979
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2532,
+        "total_time_ms": 6365.445350999999,
+        "average_speed": 140.0722809830622
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a cheerful young child standing outdoors in what appears to be a school setting. The child, likely a girl based on their hairstyle, is smiling broadly, exuding a sense of joy and playfulness. They are wearing a dark navy blazer with a striped yellow and blue tie, suggesting a school uniform, which adds to the academic atmosphere. The background features a brick wall with a white-framed window, indicating a traditional building, possibly a school. The window has horizontal black blinds, and the wall's red bricks contrast with the white trim, creating a classic and structured appearance. The lighting is natural and bright, suggesting it is daytime, with sunlight casting soft shadows and highlighting the child's hair and facial features. The overall composition is slightly tilted, giving the image a dynamic and candid feel, as if the photo was taken spontaneously. The colors are warm and vibrant, with the red bricks, yellow and blue tie, and the child's light skin tone standing out against the darker blazer and background. The scene conveys a sense of innocence, happiness, and the everyday life of a schoolchild.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 225,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 11939.439518,
+            "prompt_eval_duration_ms": 3490.751309,
+            "generation_duration_ms": 8408.589236,
+            "load_duration_ms": 37.918881,
+            "tokens_per_second": 26.758353117868964
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a young child, who is the primary subject. The child is wearing a dark blazer with a striped tie, suggesting a school uniform, and is smiling broadly, creating a warm and joyful atmosphere. The child's curly hair and bright expression draw immediate attention, making them the focal point of the image. The blazer and tie indicate a formal or academic setting, hinting at a school environment.\n\nIn the background, the setting appears to be an outdoor area near a school building. The background features a brick wall with a white-framed window and a metal security gate, which are typical architectural elements of a school. The wall and gate provide a sense of structure and context, reinforcing the idea that the child is in a school environment. The background is slightly out of focus, which helps to emphasize the child in the foreground while still providing context for the setting.\n\nThe relationship between the foreground and background is clear: the child in the foreground is the main subject, and the background elements of the school building and gate establish the context in which the child is situated. The blurred background ensures that the viewer's attention remains on the child, while the school elements in the background provide a narrative that connects the child to the setting, suggesting a moment of happiness or excitement during a school day. The overall composition effectively uses depth and focus to create a layered image that tells a story about the child's experience.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 289,
+            "total_tokens": 592
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10886.106257,
+            "prompt_eval_duration_ms": 74.929132,
+            "generation_duration_ms": 10770.751547,
+            "load_duration_ms": 38.105881,
+            "tokens_per_second": 26.831925213287068
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image shows a young child, likely a schoolgirl, standing outdoors in front of a brick building with large windows. The child is wearing a formal school uniform, which includes a dark blazer, a white shirt, and a striped tie. She is smiling broadly, exuding a sense of joy and happiness. Her hair is light brown and styled in a casual, slightly tousled manner, adding to the overall playful and carefree atmosphere of the scene. The child appears to be posing for the photograph, as her head is tilted slightly to the side, and her expression is directed toward the camera.\n\nIn the background, the brick building provides a structured and institutional setting, suggesting that the location is likely a school. The large windows and clean lines of the architecture contrast with the child's lively and spontaneous demeanor, creating a juxtaposition between the formal environment and the child's natural, unguarded expression. There are no other people or animals visible in the image, making the child the sole focus of the photograph. The scene is bright and well-lit, indicating that the photo was taken during the daytime, possibly during recess or after school hours. The overall mood is cheerful and positive, emphasizing the innocence and happiness of childhood.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 247,
+            "total_tokens": 553
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9315.546041,
+            "prompt_eval_duration_ms": 72.266292,
+            "generation_duration_ms": 9200.029984,
+            "load_duration_ms": 40.585628,
+            "tokens_per_second": 26.847738586674588
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a positive and uplifting mood, evoking feelings of joy, innocence, and warmth. The central focus is a young child with a bright, genuine smile, which immediately draws the viewer's attention and elicits a sense of happiness. The child's expression is open and carefree, suggesting a moment of pure delight or excitement. The school uniform, complete with a tie and blazer, adds a touch of formality but does not detract from the overall lightheartedness of the scene. The slightly tilted perspective of the photograph gives it a playful, dynamic quality, enhancing the sense of spontaneity and youthful energy. The background, featuring a brick wall and a window, is simple and unobtrusive, allowing the child's joyful expression to remain the focal point. The lighting is soft and natural, contributing to the warm and inviting atmosphere. The overall tone is decidedly positive, as the image captures a fleeting moment of pure joy, reminding viewers of the simple pleasures of childhood and the infectious nature of happiness. The visual elements\u2014smile, uniform, tilted angle, and soft lighting\u2014all work together to create an emotional atmosphere that is uplifting and heartwarming.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 242,
+            "total_tokens": 550
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9121.70882,
+            "prompt_eval_duration_ms": 76.477284,
+            "generation_duration_ms": 9003.386147,
+            "load_duration_ms": 39.485182,
+            "tokens_per_second": 26.878776057010096
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"brown\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Child wearing a school uniform, smiling, with curly hair.\"\n    }\n  },\n  \"man-made\": {\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"red\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Brick wall with white trim and a window.\"\n    },\n    \"window\": {\n      \"count\": 1,\n      \"location\": \"left, background\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"small\",\n      \"description\": \"Vertical blinds covering the window.\"\n    },\n    \"door\": {\n      \"count\": 1,\n      \"location\": \"center, background\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"White door with a handle.\"\n    },\n    \"uniform\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"black\", \"yellow\", \"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"School uniform consisting of a blazer, white shirt, and striped tie.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Overcast sky.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center, foreground",
+                "color": [
+                  "brown",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Child wearing a school uniform, smiling, with curly hair."
+              }
+            },
+            "man-made": {
+              "building": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "red",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Brick wall with white trim and a window."
+              },
+              "window": {
+                "count": 1,
+                "location": "left, background",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "small",
+                "description": "Vertical blinds covering the window."
+              },
+              "door": {
+                "count": 1,
+                "location": "center, background",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "White door with a handle."
+              },
+              "uniform": {
+                "count": 1,
+                "location": "center, foreground",
+                "color": [
+                  "black",
+                  "yellow",
+                  "blue"
+                ],
+                "size": "medium",
+                "description": "School uniform consisting of a blazer, white shirt, and striped tie."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Overcast sky."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 347,
+            "total_tokens": 833
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13055.376828,
+            "prompt_eval_duration_ms": 139.919905,
+            "generation_duration_ms": 12874.884633,
+            "load_duration_ms": 38.167786,
+            "tokens_per_second": 26.951697812545362
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3050,
+        "total_time_ms": 54318.177464,
+        "average_speed": 26.853698157477215
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph presents a charming, slightly tilted, low-angle shot of a young child, likely a boy, beaming with a genuine smile. He is dressed in a dark navy blazer, a crisp white shirt, and a striped blue and white tie. The blazer has a subtle red patch on the sleeve. The background is a modern, urban setting, featuring a brick wall painted a muted red, and a large, dark grey, vertically-oriented shutter system dominates the upper portion of the frame. The shutter system creates a strong linear pattern, adding depth and visual interest. \n\nThe lighting appears soft and diffused, suggesting an overcast day, and the colors are muted, with the red brick and grey shutter creating a cool palette. The composition is dynamic due to the low angle and the child's direct gaze, drawing the viewer into the image. The overall effect is warm and inviting, capturing a moment of youthful joy within an urban environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 201,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1614.118013,
+            "prompt_eval_duration_ms": 308.463097,
+            "generation_duration_ms": 1217.9061,
+            "load_duration_ms": 85.755996,
+            "tokens_per_second": 165.03735386496544
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements of the image, presented as a continuous paragraph:\n\nThe foreground is dominated by a young child, likely a boy, positioned slightly off-center and looking directly at the viewer with a bright, genuine smile. He is dressed in a dark blue blazer, a white shirt, and a striped tie, suggesting a school setting. His hair is slightly messy, adding to a youthful and endearing appearance. The immediate area is a light grey concrete pavement, providing a neutral backdrop for his features. \n\nThe background reveals a building facade constructed of red brick, creating a warm contrast with the cool tones of the pavement and the child\u2019s clothing. Above the doorway, a series of dark, vertical window shutters are visible, adding a geometric element to the scene. The building\u2019s architecture suggests a traditional, possibly older, structure. The layers of the image \u2013 the child in the foreground and the building in the background \u2013 work together to create a sense of depth and context, likely indicating a school environment where the child is present.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 217,
+            "total_tokens": 535
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1451.548796,
+            "prompt_eval_duration_ms": 58.138258,
+            "generation_duration_ms": 1302.317824,
+            "load_duration_ms": 89.110035,
+            "tokens_per_second": 166.6259925196263
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image captures a young child, a boy, beaming with a wide, joyful smile, looking directly at the camera. He is dressed in a dark blue blazer, a white shirt, and a striped tie, suggesting a school setting. The boy is positioned in the foreground, drawing immediate attention with his expression of happiness. \n\nBehind him, a section of a building is visible, featuring a dark, striped awning or shutter system that creates a strong linear element across the frame. The building's brick facade is a warm reddish-brown, contrasting with the cooler tones of the awning. The scene feels like a casual, candid moment, possibly taken during a school day. \n\nThe boy's direct gaze and bright smile suggest a connection with the viewer, creating a sense of warmth and familiarity. The composition emphasizes the boy's presence, while the architectural backdrop provides context, hinting at a school environment and a moment of youthful joy.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 209,
+            "total_tokens": 530
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1388.767985,
+            "prompt_eval_duration_ms": 65.614795,
+            "generation_duration_ms": 1234.516878,
+            "load_duration_ms": 86.504721,
+            "tokens_per_second": 169.29699684510916
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's mood and emotions:\n\nThe photograph exudes a profoundly joyful and warm feeling. A young child, dressed in a smart school uniform \u2013 a dark blazer, white shirt, and striped tie \u2013 beams directly at the camera with a wide, genuine smile. The overall tone is overwhelmingly positive, conveying innocence, happiness, and perhaps a touch of youthful exuberance. The close-up perspective and direct gaze create an intimate connection, drawing the viewer into the child\u2019s moment of delight. The lighting is soft and diffused, contributing to the gentle and inviting atmosphere. The clean, neutral background \u2013 a brick wall with vertical black slats \u2013 further emphasizes the child\u2019s face and the central emotion. The composition, with the child positioned slightly off-center, adds a dynamic element, enhancing the feeling of movement and energy.  It's a snapshot of pure, unadulterated joy.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 187,
+            "total_tokens": 511
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1258.058398,
+            "prompt_eval_duration_ms": 60.47671,
+            "generation_duration_ms": 1109.569805,
+            "load_duration_ms": 85.8625,
+            "tokens_per_second": 168.5337859387765
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"dark blue\", \"white\", \"red\"],\n      \"size\": \"medium\",\n      \"description\": \"A young child smiling, wearing a dark blue suit with a white shirt and a red tie. The child is looking directly at the camera.\"\n    }\n  },\n  \"man-made\": {\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"red\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A brick building with a gray facade. The building appears to be a school or similar structure.\"\n    },\n    \"window\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A large window with vertical slats.\"\n    },\n    \"door\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A door with a gray frame.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "dark blue",
+                  "white",
+                  "red"
+                ],
+                "size": "medium",
+                "description": "A young child smiling, wearing a dark blue suit with a white shirt and a red tie. The child is looking directly at the camera."
+              }
+            },
+            "man-made": {
+              "building": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "red",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A brick building with a gray facade. The building appears to be a school or similar structure."
+              },
+              "window": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A large window with vertical slats."
+              },
+              "door": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A door with a gray frame."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 288,
+            "total_tokens": 806
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1867.320415,
+            "prompt_eval_duration_ms": 65.305731,
+            "generation_duration_ms": 1713.892374,
+            "load_duration_ms": 86.092126,
+            "tokens_per_second": 168.03855619466103
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2896,
+        "total_time_ms": 7579.813607000001,
+        "average_speed": 167.50653707262768
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a young girl, likely a student, beaming directly at the camera with a wide, joyful smile. She's dressed in a school uniform consisting of a dark blazer, a crisp white shirt, and a striped tie featuring shades of blue, yellow, and red. Her hair is light brown and styled with loose curls framing her face. The setting appears to be outdoors, in front of a modern building with large windows and brick accents. The building's architecture is visible in the blurred background, creating a sense of depth. The lighting is bright and diffused, suggesting an overcast day, which evenly illuminates the girl's face and uniform. The composition is a close-up, low-angle shot, emphasizing the girl's expression and creating a sense of intimacy. The overall tone is cheerful and positive, conveying a feeling of happiness and youthful exuberance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 187,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2788.440041,
+            "prompt_eval_duration_ms": 346.140967,
+            "generation_duration_ms": 2351.57694,
+            "load_duration_ms": 88.768256,
+            "tokens_per_second": 79.52110637723807
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a young girl, likely a student, beaming directly at the viewer. She's dressed in a school uniform, complete with a blazer, white shirt, and a striped tie. Her hair is tousled and frames her face, contributing to a cheerful and energetic feel. The perspective is low, looking up at her, which emphasizes her youthful exuberance. Behind her, the background reveals a brick building with large, dark-framed windows. The building's architecture suggests a school or institutional setting. The brickwork and windows create a sense of depth and provide a structured backdrop to the girl\u2019s lively presence. The low-angle shot and the bright, natural lighting create a dynamic composition, highlighting the girl as the central focus against the more static and formal setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 176,
+            "total_tokens": 494
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2397.936873,
+            "prompt_eval_duration_ms": 65.340563,
+            "generation_duration_ms": 2246.303373,
+            "load_duration_ms": 84.362333,
+            "tokens_per_second": 78.35094854750058
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image features a young girl, likely a student, beaming directly at the camera with a wide, joyful smile. She is dressed in a school uniform, complete with a blazer, white shirt, and a striped tie. The angle of the shot is from a low perspective, looking up at her, which emphasizes her youthful energy and enthusiasm. Behind her, a building forms the backdrop, with brickwork and large windows creating a sense of institutional setting. The building's architecture appears traditional, suggesting a school or similar educational establishment. The girl's interaction with the environment is one of playful engagement; she seems to be enjoying the moment and radiating positivity. There are no animals present in the image, and the focus is entirely on the girl and her connection to the school environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 175,
+            "total_tokens": 496
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2381.133773,
+            "prompt_eval_duration_ms": 67.201148,
+            "generation_duration_ms": 2223.957466,
+            "load_duration_ms": 87.916065,
+            "tokens_per_second": 78.68855527833193
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image exudes a distinctly positive and joyful mood. A young girl, dressed in a school uniform complete with a striped tie, beams directly at the viewer with an infectious smile, conveying a sense of happiness and confidence. The upward angle of the shot, combined with her bright expression, creates a feeling of exuberance and approachability. The warm lighting and slightly soft focus contribute to a gentle and endearing atmosphere. The background, featuring a brick building and what appears to be a school entrance, suggests a safe and nurturing environment, further enhancing the feeling of positivity. Overall, the image evokes feelings of warmth, happiness, and a sense of youthful optimism, leaving the viewer with a pleasant and uplifting impression.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 140,
+            "total_tokens": 464
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1932.481619,
+            "prompt_eval_duration_ms": 69.816548,
+            "generation_duration_ms": 1772.636531,
+            "load_duration_ms": 87.935052,
+            "tokens_per_second": 78.97840169243358
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": [\n    {\n      \"item\": \"person\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"fair\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Smiling young girl wearing a school uniform with a tie.\"\n    }\n  ],\n  \"man-made\": [\n    {\n      \"item\": \"building\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\", \"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Brick building with windows and architectural details.\"\n    },\n    {\n      \"item\": \"window\",\n      \"count\": 3,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Rectangular windows with multiple panes.\"\n    },\n    {\n      \"item\": \"tie\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"blue\", \"yellow\", \"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Striped tie worn by the person.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": [
+              {
+                "item": "person",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "fair",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Smiling young girl wearing a school uniform with a tie."
+              }
+            ],
+            "man-made": [
+              {
+                "item": "building",
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown",
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Brick building with windows and architectural details."
+              },
+              {
+                "item": "window",
+                "count": 3,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "Rectangular windows with multiple panes."
+              },
+              {
+                "item": "tie",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "blue",
+                  "yellow",
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Striped tie worn by the person."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 289,
+            "total_tokens": 807
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3873.659361,
+            "prompt_eval_duration_ms": 90.713288,
+            "generation_duration_ms": 3693.347563,
+            "load_duration_ms": 87.678509,
+            "tokens_per_second": 78.24879599613246
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2761,
+        "total_time_ms": 13373.651667,
+        "average_speed": 78.75756157832731
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image features a young girl, likely a student, beaming with a wide, joyful smile. She is dressed in a dark navy school uniform, complete with a white collared shirt and a striped tie in shades of blue, yellow, and white. Her hair is light brown and slightly tousled, framing her face. The setting appears to be the exterior of a school building, evidenced by the brickwork and large windows visible in the background. The composition utilizes a slightly low angle, making the girl appear larger and more prominent. \n\nThe lighting is bright and appears to be natural daylight, casting soft shadows and highlighting the girl's features. The color palette is dominated by the navy of the uniform, contrasted by the white shirt and the warm tones of the brick building. The background is slightly blurred, drawing focus to the girl and her cheerful expression. The overall impression is one of happiness, youth, and perhaps the start of a new school year or a special occasion.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 207,
+            "total_tokens": 520
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5458.181465,
+            "prompt_eval_duration_ms": 399.96059,
+            "generation_duration_ms": 4969.572806,
+            "load_duration_ms": 86.357662,
+            "tokens_per_second": 41.653479701530706
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the foreground and background elements in the image:\n\nThe foreground is dominated by a young girl, likely a student, beaming with a wide, genuine smile directly at the camera. She's dressed in a dark navy school uniform, complete with a striped tie and blazer, suggesting a formal or school-related occasion. Her bright expression and direct gaze immediately draw the viewer's attention. \n\nThe background consists of a brick building, possibly a school or institutional structure, with large windows and a tiled floor. The perspective is slightly angled, creating a dynamic feel, and the background is somewhat blurred, emphasizing the girl as the focal point. The building provides context, reinforcing the idea that the girl is likely at school. The contrast between the warm brick and the cool tiles adds visual interest, while the blurred background helps to isolate and highlight the cheerful subject in the foreground.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 181,
+            "total_tokens": 499
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4504.627828,
+            "prompt_eval_duration_ms": 80.342524,
+            "generation_duration_ms": 4333.308355,
+            "load_duration_ms": 88.819492,
+            "tokens_per_second": 41.76947153810383
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe primary subject of the image is a young girl, likely a student, beaming with a bright, joyful smile. She is dressed in a formal school uniform consisting of a navy blazer, a white shirt, and a striped tie, suggesting a portrait taken on a special occasion like a school event or graduation. The girl is positioned in front of a brick building with large windows, indicating a school or institutional setting. The camera angle is slightly tilted, creating a dynamic perspective and emphasizing the girl's cheerful expression. \n\nThe girl appears to be looking directly at the camera, engaging the viewer with her warm and inviting gaze. The background building provides context, establishing the setting as an educational institution. The interaction between the girl and the background is one of association, highlighting her connection to the school and her role as a student. The overall composition conveys a sense of pride, accomplishment, and the joy of learning.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 193,
+            "total_tokens": 514
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4785.214509,
+            "prompt_eval_duration_ms": 86.225897,
+            "generation_duration_ms": 4606.679239,
+            "load_duration_ms": 90.15557,
+            "tokens_per_second": 41.89568884372677
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image radiates a strong sense of joy and optimism. The young girl's beaming smile and bright eyes immediately convey happiness and a carefree spirit. Her slightly tilted head and relaxed posture suggest a playful and approachable demeanor. The warm, saturated colors of the image enhance the positive mood, while the shallow depth of field draws focus to her face, emphasizing her expression. The background, featuring a brick building, hints at a school or institutional setting, perhaps suggesting a sense of pride or excitement about learning. The overall tone is overwhelmingly positive, evoking feelings of warmth, innocence, and hope. The image feels like a celebration of childhood and the joy of being young, capturing a moment of pure, unadulterated happiness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 160,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3978.195679,
+            "prompt_eval_duration_ms": 84.997726,
+            "generation_duration_ms": 3803.747832,
+            "load_duration_ms": 87.176785,
+            "tokens_per_second": 42.063776850284114
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"brown\",\n        \"white\",\n        \"blue\",\n        \"yellow\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"A young girl smiling and wearing a school uniform with a tie.\"\n    }\n  },\n  \"man-made\": {\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\n        \"red\",\n        \"gray\"\n      ],\n      \"size\": \"large\",\n      \"description\": \"Brick and stone building with windows.\"\n    },\n    \"window\": {\n      \"count\": 2,\n      \"location\": \"top/background\",\n      \"color\": [\n        \"gray\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"Rectangular windows with dark frames.\"\n    },\n    \"uniform\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"blue\",\n        \"white\",\n        \"yellow\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"School uniform consisting of a blazer, shirt, and tie.\"\n    },\n    \"tie\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"blue\",\n        \"yellow\"\n      ],\n      \"size\": \"small\",\n      \"description\": \"Striped tie worn as part of the school uniform.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "brown",
+                  "white",
+                  "blue",
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "A young girl smiling and wearing a school uniform with a tie."
+              }
+            },
+            "man-made": {
+              "building": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "red",
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Brick and stone building with windows."
+              },
+              "window": {
+                "count": 2,
+                "location": "top/background",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Rectangular windows with dark frames."
+              },
+              "uniform": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "white",
+                  "yellow"
+                ],
+                "size": "medium",
+                "description": "School uniform consisting of a blazer, shirt, and tie."
+              },
+              "tie": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "blue",
+                  "yellow"
+                ],
+                "size": "small",
+                "description": "Striped tie worn as part of the school uniform."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 381,
+            "total_tokens": 899
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9261.898997,
+            "prompt_eval_duration_ms": 142.566234,
+            "generation_duration_ms": 9028.349983,
+            "load_duration_ms": 88.638444,
+            "tokens_per_second": 42.20040214628441
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2916,
+        "total_time_ms": 27988.118478,
+        "average_speed": 41.91656381598597
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a young child who appears to be joyful and excited, likely on their way to or from school. The child is dressed in a school uniform, which includes a dark blazer with a tie, suggesting a formal or semi-formal educational setting. The child's hair is slightly tousled, adding to the sense of playfulness and energy. The background shows an outdoor setting, possibly the entrance or courtyard of a school, with visible architectural elements such as a brick wall, a striped awning, and a concrete pathway. The lighting is natural, indicating it might be daytime, with shadows suggesting the presence of sunlight. The overall composition is well-balanced, with the child positioned centrally, drawing the viewer's attention to their expressive face and cheerful demeanor. The colors are muted, with the dark tones of the uniform contrasting against the lighter, more neutral tones of the background, creating a harmonious and inviting scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 191,
+            "total_tokens": 983
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7399.681739,
+            "prompt_eval_duration_ms": 2000.604448,
+            "generation_duration_ms": 5350.591393,
+            "load_duration_ms": 45.170705,
+            "tokens_per_second": 35.69698860762923
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, there is a young child who appears to be joyful, with a wide smile and bright eyes. The child is wearing a school uniform, which includes a dark blazer, a white shirt, and a tie. The child's curly hair adds a playful touch to the overall image. The foreground is dominated by the child's presence, making them the central focus of the image.\n\nIn the background, there is a building with a combination of brick and concrete elements. The building features large windows with blinds, suggesting it might be a school or an institutional setting. The background also includes a concrete pavement and a few potted plants, adding a touch of greenery to the otherwise urban environment. The background elements provide context, indicating that the child is likely in a school setting, which complements the child's attire and adds depth to the image. The relationship between the foreground and background elements creates a harmonious composition, with the child's cheerful demeanor contrasting against the more static and structured environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 209,
+            "total_tokens": 1007
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5902.671123,
+            "prompt_eval_duration_ms": 57.86908,
+            "generation_duration_ms": 5795.019279,
+            "load_duration_ms": 47.052863,
+            "tokens_per_second": 36.065453786732775
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a young child who appears to be joyfully smiling at the camera. The child is dressed in a school uniform, which includes a blazer with a tie, suggesting a formal or educational setting. The child's hair is slightly tousled, adding to the playful and carefree atmosphere of the scene. The background shows a building with large windows and a brick wall, likely indicating an outdoor area of a school or educational institution. There are no other people, animals, or distinct objects in the image that interact with the child. The focus is solely on the child, capturing a moment of happiness and innocence. The setting and the child's attire hint at a school environment, but the image does not provide any additional context or interactions with other elements.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 153,
+            "total_tokens": 953
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4345.905841,
+            "prompt_eval_duration_ms": 56.668659,
+            "generation_duration_ms": 4242.149845,
+            "load_duration_ms": 44.485686,
+            "tokens_per_second": 36.06661848127149
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a mood of joy and happiness, evoking feelings of warmth and positivity. The young girl in the foreground is smiling broadly, her eyes sparkling with delight, which immediately draws the viewer's attention and creates an uplifting atmosphere. Her cheerful expression is the primary visual element contributing to the emotional tone of the image. The setting, which appears to be a school or institutional building, provides a neutral backdrop that contrasts with her vibrant smile, making her joy stand out even more. The casual yet slightly formal attire, including a tie and blazer, suggests a sense of occasion or special event, further enhancing the positive mood. The overall tone is distinctly positive, as the girl's genuine happiness radiates throughout the image, making it feel inviting and heartwarming.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 156,
+            "total_tokens": 959
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4433.332007,
+            "prompt_eval_duration_ms": 59.796381,
+            "generation_duration_ms": 4324.802003,
+            "load_duration_ms": 46.128224,
+            "tokens_per_second": 36.07101548042822
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"foreground, center\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"A young girl wearing a school uniform, smiling and looking at the camera.\"\n    }\n  },\n  \"man-made\": {\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"background, center\",\n      \"color\": [\"white\", \"brown\"],\n      \"size\": \"large\",\n      \"description\": \"A building with windows and a brick wall.\"\n    },\n    \"pole\": {\n      \"count\": 1,\n      \"location\": \"background, right\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"A vertical pole attached to the building.\"\n    },\n    \"flowerpot\": {\n      \"count\": 2,\n      \"location\": \"background, left\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"Two flowerpots placed on the ground near the building.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "foreground, center",
+                "color": [
+                  "black",
+                  "white"
+                ],
+                "size": "medium",
+                "description": "A young girl wearing a school uniform, smiling and looking at the camera."
+              }
+            },
+            "man-made": {
+              "building": {
+                "count": 1,
+                "location": "background, center",
+                "color": [
+                  "white",
+                  "brown"
+                ],
+                "size": "large",
+                "description": "A building with windows and a brick wall."
+              },
+              "pole": {
+                "count": 1,
+                "location": "background, right",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "A vertical pole attached to the building."
+              },
+              "flowerpot": {
+                "count": 2,
+                "location": "background, left",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "Two flowerpots placed on the ground near the building."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 242,
+            "total_tokens": 1224
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6885.636908,
+            "prompt_eval_duration_ms": 99.101783,
+            "generation_duration_ms": 6737.047487,
+            "load_duration_ms": 46.182595,
+            "tokens_per_second": 35.920779906475374
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5126,
+        "total_time_ms": 28967.227618,
+        "average_speed": 35.96417125250742
+      }
+    }
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "image": {
+    "path": "images/original/shared0054_nsd05715.png",
+    "name": "shared0054_nsd05715.png",
+    "id": "shared0054_nsd05715"
+  },
+  "timestamp": "2025-08-31T05:58:57.952507+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a dynamic scene of nine red and white jet aircraft performing a synchronized aerial display against a clear, vibrant blue sky. The jets are arranged in a loose diamond formation, with the lead aircraft positioned at the top left and the trailing aircraft at the bottom right, creating a sense of movement and direction. Each jet is sleek and modern, with visible exhaust trails curving behind them, adding a dramatic effect to the scene. The red color of the jets contrasts sharply with the blue sky, making the aircraft stand out prominently. The lighting is natural, suggesting the photo was taken during the day under bright sunlight, which enhances the vividness of the colors and the clarity of the image. The overall composition is balanced yet dynamic, with the jets' positions and the direction of their exhaust trails guiding the viewer's eye across the frame, creating a sense of motion and precision. The simplicity of the background, with no other elements to distract from the aircraft, further emphasizes the focus on the display.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 200,
+            "total_tokens": 497
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1559.709405,
+            "prompt_eval_duration_ms": 79.222482,
+            "generation_duration_ms": 1442.168695,
+            "load_duration_ms": 36.462128,
+            "tokens_per_second": 138.6800314646963
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, a formation of nine red and white jet aircraft is prominently displayed, flying in a tight, synchronized pattern against the clear blue sky. Each jet is sleek and modern, with visible exhaust trails indicating their forward motion. The jets are arranged in a triangular formation, with the lead jet positioned at the top left, and the remaining jets following in a descending sequence to the bottom right, creating a dynamic and visually striking composition. The background consists of the vast, unblemished blue sky, which serves as a stark contrast to the vibrant red of the jets, enhancing their visibility and emphasizing the precision of their formation. The absence of any other elements in the background ensures that the viewer's focus remains on the jets and their formation, highlighting the skill and coordination required to maintain such a display. The relationship between the foreground and background is one of contrast and focus, with the foreground elements drawing the eye and the background providing a clean, unobstructed canvas that accentuates the main subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 204,
+            "total_tokens": 507
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1537.267024,
+            "prompt_eval_duration_ms": 32.787651,
+            "generation_duration_ms": 1462.553691,
+            "load_duration_ms": 37.9383,
+            "tokens_per_second": 139.48205885044666
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, a group of nine red and white fighter jets is captured mid-flight against a clear blue sky. The jets are arranged in a tight formation, with some positioned higher than others, suggesting a coordinated aerial maneuver. Each jet is emitting a trail of white smoke, indicating they are likely performing a precision flypast or a demonstration. The jets are not interacting with each other directly; rather, they are performing a synchronized display, showcasing their precision and coordination. The absence of any visible people or animals in the image focuses the viewer's attention solely on the impressive display of aviation skill and teamwork among the aircraft. The clear blue sky serves as a perfect backdrop, emphasizing the vibrant red color of the jets and the stark white smoke trails, enhancing the visual impact of the formation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 157,
+            "total_tokens": 463
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1210.510506,
+            "prompt_eval_duration_ms": 32.426172,
+            "generation_duration_ms": 1133.350546,
+            "load_duration_ms": 42.121813,
+            "tokens_per_second": 138.5273078608461
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of awe and excitement, primarily due to the formation of the Red Arrows, the Royal Air Force's aerobatic team, flying in perfect synchronization against the clear blue sky. The vibrant red color of the jets contrasts sharply with the blue backdrop, creating a visually striking and dynamic scene that conveys a feeling of energy and precision. The smoke trails left by the jets add a dramatic flair, enhancing the sense of motion and the skill required to maintain such a formation. The orderly arrangement of the aircraft also instills a feeling of harmony and teamwork, suggesting a shared purpose and the achievement of a collective goal. Overall, the tone is decidedly positive, as the image captures a moment of triumph and unity, celebrating the artistry and discipline of airshow performances. The visual elements of color, motion, and alignment all contribute to this uplifting and inspiring emotional atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 179,
+            "total_tokens": 487
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1358.918224,
+            "prompt_eval_duration_ms": 30.721901,
+            "generation_duration_ms": 1287.589889,
+            "load_duration_ms": 38.669729,
+            "tokens_per_second": 139.0194203365634
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"aircraft\": {\n      \"count\": 9,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"forming a diamond formation with smoke trails\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"clear and unobstructed\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "aircraft": {
+                "count": 9,
+                "location": "center",
+                "color": [
+                  "red",
+                  "white"
+                ],
+                "size": "large",
+                "description": "forming a diamond formation with smoke trails"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "clear and unobstructed"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 121,
+            "total_tokens": 607
+          },
+          "performance_metrics": {
+            "total_duration_ms": 937.021959,
+            "prompt_eval_duration_ms": 45.412121,
+            "generation_duration_ms": 853.360834,
+            "load_duration_ms": 35.882475,
+            "tokens_per_second": 141.79230541063242
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2561,
+        "total_time_ms": 6603.4271180000005,
+        "average_speed": 139.50022478463697
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a formation of red jet aircraft soaring against a clear, vibrant blue sky. The setting appears to be an open, cloudless expanse, suggesting a daytime event, likely an airshow or military demonstration. The main elements are the nine red jets, which are arranged in a tight, precise formation, showcasing their synchronized flying skills. The aircraft are painted in a striking red color with white accents, making them stand out vividly against the blue backdrop. The planes are positioned in a staggered, diamond-like pattern, with some jets slightly higher or lower than others, creating a dynamic and visually engaging composition.\n\nThe lighting is bright and natural, indicative of sunlight, which enhances the vividness of the red jets and the deep blue of the sky. The contrast between the red aircraft and the blue sky is stark, drawing the viewer's attention to the formation. The overall composition is symmetrical and balanced, with the jets evenly spaced, emphasizing precision and order. Two of the jets are emitting white contrails, adding a sense of motion and depth to the image. The scene conveys a sense of power, coordination, and spectacle, typical of aerial displays designed to impress and captivate an audience. The clear sky and the sharpness of the image suggest ideal weather conditions for such an event.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 262,
+            "total_tokens": 559
+          },
+          "performance_metrics": {
+            "total_duration_ms": 13359.525131,
+            "prompt_eval_duration_ms": 3537.744017,
+            "generation_duration_ms": 9780.22998,
+            "load_duration_ms": 39.164547,
+            "tokens_per_second": 26.788736107001036
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a formation of nine red jet aircraft, which are the closest elements to the viewer. These jets are arranged in a tight, symmetrical pattern, showcasing precision and coordination. The aircraft are painted in a striking red color with white accents, and they are emitting white contrails, indicating their recent passage through the sky. The jets are the primary focus, drawing the viewer's attention due to their vivid color and dynamic arrangement.\n\nIn the background, the setting is a clear, bright blue sky, which serves as a stark contrast to the red jets. The sky is uncluttered, with no clouds or other objects, emphasizing the vastness and openness of the environment. The blue sky provides a clean, simple backdrop that highlights the jets' formation and movement, making them stand out prominently.\n\nThe relationship between the foreground and background is one of contrast and emphasis. The bright red jets against the serene blue sky create a visually striking composition. The jets' formation and the contrails they leave behind suggest motion and direction, while the stillness of the sky provides a sense of calm and stability. The clear sky also enhances the visibility of the jets, ensuring that they remain the focal point of the image. Together, these elements create a dynamic and visually compelling scene, showcasing the power and precision of the aircraft formation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 271,
+            "total_tokens": 574
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10214.660036,
+            "prompt_eval_duration_ms": 75.836188,
+            "generation_duration_ms": 10099.667897,
+            "load_duration_ms": 37.208784,
+            "tokens_per_second": 26.832565462919597
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a formation of nine red jet aircraft flying in a tight, synchronized pattern against a clear blue sky. These aircraft are part of an aerobatic team, likely performing a precision display, as evidenced by their identical design and the disciplined arrangement. The jets are painted in a striking red color with white accents, which is characteristic of renowned aerobatic teams such as the Red Arrows, the aerobatic display team of the Royal Air Force.\n\nEach aircraft is positioned at a specific angle relative to the others, demonstrating the pilots' skill in maintaining precise distances and formations. The planes are in motion, as indicated by the white contrails trailing behind some of them, suggesting they are flying at high speeds. The pilots inside these jets are highly trained, working in close coordination to execute complex maneuvers and formations. The interaction between the planes is crucial, as any deviation from the formation could lead to dangerous situations. The pilots rely on communication and trust to maintain the integrity of the display.\n\nThe clear blue sky provides a stark contrast to the vibrant red of the jets, emphasizing their presence and the precision of their flight paths. The image captures a moment of harmony and discipline, showcasing the teamwork and expertise required to perform such a display. The overall scene is one of awe-inspiring coordination and skill, highlighting the relationship between the pilots and their aircraft as they work together to create a visually stunning spectacle.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 282,
+            "total_tokens": 588
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10617.796666,
+            "prompt_eval_duration_ms": 77.971225,
+            "generation_duration_ms": 10500.491113,
+            "load_duration_ms": 37.271927,
+            "tokens_per_second": 26.85588673570453
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of the Red Arrows, the Royal Air Force's aerobatic display team, flying in formation against a clear blue sky, conveys a mood of excitement, precision, and national pride. The vibrant red color of the jets stands out sharply against the serene blue sky, evoking a sense of energy and dynamism. The formation itself, with the planes flying in a tight, synchronized pattern, suggests order, discipline, and teamwork, which can inspire feelings of admiration and respect. The bright, cloudless sky adds to the overall positive tone, symbolizing clarity, optimism, and a sense of freedom. The presence of smoke trails from the jets enhances the visual spectacle, adding a dynamic element that further amplifies the excitement and awe-inspiring nature of the scene. The image is likely to evoke feelings of patriotism, especially for those familiar with the Red Arrows, as they represent national pride and excellence. The overall tone is decidedly positive, as the image captures a moment of beauty, skill, and collective effort, which can instill a sense of joy and inspiration in the viewer. The visual elements of color, formation, and the expansive sky all contribute to creating an atmosphere of exhilaration and admiration.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 245,
+            "total_tokens": 553
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9225.517158,
+            "prompt_eval_duration_ms": 73.431152,
+            "generation_duration_ms": 9111.990768,
+            "load_duration_ms": 37.956751,
+            "tokens_per_second": 26.887647961673174
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"aircraft\": {\n      \"count\": 9,\n      \"location\": \"center, top, middle, bottom\",\n      \"color\": [\"red\"],\n      \"size\": \"medium\",\n      \"description\": \"Red fighter jets flying in formation\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "aircraft": {
+                "count": 9,
+                "location": "center, top, middle, bottom",
+                "color": [
+                  "red"
+                ],
+                "size": "medium",
+                "description": "Red fighter jets flying in formation"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 120,
+            "total_tokens": 606
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4593.899405,
+            "prompt_eval_duration_ms": 136.19926,
+            "generation_duration_ms": 4415.804541,
+            "load_duration_ms": 39.850716,
+            "tokens_per_second": 27.175115856197948
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2880,
+        "total_time_ms": 48011.398396000004,
+        "average_speed": 26.907990424699257
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe image captures a breathtaking moment of a Red Arrows display team in mid-flight against a brilliant, cloudless azure sky. Seven sleek, scarlet-red fighter jets are precisely arranged in a tight formation, executing a synchronized maneuver. Each aircraft is a classic design, with prominent wings and a distinctive nose cone.  The dominant color is, of course, the intense red of the aircraft, contrasted sharply against the deep blue backdrop.  White markings are visible on the wings and fuselage, adding to the visual impact. \n\nThe lighting is bright and even, suggesting a sunny day, and the jets leave distinct white contrails trailing behind them, emphasizing their speed and movement. The composition is dynamic and powerful, drawing the eye across the formation. The overall effect is one of precision, skill, and exhilarating speed, perfectly capturing the spectacle of a Red Arrows display. The aircraft are tightly packed, creating a sense of movement and energy.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1592.340389,
+            "prompt_eval_duration_ms": 305.243794,
+            "generation_duration_ms": 1201.15038,
+            "load_duration_ms": 84.38698,
+            "tokens_per_second": 165.67450946483487
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's elements, broken down as requested:\n\nIn the foreground, a formation of seven sleek, red fighter jets dominates the view. Each aircraft is a vibrant, solid red, with a dark cockpit and prominent, white markings on their wings and tails. They are positioned in a tight, linear formation, suggesting a synchronized aerial display. Wisps of white exhaust trails emanate from their engines, adding a dynamic element and emphasizing their speed. \n\nThe background is a clear, deep blue sky, providing a stark contrast to the red jets. The sky appears expansive and cloudless, creating a sense of depth and emphasizing the scale of the aircraft. The jets are positioned within this vast expanse, appearing as powerful, concentrated shapes against the backdrop. The relationship between the foreground and background is one of dramatic contrast and scale, highlighting the spectacle of the aerobatic display.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 182,
+            "total_tokens": 500
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1248.643755,
+            "prompt_eval_duration_ms": 60.100805,
+            "generation_duration_ms": 1101.506933,
+            "load_duration_ms": 85.050114,
+            "tokens_per_second": 165.22819289417944
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the image, focusing on actions and relationships:\n\nThe image captures a spectacular display of a formation aerobatic team, likely the Red Arrows, soaring through a brilliant blue sky. Seven sleek, red fighter jets are precisely aligned in a tight formation, executing a complex aerial maneuver. Each aircraft is powerfully propelled forward, leaving distinct, white contrails \u2013 visible trails of hot exhaust \u2013 behind them, demonstrating their high speed. The jets are actively interacting with each other, maintaining a synchronized and dynamic movement, suggesting a coordinated effort. Their actions are a testament to precision and teamwork. The relationship between the planes is one of interdependence, where each aircraft\u2019s movement dictates the overall shape and flow of the formation. The contrast between the vibrant red of the jets and the expansive blue sky emphasizes their dominance and the scale of the display.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 171,
+            "total_tokens": 492
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1157.474975,
+            "prompt_eval_duration_ms": 52.051295,
+            "generation_duration_ms": 1021.247007,
+            "load_duration_ms": 82.545943,
+            "tokens_per_second": 167.44235119212448
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "This image powerfully evokes a sense of awe, excitement, and perhaps a touch of exhilaration. The formation of nine red jets soaring through a clear blue sky immediately conveys a feeling of power and precision. The bright, uniform red color of the aircraft amplifies this impression, suggesting speed, strength, and a controlled display of skill. The contrails trailing behind each plane add to the dynamism and spectacle, emphasizing their movement and the energy of the performance. The orderly arrangement of the jets creates a visual rhythm, contributing to a feeling of organized beauty and impressive engineering. The overall tone is decidedly positive, suggesting a celebration of skill, technology, and perhaps a patriotic display. The image inspires a feeling of wonder and admiration for the pilots and the aircraft\u2019s capabilities.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 153,
+            "total_tokens": 477
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1068.926997,
+            "prompt_eval_duration_ms": 59.237998,
+            "generation_duration_ms": 922.154721,
+            "load_duration_ms": 85.722974,
+            "tokens_per_second": 165.91575851185172
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"\"\n    }\n  },\n  \"animal\": {\n    \"aircraft\": {\n      \"count\": 9,\n      \"location\": \"center\",\n      \"color\": [\"red\"],\n      \"size\": \"large\",\n      \"description\": \"Red fighter jets performing a formation aerobatic display, leaving white contrails in the sky.\"\n    }\n  },\n  \"man-made\": {\n    \"aircraft\": {\n      \"count\": 9,\n      \"location\": \"center\",\n      \"color\": [\"red\"],\n      \"size\": \"large\",\n      \"description\": \"Red fighter jets performing a formation aerobatic display, leaving white contrails in the sky.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky providing the backdrop for the aerial display.\"\n    },\n    \"contrail\": {\n      \"count\": 9,\n      \"location\": \"center\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"White contrails trailing behind the aircraft, indicating high-speed flight.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 0,
+                "location": "background",
+                "color": [],
+                "size": "small",
+                "description": ""
+              }
+            },
+            "animal": {
+              "aircraft": {
+                "count": 9,
+                "location": "center",
+                "color": [
+                  "red"
+                ],
+                "size": "large",
+                "description": "Red fighter jets performing a formation aerobatic display, leaving white contrails in the sky."
+              }
+            },
+            "man-made": {
+              "aircraft": {
+                "count": 9,
+                "location": "center",
+                "color": [
+                  "red"
+                ],
+                "size": "large",
+                "description": "Red fighter jets performing a formation aerobatic display, leaving white contrails in the sky."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky providing the backdrop for the aerial display."
+              },
+              "contrail": {
+                "count": 9,
+                "location": "center",
+                "color": [
+                  "white"
+                ],
+                "size": "medium",
+                "description": "White contrails trailing behind the aircraft, indicating high-speed flight."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 342,
+            "total_tokens": 860
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2223.349547,
+            "prompt_eval_duration_ms": 66.595504,
+            "generation_duration_ms": 2064.952939,
+            "load_duration_ms": 90.039299,
+            "tokens_per_second": 165.6212078933001
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2841,
+        "total_time_ms": 7290.7356629999995,
+        "average_speed": 165.9764039912581
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a dynamic aerial display featuring eight red jet aircraft in a tightly choreographed formation against a clear, vibrant blue sky. The jets, likely part of an aerobatic team, are angled in various positions, creating a sense of movement and precision. Each aircraft leaves a white contrail, adding a visual trail of their flight path and emphasizing their speed. The planes are a striking, uniform red, contrasting sharply with the blue background. The lighting appears bright and even, suggesting a sunny day with no harsh shadows. The composition is centered around the formation, with the planes filling most of the frame. The tight grouping and angled positions create a sense of depth and excitement, highlighting the skill and coordination of the pilots. The overall impression is one of power, precision, and a captivating aerial performance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 170,
+            "total_tokens": 483
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2549.29407,
+            "prompt_eval_duration_ms": 345.288203,
+            "generation_duration_ms": 2113.489483,
+            "load_duration_ms": 88.791283,
+            "tokens_per_second": 80.43569715742939
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image's foreground and background elements:\n\nThe foreground is dominated by a formation of eight bright red fighter jets, appearing close and sharply defined against a clear, deep blue sky. These aircraft are the primary focus, exhibiting a dynamic, angled flight pattern, with trails of white condensation marking their movement. The jets are angled towards the viewer, creating a sense of speed and motion. The background consists solely of the vast expanse of the azure sky, providing a stark contrast to the vibrant red of the planes. The sky's uniformity emphasizes the jets as the central subject, highlighting their precision and aerial maneuverability. The relationship between the foreground and background is one of striking contrast and depth; the close-up jets pop against the distant, uninterrupted blue, creating a visually compelling scene of aerial performance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 167,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2240.813371,
+            "prompt_eval_duration_ms": 72.089623,
+            "generation_duration_ms": 2078.969651,
+            "load_duration_ms": 86.572543,
+            "tokens_per_second": 80.3282529495665
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on actions, relationships, and connections:\n\nThe image captures a dynamic aerial display featuring eight red fighter jets performing a synchronized maneuver against a clear, bright blue sky. The jets, appearing as a cohesive unit, are angled in various positions, suggesting a complex formation or aerobatic routine. Each aircraft leaves a white contrail, a visible trail of condensed water vapor, which emphasizes their speed and movement. The contrails intertwine and overlap, creating a sense of depth and illustrating the close proximity of the planes during the performance. The jets are clearly interacting with each other, maintaining precise spacing and alignment to execute the formation. The overall impression is one of precision, skill, and coordinated teamwork, showcasing the pilots\u2019 mastery of flight and the aircraft\u2019s capabilities. There are no people or animals visible beyond the pilots within the aircraft.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 177,
+            "total_tokens": 498
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2363.287524,
+            "prompt_eval_duration_ms": 67.513721,
+            "generation_duration_ms": 2201.770463,
+            "load_duration_ms": 91.809922,
+            "tokens_per_second": 80.38985124672372
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a feeling of exhilaration and awe, conveying a distinctly positive and energetic mood. The formation of eight bright red fighter jets against a clear, deep blue sky immediately inspires a sense of wonder and excitement. The trails of white smoke billowing from the aircraft emphasize their speed and precision, adding to the feeling of dynamic movement and skillful performance. There\u2019s a feeling of power and precision in the tight formation, suggesting a display of mastery and coordination. The vibrant red color of the planes contrasts beautifully with the blue sky, creating a visually striking and memorable scene that inspires feelings of patriotism and pride. Overall, the image is uplifting and celebratory, capturing a moment of impressive aerial artistry.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 138,
+            "total_tokens": 462
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1875.791019,
+            "prompt_eval_duration_ms": 70.595889,
+            "generation_duration_ms": 1718.494927,
+            "load_duration_ms": 84.856329,
+            "tokens_per_second": 80.30282652094206
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": [\n    {\n      \"item\": \"airplane\",\n      \"count\": 8,\n      \"location\": \"center\",\n      \"color\": [\"red\", \"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Formation flying, leaving white contrails.\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"item\": \"sky\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Clear, bright blue.\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": [
+              {
+                "item": "airplane",
+                "count": 8,
+                "location": "center",
+                "color": [
+                  "red",
+                  "silver"
+                ],
+                "size": "medium",
+                "description": "Formation flying, leaving white contrails."
+              }
+            ],
+            "natural": [
+              {
+                "item": "sky",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Clear, bright blue."
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 141,
+            "total_tokens": 659
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1926.280745,
+            "prompt_eval_duration_ms": 92.725374,
+            "generation_duration_ms": 1744.365198,
+            "load_duration_ms": 87.086844,
+            "tokens_per_second": 80.83169749182305
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2587,
+        "total_time_ms": 10955.466729,
+        "average_speed": 80.45766507329695
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image captures a dynamic aerial display of eight red jet aircraft, likely part of an airshow or formation flying team. They are positioned diagonally across a clear, deep blue sky, creating a striking contrast. Each jet is painted a vibrant, glossy red with black accents on the wings and tail. White smoke trails stream from several of the aircraft, emphasizing their speed and maneuverability. The lighting appears bright and even, suggesting a sunny day with minimal cloud cover. The composition is focused entirely on the aircraft, with no ground elements visible. The arrangement of the jets creates a sense of movement and precision, highlighting the skill of the pilots and the power of the aircraft. The overall impression is one of energy, excitement, and aerial artistry.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 158,
+            "total_tokens": 471
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4209.58301,
+            "prompt_eval_duration_ms": 398.307619,
+            "generation_duration_ms": 3722.360701,
+            "load_duration_ms": 87.245705,
+            "tokens_per_second": 42.446182057948825
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, broken down into foreground and background elements:\n\nThe foreground of the image is dominated by a formation of eight bright red fighter jets, likely part of an aerobatic team. They are angled diagonally across the frame, creating a dynamic sense of movement. Each jet is sharply in focus, showcasing their sleek design and leaving white contrails trailing behind them. The background is a clear, deep blue sky, providing a stark contrast to the vibrant red of the aircraft. The simplicity of the background emphasizes the formation and draws the viewer's attention to the jets. The relationship between the elements is one of contrast and focus; the bright, detailed aircraft stand out against the vast, uniform expanse of the sky, creating a visually striking image that captures the energy and precision of an airshow performance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 166,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4114.466876,
+            "prompt_eval_duration_ms": 80.835001,
+            "generation_duration_ms": 3942.408878,
+            "load_duration_ms": 89.312779,
+            "tokens_per_second": 42.10623634862868
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image showcases a formation of eight red jet aircraft, likely performing an aerial display. The planes are positioned diagonally across a clear, deep blue sky, leaving white contrails trailing behind several of them, indicating speed and maneuverability. They appear to be flying in close proximity to one another, demonstrating precision and coordination. The aircraft are the primary focus, and their arrangement suggests a choreographed performance, possibly part of an airshow or military demonstration. There are no people or animals visible in the image; the interaction is solely between the aircraft as they navigate the sky in a synchronized manner. The planes' bright red color contrasts sharply with the blue sky, making them visually striking and emphasizing their dynamic movement. The overall impression is one of power, skill, and aerial artistry.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 164,
+            "total_tokens": 485
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4077.149012,
+            "prompt_eval_duration_ms": 82.613129,
+            "generation_duration_ms": 3906.329946,
+            "load_duration_ms": 86.308056,
+            "tokens_per_second": 41.98314076565206
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image:\n\nThe image evokes a sense of awe, precision, and exhilaration. The formation of bright red jets against the vast, clear blue sky creates a visually striking and dynamic scene. The tight, symmetrical arrangement of the aircraft conveys a feeling of control, discipline, and teamwork. The white contrails trailing behind the jets emphasize their speed and power, adding to the sense of motion and energy. The vibrant red color is associated with passion, courage, and excitement, further amplifying the positive emotional impact. Overall, the tone is overwhelmingly positive, inspiring feelings of admiration for the skill of the pilots and the spectacle of aerial acrobatics. The image feels celebratory and uplifting, capturing a moment of high-energy performance and human achievement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 160,
+            "total_tokens": 484
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3989.83191,
+            "prompt_eval_duration_ms": 84.763334,
+            "generation_duration_ms": 3813.780555,
+            "load_duration_ms": 89.424797,
+            "tokens_per_second": 41.95312176266523
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"aircraft\": {\n      \"count\": 9,\n      \"location\": \"scattered, center\",\n      \"color\": [\"red\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Formation of red jets, leaving white smoke trails. Appear to be performing an aerial display.\"\n    },\n    \"smoke\": {\n      \"count\": 9,\n      \"location\": \"trailing behind aircraft, center\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"White smoke trails emanating from the aircraft, indicating engine activity or a display effect.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background, entire image\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky providing the backdrop for the aircraft.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "aircraft": {
+                "count": 9,
+                "location": "scattered, center",
+                "color": [
+                  "red",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Formation of red jets, leaving white smoke trails. Appear to be performing an aerial display."
+              },
+              "smoke": {
+                "count": 9,
+                "location": "trailing behind aircraft, center",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "White smoke trails emanating from the aircraft, indicating engine activity or a display effect."
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background, entire image",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Clear blue sky providing the backdrop for the aircraft."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 227,
+            "total_tokens": 745
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5597.096812,
+            "prompt_eval_duration_ms": 140.069133,
+            "generation_duration_ms": 5361.831058,
+            "load_duration_ms": 93.324852,
+            "tokens_per_second": 42.336283546515276
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2669,
+        "total_time_ms": 21988.12762,
+        "average_speed": 42.164992896282016
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image showcases a dynamic aerial display featuring nine red jets flying in a precise formation against a clear blue sky. The jets are arranged in a diamond-like pattern, with one jet at the lead, two jets slightly trailing on either side, and the remaining six jets forming the base of the diamond. Each jet leaves behind a thin, white trail of smoke, enhancing the visual impact and emphasizing the synchronized movement. The vibrant red color of the jets contrasts sharply with the deep blue of the sky, creating a striking visual effect. The lighting is bright and natural, suggesting a sunny day, which illuminates the jets and highlights their sleek, aerodynamic designs. The overall composition is balanced and symmetrical, with the jets evenly distributed across the frame, conveying a sense of harmony and precision. The image captures the essence of an air show or military display, showcasing the skill and coordination of the pilots.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 180,
+            "total_tokens": 972
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7154.571578,
+            "prompt_eval_duration_ms": 2082.3798,
+            "generation_duration_ms": 5025.611392,
+            "load_duration_ms": 44.25133,
+            "tokens_per_second": 35.81653772246145
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, there are nine red jets flying in a precise formation. These jets are the closest elements to the viewer, and their vibrant red color stands out prominently against the backdrop. The jets are positioned at varying altitudes and angles, creating a dynamic and visually engaging arrangement. Some of the jets are leaving behind thin trails of white smoke, adding to the sense of motion and direction.\n\nIn the background, the scene is dominated by a clear, blue sky that stretches out endlessly. The sky serves as a serene and uncluttered setting, allowing the foreground elements to take center stage. The vast expanse of the sky contrasts with the intricate formation of the jets, highlighting the precision and coordination of their flight. The relationship between the foreground and background elements is one of contrast and complementarity; the vibrant, dynamic jets in the foreground are set against the calm, expansive sky in the background, creating a harmonious balance between action and tranquility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 197,
+            "total_tokens": 995
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5600.37692,
+            "prompt_eval_duration_ms": 56.470037,
+            "generation_duration_ms": 5498.192435,
+            "load_duration_ms": 43.348611,
+            "tokens_per_second": 35.829957268492734
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image features a formation of nine red jets flying in a clear blue sky. These jets appear to be part of an aerobatic display team, as they are performing synchronized maneuvers. The jets are arranged in a precise diamond-like formation, with one jet at the lead, followed by two pairs of jets on either side, and two jets at the rear. The jets are leaving white contrails behind them, indicating their high-speed flight. The formation suggests a high level of coordination and skill, as the pilots must maintain exact positions relative to each other. The jets are likely performing a pre-planned routine, showcasing their agility and the pilots' expertise. The clear blue sky provides a stark contrast, highlighting the vibrant red color of the jets and making their movements more visible. The image captures a moment of intense focus and teamwork, as the pilots work together to execute a complex aerial display.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 183,
+            "total_tokens": 983
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5191.476645,
+            "prompt_eval_duration_ms": 56.589756,
+            "generation_duration_ms": 5085.98349,
+            "load_duration_ms": 46.409572,
+            "tokens_per_second": 35.98124145699891
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image of nine red jets flying in a precise formation against a clear blue sky conveys a mood of excitement, precision, and awe. The synchronized flight of the jets evokes feelings of admiration and respect for the skill and coordination required to perform such a maneuver. The vibrant red color of the jets stands out vividly against the serene blue sky, creating a visually striking contrast that adds to the sense of dynamism and energy. The white trails left by the jets enhance the sense of motion and precision, further emphasizing the disciplined and controlled nature of the display. The overall tone of the image is positive, inspiring a sense of pride and exhilaration. The clear, unblemished sky suggests a sense of openness and freedom, contributing to the uplifting and inspiring atmosphere. The image captures the thrill of an air show or a ceremonial flyby, leaving viewers with a feeling of wonder and appreciation for the spectacle of flight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 189,
+            "total_tokens": 992
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5366.35296,
+            "prompt_eval_duration_ms": 56.572572,
+            "generation_duration_ms": 5261.737687,
+            "load_duration_ms": 45.513284,
+            "tokens_per_second": 35.91969255080047
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"man-made\": {\n    \"aircraft\": {\n      \"count\": 9,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"red\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Red jets flying in formation, leaving white smoke trails\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"description\": \"Clear blue sky\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "man-made": {
+              "aircraft": {
+                "count": 9,
+                "location": "center, middle, foreground",
+                "color": [
+                  "red",
+                  "black"
+                ],
+                "size": "medium",
+                "description": "Red jets flying in formation, leaving white smoke trails"
+              }
+            },
+            "natural": {
+              "sky": {
+                "count": 1,
+                "location": "background",
+                "description": "Clear blue sky"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 111,
+            "total_tokens": 1093
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3235.241196,
+            "prompt_eval_duration_ms": 102.528054,
+            "generation_duration_ms": 3085.227374,
+            "load_duration_ms": 44.943423,
+            "tokens_per_second": 35.977899371509984
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5035,
+        "total_time_ms": 26548.019299,
+        "average_speed": 35.90506567405271
+      }
+    }
+  ]
+}

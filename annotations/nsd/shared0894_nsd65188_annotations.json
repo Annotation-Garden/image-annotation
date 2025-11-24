@@ -1,0 +1,1087 @@
+{
+  "image": {
+    "path": "images/original/shared0894_nsd65188.png",
+    "name": "shared0894_nsd65188.png",
+    "id": "shared0894_nsd65188"
+  },
+  "timestamp": "2025-08-30T23:55:12.456762+00:00",
+  "annotations": [
+    {
+      "model": "qwen2.5vl:7b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image captures a serene and picturesque scene of an elephant standing near a tranquil body of water, likely in a zoo or wildlife sanctuary. The setting is lush and vibrant, with a variety of greenery including dense trees and bushes framing the background and foreground. The elephant, a majestic gray, is positioned on the right side of the image, its trunk extended towards the water, possibly drinking or exploring. The water itself is a striking turquoise blue, reflecting the clear blue sky above, which is dotted with a few fluffy white clouds. The lighting is bright and natural, suggesting a sunny day, casting soft shadows and enhancing the vivid colors of the scene. The composition is balanced, with the elephant and the water creating a central focal point, while the surrounding greenery adds depth and context to the environment. The overall atmosphere is peaceful and inviting, evoking a sense of calm and natural beauty.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 179,
+            "total_tokens": 476
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1406.209172,
+            "prompt_eval_duration_ms": 80.532501,
+            "generation_duration_ms": 1281.845651,
+            "load_duration_ms": 40.364144,
+            "tokens_per_second": 139.64239755414982
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground, the viewer is greeted by a tranquil scene featuring a clear, turquoise body of water, likely a pond or small lake, with a fallen tree branch partially submerged, adding a natural and slightly rustic element to the setting. The water's vibrant blue contrasts beautifully with the lush greenery that surrounds it, including dense shrubs and trees, which frame the scene and create a sense of depth. The elephant, positioned slightly off-center in the background, stands as a majestic focal point, its gray skin blending subtly with the earthy tones of the surrounding landscape. The background is dominated by a clear blue sky dotted with a few scattered white clouds, which enhance the serene atmosphere. The elephant's location in the distance, coupled with the natural elements in the foreground, creates a layered composition that draws the viewer's eye from the immediate foreground to the distant setting, emphasizing the vastness and tranquility of the environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 185,
+            "total_tokens": 488
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1421.051694,
+            "prompt_eval_duration_ms": 28.794526,
+            "generation_duration_ms": 1348.165756,
+            "load_duration_ms": 41.412842,
+            "tokens_per_second": 137.223482481037
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the tranquil scene depicted, a solitary elephant stands near the edge of a serene, turquoise body of water, its trunk extended as if reaching out to the cool surface. The elephant, a majestic creature of immense size and wisdom, appears to be in a state of calm contemplation or perhaps seeking a drink. The surrounding environment is lush and verdant, with a variety of trees and shrubs that provide a natural habitat for the elephant. The trees, varying in shades of green, frame the elephant and the water, creating a sense of seclusion and tranquility. The elephant's interaction with its environment is one of peaceful coexistence, as it navigates the natural landscape with ease and grace. The water, a vibrant blue-green, reflects the sky and the trees, adding to the overall serenity of the scene. There are no other animals or people visible in the image, emphasizing the elephant's solitary presence and the quiet beauty of its natural surroundings. The elephant's actions and the environment's stillness suggest a moment of quiet reflection or a simple, undisturbed existence in nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 220,
+            "total_tokens": 526
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1675.003621,
+            "prompt_eval_duration_ms": 29.99013,
+            "generation_duration_ms": 1600.801254,
+            "load_duration_ms": 40.6801,
+            "tokens_per_second": 137.43117669996528
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of tranquility and serenity, with a positive mood that is accentuated by the lush greenery and the clear blue sky. The presence of the elephant, a symbol of wisdom and strength, adds a touch of majesty and calmness to the scene. The vibrant blue water and the natural setting create a peaceful atmosphere, inviting viewers to feel a sense of relaxation and awe. The contrast between the elephant and the surrounding environment highlights the harmony between wildlife and nature, reinforcing the overall positive tone. The image's composition, with the elephant standing near the water and the trees framing the scene, gives a sense of balance and order, further contributing to the tranquil and uplifting emotional atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 143,
+            "total_tokens": 451
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1107.293153,
+            "prompt_eval_duration_ms": 28.612883,
+            "generation_duration_ms": 1034.845117,
+            "load_duration_ms": 39.008041,
+            "tokens_per_second": 138.1849299483142
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"standing near water, facing left\"\n    }\n  },\n  \"man-made\": {\n    \"structure\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"stone structure near elephant\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 3,\n      \"location\": [\"left\", \"center\", \"right\"],\n      \"color\": [\"green\", \"brown\"],\n      \"size\": [\"large\", \"medium\", \"small\"],\n      \"description\": \"various sizes and types of trees\"\n    },\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"clear blue water with reflections\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"clear blue sky with scattered clouds\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "standing near water, facing left"
+              }
+            },
+            "man-made": {
+              "structure": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "stone structure near elephant"
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 3,
+                "location": [
+                  "left",
+                  "center",
+                  "right"
+                ],
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": [
+                  "large",
+                  "medium",
+                  "small"
+                ],
+                "description": "various sizes and types of trees"
+              },
+              "water": {
+                "count": 1,
+                "location": "bottom",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "clear blue water with reflections"
+              },
+              "sky": {
+                "count": 1,
+                "location": "top",
+                "color": [
+                  "blue",
+                  "white"
+                ],
+                "size": "large",
+                "description": "clear blue sky with scattered clouds"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 281,
+            "total_tokens": 767
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2084.733304,
+            "prompt_eval_duration_ms": 43.757359,
+            "generation_duration_ms": 2000.405437,
+            "load_duration_ms": 37.712159,
+            "tokens_per_second": 140.4715238233978
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2708,
+        "total_time_ms": 7694.290944,
+        "average_speed": 138.5907021013728
+      }
+    },
+    {
+      "model": "qwen2.5vl:32b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a serene and naturalistic setting, likely within a zoo or wildlife sanctuary, featuring an elephant as the central subject. The scene is bathed in bright, natural daylight, suggesting a clear, sunny day with a vibrant blue sky dotted with a few scattered white clouds. The lighting is soft and even, enhancing the vividness of the colors and creating a tranquil atmosphere.\n\nIn the foreground, a calm body of water, possibly a pond or small lake, reflects the surrounding greenery and the clear blue sky, adding depth and a sense of serenity to the composition. The water's surface is still, with only slight ripples visible, emphasizing the peacefulness of the environment. A fallen tree trunk lies partially submerged in the water, adding a natural, rustic element to the scene.\n\nThe middle ground is dominated by lush, green trees and shrubs, creating a dense, verdant backdrop. The foliage varies in shades of green, with some trees appearing more vibrant and others slightly muted, contributing to a layered and textured effect. The elephant, a large gray figure, stands near the water's edge, facing left, and appears to be calmly observing its surroundings. Its presence adds a sense of scale and majesty to the image.\n\nIn the background, a stone structure, possibly part of the enclosure or a man-made feature, is visible. Its earthy tones blend subtly with the natural environment, suggesting an effort to integrate the enclosure with the surrounding landscape. The overall composition is balanced, with the elephant as the focal point, the water providing a reflective surface, and the greenery framing the scene, creating a harmonious and picturesque setting. The image evokes a sense of calm and connection with nature.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 297,
+            "output_tokens": 345,
+            "total_tokens": 642
+          },
+          "performance_metrics": {
+            "total_duration_ms": 16344.399755,
+            "prompt_eval_duration_ms": 3470.900256,
+            "generation_duration_ms": 12832.390445,
+            "load_duration_ms": 38.240218,
+            "tokens_per_second": 26.885092179721315
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The foreground of the image is dominated by a serene body of water, likely a pond or small lake, with crystal-clear, turquoise-blue water reflecting the surrounding environment. A fallen tree trunk lies partially submerged at the water's edge, adding a natural, rustic element to the scene. The water's surface is calm, with gentle ripples suggesting a tranquil setting. In the immediate foreground, there are dense clusters of green foliage, including trees and shrubs, which frame the water and create a lush, vibrant border. These elements are in sharp focus, drawing the viewer's attention to the natural beauty and serenity of the scene.\n\nIn the background, the setting transitions to a more open area with a large elephant standing near the water's edge, adding a sense of scale and wildlife presence to the image. The elephant is positioned near a stone structure, which appears to be part of a zoo or sanctuary, as indicated by the man-made elements in the environment. Beyond the elephant, there are more trees and greenery, creating a lush, natural backdrop that blends seamlessly with the foreground. The sky above is bright blue with scattered white clouds, contributing to the overall sense of openness and tranquility.\n\nThe relationship between the foreground and background is harmonious, with the lush greenery and calm water in the foreground providing a peaceful foreground that leads the eye naturally towards the elephant and the stone structure in the background. The elephant, as a central figure, connects the natural elements of the foreground with the man-made aspects of the background, creating a cohesive and balanced composition that highlights the coexistence of nature and human influence. The clear sky and bright lighting unify the entire scene, emphasizing the beauty and serenity of the environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 303,
+            "output_tokens": 344,
+            "total_tokens": 647
+          },
+          "performance_metrics": {
+            "total_duration_ms": 12908.794832,
+            "prompt_eval_duration_ms": 82.267432,
+            "generation_duration_ms": 12783.941184,
+            "load_duration_ms": 39.814379,
+            "tokens_per_second": 26.908759595244398
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a serene natural setting featuring an elephant, trees, water, and a clear blue sky. There are no people visible in the scene. The elephant, positioned on a grassy area near the water's edge, appears to be calmly observing its surroundings or possibly preparing to drink from the water. The elephant's presence suggests a peaceful coexistence with the environment, as it stands amidst lush greenery and a tranquil body of water.\n\nThe trees in the foreground and background are vibrant and dense, providing a natural habitat and shelter for the elephant. The water, reflecting the blue sky and surrounding greenery, adds to the tranquil atmosphere. A fallen tree branch lies partially submerged in the water, indicating the dynamic nature of the ecosystem as elements naturally decompose and integrate into the environment.\n\nThe sky is clear and bright, with a few scattered clouds, enhancing the overall sense of calmness and openness. The relationship between the elephant and its surroundings is harmonious, with the animal appearing at ease in its natural habitat. The image emphasizes the beauty and balance of nature, showcasing the interconnectedness of all elements within the ecosystem. The absence of human presence further underscores the untouched and pristine quality of the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 306,
+            "output_tokens": 241,
+            "total_tokens": 547
+          },
+          "performance_metrics": {
+            "total_duration_ms": 9096.620464,
+            "prompt_eval_duration_ms": 73.794684,
+            "generation_duration_ms": 8978.457055,
+            "load_duration_ms": 40.115278,
+            "tokens_per_second": 26.842028482587647
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a serene and peaceful mood, evoking feelings of tranquility and natural harmony. The overall tone is positive, as the scene is bathed in bright, natural light, suggesting a calm and pleasant day. The vivid blue sky, dotted with fluffy white clouds, adds to the sense of openness and freedom, while the lush green trees and the clear, reflective water create a sense of vitality and life. The presence of the elephant, standing calmly near the water, enhances the feeling of peaceful coexistence between wildlife and nature. The elephant's posture, relaxed and unhurried, contributes to the overall sense of calmness. The water's mirror-like surface reflects the surrounding greenery and sky, adding depth and a sense of balance to the composition. The combination of these elements\u2014bright sunlight, lush vegetation, serene water, and the gentle presence of the elephant\u2014creates a harmonious and uplifting atmosphere, inviting viewers to feel a sense of peace and connection with nature. The image does not contain any elements that evoke negativity or tension, reinforcing its positive and neutral emotional tone.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 308,
+            "output_tokens": 219,
+            "total_tokens": 527
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8303.979203,
+            "prompt_eval_duration_ms": 80.446186,
+            "generation_duration_ms": 8181.362989,
+            "load_duration_ms": 39.258688,
+            "tokens_per_second": 26.768155904395112
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"An elephant standing near a body of water, facing left.\"\n    }\n  },\n  \"man-made\": {\n    \"structure\": {\n      \"count\": 1,\n      \"location\": \"right, middle\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A stone or concrete structure in the background.\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 4,\n      \"location\": \"left, middle\",\n      \"color\": [\"green\"],\n      \"size\": \"medium\",\n      \"description\": \"Several trees with green foliage, some with sparse leaves.\"\n    },\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"bottom, center\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"A calm body of water reflecting the sky and trees.\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, center\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"A clear blue sky with a few scattered clouds.\"\n    },\n    \"cloud\": {\n      \"count\": 3,\n      \"location\": \"top, center\",\n      \"color\": [\"white\"],\n      \"size\": \"small\",\n      \"description\": \"White clouds scattered across the sky.\"\n    },\n    \"grass\": {\n      \"count\": 1,\n      \"location\": \"right, bottom\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"A patch of green grass near the water.\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "An elephant standing near a body of water, facing left."
+              }
+            },
+            "man-made": {
+              "structure": {
+                "count": 1,
+                "location": "right, middle",
+                "color": [
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "A stone or concrete structure in the background."
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 4,
+                "location": "left, middle",
+                "color": [
+                  "green"
+                ],
+                "size": "medium",
+                "description": "Several trees with green foliage, some with sparse leaves."
+              },
+              "water": {
+                "count": 1,
+                "location": "bottom, center",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "A calm body of water reflecting the sky and trees."
+              },
+              "sky": {
+                "count": 1,
+                "location": "top, center",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "A clear blue sky with a few scattered clouds."
+              },
+              "cloud": {
+                "count": 3,
+                "location": "top, center",
+                "color": [
+                  "white"
+                ],
+                "size": "small",
+                "description": "White clouds scattered across the sky."
+              },
+              "grass": {
+                "count": 1,
+                "location": "right, bottom",
+                "color": [
+                  "green"
+                ],
+                "size": "small",
+                "description": "A patch of green grass near the water."
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 486,
+            "output_tokens": 393,
+            "total_tokens": 879
+          },
+          "performance_metrics": {
+            "total_duration_ms": 14752.37596,
+            "prompt_eval_duration_ms": 146.447236,
+            "generation_duration_ms": 14562.017422,
+            "load_duration_ms": 40.623682,
+            "tokens_per_second": 26.98801880337429
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3242,
+        "total_time_ms": 61406.170214,
+        "average_speed": 26.878410993064552
+      }
+    },
+    {
+      "model": "gemma3:4b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a serene scene within what appears to be a zoo or wildlife park. A large, gray African elephant stands prominently in the foreground, facing to the right of the frame, its massive form dominating the lower half of the image. The water of a pool reflects the sky and surrounding greenery, creating a shimmering, turquoise hue. Lush, dense vegetation \u2013 primarily leafy trees and shrubs \u2013 frames the pool on both sides, creating a natural, enclosed environment. \n\nBehind the elephant, a weathered, concrete wall, likely part of the enclosure, adds a textural element to the scene. The sky is a brilliant, cloudless blue, providing bright, even lighting that illuminates the entire scene. A fallen branch lies partially submerged in the water, adding a touch of realism. The overall composition is balanced, with the elephant acting as the focal point, and the surrounding greenery and water contributing to a sense of tranquility and a natural habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 199,
+            "total_tokens": 512
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1601.620559,
+            "prompt_eval_duration_ms": 306.313866,
+            "generation_duration_ms": 1201.343052,
+            "load_duration_ms": 91.338578,
+            "tokens_per_second": 165.6479385040802
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here\u2019s a description of the image\u2019s elements, separated into foreground and background, and detailing their relationship:\n\nIn the immediate foreground, a still, turquoise-colored pool dominates, reflecting the bright blue sky above. A weathered, gray concrete bank forms the edge of the pool, partially obscured by dense, lush green foliage. A large, bleached-white branch lies partially submerged in the water, adding a textural element to the scene. The water\u2019s surface is relatively calm, creating a mirror-like reflection of the sky and the surrounding vegetation. \n\nMoving into the background, a substantial, stone wall rises, constructed of large, roughly hewn blocks. Behind the wall, a dense, mature forest extends, filled with a variety of green trees and shrubs. The overall setting appears to be a zoo enclosure, with the stone wall acting as a boundary and the forest providing a naturalistic backdrop for the central subject. The pool and the stone wall create a distinct visual separation, while the forest provides a sense of depth and a naturalistic habitat for the elephant.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 217,
+            "total_tokens": 535
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1427.613743,
+            "prompt_eval_duration_ms": 51.50469,
+            "generation_duration_ms": 1290.368167,
+            "load_duration_ms": 83.078319,
+            "tokens_per_second": 168.1690586838539
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image as a continuous paragraph:\n\nThe image depicts a serene scene within what appears to be a zoo or wildlife habitat. A large, gray African elephant stands prominently in the center of the frame, its massive form dominating the space. It is positioned near a body of still, turquoise water, reflecting the bright blue sky dotted with fluffy white clouds. Lush, green vegetation, including dense bushes and trees, frames the water on both sides, creating a natural enclosure. A weathered, concrete wall, likely part of the habitat\u2019s structure, rises in the background, adding a man-made element to the scene. A fallen branch lies partially submerged in the water, suggesting the natural processes of decay and interaction between the environment and the animal\u2019s space. The elephant appears calm and stationary, perhaps observing its surroundings, while the water reflects the sky, creating a sense of depth and tranquility. The overall impression is one of a peaceful coexistence between the animal and its environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 201,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1351.467822,
+            "prompt_eval_duration_ms": 58.628361,
+            "generation_duration_ms": 1203.373746,
+            "load_duration_ms": 86.888071,
+            "tokens_per_second": 167.03040154243152
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the mood and emotions conveyed by the image, as a continuous paragraph:\n\nThe image evokes a sense of serene contemplation and quiet majesty. The dominant blue of the water and sky creates a feeling of calmness and vastness, while the dense, lush greenery adds a touch of wildness and tranquility. The solitary elephant, standing calmly in the water, contributes to this peaceful atmosphere, suggesting a sense of dignified solitude and perhaps even wisdom. The reflection of the trees in the water further enhances the feeling of depth and stillness. There's a subtle feeling of awe at the animal\u2019s size and presence, but it\u2019s tempered by the overall peacefulness of the scene. The neutral tones and lack of obvious action contribute to a feeling of quiet observation, inviting the viewer to simply appreciate the beauty and power of nature. The image doesn\u2019t convey any strong negative or overly positive emotions, instead settling into a state of contemplative harmony.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 193,
+            "total_tokens": 517
+          },
+          "performance_metrics": {
+            "total_duration_ms": 1304.982469,
+            "prompt_eval_duration_ms": 60.213013,
+            "generation_duration_ms": 1154.922489,
+            "load_duration_ms": 87.122139,
+            "tokens_per_second": 167.11078175221158
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"human\": {\n    \"item names\": [\n      \"person\"\n    ],\n    \"attributes\": [\n      {\n        \"count\": 1,\n        \"location\": \"right, background\",\n        \"color\": [\"gray\"],\n        \"size\": \"large\",\n        \"description\": \"A person is standing in the background, observing the elephant.\"\n      }\n    ]\n  },\n  \"animal\": {\n    \"item names\": [\n      \"elephant\"\n    ],\n    \"attributes\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"gray\"],\n        \"size\": \"large\",\n        \"description\": \"A large African elephant is standing in the water, appearing calm and observant.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"item names\": [\n      \"wall\",\n      \"concrete block\"\n    ],\n    \"attributes\": [\n      {\n        \"count\": 2,\n        \"location\": \"left, background\",\n        \"color\": [\"gray\"],\n        \"size\": \"large\",\n        \"description\": \"Two concrete blocks form a wall in the background.\"\n      }\n    ]\n  },\n  \"natural\": {\n    \"item names\": [\n      \"tree\",\n      \"water\",\n      \"bush\",\n      \"branch\",\n      \"leaf\"\n    ],\n    \"attributes\": [\n      {\n        \"count\": 3,\n        \"location\": \"left, foreground\",\n        \"color\": [\"green\", \"blue\"],\n        \"size\": \"large\",\n        \"description\": \"A large, leafy tree is on the left. The water is blue and reflects the sky. A bush and a branch are visible in the foreground.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right, foreground\",\n        \"color\": [\"brown\"],\n        \"size\": \"medium\",\n        \"description\": \"A fallen branch is on the right side of the image.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"center, foreground\",\n        \"color\": [\"green\"],\n        \"size\": \"large\",\n        \"description\": \"A dense bush with green leaves is in the foreground.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"bottom, foreground\",\n        \"color\": [\"green\"],\n        \"size\": \"small\",\n        \"description\": \"Leaves are scattered around the foreground.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"blue\"],\n        \"size\": \"large\",\n        \"description\": \"The water is reflecting the sky.\"\n      }\n    ]\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "human": {
+              "item names": [
+                "person"
+              ],
+              "attributes": [
+                {
+                  "count": 1,
+                  "location": "right, background",
+                  "color": [
+                    "gray"
+                  ],
+                  "size": "large",
+                  "description": "A person is standing in the background, observing the elephant."
+                }
+              ]
+            },
+            "animal": {
+              "item names": [
+                "elephant"
+              ],
+              "attributes": [
+                {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "gray"
+                  ],
+                  "size": "large",
+                  "description": "A large African elephant is standing in the water, appearing calm and observant."
+                }
+              ]
+            },
+            "man-made": {
+              "item names": [
+                "wall",
+                "concrete block"
+              ],
+              "attributes": [
+                {
+                  "count": 2,
+                  "location": "left, background",
+                  "color": [
+                    "gray"
+                  ],
+                  "size": "large",
+                  "description": "Two concrete blocks form a wall in the background."
+                }
+              ]
+            },
+            "natural": {
+              "item names": [
+                "tree",
+                "water",
+                "bush",
+                "branch",
+                "leaf"
+              ],
+              "attributes": [
+                {
+                  "count": 3,
+                  "location": "left, foreground",
+                  "color": [
+                    "green",
+                    "blue"
+                  ],
+                  "size": "large",
+                  "description": "A large, leafy tree is on the left. The water is blue and reflects the sky. A bush and a branch are visible in the foreground."
+                },
+                {
+                  "count": 1,
+                  "location": "right, foreground",
+                  "color": [
+                    "brown"
+                  ],
+                  "size": "medium",
+                  "description": "A fallen branch is on the right side of the image."
+                },
+                {
+                  "count": 1,
+                  "location": "center, foreground",
+                  "color": [
+                    "green"
+                  ],
+                  "size": "large",
+                  "description": "A dense bush with green leaves is in the foreground."
+                },
+                {
+                  "count": 1,
+                  "location": "bottom, foreground",
+                  "color": [
+                    "green"
+                  ],
+                  "size": "small",
+                  "description": "Leaves are scattered around the foreground."
+                },
+                {
+                  "count": 1,
+                  "location": "center",
+                  "color": [
+                    "blue"
+                  ],
+                  "size": "large",
+                  "description": "The water is reflecting the sky."
+                }
+              ]
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 640,
+            "total_tokens": 1158
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4000.674282,
+            "prompt_eval_duration_ms": 68.196174,
+            "generation_duration_ms": 3836.476165,
+            "load_duration_ms": 91.707941,
+            "tokens_per_second": 166.81975137463155
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 3244,
+        "total_time_ms": 9686.358875,
+        "average_speed": 166.95558637144174
+      }
+    },
+    {
+      "model": "gemma3:12b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a detailed description of the image:\n\nThe photograph captures a vibrant scene, likely within a zoo enclosure. A large African elephant is the focal point, standing partially submerged in a clear, turquoise-colored pool of water. Lush, dense greenery, predominantly a deep emerald green, dominates the left side of the frame, creating a naturalistic backdrop. A weathered, light-grey stone structure is visible behind the elephant, suggesting a constructed habitat. The sky is a brilliant blue, dotted with fluffy white clouds, contributing to the overall bright and sunny atmosphere. \n\nThe lighting is strong and direct, casting highlights on the elephant's skin and reflecting off the water's surface. The composition utilizes the water as a reflective element, mirroring the sky and surrounding foliage. A fallen branch lies partially submerged in the water, adding a touch of natural texture. The overall impression is one of a well-maintained and visually appealing habitat for the elephant.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 192,
+            "total_tokens": 505
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2912.509769,
+            "prompt_eval_duration_ms": 342.692738,
+            "generation_duration_ms": 2476.593026,
+            "load_duration_ms": 90.31747,
+            "tokens_per_second": 77.52585829982063
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, broken down by foreground and background elements and their relationship:\n\nThe foreground is dominated by lush, vibrant green foliage, creating a dense, almost wall-like barrier close to the viewer. A weathered, bleached log lies partially submerged in the turquoise-blue water, reflecting the sky and creating a sense of depth. The water itself occupies a significant portion of the foreground, its surface rippled and reflecting the surrounding environment. Moving into the mid-ground, a majestic African elephant stands partially submerged in the water, its trunk raised as if drinking or exploring. The elephant is positioned on a sandy bank, which acts as a transition zone between the water and the background. The background features a textured, light-colored wall, possibly a man-made structure, and a line of trees stretching across the horizon under a bright blue sky dotted with fluffy white clouds. The elephant's presence within this constructed environment suggests a zoo or wildlife sanctuary setting, with the foliage and water creating a naturalistic enclosure.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 208,
+            "total_tokens": 526
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2817.47,
+            "prompt_eval_duration_ms": 70.779478,
+            "generation_duration_ms": 2654.846037,
+            "load_duration_ms": 88.833462,
+            "tokens_per_second": 78.34729287542486
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image captures a serene moment at what appears to be a zoo enclosure. A majestic African elephant stands partially submerged in a clear, turquoise-colored pool, its trunk extended as if exploring or drinking. Lush, vibrant green foliage dominates the left side of the frame, creating a naturalistic backdrop for the animal. A weathered stone structure, possibly a viewing platform or part of the enclosure, is visible behind the elephant, suggesting a human-designed element integrated into the habitat. The sky is a brilliant blue with scattered white clouds, reflecting in the still water of the pool. A fallen branch rests on the water's surface, adding a touch of natural debris to the scene. The elephant's presence is the focal point, interacting with the water and the surrounding environment, creating a harmonious blend of wildlife and a designed habitat.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 184,
+            "total_tokens": 505
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2508.857294,
+            "prompt_eval_duration_ms": 72.12809,
+            "generation_duration_ms": 2343.581633,
+            "load_duration_ms": 90.555239,
+            "tokens_per_second": 78.51230672279296
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of tranquility and peaceful observation. The overall tone is positive, conveying a feeling of calm and connection with nature. The elephant, standing gracefully in a pool of water, embodies a quiet strength and serenity. The lush greenery framing the scene adds to the feeling of a natural, protected environment. The clear, blue water reflects the sky and surrounding foliage, creating a sense of spaciousness and clarity. The bright, sunny day and the fluffy clouds in the sky contribute to a feeling of optimism and well-being. The composition, with the elephant centrally placed and surrounded by natural elements, draws the viewer's attention and encourages a moment of quiet contemplation. It's a scene that invites a feeling of wonder and appreciation for the beauty of the natural world and the majestic creature within it.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 162,
+            "total_tokens": 486
+          },
+          "performance_metrics": {
+            "total_duration_ms": 2240.931482,
+            "prompt_eval_duration_ms": 70.72906,
+            "generation_duration_ms": 2080.574933,
+            "load_duration_ms": 86.28044,
+            "tokens_per_second": 77.86309323952622
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": [\n    {\n      \"name\": \"elephant\",\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Standing in shallow water, trunk raised\"\n    }\n  ],\n  \"man-made\": [\n    {\n      \"name\": \"wall\",\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"Stone wall, possibly part of enclosure\"\n    },\n    {\n      \"name\": \"path\",\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Sandy path leading to enclosure\"\n    }\n  ],\n  \"natural\": [\n    {\n      \"name\": \"water\",\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"blue\", \"green\"],\n      \"size\": \"large\",\n      \"description\": \"Still water reflecting sky and surroundings\"\n    },\n    {\n      \"name\": \"tree\",\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"Dense foliage, partially obscuring view\"\n    },\n    {\n      \"name\": \"sky\",\n      \"count\": 1,\n      \"location\": \"background\",\n      \"size\": \"large\",\n      \"description\": \"Blue sky with scattered white clouds\"\n    },\n    {\n      \"name\": \"branch\",\n      \"count\": 1,\n      \"location\": \"left\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Dead branch protruding from water\"\n    }\n  ]\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": [
+              {
+                "name": "elephant",
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Standing in shallow water, trunk raised"
+              }
+            ],
+            "man-made": [
+              {
+                "name": "wall",
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "beige"
+                ],
+                "size": "medium",
+                "description": "Stone wall, possibly part of enclosure"
+              },
+              {
+                "name": "path",
+                "count": 1,
+                "location": "right",
+                "color": [
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Sandy path leading to enclosure"
+              }
+            ],
+            "natural": [
+              {
+                "name": "water",
+                "count": 1,
+                "location": "foreground",
+                "color": [
+                  "blue",
+                  "green"
+                ],
+                "size": "large",
+                "description": "Still water reflecting sky and surroundings"
+              },
+              {
+                "name": "tree",
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "Dense foliage, partially obscuring view"
+              },
+              {
+                "name": "sky",
+                "count": 1,
+                "location": "background",
+                "size": "large",
+                "description": "Blue sky with scattered white clouds"
+              },
+              {
+                "name": "branch",
+                "count": 1,
+                "location": "left",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Dead branch protruding from water"
+              }
+            ]
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 447,
+            "total_tokens": 965
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5928.440752,
+            "prompt_eval_duration_ms": 87.900516,
+            "generation_duration_ms": 5749.669472,
+            "load_duration_ms": 87.894751,
+            "tokens_per_second": 77.74359938024625
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2987,
+        "total_time_ms": 16408.209297,
+        "average_speed": 77.99843010356219
+      }
+    },
+    {
+      "model": "gemma3:27b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image:\n\nThe image depicts a zoo enclosure, likely designed to mimic a natural African habitat. A large, gray elephant stands near the edge of a calm, turquoise-blue water feature, possibly a pond or moat. Lush, vibrant green vegetation dominates the left side of the frame, with a dense bush taking center stage and a tangle of dry branches extending into the water. The background features a light-colored, stone-like structure, possibly a wall or artificial rock formation, and a line of trees under a bright blue sky with scattered white clouds. \n\nThe lighting is strong and sunny, creating clear reflections on the water\u2019s surface and highlighting the textures of the vegetation and stone. The composition is balanced, with the elephant positioned slightly off-center, drawing the eye towards it while allowing the natural elements to frame the scene. The overall impression is one of a well-maintained and immersive animal habitat, bathed in warm sunlight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 313,
+            "output_tokens": 196,
+            "total_tokens": 509
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5151.651031,
+            "prompt_eval_duration_ms": 398.43807,
+            "generation_duration_ms": 4662.977532,
+            "load_duration_ms": 87.580395,
+            "tokens_per_second": 42.033228480072374
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, separating foreground and background elements:\n\nThe foreground of the image is dominated by a small, still body of water, likely a pond or moat, with a few pieces of driftwood visible near the surface. Lush, dense green bushes and foliage grow along the water's edge, creating a natural barrier and partially obscuring the view beyond. These elements establish a sense of depth and create a natural, wild feel. \n\nIn the background, a large gray elephant stands on a sandy, light-colored area, seemingly near the water\u2019s edge. Behind the elephant is a constructed wall made of light-colored stone blocks, suggesting a zoo or wildlife park habitat. Beyond the wall, a line of trees forms the distant horizon under a bright blue sky with wispy clouds and a contrail from an airplane. The water in the foreground reflects the sky and surrounding greenery, tying the foreground and background together and creating a cohesive scene of an animal in a managed natural environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 318,
+            "output_tokens": 204,
+            "total_tokens": 522
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5032.939076,
+            "prompt_eval_duration_ms": 83.210855,
+            "generation_duration_ms": 4857.875754,
+            "load_duration_ms": 89.073798,
+            "tokens_per_second": 41.99366355387441
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "Here's a description of the image, focusing on the elements and their interactions:\n\nThe image features a large, gray elephant standing near a water enclosure, likely at a zoo or wildlife park. The elephant is positioned on a sandy bank, appearing to be surveying its surroundings. A body of water, reflecting the sky and surrounding vegetation, occupies the foreground and middle ground of the image. Dense, lush green bushes and trees dominate the left side, creating a naturalistic backdrop. A weathered stone structure forms part of the enclosure's boundary, suggesting a designed habitat. The elephant appears to be the focal point, interacting with its environment by potentially preparing to enter the water or simply observing the space. There are no people visible in the image, emphasizing the animal's connection to its habitat. The clear blue sky with wispy clouds provides a bright, open atmosphere. Overall, the scene depicts a moment of quiet observation within a carefully constructed wildlife environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 321,
+            "output_tokens": 192,
+            "total_tokens": 513
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4734.660463,
+            "prompt_eval_duration_ms": 84.353751,
+            "generation_duration_ms": 4560.649598,
+            "load_duration_ms": 86.512024,
+            "tokens_per_second": 42.09926587743082
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image evokes a sense of peaceful tranquility and natural beauty. The vibrant blue sky dotted with fluffy white clouds, combined with the lush greenery and calm water, creates a serene atmosphere. The presence of the elephant, though a large animal, doesn't disrupt this peace; instead, it feels integrated into the landscape, suggesting a harmonious coexistence with nature. The light reflecting off the water and the soft shadows cast by the trees contribute to a gentle, calming mood. The overall tone is decidedly positive, evoking feelings of contentment and appreciation for the natural world. The composition, with the elephant positioned amidst the greenery and water, reinforces this sense of balance and tranquility, making it a visually soothing and uplifting scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 324,
+            "output_tokens": 141,
+            "total_tokens": 465
+          },
+          "performance_metrics": {
+            "total_duration_ms": 3506.784551,
+            "prompt_eval_duration_ms": 82.594207,
+            "generation_duration_ms": 3335.886165,
+            "load_duration_ms": 84.725957,
+            "tokens_per_second": 42.267629357190614
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 1,\n      \"location\": \"right, middle, background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Standing near the water\"\n    }\n  },\n  \"man-made\": {\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"right, middle, background\",\n      \"color\": [\"beige\", \"gray\"],\n      \"size\": \"medium\",\n      \"description\": \"Stone wall surrounding the enclosure\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 3,\n      \"location\": \"left, center, foreground/background\",\n      \"color\": [\"green\"],\n      \"size\": \"medium/large\",\n      \"description\": \"Various trees with lush foliage\"\n    },\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"left, middle, foreground\",\n      \"color\": [\"blue\"],\n      \"size\": \"large\",\n      \"description\": \"Pond or moat with reflections\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Clear blue sky with some clouds\"\n    },\n    \"vegetation\": {\n      \"count\": 1,\n      \"location\": \"left, foreground\",\n      \"color\": [\"green\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Dense bushes and plants\"\n    },\n    \"log\": {\n      \"count\": 1,\n      \"location\": \"left, foreground\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"Floating log in the water\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 1,
+                "location": "right, middle, background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "Standing near the water"
+              }
+            },
+            "man-made": {
+              "wall": {
+                "count": 1,
+                "location": "right, middle, background",
+                "color": [
+                  "beige",
+                  "gray"
+                ],
+                "size": "medium",
+                "description": "Stone wall surrounding the enclosure"
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 3,
+                "location": "left, center, foreground/background",
+                "color": [
+                  "green"
+                ],
+                "size": "medium/large",
+                "description": "Various trees with lush foliage"
+              },
+              "water": {
+                "count": 1,
+                "location": "left, middle, foreground",
+                "color": [
+                  "blue"
+                ],
+                "size": "large",
+                "description": "Pond or moat with reflections"
+              },
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "color": [
+                  "blue",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Clear blue sky with some clouds"
+              },
+              "vegetation": {
+                "count": 1,
+                "location": "left, foreground",
+                "color": [
+                  "green",
+                  "brown"
+                ],
+                "size": "medium",
+                "description": "Dense bushes and plants"
+              },
+              "log": {
+                "count": 1,
+                "location": "left, foreground",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "Floating log in the water"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 518,
+            "output_tokens": 445,
+            "total_tokens": 963
+          },
+          "performance_metrics": {
+            "total_duration_ms": 10821.127903,
+            "prompt_eval_duration_ms": 147.436549,
+            "generation_duration_ms": 10583.155267,
+            "load_duration_ms": 87.315603,
+            "tokens_per_second": 42.04795155822597
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 2972,
+        "total_time_ms": 29247.163024,
+        "average_speed": 42.08834776535884
+      }
+    },
+    {
+      "model": "mistral-small3.2:24b",
+      "temperature": 0.3,
+      "prompts": {
+        "general_description": {
+          "prompt_text": "Describe what you see in this image. Include the setting, main elements, colors, lighting, and overall composition. Be specific and detailed. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image depicts a serene zoo or wildlife sanctuary setting under a bright blue sky with scattered white clouds. In the foreground, there is a clear, turquoise-colored body of water, possibly a pond or a moat, bordered by a fallen tree trunk and lush green foliage. The vibrant green leaves of a large tree dominate the left side of the image, casting dappled shadows on the water. On the right side, two elephants are visible, standing on a grassy area near the water's edge. The elephants are positioned close to each other, with one slightly ahead of the other, suggesting a sense of companionship. The lighting is bright and natural, indicating a sunny day, which enhances the vivid colors and details of the scene. The overall composition is balanced, with the water and foliage on the left contrasting with the elephants and open space on the right, creating a harmonious and tranquil atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 792,
+            "output_tokens": 188,
+            "total_tokens": 980
+          },
+          "performance_metrics": {
+            "total_duration_ms": 7370.574767,
+            "prompt_eval_duration_ms": 2040.202506,
+            "generation_duration_ms": 5281.379811,
+            "load_duration_ms": 45.678462,
+            "tokens_per_second": 35.59675818210152
+          }
+        },
+        "foreground_background": {
+          "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the foreground of the image, there is a body of water that occupies the lower portion, reflecting the clear blue sky above. Along the edge of the water, there is a fallen tree branch extending horizontally, adding a natural, slightly rugged element to the scene. Behind the water, a large, lush green tree dominates the left side of the image, its dense foliage providing shade and a sense of depth. The tree's vibrant green leaves contrast with the blue water and sky, creating a visually appealing foreground.\n\nIn the background, the scene opens up to reveal an expansive, open area with a clear blue sky dotted with a few fluffy white clouds. On the right side, two elephants are visible, standing near a stone structure that appears to be part of a larger enclosure or habitat. The elephants add a sense of life and movement to the otherwise tranquil setting. The stone structure and the open space suggest that this scene might be set in a zoo or a wildlife sanctuary, where the natural elements are carefully integrated with man-made structures to create a harmonious environment for the animals. The background elements provide context and scale, enhancing the overall composition of the image.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 798,
+            "output_tokens": 236,
+            "total_tokens": 1034
+          },
+          "performance_metrics": {
+            "total_duration_ms": 6653.117073,
+            "prompt_eval_duration_ms": 56.10508,
+            "generation_duration_ms": 6547.382776,
+            "load_duration_ms": 46.321276,
+            "tokens_per_second": 36.044937049515184
+          }
+        },
+        "entities_interactions": {
+          "prompt_text": "Identify all people, animals, and objects in the image. Describe what they are doing and how they interact with each other. Focus on actions, relationships, and connections between elements. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "In the image, there are two elephants standing near the edge of a body of water, likely a pond or a lake. The elephants appear to be interacting with each other, possibly engaging in social behavior typical of elephants, such as touching trunks or simply standing close for companionship. The water in the pond is a vibrant blue, reflecting the clear sky above. Surrounding the water are various trees and bushes, providing a natural and lush environment. One prominent tree with green foliage is situated near the elephants, offering shade and a sense of seclusion. In the background, there is a stone wall, suggesting that this scene might be taking place in a controlled environment like a zoo or a wildlife sanctuary. The elephants' presence near the water indicates they might be drinking, cooling off, or simply enjoying the natural setting. The overall scene depicts a peaceful and serene moment in a natural habitat, with the elephants as the central figures interacting harmoniously with their environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 800,
+            "output_tokens": 197,
+            "total_tokens": 997
+          },
+          "performance_metrics": {
+            "total_duration_ms": 5560.007416,
+            "prompt_eval_duration_ms": 56.340844,
+            "generation_duration_ms": 5452.591121,
+            "load_duration_ms": 45.77179,
+            "tokens_per_second": 36.12961170722634
+          }
+        },
+        "mood_emotions": {
+          "prompt_text": "Describe the mood and emotions conveyed by this image. What feelings does it evoke? Consider whether the overall tone is positive, negative, or neutral. Explain what visual elements contribute to this emotional atmosphere. Form the response as a continuous paragraph. Maximum 200 words.",
+          "response": "The image conveys a serene and peaceful mood, evoking feelings of tranquility and wonder. The overall tone is distinctly positive, primarily due to the natural beauty and calmness depicted. The clear blue sky with scattered clouds suggests a bright, pleasant day, while the lush greenery of the trees and bushes adds a sense of vitality and freshness. The presence of the elephants near the water enhances the sense of harmony with nature, as they appear relaxed and at ease in their environment. The stillness of the water and the gentle, uncluttered landscape contribute to the feeling of serenity. The combination of these elements creates an atmosphere that is both soothing and uplifting, inviting viewers to appreciate the simple beauty of the natural world and the gentle majesty of the elephants.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 803,
+            "output_tokens": 160,
+            "total_tokens": 963
+          },
+          "performance_metrics": {
+            "total_duration_ms": 4527.282469,
+            "prompt_eval_duration_ms": 56.725586,
+            "generation_duration_ms": 4418.306564,
+            "load_duration_ms": 46.538493,
+            "tokens_per_second": 36.21296930902597
+          }
+        },
+        "structured_inventory": {
+          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
+          "response": "```json\n{\n  \"animal\": {\n    \"elephant\": {\n      \"count\": 1,\n      \"location\": \"right, middle, foreground\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"standing near water\"\n    }\n  },\n  \"man-made\": {\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"right, middle, background\",\n      \"color\": [\"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"stone wall\"\n    },\n    \"log\": {\n      \"count\": 1,\n      \"location\": \"left, middle, foreground\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"floating in water\"\n    }\n  },\n  \"natural\": {\n    \"tree\": {\n      \"count\": 2,\n      \"location\": \"left, middle, background\",\n      \"color\": [\"green\"],\n      \"size\": \"large\",\n      \"description\": \"one tree with dense foliage, another with sparse branches\"\n    },\n    \"water\": {\n      \"count\": 1,\n      \"location\": \"center, bottom, foreground\",\n      \"size\": \"large\",\n      \"description\": \"clear blue water\"\n    },\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, background\",\n      \"description\": \"blue sky with some clouds\"\n    }\n  }\n}\n```",
+          "response_format": "json",
+          "response_data": {
+            "animal": {
+              "elephant": {
+                "count": 1,
+                "location": "right, middle, foreground",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "standing near water"
+              }
+            },
+            "man-made": {
+              "wall": {
+                "count": 1,
+                "location": "right, middle, background",
+                "color": [
+                  "beige"
+                ],
+                "size": "medium",
+                "description": "stone wall"
+              },
+              "log": {
+                "count": 1,
+                "location": "left, middle, foreground",
+                "color": [
+                  "brown"
+                ],
+                "size": "small",
+                "description": "floating in water"
+              }
+            },
+            "natural": {
+              "tree": {
+                "count": 2,
+                "location": "left, middle, background",
+                "color": [
+                  "green"
+                ],
+                "size": "large",
+                "description": "one tree with dense foliage, another with sparse branches"
+              },
+              "water": {
+                "count": 1,
+                "location": "center, bottom, foreground",
+                "size": "large",
+                "description": "clear blue water"
+              },
+              "sky": {
+                "count": 1,
+                "location": "top, background",
+                "description": "blue sky with some clouds"
+              }
+            }
+          },
+          "error": null,
+          "token_metrics": {
+            "input_tokens": 982,
+            "output_tokens": 307,
+            "total_tokens": 1289
+          },
+          "performance_metrics": {
+            "total_duration_ms": 8669.814749,
+            "prompt_eval_duration_ms": 102.726218,
+            "generation_duration_ms": 8517.523141,
+            "load_duration_ms": 44.368289,
+            "tokens_per_second": 36.04334205119127
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 5263,
+        "total_time_ms": 32780.796473999995,
+        "average_speed": 36.005523659812056
+      }
+    }
+  ]
+}
