@@ -166,11 +166,14 @@ export default function Dashboard() {
             </div>
           </a>
           <div className="flex flex-col items-center md:items-end gap-1">
-            <div className="flex items-center gap-2 px-3 py-1 bg-agi-teal/10 rounded-full">
-              <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-agi-orange" />
-              <span className="text-xs md:text-sm font-medium text-agi-teal">Image Annotation</span>
+            <div className="flex items-center gap-2 px-4 py-2 bg-agi-teal/10 rounded-lg border border-agi-teal/20">
+              <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-agi-orange" />
+              <div className="flex flex-col">
+                <span className="text-xs text-agi-teal-500 font-medium">Project</span>
+                <span className="text-sm md:text-base font-semibold text-agi-teal">Image Annotation</span>
+              </div>
             </div>
-            <span className="text-xs text-agi-teal-500">NSD Shared 1000 Dataset</span>
+            <span className="text-xs md:text-sm text-agi-teal-600 font-medium">NSD Shared 1000 Dataset</span>
           </div>
         </div>
       </header>
