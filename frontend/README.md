@@ -38,7 +38,7 @@ npm run build:static
 npm run deploy
 ```
 
-The site will be available at: https://neuromechanist.github.io/image-annotation
+The site will be available at: https://annotation-garden.github.io/image-annotation
 
 ## 🛠️ Available Scripts
 

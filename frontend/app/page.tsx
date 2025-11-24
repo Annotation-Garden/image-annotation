@@ -278,16 +278,15 @@ export default function Dashboard() {
         <footer className="bg-black/30 backdrop-blur-xl border-t border-purple-500/20 px-6 py-3">
           <div className="text-center text-sm text-gray-400">
             © 2025{' '}
-            <a 
-              href="https://neuromechanist.github.io" 
-              target="_blank" 
+<a
+              href="https://annotation.garden"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-purple-400 hover:text-purple-300 transition-colors inline-flex items-center gap-1"
             >
-              Seyed Yahya Shirazi
+              Annotation Garden Initiative
               <ExternalLink className="w-3 h-3" />
             </a>
-            , Swartz Center for Computational Neuroscience, UC San Diego
           </div>
         </footer>
       </main>
