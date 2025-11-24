@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState, useCallback } from 'react'
 import { ImageData } from '../types'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
@@ -13,6 +13,8 @@ interface ThumbnailRibbonProps {
 export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: ThumbnailRibbonProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const thumbnailRefs = useRef<(HTMLButtonElement | null)[]>([])
+  const progressBarRef = useRef<HTMLDivElement>(null)
+  const [isDragging, setIsDragging] = useState(false)
 
   // Scroll to selected thumbnail when it changes
   useEffect(() => {
@@ -57,6 +59,47 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
       onSelect(selectedIndex + 1)
     }
   }
+
+  // Handle click/drag on progress bar to jump to position
+  const handleProgressInteraction = useCallback((clientX: number) => {
+    if (!progressBarRef.current || images.length === 0) return
+
+    const rect = progressBarRef.current.getBoundingClientRect()
+    const relativeX = Math.max(0, Math.min(clientX - rect.left, rect.width))
+    const percentage = relativeX / rect.width
+    const newIndex = Math.min(
+      Math.floor(percentage * images.length),
+      images.length - 1
+    )
+    onSelect(newIndex)
+  }, [images.length, onSelect])
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true)
+    handleProgressInteraction(e.clientX)
+  }
+
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+    if (isDragging) {
+      handleProgressInteraction(e.clientX)
+    }
+  }, [isDragging, handleProgressInteraction])
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false)
+  }, [])
+
+  // Add/remove mouse event listeners for drag
+  useEffect(() => {
+    if (isDragging) {
+      window.addEventListener('mousemove', handleMouseMove)
+      window.addEventListener('mouseup', handleMouseUp)
+    }
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('mouseup', handleMouseUp)
+    }
+  }, [isDragging, handleMouseMove, handleMouseUp])
 
   return (
     <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-2 md:p-4">
@@ -141,29 +184,48 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
         </button>
       </div>
 
-      {/* Progress indicator */}
-      <div className="mt-3 flex items-center justify-center gap-2">
-        <div className="flex gap-1">
-          {(() => {
-            // Calculate group size to always show ~10 dots max
-            const maxDots = 10
-            const groupSize = Math.max(1, Math.ceil(images.length / maxDots))
-            const numDots = Math.ceil(images.length / groupSize)
-            const currentGroup = Math.floor(selectedIndex / groupSize)
+      {/* Progress indicator - clickable/draggable slider */}
+      <div className="mt-3 flex items-center justify-center gap-3">
+        <div
+          ref={progressBarRef}
+          className={`relative w-64 md:w-96 h-6 flex items-center cursor-pointer group ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+          onMouseDown={handleMouseDown}
+          role="slider"
+          aria-label="Image position"
+          aria-valuemin={1}
+          aria-valuemax={images.length}
+          aria-valuenow={selectedIndex + 1}
+          tabIndex={0}
+        >
+          {/* Track background */}
+          <div className="absolute inset-x-0 h-2 bg-agi-teal/10 rounded-full" />
 
-            return Array.from({ length: numDots }).map((_, i) => (
+          {/* Filled track */}
+          <div
+            className="absolute left-0 h-2 bg-gradient-to-r from-agi-teal to-agi-orange rounded-full transition-all duration-75"
+            style={{ width: `${((selectedIndex + 1) / images.length) * 100}%` }}
+          />
+
+          {/* Thumb/handle */}
+          <div
+            className={`absolute w-4 h-4 bg-white border-2 border-agi-teal rounded-full shadow-md transform -translate-x-1/2 transition-transform ${
+              isDragging ? 'scale-125' : 'group-hover:scale-110'
+            }`}
+            style={{ left: `${((selectedIndex + 1) / images.length) * 100}%` }}
+          />
+
+          {/* Segment markers */}
+          <div className="absolute inset-x-0 flex justify-between px-0.5">
+            {Array.from({ length: 11 }).map((_, i) => (
               <div
                 key={i}
-                className={`h-1 rounded-full transition-all ${
-                  currentGroup === i
-                    ? 'w-8 bg-gradient-to-r from-agi-teal to-agi-orange'
-                    : 'w-2 bg-agi-teal/20'
-                }`}
+                className="w-0.5 h-1 bg-agi-teal/30 rounded-full"
               />
-            ))
-          })()}
+            ))}
+          </div>
         </div>
-        <span className="text-xs text-agi-teal-600 ml-2">
+
+        <span className="text-xs text-agi-teal-600 font-medium min-w-[60px]">
           {selectedIndex + 1} / {images.length}
         </span>
       </div>
