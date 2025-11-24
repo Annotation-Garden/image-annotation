@@ -144,16 +144,24 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
       {/* Progress indicator */}
       <div className="mt-3 flex items-center justify-center gap-2">
         <div className="flex gap-1">
-          {Array.from({ length: Math.min(10, Math.ceil(images.length / 10)) }).map((_, i) => (
-            <div
-              key={i}
-              className={`h-1 rounded-full transition-all ${
-                Math.floor(selectedIndex / 10) === i
-                  ? 'w-8 bg-gradient-to-r from-agi-teal to-agi-orange'
-                  : 'w-2 bg-agi-teal/20'
-              }`}
-            />
-          ))}
+          {(() => {
+            // Calculate group size to always show ~10 dots max
+            const maxDots = 10
+            const groupSize = Math.max(1, Math.ceil(images.length / maxDots))
+            const numDots = Math.ceil(images.length / groupSize)
+            const currentGroup = Math.floor(selectedIndex / groupSize)
+
+            return Array.from({ length: numDots }).map((_, i) => (
+              <div
+                key={i}
+                className={`h-1 rounded-full transition-all ${
+                  currentGroup === i
+                    ? 'w-8 bg-gradient-to-r from-agi-teal to-agi-orange'
+                    : 'w-2 bg-agi-teal/20'
+                }`}
+              />
+            ))
+          })()}
         </div>
         <span className="text-xs text-agi-teal-600 ml-2">
           {selectedIndex + 1} / {images.length}
