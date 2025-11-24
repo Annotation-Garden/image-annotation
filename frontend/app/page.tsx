@@ -173,7 +173,7 @@ export default function Dashboard() {
                 <span className="text-sm md:text-base font-semibold text-agi-teal">Image Annotation</span>
               </div>
             </div>
-            <span className="text-xs md:text-sm text-agi-teal-600 font-medium">NSD Shared 1000 Dataset</span>
+            <span className="text-xs md:text-sm text-agi-teal-600 font-medium text-center w-full md:text-right">NSD Shared 1000 Dataset</span>
           </div>
         </div>
       </header>
