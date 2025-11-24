@@ -1,14 +1,20 @@
-# The Annotation Garden Project
+# Image Annotation Tool - Annotation Garden Initiative
 
-🌐 **[View Live Dashboard](https://neuromechanist.github.io/image-annotation)**
+🌐 **Part of the [Annotation Garden Initiative](https://annotation.garden)**
 
-A VLM-based image annotation system for Natural Scene Dataset (NSD) using multiple Vision-Language Models (VLMs).
+A VLM-based image annotation system adapted for the Annotation Garden ecosystem. This tool provides collaborative annotation capabilities for static image datasets, starting with the Natural Scene Dataset (NSD).
+
+## About Annotation Garden
+
+The Annotation Garden Initiative (AGI) establishes an open infrastructure for collaborative, multi-layered annotation of stimuli used in neuroscience research. This tool serves as the primary interface for annotating static image datasets in the AGI ecosystem.
 
 ## Key Features
 
 - **Multi-model support**: OLLAMA, OpenAI GPT-4V, Anthropic Claude
 - **Batch processing**: Handle 25k+ annotations with real-time progress
-- **Web dashboard**: Interactive visualization and analysis interface
+- **Web dashboard**: Interactive visualization with AGI branding
+- **HED integration**: Hierarchical Event Descriptors for semantic annotations
+- **BIDS-compliant**: Output follows stimuli-BIDS specifications
 - **Annotation tools**: Reorder, filter, export, and manipulate annotations
 - **Research-ready**: Structured JSON output with comprehensive metrics
 
@@ -24,9 +30,9 @@ A VLM-based image annotation system for Natural Scene Dataset (NSD) using multip
 ### Installation
 
 ```bash
-# Clone and setup
-git clone https://github.com/neuromechanist/hed-image-annotation.git
-cd hed-image-annotation
+# Clone from Annotation Garden
+git clone https://github.com/Annotation-Garden/image-annotation.git
+cd image-annotation
 
 # Python environment
 conda activate torch-312  # or create: conda create -n torch-312 python=3.12
@@ -45,19 +51,38 @@ ollama serve
 # Test VLM service
 python -m image_annotation.services.vlm_service
 
-# Run frontend dashboard
+# Run frontend dashboard (with AGI branding)
 cd frontend && npm run dev
 # Visit http://localhost:3000
 
 # Configuration
 cp config/config.example.json config/config.json
-# Edit config.json with API keys and NSD image paths
+# Edit config.json with API keys and image paths
 ```
+
+## AGI Integration
+
+### Design Elements
+- AGI logo positioned top-left in all interfaces
+- AGI color theme throughout dashboard
+- Consistent with annotation.garden website design
+
+### HED Integration
+This tool includes enhanced support for Hierarchical Event Descriptors (HED):
+- HED tag suggestions during annotation
+- HED validation for annotations
+- Export annotations with HED tags
+
+### BIDS Compliance
+Annotations follow stimuli-BIDS specifications:
+- Standardized events.tsv format
+- JSON sidecars with annotation schema
+- Compatible with neuroimaging datasets
 
 ## Architecture
 
 - **Backend**: FastAPI with OLLAMA/OpenAI/Anthropic integration
-- **Frontend**: Next.js dashboard with real-time progress tracking  
+- **Frontend**: Next.js dashboard with AGI branding
 - **Storage**: JSON files with database support for large datasets
 - **Processing**: Stateless VLM calls with comprehensive metrics
 
@@ -107,7 +132,6 @@ pytest tests/ --cov
 ruff check --fix . && ruff format .
 ```
 
-
 ## NSD Research Usage
 
 1. **Download NSD images** to `/path/to/NSD_stimuli/shared1000/`
@@ -116,17 +140,25 @@ ruff check --fix . && ruff format .
 4. **Post-process** with annotation tools
 5. **Export results** to CSV for analysis
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed research workflows.
+See [CONTRIBUTING.md](https://github.com/Annotation-Garden/management/blob/main/CONTRIBUTING.md) for detailed research workflows.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, standards, and submission process.
+See [CONTRIBUTING.md](https://github.com/Annotation-Garden/management/blob/main/CONTRIBUTING.md) in the management repository for AGI contribution guidelines.
+
+## Related Repositories
+
+- [Management](https://github.com/Annotation-Garden/management): Organizational documentation
+- [Assets](https://github.com/Annotation-Garden/assets): AGI branding and design guidelines
+- [Website](https://github.com/Annotation-Garden/annotation-garden.github.io): Main AGI website
 
 ## License
 
-This project is licensed under CC-BY-NC-SA 4.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under CC-BY-NC-SA 4.0 - see the [LICENSE](LICENSE.md) file for details.
 
 ## Acknowledgments
 
 - Natural Scene Dataset (NSD) team
+- Annotation Garden Initiative community
 - LangChain and OLLAMA communities
+- Original tool by neuromechanist
