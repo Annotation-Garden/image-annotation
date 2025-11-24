@@ -6,7 +6,7 @@ This repository will be populated by cloning and adapting the existing image ann
 
 ```bash
 # Clone the source repository
-git clone https://github.com/neuromechanist/image-annotation.git temp-image-annotation
+git clone https://github.com/Annotation-Garden/image-annotation.git temp-image-annotation
 
 # Copy relevant files to this directory
 cp -r temp-image-annotation/* .
