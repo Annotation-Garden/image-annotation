@@ -143,19 +143,34 @@ export default function Dashboard() {
       {/* Header */}
       <header className="bg-white/70 backdrop-blur-xl border-b border-agi-teal/10">
         <div className="px-3 md:px-6 py-3 md:py-4 flex flex-col md:flex-row items-center justify-between gap-2">
-          <div className="flex items-center gap-2 md:gap-3">
+          <a
+            href="https://annotation.garden"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 md:gap-4 hover:opacity-90 transition-opacity"
+          >
             <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/AGI-square.svg`}
               alt="AGI Logo"
-              className="w-8 h-8 md:w-10 md:h-10"
+              className="w-10 h-10 md:w-12 md:h-12"
             />
-            <h1 className="text-lg md:text-2xl font-bold text-agi-teal">
-              Annotation Garden
-            </h1>
-          </div>
-          <div className="flex items-center gap-2 text-xs md:text-sm text-agi-teal-600">
-            <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-agi-orange" />
-            <span>Collaborative Image Annotation</span>
+            <div className="flex flex-col">
+              <div className="flex flex-col leading-tight">
+                <span className="text-base md:text-xl font-bold tracking-wide text-agi-teal">
+                  ANNOTATION GARDEN
+                </span>
+                <span className="text-xs md:text-sm font-semibold tracking-widest text-stone-500">
+                  INITIATIVE
+                </span>
+              </div>
+            </div>
+          </a>
+          <div className="flex flex-col items-center md:items-end gap-1">
+            <div className="flex items-center gap-2 px-3 py-1 bg-agi-teal/10 rounded-full">
+              <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-agi-orange" />
+              <span className="text-xs md:text-sm font-medium text-agi-teal">Image Annotation</span>
+            </div>
+            <span className="text-xs text-agi-teal-500">NSD Shared 1000 Dataset</span>
           </div>
         </div>
       </header>
