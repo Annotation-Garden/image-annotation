@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ThumbnailRibbon from './components/ThumbnailRibbon'
 import AnnotationViewer from './components/AnnotationViewer'
 import { ImageData, Annotation, PromptAnnotation } from './types'
-import { Sparkles, ChevronDown, Loader2, ExternalLink } from 'lucide-react'
+import { Sparkles, ChevronDown, Loader2, ExternalLink, Sun, Moon } from 'lucide-react'
 
 export default function Dashboard() {
   const [images, setImages] = useState<ImageData[]>([])
@@ -15,6 +15,24 @@ export default function Dashboard() {
   const [selectedPromptKey, setSelectedPromptKey] = useState<string>('')
   const [loading, setLoading] = useState(true)
   const [imageLoading, setImageLoading] = useState(false)
+  const [isDark, setIsDark] = useState(false)
+
+  // Check initial theme
+  useEffect(() => {
+    setIsDark(document.documentElement.classList.contains('dark'))
+  }, [])
+
+  const toggleTheme = () => {
+    const newIsDark = !isDark
+    setIsDark(newIsDark)
+    if (newIsDark) {
+      document.documentElement.classList.add('dark')
+      localStorage.theme = 'dark'
+    } else {
+      document.documentElement.classList.remove('dark')
+      localStorage.theme = 'light'
+    }
+  }
 
   // Load image list
   useEffect(() => {
@@ -40,7 +58,7 @@ export default function Dashboard() {
         setLoading(false)
       }
     }
-    
+
     loadImageList()
   }, [])
 
@@ -85,11 +103,11 @@ export default function Dashboard() {
       if (response.ok) {
         const data = await response.json()
         setAnnotations(prev => ({ ...prev, [imageId]: data.annotations || [] }))
-        
+
         // Auto-select first model and prompt if nothing selected
         if (data.annotations && data.annotations.length > 0) {
           const firstAnnotation = data.annotations[0]
-          
+
           // Keep sticky selection or set new defaults
           const hasModel = data.annotations.some((a: Annotation) => a.model === selectedModel)
           if (!hasModel || !selectedModel) {
@@ -122,26 +140,26 @@ export default function Dashboard() {
 
   // Format prompt key for display
   const formatPromptKey = (key: string) => {
-    return key.split('_').map(word => 
+    return key.split('_').map(word =>
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ')
   }
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-stone-100 flex items-center justify-center">
+      <div className="min-h-screen bg-[var(--bg-primary)] flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-12 h-12 text-agi-teal animate-spin mx-auto mb-4" />
-          <div className="text-xl text-agi-teal-800">Loading annotation interface...</div>
+          <Loader2 className="w-12 h-12 text-agi-teal dark:text-agi-teal-400 animate-spin mx-auto mb-4" />
+          <div className="text-xl text-agi-teal-800 dark:text-agi-teal-200">Loading annotation interface...</div>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/50 to-stone-100 flex flex-col">
+    <div className="min-h-screen bg-[var(--bg-primary)] flex flex-col">
       {/* Header */}
-      <header className="bg-white/70 backdrop-blur-xl border-b border-agi-teal/10">
+      <header className="glass-header">
         <div className="px-3 md:px-6 py-3 md:py-4 flex flex-col md:flex-row items-center justify-between gap-2">
           <a
             href="https://annotation.garden"
@@ -156,36 +174,46 @@ export default function Dashboard() {
             />
             <div className="flex flex-col">
               <div className="flex flex-col leading-tight">
-                <span className="text-base md:text-xl font-bold tracking-wide text-agi-teal">
+                <span className="text-base md:text-xl font-bold tracking-wide text-agi-teal dark:text-white">
                   ANNOTATION GARDEN
                 </span>
-                <span className="text-xs md:text-sm font-semibold tracking-widest text-stone-500">
+                <span className="text-xs md:text-sm font-semibold tracking-widest text-stone-500 dark:text-zinc-500">
                   INITIATIVE
                 </span>
               </div>
             </div>
           </a>
-          <div className="flex flex-col items-center gap-1">
-            <div className="flex items-center gap-2 px-4 py-2 bg-agi-teal/10 rounded-lg border border-agi-teal/20">
-              <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-agi-orange" />
-              <div className="flex flex-col">
-                <span className="text-xs text-agi-teal-500 font-medium">Project</span>
-                <span className="text-sm md:text-base font-semibold text-agi-teal">Image Annotation</span>
+          <div className="flex items-center gap-4">
+            <div className="flex flex-col items-center gap-1">
+              <div className="flex items-center gap-2 px-4 py-2 bg-agi-teal/10 dark:bg-agi-teal/20 rounded-lg border border-agi-teal/20 dark:border-agi-teal/30">
+                <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-agi-orange" />
+                <div className="flex flex-col">
+                  <span className="text-xs text-agi-teal-500 dark:text-agi-teal-400 font-medium">Project</span>
+                  <span className="text-sm md:text-base font-semibold text-agi-teal dark:text-white">Image Annotation</span>
+                </div>
               </div>
+              <span className="text-xs md:text-sm text-agi-teal-600 dark:text-agi-teal-400 font-medium text-center">NSD Shared 1000 Dataset</span>
             </div>
-            <span className="text-xs md:text-sm text-agi-teal-600 font-medium text-center">NSD Shared 1000 Dataset</span>
+            {/* Theme toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full text-agi-teal-600 dark:text-zinc-400 hover:bg-agi-teal/10 dark:hover:bg-white/10 transition-colors"
+              aria-label="Toggle theme"
+            >
+              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
           </div>
         </div>
       </header>
-      
+
       <main className="flex-1 flex flex-col">
         <div className="flex-1 p-3 md:p-6 flex flex-col lg:flex-row gap-4 md:gap-6 min-h-0">
           {/* Image Viewer - Full width on mobile, constrained on desktop */}
           <div className="flex flex-col gap-4 lg:max-w-[600px] lg:min-w-[400px] w-full">
-            <div className="relative bg-white/80 backdrop-blur-md rounded-2xl border border-agi-teal/10 shadow-sm p-2 h-[50vh] md:h-full md:max-h-[600px] flex items-center justify-center">
+            <div className="relative glass-card rounded-2xl shadow-sm p-2 h-[50vh] md:h-full md:max-h-[600px] flex items-center justify-center">
               {imageLoading && (
-                <div className="absolute inset-0 bg-white/80 backdrop-blur-sm z-10 flex items-center justify-center rounded-2xl">
-                  <Loader2 className="w-8 h-8 text-agi-teal animate-spin" />
+                <div className="absolute inset-0 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm z-10 flex items-center justify-center rounded-2xl">
+                  <Loader2 className="w-8 h-8 text-agi-teal dark:text-agi-teal-400 animate-spin" />
                 </div>
               )}
               {images[selectedImageIndex] && (
@@ -200,15 +228,15 @@ export default function Dashboard() {
             </div>
 
             {/* Image Info Bar */}
-            <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm px-4 py-3">
+            <div className="glass-card rounded-xl shadow-sm px-4 py-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <span className="text-sm text-agi-teal-600">Image ID:</span>
-                  <span className="text-sm font-mono text-agi-teal">
+                  <span className="text-sm text-agi-teal-600 dark:text-agi-teal-400">Image ID:</span>
+                  <span className="text-sm font-mono text-agi-teal dark:text-white">
                     {images[selectedImageIndex]?.id || 'Loading...'}
                   </span>
                 </div>
-                <div className="text-sm text-agi-teal-600">
+                <div className="text-sm text-agi-teal-600 dark:text-agi-teal-400">
                   {selectedImageIndex + 1} / {images.length}
                 </div>
               </div>
@@ -218,8 +246,8 @@ export default function Dashboard() {
           {/* Controls and Annotations - Full width on mobile, side panel on desktop */}
           <div className="flex-1 flex flex-col gap-4 min-w-0 w-full lg:w-auto">
             {/* Model Selection */}
-            <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-4">
-              <label className="block text-sm font-medium text-agi-teal-700 mb-2">
+            <div className="glass-card rounded-xl shadow-sm p-4">
+              <label className="block text-sm font-medium text-agi-teal-700 dark:text-agi-teal-300 mb-2">
                 Vision Model
               </label>
               <div className="relative">
@@ -230,27 +258,27 @@ export default function Dashboard() {
                     // Reset prompt selection when model changes
                     setSelectedPromptKey('')
                   }}
-                  className="w-full px-4 py-3 bg-stone-50 border border-agi-teal/20 rounded-lg text-agi-teal-800 appearance-none focus:outline-none focus:border-agi-teal focus:ring-2 focus:ring-agi-teal/20 transition-all"
+                  className="w-full px-4 py-3 bg-stone-50 dark:bg-zinc-800 border border-agi-teal/20 dark:border-white/10 rounded-lg text-agi-teal-800 dark:text-white appearance-none focus:outline-none focus:border-agi-teal dark:focus:border-agi-teal-400 focus:ring-2 focus:ring-agi-teal/20 dark:focus:ring-agi-teal/30 transition-all"
                 >
                   <option value="">Select a model</option>
                   {availableModels.map(model => (
                     <option key={model} value={model}>{model}</option>
                   ))}
                 </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-agi-teal-500 pointer-events-none" />
+                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-agi-teal-500 dark:text-agi-teal-400 pointer-events-none" />
               </div>
             </div>
 
             {/* Prompt Selection */}
-            <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-4">
-              <label className="block text-sm font-medium text-agi-teal-700 mb-2">
+            <div className="glass-card rounded-xl shadow-sm p-4">
+              <label className="block text-sm font-medium text-agi-teal-700 dark:text-agi-teal-300 mb-2">
                 Annotation Type
               </label>
               <div className="relative">
                 <select
                   value={selectedPromptKey}
                   onChange={(e) => setSelectedPromptKey(e.target.value)}
-                  className="w-full px-4 py-3 bg-stone-50 border border-agi-teal/20 rounded-lg text-agi-teal-800 appearance-none focus:outline-none focus:border-agi-teal focus:ring-2 focus:ring-agi-teal/20 transition-all"
+                  className="w-full px-4 py-3 bg-stone-50 dark:bg-zinc-800 border border-agi-teal/20 dark:border-white/10 rounded-lg text-agi-teal-800 dark:text-white appearance-none focus:outline-none focus:border-agi-teal dark:focus:border-agi-teal-400 focus:ring-2 focus:ring-agi-teal/20 dark:focus:ring-agi-teal/30 transition-all"
                   disabled={!selectedModel}
                 >
                   <option value="">Select annotation type</option>
@@ -260,13 +288,13 @@ export default function Dashboard() {
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-agi-teal-500 pointer-events-none" />
+                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-agi-teal-500 dark:text-agi-teal-400 pointer-events-none" />
               </div>
             </div>
 
             {/* Annotation Display - Fixed height on mobile, flexible on desktop */}
-            <div className="h-[40vh] lg:h-auto lg:flex-1 bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-4 overflow-hidden flex flex-col">
-              <h3 className="font-semibold text-agi-teal mb-3 flex items-center gap-2">
+            <div className="h-[40vh] lg:h-auto lg:flex-1 glass-card rounded-xl shadow-sm p-4 overflow-hidden flex flex-col">
+              <h3 className="font-semibold text-agi-teal dark:text-white mb-3 flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-agi-orange" />
                 Annotation Details
               </h3>
@@ -274,7 +302,7 @@ export default function Dashboard() {
                 {currentPromptAnnotation ? (
                   <AnnotationViewer annotation={currentPromptAnnotation} />
                 ) : (
-                  <div className="text-agi-teal-500 text-center py-8">
+                  <div className="text-agi-teal-500 dark:text-zinc-500 text-center py-8">
                     {!selectedModel ? 'Select a vision model to explore annotations' :
                      !selectedPromptKey ? 'Choose an annotation type to view' :
                      'No annotations available for this selection'}
@@ -295,14 +323,14 @@ export default function Dashboard() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-white/70 backdrop-blur-xl border-t border-agi-teal/10 px-6 py-3">
-          <div className="text-center text-sm text-agi-teal-600">
+        <footer className="glass-footer px-6 py-3">
+          <div className="text-center text-sm text-agi-teal-600 dark:text-zinc-400">
             © 2025{' '}
             <a
               href="https://annotation.garden"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-agi-teal hover:text-agi-orange transition-colors inline-flex items-center gap-1"
+              className="text-agi-teal dark:text-agi-teal-400 hover:text-agi-orange transition-colors inline-flex items-center gap-1"
             >
               Annotation Garden Initiative
               <ExternalLink className="w-3 h-3" />
