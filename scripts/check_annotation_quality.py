@@ -35,6 +35,7 @@ def check_annotation_quality(
     max_response_length: int = 10000,
     max_token_ratio: float = 10.0,
     pattern: str = "shared*.json",
+    validate_schema: bool = False,
 ) -> dict:
     """Check annotation quality across all files.
 
@@ -43,6 +44,8 @@ def check_annotation_quality(
         max_response_length: Maximum response length in characters
         max_token_ratio: Maximum ratio between max and median tokens for a prompt type
         pattern: Glob pattern for files
+        validate_schema: If True, validate structured_inventory against strict schema
+                        (disabled by default - see issue #8)
 
     Returns:
         Dict with quality check results
@@ -100,9 +103,13 @@ def check_annotation_quality(
                     if not response or len(response.strip()) == 0:
                         issue_types.append("empty_response")
 
-                    # 5. Schema validation for structured_inventory
+                    # 5. Schema validation for structured_inventory (optional - see issue #8)
                     schema_errors = []
-                    if prompt_key == "structured_inventory" and prompt_data.get("response_data"):
+                    if (
+                        validate_schema
+                        and prompt_key == "structured_inventory"
+                        and prompt_data.get("response_data")
+                    ):
                         schema_errors = validate_structured_inventory_schema(
                             prompt_data["response_data"]
                         )
@@ -264,6 +271,11 @@ def main():
         action="store_true",
         help="Only list files with issues (one per line)",
     )
+    parser.add_argument(
+        "--validate-schema",
+        action="store_true",
+        help="Enable strict schema validation (disabled by default - see issue #8)",
+    )
 
     args = parser.parse_args()
 
@@ -273,7 +285,10 @@ def main():
 
     # Run quality check
     results = check_annotation_quality(
-        args.directory, max_response_length=args.max_length, pattern=args.pattern
+        args.directory,
+        max_response_length=args.max_length,
+        pattern=args.pattern,
+        validate_schema=args.validate_schema,
     )
 
     if args.list_files_only:
