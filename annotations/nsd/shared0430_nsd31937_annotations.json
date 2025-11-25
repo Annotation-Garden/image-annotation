@@ -103,7 +103,11 @@
             "generation_duration_ms": 311239.550545,
             "load_duration_ms": 37.284317,
             "tokens_per_second": 131.6028118157749
-          }
+          },
+          "quality_flags": [
+            "too_long",
+            "json_parse_error"
+          ]
         }
       },
       "metrics": {
@@ -123,7 +127,10 @@
           "response_data": null,
           "error": "unsupported format string passed to NoneType.__format__",
           "token_metrics": null,
-          "performance_metrics": null
+          "performance_metrics": null,
+          "quality_flags": [
+            "empty_response"
+          ]
         },
         "foreground_background": {
           "prompt_text": "Describe the foreground elements (closest to viewer) and background elements (distant/setting) separately. Explain what appears in each layer and how they relate to each other. Form the response as a continuous paragraph. Maximum 200 words.",
