@@ -133,11 +133,18 @@ The resume functionality will detect missing prompts and re-annotate only those.
 
 ## Example: Fixing Issue #4
 
-Based on analysis, we found:
-- **66 responses >10KB** (normal is 1-3KB)
-- **1,570 invalid schema** in `structured_inventory`
-- **141 JSON parse errors**
-- Most issues in `qwen2.5vl:7b` model
+Based on analysis of 30,000 responses (1,000 images × 6 models × 5 prompts):
+- **143 unique problematic responses (0.5% of total)**
+- **139 files affected (13.9%)**
+- Concentrated in `structured_inventory` prompt (2.4% of those responses)
+
+Real issues:
+- **66 responses >10KB** (normal is 1-3KB) - corruption
+- **141 JSON parse errors** - failed parsing
+- **66 repetitive patterns** (with overlap) - corruption
+- **2 empty responses**
+
+**Note**: Initial analysis showed 98.5% with "invalid_schema", but these were valid JSON responses in alternative formats. Schema validation is now disabled by default (see issue #8).
 
 **Steps to fix**:
 
