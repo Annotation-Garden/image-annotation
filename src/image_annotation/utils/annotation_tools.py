@@ -445,16 +445,20 @@ def flag_problematic_annotations(  # noqa: C901
                     if len(response) > max_response_length:
                         flags.append("too_long")
 
-                    # Check 2: Repetitive pattern (simple check)
+                    # Check 2: Repetitive pattern (check for extreme cases only)
                     if len(response) > 1000:
-                        # Check for repeated sequences
+                        # Check for known corruption patterns
                         sample = response[-500:]  # Check last 500 chars
                         if "!#system" in sample:
                             flags.append("repetitive_pattern")
-                        # Check for same 10-char sequence repeated 20+ times
-                        for i in range(0, min(100, len(response) - 10), 10):
-                            pattern_check = response[i : i + 10]
-                            if response.count(pattern_check) >= 20:
+                        # Check for same short sequence (2-10 chars) repeated 50+ times
+                        # This catches real corruption without flagging normal JSON structure
+                        for pattern_len in range(2, 11):
+                            if len(response) < pattern_len:
+                                continue
+                            pattern_check = response[:pattern_len]
+                            count = response.count(pattern_check)
+                            if count >= 50:
                                 flags.append("repetitive_pattern")
                                 break
 
