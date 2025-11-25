@@ -883,28 +883,6 @@
             "load_duration_ms": 45.3964,
             "tokens_per_second": 35.93576401296759
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 2,\n        \"location\": \"foreground\",\n        \"size\": \"small\",\n        \"description\": \"Two individuals standing on a rocky surface, facing the sky.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"kite\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"rainbow\", \"black\", \"white\"],\n        \"size\": \"medium\",\n        \"description\": \"A kite with a rainbow pattern and black and white dots, flying in the sky.\"\n      }\n    ]\n  },\n  \"natural\": {\n    \"sky\": [\n      {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"description\": \"Cloudy sky.\"\n      },\n    \"rock\": [\n      {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\"brown\"],\n        \"description\": \"Rocky surface where the individuals are standing.\"\n      }\n    ]\n    }\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 30 column 11 (char 650)",
-          "token_metrics": {
-            "input_tokens": 982,
-            "output_tokens": 229,
-            "total_tokens": 1211
-          },
-          "performance_metrics": {
-            "total_duration_ms": 6535.401134,
-            "prompt_eval_duration_ms": 108.305798,
-            "generation_duration_ms": 6378.730258,
-            "load_duration_ms": 45.781356,
-            "tokens_per_second": 35.900561826202875
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

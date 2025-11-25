@@ -822,28 +822,6 @@
             "load_duration_ms": 88.912676,
             "tokens_per_second": 42.184219677370116
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\n          \"red\",\n          \"black\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Skateboarder in motion, facing forward.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"left\",\n        \"color\": [\n          \"gray\",\n          \"black\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Skateboarder performing a trick.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\n          \"black\",\n          \"red\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Skateboarder in motion.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"size\": \"small\",\n        \"description\": \"Person sitting on the skatepark structure.\"\n      },\n      {\n        \"count\": 2,\n        \"location\": \"background\",\n        \"size\": \"small\",\n        \"description\": \"People standing and watching.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"skatepark\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\n          \"gray\",\n          \"white\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Concrete skatepark with ramps and curves.\"\n      },\n      \"fence\": [\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"color\": [\n            \"silver\"\n          ],\n          \"size\": \"medium\",\n          \"description\": \"Chain-link fence surrounding the skatepark.\"\n        }\n      ],\n      \"skateboard\": [\n        {\n          \"count\": 3,\n          \"location\": \"foreground\",\n          \"color\": [\n            \"black\",\n            \"brown\"\n          ],\n          \"size\": \"small\",\n          \"description\": \"Skateboards being used by the people.\"\n        }\n      ]\n    }\n  },\n  \"natural\": {\n    \"tree\": [\n      {\n        \"count\": 3,\n        \"location\": \"background\",\n        \"color\": [\n          \"brown\",\n          \"green\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Bare trees in the background.\"\n      }\n    ]\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 60 column 14 (char 1269)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 604,
-            "total_tokens": 1122
-          },
-          "performance_metrics": {
-            "total_duration_ms": 14632.756704,
-            "prompt_eval_duration_ms": 143.497232,
-            "generation_duration_ms": 14396.545768,
-            "load_duration_ms": 89.414277,
-            "tokens_per_second": 41.95450837537323
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

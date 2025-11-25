@@ -838,28 +838,6 @@
             "load_duration_ms": 89.780732,
             "tokens_per_second": 79.70632963587087
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": [\n    {\n      \"person\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"size\": \"small\",\n        \"description\": \"partially visible in the background, likely another person\"\n      }\n    }\n  ],\n  \"animal\": [\n    {\n      \"wolf\": {\n        \"count\": 1,\n        \"location\": \"top right\",\n        \"size\": \"medium\",\n        \"description\": \"image of a wolf on a calendar\"\n      }\n    }\n  ],\n  \"man-made\": [\n    {\n      \"desk\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"size\": \"large\",\n        \"color\": [\"black\", \"brown\"],\n        \"description\": \"L-shaped desk with drawers\"\n      }\n    },\n    {\n      \"computer\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"size\": \"medium\",\n        \"description\": \"desktop computer with monitor\"\n      }\n    },\n    {\n      \"keyboard\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"size\": \"medium\",\n        \"description\": \"white keyboard on a stand\"\n      }\n    },\n    {\n      \"mouse\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"size\": \"small\",\n        \"description\": \"mouse next to keyboard\"\n      }\n    },\n    {\n      \"calendar\": {\n        \"count\": 1,\n        \"location\": \"top right\",\n        \"size\": \"medium\",\n        \"color\": [\"white\"],\n        \"description\": \"May calendar visible on the desk\"\n      }\n    },\n    {\n      \"headphones\": {\n        \"count\": 1,\n        \"location\": \"top right\",\n        \"size\": \"medium\",\n        \"color\": [\"black\"],\n        \"description\": \"black headphones\"\n      }\n    },\n    {\n      \"mug\": {\n        \"count\": 2,\n        \"location\": \"center\",\n        \"size\": \"medium\",\n        \"color\": [\"red\", \"white\"],\n        \"description\": \"two mugs on the desk\"\n      },\n    {\n      \"photo frame\": {\n        \"count\": 2,\n        \"location\": \"center\",\n        \"size\": \"small\",\n        \"description\": \"two photo frames on the desk\"\n      }\n    },\n    {\n      \"helmet\": {\n        \"count\": 1,\n        \"location\": \"top right\",\n        \"size\": \"medium\",\n        \"color\": [\"silver\", \"brown\"],\n        \"description\": \"Viking-style helmet\"\n      }\n    },\n    {\n      \"coaster\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"size\": \"small\",\n        \"description\": \"coaster on the desk\"\n      }\n    }\n  ],\n  \"natural\": []\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting property name enclosed in double quotes: line 82 column 5 (char 1721)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 711,
-            "total_tokens": 1229
-          },
-          "performance_metrics": {
-            "total_duration_ms": 9176.345601,
-            "prompt_eval_duration_ms": 92.635403,
-            "generation_duration_ms": 8990.086118,
-            "load_duration_ms": 91.724483,
-            "tokens_per_second": 79.08711781708429
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

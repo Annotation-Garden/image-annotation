@@ -304,28 +304,6 @@
             "load_duration_ms": 38.468259,
             "tokens_per_second": 26.889273989557132
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"man-made\": {\n    \"television\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"black\"],\n      \"size\": \"large\",\n      \"description\": \"Flat-screen TV mounted on a stand\"\n    },\n    \"couch\": {\n      \"count\": 1,\n      \"location\": \"left, bottom\",\n      \"color\": [\"beige\"],\n      \"size\": \"large\",\n      \"description\": \"L-shaped couch with cushions\"\n    },\n    \"coffee table\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"Wooden coffee table with items on top\"\n    },\n    \"bookshelf\": {\n      \"count\": 1,\n      \"location\": \"center, top\",\n      \"color\": [\"black\"],\n      \"size\": \"large\",\n      \"description\": \"Multi-tiered bookshelf filled with items\"\n    },\n    \"remote controls\": {\n      \"count\": 2,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Placed on the coffee table\"\n    },\n    \"candles\": {\n      \"count\": 4,\n      \"location\": \"center, middle\",\n      \"color\": [\"pink\", \"yellow\", \"green\", \"blue\"],\n      \"size\": \"small\",\n      \"description\": \"Colorful candles on the coffee table\"\n    },\n    \"books\": {\n      \"count\": 10, // Estimated based on visible stacks\n      \"location\": \"center, middle\",\n      \"color\": [\"various\"],\n      \"size\": \"small\",\n      \"description\": \"Stacked on the coffee table and floor\"\n    },\n    \"electronics\": {\n      \"count\": 3, // Estimated based on visible items\n      \"location\": \"center, middle\",\n      \"color\": [\"black\", \"silver\"],\n      \"size\": \"medium\",\n      \"description\": \"Including game consoles and other devices\"\n    },\n    \"decorations\": {\n      \"count\": 10, // Estimated based on visible items\n      \"location\": \"center, top\",\n      \"color\": [\"various\"],\n      \"size\": \"small\",\n      \"description\": \"Figurines and collectibles on the bookshelf\"\n    },\n    \"floor\": {\n      \"count\": 1,\n      \"location\": \"bottom\",\n      \"color\": [\"brown\"],\n      \"size\": \"large\",\n      \"description\": \"Wooden floor\"\n    },\n    \"window\": {\n      \"count\": 1,\n      \"location\": \"left, top\",\n      \"color\": [\"clear\"],\n      \"size\": \"medium\",\n      \"description\": \"Natural light coming through\"\n    },\n    \"pillows\": {\n      \"count\": 2,\n      \"location\": \"left, bottom\",\n      \"color\": [\"black\", \"beige\"],\n      \"size\": \"medium\",\n      \"description\": \"Placed on the couch\"\n    },\n    \"game cases\": {\n      \"count\": 10, // Estimated based on visible stacks\n      \"location\": \"center, middle\",\n      \"color\": [\"various\"],\n      \"size\": \"small\",\n      \"description\": \"Stacked on the floor\"\n    }\n  },\n  \"natural\": {\n    \"light\": {\n      \"count\": 1,\n      \"location\": \"left, top\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"Natural light coming through the window\"\n    }\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting property name enclosed in double quotes: line 46 column 20 (char 1193)",
-          "token_metrics": {
-            "input_tokens": 486,
-            "output_tokens": 770,
-            "total_tokens": 1256
-          },
-          "performance_metrics": {
-            "total_duration_ms": 28717.333161,
-            "prompt_eval_duration_ms": 135.336905,
-            "generation_duration_ms": 28541.074982,
-            "load_duration_ms": 38.162787,
-            "tokens_per_second": 26.97866147247838
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

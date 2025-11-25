@@ -595,28 +595,6 @@
             "load_duration_ms": 88.999907,
             "tokens_per_second": 80.22709804909852
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": [\n    {\n      \"person\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"tan\", \"black\"],\n        \"size\": \"medium\",\n        \"description\": \"Rider wearing a black helmet, riding breeches, and a dark vest with a number '64' visible.\"\n      }\n    ]\n  },\n  \"animal\": [\n    {\n      \"horse\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"black\", \"white\"],\n        \"size\": \"large\",\n        \"description\": \"Black horse with white socks, in motion, appearing to be galloping.\"\n      }\n    }\n  ],\n  \"man-made\": [\n    {\n      \"helmet\": {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"color\": [\"black\"],\n        \"size\": \"small\",\n        \"description\": \"Black equestrian helmet worn by the rider.\"\n      }\n    },\n    {\n      \"vest\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"black\"],\n        \"size\": \"medium\",\n        \"description\": \"Dark vest worn by the rider, with a visible number '64'.\"\n      }\n    },\n    {\n      \"breeches\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"tan\"],\n        \"size\": \"medium\",\n        \"description\": \"Rider's riding breeches.\"\n      }\n    },\n    {\n      \"boots\": {\n        \"count\": 1,\n        \"location\": \"bottom\",\n        \"color\": [\"black\"],\n        \"size\": \"small\",\n        \"description\": \"Rider's riding boots.\"\n      }\n    },\n    {\n      \"socks\": {\n        \"count\": 1,\n        \"location\": \"bottom\",\n        \"color\": [\"white\"],\n        \"size\": \"small\",\n        \"description\": \"Horse's white socks.\"\n      }\n    }\n  ],\n  \"natural\": [\n    {\n      \"grass\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\"green\", \"brown\"],\n        \"size\": \"large\",\n        \"description\": \"Lush green grass covering the ground.\"\n      }\n    }\n  ]\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 11 column 5 (char 278)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 572,
-            "total_tokens": 1090
-          },
-          "performance_metrics": {
-            "total_duration_ms": 7361.208498,
-            "prompt_eval_duration_ms": 91.50845,
-            "generation_duration_ms": 7177.231315,
-            "load_duration_ms": 88.88374,
-            "tokens_per_second": 79.69646997506587
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

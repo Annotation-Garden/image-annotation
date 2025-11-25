@@ -578,28 +578,6 @@
             "load_duration_ms": 90.568289,
             "tokens_per_second": 79.8990947939919
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": [\n    {\n      \"person\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"size\": \"small\",\n        \"description\": \"Partial view of a person's hand holding a fork\"\n      }\n    ]\n  },\n  \"animal\": [],\n  \"man-made\": [\n    {\n      \"plate\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"size\": \"large\",\n        \"color\": [\"white\", \"gray\"],\n        \"description\": \"Square plate holding food\"\n      }\n    },\n    {\n      \"fork\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"size\": \"small\",\n        \"description\": \"Held by a person in the background\"\n      }\n    }\n  ],\n  \"natural\": [\n    {\n      \"potato\": {\n        \"count\": 1,\n        \"location\": \"top-left\",\n        \"size\": \"medium\",\n        \"color\": [\"brown\", \"beige\"],\n        \"description\": \"Baked potato with visible skin and garnish\"\n      }\n    },\n    {\n      \"green beans\": {\n        \"count\": 1,\n        \"location\": \"left\",\n        \"size\": \"medium\",\n        \"color\": [\"green\"],\n        \"description\": \"Cooked green beans arranged on the plate\"\n      }\n    },\n    {\n      \"broccoli\": {\n        \"count\": 1,\n        \"location\": \"center-left\",\n        \"size\": \"medium\",\n        \"color\": [\"green\"],\n        \"description\": \"Cooked broccoli florets\"\n      }\n    },\n    {\n      \"tomato\": {\n        \"count\": 3,\n        \"location\": \"bottom-right\",\n        \"size\": \"small\",\n        \"color\": [\"red\"],\n        \"description\": \"Small red tomatoes\"\n      }\n    }\n  ]\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 10 column 5 (char 202)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 464,
-            "total_tokens": 982
-          },
-          "performance_metrics": {
-            "total_duration_ms": 6019.089897,
-            "prompt_eval_duration_ms": 93.014827,
-            "generation_duration_ms": 5832.560702,
-            "load_duration_ms": 89.699764,
-            "tokens_per_second": 79.5533940762748
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

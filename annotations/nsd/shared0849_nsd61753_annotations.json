@@ -476,28 +476,6 @@
             "load_duration_ms": 86.919437,
             "tokens_per_second": 164.70743501906253
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"item names\": [\n      \"person\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"A brown and white cat sitting on a laptop.\"\n    }\n  },\n  \"animal\": {\n    \"item names\": [\n      \"cat\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"brown\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"A domestic cat sitting on a laptop.\"\n    }\n  },\n  \"man-made\": {\n    \"item names\": [\n      \"laptop\",\n      \"bed\",\n      \"nightstand\",\n      \"lamp\",\n      \"cup\",\n      \"pillow\",\n      \"blanket\"\n    ],\n    \"attributes\": {\n      \"laptop\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"black\", \"gray\"],\n        \"size\": \"large\",\n        \"description\": \"A black laptop.\"\n      },\n      \"bed\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"white\", \"gray\"],\n        \"size\": \"large\",\n        \"description\": \"A bed with a colorful blanket.\"\n      },\n      \"nightstand\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"brown\"],\n        \"size\": \"medium\",\n        \"description\": \"A wooden nightstand.\"\n      },\n      \"lamp\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"orange\", \"gold\"],\n        \"size\": \"medium\",\n        \"description\": \"An orange and gold decorative lamp.\"\n      },\n      \"cup\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"white\"],\n        \"size\": \"small\",\n        \"description\": \"A white cup.\"\n      },\n      \"pillow\": {\n        \"count\": 1,\n        \"location\": \"left\",\n        \"color\": [\"white\", \"pink\", \"blue\", \"green\", \"red\", \"yellow\", \"purple\"],\n        \"size\": \"small\",\n        \"description\": \"A colorful pillow.\"\n      },\n      \"blanket\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"white\", \"pink\", \"blue\", \"green\", \"red\", \"yellow\", \"purple\"],\n        \"size\": \"large\",\n        \"description\": \"A colorful blanket.\"\n      }\n    ]\n  },\n  \"natural\": {\n    \"item names\": [],\n    \"attributes\": {}\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 86 column 5 (char 2043)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 675,
-            "total_tokens": 1193
-          },
-          "performance_metrics": {
-            "total_duration_ms": 4204.244203,
-            "prompt_eval_duration_ms": 65.259613,
-            "generation_duration_ms": 4048.084237,
-            "load_duration_ms": 87.946826,
-            "tokens_per_second": 166.7455419604204
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

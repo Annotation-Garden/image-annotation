@@ -378,28 +378,6 @@
             "load_duration_ms": 87.533856,
             "tokens_per_second": 168.52391592773404
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"item names\": [\n      \"person\"\n    ],\n    \"attributes\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"A person is present in the background, but not directly visible in the main subject of the image.\"\n    }\n  },\n  \"animal\": {\n    \"item names\": [\n      \"bird\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\n        \"brown\",\n        \"gray\",\n        \"white\"\n      ],\n      \"size\": \"medium\",\n      \"description\": \"A wading bird, likely a shorebird, is standing on a muddy bank, appearing alert and focused. It has a long, slender beak and distinctive patterned plumage.\"\n    }\n  },\n  \"natural\": {\n    \"item names\": [\n      \"water\",\n      \"mud\",\n      \"seaweed\",\n      \"bank\"\n    ],\n    \"attributes\": {\n      \"water\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\n          \"blue\",\n          \"gray\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"A large body of water, reflecting the sky and the surrounding environment.\"\n      },\n      \"mud\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\n          \"brown\",\n          \"gray\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"A muddy bank where the bird is standing.\"\n      },\n      \"seaweed\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\n          \"green\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Dense seaweed growing along the muddy bank.\"\n      },\n      \"bank\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\n          \"brown\",\n          \"gray\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"A muddy bank where the bird is standing.\"\n      }\n    ]\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 77 column 5 (char 1799)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 535,
-            "total_tokens": 1053
-          },
-          "performance_metrics": {
-            "total_duration_ms": 3351.593542,
-            "prompt_eval_duration_ms": 59.066813,
-            "generation_duration_ms": 3203.536314,
-            "load_duration_ms": 85.900766,
-            "tokens_per_second": 167.00294535821516
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

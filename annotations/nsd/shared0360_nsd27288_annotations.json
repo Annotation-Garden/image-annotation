@@ -854,28 +854,6 @@
             "load_duration_ms": 90.70316,
             "tokens_per_second": 41.74299705809412
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 4,\n        \"location\": \"left, middle, foreground\",\n        \"color\": [\n          \"black\",\n          \"blue\",\n          \"red\"\n        ],\n        \"size\": \"small\",\n        \"description\": \"Group of people walking\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right, middle, background\",\n        \"color\": [\n          \"black\"\n        ],\n        \"size\": \"small\",\n        \"description\": \"Person walking on path\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"sign\": [\n      {\n        \"count\": 1,\n        \"location\": \"left, top, foreground\",\n        \"color\": [\n          \"white\",\n          \"red\",\n          \"black\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"No cycling sign with bicycle symbol and text\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"left, middle, foreground\",\n        \"size\": \"small\",\n        \"description\": \"Small sign below the no cycling sign\"\n      },\n      \"path\": [\n        {\n          \"count\": 1,\n          \"location\": \"center, middle, background\",\n          \"color\": [\n            \"gray\",\n            \"black\"\n          ],\n          \"size\": \"medium\",\n          \"description\": \"Asphalt path winding through the park\"\n        }\n      ],\n      \"buildings\": [\n        {\n          \"count\": 3,\n          \"location\": \"right, background\",\n          \"color\": [\n            \"white\",\n            \"beige\"\n          ],\n          \"size\": \"small\",\n          \"description\": \"Buildings in the background\"\n        }\n      ],\n      \"pole\": [\n        {\n          \"count\": 1,\n          \"location\": \"left, center, foreground\",\n          \"color\": [\n            \"brown\",\n            \"gray\"\n          ],\n          \"size\": \"medium\",\n          \"description\": \"Wooden pole holding the sign\"\n        }\n      ]\n    }\n  },\n  \"natural\": {\n    \"tree\": [\n      {\n        \"count\": 5,\n        \"location\": \"background\",\n        \"color\": [\n          \"green\",\n          \"brown\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Mature trees lining the park\"\n      }\n    ],\n    \"grass\": [\n      {\n        \"count\": 1,\n        \"location\": \"foreground, middle\",\n        \"color\": [\n          \"green\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Well-maintained grass lawn\"\n      }\n    ],\n    \"sky\": [\n      {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"size\": \"large\",\n        \"description\": \"Blue sky with white clouds\"\n      }\n    ]\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 45 column 13 (char 966)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 714,
-            "total_tokens": 1232
-          },
-          "performance_metrics": {
-            "total_duration_ms": 17331.472615,
-            "prompt_eval_duration_ms": 139.278139,
-            "generation_duration_ms": 17095.490846,
-            "load_duration_ms": 91.646486,
-            "tokens_per_second": 41.765399217365065
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

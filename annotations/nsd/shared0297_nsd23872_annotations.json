@@ -911,28 +911,6 @@
             "load_duration_ms": 89.297761,
             "tokens_per_second": 41.99463635297983
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"pink\", \"black\", \"navy\"],\n        \"size\": \"medium\",\n        \"description\": \"Preparing to hit a tennis ball with a racket.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"purple\", \"white\"],\n        \"size\": \"small\",\n        \"description\": \"Standing on the tennis court.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"white\"],\n        \"size\": \"small\",\n        \"description\": \"Standing on the tennis court.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"tennis court\": [\n      {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\"green\", \"blue\"],\n        \"size\": \"large\",\n        \"description\": \"Surface is a hard court.\"\n      },\n      \"net\": [\n        {\n          \"count\": 1,\n          \"location\": \"center\",\n          \"color\": [\"black\"],\n          \"size\": \"medium\",\n          \"description\": \"Separates the two sides of the court.\"\n        }\n      ]\n    },\n    \"fence\": [\n      {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"grey\"],\n        \"size\": \"medium\",\n        \"description\": \"Surrounds the tennis court.\"\n      }\n    ]\n  },\n  \"natural\": {\n    \"tree\": [\n      {\n        \"count\": 2,\n        \"location\": \"left\",\n        \"color\": [\"green\"],\n        \"size\": \"medium\",\n        \"description\": \"Evergreen trees.\"\n      }\n    ],\n    \"sky\": [\n      {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"size\": \"large\",\n        \"description\": \"Clear blue sky.\"\n      }\n    ]\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 36 column 12 (char 838)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 500,
-            "total_tokens": 1018
-          },
-          "performance_metrics": {
-            "total_duration_ms": 12166.077122,
-            "prompt_eval_duration_ms": 140.187769,
-            "generation_duration_ms": 11936.07539,
-            "load_duration_ms": 87.557269,
-            "tokens_per_second": 41.88981584507234
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

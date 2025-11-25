@@ -880,28 +880,6 @@
             "load_duration_ms": 88.668774,
             "tokens_per_second": 42.06845905064923
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 1,\n        \"location\": \"left, middle, foreground\",\n        \"color\": [\n          \"brown\",\n          \"white\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Girl wearing a white and red dress, holding onto a fire hydrant.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right, middle, foreground\",\n        \"color\": [\n          \"green\",\n          \"black\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Boy wearing a green t-shirt and shorts, looking down.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"car\": [\n      {\n        \"count\": 2,\n        \"location\": \"left, background\",\n        \"color\": [\n          \"silver\",\n          \"black\"\n        ],\n        \"size\": \"small\",\n        \"description\": \"Cars parked along the street.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"center, background\",\n        \"color\": [\n          \"white\"\n        ],\n        \"size\": \"small\",\n        \"description\": \"Car parked along the street.\"\n      }\n    ],\n    \"fire hydrant\": [\n      {\n        \"count\": 1,\n        \"location\": \"center, foreground\",\n        \"color\": [\n          \"yellow\",\n          \"brown\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Rusty fire hydrant being held by a child.\"\n      },\n      \"building\": [\n        {\n          \"count\": 5,\n          \"location\": \"background\",\n          \"color\": [\n            \"white\",\n            \"grey\"\n          ],\n          \"size\": \"medium\",\n          \"description\": \"Buildings lining the street.\"\n        }\n      ],\n      \"traffic light\": [\n        {\n          \"count\": 2,\n          \"location\": \"center, background\",\n          \"color\": [\n            \"black\",\n            \"grey\"\n          ],\n          \"size\": \"small\",\n          \"description\": \"Traffic lights above the street.\"\n        }\n      ],\n      \"street sign\": [\n        {\n          \"count\": 1,\n          \"location\": \"right, background\",\n          \"color\": [\n            \"white\",\n            \"black\"\n          ],\n          \"size\": \"small\",\n          \"description\": \"Street sign on a pole.\"\n        }\n      ]\n    }\n  },\n  \"natural\": {\n    \"tree\": [\n      {\n        \"count\": 1,\n        \"location\": \"left, background\",\n        \"color\": [\n          \"green\",\n          \"brown\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Large tree with green leaves.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right, background\",\n        \"color\": [\n          \"green\",\n          \"brown\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Large tree with green leaves.\"\n      }\n    ],\n    \"sky\": [\n      {\n        \"count\": 1,\n        \"location\": \"top, background\",\n        \"size\": \"large\",\n        \"description\": \"Clear blue sky.\"\n      }\n    ]\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 59 column 17 (char 1311)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 799,
-            "total_tokens": 1317
-          },
-          "performance_metrics": {
-            "total_duration_ms": 19244.815464,
-            "prompt_eval_duration_ms": 140.437415,
-            "generation_duration_ms": 19013.028471,
-            "load_duration_ms": 89.052635,
-            "tokens_per_second": 42.02381547046493
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {

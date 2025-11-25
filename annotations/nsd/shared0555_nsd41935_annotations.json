@@ -253,28 +253,6 @@
             "load_duration_ms": 38.412173,
             "tokens_per_second": 26.610181679422233
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"man-made\": {\n    \"bench\": {\n      \"count\": 1,\n      \"location\": \"left, bottom\",\n      \"color\": [\"black\", \"wooden\"],\n      \"size\": \"small\",\n      \"description\": \"Wooden bench with black frame, positioned on a snowy surface.\"\n    },\n    \"wall\": {\n      \"count\": 2,\n      \"location\": \"left, top; center, middle\",\n      \"color\": [\"orange\", \"gray\"],\n      \"size\": \"large\",\n      \"description\": \"Orange wall on the left and a gray stone wall in the center.\"\n    },\n    \"buildings\": {\n      \"count\": 10, // Approximate count of visible buildings\n      \"location\": \"center, middle; right, middle\",\n      \"color\": [\"gray\", \"red\", \"brown\"],\n      \"size\": \"medium\",\n      \"description\": \"A mix of residential and church buildings with varying roof colors.\"\n    },\n    \"church\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"gray\", \"black\"],\n      \"size\": \"large\",\n      \"description\": \"A prominent church with a tall spire and a gray roof.\"\n    },\n    \"snow\": {\n      \"count\": 1,\n      \"location\": \"bottom, foreground\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Snow covering the ground and rooftops.\"\n    }\n  },\n  \"natural\": {\n    \"sky\": {\n      \"count\": 1,\n      \"location\": \"top, center\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"A clear sky with some clouds.\"\n    },\n    \"snow\": {\n      \"count\": 1,\n      \"location\": \"bottom, foreground\",\n      \"color\": [\"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Snow covering the ground and rooftops.\"\n    }\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting property name enclosed in double quotes: line 18 column 20 (char 502)",
-          "token_metrics": {
-            "input_tokens": 486,
-            "output_tokens": 428,
-            "total_tokens": 914
-          },
-          "performance_metrics": {
-            "total_duration_ms": 16237.041447,
-            "prompt_eval_duration_ms": 134.7587,
-            "generation_duration_ms": 16057.933718,
-            "load_duration_ms": 40.549648,
-            "tokens_per_second": 26.65349150870122
-          },
-          "quality_flags": [
-            "json_parse_error"
-          ]
         }
       },
       "metrics": {
