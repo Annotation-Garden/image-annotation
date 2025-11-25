@@ -2,28 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --bg-primary: #f5f5f4;
+    --bg-secondary: #fafaf9;
+    --bg-card: rgba(255, 255, 255, 0.8);
+    --bg-card-solid: #ffffff;
+    --text-primary: #1c1917;
+    --text-secondary: #57534e;
+    --border: rgba(24, 74, 61, 0.1);
+  }
+
+  .dark {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111111;
+    --bg-card: rgba(24, 24, 27, 0.8);
+    --bg-card-solid: #18181b;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --border: rgba(255, 255, 255, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .glass-card {
+    @apply bg-[var(--bg-card)] backdrop-blur-md border border-[var(--border)];
+  }
+
+  .glass-header {
+    @apply bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl border-b border-agi-teal/10 dark:border-white/10;
+  }
+
+  .glass-footer {
+    @apply bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl border-t border-agi-teal/10 dark:border-white/10;
+  }
 }
 
 /* Custom scrollbar for thumbnail ribbon */
@@ -32,15 +52,31 @@ body {
 }
 
 .scrollbar-thin::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 3px;
+  @apply bg-stone-100 dark:bg-zinc-800 rounded;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3px;
+  @apply bg-agi-teal/30 dark:bg-agi-teal/50 rounded;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  @apply bg-agi-teal/50 dark:bg-agi-teal/70;
+}
+
+/* General scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-stone-300 dark:bg-zinc-700 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-stone-400 dark:bg-zinc-600;
 }
