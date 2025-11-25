@@ -6,6 +6,12 @@ from typing import Any
 
 from tqdm import tqdm
 
+try:
+    from .validation import has_repetitive_pattern
+except ImportError:
+    # Handle direct script execution
+    from validation import has_repetitive_pattern
+
 
 def _normalize_paths(
     paths: str | Path | list[str | Path],
@@ -446,21 +452,8 @@ def flag_problematic_annotations(  # noqa: C901
                         flags.append("too_long")
 
                     # Check 2: Repetitive pattern (check for extreme cases only)
-                    if len(response) > 1000:
-                        # Check for known corruption patterns
-                        sample = response[-500:]  # Check last 500 chars
-                        if "!#system" in sample:
-                            flags.append("repetitive_pattern")
-                        # Check for same short sequence (2-10 chars) repeated 50+ times
-                        # This catches real corruption without flagging normal JSON structure
-                        for pattern_len in range(2, 11):
-                            if len(response) < pattern_len:
-                                continue
-                            pattern_check = response[:pattern_len]
-                            count = response.count(pattern_check)
-                            if count >= 50:
-                                flags.append("repetitive_pattern")
-                                break
+                    if has_repetitive_pattern(response):
+                        flags.append("repetitive_pattern")
 
                     # Check 3: JSON parsing error
                     if error and "JSON parsing failed" in error:
