@@ -916,21 +916,75 @@
         },
         "structured_inventory": {
           "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"baby\": {\n      \"count\": 1,\n      \"location\": \"left, middle, foreground\",\n      \"color\": [\"skin\"],\n      \"size\": \"small\",\n      \"description\": \"holding a book, looking up\"\n    },\n    \"child\": {\n      \"count\": 1,\n      \"location\": \"right, middle, foreground\",\n      \"color\": [\"skin\", \"blue\"],\n      \"size\": \"medium\",\n      \"description\": \"holding a book, looking at the baby\"\n    }\n  },\n  \"man-made\": {\n    \"book\": {\n      \"count\": 2,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"white\", \"green\", \"blue\", \"pink\"],\n      \"size\": \"small\",\n      \"description\": \"one book titled 'The Lady with the Alligator Purs'\", \"one book with green cover\"\n    },\n    \"bedsheet\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"with various printed patterns\"\n    },\n    \"pacifier\": {\n      \"count\": 1,\n      \"location\": \"left, top, foreground\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"in baby's mouth\"\n    }\n  },\n  \"natural\": {\n    \"hair\": {\n      \"count\": 2,\n      \"location\": \"left top, right top, foreground\",\n      \"color\": [\"brown\"],\n      \"size\": \"small\",\n      \"description\": \"on heads of baby and child\"\n    }\n  }\n}\n```",
+          "response": "```json\n{\n  \"human\": {\n    \"baby\": {\n      \"count\": 1,\n      \"location\": \"left, middle, foreground\",\n      \"color\": [\"skin\"],\n      \"size\": \"small\",\n      \"description\": \"holding a book, looking at the pages\"\n    },\n    \"child\": {\n      \"count\": 1,\n      \"location\": \"right, middle, foreground\",\n      \"color\": [\"skin\"],\n      \"size\": \"medium\",\n      \"description\": \"holding a book, reading to the baby\"\n    }\n  },\n  \"man-made\": {\n    \"book\": {\n      \"count\": 2,\n      \"location\": \"center, middle, foreground\",\n      \"color\": [\"white\", \"green\", \"blue\", \"pink\"],\n      \"size\": \"small\",\n      \"description\": \"one book titled 'The Lady with the Alligator Purse'\"\n    },\n    \"bedsheet\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"with various patterns and designs\"\n    },\n    \"toy\": {\n      \"count\": 2,\n      \"location\": \"left, top, background\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"vehicles on the bedsheet\"\n    }\n  }\n}\n```",
           "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ':' delimiter: line 25 column 5 (char 682)",
+          "response_data": {
+            "human": {
+              "baby": {
+                "count": 1,
+                "location": "left, middle, foreground",
+                "color": [
+                  "skin"
+                ],
+                "size": "small",
+                "description": "holding a book, looking at the pages"
+              },
+              "child": {
+                "count": 1,
+                "location": "right, middle, foreground",
+                "color": [
+                  "skin"
+                ],
+                "size": "medium",
+                "description": "holding a book, reading to the baby"
+              }
+            },
+            "man-made": {
+              "book": {
+                "count": 2,
+                "location": "center, middle, foreground",
+                "color": [
+                  "white",
+                  "green",
+                  "blue",
+                  "pink"
+                ],
+                "size": "small",
+                "description": "one book titled 'The Lady with the Alligator Purse'"
+              },
+              "bedsheet": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "blue",
+                  "white"
+                ],
+                "size": "large",
+                "description": "with various patterns and designs"
+              },
+              "toy": {
+                "count": 2,
+                "location": "left, top, background",
+                "color": [
+                  "red"
+                ],
+                "size": "small",
+                "description": "vehicles on the bedsheet"
+              }
+            }
+          },
+          "error": null,
           "token_metrics": {
             "input_tokens": 982,
-            "output_tokens": 365,
-            "total_tokens": 1347
+            "output_tokens": 298,
+            "total_tokens": 1280
           },
           "performance_metrics": {
-            "total_duration_ms": 10364.646601,
-            "prompt_eval_duration_ms": 102.847712,
-            "generation_duration_ms": 10213.497027,
-            "load_duration_ms": 44.940524,
-            "tokens_per_second": 35.73702513792291
+            "total_duration_ms": 52414.347417,
+            "prompt_eval_duration_ms": 11268.2145,
+            "generation_duration_ms": 20480.802,
+            "load_duration_ms": 20539.877167,
+            "tokens_per_second": 14.550211461445699
           }
         }
       },

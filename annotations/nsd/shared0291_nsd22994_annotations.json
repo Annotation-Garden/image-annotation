@@ -244,25 +244,6 @@
             "load_duration_ms": 37.505506,
             "tokens_per_second": 26.901240378428646
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"medium\",\n      \"description\": \"Tennis player in action, wearing a blue shirt and white shorts, holding a tennis racket, preparing to hit the ball.\"\n    },\n    \"spectators\": {\n      \"count\": 50, // Estimated number of spectators\n      \"location\": \"center, background\",\n      \"color\": [\"various\"],\n      \"size\": \"small\",\n      \"description\": \"Audience members sitting in the stands, watching the tennis match.\"\n    },\n    \"officials\": {\n      \"count\": 3,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\"],\n      \"size\": \"small\",\n      \"description\": \"Officials or umpires standing near the sidelines, dressed in black attire.\"\n    }\n  },\n  \"man-made\": {\n    \"tennis_court\": {\n      \"count\": 1,\n      \"location\": \"center, foreground\",\n      \"color\": [\"blue\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Indoor tennis court with a blue playing surface and white lines marking the boundaries.\"\n    },\n    \"tennis_net\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"white\", \"black\"],\n      \"size\": \"medium\",\n      \"description\": \"Tennis net dividing the court into two halves.\"\n    },\n    \"seating\": {\n      \"count\": 1,\n      \"location\": \"center, background\",\n      \"color\": [\"black\", \"various\"],\n      \"size\": \"large\",\n      \"description\": \"Rows of spectator seating in the background.\"\n    },\n    \"advertising\": {\n      \"count\": 5,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\", \"white\", \"gold\"],\n      \"size\": \"small\",\n      \"description\": \"Advertising banners and signs along the sidelines, including Rolex and other brands.\"\n    },\n    \"clock\": {\n      \"count\": 1,\n      \"location\": \"center, middle\",\n      \"color\": [\"black\", \"white\"],\n      \"size\": \"small\",\n      \"description\": \"Digital clock displaying time, located on the advertising banner.\"\n    }\n  },\n  \"natural\": {}\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting property name enclosed in double quotes: line 11 column 20 (char 332)",
-          "token_metrics": {
-            "input_tokens": 486,
-            "output_tokens": 513,
-            "total_tokens": 999
-          },
-          "performance_metrics": {
-            "total_duration_ms": 19265.634542,
-            "prompt_eval_duration_ms": 141.822792,
-            "generation_duration_ms": 19082.366402,
-            "load_duration_ms": 38.613673,
-            "tokens_per_second": 26.883458224878915
-          }
         }
       },
       "metrics": {

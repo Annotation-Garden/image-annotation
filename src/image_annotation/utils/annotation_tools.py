@@ -6,6 +6,12 @@ from typing import Any
 
 from tqdm import tqdm
 
+try:
+    from .validation import has_repetitive_pattern
+except ImportError:
+    # Handle direct script execution
+    from validation import has_repetitive_pattern
+
 
 def _normalize_paths(
     paths: str | Path | list[str | Path],
@@ -387,6 +393,261 @@ def export_to_csv(
     print(f"Exported annotations to {output_file}")
 
 
+def flag_problematic_annotations(  # noqa: C901
+    paths: str | Path | list[str | Path],
+    max_response_length: int = 10000,
+    pattern: str = "*.json",
+    exclude_pattern: str | None = None,
+    in_place: bool = True,
+    output_dir: str | Path | None = None,
+) -> dict[str, Any]:
+    """Flag problematic annotations by adding quality_flags field to prompts.
+
+    Checks for:
+    - Abnormally long responses
+    - Repetitive patterns
+    - JSON parsing errors
+    - Empty responses
+
+    Args:
+        paths: Path to file, directory, or list of paths
+        max_response_length: Maximum response length before flagging
+        pattern: Glob pattern for directory search (default: "*.json")
+        exclude_pattern: Optional pattern to exclude files
+        in_place: If True, modify files in place
+        output_dir: Optional directory to save flagged files
+
+    Returns:
+        Dict with statistics about flagged annotations
+    """
+    # Normalize input to list of files
+    files = _normalize_paths(paths, pattern, exclude_pattern)
+
+    # Process files
+    single_file = len(files) == 1
+    flagged_files = 0
+    total_flagged = 0
+    flagged_by_type = {}
+
+    for file_path in tqdm(files, desc="Flagging problematic annotations", disable=single_file):
+        try:
+            with open(file_path) as f:
+                data = json.load(f)
+
+            if "annotations" not in data:
+                if single_file:
+                    raise ValueError(f"No 'annotations' field found in {file_path}")
+                continue
+
+            file_had_flags = False
+
+            for ann in data["annotations"]:
+                for prompt_key, prompt_data in ann.get("prompts", {}).items():
+                    response = prompt_data.get("response", "")
+                    error = prompt_data.get("error")
+                    flags = []
+
+                    # Check 1: Response too long
+                    if len(response) > max_response_length:
+                        flags.append("too_long")
+
+                    # Check 2: Repetitive pattern (check for extreme cases only)
+                    if has_repetitive_pattern(response):
+                        flags.append("repetitive_pattern")
+
+                    # Check 3: JSON parsing error
+                    if error and "JSON parsing failed" in error:
+                        flags.append("json_parse_error")
+
+                    # Check 4: Empty response
+                    if not response or len(response.strip()) == 0:
+                        flags.append("empty_response")
+
+                    # Add flags if any issues found
+                    if flags:
+                        prompt_data["quality_flags"] = flags
+                        file_had_flags = True
+                        total_flagged += 1
+
+                        for flag in flags:
+                            flagged_by_type[flag] = flagged_by_type.get(flag, 0) + 1
+                    else:
+                        # Remove quality_flags if present but no issues
+                        prompt_data.pop("quality_flags", None)
+
+            if file_had_flags:
+                flagged_files += 1
+
+                # Save the file
+                if in_place:
+                    with open(file_path, "w") as f:
+                        json.dump(data, f, indent=2)
+                elif output_dir:
+                    output_dir = Path(output_dir)
+                    output_dir.mkdir(parents=True, exist_ok=True)
+                    output_file = output_dir / file_path.name
+                    with open(output_file, "w") as f:
+                        json.dump(data, f, indent=2)
+
+        except Exception as e:
+            if single_file:
+                raise
+            print(f"Error processing {file_path}: {e}")
+
+    return {
+        "flagged_files": flagged_files,
+        "total_flagged": total_flagged,
+        "flagged_by_type": flagged_by_type,
+        "total_files": len(files),
+    }
+
+
+def remove_flagged_annotations(  # noqa: C901
+    paths: str | Path | list[str | Path],
+    flag_types: list[str] | None = None,
+    pattern: str = "*.json",
+    exclude_pattern: str | None = None,
+    in_place: bool = True,
+    output_dir: str | Path | None = None,
+) -> dict[str, Any]:
+    """Remove annotations that have quality_flags set.
+
+    This prepares files for re-annotation by removing problematic prompts.
+
+    Args:
+        paths: Path to file, directory, or list of paths
+        flag_types: Optional list of flag types to remove (if None, removes all flagged)
+        pattern: Glob pattern for directory search (default: "*.json")
+        exclude_pattern: Optional pattern to exclude files
+        in_place: If True, modify files in place
+        output_dir: Optional directory to save modified files
+
+    Returns:
+        Dict with statistics about removed annotations
+    """
+    # Normalize input to list of files
+    files = _normalize_paths(paths, pattern, exclude_pattern)
+
+    # Process files
+    single_file = len(files) == 1
+    files_modified = 0
+    total_removed = 0
+
+    for file_path in tqdm(files, desc="Removing flagged annotations", disable=single_file):
+        try:
+            with open(file_path) as f:
+                data = json.load(f)
+
+            if "annotations" not in data:
+                if single_file:
+                    raise ValueError(f"No 'annotations' field found in {file_path}")
+                continue
+
+            file_was_modified = False
+
+            for ann in data["annotations"]:
+                prompts_to_remove = []
+
+                for prompt_key, prompt_data in ann.get("prompts", {}).items():
+                    flags = prompt_data.get("quality_flags", [])
+
+                    if flags:
+                        # Check if we should remove this prompt
+                        should_remove = False
+                        if flag_types is None:
+                            # Remove all flagged
+                            should_remove = True
+                        else:
+                            # Remove only if has one of the specified flag types
+                            for flag in flags:
+                                if flag in flag_types:
+                                    should_remove = True
+                                    break
+
+                        if should_remove:
+                            prompts_to_remove.append(prompt_key)
+                            total_removed += 1
+                            file_was_modified = True
+
+                # Remove the prompts
+                for prompt_key in prompts_to_remove:
+                    del ann["prompts"][prompt_key]
+
+            if file_was_modified:
+                files_modified += 1
+
+                # Save the file
+                if in_place:
+                    with open(file_path, "w") as f:
+                        json.dump(data, f, indent=2)
+                elif output_dir:
+                    output_dir = Path(output_dir)
+                    output_dir.mkdir(parents=True, exist_ok=True)
+                    output_file = output_dir / file_path.name
+                    with open(output_file, "w") as f:
+                        json.dump(data, f, indent=2)
+
+        except Exception as e:
+            if single_file:
+                raise
+            print(f"Error processing {file_path}: {e}")
+
+    return {
+        "files_modified": files_modified,
+        "total_removed": total_removed,
+        "total_files": len(files),
+    }
+
+
+def list_flagged_annotations(
+    directory: str | Path, pattern: str = "shared*.json"
+) -> list[dict[str, Any]]:
+    """List all flagged annotations in a directory.
+
+    Args:
+        directory: Directory containing annotation files
+        pattern: Glob pattern to match files
+
+    Returns:
+        List of dicts with flagged annotation info
+    """
+    directory = Path(directory)
+    files = list(directory.glob(pattern))
+
+    flagged = []
+
+    for file_path in files:
+        try:
+            with open(file_path) as f:
+                data = json.load(f)
+
+            image_id = data.get("image", {}).get("id", file_path.stem)
+
+            for ann in data.get("annotations", []):
+                model = ann.get("model", "unknown")
+
+                for prompt_key, prompt_data in ann.get("prompts", {}).items():
+                    flags = prompt_data.get("quality_flags", [])
+
+                    if flags:
+                        flagged.append(
+                            {
+                                "file": file_path.name,
+                                "image_id": image_id,
+                                "model": model,
+                                "prompt": prompt_key,
+                                "flags": flags,
+                                "response_length": len(prompt_data.get("response", "")),
+                                "error": prompt_data.get("error"),
+                            }
+                        )
+
+        except Exception as e:
+            print(f"Error reading {file_path}: {e}")
+
+    return flagged
+
+
 if __name__ == "__main__":
     # Example usage
     import sys
@@ -398,6 +659,9 @@ if __name__ == "__main__":
         print("  reorder <path> - Reorder annotations to standard order")
         print("  remove <path> <model> - Remove a model from file(s)")
         print("  export <directory> <output.csv> - Export to CSV")
+        print("  flag <path> [max_length] - Flag problematic annotations")
+        print("  list-flagged <directory> - List all flagged annotations")
+        print("  remove-flagged <path> - Remove flagged annotations for re-processing")
         print("\nPath can be a file, directory, or multiple files")
         sys.exit(1)
 
@@ -448,3 +712,38 @@ if __name__ == "__main__":
             sys.exit(1)
         export_to_csv(sys.argv[2], sys.argv[3], pattern="shared*.json")
         print(f"Exported to {sys.argv[3]}")
+
+    elif command == "flag":
+        if len(sys.argv) < 3:
+            print("Usage: python annotation_tools.py flag <path> [max_length]")
+            sys.exit(1)
+        max_length = int(sys.argv[3]) if len(sys.argv) > 3 else 10000
+        result = flag_problematic_annotations(
+            sys.argv[2], max_response_length=max_length, pattern="shared*.json"
+        )
+        print(f"Flagged {result['total_flagged']} annotations in {result['flagged_files']} files")
+        print("By flag type:")
+        for flag_type, count in result["flagged_by_type"].items():
+            print(f"  {flag_type}: {count}")
+
+    elif command == "list-flagged":
+        if len(sys.argv) < 3:
+            print("Usage: python annotation_tools.py list-flagged <directory>")
+            sys.exit(1)
+        flagged = list_flagged_annotations(sys.argv[2])
+        print(f"Found {len(flagged)} flagged annotations:")
+        for item in flagged:
+            print(
+                f"  {item['file']:50s} | {item['model']:25s} | "
+                f"{item['prompt']:25s} | {item['flags']}"
+            )
+
+    elif command == "remove-flagged":
+        if len(sys.argv) < 3:
+            print("Usage: python annotation_tools.py remove-flagged <path>")
+            sys.exit(1)
+        result = remove_flagged_annotations(sys.argv[2], pattern="shared*.json")
+        print(
+            f"Removed {result['total_removed']} flagged annotations from "
+            f"{result['files_modified']} files"
+        )

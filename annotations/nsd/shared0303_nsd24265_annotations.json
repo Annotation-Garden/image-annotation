@@ -827,25 +827,6 @@
             "load_duration_ms": 85.527688,
             "tokens_per_second": 42.30696647526664
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\n          \"black\",\n          \"pink\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Female tennis player holding a racket, appears to be walking towards the net.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"right, background\",\n        \"color\": [\n          \"gray\"\n        ],\n        \"size\": \"small\",\n        \"description\": \"Person standing on the tennis court in the background.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"tennis_court\": [\n      {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\n          \"green\",\n          \"white\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Outdoor tennis court with white lines marking the boundaries.\"\n      },\n      {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\n          \"gray\",\n          \"silver\"\n        ],\n        \"size\": \"medium\",\n        \"description\": \"Fence surrounding the tennis court.\"\n      },\n      \"tennis_net\": [\n        {\n          \"count\": 2,\n          \"location\": \"center\",\n          \"color\": [\n            \"black\"\n          ],\n          \"size\": \"medium\",\n          \"description\": \"Standard tennis net dividing the court.\"\n        }\n      ],\n      \"light_pole\": [\n        {\n          \"count\": 1,\n          \"location\": \"left, background\",\n          \"color\": [\n            \"silver\"\n          ],\n          \"size\": \"medium\",\n          \"description\": \"Tall light pole with multiple lights.\"\n        }\n      ]\n    }\n  },\n  \"natural\": {\n    \"tree\": [\n      {\n        \"count\": 5,\n        \"location\": \"background\",\n        \"color\": [\n          \"green\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Dense trees forming a backdrop to the tennis court.\"\n      }\n    ],\n    \"sky\": [\n      {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"size\": \"large\",\n        \"description\": \"Overcast sky.\"\n      }\n    ]\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 47 column 19 (char 1064)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 572,
-            "total_tokens": 1090
-          },
-          "performance_metrics": {
-            "total_duration_ms": 13748.638965,
-            "prompt_eval_duration_ms": 138.758697,
-            "generation_duration_ms": 13523.342486,
-            "load_duration_ms": 84.395702,
-            "tokens_per_second": 42.297235361166166
-          }
         }
       },
       "metrics": {

@@ -446,21 +446,56 @@
         },
         "structured_inventory": {
           "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 4,\n        \"location\": \"foreground\",\n        \"color\": [\"white\", \"black\", \"gray\"],\n        \"size\": \"medium\",\n        \"description\": \"A baseball player swinging a bat, mid-swing, with a focused expression.\"\n      },\n      {\n        \"count\": 3,\n        \"location\": \"background\",\n        \"color\": [\"white\", \"black\"],\n        \"size\": \"small\",\n        \"description\": \"Spectators watching the game.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"baseball_bat\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"black\", \"white\"],\n        \"size\": \"medium\",\n        \"description\": \"A wooden baseball bat, being swung.\"\n      },\n      \"baseball_field\": [\n        {\n          \"count\": 1,\n          \"location\": \"center\",\n          \"color\": [\"brown\", \"tan\"],\n          \"size\": \"large\",\n          \"description\": \"A baseball field with dirt and grass.\"\n        }\n      ],\n      \"scoreboard\": [\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"color\": [\"green\", \"white\"],\n          \"size\": \"small\",\n          \"description\": \"A scoreboard with text and numbers.\"\n        }\n      ],\n      \"fence\": [\n        {\n          \"count\": 1,\n          \"location\": \"right\",\n          \"color\": [\"black\", \"silver\"],\n          \"size\": \"large\",\n          \"description\": \"A chain-link fence surrounding the baseball field.\"\n        }\n      ],\n      \"bleachers\": [\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"color\": [\"green\", \"brown\"],\n          \"size\": \"large\",\n          \"description\": \"Bleachers for spectators.\"\n        }\n      ]\n    }\n  },\n  \"natural\": {\n    \"sky\": [\n      {\n        \"count\": 1,\n        \"location\": \"top\",\n        \"color\": [\"blue\", \"gray\"],\n        \"size\": \"large\",\n        \"description\": \"The sky, appearing overcast.\"\n      }\n    ],\n    \"grass\": [\n      {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\"green\"],\n        \"size\": \"medium\",\n        \"description\": \"Grass covering the baseball field.\"\n      }\n    ]\n  }\n}\n```",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"A person wearing gray and white clothing, appearing to be in the foreground.\"\n    }\n  },\n  \"man-made\": {\n    \"clothing\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"Gray and white shirt and pants.\"\n    },\n    \"building\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\", \"white\"],\n      \"size\": \"large\",\n      \"description\": \"A building in the background.\"\n    }\n  }\n}\n```",
           "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 29 column 23 (char 719)",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "A person wearing gray and white clothing, appearing to be in the foreground."
+              }
+            },
+            "man-made": {
+              "clothing": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "Gray and white shirt and pants."
+              },
+              "building": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray",
+                  "white"
+                ],
+                "size": "large",
+                "description": "A building in the background."
+              }
+            }
+          },
+          "error": null,
           "token_metrics": {
             "input_tokens": 518,
-            "output_tokens": 610,
-            "total_tokens": 1128
+            "output_tokens": 207,
+            "total_tokens": 725
           },
           "performance_metrics": {
-            "total_duration_ms": 3873.452719,
-            "prompt_eval_duration_ms": 65.257179,
-            "generation_duration_ms": 3721.508601,
-            "load_duration_ms": 84.03486,
-            "tokens_per_second": 163.9120220859057
+            "total_duration_ms": 7041.253084,
+            "prompt_eval_duration_ms": 720.578833,
+            "generation_duration_ms": 3333.152791,
+            "load_duration_ms": 155.680375,
+            "tokens_per_second": 62.10336368585631
           }
         }
       },

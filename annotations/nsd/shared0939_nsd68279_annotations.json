@@ -362,25 +362,6 @@
             "load_duration_ms": 88.031962,
             "tokens_per_second": 164.94702095369104
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"item names\": [\n      \"person\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"right\",\n      \"color\": [\"red\"],\n      \"size\": \"small\",\n      \"description\": \"A person holding a red alarm clock.\"\n    }\n  },\n  \"animal\": {\n    \"item names\": [\n      \"cat\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"foreground\",\n      \"color\": [\"gray\"],\n      \"size\": \"small\",\n      \"description\": \"A small gray cat sitting on the shelf.\"\n    }\n  },\n  \"man-made\": {\n    \"item names\": [\n      \"alarm clock\",\n      \"pot\",\n      \"shelf\",\n      \"wall\"\n    ],\n    \"attributes\": {\n      \"alarm clock\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"red\"],\n        \"size\": \"small\",\n        \"description\": \"A red alarm clock displaying the time.\"\n      },\n      \"pot\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"orange\"],\n        \"size\": \"large\",\n        \"description\": \"A terracotta pot with a decorative pattern.\"\n      },\n      \"shelf\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"beige\"],\n        \"size\": \"large\",\n        \"description\": \"A beige shelf holding the pot and clock.\"\n      },\n      \"wall\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"beige\"],\n        \"size\": \"large\",\n        \"description\": \"A beige wall.\"\n      }\n    ]\n  },\n  \"natural\": {\n    \"item names\": [\n      \"basil\"\n    ],\n    \"attributes\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"green\"],\n      \"size\": \"small\",\n      \"description\": \"Basil plants growing in the terracotta pot.\"\n    }\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 62 column 5 (char 1374)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 517,
-            "total_tokens": 1035
-          },
-          "performance_metrics": {
-            "total_duration_ms": 3259.51,
-            "prompt_eval_duration_ms": 66.583999,
-            "generation_duration_ms": 3100.247385,
-            "load_duration_ms": 90.590849,
-            "tokens_per_second": 166.76088576073423
-          }
         }
       },
       "metrics": {

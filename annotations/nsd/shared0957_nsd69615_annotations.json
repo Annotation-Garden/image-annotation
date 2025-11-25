@@ -424,25 +424,6 @@
             "load_duration_ms": 86.001996,
             "tokens_per_second": 167.45612410621717
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"person\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"gray\", \"white\", \"black\"],\n        \"size\": \"medium\",\n        \"description\": \"A young man jumping to catch a frisbee, mid-air.\"\n      },\n      {\n        \"count\": 3,\n        \"location\": \"background\",\n        \"color\": [\"gray\", \"black\"],\n        \"size\": \"small\",\n        \"description\": \"Several people sitting on a blanket, likely part of the group playing frisbee.\"\n      }\n    ]\n  },\n  \"man-made\": {\n    \"frisbee\": [\n      {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"red\", \"white\"],\n        \"size\": \"medium\",\n        \"description\": \"A red and white frisbee being caught by the person in mid-air.\"\n      },\n      \"blanket\": [\n        {\n          \"count\": 1,\n          \"location\": \"background\",\n          \"color\": [\"beige\"],\n          \"size\": \"large\",\n          \"description\": \"A large blanket spread out on the grass.\"\n        }\n      ]\n    }\n  },\n  \"natural\": {\n    \"grass\": [\n      {\n        \"count\": 1,\n        \"location\": \"full\",\n        \"color\": [\"green\"],\n        \"size\": \"large\",\n        \"description\": \"A field of green grass.\"\n      }\n    ],\n    \"tree\": [\n      {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"green\"],\n        \"size\": \"large\",\n        \"description\": \"A large tree in the background.\"\n      }\n    ]\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 29 column 16 (char 753)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 430,
-            "total_tokens": 948
-          },
-          "performance_metrics": {
-            "total_duration_ms": 2732.060044,
-            "prompt_eval_duration_ms": 65.093723,
-            "generation_duration_ms": 2576.341784,
-            "load_duration_ms": 87.736064,
-            "tokens_per_second": 166.90332108513442
-          }
         }
       },
       "metrics": {

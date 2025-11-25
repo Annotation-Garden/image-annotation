@@ -399,25 +399,6 @@
             "load_duration_ms": 87.400812,
             "tokens_per_second": 165.46858945365787
           }
-        },
-        "structured_inventory": {
-          "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"item names\": [\n      \"person\"\n    ],\n    \"attributes\": {\n      \"count\": 0,\n      \"location\": \"background\",\n      \"color\": [],\n      \"size\": \"small\",\n      \"description\": \"A person is present in the background, but not clearly visible.\"\n    }\n  },\n  \"animal\": {\n    \"item names\": [],\n    \"attributes\": {}\n  },\n  \"man-made\": {\n    \"item names\": [\n      \"fire hydrant\",\n      \"cone\",\n      \"chain\",\n      \"window\",\n      \"fence\"\n    ],\n    \"attributes\": {\n      \"fire hydrant\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\n          \"red\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"A red fire hydrant with a chain attached. It appears to be in good condition.\"\n      },\n      \"cone\": {\n        \"count\": 5,\n        \"location\": \"background\",\n        \"color\": [\n          \"orange\"\n        ],\n        \"size\": \"small\",\n        \"description\": \"A row of orange traffic cones in the background.\"\n      },\n      \"chain\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\n          \"silver\"\n        ],\n        \"size\": \"small\",\n        \"description\": \"A silver chain attached to the fire hydrant.\"\n      },\n      \"window\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\n          \"grey\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"A large window in the background.\"\n      },\n      \"fence\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\n          \"grey\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"A grey fence in the background.\"\n      }\n    ]\n  },\n  \"natural\": {\n    \"item names\": [\n      \"grass\"\n    ],\n    \"attributes\": {\n      \"grass\": {\n        \"count\": 1,\n        \"location\": \"foreground\",\n        \"color\": [\n          \"green\"\n        ],\n        \"size\": \"large\",\n        \"description\": \"Green grass covering the ground.\"\n      }\n    }\n  }\n}\n```",
-          "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 72 column 5 (char 1601)",
-          "token_metrics": {
-            "input_tokens": 518,
-            "output_tokens": 577,
-            "total_tokens": 1095
-          },
-          "performance_metrics": {
-            "total_duration_ms": 3654.872334,
-            "prompt_eval_duration_ms": 64.164176,
-            "generation_duration_ms": 3501.321435,
-            "load_duration_ms": 87.133084,
-            "tokens_per_second": 164.79492406272033
-          }
         }
       },
       "metrics": {

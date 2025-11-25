@@ -487,21 +487,53 @@
         },
         "structured_inventory": {
           "prompt_text": "Analyze this image and create a JSON object documenting all visible items. Structure the output with these exact three levels:\nLevel 1 (Categories): Use only these four keys: 'human', 'animal', 'man-made', 'natural'\nLevel 2 (Item names): Specific names of detected items (e.g., 'person', 'dog', 'car', 'tree')\nLevel 3 (Attributes): Use ONLY these keys for each item:\n  \u2022 count: number of instances (integer)\n  \u2022 location: position in image (use terms like: left/center/right, top/middle/bottom, foreground/background)\n  \u2022 color: main color(s) if applicable (array of strings)\n  \u2022 size: relative size (small/medium/large)\n  \u2022 description: any other relevant details that don't fit above categories (string)\nOutput valid JSON only. Include only categories that contain detected items. If an attribute doesn't apply to an item (e.g., color for sky), omit that key rather than using null. The 'description' field should capture important characteristics like actions, states, or specific features not covered by other keys.",
-          "response": "```json\n{\n  \"human\": {\n    \"item\": [\n      {\n        \"person\": {\n          \"count\": 1,\n          \"location\": \"center\",\n          \"color\": [\"white\"],\n          \"size\": \"large\",\n          \"description\": \"Modern toilet with electronic features.\"\n        }\n      }\n    ],\n    \"animal\": {},\n    \"man-made\": {\n      \"toilet\": {\n        \"count\": 1,\n        \"location\": \"center\",\n        \"color\": [\"white\"],\n        \"size\": \"large\",\n        \"description\": \"A modern toilet with electronic features.\"\n      },\n      \"wall\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"beige\"],\n        \"size\": \"large\",\n        \"description\": \"Smooth, tiled wall.\"\n      },\n      \"tile\": {\n        \"count\": 1,\n        \"location\": \"background\",\n        \"color\": [\"beige\"],\n        \"size\": \"medium\",\n        \"description\": \"Square tiles covering the wall.\"\n      },\n      \"control_panel\": {\n        \"count\": 1,\n        \"location\": \"right\",\n        \"color\": [\"white\", \"gray\"],\n        \"size\": \"small\",\n        \"description\": \"Electronic control panel for the toilet.\"\n      },\n      \"paper_roll\": {\n        \"count\": 2,\n        \"location\": \"right\",\n        \"color\": [\"white\"],\n        \"size\": \"small\",\n        \"description\": \"Rolls of toilet paper.\"\n      }\n    ],\n    \"natural\": {}\n  }\n}\n```",
+          "response": "```json\n{\n  \"human\": {\n    \"person\": {\n      \"count\": 1,\n      \"location\": \"center\",\n      \"color\": [\"skin tone\"],\n      \"size\": \"medium\",\n      \"description\": \"A person is standing in the foreground.\"\n    }\n  },\n  \"man-made\": {\n    \"wall\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"white\"],\n      \"size\": \"large\",\n      \"description\": \"A white wall is visible in the background.\"\n    },\n    \"floor\": {\n      \"count\": 1,\n      \"location\": \"background\",\n      \"color\": [\"gray\"],\n      \"size\": \"large\",\n      \"description\": \"A gray floor is visible in the background.\"\n    }\n  }\n}\n```",
           "response_format": "json",
-          "response_data": null,
-          "error": "JSON parsing failed: Expecting ',' delimiter: line 51 column 5 (char 1254)",
+          "response_data": {
+            "human": {
+              "person": {
+                "count": 1,
+                "location": "center",
+                "color": [
+                  "skin tone"
+                ],
+                "size": "medium",
+                "description": "A person is standing in the foreground."
+              }
+            },
+            "man-made": {
+              "wall": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "white"
+                ],
+                "size": "large",
+                "description": "A white wall is visible in the background."
+              },
+              "floor": {
+                "count": 1,
+                "location": "background",
+                "color": [
+                  "gray"
+                ],
+                "size": "large",
+                "description": "A gray floor is visible in the background."
+              }
+            }
+          },
+          "error": null,
           "token_metrics": {
             "input_tokens": 518,
-            "output_tokens": 382,
-            "total_tokens": 900
+            "output_tokens": 197,
+            "total_tokens": 715
           },
           "performance_metrics": {
-            "total_duration_ms": 2473.082748,
-            "prompt_eval_duration_ms": 65.464512,
-            "generation_duration_ms": 2321.71126,
-            "load_duration_ms": 82.920767,
-            "tokens_per_second": 164.53381028957065
+            "total_duration_ms": 15757.832875,
+            "prompt_eval_duration_ms": 863.583083,
+            "generation_duration_ms": 3103.092411,
+            "load_duration_ms": 9446.094833,
+            "tokens_per_second": 63.48505745483582
           }
         }
       },
