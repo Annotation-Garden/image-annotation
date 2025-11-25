@@ -102,15 +102,15 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
   }, [isDragging, handleMouseMove, handleMouseUp])
 
   return (
-    <div className="bg-white/80 backdrop-blur-md rounded-xl border border-agi-teal/10 shadow-sm p-2 md:p-4">
+    <div className="glass-card rounded-xl shadow-sm p-2 md:p-4">
       <div className="relative flex items-center">
         {/* Left scroll button */}
         <button
           onClick={scrollLeft}
-          className="absolute left-2 z-10 bg-white/90 hover:bg-agi-teal/10 backdrop-blur-sm rounded-full p-2 shadow-md border border-agi-teal/20 transition-all hover:scale-110"
+          className="absolute left-2 z-10 bg-white/90 dark:bg-zinc-800/90 hover:bg-agi-teal/10 dark:hover:bg-agi-teal/20 backdrop-blur-sm rounded-full p-2 shadow-md border border-agi-teal/20 dark:border-white/10 transition-all hover:scale-110"
           aria-label="Scroll left"
         >
-          <ChevronLeft className="w-5 h-5 text-agi-teal" />
+          <ChevronLeft className="w-5 h-5 text-agi-teal dark:text-agi-teal-400" />
         </button>
 
         {/* Thumbnail container */}
@@ -139,13 +139,13 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
                   relative flex-shrink-0 rounded-lg overflow-hidden
                   transition-all duration-300 transform
                   ${selectedIndex === index
-                    ? 'ring-2 ring-agi-teal ring-offset-2 ring-offset-transparent scale-110 shadow-xl shadow-agi-teal/20'
-                    : 'hover:scale-105 hover:shadow-lg hover:shadow-agi-teal/10'
+                    ? 'ring-2 ring-agi-teal dark:ring-agi-teal-400 ring-offset-2 ring-offset-transparent scale-110 shadow-xl shadow-agi-teal/20'
+                    : 'hover:scale-105 hover:shadow-lg hover:shadow-agi-teal/10 dark:hover:shadow-agi-teal/5'
                   }
                 `}
                 aria-label={`Select image ${imageNumber}`}
               >
-                <div className={`relative ${selectedIndex === index ? 'brightness-100' : 'brightness-90'}`}>
+                <div className={`relative ${selectedIndex === index ? 'brightness-100' : 'brightness-90 dark:brightness-75'}`}>
                   <img
                     src={image.thumbnailPath}
                     alt={`Thumbnail ${imageNumber}`}
@@ -161,7 +161,7 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
                       px-2 py-0.5 rounded-full text-xs font-medium
                       ${selectedIndex === index
                         ? 'bg-agi-teal text-white'
-                        : 'bg-white/80 text-agi-teal-700'
+                        : 'bg-white/80 dark:bg-zinc-800/80 text-agi-teal-700 dark:text-white'
                       }
                       backdrop-blur-sm
                     `}>
@@ -177,10 +177,10 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
         {/* Right scroll button */}
         <button
           onClick={scrollRight}
-          className="absolute right-2 z-10 bg-white/90 hover:bg-agi-teal/10 backdrop-blur-sm rounded-full p-2 shadow-md border border-agi-teal/20 transition-all hover:scale-110"
+          className="absolute right-2 z-10 bg-white/90 dark:bg-zinc-800/90 hover:bg-agi-teal/10 dark:hover:bg-agi-teal/20 backdrop-blur-sm rounded-full p-2 shadow-md border border-agi-teal/20 dark:border-white/10 transition-all hover:scale-110"
           aria-label="Scroll right"
         >
-          <ChevronRight className="w-5 h-5 text-agi-teal" />
+          <ChevronRight className="w-5 h-5 text-agi-teal dark:text-agi-teal-400" />
         </button>
       </div>
 
@@ -198,7 +198,7 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
           tabIndex={0}
         >
           {/* Track background */}
-          <div className="absolute inset-x-0 h-2 bg-agi-teal/10 rounded-full" />
+          <div className="absolute inset-x-0 h-2 bg-agi-teal/10 dark:bg-white/10 rounded-full" />
 
           {/* Filled track */}
           <div
@@ -208,7 +208,7 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
 
           {/* Thumb/handle */}
           <div
-            className={`absolute w-4 h-4 bg-white border-2 border-agi-teal rounded-full shadow-md transform -translate-x-1/2 transition-transform ${
+            className={`absolute w-4 h-4 bg-white dark:bg-zinc-200 border-2 border-agi-teal dark:border-agi-teal-400 rounded-full shadow-md transform -translate-x-1/2 transition-transform ${
               isDragging ? 'scale-125' : 'group-hover:scale-110'
             }`}
             style={{ left: `${((selectedIndex + 1) / images.length) * 100}%` }}
@@ -219,13 +219,13 @@ export default function ThumbnailRibbon({ images, selectedIndex, onSelect }: Thu
             {Array.from({ length: 11 }).map((_, i) => (
               <div
                 key={i}
-                className="w-0.5 h-1 bg-agi-teal/30 rounded-full"
+                className="w-0.5 h-1 bg-agi-teal/30 dark:bg-white/20 rounded-full"
               />
             ))}
           </div>
         </div>
 
-        <span className="text-xs text-agi-teal-600 font-medium min-w-[60px]">
+        <span className="text-xs text-agi-teal-600 dark:text-agi-teal-400 font-medium min-w-[60px]">
           {selectedIndex + 1} / {images.length}
         </span>
       </div>
