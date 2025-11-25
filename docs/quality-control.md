@@ -1,193 +1,146 @@
 # Annotation Quality Control
 
-Tools for detecting and handling problematic annotations in the image annotation dataset.
+Standard tools and workflow for detecting and handling problematic VLM annotations.
 
 ## Problem
 
-During annotation generation, some VLM responses can become corrupted:
-- **Abnormally long responses** (>10KB vs typical 1-2KB)
-- **Repetitive patterns** (e.g., `!#system\n` repeated thousands of times)
-- **JSON parsing failures** for structured responses
-- **Invalid schema** for `structured_inventory` responses
+VLM responses can become corrupted during generation:
+- Abnormally long responses (>10KB vs typical 1-2KB)
+- Repetitive patterns (e.g., `!#system\n` loops)
+- JSON parsing failures
+- Empty responses
 
-See [Issue #4](https://github.com/Annotation-Garden/image-annotation/issues/4) for details.
+See [Issue #4](https://github.com/Annotation-Garden/image-annotation/issues/4).
 
-## Tools
+## Available Tools
 
-### 1. Quality Check Script
+### Quality Check Script
 
-**Location**: `scripts/check_annotation_quality.py`
+`scripts/check_annotation_quality.py` - Analyzes annotations and generates quality reports.
 
-Analyzes annotation files and generates a quality report.
-
-**Features**:
-- Detects abnormally long responses
-- Identifies repetitive patterns
-- Validates JSON schema for `structured_inventory`
-- Tracks JSON parsing errors
-- Generates statistics and exports to CSV
-
-**Usage**:
 ```bash
-# Basic quality check
-python scripts/check_annotation_quality.py annotations/nsd/
+# Run quality check with CSV export
+python scripts/check_annotation_quality.py annotations/nsd/ --output-csv report.csv
 
-# Custom length threshold
+# Custom threshold
 python scripts/check_annotation_quality.py annotations/nsd/ --max-length 5000
 
-# Export to CSV for analysis
-python scripts/check_annotation_quality.py annotations/nsd/ --output-csv issues.csv
-
-# Just list problematic files
+# List files with issues only
 python scripts/check_annotation_quality.py annotations/nsd/ --list-files-only
 ```
 
-**Validation Checks**:
+**Detects**:
+- Response length >10KB (configurable)
+- Repetitive patterns (50+ repetitions)
+- JSON parse errors
+- Empty responses
+- Schema violations (optional with `--validate-schema`)
 
-1. **Response Length**: Flags responses >10KB (configurable)
-2. **Repetitive Patterns**: Detects same sequence repeated 50+ times
-3. **JSON Parse Errors**: Identifies failed JSON parsing
-4. **Empty Responses**: Flags missing or empty responses
-5. **Schema Validation** (for `structured_inventory`):
-   - Level 1: Only `human`, `animal`, `man-made`, `natural` categories
-   - Level 2: Item names (any string)
-   - Level 3: Only `count`, `location`, `color`, `size`, `description` attributes
+### Annotation Management Tools
 
-### 2. Annotation Tools with Flagging
-
-**Location**: `src/image_annotation/utils/annotation_tools.py`
-
-Extended annotation manipulation tools with quality flagging support.
-
-**New Commands**:
+`src/image_annotation/utils/annotation_tools.py` - Flag and remove problematic annotations.
 
 ```bash
-# Flag problematic annotations (adds quality_flags field)
+# Flag problematic annotations
 python src/image_annotation/utils/annotation_tools.py flag annotations/nsd/
 
-# Flag with custom length threshold
-python src/image_annotation/utils/annotation_tools.py flag annotations/nsd/ 5000
-
-# List all flagged annotations
+# List flagged annotations
 python src/image_annotation/utils/annotation_tools.py list-flagged annotations/nsd/
 
-# Remove flagged annotations (prepares for re-annotation)
+# Remove flagged annotations
 python src/image_annotation/utils/annotation_tools.py remove-flagged annotations/nsd/
 ```
 
-**Quality Flags**:
-- `too_long`: Response exceeds length threshold
-- `repetitive_pattern`: Detected repetitive sequences
-- `json_parse_error`: JSON parsing failed
-- `empty_response`: Response is missing or empty
+**Quality flags**: `too_long`, `repetitive_pattern`, `json_parse_error`, `empty_response`
 
-## Workflow
+### Re-annotation Script
 
-### 1. Detect Issues
-
-Run quality check on annotation directory:
+`scripts/reannotate_missing_prompts.py` - Re-annotate only missing prompts.
 
 ```bash
+# Dry run to see what would be re-annotated
+python scripts/reannotate_missing_prompts.py --dry-run
+
+# Run re-annotation
+python scripts/reannotate_missing_prompts.py
+```
+
+## Standard Workflow
+
+**Run quality checks after every annotation experiment.**
+
+```bash
+# 1. Detect issues
 python scripts/check_annotation_quality.py annotations/nsd/ --output-csv quality_report.csv
-```
 
-Review the report to understand the scope and types of issues.
-
-### 2. Flag Problematic Annotations
-
-Add `quality_flags` to annotations needing review or re-annotation:
-
-```bash
+# 2. Flag problematic annotations
 python src/image_annotation/utils/annotation_tools.py flag annotations/nsd/
-```
 
-This modifies the JSON files in-place, adding a `quality_flags` array to problematic prompt responses.
-
-### 3. Review Flagged Annotations
-
-List all flagged annotations for manual review:
-
-```bash
+# 3. Review flagged annotations
 python src/image_annotation/utils/annotation_tools.py list-flagged annotations/nsd/
-```
 
-### 4. Remove for Re-annotation
-
-Remove flagged annotations from files so they can be re-processed:
-
-```bash
+# 4. Remove problematic data
 python src/image_annotation/utils/annotation_tools.py remove-flagged annotations/nsd/
+
+# 5. Verify cleanup
+python scripts/check_annotation_quality.py annotations/nsd/
 ```
 
-This removes the prompt data for flagged annotations, preparing the files for re-annotation with the VLM service.
+### Decision: Accept Missing vs Re-annotate
 
-### 5. Re-run Annotation
+**Accept missing data (recommended)** when:
+- Error rate <1% of total responses
+- Failures concentrated in specific models/prompts
+- Models consistently fail on same prompts
 
-Use the standard processing scripts to re-generate the removed annotations:
+**Attempt re-annotation** when:
+- Error rate >5%
+- Failures appear transient (timeouts, network issues)
+- First attempt at re-annotation
+
+**Note**: After 1-2 retry attempts, accept missing data. Some models have inherent limitations on certain prompts. Missing data (<1%) is preferable to corrupted data and is handled gracefully by the system.
 
 ```bash
-python scripts/process_nsd_dataset.py --resume
+# Re-annotate missing prompts (optional)
+python scripts/reannotate_missing_prompts.py
+
+# Quality check again
+python scripts/check_annotation_quality.py annotations/nsd/
 ```
 
-The resume functionality will detect missing prompts and re-annotate only those.
+## Case Study: Issue #4
 
-## Example: Fixing Issue #4
+**Analysis** of 30,000 responses (1,000 images × 6 models × 5 prompts):
+- 143 problematic responses (0.5% of total)
+- 139 files affected (13.9%)
+- Concentrated in `structured_inventory` prompt (2.4% failure rate)
 
-Based on analysis of 30,000 responses (1,000 images × 6 models × 5 prompts):
-- **143 unique problematic responses (0.5% of total)**
-- **139 files affected (13.9%)**
-- Concentrated in `structured_inventory` prompt (2.4% of those responses)
+**Issue breakdown**:
+- 66 responses >10KB (vs normal 1-3KB)
+- 141 JSON parse errors
+- 66 repetitive patterns
+- 2 empty responses
 
-Real issues:
-- **66 responses >10KB** (normal is 1-3KB) - corruption
-- **141 JSON parse errors** - failed parsing
-- **66 repetitive patterns** (with overlap) - corruption
-- **2 empty responses**
+**Resolution**:
+1. Detected issues with quality check script
+2. Flagged 143 problematic annotations
+3. Removed corrupted data from annotation files
+4. Attempted re-annotation - most models failed again
+5. Accepted missing data as model limitations (<1% error rate)
 
-**Note**: Initial analysis showed 98.5% with "invalid_schema", but these were valid JSON responses in alternative formats. Schema validation is now disabled by default (see issue #8).
+**Result**: Clean dataset with 143 missing prompts (~0.5%). Frontend/backend handle missing data gracefully.
 
-**Steps to fix**:
-
-1. **Run quality check**:
-   ```bash
-   python scripts/check_annotation_quality.py annotations/nsd/ --output-csv issue4_report.csv
-   ```
-
-2. **Flag problematic annotations**:
-   ```bash
-   python src/image_annotation/utils/annotation_tools.py flag annotations/nsd/
-   ```
-
-3. **Review specific cases**:
-   ```bash
-   # Look at the worst cases
-   sort -t, -k6 -n issue4_report.csv | tail -20
-   ```
-
-4. **Decide on action**:
-   - For `too_long` and `repetitive_pattern`: Remove and re-annotate
-   - For `invalid_schema`: Review if fixable or needs re-annotation
-   - For `json_parse_error`: Remove and re-annotate
-
-5. **Remove flagged annotations**:
-   ```bash
-   python src/image_annotation/utils/annotation_tools.py remove-flagged annotations/nsd/
-   ```
-
-6. **Re-annotate**:
-   ```bash
-   python scripts/process_nsd_dataset.py --resume
-   ```
+**Note**: Initial analysis showed 98.5% "invalid_schema" false positives - models returned valid JSON in alternative formats. Schema validation is now disabled by default (see [Issue #8](https://github.com/Annotation-Garden/image-annotation/issues/8)).
 
 ## Data Structure
 
-### Flagged Annotation Example
+Flagged annotations have `quality_flags` array:
 
 ```json
 {
   "structured_inventory": {
     "prompt_text": "...",
-    "response": "corrupted response with repetition...",
+    "response": "corrupted response...",
     "response_format": "json",
     "response_data": null,
     "error": "JSON parsing failed: ...",
@@ -198,12 +151,12 @@ Real issues:
 }
 ```
 
-The `quality_flags` array is added only to prompts with detected issues.
+Missing prompts are simply omitted from the `prompts` object - the frontend displays "No annotations available for this selection".
 
 ## Future Improvements
 
-- [ ] Add LLM-based content validation (semantic coherence)
-- [ ] Implement automatic retry logic with different temperature
-- [ ] Add response truncation/sanitization at generation time
-- [ ] Track quality metrics over time per model
-- [ ] Automated flagging during processing (not post-hoc)
+- LLM-based content validation (semantic coherence)
+- Automatic retry logic with different temperature
+- Response truncation/sanitization at generation time
+- Track quality metrics over time per model
+- Automated flagging during processing (not post-hoc)
