@@ -4,13 +4,15 @@ import { useState, useEffect, useMemo } from 'react'
 import Image from 'next/image'
 import ThumbnailRibbon from './components/ThumbnailRibbon'
 import AnnotationViewer from './components/AnnotationViewer'
-import { ImageData, Annotation, PromptAnnotation } from './types'
+import PlatformBadge from './components/PlatformBadge'
+import { ImageData, Annotation, PromptAnnotation, PlatformInfo } from './types'
 import { Sparkles, ChevronDown, Loader2, ExternalLink, Sun, Moon } from 'lucide-react'
 
 export default function Dashboard() {
   const [images, setImages] = useState<ImageData[]>([])
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const [annotations, setAnnotations] = useState<Record<string, Annotation[]>>({})
+  const [platformInfo, setPlatformInfo] = useState<PlatformInfo | null>(null)
   const [selectedModel, setSelectedModel] = useState<string>('')
   const [selectedPromptKey, setSelectedPromptKey] = useState<string>('')
   const [loading, setLoading] = useState(true)
@@ -103,6 +105,11 @@ export default function Dashboard() {
       if (response.ok) {
         const data = await response.json()
         setAnnotations(prev => ({ ...prev, [imageId]: data.annotations || [] }))
+
+        // Extract platform info from metadata if available
+        if (data.metadata?.platform) {
+          setPlatformInfo(data.metadata.platform)
+        }
 
         // Auto-select first model and prompt if nothing selected
         if (data.annotations && data.annotations.length > 0) {
@@ -324,17 +331,25 @@ export default function Dashboard() {
 
         {/* Footer */}
         <footer className="glass-footer px-6 py-3">
-          <div className="text-center text-sm text-agi-teal-600 dark:text-zinc-400">
-            © 2025{' '}
-            <a
-              href="https://annotation.garden"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-agi-teal dark:text-agi-teal-400 hover:text-agi-orange transition-colors inline-flex items-center gap-1"
-            >
-              Annotation Garden Initiative
-              <ExternalLink className="w-3 h-3" />
-            </a>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
+            <div className="text-sm text-agi-teal-600 dark:text-zinc-400">
+              © 2025{' '}
+              <a
+                href="https://annotation.garden"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-agi-teal dark:text-agi-teal-400 hover:text-agi-orange transition-colors inline-flex items-center gap-1"
+              >
+                Annotation Garden Initiative
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
+            {platformInfo && (
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-agi-teal-500 dark:text-zinc-500">Inference Platform:</span>
+                <PlatformBadge platform={platformInfo} />
+              </div>
+            )}
           </div>
         </footer>
       </main>
