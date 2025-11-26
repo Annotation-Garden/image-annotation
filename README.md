@@ -86,6 +86,10 @@ Annotations follow stimuli-BIDS specifications:
 - **Storage**: JSON files with database support for large datasets
 - **Processing**: Stateless VLM calls with comprehensive metrics
 
+### Inference Platform
+
+All performance metrics in this repository were generated using an **NVIDIA GeForce RTX 4090 GPU** with OLLAMA for local model inference. See [Quality Control](docs/quality-control.md#inference-platform) for details.
+
 ## Annotation Tools
 
 Powerful CLI tools for post-processing annotations:
