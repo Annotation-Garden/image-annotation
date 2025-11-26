@@ -89,13 +89,23 @@ export default function Dashboard() {
     return []
   }, [annotations, selectedImageIndex, images, selectedModel])
 
+  // Get current model annotation (includes platform override if present)
+  const currentModelAnnotation = useMemo(() => {
+    if (!images[selectedImageIndex] || !selectedModel) return null
+    const imageAnnotations = annotations[images[selectedImageIndex].id] || []
+    return imageAnnotations.find(a => a.model === selectedModel) || null
+  }, [annotations, selectedImageIndex, images, selectedModel])
+
   // Get current prompt annotation
   const currentPromptAnnotation = useMemo(() => {
-    if (!images[selectedImageIndex] || !selectedModel || !selectedPromptKey) return null
-    const imageAnnotations = annotations[images[selectedImageIndex].id] || []
-    const modelAnnotation = imageAnnotations.find(a => a.model === selectedModel)
-    return modelAnnotation?.prompts[selectedPromptKey] || null
-  }, [annotations, selectedImageIndex, images, selectedModel, selectedPromptKey])
+    if (!currentModelAnnotation || !selectedPromptKey) return null
+    return currentModelAnnotation.prompts[selectedPromptKey] || null
+  }, [currentModelAnnotation, selectedPromptKey])
+
+  // Get effective platform (annotation override or default)
+  const effectivePlatform = useMemo(() => {
+    return currentModelAnnotation?.platform || platformInfo
+  }, [currentModelAnnotation, platformInfo])
 
   async function loadAnnotationsForImage(imageId: string) {
     setImageLoading(true)
@@ -307,7 +317,7 @@ export default function Dashboard() {
               </h3>
               <div className="flex-1 overflow-auto">
                 {currentPromptAnnotation ? (
-                  <AnnotationViewer annotation={currentPromptAnnotation} />
+                  <AnnotationViewer annotation={currentPromptAnnotation} platform={effectivePlatform} />
                 ) : (
                   <div className="text-agi-teal-500 dark:text-zinc-500 text-center py-8">
                     {!selectedModel ? 'Select a vision model to explore annotations' :

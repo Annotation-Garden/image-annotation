@@ -29,6 +29,7 @@ export interface Annotation {
   model: string
   temperature?: number
   prompts: Record<string, PromptAnnotation>
+  platform?: PlatformInfo | null  // Override for this annotation (e.g., cloud API)
 }
 
 export interface GPUInfo {

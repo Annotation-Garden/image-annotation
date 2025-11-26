@@ -10,7 +10,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 from langchain_ollama import ChatOllama
 from pydantic import BaseModel, Field
 
-from image_annotation.utils.platform_info import get_platform_info
+from image_annotation.utils.platform_info import PlatformInfo, get_platform_info
 
 
 class VLMPrompt(BaseModel):
@@ -67,6 +67,11 @@ class VLMResult(BaseModel):
 
     # Additional metadata
     temperature: float | None = None
+    platform: dict | None = Field(
+        None,
+        description="Platform info override for this annotation (e.g., cloud API). "
+        "If None, uses the default platform from metadata.",
+    )
 
 
 class VLMService:
@@ -78,6 +83,7 @@ class VLMService:
         base_url: str = "http://localhost:11434",
         temperature: float = 0.3,
         timeout: int = 60,
+        platform_override: dict | None = None,
     ):
         """Initialize the VLM service.
 
@@ -86,11 +92,14 @@ class VLMService:
             base_url: OLLAMA API base URL.
             temperature: Generation temperature.
             timeout: Request timeout in seconds.
+            platform_override: Optional platform info to use instead of auto-detection.
+                Useful for cloud APIs (OpenAI, Anthropic) or custom setups.
         """
         self.model = model
         self.base_url = base_url
         self.temperature = temperature
         self.timeout = timeout
+        self.platform_override = platform_override
         self._llm_cache = {}
 
     def _get_llm(self, model: str | None = None) -> ChatOllama:
@@ -289,6 +298,7 @@ class VLMService:
                 performance_metrics=performance_metrics,
                 temperature=self.temperature,
                 error=error,
+                platform=self.platform_override,  # Include if set (for cloud APIs, etc.)
             )
 
         except Exception as e:
@@ -305,6 +315,7 @@ class VLMService:
                 performance_metrics=PerformanceMetrics(total_duration_ms=total_time_ms),
                 temperature=self.temperature,
                 error=str(e),
+                platform=self.platform_override,
             )
 
     def annotate_batch(
