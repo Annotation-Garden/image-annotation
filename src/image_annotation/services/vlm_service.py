@@ -10,6 +10,8 @@ from langchain_core.messages import AIMessage, HumanMessage
 from langchain_ollama import ChatOllama
 from pydantic import BaseModel, Field
 
+from image_annotation.utils.platform_info import get_platform_info
+
 
 class VLMPrompt(BaseModel):
     """Configuration for a VLM prompt."""
@@ -400,6 +402,9 @@ def save_results(results: list[VLMResult], output_dir: str | Path) -> Path:
     if num_with_speed > 0:
         avg_speed = avg_speed / num_with_speed
 
+    # Get platform information
+    platform_info = get_platform_info()
+
     # Convert results to dict format
     results_dict = {
         "metadata": {
@@ -409,6 +414,7 @@ def save_results(results: list[VLMResult], output_dir: str | Path) -> Path:
             "failed": sum(1 for r in results if r.error is not None),
             "total_tokens_used": total_tokens,
             "average_tokens_per_second": round(avg_speed, 2) if num_with_speed > 0 else None,
+            "platform": platform_info.to_dict(),
         },
         "annotations": [r.model_dump(mode="json") for r in results],
     }
