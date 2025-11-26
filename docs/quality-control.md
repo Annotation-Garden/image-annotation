@@ -108,7 +108,13 @@ python scripts/reannotate_missing_prompts.py
 python scripts/check_annotation_quality.py annotations/nsd/
 ```
 
+## Inference Platform
+
+All inference was performed on an **NVIDIA GeForce RTX 4090 GPU** using OLLAMA for local model execution. This platform information applies to all performance metrics documented in this repository.
+
 ## Case Study: Issue #4
+
+**Inference Platform**: NVIDIA RTX 4090 GPU
 
 **Analysis** of 30,000 responses (1,000 images × 6 models × 5 prompts):
 - 143 problematic responses (0.5% of total)

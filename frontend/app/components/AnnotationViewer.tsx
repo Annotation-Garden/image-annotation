@@ -1,14 +1,16 @@
 'use client'
 
 import { useState } from 'react'
-import { PromptAnnotation } from '../types'
+import { PromptAnnotation, PlatformInfo } from '../types'
 import { Copy, Check, FileText, FileJson, Activity, Zap } from 'lucide-react'
+import PlatformBadge from './PlatformBadge'
 
 interface AnnotationViewerProps {
   annotation: PromptAnnotation
+  platform?: PlatformInfo | null
 }
 
-export default function AnnotationViewer({ annotation }: AnnotationViewerProps) {
+export default function AnnotationViewer({ annotation, platform }: AnnotationViewerProps) {
   const [copied, setCopied] = useState(false)
   const [viewMode, setViewMode] = useState<'text' | 'json'>('text')
 
@@ -188,6 +190,14 @@ export default function AnnotationViewer({ annotation }: AnnotationViewerProps) 
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {/* Platform info (shown inline with metrics) */}
+      {platform && (
+        <div className="flex items-center gap-2 mt-3">
+          <span className="text-xs text-agi-teal-500 dark:text-zinc-500">Platform:</span>
+          <PlatformBadge platform={platform} />
         </div>
       )}
     </div>

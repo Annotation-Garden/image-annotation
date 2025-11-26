@@ -29,6 +29,22 @@ export interface Annotation {
   model: string
   temperature?: number
   prompts: Record<string, PromptAnnotation>
+  platform?: PlatformInfo | null  // Override for this annotation (e.g., cloud API)
+}
+
+export interface GPUInfo {
+  name: string
+  vendor: string  // nvidia, amd, intel, apple
+  memory_mb?: number | null
+  driver_version?: string | null
+}
+
+export interface PlatformInfo {
+  os_name: string
+  os_version: string
+  python_version: string
+  accelerators: GPUInfo[]
+  compute_backend?: string | null  // cuda, rocm, mps, oneapi, cpu
 }
 
 export interface AnnotationFile {
@@ -37,6 +53,7 @@ export interface AnnotationFile {
   annotations: Annotation[]
   metadata?: {
     processed_at?: string
+    platform?: PlatformInfo
     [key: string]: any
   }
 }
