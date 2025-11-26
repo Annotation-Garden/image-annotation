@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { PromptAnnotation, PlatformInfo } from '../types'
 import { Copy, Check, FileText, FileJson, Activity, Zap } from 'lucide-react'
-import PlatformBadge from './PlatformBadge'
 
 interface AnnotationViewerProps {
   annotation: PromptAnnotation
@@ -187,17 +186,17 @@ export default function AnnotationViewer({ annotation, platform }: AnnotationVie
                     {(annotation.performance_metrics.total_duration_ms / 1000).toFixed(2)}s
                   </span>
                 </div>
+                {platform && platform.accelerators?.[0] && (
+                  <div className="flex justify-between text-xs">
+                    <span className="text-agi-teal-500 dark:text-zinc-500">Platform:</span>
+                    <span className="text-agi-teal-800 dark:text-zinc-300">
+                      {platform.accelerators[0].name}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
           )}
-        </div>
-      )}
-
-      {/* Platform info (shown inline with metrics) */}
-      {platform && (
-        <div className="flex items-center gap-2 mt-3">
-          <span className="text-xs text-agi-teal-500 dark:text-zinc-500">Platform:</span>
-          <PlatformBadge platform={platform} />
         </div>
       )}
     </div>

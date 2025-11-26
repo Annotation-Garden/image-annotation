@@ -4,7 +4,6 @@ import { useState, useEffect, useMemo } from 'react'
 import Image from 'next/image'
 import ThumbnailRibbon from './components/ThumbnailRibbon'
 import AnnotationViewer from './components/AnnotationViewer'
-import PlatformBadge from './components/PlatformBadge'
 import { ImageData, Annotation, PromptAnnotation, PlatformInfo } from './types'
 import { Sparkles, ChevronDown, Loader2, ExternalLink, Sun, Moon } from 'lucide-react'
 
@@ -341,25 +340,17 @@ export default function Dashboard() {
 
         {/* Footer */}
         <footer className="glass-footer px-6 py-3">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
-            <div className="text-sm text-agi-teal-600 dark:text-zinc-400">
-              © 2025{' '}
-              <a
-                href="https://annotation.garden"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-agi-teal dark:text-agi-teal-400 hover:text-agi-orange transition-colors inline-flex items-center gap-1"
-              >
-                Annotation Garden Initiative
-                <ExternalLink className="w-3 h-3" />
-              </a>
-            </div>
-            {platformInfo && (
-              <div className="flex items-center gap-2">
-                <span className="text-xs text-agi-teal-500 dark:text-zinc-500">Inference Platform:</span>
-                <PlatformBadge platform={platformInfo} />
-              </div>
-            )}
+          <div className="text-sm text-agi-teal-600 dark:text-zinc-400 text-center">
+            © 2025{' '}
+            <a
+              href="https://annotation.garden"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-agi-teal dark:text-agi-teal-400 hover:text-agi-orange transition-colors inline-flex items-center gap-1"
+            >
+              Annotation Garden Initiative
+              <ExternalLink className="w-3 h-3" />
+            </a>
           </div>
         </footer>
       </main>
