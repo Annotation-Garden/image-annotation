@@ -6,6 +6,7 @@ import ThumbnailRibbon from './components/ThumbnailRibbon'
 import AnnotationViewer from './components/AnnotationViewer'
 import { ImageData, Annotation, PromptAnnotation, PlatformInfo } from './types'
 import { Sparkles, ChevronDown, Loader2, ExternalLink, Sun, Moon } from 'lucide-react'
+import { VERSION } from './version'
 
 export default function Dashboard() {
   const [images, setImages] = useState<ImageData[]>([])
@@ -344,17 +345,21 @@ export default function Dashboard() {
 
         {/* Footer */}
         <footer className="glass-footer px-6 py-3">
-          <div className="text-sm text-agi-teal-600 dark:text-zinc-400 text-center">
-            © 2025{' '}
-            <a
-              href="https://annotation.garden"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-agi-teal dark:text-agi-teal-400 hover:text-agi-orange transition-colors inline-flex items-center gap-1"
-            >
-              Annotation Garden Initiative
-              <ExternalLink className="w-3 h-3" />
-            </a>
+          <div className="flex items-center justify-between text-sm text-agi-teal-600 dark:text-zinc-400">
+            <span className="text-xs font-mono opacity-60">v{VERSION}</span>
+            <div>
+              © 2025{' '}
+              <a
+                href="https://annotation.garden"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-agi-teal dark:text-agi-teal-400 hover:text-agi-orange transition-colors inline-flex items-center gap-1"
+              >
+                Annotation Garden Initiative
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
+            <span className="text-xs opacity-0">v{VERSION}</span>
           </div>
         </footer>
       </main>
