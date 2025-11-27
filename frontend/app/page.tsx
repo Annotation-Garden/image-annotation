@@ -35,11 +35,17 @@ export default function Dashboard() {
     }
   }
 
+  // Helper to resolve URLs against base (Safari doesn't respect <base> for fetch)
+  const resolveUrl = (path: string) => {
+    const base = document.baseURI || window.location.href
+    return new URL(path, base).href
+  }
+
   // Load image list
   useEffect(() => {
     async function loadImageList() {
       try {
-        const response = await fetch('image-list.json')
+        const response = await fetch(resolveUrl('image-list.json'))
         if (response.ok) {
           const data = await response.json()
           const imageList: ImageData[] = data.images.map((imageName: string) => ({
@@ -108,7 +114,7 @@ export default function Dashboard() {
   async function loadAnnotationsForImage(imageId: string) {
     setImageLoading(true)
     try {
-      const response = await fetch(`annotations/nsd/${imageId}_annotations.json`)
+      const response = await fetch(resolveUrl(`annotations/nsd/${imageId}_annotations.json`))
       if (response.ok) {
         const data = await response.json()
         setAnnotations(prev => ({ ...prev, [imageId]: data.annotations || [] }))
