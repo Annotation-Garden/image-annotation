@@ -2,11 +2,11 @@
  * Version information for Image Annotation Dashboard.
  */
 
-export const VERSION = "0.1.4-beta";
+export const VERSION = "0.1.5-beta";
 export const VERSION_INFO = {
   major: 0,
   minor: 1,
-  patch: 4,
+  patch: 5,
   prerelease: "beta"
 } as const;
 
