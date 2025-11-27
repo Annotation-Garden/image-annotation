@@ -39,15 +39,14 @@ export default function Dashboard() {
   useEffect(() => {
     async function loadImageList() {
       try {
-        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
-        const response = await fetch(`${basePath}/image-list.json`)
+        const response = await fetch('/image-list.json')
         if (response.ok) {
           const data = await response.json()
           const imageList: ImageData[] = data.images.map((imageName: string) => ({
             id: imageName,
-            thumbnailPath: `${basePath}/thumbnails/${imageName}.jpg`,
-            imagePath: `${basePath}/downsampled/${imageName}.jpg`,
-            annotationPath: `${basePath}/annotations/nsd/${imageName}_annotations.json`
+            thumbnailPath: `/thumbnails/${imageName}.jpg`,
+            imagePath: `/downsampled/${imageName}.jpg`,
+            annotationPath: `/annotations/nsd/${imageName}_annotations.json`
           }))
           setImages(imageList)
         } else {
@@ -109,8 +108,7 @@ export default function Dashboard() {
   async function loadAnnotationsForImage(imageId: string) {
     setImageLoading(true)
     try {
-      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
-      const response = await fetch(`${basePath}/annotations/nsd/${imageId}_annotations.json`)
+      const response = await fetch(`/annotations/nsd/${imageId}_annotations.json`)
       if (response.ok) {
         const data = await response.json()
         setAnnotations(prev => ({ ...prev, [imageId]: data.annotations || [] }))
@@ -184,7 +182,7 @@ export default function Dashboard() {
             className="flex items-center gap-3 md:gap-4 hover:opacity-90 transition-opacity"
           >
             <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/AGI-square.svg`}
+              src="/AGI-square.svg"
               alt="AGI Logo"
               className="w-10 h-10 md:w-12 md:h-12"
             />

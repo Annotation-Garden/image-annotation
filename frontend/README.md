@@ -17,12 +17,12 @@ npm run dev
 
 Visit http://localhost:3000 to see the dashboard.
 
-## 📦 Deployment
+## Deployment
 
 ### Building for Production
 
 ```bash
-# Build and export static site for GitHub Pages
+# Build and export static site
 npm run build:static
 
 # This will:
@@ -31,23 +31,15 @@ npm run build:static
 # 3. Export as static HTML to out/
 ```
 
-### Manual Deployment to GitHub Pages
+The site is deployed to Cloudflare Pages automatically via GitHub Actions.
 
-```bash
-# Deploy to GitHub Pages (after building)
-npm run deploy
-```
-
-The site will be available at: https://annotation-garden.github.io/image-annotation
-
-## 🛠️ Available Scripts
+## Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
-- `npm run build:static` - Build static site for GitHub Pages
+- `npm run build:static` - Build static site with assets
 - `npm run copy-assets` - Copy images and annotations to public folder
 - `npm run clean` - Clean build artifacts and copied assets
-- `npm run deploy` - Deploy to GitHub Pages (requires gh-pages package)
 
 ## 📁 Project Structure
 
