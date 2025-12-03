@@ -13,6 +13,15 @@ export default function AnnotationViewer({ annotation, platform }: AnnotationVie
   const [copied, setCopied] = useState(false)
   const [viewMode, setViewMode] = useState<'text' | 'json'>('text')
   const [hedExpanded, setHedExpanded] = useState(false)
+  const [hedCopied, setHedCopied] = useState(false)
+
+  const copyHedAnnotation = () => {
+    if (annotation.hed_annotation) {
+      navigator.clipboard.writeText(annotation.hed_annotation)
+      setHedCopied(true)
+      setTimeout(() => setHedCopied(false), 2000)
+    }
+  }
 
   const handleCopy = () => {
     const textToCopy = viewMode === 'json'
@@ -150,7 +159,8 @@ export default function AnnotationViewer({ annotation, platform }: AnnotationVie
         >
           <div className="flex items-center gap-2">
             <Tag className="w-3.5 h-3.5 text-agi-orange" />
-            <span className="text-xs font-medium text-agi-teal-600 dark:text-agi-teal-400">LLM HED Annotation</span>
+            <span className="text-xs font-medium text-agi-teal-600 dark:text-agi-teal-400">HED Tags</span>
+            <span className="text-[9px] px-1.5 py-0.5 bg-agi-purple/10 dark:bg-agi-purple/20 text-agi-purple dark:text-agi-purple-300 rounded">LLM</span>
           </div>
           {hedExpanded ? (
             <ChevronUp className="w-4 h-4 text-agi-teal-500 dark:text-agi-teal-400" />
@@ -161,8 +171,21 @@ export default function AnnotationViewer({ annotation, platform }: AnnotationVie
         {hedExpanded && (
           <div className="px-3 pb-3">
             {annotation.hed_annotation ? (
-              <div className="text-xs text-agi-teal-800 dark:text-zinc-300 font-mono bg-white/50 dark:bg-black/20 rounded p-2 break-words">
-                {annotation.hed_annotation}
+              <div className="relative">
+                <button
+                  onClick={copyHedAnnotation}
+                  className="absolute top-1.5 right-1.5 p-1 rounded bg-white/50 dark:bg-black/30 hover:bg-agi-teal/10 dark:hover:bg-agi-teal/20 transition-all z-10"
+                  aria-label="Copy HED tags"
+                >
+                  {hedCopied ? (
+                    <Check className="w-3 h-3 text-green-600 dark:text-green-400" />
+                  ) : (
+                    <Copy className="w-3 h-3 text-agi-teal-600 dark:text-zinc-400" />
+                  )}
+                </button>
+                <div className="text-xs text-agi-teal-800 dark:text-zinc-300 font-mono bg-white/50 dark:bg-black/20 rounded p-2 pr-8 break-words">
+                  {annotation.hed_annotation}
+                </div>
               </div>
             ) : (
               <div className="text-xs text-agi-teal-500 dark:text-zinc-500 italic">

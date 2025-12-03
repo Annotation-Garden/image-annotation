@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ThumbnailRibbon from './components/ThumbnailRibbon'
 import AnnotationViewer from './components/AnnotationViewer'
 import { ImageData, Annotation, PromptAnnotation, PlatformInfo, HumanHedData } from './types'
-import { Sparkles, ChevronDown, ChevronUp, Loader2, ExternalLink, Sun, Moon, Tag } from 'lucide-react'
+import { Sparkles, ChevronDown, ChevronUp, Loader2, ExternalLink, Sun, Moon, Tag, Copy, Check } from 'lucide-react'
 import { VERSION } from './version'
 
 export default function Dashboard() {
@@ -20,6 +20,15 @@ export default function Dashboard() {
   const [isDark, setIsDark] = useState(false)
   const [humanHedData, setHumanHedData] = useState<HumanHedData | null>(null)
   const [humanHedExpanded, setHumanHedExpanded] = useState(false)
+  const [humanHedCopied, setHumanHedCopied] = useState(false)
+
+  const copyHumanHed = () => {
+    if (humanHedData && images[selectedImageIndex]) {
+      navigator.clipboard.writeText(humanHedData[images[selectedImageIndex].id]?.hed_short || '')
+      setHumanHedCopied(true)
+      setTimeout(() => setHumanHedCopied(false), 2000)
+    }
+  }
 
   // Check initial theme
   useEffect(() => {
@@ -290,7 +299,8 @@ export default function Dashboard() {
                 >
                   <div className="flex items-center gap-2">
                     <Tag className="w-4 h-4 text-agi-orange" />
-                    <span className="text-sm font-medium text-agi-teal-700 dark:text-agi-teal-300">Human HED Tags</span>
+                    <span className="text-sm font-medium text-agi-teal-700 dark:text-agi-teal-300">HED Tags</span>
+                    <span className="text-[10px] px-1.5 py-0.5 bg-agi-teal/10 dark:bg-agi-teal/20 text-agi-teal-600 dark:text-agi-teal-400 rounded">Human</span>
                   </div>
                   {humanHedExpanded ? (
                     <ChevronUp className="w-4 h-4 text-agi-teal-500 dark:text-agi-teal-400" />
@@ -300,8 +310,21 @@ export default function Dashboard() {
                 </button>
                 {humanHedExpanded && (
                   <div className="px-4 pb-3 space-y-2">
-                    <div className="text-xs text-agi-teal-800 dark:text-zinc-300 font-mono bg-agi-teal/5 dark:bg-agi-teal/10 rounded p-2 break-words max-h-32 overflow-y-auto">
-                      {humanHedData[images[selectedImageIndex].id].hed_short}
+                    <div className="relative">
+                      <button
+                        onClick={copyHumanHed}
+                        className="absolute top-1.5 right-1.5 p-1 rounded bg-white/50 dark:bg-black/30 hover:bg-agi-teal/10 dark:hover:bg-agi-teal/20 transition-all z-10"
+                        aria-label="Copy HED tags"
+                      >
+                        {humanHedCopied ? (
+                          <Check className="w-3 h-3 text-green-600 dark:text-green-400" />
+                        ) : (
+                          <Copy className="w-3 h-3 text-agi-teal-600 dark:text-zinc-400" />
+                        )}
+                      </button>
+                      <div className="text-xs text-agi-teal-800 dark:text-zinc-300 font-mono bg-agi-teal/5 dark:bg-agi-teal/10 rounded p-2 pr-8 break-words max-h-32 overflow-y-auto">
+                        {humanHedData[images[selectedImageIndex].id].hed_short}
+                      </div>
                     </div>
                     <div className="flex items-center justify-between text-[10px] text-agi-teal-500 dark:text-zinc-500">
                       <span>COCO ID: {humanHedData[images[selectedImageIndex].id].coco_id}</span>
