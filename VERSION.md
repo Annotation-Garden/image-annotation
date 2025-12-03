@@ -4,7 +4,7 @@ Image Annotation Dashboard follows [Semantic Versioning 2.0.0](https://semver.or
 
 ## Current Version
 
-**0.1.4-beta**
+**0.2.0-beta**
 
 ## Version Format
 
@@ -102,5 +102,6 @@ The version is displayed in the frontend footer.
 
 | Version | Date | Description |
 |---------|------|-------------|
+| 0.2.0-beta | 2025-12-03 | HED annotations integration (human + LLM), compact UI layout |
 | 0.1.4-beta | 2025-11-27 | Add semantic versioning, Cloudflare deployment |
 | 0.1.0 | 2025-11-24 | Initial release |
