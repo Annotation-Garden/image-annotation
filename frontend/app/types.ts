@@ -11,6 +11,7 @@ export interface PromptAnnotation {
   response_format: string
   response_data?: any
   error?: string | null
+  hed_annotation?: string  // HED annotation for this description (from HED-bot)
   token_metrics?: {
     input_tokens: number
     output_tokens: number
@@ -57,3 +58,12 @@ export interface AnnotationFile {
     [key: string]: any
   }
 }
+
+export interface HumanHedEntry {
+  hed_short: string
+  hed_long: string
+  coco_id: string
+  nsd_id: string
+}
+
+export type HumanHedData = Record<string, HumanHedEntry>
