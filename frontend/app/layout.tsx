@@ -10,15 +10,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Image Annotation',
     description: 'AI-powered annotation for neuroscience image datasets.',
-    url: 'https://annotation.garden',
+    url: 'https://annotation.garden/image-annotation/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://annotation.garden/image-annotation/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Image Annotation',
     description: 'AI-powered annotation for neuroscience image datasets.',
-    images: ['/og-image.png'],
+    images: ['https://annotation.garden/image-annotation/og-image.png'],
   },
 }
 
