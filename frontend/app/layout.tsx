@@ -5,8 +5,21 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Image Annotation Dashboard',
-  description: 'Browse and annotate NSD images with VLM models',
+  title: 'Image Annotation',
+  description: 'AI-powered annotation for neuroscience image datasets.',
+  openGraph: {
+    title: 'Image Annotation',
+    description: 'AI-powered annotation for neuroscience image datasets.',
+    url: 'https://annotation.garden',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Image Annotation',
+    description: 'AI-powered annotation for neuroscience image datasets.',
+    images: ['/og-image.png'],
+  },
 }
 
 export default function RootLayout({
