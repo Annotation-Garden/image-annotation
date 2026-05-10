@@ -2,13 +2,14 @@
   "name": "image-annotation-frontend",
   "version": "0.1.5-beta",
   "private": true,
+  "packageManager": "pnpm@10.33.4",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "copy-assets": "bash ./public/copy-static-assets.sh",
-    "build:static": "npm run copy-assets && next build",
+    "build:static": "pnpm run copy-assets && next build",
     "clean": "rm -rf .next out public/thumbnails public/downsampled public/annotations"
   },
   "dependencies": {

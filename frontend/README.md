@@ -6,13 +6,13 @@ A modern AI-powered dashboard for browsing and analyzing NSD (Natural Scene Data
 
 ```bash
 # 1. Install dependencies
-npm install
+pnpm install
 
 # 2. Copy static assets (images & annotations)
-npm run copy-assets
+pnpm run copy-assets
 
 # 3. Start development server
-npm run dev
+pnpm run dev
 ```
 
 Visit http://localhost:3000 to see the dashboard.
@@ -23,7 +23,7 @@ Visit http://localhost:3000 to see the dashboard.
 
 ```bash
 # Build and export static site
-npm run build:static
+pnpm run build:static
 
 # This will:
 # 1. Copy all required assets to public/
@@ -35,11 +35,11 @@ The site is deployed to Cloudflare Pages automatically via GitHub Actions.
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run build:static` - Build static site with assets
-- `npm run copy-assets` - Copy images and annotations to public folder
-- `npm run clean` - Clean build artifacts and copied assets
+- `pnpm run dev` - Start development server
+- `pnpm run build` - Build for production
+- `pnpm run build:static` - Build static site with assets
+- `pnpm run copy-assets` - Copy images and annotations to public folder
+- `pnpm run clean` - Clean build artifacts and copied assets
 
 ## 📁 Project Structure
 
@@ -92,7 +92,7 @@ Before deploying, ensure you have:
 2. **Thumbnails** in `../data/thumbnails/`
 3. **Annotations** in `../annotations/nsd/`
 
-Run `npm run copy-assets` to copy these to the public folder.
+Run `pnpm run copy-assets` to copy these to the public folder.
 
 ## 🚢 GitHub Actions Deployment
 
