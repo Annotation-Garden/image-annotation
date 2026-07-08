@@ -13,8 +13,9 @@ export default function Dashboard() {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const [annotations, setAnnotations] = useState<Record<string, Annotation[]>>({})
   const [platformInfo, setPlatformInfo] = useState<PlatformInfo | null>(null)
-  const [selectedModel, setSelectedModel] = useState<string>('')
-  const [selectedPromptKey, setSelectedPromptKey] = useState<string>('')
+  // Default to the Claude Opus 4.8 vision_neuro annotation (prepended as annotations[0]).
+  const [selectedModel, setSelectedModel] = useState<string>('claude-opus-4-8')
+  const [selectedPromptKey, setSelectedPromptKey] = useState<string>('vision_neuro')
   const [loading, setLoading] = useState(true)
   const [imageLoading, setImageLoading] = useState(false)
   const [isDark, setIsDark] = useState(false)
