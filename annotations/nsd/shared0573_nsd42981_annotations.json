@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is framed by a doorway, with the left and right edges dominated by dark, out-of-focus wall surfaces in the foreground; the left wall shows a textured, grayish paint while the right edge reveals a vertical strip of reddish-brown wood trim marking the door frame. Through this opening, the background presents a small bathroom bathed in warm, yellowish artificial light emanating from a horizontal wall-mounted fixture in the upper center of the frame, above which a circular vent or fitting is visible on the ceiling. Centered in the middle ground sits a white toilet with its lid raised, positioned lower-center, its base meeting a wood-plank floor. To the right of center, a green or dark countertop holds indistinct toiletry items and what appears to be a glass. A white towel or garment drapes on the upper left, and a crumpled white cloth lies on the floor in the lower center foreground of the room. The overall color scheme combines warm amber lighting with cool dark shadows at the frame's edges, creating strong contrast. The composition uses the vertical doorway to create a framed, tunnel-like view drawing the eye inward toward the illuminated interior.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Door, (Center-of, Photograph)), ((Gray, Label/Paint, Label/Label-Blurry-edge-Left-wall), (Left-edge-of, Photograph)), ((Red-color, Brown-color, Manufactured-material/Wood, Building-part), (Right-edge-of, Photograph)), (Room, Indoors, (Yellow, Artificial-ventilation-artifact/Warm-light)), ((Light-shade, Yellow, Display-device), (Upper-center-of, Photograph)), ((Circle, Building-part), (Top-of, Room)), ((White, Furnishing, Open), (Lower-center-of, Photograph)), (Manufactured-material/Wood, Furnishing, (Below, White)), ((Green, Furnishing), (To-right-of, Center-of)), (Glass, (Top-of, Green)), ((White, Clothing), (Upper-left-of, Photograph)), ((White, Clothing), (Lower-center-of, Photograph)), ((Yellow, Luminance/Warm), (To-left-of, (Dark-shade, Cold))), Label/Luminance-contrast-High",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and slightly right of the frame's middle, stand two people posing together at what appears to be a formal event. On the left is a woman with dark, curly shoulder-length hair, wearing a magenta/purple sleeveless dress with a sheer dark overlay on her shoulders and arms; she holds a white envelope or card in her hands at her waist and has a dark bag or wrap draped over her left arm. To her right stands a man with short-cropped hair, wearing a dark suit jacket, a white shirt, and a light beige/gold patterned tie; his arm appears to be around the woman, indicating a close, friendly interaction as both face the camera. The background occupies the entire frame behind them and consists of an ornate cream-colored wall featuring decorative vertical panels with intricate molded floral and ribbon patterns, framed by columns. The overall color scheme is warm, dominated by beige, cream, and gold tones, punctuated by the woman's vivid magenta dress. The lighting is soft and even, with a slight flash brightness on the subjects. The composition is centered and symmetrical, with the couple anchoring the middle-lower portion.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Female, (Black, Label/Curly, Hair), (Purple, Clothing)), Interacts-with, (Human-agent, Male, (Black, Clothing), (White, Clothing), (Beige, Clothing)))), ((Human-agent, Female), Interacts-with, (White, Document)), (Background-view, (Beige, Building-part, (Plant, Pattern))), (Center-of, Image)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

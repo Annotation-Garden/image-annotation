@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a U-shaped kitchen viewed from a central vantage point, with white cabinetry lining the left, right, and rear walls, and a light gray tiled floor occupying the lower center foreground. In the background center, a window with a raised roller blind reveals green foliage and trees outside, admitting bright natural daylight that dominates the illumination and creates a warm cast on the ceiling above. Directly below and in front of the window, on the rear countertop, sits a cluster of transparent glass vessels and bottles alongside a white kettle to the left. The countertops are dark, contrasting sharply with the white cabinet fronts; the left counter (center-left, mid-frame) holds various small items including a red object, while the right counter (center-right) supports metallic pots and pans. A stainless-steel oven with visible handles is built into the lower-left cabinetry. Overhead cabinets with frosted-glass doors run along the upper left and right edges. The overall color scheme is neutral\u2014white, gray, and black\u2014punctuated by green through the window. Cursive text reading \"Weibsvolk/ManuPitter\" appears in the lower-left corner. Composition is symmetrical and centrally balanced.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Image, Photograph, (Room, Label/Kitchen, Indoors), (Center-of, Foreground-view), ((White, Furnishing, Label/Cabinetry), (Left-side-of, Room)), ((White, Furnishing, Label/Cabinetry), (Right-side-of, Room)), ((White, Furnishing, Label/Cabinetry), (Behind)), ((Gray, Light-shade, Furnishing, Label/Tiled-floor), Lower-center-of), ((Window, (Furnishing, Label/Roller-blind, Above)), (Center-of, Background-view)), ((Green, Plant, Label/Foliage), Outdoors), ((Green, Plant, Label/Trees), Outdoors), (Luminance, High, (Outdoors, Towards, Window)), ((Furnishing, Label/Countertop, Behind), (Group-of, (Glass, Label/Vessels))), ((White, Furnishing, Label/Kettle), Left-side-of), ((Dark-shade, Furnishing, Label/Countertops), To-left-of, (White, Furnishing, Label/Cabinet-fronts)), ((Furnishing, Label/Left-counter), (Center-of, Left-side-of)), ((Red, Object), Contained-in, (Furnishing, Label/Left-counter)), ((Furnishing, Label/Right-counter), (Center-of, Right-side-of)), ((Steel, Tool, Label/Pots-and-pans), Contained-in, (Furnishing, Label/Right-counter)), ((Steel, Furnishing, Label/Oven), Lower-left-of), ((Furnishing, Label/Overhead-cabinets, (Glass, Label/Frosted-doors)), (Top-of, Left-side-of)), ((Furnishing, Label/Overhead-cabinets, (Glass, Label/Frosted-doors)), (Top-of, Right-side-of)), (White, Gray, Black), (Word, ID/Weibsvolk-ManuPitter, (Lower-left-of)), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

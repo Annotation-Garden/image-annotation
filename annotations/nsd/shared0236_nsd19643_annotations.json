@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a woman seated in the lower-left to center portion of the frame occupies the lower half; she has dark, wet hair and wears a black cape with a metallic gold and black patterned trim across her chest, her face turned upward and to the right with a slight smile. Standing behind and to the upper-right is a second woman with blonde, wavy hair styled up, wearing a black glossy garment with a teal, white, and black geometric-patterned strap over her right shoulder. She holds a white hair dryer in her right hand, raised toward the seated woman's head, directing air downward, establishing a direct interaction between the two. In the background, a warm wooden cabinet or shelving unit fills the upper and right areas, with a clear plastic water bottle visible center-left on a surface, and hanging ribbons or decorations appear at the upper-left edge. The overall color scheme combines warm browns and golds with cooler black and teal accents. Lighting is bright and even, illuminating both faces frontally. The composition is diagonal, with the standing woman's extended arm connecting the two subjects across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Female, (Black, Hair, Label/Wet)), (Lower-left-of, Computer-screen))), ((Human-agent, Female, (Yellow, Hair)), (Upper-right-of, Computer-screen)), ((Human-agent), Interacts-with), (Human-agent, (Hold-down, (White, Tool, Label/Hair-dryer))), (Clothing, Black), (Clothing, (Teal, White, Black, Pattern)), (Background-view, (Building-part, Brown)), (Background-view, (White, Plastic, Label/Water-bottle)), (Brown, Orange-color, Black, Teal), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 356,
+            "total_tokens": 777
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 777
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

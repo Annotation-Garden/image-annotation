@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a bathroom interior dominated by a large wall-mounted mirror occupying most of the frame. In the foreground lower-center rests a beige countertop supporting a chrome faucet at lower-left, a white folded towel with a stack of disposable cups at lower-center-right, and a clear glass vase holding pink and magenta flowers with green stems positioned in the center. A horizontal fluorescent light fixture stretches across the upper portion of the frame, emitting a warm yellowish-white glow that produces the primary illumination and creates bright reflections on the mirror surface. The mirror reflects additional interior elements including a wall-mounted telephone or intercom device visible center-right, another handset mounted on the right side, and tiled walls decorated with a floral border pattern in pink tones along the lower mirror edge. A partial figure appears reflected in the mirror's center, though details are obscured and indistinct. The overall color scheme combines warm beige, cream, and soft pink hues with metallic silver accents. The composition is symmetrical yet layered, with real objects in front and their mirrored counterparts creating depth. Lighting is soft, ambient, and slightly hazy throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, (Room, Label/Bathroom), ((Window, Label/Mirror), Above, (Beige, Label/Length-Large)), (Beige, Furnishing, Lower-center-of), ((Man-made-object/Faucet, Steel), Lower-left-of), ((White, Clothing, Label/Towel), (Group-of, Item/Cup), Lower-right-of), ((Glass, Volume, Label/Vase), (Label/Container-of, (Pink, Purple, Plant, (Green, Label/Stems))), Center-of), ((Display-device, Horizontally-oriented, Label/Fluorescent-light), Above), (Yellow, White, Luminance), ((Cellphone, Label/Intercom), Right-side-of), (Cellphone, Right-side-of), ((Window, Label/Wall), Pattern, (Pink, Plant)), (Human-agent, Center-of, Label/Occluded), (Beige, White, Pink, Silver, Color), Symmetrical, Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 393,
+            "total_tokens": 814
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 814
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

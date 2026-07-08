@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a green rectangular table dominates the lower-center and lower-right of the frame, holding white paper plates with pizza slices, several beverage cans, and clear plastic water bottles positioned across its surface. Seated around this table are approximately seven people, most appearing to be young individuals; those on the left side (center-left of frame) face rightward, including one holding a pizza slice up near her mouth, while a person in a red top occupies the lower-right foreground with their back partially to the camera. In the center and upper-center, several seated figures eat pizza and engage with one another, some smiling or looking toward companions. The background contains tall wooden bookshelves filled with books along the right and center-right, and a wall with framed pictures and a window with dark green mullions on the upper-left. The overall color scheme combines warm beige and brown tones from walls and shelving with the green tabletop and scattered red and dark clothing. Lighting appears bright and even, likely from overhead fluorescent fixtures, casting minimal shadow. The composition centers on the communal eating interaction, framed by the enclosing shelves.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Green, Rectangle, Furnishing, (Lower-center-of), (Lower-right-of))), ((White, Ingestible-object/Staple-food, Savory), (Green, Rectangle, Furnishing)), (Ingestible-object/Main-dish, Savory), (Ingestible-object, (Contained-in, Man-made-object)), (Group-of, Human-agent, Label/Young), ((Human-agent, (Left-side-of)), Interacts-with, (Ingestible-object/Main-dish)), ((Human-agent, Red), (Lower-right-of)), ((Human-agent), Interacts-with), (Label/Eat, (Ingestible-object/Main-dish)), (Smile, Happy), (Background-view, ((Book, Furnishing), (Right-side-of))), ((Photograph), (Building-part)), ((Window, Green, Dark-shade), (Upper-left-of)), (Beige, Brown), (High, Luminance), Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

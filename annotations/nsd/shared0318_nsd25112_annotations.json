@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two African elephants dominate the foreground of this photograph, positioned facing one another in the center of the frame with their heads nearly touching, suggesting a physical interaction such as sparring or greeting. The left elephant occupies the center-left, oriented rightward, while the right elephant sits in the center-right, oriented leftward; their trunks and tusks converge in the lower-center of the image, and one trunk appears curled downward between them. Both animals display grayish-brown, wrinkled hides with visible ears and tusks. The lower portion of the frame is filled with bright green grass extending across the entire width, forming a lush ground plane. In the background, occupying the upper portion of the frame, stand scattered trees, including a prominent flat-topped acacia on the left and denser green foliage across the middle and right. A pale, hazy sky is faintly visible in the upper-left corner. The overall color scheme combines warm earthy browns of the elephants with vivid greens of the vegetation. Lighting appears diffuse and natural, without harsh shadows, indicating an overcast or evenly lit outdoor daytime setting, and the composition is balanced and symmetrical around the two central subjects.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Animal/Elephant, (Label/Center-left-of, Photograph), Rightward), Interacts-with, (Animal-agent, Animal/Elephant, (Label/Center-right-of, Photograph), Leftward)), (Foreground-view, ((Animal-agent, Animal/Elephant), Gray-color, Brown-color)), (Green, Plant/Grass, (Bottom-edge-of, Photograph)), (Background-view, (Plant, Plant/Tree, Green), (Upper-left-of, Photograph)), (White, Natural-feature/Sky, (Upper-left-of, Photograph)), Outdoors, Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

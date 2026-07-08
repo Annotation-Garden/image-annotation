@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts a warmly lit interior living room. In the immediate foreground, lower center, sits a round wooden coffee table holding a glass vase filled with white flowers and a small lit candle. To the lower left, a cream upholstered armchair with a dark folded blanket occupies the corner. Center-left in the midground stands a cream leather sofa with scattered cushions, positioned behind a rectangular wooden coffee table bearing cups and small objects. A patterned reddish-brown oriental rug covers the light wood floor beneath these furnishings. On the right side, midground to background, a gray patterned armchair sits beside a tall lamp with a pleated fabric shade emitting warm yellow light. The background wall, center, holds a large gilt-framed mirror flanked by wall sconces, with smaller framed pictures clustered on the left wall. A bookshelf stands center-right against the wall. The upper portion shows a wood-paneled ceiling with visible planks. A curtained window with blinds occupies the upper right. The overall color scheme is warm\u2014beige, cream, brown, and golden tones\u2014with soft artificial lighting creating a cozy, intimate atmosphere. Composition is balanced and symmetrical.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, Room, (Luminance/Warm, Label/Luminance-Low), ((Manufactured-material/Wooden, Man-made-object/Table, Circle), ((Glass, Volume), Contained-in, (White, Plant)), (Label/Lit, Label/Candle), Lower-center-of), ((Color/Cream, Furnishing), (Luminance/Dark, Clothing), Lower-left-of), ((Color/Cream, Furnishing), (Manufactured-material/Wooden, Man-made-object/Table, Rectangle), Center-of), ((Red-color, Brown-color, Pattern), Underneath), ((Gray, Pattern, Furnishing), (Label/Tall, Yellow, Luminance), Right-side-of), ((Large, Icon), Center-of, (Background-view)), (Book, (Furnishing), Center-of), (Manufactured-material/Wooden, Roof, Top-of), ((Window, Label/Curtain), Upper-right-of), (Beige, Color/Cream, Brown-color, Yellow-color), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two large cattle dominate the foreground, positioned in the lower and central portions of the frame, both with heads lowered to graze on green grass; the left cow occupies the left-center and lower-left area, showing a light tan and brown coat with a whitish muzzle, while the right cow spans the center and right side, displaying a darker brown head with prominent ears extending outward. In the middle ground, center-right, a smaller pale sheep stands facing forward on the grass. A wooden post-and-rail fence runs horizontally across the background, spanning left to right at mid-height, separating the grazing field from a dense line of dark green trees along the upper background. The upper portion of the frame shows a clear blue sky, gradient from lighter near the horizon to deeper blue at the top. The lower foreground grass is scattered with small white daisies, concentrated in the bottom-center and bottom-left. The overall color scheme combines warm earth tones of the animals with saturated greens and vivid blue sky. Lighting appears bright and natural, casting warm illumination on the cattle. The composition is symmetrical and balanced, with the two foreground cows framing the central background elements.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Animal-agent, Large, (Brown, White)), (Lower-left-of, Computer-screen)), ((Animal-agent, Large, Brown), (Center-of, Computer-screen)), (Animal-agent, (Bend, Head)), Grassy-terrain, Green), ((Animal-agent, Small, White), (Center-of, Computer-screen), (To-right-of, Computer-screen)), ((Building-part, Manufactured-material/Wood), (Center-of, Computer-screen), Horizontally-oriented), (Background-view, (Plant, Green, Dark-shade), (Blue, Upper-center-of, Computer-screen)), ((Plant, White), (Lower-center-of, Computer-screen)), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-center of the frame, a single skier stands facing the camera, wearing a light blue and dark jacket, dark pants, a helmet, and holding two ski poles that extend downward into the snow, with skis visible at the base of the image. This person is the primary focal element and is positioned slightly below the vertical center. In the mid-background, upper-center of the frame, two smaller figures wearing red or orange clothing stand among the trees, appearing much smaller due to distance. The background is dominated by numerous bare, snow-covered trees with pale, whitish branches, spread across the entire upper portion and both left and right edges of the frame. The ground throughout is covered in white snow, and the sky is a hazy, overcast white-gray, suggesting flat, diffuse lighting without visible shadows. The overall color scheme is muted and cool, dominated by whites, grays, and pale blues, punctuated only by the small red accents of the distant figures and the blue of the foreground skier's jacket. The composition centers the main subject vertically, framed symmetrically by trees.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-center-of, (Human-agent, Experiment-participant, (Light-shade, Blue, Clothing), (Dark-shade, Clothing), Man-made-object/Helmet, (Hold-down, Tool))), (Background-view, Upper-center-of, (Group-of, Human-agent, ((Red, Orange), Clothing), Far-from)), (Background-view, (Plant, White, Snow)), (Snow, White), (Natural-feature/Sky, Gray, White, Environmental-property/Overcast), (Symmetrical, Plant)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

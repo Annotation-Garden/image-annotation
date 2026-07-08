@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-left stands a white horse in profile facing right, its mane and tail flowing, ridden by a person seated upright who wears a dark cape draped over the shoulders and back and a flat cap; this rider occupies the upper-center of the frame and holds reins extending toward the horse's head. To the right of the frame, in the mid-ground, stands a second figure dressed in a pale, light-colored gown or dress with a flowing veil raised in one hand, positioned in the lower-right and center-right area, appearing to interact with or gesture toward the horse's head, which turns slightly toward her. The ground beneath is a sandy surface tinted blue by the lighting, with visible scuff marks and a faint circular track. The background shows a dark red curtain draped across the upper portion and a metal railing on the right. The overall color scheme is dominated by cool blue tones washing over the white horse, pale dress, and sand, contrasted against the warm dark red backdrop. Lighting is directional and theatrical, casting shadows and creating a spotlit, performance-like composition centered on the horse.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Center-of, (White, Animal/Horse, (Spatial-relation/Facing, Right))), ((Human-agent, Experiment-actor), (Ride, (White, Animal/Horse))), (Upper-center-of, (Human-agent, (Clothing, Luminance/Dark, Label/Cape), (Clothing, Label/Flat-cap))), ((Human-agent), (Grasp, (Label/Reins, Connected-to, (Head, Animal/Horse)))), (Right-side-of, (Human-agent, Experiment-actor, (Clothing, Light-shade, Label/Gown), (Clothing, Label/Veil))), (Lower-right-of, (Human-agent)), ((Human-agent), Interacts-with, (Animal-agent)), (Terrain/Sandy-terrain, Blue, (Circle, Label/Track)), (Background-view, (Luminance/Dark, Red, Label/Curtain)), (Right-side-of, (Manufactured-material/Metal, Label/Railing)), (Blue, Cold), (Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 355,
+            "total_tokens": 776
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 776
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

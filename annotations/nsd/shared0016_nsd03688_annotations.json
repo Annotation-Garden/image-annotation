@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a living room with warm yellow-toned walls occupying the upper and central background portions of the frame. In the center-background sits a green three-cushion sofa with visible armrests and back cushions, positioned against the wall. To the right, a large window with white multi-pane framing lets in bright natural light in the upper-right corner. Below and right of center stands a dark wooden upright piano with a bench, alongside a wooden-framed chair with cushions holding what appears to be a book or papers. In the foreground center-left, a dark wooden coffee table displays a white mug, scattered items, and a lower shelf holding papers or magazines. The floor is light honey-colored hardwood with visible plank lines running throughout the lower half of the frame. In the lower-left foreground, a red chair back and a dark cushioned object with a circular woven mat are partially visible. A doorway appears in the upper-left background, dark and recessed. The overall color scheme combines warm yellows, greens, and wood browns. Lighting is soft and natural, brightest near the window, casting gentle illumination across the room without harsh shadows or visible people or animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Indoors, Room), (Yellow, (Top-of, Background-view)), ((Green, Furnishing, Label/Sofa), (Center-of, Background-view)), ((Window, White, (Property/Multi-pane)), (To-right-of, Room)), ((Brown, Furnishing, Label/Piano), (Lower-right-of, Center-of)), ((Brown, Furnishing, Label/Chair), (Book)), ((Brown, Furnishing, Label/Coffee-table), (Foreground-view, (White, Label/Mug), Paper)), (Brown, Path, Label/Hardwood-floor), ((Red, Furnishing, Label/Chair-back), (Lower-left-of, Foreground-view)), ((Door, Dark-shade), (Upper-left-of, Background-view)), (Label/Soft, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the left and lower-left portions of the frame, a jagged pale-gray stone wall extends diagonally from the lower-left corner toward the center, its rough textured blocks catching bright sunlight. Running parallel to and just behind this wall, a low fence of thin black vertical posts connected by horizontal wires stretches from the lower-center toward the middle distance, dividing the space. Dominating the right and center of the frame stands a large elephant, its tan-brown wrinkled body facing left in profile; its trunk curves downward and extends toward the fence and wall, with two pale tusks visible near its head. The elephant occupies the mid-ground on a dry, light-brown dirt-and-sparse-grass surface. In the background, dense green foliage and trees fill the upper-left and upper-center, with additional pale rocks and lighter terrain visible behind the fence. The upper-left corner shows a strip of pale blue sky. The overall color scheme combines warm earth tones\u2014browns and tans\u2014with cooler greens and grays. Lighting is bright and directional, likely midday sun, casting sharp shadows beneath the elephant and illuminating the stone surfaces vividly.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Elephant, Brown-color, (Spatial-relation/Facing, Left)), (Man-made-object/Trunk, Curl-toes)), ((Man-made-object, Label/Stone-wall, Gray-color, Rough), To-left-of, (Man-made-object, Label/Fence, Black)), (Ingestible-object, Label/Dirt-terrain, Brown-color), (Plant, Green-color, Background-view), (Natural-feature/Sky, Blue-color, Upper-left-of), (Luminance/Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

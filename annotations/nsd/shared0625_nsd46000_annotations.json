@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a lush green grassy field that fills the entire frame, creating a monochromatic green background across upper, middle, and lower regions. In the foreground, positioned in the center and lower portion of the frame, stands a sheep with a shaggy grey and white fleece and a dark, nearly black head and lower legs. The sheep is oriented with its head lowered toward the lower-right area, its muzzle touching the grass in a grazing posture, directly interacting with the ground vegetation. In the upper portion of the frame, a wooden fence post rises vertically slightly left of center, with thin wire fencing extending horizontally across the upper background. Behind and above the fence, in the upper-left and upper-right corners, are darker green foliage and tree branches, some bearing small white blossoms scattered on the right side. The lighting appears natural and bright, casting a soft shadow beneath the sheep on the lower-left grass, suggesting overhead daylight. The overall color scheme is dominated by saturated greens contrasted against the grey-white and black tones of the animal. The composition centers the grazing sheep against an open, textured grassy setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Grassy-terrain, Green, (Upper-center-of, Background-view)), (Grassy-terrain, Green, (Center-of, Background-view)), (Grassy-terrain, Green, (Lower-center-of, Background-view)), ((Animal-agent, Animal/Sheep, Gray, White, (Head, Black), (Lower-leg, Black)), (Center-of, Foreground-view)), ((Animal-agent, Animal/Sheep), Interacts-with, (Grassy-terrain)), ((Animal-agent, Animal/Sheep), (Lower-right-of, Foreground-view)), ((Building-part, Label/Fence-post, Manufactured-material), (Upper-center-of, Background-view)), (Building-part, Label/Wire-fence, (Upper-center-of, Background-view)), (Plant, Green, Dark-shade, (Upper-left-of, Background-view)), (Plant, Green, Dark-shade, (Upper-right-of, Background-view)), (White, (Plant, (To-right-of, Background-view))), (Saturation, Green)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

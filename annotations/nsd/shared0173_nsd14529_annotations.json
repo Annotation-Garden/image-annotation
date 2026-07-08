@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an interior of a severely deteriorated room, dominated by a round analog clock mounted centrally in the upper-middle portion of the frame, its white face with black numerals and hands reading approximately 6:53 encased in a pale greenish-mint metal rim. The clock sits against a heavily damaged wall where plaster has crumbled away to reveal underlying gray and beige substrate, creating irregular patches across the center and left. In the upper region, exposed brickwork and wooden beams span horizontally, showing structural decay. A white electrical outlet is visible in the lower-left-center, mounted on remaining plaster. On the right side, a wooden shelving unit in the foreground holds various containers, tins, and cylindrical objects, including a green box on an upper shelf and folded striped fabric on a lower shelf. A cardboard box with printed text sits at the top right. The overall color scheme is muted and earthy, dominated by browns, tans, grays, and faded greens, evoking age and abandonment. Lighting appears diffuse and natural, entering from the upper area, casting soft shadows. The composition contrasts the intact clock against extensive surrounding decay and peeling surfaces throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, (Room, Abnormal), ((Clock, White, (Circle, Steel), (Center-of, Upper-center-of)), (Label/Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Label-Time-value-6-53)), ((Man-made-object/Wall, Abnormal), Beige, Gray), (Building-part, Brown), (Building-part, Horizontally-oriented), (Man-made-object, White, Lower-left-of), ((Furnishing, Manufactured-material/Wood), Right, In-front-of), (Box, Green, Upper-center-of), (Clothing, Lower-center-of), (Box, Paper, Upper-right-of), (Brown, Tan, Gray, Green-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 397,
+            "total_tokens": 818
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 818
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

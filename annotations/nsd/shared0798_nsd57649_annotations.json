@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by a woman positioned center-frame, standing on a reddish-brown clay tennis court that occupies the lower portion of the image. She wears a black sleeveless tank top and a white skirt, with white athletic shoes, and has short blonde hair. Her right arm is raised upward toward the upper-center of the frame, gripping a tennis racket with a black-and-white frame, while her left arm extends downward and outward to the left, holding a second tennis ball. Above and slightly right of the racket, a yellow-green tennis ball hovers in the upper-center area against the background. The background consists of dark green fabric windscreens or banners covering a chain-link fence, spanning the entire upper half of the frame; these display partially visible white and light-colored text and circular graphic elements, including letters reading \"TennisPla\" on the right side. The lighting appears diffuse and even, suggesting an overcast day without harsh shadows. The overall color scheme contrasts the warm orange-red clay below with the cool dark greens above, and the woman's black-and-white attire provides central visual focus within this composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Human-agent, Female, (Hair, Label/Short, Yellow)), Center-of), ((Clothing, Black, Torso-chest), (Clothing, White), (Clothing, White, Foot)), (Label/Clay-terrain, Red-color, Brown-color, Lower-center-of), (((Human-agent), (Upper-arm, Right), Upward), (Grasp, (Tool, Black, White, Label/Tennis-racket))), (((Human-agent), (Upper-arm, Left), Downward, Leftward), (Grasp, (Man-made-object/Ball, Label/Tennis-ball))), ((Man-made-object/Ball, Yellow-color, Green-color, Label/Tennis-ball), Upper-center-of), ((Clothing, Dark-shade, Green, Label/Windscreen), (Spatial-relation/Attached-to, (Nonbiological-artifact, Label/Chain-link-fence)), Background-view), ((Character, White, Label/TennisPla), (Circle)), (Label/Luminance-contrast-Low), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

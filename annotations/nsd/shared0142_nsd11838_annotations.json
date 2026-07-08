@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by a black and gray sport-touring motorcycle occupying the center and right portions of the frame, angled with its front wheel toward the lower left and its rear extending to the right edge. A fluorescent yellow-green helmet rests on the motorcycle's seat in the center of the frame, standing out sharply against the darker machine. The front tire, brake disc, and dark fork are visible in the lower left-center, resting on light tan, sandy ground that fills the lower portion of the image. In the background, a weathered wooden and wire fence runs horizontally across the middle of the frame, behind which lies a flat, dry landscape of reddish-brown earth and sparse green and yellow vegetation. Bare, leafless trees appear in the upper left, while a pale blue sky with faint clouds spans the upper portion. The lighting is bright and natural, consistent with strong daylight, casting soft shadows beneath the motorcycle. The overall color scheme combines muted earth tones, black machinery, and the vivid neon helmet as a focal accent. Compositionally, the motorcycle anchors the right and center, with the open rural background providing depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Black, Gray, Vehicle, Label/Sport-touring-motorcycle)), ((Vehicle, Label/Motorcycle), (Center-of, Photograph)), ((Yellow-color, Green-color, Head-part, Label/Helmet), (Top-of, (Vehicle, Label/Motorcycle-seat))), (Lower-left-of, (Label/Front-tire, Label/Brake-disc, Black, Label/Fork)), (Terrain, Tan, Label/Sandy-ground, Lower-center-of), (Background-view, (Label/Wooden-wire-fence, Label/Weathered)), (Background-view, (Field, Red-color, Brown-color, Label/Dry)), (Green-color, Yellow-color, Plant), (Upper-left-of, (Plant, Label/Bare-trees)), (Upper-center-of, (Natural-feature/Sky, Blue-color, Light-shade)), (Outdoors, Rural, Awake)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-right stands a man wearing a light-colored baseball cap, a blue, white, and yellow plaid button-up shirt, and dark denim jeans; his hands rest near his waistband and he faces the camera with a mustache visible on his face. Immediately to his left, occupying the center-left and extending toward the frame's left edge, stands a brown horse with a white marking on its face, outfitted with a dark leather bridle and reins that trail downward, and a brown leather saddle mounted on its back at the right side of the animal. The man stands close to the horse, positioned between the viewer and the animal's midsection, indicating direct proximity. The lower portion of the frame is filled with pale gray and tan rounded rocks and pebbles covering the ground. In the background, spanning the upper half, is a raised earthen bank or slope in tan and brown tones, topped with dry, straw-colored grasses and sparse branching vegetation. The overall color scheme is warm and earthy\u2014browns, tans, and muted blues. Lighting appears bright and natural, casting soft shadows. The composition is roughly balanced between subject and animal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Male, (Clothing, White, Label/Baseball-cap), (Clothing, Blue, White, Yellow, Label/Plaid-shirt), (Clothing, Dark-shade, Blue, Label/Denim-jeans), (Face, Label/Mustache), (Hand, Spatial-relation/Near, Waist)), Center-of), (Foreground-view, (Animal-agent, Brown, Label/Horse, (Face, White), (Label/Bridle, Dark-shade, Label/Leather), (Label/Saddle, Brown, Label/Leather)), Left-side-of), ((Human-agent), Interacts-with, (Animal-agent)), ((Human-agent), Close-to, (Animal-agent)), (Lower-center-of, (Gray, Tan, Rocky-terrain)), (Background-view, (Hill, Tan, Brown, (Grassy-terrain, Label/Straw-colored), Plant)), (Luminance/Bright, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a tall, ornate black clock post positioned in the center of the frame, extending vertically from the lower edge upward into the upper portion. In the foreground, the fluted column rises from the bottom center, transitioning into a decorative Corinthian-style capital around the lower-middle region, above which sits a square clock housing occupying the upper-center of the image. The clock face is white with black Roman numerals and features a gold circular decorative element at its center; it faces slightly left, and a matching darkened clock face is visible on the adjacent side facing right. The top of the housing bears pointed finials and a small ornamental spire against the sky. In the background, bare leafless tree branches spread across the right side and extend into the lower-right and upper-right areas, their thin brown limbs silhouetted. The sky fills the remaining background as a solid, clear blue with no clouds visible. The lighting is bright and directional, illuminating the left-facing clock face while shadowing the right side. The overall color scheme contrasts the deep black metalwork and brown branches against the vivid blue sky, creating a strong vertical central composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Clock, Black, Vertically-oriented, Large), Center-of), ((Cylinder, Bottom-edge-of), Below), ((Box, Upper-center-of), (Clock-face, White, (Character, Black), (Center-of, (Circle, Gold)))), ((Clock-face, Dark-shade), Right-side-of), ((Sculpture, Top-of)), ((Plant, Brown, Thin), Right-side-of), (Natural-feature/Sky, Blue, Outdoors), (Label/Luminance-contrast-High, Left-side-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

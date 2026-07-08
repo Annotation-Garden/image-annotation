@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left of the frame stands a white pedestal sink with a chrome faucet, mounted above a small white cabinet with two paneled doors positioned in the lower-center-left. To the right foreground, occupying the lower-center to lower-right, sits a white toilet with a closed lid and a rectangular cistern. Between the sink and toilet, resting on the floor in the center, is a white toilet brush in a holder. In the upper-left, mounted on the wall, is a rectangular mirrored medicine cabinet whose reflective surface shows a shower curtain and a window. The background is dominated by pale, glossy square-tiled walls extending across the frame. In the upper-right, a frosted-glass window with white frames admits bright daylight, through which green foliage is faintly visible. A chrome towel rail or bar is fixed to the wall in the center-right. The floor visible in the lower-right is covered with small mosaic tiles. The overall color scheme is predominantly white and cream with chrome accents. Lighting is bright and natural, entering from the right-side window, producing soft, even illumination and minimal shadows throughout the compact, symmetrically balanced composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, Lower-left-of, (White, Furnishing, Label/Pedestal-sink, (Metadata, Label/Chrome-faucet))), (Lower-center-of, Left-side-of, (White, Furnishing, Label/Cabinet, Door)), (Foreground-view, Lower-right-of, (White, Furnishing, Label/Toilet)), (Center-of, (White, Tool, Label/Toilet-brush)), (Upper-left-of, (Rectangle, Furnishing, Label/Mirrored-medicine-cabinet)), (Background-view, (Glass, Square, Label/Tiled-wall)), (Upper-right-of, (Window, Glass, White, Label/Frosted-window)), (Green, Plant, Leaf-covered-terrain), (Center-of, Right-side-of, (Metadata, Label/Chrome-towel-bar)), (Lower-right-of, (Small, Square, Label/Mosaic-floor-tiles)), (White, Label/Color-scheme), Outdoors, High, Luminance",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

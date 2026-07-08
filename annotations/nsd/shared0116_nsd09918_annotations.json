@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large light-blue Korean Air aircraft occupying the center and spanning nearly the full width of the frame, positioned in the middle horizontal band. The aircraft, a double-deck jet, displays the \"KOREAN AIR\" text in dark blue on its rear fuselage toward the right, and a red-and-blue swirl logo (resembling the Korean taegeuk symbol) on its tail fin at the left. Its nose points leftward, and gray underbelly and engines are visible in the lower portion of the aircraft. In the foreground, occupying the lower third, is a flat expanse of green grass with scattered small runway markers or lights, and a paved taxiway strip. In the background, the upper third shows low rolling hills covered in muted green and gray vegetation, several tall thin structures resembling antenna towers or masts on the right, and low airport buildings behind the plane. The sky at the very top is pale and overcast. The overall color scheme combines the aircraft's pale blue with green grass and muted gray-green hills, under soft, diffuse, low-contrast lighting suggesting an overcast or dusk condition. The composition is horizontally layered and balanced.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Aircraft, Large, Light-shade, Blue, (Word, ID/KOREAN-AIR), Center-of), (Aircraft, Center-of), ((Aircraft, (Word, ID/KOREAN-AIR), Dark-shade, Blue), Right-side-of), ((Aircraft, Icon, Red, Blue), Left-edge-of), ((Aircraft, Label/Front), Leftward), ((Aircraft, Gray, Engine), Lower-center-of), ((Grassy-terrain, Green, Foreground-view), Lower-center-of), (Path, Paved-terrain), ((Hill, Green, Gray, Background-view), Upper-center-of), ((Man-made-object/Tower, Thin, Label/Tall), Right-side-of), ((Building, Behind, Aircraft)), (Natural-feature/Sky, Light-shade), (Label/Luminance-contrast-Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

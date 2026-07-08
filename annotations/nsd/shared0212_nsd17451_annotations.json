@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a diesel locomotive occupying the central and horizontal midsection of the frame, spanning left to right in the middle ground. The locomotive displays an orange, red, and yellow color scheme with black striping and the white lettering \"BNSF\" positioned on its upper-right side; the number \"1727\" appears in white on the front cab at the left. The cab, with its windows, sits at the left, while the engine body with black ventilation grilles and rounded roof-mounted fans extends toward the right. In the foreground, occupying the lower portion of the frame, is a strip of light tan dirt or gravel, above which lies a band of gray track ballast where the train rests. A patch of green grass appears in the lower center-left, separating the dirt from the rails. The background, filling the upper portion, shows a bright blue sky with wispy white clouds and a faint low horizon suggesting flat, open terrain. Lighting is bright and natural, consistent with daytime sun, casting subtle shadows beneath the locomotive. The composition is horizontal and layered, with no people or animals visible. Colors are saturated and high-contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Train, (Orange, Red, Yellow, Black, White)), (Center-of, Photograph)), (Word, Label/BNSF, White), (Word, Label/1727, White), ((Window, (Part-of, Train)), Left-side-of), ((Roof, (Part-of, Train)), Right-side-of), (Dirt-terrain, Tan, Lower-center-of), (Gravel-terrain, Gray), (Plant, Green, Lower-left-of), (Natural-feature/Sky, Blue, Upper-center-of), (White, Natural-feature/Cloud), (Terrain, Horizontally-oriented), Outdoors, (Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

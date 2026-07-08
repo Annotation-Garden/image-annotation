@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph displays two motorcycles positioned closely side by side, both painted in vibrant green and yellow color schemes. The motorcycle on the right occupies the center and right portions of the frame, dominating the foreground with its prominent chrome headlight visible in the center-right area, along with amber-colored turn signal lights flanking the headlight. Below and toward the lower-center, a green fuel tank or fairing with yellow accents is visible, and further down a red rectangular reflector sits in the lower portion. The motorcycle on the left occupies the left and upper-left region, showing its own chrome headlight in the center-left, with exposed silver engine components and metallic tubing visible in the middle-left area. A black leather seat appears in the upper-center between the two machines. The background reveals gray paved asphalt ground in the lower-left and a hint of greenery in the upper-left corner. The lighting is diffuse and even, producing soft highlights on the glossy painted surfaces and reflective chrome, suggesting an overcast or shaded outdoor setting. The composition is tightly cropped, emphasizing curved metallic forms, symmetry between the paired bikes, and saturated primary colors throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Green, Yellow, ((Vehicle, Label/Motorcycle), To-right-of)), ((Vehicle, Label/Right-motorcycle), (Center-of, Photograph)), ((Vehicle, Label/Right-motorcycle), (Right-side-of, Photograph)), (Foreground-view, (Vehicle, Label/Right-motorcycle)), ((Silver, Label/Chrome, Label/Headlight), (Center-of, Photograph)), (Orange, Label/Turn-signal), ((Green, Yellow, Label/Fuel-tank), (Lower-center-of, Photograph)), ((Red, Rectangle, Label/Reflector), (Lower-center-of, Photograph)), ((Vehicle, Label/Left-motorcycle), (Left-side-of, Photograph)), ((Vehicle, Label/Left-motorcycle), (Upper-left-of, Photograph)), ((Silver, Label/Chrome-headlight), (Center-of, Photograph)), ((Silver, Engine, Label/Engine-tubing), (Left-side-of, Photograph)), ((Black, Label/Leather-seat), (Upper-center-of, Photograph)), ((Gray, Paved-terrain), (Lower-left-of, Photograph)), ((Green, Plant), (Upper-left-of, Photograph)), (Outdoors, Label/Diffuse-lighting), Symmetrical, Saturation",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

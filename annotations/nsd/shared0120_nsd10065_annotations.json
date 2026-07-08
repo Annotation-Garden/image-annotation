@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph presents an overhead view of a dark blue ceramic bowl occupying most of the frame, filled with a mixture of orange baby carrots and green broccoli florets. The bowl is centered but shifts slightly toward the lower and left portions of the image, with its rounded rim visible along the left, upper, and lower edges. A metallic spoon enters from the upper right, its handle extending diagonally out of the frame toward the top-right corner while its bowl-shaped end rests submerged among the vegetables in the center-left area. The vegetables interact by intermingling throughout, with carrots and broccoli distributed evenly and touching one another; small flecks of green herb or seasoning are scattered across their surfaces. The background consists of a plain, pale off-white surface visible in the upper-left and along the right edge, providing contrast to the bowl. The color scheme centers on complementary orange and green tones against the cool blue bowl and neutral white backdrop. Lighting appears soft and diffuse, coming from the upper area, casting gentle shadows beneath the spoon handle and along the bowl's right interior. The composition is balanced, filling the frame densely with textured food.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Aerial-view, ((Ceramic, DarkBlue, Volume), (Lower-left-of, Image)), ((Ingestible-object/Staple-food, Orange, Savory), (Contained-in, (Ceramic, DarkBlue, Volume))), ((Ingestible-object/Staple-food, Green, Savory), (Contained-in, (Ceramic, DarkBlue, Volume))), ((Ingestible-object/Staple-food, Orange), Interacts-with, (Ingestible-object/Staple-food, Green)), ((Steel, Tool), (Upper-right-of, Image)), (Green, Label/Herb-seasoning), (White, Background-view), (Label/Balanced-composition, Label/Textured-food)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

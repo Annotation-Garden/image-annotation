@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the foreground and occupying the center and right portions of the frame is a red double-decker bus, angled diagonally so its front faces the lower-center while its body recedes toward the upper right. The bus displays the route number \"9\" and destination text reading \"Kensington High Street\" on its front upper panel, and a license plate reading \"218 CLT\" is visible on its lower front. In the lower-left foreground, partially cropped, sits a dark-colored car parked along the street, with additional vehicles receding into the mid-left distance. The background upper-left contains a multi-story stone building with numerous windows and bare-branched trees rising above the street. On the right edge, a black metal pole and a bus-stop sign with the circular red-and-blue London transport roundel appear in the mid-ground, alongside another roundel sign higher up. The road surface fills the lower foreground with painted yellow markings. The overall color scheme is muted and cool, dominated by grays of the stone and pavement, punctuated by the saturated red of the bus. Lighting is flat and diffuse, consistent with an overcast day, casting minimal shadows. The composition balances the massive bus against the receding street.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, ((Red, Vehicle, Label/Double-decker-bus), (Center-of, Foreground-view)), ((Red, Vehicle, Label/Double-decker-bus), (Word, ID/Kensington High Street)), ((Red, Vehicle, Label/Double-decker-bus), (Character, ID/9)), ((Red, Vehicle, Label/Double-decker-bus), (Label/License-plate, ID/218 CLT)), ((Dark-shade, Car), (Lower-left-of, Foreground-view)), ((Group-of, Vehicle), (To-left-of, Background-view)), ((Building, Manufactured-material), (Upper-left-of, Background-view), (Window, Label/Multi-story)), (Plant, Background-view), ((Black, Man-made-object, Label/Metal-pole), (Right-edge-of, Foreground-view)), ((Circle, Red, Blue, Label/Bus-stop-roundel-sign), (Right-side-of, Foreground-view)), (Road, Yellow, Lower-center-of), (Gray-color, Cold)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

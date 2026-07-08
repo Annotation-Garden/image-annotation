@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A lone person, positioned in the lower-center of the frame, stands on a snow-covered trail wearing a white jacket and dark pants, holding two ski poles that extend downward and outward on either side, appearing to be cross-country skiing. This figure occupies the foreground-to-middle ground and is the primary human element, facing away from the viewer, moving into the scene. Surrounding and framing the trail on the left and right sides are numerous tall, slender evergreen trees with dark trunks, their branches laden with white snow, forming dense vertical elements throughout the background. The snow-covered ground fills the lower portion of the frame, appearing white with bluish shadows. In the upper-center background, warm golden and amber light filters through the trees, contrasting sharply with the cool blue and white tones dominating the rest of the image. The overall color scheme combines cool blues, whites, and dark greens with a concentrated patch of warm yellow-orange light near the center. The lighting suggests low-angle sun penetrating the forest. The composition is vertically oriented, symmetrically balanced by trees flanking a central receding pathway that draws the eye toward the illuminated background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Vertically-oriented, Symmetrical, ((Human-agent, Experiment-actor, Lower-center-of), (Backward, (Clothing, White), (Clothing, Black), Ride)), ((Human-agent), Interacts-with, (Tool, Label/Ski-poles)), Foreground-view, (Path, White, Snow), (Plant, Green-color, (Left-side-of, Path)), (Plant, Green-color, (Right-side-of, Path)), (Snow, White, Blue-color, Lower-center-of), (Upper-center-of, Orange-color, Yellow-color, Luminance), (Blue-color, White, Green-color), (Label/Forest, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

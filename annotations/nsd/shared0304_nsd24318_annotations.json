@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an interior living room with a warm beige-and-brown color scheme, dominated by peachy-tan walls, a light brown carpeted floor, and dark furniture. In the foreground lower-right, a black leather sectional sofa occupies a substantial portion of the frame, extending from the right edge toward the center. A dark rectangular coffee table with a lower shelf sits in the lower-center foreground atop the carpet, holding a small dark object on its surface. On the left side, in the mid-ground, a large flat-screen television rests on a low black media console; the screen is illuminated, displaying a colorful, detailed image with reds, blues, and greens that contrasts sharply with the surrounding darkness. In the background upper-center-right, a wide window with vertical blinds, partially open, reveals muted outdoor foliage and light filtering through. The lighting is dim and artificial, with the television screen serving as a prominent light source, casting the room in low, warm illumination. The composition is asymmetrical, balancing the bright television on the left against the dark sofa on the right, with the window anchoring the upper background and creating depth within the enclosed domestic space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Indoors, Room, Beige, Brown), ((Window, (Label/Vertical-oriented, Furnishing)), Upper-center-of, Background-view), ((Black, Furnishing, Rectangle), Lower-center-of, Foreground-view), ((Display-device, (Red, Blue, Green)), Left-side-of), ((Black, Furnishing), Lower-right-of, Foreground-view), (Low, Luminance), Asymmetrical, Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

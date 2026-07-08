@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, dominating the left and center of the frame, stands a large gray elephant facing forward, its massive head, floppy ears, and long trunk clearly visible, with the trunk curving downward toward the lower-center portion of the image. A second elephant occupies the right side of the frame, positioned slightly behind the first, with its trunk extended downward and reaching toward a cluster of bright green leaves in the lower-center-right region, suggesting a feeding interaction with the foliage. The background, filling the upper-right portion, consists of green vegetation, leafy branches, and thin tree limbs that recede into softer focus. Dry, pale tan grasses and stalks appear along the lower edge of the frame in front of the elephants. The overall color scheme combines muted grays of the elephants' wrinkled, textured skin with vibrant greens of the leaves and yellow-brown tones of the dry grass. Lighting is natural and diffuse, appearing to come from above, producing soft shadows in the deep skin folds and around the ears. The composition is tightly cropped, filling nearly the entire frame with the two animals and immediate vegetation, leaving little empty space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Animal-agent, Label/Elephant, Gray, Large), (Head, Ear, (Body-part, Label/Trunk))), ((Animal-agent, Label/Elephant, Gray), Behind, (Animal-agent, Label/Elephant))), ((Animal-agent, Label/Elephant), Interacts-with, (Plant, Green, Plant/Leaf)), (Lower-center-of, (Body-part, Label/Trunk)), (Background-view, Upper-right-of, (Plant, Green, Plant/Leaf)), (Label/Lower-edge-of, (Plant, Label/Dry-grass, Yellow, Brown)), (Natural-object, Rough, Label/Wrinkled)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

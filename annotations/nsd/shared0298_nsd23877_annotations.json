@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph presents a floral display arrangement centered in the frame against a vivid coral-pink backdrop marked with horizontal striations. In the foreground, occupying the lower center and spanning left to right, are several gerbera daisies in orange and pink hues, resting in clear glass vases atop a pink surface. The central daisy is orange, flanked by pink blooms on the lower left and lower right. Behind these, rising vertically in the middle ground, are tall black rectangular vessels with lattice or grid-like patterns, from which thin bare branches extend upward and splay outward across the upper portion of the frame. The background at the frame's edges is darker, with black vertical structures bordering the bright central panel; the right side reveals a partial human figure standing in a lighter, more distant space, and the far left shows additional indistinct greenery and a seated person. A small dark sign with white text sits in the lower left corner. The lighting is bright and even on the central display, creating a warm, saturated color scheme dominated by pink, orange, and black, with a balanced, symmetrical vertical composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Center-of, ((Orange, Plant), (Pink, Plant), (Glass, Item), (Pink, Item))), ((Pink, Orange), (Plant, Center-of)), (Orange, Plant, Center-of), ((Pink, Plant), Lower-left-of), ((Pink, Plant), Lower-right-of), (Black, Rectangle, Vertically-oriented, Pattern), (Plant, Thin, Upward), (Black, Vertically-oriented, Boundary-of), ((Human-agent, Right-side-of), Standing), ((Human-agent, Left-side-of), Sitting), (Plant, Green-color, Left-side-of), (Black, (Man-made-object/Sign, White, Word), Lower-left-of), (Luminance/Bright, Luminance), (Pink, Orange, Black), Symmetrical, Vertically-oriented",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 351,
+            "total_tokens": 772
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 772
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

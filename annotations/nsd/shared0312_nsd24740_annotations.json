@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A domestic cat occupies the foreground, lying curled on a weathered wooden bench that spans the entire frame; the animal is positioned centrally and slightly toward the lower half, with its head resting at the left-center and its body extending rightward, culminating in a curled tail at the lower-right. The cat displays a calico or tabby coat combining white on the chest, face, and paws with grey-brown and tan patches along the back and head, and its eyes appear closed, suggesting rest. In the background, horizontal wooden slats of the bench's backrest fill the upper two-thirds of the image, showing grey, aged, cracked planks with visible knots and gaps between boards, through which darker shadowed spaces are seen. The lower foreground shows the horizontal seat slats on which the cat rests. Lighting is natural and directional, entering from the right side, casting soft illumination across the cat's body and creating gentle shadows in the wood's crevices. The overall color scheme is muted and earthy, dominated by greys, browns, and whites. Compositionally, the horizontal lines of the bench create a strong parallel structure framing the resting animal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Cat, Asleep, Resting, (Eyes-closed), (White, Brown-color, Tan)), (Center-of, Foreground-view)), ((Head, To-left-of, (Torso)), (Man-made-object/Tail, Lower-right-of)), ((Furnishing, Label/Bench, (Horizontally-oriented), Manufactured-material/Wood, Gray-color, Rough), Background-view), (Window, Label/Slat-gaps, Background-view), (Luminance, Rightward), Brown-color, Gray-color, White",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and left portions of the frame, a man stands holding a white rugby ball with both hands positioned at his lower-center torso; the ball shows textured gripping patterns and some dirt smudges. The man wears a dark sleeveless athletic top with vertical bright blue accents down the front, matching dark shorts with light blue trim along the side. He has short dark hair, a beard, and a yellow wristband on one wrist. His head is tilted downward and slightly to his right, his gaze directed toward the ball, and his body is angled as though mid-motion, possibly turning or walking. The background, spanning the entire upper half of the frame, consists of a grassy green field in the lower portion and a dense line of dark green trees and foliage across the top, with narrow vertical tree trunks visible. The lighting appears natural and diffuse, suggesting daytime outdoors, with soft shadows on the man's arms and torso. The overall color scheme combines dark blues and blacks of the clothing against saturated greens of grass and trees, with the white ball providing the brightest focal contrast in the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, (Human-agent, Male, (Foreground-view, Center-of), ((Torso, Label/Sleeveless, Black, Blue), (Label/Shorts, Black, Blue)), (Head, (Hair, Black), Label/Beard), ((Wrist, (Yellow)), Label/Wristband), (Move-head, Downward), (Turn), (Label/Gaze, Towards, (White, Man-made-object/Ball))), ((Human-agent), Interacts-with, (Man-made-object/Ball, White, (Grasp, (Hand)), Label/Rugby-ball)), (Background-view, (Grassy-terrain, Green), (Plant, Green, Label/Trees)), (Label/Natural, Light-shade)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

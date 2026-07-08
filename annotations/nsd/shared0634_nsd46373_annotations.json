@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph displays four mobile phones arranged on a marbled surface with beige, white, and rust-orange veining. In the foreground, occupying the lower-center of the frame, lies a black slider-style phone oriented horizontally, featuring a dark screen and a circular navigation pad with silver buttons on its right side. Positioned in the center-right, a white phone with a dark screen and similar circular controls sits at a slight diagonal angle. To the left, in the mid-ground, a teal-colored phone rests with its screen facing upward and a directional pad visible. In the upper-right background, a black flip phone lies open, its reflective screen catching light. In the upper-left corner, partially cropped, a white cup with pink markings appears in the background, out of focus. The lighting is soft and diffused, likely daylight, casting gentle shadows beneath the phones and creating subtle reflections on their glossy screens. The overall color scheme combines cool tones\u2014teal, black, and white\u2014against the warm neutral marble backdrop. The composition is somewhat cluttered yet balanced, with the phones fanned outward across the surface, drawing the eye diagonally from lower-left toward upper-right.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Cellphone, Black, Horizontally-oriented, (Circle, (Silver, Push-button))), Lower-center-of), ((Cellphone, White, Oblique), Center-of), ((Cellphone, Cyan-color), To-left-of), ((Cellphone, Black, Open), Upper-right-of), ((Man-made-object/Cup, White, Pink), Upper-left-of), (Label/Marble, (Beige, White, Orange-color))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

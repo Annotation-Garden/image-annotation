@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the central and lower portion of the frame, a snowboarder is captured mid-action, leaning forward with knees bent and torso angled downward toward the lower right. The person wears a red jacket on the upper body, positioned in the upper-center of the frame, with the left arm extended outward to the upper left and the right arm bent near the body. The face, in the center, is partly obscured by orange-tinted goggles and a dark helmet or headgear. White-and-gray camouflage-patterned pants cover the legs, dominating the central frame, and the feet are strapped into a snowboard visible at the lower portion, its underside showing an orange stripe. The snowboarder's boots appear dark with buckle straps. In the background, filling the entire frame, is a snow-covered slope with a smooth white surface. To the left and lower-left, a dark shadow of the figure stretches across the snow, indicating strong directional sunlight from the right. The overall color scheme contrasts vivid red and orange against the white snow and gray camouflage. Lighting is bright and natural, casting sharp shadows and creating high contrast across the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Label/Snowboard, (Label/Strapped-to, Foot)))), ((Human-agent), Interacts-with, (Label/Snowboard)), (Human-agent, (Bend, (Knee)), Forward), (Torso, (To-right-of, Center-of), Downward), ((Red, Clothing), Upper-center-of), (Upper-extremity, Left, (To-left-of, Upper-left-of)), (Upper-extremity, Right, (Close-to, Torso)), (Face, Center-of), (Orange, Glasses), (Black, Head), ((White, Gray, Clothing), Center-of), (Label/Snowboard, Lower-center-of, (Orange)), (Black, Foot), (Background-view, (Snow, White, Smooth)), ((To-left-of, Lower-left-of), (Snow)), (Luminance/Bright), Real-world",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is a single giraffe positioned in the center of the frame, standing upright with its body occupying the vertical middle portion and its head reaching into the upper-center region against the sky. The giraffe faces toward the viewer, oriented slightly to the right, with its long neck rising diagonally and its four legs planted in the lower-center foreground on pale, sandy ground scattered with small stones and sparse dry vegetation. In the immediate foreground and lower frame, thin leafless branches and low brownish shrubs cluster around the giraffe's legs, particularly to the right and lower-center. The background across the middle and upper-left portions contains a continuous band of green and olive-toned bushes and low trees, behind which a faint bluish-gray hill or ridge is visible near the horizon on the left. The upper third of the frame is a pale, hazy blue sky with minimal cloud detail. The overall color scheme combines muted earth tones\u2014tan, brown, and beige\u2014with the giraffe's patchwork of orange-brown spots, complemented by green foliage and soft blue sky. Lighting appears bright and diffuse, casting soft shadows beneath the giraffe.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Animal-agent, Label/Giraffe, (Center-of, Image), Vertically-oriented, (Spatial-relation/Facing, To-right-of, Foreground-view), Orange, Brown), ((Plant/Leaf, Plant, Brown), (Around, (Animal-agent, Label/Giraffe))), (Lower-center-of, Image, (Path, Beige, (Mineral, Small))), (Background-view, (Plant, Green, Olive)), (Hill, (Spatial-relation/Near, Natural-feature/Horizon)), (Upper-center-of, Image, (Natural-feature/Sky, Blue, Light-shade)), (Luminance/Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

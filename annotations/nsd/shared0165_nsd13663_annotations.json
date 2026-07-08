@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a hotel bathroom vanity dominated by a granite countertop in beige, tan, and dark speckled tones that spans the center and lower portion of the frame. In the foreground, on the countertop, rolled white towels rest to the left, center, and right, flanking two chrome faucets positioned at center-left and right; a white tray or organizer with small toiletry bottles sits at center on the counter. Below the counter, a dark wood cabinet occupies the lower frame, featuring open cubby shelves holding additional folded white towels on the lower left and lower right, with a marked \"V\" logo visible at center. Above the counter, a large mirror fills the upper background, reflecting a shower area, hanging white towels on the right, and vertical fixtures. In the upper right corner, a round magnifying mirror is mounted on an extendable arm. The overall color scheme combines dark browns, blacks, warm beige stone, and crisp white textiles. Lighting appears soft and warm, casting gentle shadows. The composition is horizontally balanced, with symmetry between the paired sinks and towel arrangements grounding the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Room, Label/Hotel-bathroom), ((Manufactured-material/Granite, Furnishing, Label/Countertop), (Beige, Tan, Dark-shade)), ((White, Clothing, Label/Towels), (To-left-of, (Steel, Label/Faucet))), (White, Furnishing, Label/Tray), ((Man-made-object/Container, Label/Toiletry-bottle), Small), ((Brown-color, Furnishing, Label/Cabinet), Below), ((White, Clothing, Label/Folded-towels), (Lower-left-of, (Furnishing, Label/Cabinet))), ((White, Clothing, Label/Folded-towels), (Lower-right-of, (Furnishing, Label/Cabinet))), (Center-of, (Icon, Label/V-logo)), ((Furnishing, Label/Mirror), Large, Above), ((Furnishing, Label/Magnifying-mirror), Circle, Upper-right-of), (Luminance/Warm, Light-shade), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

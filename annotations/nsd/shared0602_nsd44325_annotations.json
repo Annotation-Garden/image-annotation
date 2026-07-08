@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an outdoor livestock market with a large flock of sheep dominating the foreground and middle ground. The sheep, rendered in cream, tan, and light brown wool with darker brown patches on some, are arranged in rows extending diagonally from the lower-left toward the center, most facing away from the camera. In the lower-right foreground stands a man in dark clothing wearing a light-colored knit cap, positioned upright beside the animals with his back partly turned. Across the middle ground, several people are scattered from left to right, some in hooded robes and darker garments, standing among and behind the sheep, appearing to attend to the animals. The ground is bare, reddish-brown dirt. In the background, a white vehicle sits at center-left, and low buildings stretch across the horizon beneath a range of rolling hills or mountains. A tall vertical pole rises in the upper-center against a pale, hazy sky. The overall color scheme is warm, dominated by earthy browns, tans, and ochres, with cooler blues in the distant hills. Lighting appears bright and diffuse, casting soft shadows beneath the animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Group-of, (Animal-agent, Animal/Sheep), (Label/Cream-color, Tan, Brown-color, Light-shade)), ((Human-agent, Experiment-actor), (Clothing, Dark-shade), (Head, Clothing, Light-shade)), ((Human-agent), Interacts-with, (Animal-agent, Animal/Sheep)), ((Human-agent), (Clothing, Dark-shade)), (Terrain, Dirt-terrain, Brown-color, Red), ((White, Vehicle), Center-of), (Group-of, Building, Small), (Hill, Blue-color, Far-from), (Item, Vertically-oriented, Upper-center-of), (White, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

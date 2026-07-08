@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a large giraffe stands prominently in the center-right of the frame, its body oriented laterally while its head turns toward the viewer, positioned in the upper-center region. A second, smaller giraffe stands directly behind and to the left of the first, its neck lowered, creating a partial overlap between the two animals in the lower-center. To the left in the mid-ground sits a dark metal feeding rack or trough structure with a grid pattern, occupying the center-left at ground level. A small animal, possibly a lighter-colored antelope, appears near the base of the feeder in the lower-left. In the background, bare-branched trees and green shrubbery span the horizon, with a tall palm tree on the right and what appears to be additional distant giraffe forms among the vegetation on the left. A dirt path curves through the right side. The upper portion shows a pale blue sky with diffuse white clouds. The lighting is bright and natural, casting soft shadows beneath the giraffes. The overall color scheme combines earthy browns, tans, and muted greens with the cooler blue sky, producing a warm, naturalistic outdoor composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Large, Animal/Giraffe, Horizontally-oriented), (Upper-center-of, Image)), ((Small, Animal/Giraffe), (Behind, (Animal/Giraffe))), ((Small, Animal/Giraffe), (To-left-of, (Large, Animal/Giraffe))), ((Small, Animal/Giraffe), (Lower-center-of, Image)), ((Manufactured-material/Metal, Tool, Pattern), (Label/Center-left-of, Image)), ((Small, Animal/Antelope), (Lower-left-of, Image)), (Plant, Background-view), ((Plant), (Right-side-of, Image)), (Path, (Right-side-of, Image)), ((Blue, Natural-feature/Sky), Upper-center-of), (White, Natural-feature/Cloud), ((Brown-color, Tan, Green-color))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

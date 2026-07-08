@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-center to lower-right, a large expanse of gray asphalt street is marked with white painted lines forming a triangular or diamond pattern, likely a bike lane or traffic divider. On the left side, running from lower-left toward the center, a concrete curb separates a sidewalk lined with green-leaved trees whose branches extend into the upper-left frame. A row of orange traffic cones is placed diagonally across the mid-ground center, guiding a path. Two cyclists occupy the center of the frame: one man in a white shirt rides toward the viewer on the right-center, while another cyclist appears smaller and farther back near the center. In the mid-ground right, a dark blue or black car and a black SUV are positioned on the roadway. The background center-left features a tan multi-story building with an American flag mounted on its facade; additional signage, including yellow lettering, appears on the right-background structures. The overall color scheme combines gray pavement, green foliage, tan buildings, and scattered orange cones. Lighting is bright and natural, casting soft shadows, indicating an overcast or hazy daytime condition. The composition recedes toward a distant vanishing point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, (Road, Gray, Large, (Lower-center-of, (Foreground-view))), ((White, Line-noise-artifact, Triangle), Part-of, Road), ((Path, Label/Bike-lane), Part-of, Road), ((Building-part, Label/Curb), (To-left-of, Road)), (Path, Label/Sidewalk, (To-left-of, Road)), ((Plant, Green), (Left-side-of, (Background-view))), (Group-of, Label/Traffic-cone, Orange, (Center-of, (Background-view))), ((Human-agent, Experiment-actor), (Ride, Bicycle), (White, Clothing), Towards, (Center-of, (Foreground-view))), ((Human-agent, Experiment-actor), (Ride, Bicycle), Far-from, (Center-of, (Background-view))), (Car, Blue, (Right-side-of, (Background-view))), (Car, Black, Label/SUV, (Right-side-of, (Background-view))), (Building, Tan, (Center-of, (Background-view))), ((Icon, Label/Flag), Part-of, Building), ((Character, Yellow), (Right-side-of, (Background-view))), Luminance/Daytime",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

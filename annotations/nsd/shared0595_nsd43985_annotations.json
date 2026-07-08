@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a baseball scene composed across three main figures positioned in the center and lower-center of the frame. In the foreground lower-center stands a batter wearing a white uniform with blue accents, the number \"5\" visible on his back, a blue helmet, and blue socks, holding a raised bat over his right shoulder in a ready stance. To his left, in the lower-left-center, a catcher crouches in a red and gray uniform with red leg guards, a helmet, and a mitt extended forward toward the batter. Further left, in the mid-left of the frame, an umpire stands upright in a dark navy uniform with the number \"60\" and a yellow badge on his back, positioned behind the catcher. The background upper portion shows expansive green grass and brown dirt of the playing field, with a curved dirt-grass boundary. White chalk baselines and the home plate area mark the lower-center ground. The color scheme combines green, brown, white, red, and blue tones. Lighting appears bright and even, casting soft shadows beneath the figures, suggesting daytime illumination. The composition centers the batter as the focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Green, Brown-color, White, Red, Blue), ((Human-agent, Experiment-actor, Label/Batter), ((White, Blue), Clothing), (Blue, Label/Man-made-object-Helmet-Blue), (ID/5), (Hold-down, (Label/Bat, Upper-right-of)), (Standing, Ready-indication)), ((Human-agent, Experiment-actor, Label/Catcher), ((Red, Gray-color), Clothing), Man-made-object/Helmet, Crouching, (Towards, Label/Batter), Lower-left-of), ((Human-agent, Experiment-actor, Label/Umpire), ((Blue, Dark-shade), Clothing), (ID/60), (Yellow, Label/Badge), Standing, (Behind, Label/Catcher), Lateral), (Field, Grassy-terrain, Green), (Dirt-terrain, Brown-color), (Boundary-of, (Dirt-terrain, Grassy-terrain)), (White, Path, Label/Baseline), (Lower-center-of, Label/Home-plate), (Outdoors, Label/Luminance-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

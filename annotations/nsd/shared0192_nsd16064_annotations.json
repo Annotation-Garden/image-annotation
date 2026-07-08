@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A lone person occupies the lower-center portion of the frame, positioned slightly left of center in the foreground, appearing to snowboard or ski across a smooth, snow-covered slope; the figure wears dark upper clothing and light-colored lower garments, with arms extended outward for balance, casting a faint shadow onto the snow to their right. The entire lower third of the image consists of white, gently textured snow bearing subtle track marks. Spanning the horizontal middle band of the frame is a low fence or barrier composed of repeated dark posts, running left to right and separating the open slope from the treeline behind it. The upper two-thirds of the composition is dominated by a dense stand of tall coniferous evergreen trees, their branches heavily laden with snow, filling the background from left to right edge. A small patch of pale blue sky is faintly visible through the trees near the upper-right area. The overall color scheme is muted and cool, dominated by whites, dark greens, and grays. Lighting appears diffuse and even, consistent with overcast or flat daylight, producing minimal harsh shadows and a calm, wintry atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, (Lower-center-of, Foreground-view), (Left-side-of, Foreground-view)), (Human-agent, (Move, (Snow, Sloped-terrain))), ((Torso-chest, Clothing, Dark-shade), (Lower-extremity, Clothing, Light-shade)), (Upper-extremity, (Away-from, Torso)), ((Snow, Smooth, White), (Lower-center-of, Background-view)), ((Building-part, Label/Fence), (Center-of, Background-view)), ((Plant, Green-color, Snow), (Above, (Building-part, Label/Fence)), (Background-view)), ((Blue, Label/Sky), (Upper-right-of, Background-view)), (White, Green-color, Gray), (Label/Luminance-contrast-Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts a kitchen interior with a white refrigerator dominating the right and center-foreground of the frame, positioned against dark brown wooden cabinets that line the upper portion of the image. Atop the refrigerator sits a green spider plant in the upper-center-right, its long variegated leaves cascading downward over the refrigerator's front. The refrigerator door displays numerous magnets, papers, and photographs affixed to its surface in the center of the frame. To the right of the refrigerator, in the lower-right foreground, several wooden cutting boards lean vertically against its side. On the left side, a stove or oven with a yellowed lower door occupies the mid-ground, with a countertop beside it holding a small green potted plant in the lower-left-center. An open doorway on the far left reveals a dimly lit adjacent space with pale blue walls. The floor is tiled in beige and brown squares, visible in the lower-left. The overall color scheme combines cool pale-blue walls, warm brown wood tones, and white appliance surfaces. Lighting appears artificial and somewhat dim, casting soft shadows without strong directional highlights throughout the composed domestic scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, Room, ((White, Man-made-object, Label/Refrigerator), (Right-side-of, (Center-of, Photograph))), ((Brown, Manufactured-material/Wooden, Furnishing, Label/Cabinets), Above), ((Green, Plant, Label/Spider-plant), (Top-of, (White, Man-made-object, Label/Refrigerator))), ((Man-made-object, Label/Magnets), (Man-made-object, Label/Papers), Photograph, (Center-of, Photograph)), ((Brown, Manufactured-material/Wooden, Tool, Label/Cutting-boards), (Lower-right-of, Photograph)), ((Man-made-object, Label/Stove), (Left-side-of, Photograph)), ((Green, Plant), (Lower-center-of, Photograph)), ((Door, Open), (Left-side-of, Photograph)), ((Blue, Building-part, Label/Walls), Light-shade), ((Beige, Brown, Building-part, Label/Floor-tiles), (Lower-left-of, Photograph)), (Low, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

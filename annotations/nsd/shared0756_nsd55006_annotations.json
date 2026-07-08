@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower portion of the frame, a calm body of water occupies the left and center, its dark surface reflecting the sky and adjacent vegetation. Green grassy banks border this water, extending from the lower left toward the center-right, where tall reeds and leafy plants cluster in the lower right corner. A small concrete or stone bridge structure spans a channel in the center-right foreground, connecting the grassy areas. In the middle ground, a long orange double-decker train stretches horizontally across the entire width of the frame, angled slightly so its rear cars recede toward the left and its front faces right. The train's orange body contrasts with darker window bands and gray rooftop pantograph equipment connecting to overhead catenary wires. Behind the train, in the background, a row of dark green trees and shrubs forms a horizontal band. The upper half of the frame is dominated by a bright sky filled with voluminous white and gray cumulus clouds against patches of blue. Lighting appears natural and diffuse, likely midday, with soft shadows. The overall color scheme combines vivid orange, green, blue, and white, creating a balanced horizontal composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-center-of, ((Natural-feature/Water, (Label/Reflect, (Natural-feature/Sky, Plant))), (To-left-of, Center-of))), (Grassy-terrain, Green, (Lower-left-of, Center-of)), ((Plant, Green), Lower-right-of), (Building, (Manufactured-material/Made-from, (Steel)), Center-of), (Train, Orange, (Horizontally-oriented, (Across-from, Center-of))), (Window, Dark-shade), (Machine, Gray, Top-of), ((Group-of, Plant/Tree), Green, Dark-shade, Background-view), (Natural-feature/Sky, (Upper-center-of), ((Group-of, White), (Group-of, Gray), Blue))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

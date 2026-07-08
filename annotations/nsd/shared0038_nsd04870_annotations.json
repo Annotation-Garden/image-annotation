@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the right and lower-central portion of the frame, sits a large glazed doughnut with a glossy, caramel-brown surface reflecting light along its upper edge, its central hole clearly visible toward the right side. To the left, in the mid-to-lower area, rests a paler doughnut coated in a matte, granular cinnamon-sugar texture, tan and beige in tone, angled diagonally across the frame. Behind and between these, in the upper-central background, a third doughnut is partially obscured, showing a dark chocolate-glazed top curving into the upper portion of the image. These doughnuts overlap and rest against one another on a white plate, whose curved rim is visible along the lower-left and left edges. A brown tray or surface appears in the upper-left and upper-center background, providing a darker contrasting band. The overall color scheme is warm, dominated by browns, tans, and amber tones, with the white plate offering brightness at the lower left. Lighting is soft and directional, creating highlights on the glazed doughnut's shiny surface and subtle shadows between the stacked items. The composition is tightly cropped, filling the frame with the clustered doughnuts.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Ingestible-object/Dessert, Sweet, Brown-color, Large, Foreground-view, (Lower-center-of, Right-side-of)), (To-right-of, (Ingestible-object/Dessert, Sweet, Tan, Beige, Rotated, (Left-side-of, Lower-center-of)))), (Ingestible-object/Dessert, Sweet, Brown-color, Dark-shade, Background-view, Upper-center-of), ((Ingestible-object/Dessert), (Contained-in, (Circle, White))), (Brown-color, Dark-shade, Background-view, (Upper-left-of, Upper-center-of)), (Label/Luminance-contrast-High, Directional-relation)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

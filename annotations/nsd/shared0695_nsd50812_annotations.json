@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a red wooden barn wall constructed of horizontal weathered planks that fill the entire frame, forming both the background and the primary visual surface; the paint shows chipping and fading, particularly along the lower and upper edges where lighter tones and bare wood are visible. Near the center of the frame, slightly above the vertical midpoint, is a rectangular window opening cut into the wall, its interior dark. Emerging from this opening is the head of a horse with a light tan or palomino-colored coat and a pale blond mane, its face angled downward and to the lower left, positioned as the clear foreground focal point. To the immediate right of the window hangs an open white wooden shutter, weathered and paneled, attached to the wall and casting a soft shadow onto the red planks below and to its right. Sunlight enters from the upper right, creating directional highlights on the horse's face and shutter while casting shadows toward the lower left. The overall color scheme contrasts the saturated warm red of the barn against the cool white shutter and the neutral tan of the horse, producing a balanced, centrally weighted composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Building, Label/Barn, Red, Manufactured-material/Wood), (Window, ((Head, (Animal-agent, Animal/Horse), Tan), Label/Emerging-from, (Window))), ((Window, White, Manufactured-material/Wood, Open), To-right-of, (Window)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

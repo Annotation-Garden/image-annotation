@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A pair of metallic scissors dominates the frame, positioned diagonally with its rounded finger loop in the upper-center and extending toward the lower-right, where the blades and a partially visible engraved marking appear; the polished silver-gray metal reflects light and shows dark shadowing within the loop opening. In the foreground and center-lower portion lies coiled white rope or cord, wound in neat parallel bands that create horizontal ridged texturing across the lower half of the image. To the left edge, a red fabric or material is visible, adding a saturated color accent against the predominantly neutral palette. The scissors rest directly atop the coiled white rope, establishing physical contact between the two objects. In the background, which is softly blurred due to shallow depth of field, additional coiled rope appears on the right side, and indistinct warm-toned shapes\u2014possibly reddish and purplish hues\u2014occupy the upper region. The lighting is soft and directional, illuminating the metal and rope from the upper area while leaving lower recesses in shadow. The overall composition emphasizes the metallic scissors through sharp focus and central placement, with muted whites, grays, and a red highlight defining the color scheme.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Tool, Label/Scissors, Steel, Silver, (Upper-center-of, Image)), (To-right-of, (Item, Label/Rope, White, (Lower-center-of, Image)))), (Item, Label/Rope, White, Top-of, (Item, Label/Rope, White)), (Red, Item, Label/Fabric, (Left-edge-of, Image)), (Background-view, Depth, (Item, Label/Rope, White, (Right-side-of, Image))), (Red-color, Purple-color, (Upper-center-of, Image), Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

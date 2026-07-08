@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the lower-center foreground stands a portable roadwork sign assembly mounted on thin metal legs, dominating the frame; it comprises a white circular \"40\" speed-limit sign edged in red on the left, an orange square depicting a black worker-with-shovel symbol on the right, and beneath both a red horizontal panel reading \"PREPARE TO STOP\" in white capitals. Orange safety flags flank this sign on the left and right edges. The sign sits on a paved surface with scattered dry grass and debris in the lower-right foreground. In the background, running from center toward the upper portion, a road recedes with construction vehicles, including a yellow excavator on the left-center and white and dark trucks in the center-distance, alongside indistinct figures near the vehicles. A red-and-white striped railway-crossing boom and signals appear in the upper-center-left. Tall green trees line the right side and upper background, with utility poles and wires above. The color scheme is dominated by bright orange, red, and white signage against muted greens, grays, and blue sky. Lighting is bright daylight, casting shadows beneath the sign, with clear, sharp focus foreground and hazier distance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Assistive-device, Label/Roadwork-sign-assembly, (Lower-center-of, Foreground-view)), (Foreground-view, In-front-of, Background-view)), ((White, Circle, (Word, ID/40)), (To-left-of, (Orange, Square, (Icon, Label/Worker-with-shovel)))), (Red, Rectangle, Horizontally-oriented, (Word, ID/PREPARE-TO-STOP), (Below, (White, Circle))), ((Orange, Label/Safety-flag), (Left-side-of, Assistive-device)), ((Orange, Label/Safety-flag), (Right-side-of, Assistive-device)), (Paved-terrain, (Green, Plant, Dash, Label/Dry-grass-and-debris, (Lower-right-of, Foreground-view))), ((Road, (Center-of, Background-view)), (Away-from, Foreground-view)), (Yellow, Tractor, Label/Excavator, (Left-side-of, Background-view)), (White, Truck, (Center-of, Background-view)), (Black, Truck, (Center-of, Background-view)), (Human-agent, (Spatial-relation/Near, Vehicle)), (Red, White, Dash, Label/Railway-crossing-boom, (Upper-left-of, Background-view)), (Green, Plant/Tree, (Right-side-of, Background-view)), (Green, Plant/Tree, (Upper-center-of, Background-view)), (Label/Utility-pole, Above, Road), (Outdoors, Blue, Natural-feature/Sky), (Luminance, High, Label/Bright-daylight)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

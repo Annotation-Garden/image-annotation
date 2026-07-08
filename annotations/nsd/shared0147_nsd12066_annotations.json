@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a food service buffet counter dominating the foreground and lower portion of the frame, its light-colored, speckled countertop surface angling across the lower center and stretching from left to right. Set into the counter are four rectangular stainless steel serving trays filled with various foods: the leftmost tray, partially cut off at the frame's edge, holds indistinct reddish-orange items; the second contains numerous browned, skewered meat pieces with dark tongs resting on them; the third holds dark reddish-brown food; and the rightmost tray contains bright yellow rice beside darker green matter. In the background, occupying the upper portion of the frame, stand two people behind the counter, both wearing white garments, one with dark aprons and white gloves; the person on the right holds a white plate bearing yellow rice and a reddish topping, positioned in the upper center. To the upper right, a tall stack of white plates is visible. The overall color scheme combines warm browns, oranges, and yellows from the food against cool metallic silver and neutral countertop tones. Lighting appears artificial and moderately dim, casting reflections on the metal surfaces while the background remains darker.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Furnishing, Label/Buffet-counter, (Light-shade, Steel)), ((Rectangle, Steel), Item-count/4, Contained-in, (Furnishing, Label/Buffet-counter)), ((Ingestible-object/Main-dish, Red-color, Orange-color), Left-edge-of, Image), ((Ingestible-object/Main-dish, Brown-color, Savory), Interacts-with, (Tool, Label/Tongs, Black)), (Ingestible-object/Main-dish, Brown-color, Red-color), ((Ingestible-object/Staple-food, Yellow-color), (Ingestible-object/Main-dish, Green-color)), ((Human-agent, Experiment-actor, White, Clothing, Item-count/2), Behind, (Furnishing, Label/Buffet-counter)), (Human-agent, (Black, Clothing, Label/Apron), (White, Clothing, Label/Gloves)), ((Human-agent, Experiment-actor), Interacts-with, (Ingestible-object/Staple-food, Yellow-color, White, Label/Plate)), ((White, Label/Plate-stack), Upper-right-of, Image), (Orange-color, Brown-color, Yellow-color), (Silver, Steel), Label/Luminance-Low",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

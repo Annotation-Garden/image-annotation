@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central portion of the frame, a person lies prone on a bed, propped on their elbows and facing right toward an open silver laptop positioned in the center-right, its screen displaying reddish content while their hands rest on the keyboard. The person has wet, dark hair and a visible tattoo on their upper left shoulder, and their body is partly draped by a brownish blanket over rust-orange bedding that spreads across the lower frame. To the left, in the mid-ground, a dark-furred animal, likely a cat, rests close to the person's arm. Behind them in the background, a metal bed frame, a plaid yellow-and-black pillow, and rumpled bedding fill the center-left, while the upper right shows a bright window with vertical curtains letting in daylight, alongside stacked cardboard boxes and indistinct objects on the right. The overall color scheme combines warm oranges and browns in the bedding with cooler grays and blues in the background wall and shadows. Lighting is natural, entering from the right-side window, creating soft illumination on the figure and darker tones on the left.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Experiment-participant, Prone, (Hair, Black), (Torso, Left, Label/Tattoo)), Interacts-with, (Laptop-computer, Silver, (Computer-screen, Red), Center-of)), ((Human-agent), (Hand, (Rest, Keyboard))), (Animal-agent, Animal/Cat, Black, To-left-of, Adjacent-to, (Upper-extremity)), (Label/Blanket, Brown), (Furnishing, Label/Bedding, Orange, Lower-center-of), (Furnishing, Label/Bed-frame, Steel, Background-view), (Furnishing, Label/Pillow, Yellow, Black, Left-side-of), (Window, Upper-right-of, Background-view), (Furnishing, Label/Curtains, Vertically-oriented), (Box, Paper, Right-side-of), (Outdoors, Label/Daylight, To-right-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A large steam locomotive dominates the foreground, angled diagonally from the lower-left toward the upper-right of the frame, with its round black smokebox door and headlight positioned prominently in the center-right. The locomotive's cylindrical boiler is painted in horizontal bands of blue and silver, with yellow paneling visible along its side and red-and-black wheel assemblies and mechanical linkages occupying the lower-center portion of the image. A brass or gold-colored dome sits atop the boiler in the upper-center. On the left side, a black metal support pillar rises vertically, and a white louvered vent or grille is mounted at mid-height in the left-center. The background shows the dim interior of what appears to be an enclosed building, with overhead beams, hanging light fixtures, and additional darker locomotive components fading into shadow on the upper-left. The floor in the lower portion is gray concrete with reddish patches. The overall color scheme combines dark blacks, metallic blues and silvers, and warm yellow and red accents. Lighting is uneven, with brighter illumination striking the locomotive's front while the surrounding space remains dim. No people or animals are visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Vehicle, Train, Large, (Foreground-view, (Center-of, Photograph))), ((Train, Black, Circle), (Center-of, Photograph)), (Cylinder, Blue, Silver, Horizontally-oriented), (Yellow), (Red, Black), ((Yellow, Manufactured-material/Metal), Top-of, Cylinder), ((Black, Manufactured-material/Metal), Vertically-oriented, (Left-side-of, Photograph)), (White, (Left-side-of, Photograph)), (Indoors, Building, Luminance/Dim), (Building-part), (Gray, (Lower-center-of, Photograph)), (Label/Uneven, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

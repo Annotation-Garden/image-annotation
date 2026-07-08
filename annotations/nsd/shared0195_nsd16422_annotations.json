@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by a cream or fawn-colored cat occupying the lower-center and lower-right of the frame, lying down with its body facing left while its head turns toward the viewer, its large pointed ears erect and its amber-colored eyes directed at the camera. The cat rests on a pale blue-gray fabric surface, visible in the lower portion of the frame, its long tail curving forward along the lower-left edge. Behind the cat in the mid-ground sits a white pillow or cushion positioned center-left, partially obscured by the animal's body. The background consists of a wallpapered surface featuring a light green and beige floral pattern interspersed with several colorful bird motifs in pink, green, and red, distributed across the upper-left, upper-center, upper-right, and mid-right areas. At the top of the frame, horizontal blinds are partly visible, admitting light. The overall color scheme is soft and muted, combining warm cream tones of the cat with cool blues and pale greens. Lighting appears diffuse and natural, entering from above, creating gentle shadows. The composition centers attention on the cat's forward-facing gaze.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Animal/Cat), (Lower-center-of, Foreground-view)), ((Animal-agent, Animal/Cat), (Lower-right-of, Foreground-view)), ((Animal-agent, Animal/Cat, Prone, (Face, (Turn, Towards)), (Ear, (Label/Erect)), (Eye, Orange-color, Stare))), ((Manufactured-material/Fabric), Blue-color, Gray-color, (Below)), ((Furnishing, White), (Center-of), Behind), ((Label/Wallpaper), Background-view, (Green-color, Beige, Pattern)), ((Window, (Above)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

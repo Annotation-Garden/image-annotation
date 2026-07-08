@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground on the left side of the frame stands a bright yellow fire hydrant with a black base, positioned in the lower-left quadrant on a gray concrete sidewalk. In the center-right of the frame, a woman with curly reddish-orange hair walks toward the left, wearing a light blue denim dress and brown flip-flop sandals; she carries two translucent white plastic shopping bags, one in each hand, that appear filled and hang at her sides in the lower-center area. She occupies the midground, her body casting a shadow onto the sidewalk beneath and behind her. The background is dominated by a brick wall painted in two tones: a deep red-maroon lower portion and a darker reddish-brown upper portion, with a window featuring a lowered white shade positioned in the upper-center behind the woman. Faint white graffiti markings appear on the wall to the right. The lighting is bright and directional, consistent with strong daytime sunlight, producing sharp shadows and high contrast. The overall color scheme combines warm reds and yellows with the cooler blue of the dress. The composition is horizontally layered, dividing sidewalk, wall base, and upper wall.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Yellow, Building-part, Label/Fire-hydrant, (Black, Boundary-of)), (Foreground-view, Lower-left-of)), ((Human-agent, Female, (Brown, Hair)), Walk, Leftward), ((Human-agent), (Blue, Clothing, Label/Denim-dress)), ((Human-agent), (Brown, Clothing, Label/Sandals)), ((Human-agent), Interacts-with, (White, Man-made-object, Label/Shopping-bag, Item-count/2)), (Center-of, Right-side-of), (Human-agent, Foreground-view), (Building, (Red, Lower-center-of), (Brown, Upper-center-of)), ((White, Window, Label/Lowered-shade), Upper-center-of, Behind), ((White, Label/Graffiti), Right-side-of), (Label/Luminance-contrast-High, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

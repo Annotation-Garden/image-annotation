@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a single broccoli head occupying the central foreground of the frame, its dense, dome-shaped cluster of tightly packed florets dominating roughly the middle two-thirds of the image. These florets display a granular, bumpy texture composed of countless small buds, colored predominantly in muted blue-green and darker green tones, with scattered patches of yellowish-green appearing across the surface, notably toward the center and lower-central regions. Surrounding the central head, in the background and along the frame's edges, are broad broccoli leaves; a large leaf extends across the lower-left corner, another curves along the left side, and additional leafy forms fill the upper and right portions, showing pale central veins and stems in lighter grayish-green hues. The thick, pale stalk of the main head is faintly visible emerging toward the lower portion. The overall color scheme is a cohesive palette of greens ranging from cool blue-green to warmer yellow-green. Lighting appears soft and diffuse, producing gentle highlights on the florets without harsh shadows. The composition is centered and symmetrical, with the rounded head anchoring the frame and the radiating leaves creating a natural border around it.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Ingestible-object/Staple-food, Bitter, Green, Color/Blue-green, 3D-shape, (Center-of, Foreground-view)), (Plant, Green, (Around, Ingestible-object/Staple-food)), (Background-view, Symmetrical, Green-color))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

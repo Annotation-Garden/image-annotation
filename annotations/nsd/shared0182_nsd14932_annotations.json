@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the center-left of the frame, dominating the foreground, sits a diesel locomotive painted in orange and dark charcoal-gray, featuring a distinctive winged emblem on its lower front nose and a small headlight glowing at its top center. The locomotive faces diagonally toward the viewer, positioned on steel rails that run from the lower-center foreground and recede toward the right background. Trailing behind the engine, a long line of light-gray hopper wagons curves rightward into the distance, diminishing in size across the middle-right of the frame. In the lower foreground, dry brownish grass and gravel ballast flank the tracks, with green weeds scattered along the right edge. In the background, low rolling hills covered in dark vegetation stretch across the horizon beneath a heavily overcast, gray cloud-filled sky occupying the upper third. Utility poles and thin wires extend along the upper-left and right sides. The overall color scheme combines muted earth tones, gray skies, and the vivid orange accents of the train, under flat, diffuse, cloudy lighting. The composition uses the receding diagonal tracks and train to create strong depth and perspective.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Vehicle, Label/Diesel-locomotive, (Orange, Gray), Foreground-view, (Center-of, Left-side-of)), (Icon, Lower-center-of), (Luminance, Top-of), ((Vehicle, Label/Diesel-locomotive), Towards, (Experiment-participant)), (Road, Manufactured-material/Metal, (From-to, (Lower-center-of, Right-side-of, Background-view))), (Group-of, Vehicle, Label/Hopper-wagons, LightGray, (To-right-of, Background-view)), (Plant, Brown, Foreground-view), (Gravel-terrain, Foreground-view), (Plant, Green, Right-edge-of), (Hill, Green, Background-view), (Natural-feature/Sky, Gray, Above), (Man-made-object, Label/Utility-poles, (Upper-left-of, Right-side-of)), (Environmental-property/Cloud-filled, Environmental-property)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

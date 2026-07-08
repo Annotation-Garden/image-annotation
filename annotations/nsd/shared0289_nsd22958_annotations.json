@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, occupying the lower portion of the frame, is a metal chain-link fence spanning horizontally across the entire width, behind which sits a strip of green vegetation featuring low shrubs and small leafy plants arranged in rough rows. Above this, in the middle ground, runs a raised earthen embankment topped by railroad tracks, where a train dominates the center and left portions of the frame. The locomotive, positioned center-right, displays a sleek design with a red angular nose, a silver-gray upper body, and horizontal bands of teal, green, and white along its lower flank, marked with red \"ktt\" lettering on the left side. A passenger carriage in blue and white connects at the right edge. Overhead electrical wires stretch diagonally across the upper area. The entire background, filling the top third, consists of dense green trees and foliage, with faint hints of structures barely visible upper left. The overall color scheme is dominated by greens, punctuated by the train's red, teal, and white. Lighting appears bright and diffuse, suggesting daytime. The composition is strongly horizontal, layered in receding bands from fence to vegetation to train to trees.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Man-made-object, Label/Chain-link-fence, Manufactured-material/Metal), (Foreground-view, Lower-center-of)), (Plant, Green, Foreground-view), ((Terrain, Label/Embankment), Behind), ((Vehicle, Label/Train, (Center-of, Left-side-of)), (Red, White-color, Label/Locomotive-nose)), ((Vehicle, Label/Passenger-carriage, Blue, White-color), Right-edge-of), (Man-made-object, Label/Electrical-wires, Upper-center-of), (Plant, Green, Background-view, Top-of), Green, Red, White-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

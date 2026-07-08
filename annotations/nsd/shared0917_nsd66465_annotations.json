@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center of the frame, a person stands on a clay-colored tennis court in a serving posture, their right arm raised overhead gripping a tennis racket while their left arm extends upward toward a small yellow tennis ball positioned in the upper-center portion of the image. The person wears a sleeveless turquoise and black top and olive-green shorts, with white socks and white athletic shoes visible in the lower-center of the frame. The background consists of a tall concrete wall in the upper half, gray and weathered with faint vertical streaks, above a horizontal green painted lower wall band that spans the middle horizontal region. A dark horizontal railing or pipe runs across the wall behind the person's head. The court surface transitions from a green-tinted area in the middle-lower region to a reddish-orange clay tone in the lower foreground. The lighting is bright and directional, casting the person's shadow toward the lower-left. The overall color scheme combines the warm reddish-orange court, cool green wall, gray concrete, and the turquoise clothing, creating contrast between the centrally placed figure and the layered horizontal background bands.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Label/Stand))), (Center-of, (Human-agent)), ((Human-agent), Interacts-with, (Tool, Label/Tennis-racket)), ((Upper-arm, Right), (Grasp, (Tool, Label/Tennis-racket))), ((Upper-extremity, Left), Upward), (Yellow, Man-made-object/Ball, Upper-center-of), ((Clothing, Turquoise, Black), (Torso)), (Clothing, Green-color, Label/Shorts), ((Clothing, White), (Foot)), (Background-view, (Building-part, Gray-color, Vertically-oriented, Upper-center-of)), (Green-color, Building-part), ((Behind, (Human-agent)), Horizontally-oriented), (Terrain, Green-color, Lower-center-of), (Terrain, Orange-color, Foreground-view), (Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

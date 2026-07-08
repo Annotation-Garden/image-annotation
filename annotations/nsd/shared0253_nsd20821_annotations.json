@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the center of the frame stands a person on cross-country skis, positioned in the middle ground and dressed entirely in dark clothing with a gray knit cap. The person holds ski poles, one in each hand, with arms slightly bent, and stands atop a snow-covered surface. In the immediate foreground, occupying the lower portion of the frame, are parallel groomed ski tracks that curve diagonally from the lower center toward the right side, pressed into the white snow. The background, filling the upper two-thirds of the image, consists of a dense stand of tall, bare, leafless trees with slender trunks, predominantly on the left and extending across the top, their branches forming a tangled network against a pale, whitish-gray sky visible on the upper right. The overall color scheme is muted and cool, dominated by whites, grays, and dark browns, with the dark figure contrasting sharply against the bright snow. Lighting appears diffuse and overcast, casting soft, faint shadows. Compositionally, the standing skier anchors the center while the diagonal tracks lead the eye rightward, and the vertical tree trunks create repeated linear texture throughout the upper region.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, (Center-of, Photograph), (Label/Upper-body, Black), (Head, (Gray, Clothing))), Interacts-with, (Tool, Label/Ski-poles)), ((Human-agent), (Standing, (Top-of, (Snow, White)))), ((Path, (Label/Groomed-ski-tracks, Snow)), (Foreground-view, (Visual-attribute/Diagonal, To-right-of, Lower-center-of))), (Background-view, (Group-of, (Plant, Thin, Vertically-oriented, Leaf-covered-terrain))), (Environmental-property/Overcast, (Gray, White, Natural-feature/Sky)), (Luminance/Diffuse, Label/Faint, Luminance/Shadow)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

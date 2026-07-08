@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts two golden retrievers positioned aboard a wooden boat, occupying the central foreground of the frame. One dog stands in the lower-center-left region, its head and shoulders visible above a varnished wooden railing, facing slightly rightward with a wet-looking coat. The second dog sits higher and more toward the center-right, elevated on the boat's deck near the cabin, gazing directly toward the viewer. Both animals share light cream-to-golden fur tones. The boat itself dominates the frame with a white-painted cabin structure in the upper and mid portions, featuring dark rectangular windows on the left and center, and rich reddish-brown wooden trim along the hull and railings in the lower foreground. A black loudspeaker-shaped horn is mounted upper-center on the cabin. Metal rigging cables and lines cross diagonally through the right and central areas. In the background, upper-left and upper-right, blurred dark green foliage and additional pale boat structures are faintly visible across water. The overall color scheme combines muted whites, warm browns, and golden tones under soft, diffuse, overcast lighting without harsh shadows. The composition is layered, with the dogs anchoring attention centrally amid naut",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, (Animal/Golden-retriever, Yellow, Standing), (Lower-center-of, Photograph)), ((Manufactured-material/Wood, Boat), Contained-in)), ((Animal-agent, (Animal/Golden-retriever, Yellow, Sitting)), (Upper-right-of, Photograph)), ((White, Building-part, Roof), (Top-of)), ((Black, Rectangle, Window), (Left-side-of, (White, Building-part))), ((Color/Reddish-brown, Manufactured-material/Wood), (Lower-center-of, Photograph)), ((Black, Horn-blow), (Upper-center-of, (White, Building-part))), ((Manufactured-material/Metal, Connected-to), (To-right-of, Photograph)), ((Dark-shade, Green, Plant), (Upper-left-of, Photograph)), (Outdoors, Environmental-property/Overcast), (Natural-feature/Water, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central-to-right portion of the frame, sits a dark olive-green and beige diesel-electric locomotive marked \"renfe\" and \"Mercanc\u00edas\" in white and purple lettering on its side. The locomotive's front cab faces right, with a windshield, headlights, and buffers visible on the right edge; a second identical locomotive is coupled directly behind it, extending toward the center-left. Below and in front, in the lower foreground, lies a bed of light gray crushed-stone ballast with steel rails running horizontally across the frame. Behind the locomotives, in the mid-to-background left, a lower freight wagon is partially visible. Above and spanning the upper half of the image, an overhead network of black electrical catenary wires and support masts crisscrosses against the sky, extending from left to right. The background sky fills the upper portion with bright blue interrupted by voluminous white and gray cumulus clouds. Lighting appears natural and daylit, casting soft highlights on the locomotive's metallic surfaces. The overall color scheme combines muted greens, tans, and grays against the vivid blue-and-white sky, creating a balanced horizontal composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Vehicle, Label/Locomotive, (Dark-shade, Olive), Beige, (Label/renfe, Label/Mercancias), White, Purple)), ((Vehicle, Label/Locomotive), Behind), ((Window, Label/Front-view, Right), Part-of), (Lower-center-of, (Gravel-terrain, Light-shade, Gray)), (Steel, Horizontally-oriented, Path), (Background-view, Left-side-of, (Vehicle, Label/Freight-wagon)), (Upper-center-of, (Black, Manufactured-material, Label/Catenary-wires)), (Upper-center-of, (Blue, White, Gray, Label/Sky-with-clouds)), (Outdoors, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 388,
+            "total_tokens": 809
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 809
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-lower portion of the frame stands a woman on a tennis court, positioned slightly right of center, wearing a white top and dark shorts with white shoes; she holds a tennis racket in her right hand extended downward and appears to be facing the camera. The court surface dominates the lower half, colored in green and blue-gray tones with white boundary lines running horizontally and diagonally across the frame. A dark tennis net stretches across the right-middle portion, supported by posts. In the background, spanning the upper half, dense green palm trees and foliage fill the horizon, and to the upper right sits a thatched-roof structure resembling a tiki hut or gazebo. A tall metal light pole rises in the upper-left area against the sky. Chain-link fencing lines the court's rear boundary in the mid-ground. The upper portion shows a blue sky with scattered white clouds. Lighting appears bright and natural, consistent with midday sun, casting short shadows beneath the woman. The overall color scheme combines greens, blues, and neutral court tones, creating a balanced composition with the human figure as the central focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-participant, Female, (Lower-center-of, Foreground-view)), ((Human-agent), Interacts-with, (Tool, Label/Tennis-racket)), (White, Clothing), (Black, Clothing), (White, Clothing, Foot), ((Tool, Label/Tennis-racket), (Contained-in, (Right, Hand))), (Green, (Terrain, Label/Tennis-court)), (Blue-color, (Terrain, Label/Tennis-court)), (White, Line-noise-artifact), ((Black, Label/Tennis-net), (To-right-of, Center-of)), (Green, Plant, Background-view), ((Building, Label/Tiki-hut), (Upper-right-of, Background-view)), ((Man-made-object, Label/Light-pole), (Upper-left-of, Background-view)), (Man-made-object, Label/Chain-link-fence), (Blue, Natural-feature/Sky), (White, Label/Cloud, Natural-feature/Sky), (Luminance/Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

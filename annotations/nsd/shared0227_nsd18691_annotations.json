@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a deep blue sky that fills the entire background from edge to edge, growing slightly lighter toward the lower right corner. In the foreground, a dark horizontal metal pole extends diagonally from the upper right toward the center-left, supported by a thicker pole angling up from the right edge. Suspended from this crossarm are two traffic signal fixtures rendered as dark silhouettes: one hangs in the upper-center of the frame with what appears to be a backing plate, while a second cluster of signal housings hangs lower and to the left of center, positioned at roughly the middle-left of the image. Multiple thin electrical or utility wires stretch across the frame at varying angles, several running diagonally from the lower left toward the right and upper areas, crossing behind and around the pole structure. The overall color scheme is limited, dominated by the saturated blue backdrop contrasted against the near-black silhouetted hardware. Lighting appears to come from the right, backlighting the objects and leaving their forms in shadow with minimal surface detail. The composition is diagonal and asymmetrical, with negative space concentrated in the lower-left region.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Blue, Deep, Background-view), (Lower-right-of, Light-shade)), ((Man-made-object, Label/Metal-pole, Steel, Horizontally-oriented, Oblique), Above, (Man-made-object, Label/Support-pole, Steel)), ((Man-made-object, Label/Traffic-signal, Black, Upper-center-of), Belongs-to, (Man-made-object, Label/Metal-pole)), ((Man-made-object, Label/Traffic-signal, Black, Lower-left-of), Belongs-to, (Man-made-object, Label/Metal-pole)), (Man-made-object, Label/Utility-wires, Thin, Oblique, Across-from), (Saturation, Low), ((Blue, Label/Saturated), Label/Luminance-contrast-Black), (Luminance, Right-side-of), (Asymmetrical, Oblique)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

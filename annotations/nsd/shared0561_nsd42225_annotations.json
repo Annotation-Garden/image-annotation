@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A wooden round table dominates the frame, densely covered with food and objects arranged for what appears to be a gathering. In the immediate foreground, lower-center, sits a stacked pile of white plates topped with two blue plates, and to their right rests a yellow platter holding numerous round, breaded patties or cookies. To the left foreground are silver forks and a dark bowl containing what looks like raisins or dark dried fruit. The middle ground contains diverse foods: a bowl of orange dip or hummus in the center, sliced yellow fruit at left, crackers behind the dip, cherry tomatoes and dark olives at right, and a green salad and cut carrots and peppers on the right side. The background upper area shows several liquor and wine bottles clustered at left, a paper Kirkland tortilla bag, a vase of flowers with a red rose at center, and a metallic refrigerator surface with photographs at upper right. Fresh vegetables including broccoli and cauliflower sit at right. The lighting is warm and artificial, casting an amber tone. The color scheme mixes warm browns, reds, and yellows against a pale beige wall.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Furnishing, (Visual-attribute/Round, Manufactured-material/Wooden, Man-made-object/Table)), ((Ingestible-object/Staple-food, White, Group-of), Above, (Ingestible-object/Staple-food, Blue)), (Ingestible-object/Junk-food, Yellow, Group-of, Visual-attribute/Round), (Tool, Silver, Group-of), (Ingestible-object/Dessert, Sweet, Luminance/Dark), (Ingestible-object/Main-dish, Orange, Savory), (Ingestible-object/Staple-food, Yellow), (Ingestible-object/Staple-food, Group-of), (Ingestible-object/Staple-food, Red, Group-of), (Ingestible-object/Staple-food, Luminance/Dark, Group-of), (Ingestible-object/Staple-food, Green), (Ingestible-object/Staple-food, Orange, Group-of), (Man-made-object/Container, Luminance/Dark), (Man-made-object/Container, Orange), (Ingestible-object/Staple-food, Green, Group-of), (Plant, (Red, Plant/Flower)), (Furnishing, Manufactured-material/Metal), (Photograph, Group-of), (Paper, Label/Kirkland-bag), Label/Warm-color, Orange-color, Beige, Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

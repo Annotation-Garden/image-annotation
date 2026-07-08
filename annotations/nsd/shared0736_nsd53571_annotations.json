@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a snow-covered ski slope beneath a deep, cloudless blue sky that dominates the upper portion of the frame. In the lower-right region, a single skier occupies the foreground, positioned slightly right of center, wearing dark upper clothing, light-colored pants, and holding ski poles that extend outward, with skis carving through the white snow; the figure appears to be actively descending the slope, leaning forward in motion. The middle ground across the center and stretching from left to right features a row of evergreen trees heavily laden with white snow and frost, giving them a frosted, clumped appearance. On the upper-left edge, a bare, snow-encrusted tree branch or dead trunk intrudes into the frame. The snowy ground fills the entire lower and left portions, textured with subtle undulations and tracks. The overall color scheme is starkly limited to intense navy-blue sky, brilliant white snow, and dark green-and-white trees, with the skier providing the only contrasting dark human element. Lighting is bright and directional, consistent with strong daylight, casting faint shadows on the snow and illuminating the tree tops, creating high contrast between sky and terrain.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Sloped-terrain, Snow, White), (Snow, White, Background-view), (Blue, Natural-feature/Sky, Upper-center-of), ((Human-agent, Experiment-actor, (Luminance/Dark, Clothing), (Light-shade, Clothing), (Tool, Label/Ski-poles), (Tool, Label/Skis)), (Label/Descend, Sloped-terrain), Foreground-view, Lower-right-of), (Group-of, Plant, (Snow, White), (Green-color, White), Center-of), (Plant, (Snow, White), Upper-left-of), (Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A thin-crust pizza dominates the frame, occupying nearly the entire image and resting on a light wooden surface visible in the upper-left and upper-right corners as the background. The pizza is presented from a slightly elevated, angled overhead perspective, filling the center and foreground. It has been sliced into multiple wedges, with cut lines radiating across the surface; one vertical cut is visible in the lower-center and a diagonal cut extends toward the lower-left. The toppings include chunks of red-orange diced tomatoes distributed across the upper and central regions, browned crumbles of sausage scattered throughout, and melted white-to-golden cheese covering the base atop a reddish tomato sauce. The crust forms a pale, puffed border encircling the pie, most prominent along the left, upper, and lower edges. The overall color scheme is warm, combining reds, oranges, browns, and creamy yellows against the tan wood. Lighting appears to come from the upper area, creating soft highlights on the cheese and tomato pieces while casting subtle shadows beneath the raised toppings and along the lower-right crust. The composition is centered and symmetrical, emphasizing the circular food object.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Ingestible-object/Main-dish, Savory, Circle, (Red, Orange, Brown, Yellow-color)), ((Ingestible-object/Main-dish, Center-of, Foreground-view), (Spatial-relation/On-top-of, (Manufactured-material/Wooden, Background-view))), ((Red, Orange), Contained-in, (Ingestible-object/Main-dish)), (Brown, Contained-in, (Ingestible-object/Main-dish)), (White, Yellow-color, Contained-in, (Ingestible-object/Main-dish)), (Aerial-view), (Symmetrical)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

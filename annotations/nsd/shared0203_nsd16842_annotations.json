@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is captured from an extremely low vantage point, placing weathered gray asphalt with a cracked, patched seam prominently across the entire lower foreground. In the right foreground stands a large blue motorcycle with chrome detailing, a rounded front fairing, and a bright circular headlight; a rider's dark-trousered leg and black boot extend down toward the pavement on its left side. In the left foreground sits a darker motorcycle adorned with what appears to be decorative flowers or fringe near its handlebars, its headlight also illuminated. The center and background contain a procession of additional motorcycles and riders receding into the distance along the roadway, their headlights glowing as small bright points. Beyond them, in the mid-ground, a low reddish-brown building with rows of windows spans the center-left, while streetlamp poles rise vertically. The upper portion of the frame is dominated by a clear blue sky with faint wispy clouds, and a rocky hill or ridge appears at center-right along the horizon. Lighting is bright, sunlit daytime, casting strong contrast. The overall color scheme combines vivid blue, gray, and warm earth tones.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Gray, Road, Foreground-view), (Label/Cracked, Paved-terrain)), ((Blue, Vehicle, Large, Foreground-view, Right-side-of), (Steel, Visual-attribute/Round, Circle)), ((Human-agent, Experiment-actor), Interacts-with, (Vehicle)), ((Lower-leg, Clothing, Black), Below, (Vehicle)), ((Vehicle, Dark-shade, Foreground-view, Left-side-of), (Plant)), ((Group-of, Vehicle), (Human-agent), Background-view, (Road, Away-from)), ((Building, Brown-color, Low), (Window, Group-of), Center-of), (Navigational-object, Vertically-oriented), ((Blue, Natural-feature/Sky), Upward), (White, Background-view), ((Hill, Rocky-terrain), Right-side-of), (Luminance/Bright, Outdoors), ((Gray), (Blue), (Brown-color))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

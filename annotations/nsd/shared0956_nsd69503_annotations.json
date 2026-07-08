@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a shirtless man dominates the center-to-right portion of the frame, positioned from the upper-center down through the lower edge, his body angled slightly as he walks. His right arm is raised, with his hand touching the top of his wet, dark hair, while his left arm holds a surfboard tucked against his side. The surfboard, cream or white in color with a visible dark logo on its lower-left surface, extends horizontally across the left-center of the image, its pointed nose reaching the far left edge and its tail visible on the right. The man wears dark wetsuit bottoms covering his lower body, and a dark cord or leash trails downward near the lower-right. The background consists entirely of an out-of-focus expanse of shimmering water with breaking white waves in the upper portion, rendered in soft, blurred tones. The overall color scheme is warm and muted, dominated by golden-brown, tan, and sepia hues, suggesting low-angle sunlight. The lighting is bright and diffuse, creating a glittering, bokeh-like sparkle across the water surface behind the subject, with the man's skin and board catching warm highlights against the softer background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Male, (Torso-chest, Label/Naked)), ((Human-agent), Interacts-with, (Item, Label/Surfboard))), ((Upper-extremity, Right), (Touch, (Head, Hair, Dark-shade))), ((Upper-extremity, Left), (Hold-down, (Item, Label/Surfboard))), (Item, Label/Surfboard, White, (Icon, Dark-shade), Horizontally-oriented, To-left-of, Center-of), (Clothing, Dark-shade, Label/Wetsuit, (Lower-extremity)), (Item, Label/Leash, Dark-shade, Lower-right-of), (Background-view, (Natural-feature/Water, Label/Rippling), (White, Label/Waves), Luminance/Blurry), (Yellow-color, Brown-color, Tan, Luminance/Warm), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

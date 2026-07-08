@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a single baseball player positioned in the center of the frame, occupying the foreground and extending from the upper-middle to the lower portion of the image. The player wears a white uniform with dark pinstripes, a dark cap with a visible logo, and is captured mid-motion in a pitching windup, with the left leg raised and bent at the knee while both gloved hands are brought together near the chest, holding a tan-colored baseball glove at center-frame. The player's body faces leftward, with the head turned to look forward. Surrounding the figure in the background is a baseball field showing a distinct diagonal boundary where light brown dirt of the infield meets green grass; the dirt occupies the lower-left and center portions while grass appears in the upper and right areas. The upper portion of the frame darkens into deep black, suggesting nighttime conditions with artificial illumination striking the player from the front-left, casting shadows on the right side of the body. The overall color scheme combines white, dark navy, tan, and green tones. The composition is vertically oriented, isolating the player against the expansive, uncluttered field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Vertically-oriented, ((Human-agent, (Center-of, Foreground-view)), (White, Clothing), (Dark-shade, Navy, Clothing), (Dark-shade, Clothing, Label/Cap), ((Left, Upper-leg), (Bend, Knee)), (Hand, (Spatial-relation/Held-by, Tan)), (Face, Leftward), (Head, Forward)), (Tan, Tool, Label/Baseball-glove), ((Brown-color, Light-shade, Dirt-terrain), (Adjacent-to, (Green-color, Grassy-terrain))), (Black, Background-view), Outdoors, (Luminance, Upper-left-of), White, Green-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground occupies the majority of the frame, a white wooden bench with a distinctive crisscross lattice backrest stretches horizontally across the center. Seated on the right side of the bench is a woman wearing a bright pink short-sleeved polo shirt, blue denim jeans, and dark sandals, with sunglasses perched atop her brown hair and a watch on her left wrist; she holds a red-and-black object in her right hand. Her left arm reaches toward the center-left, where a curly-coated reddish-brown dog sits upright on the bench facing her, wearing a blue leash. To the left of the dog, in the lower-left foreground, lie assorted objects on a green cloth, including a yellow-and-black item and a blue-handled tool. In the background, the upper portion of the frame shows a red brick wall densely covered with green ivy leaves. The lighting is soft and diffuse, consistent with an overcast outdoor setting, casting minimal shadows. The color scheme combines warm tones\u2014the pink shirt, brown dog, and brick\u2014with cool greens of foliage and blue denim, creating balanced contrast across the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, (Furnishing, White, (Cross, Boundary-of)), ((Human-agent, Female, (Pink, Clothing), (Blue, Clothing), (Glasses), (Brown, Hair)), Interacts-with, (Animal-agent, Animal/Dog, Brown, Sitting)), ((Human-agent), Interacts-with, (Man-made-object, Red, Black)), (Tool, Blue, Lower-left-of), (Green, Clothing, Lower-left-of), (Background-view, (Building-part, Red), (Plant, Green)), (Outdoors, Environmental-property/Cloud-covered)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

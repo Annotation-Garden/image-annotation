@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a macaque monkey occupying the central and right portions of the frame, positioned in the foreground with brownish-gray fur covering its body and a paler, pinkish-tan face. The monkey's face is located in the upper-center region, angled slightly downward, with its dark eyes directed off to the left side. Both of the monkey's hands are visible: the upper hands, positioned in the center of the frame, grasp a red apple that shows a bite taken from its top, exposing pale yellow flesh, while a lower hand in the lower-left foreground holds a yellow banana with brown speckles. The background, appearing in the upper-left and receding areas, shows a light gray stone or concrete surface with scattered small leaves and debris, along with darker green foliage in the upper-right corner. The lighting is soft and natural, illuminating the monkey's face and the fruit without harsh shadows. The overall color scheme combines muted earth tones of gray and brown with vivid accents of red and yellow from the fruit. The composition centers on the animal-object interaction of feeding, with the monkey clearly holding and consuming the apple.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Animal/Macaque, (Brown, Gray)), (Center-of, Photograph)), ((Face, (Pink, Tan)), Upper-center-of), ((Eye, Black), (Label/Directed-toward, Left)), ((Hand, (Grasp, (Ingestible-object/Staple-food, Red, Sweet, (Bite, Top-of)))), Center-of), ((Hand, (Grasp, (Ingestible-object/Staple-food, Yellow, Sweet))), Lower-left-of), ((Gray, Mineral), (Plant/Leaf, Small), Background-view), ((Green, Plant), Upper-right-of), ((Animal-agent), Interacts-with, (Ingestible-object/Staple-food))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

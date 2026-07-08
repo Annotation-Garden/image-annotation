@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts a bathroom interior with muted gray-green walls forming the background throughout the frame. In the upper-left, a framed artwork displaying tall birch tree trunks against a warm tan-orange background hangs on the wall, its coloration providing the image's warmest tones. Below this artwork, in the center-left, a chrome towel bar holds two small decorative items or cups. Centered in the frame is a large rectangular mirror with a dark brown wooden frame, reflecting a white paneled door. Above the mirror, in the upper-center, a light fixture with three metallic shades is mounted horizontally. On the right side, a wall-mounted sconce light with a white glass shade sits in the mid-right, and below it a chrome towel ring is affixed to the wall. In the lower-right foreground, a bathroom vanity features a gray granite countertop, a chrome faucet, a white cabinet with glass-paneled doors, and toothbrushes in a holder. In the lower-left foreground, the white top of a toilet tank is partially visible. The lighting appears artificial and even, and the overall composition balances cool grays against warm brown accents.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, (Room, Label/Bathroom), ((Gray, Green, Background-view), (Painting, (Plant, Label/Birch-trees), Tan, Orange)), ((Tool, Label/Towel-bar), Steel), ((Rectangle, Label/Mirror, Brown), (Label/Reflects, (White, Door))), ((Light-shade, Label/Light-fixture), Metadata-identifier, Upper-center-of), ((Light-shade, Label/Sconce, White, Glass), Right-side-of), ((Tool, Label/Towel-ring), Steel), ((Furnishing, Label/Vanity), Gray, (Furnishing, Label/Countertop), (Tool, Label/Faucet), Steel, (White, Furnishing, Label/Cabinet), (Tool, Label/Toothbrush)), (White, Label/Toilet-tank, Lower-left-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A large commercial aircraft dominates the foreground, occupying nearly the entire frame and oriented diagonally with its nose pointing toward the lower-right and its tail extending to the upper-left. The fuselage is predominantly white, marked with the text \"AIR PACIFIC\" in dark lettering along the upper body and \"Fiji\" in blue near the front-lower section. The tail fin, positioned in the upper-left, displays a colorful design featuring yellow, orange, and red angular stripes. Four engines are mounted beneath the wings, which span across the center of the image, and the landing gear is extended and visible in the lower-center portion, indicating the plane is airborne with wheels down. The background consists of a uniform, pale grayish-lavender sky with no visible clouds, terrain, or other objects, creating a flat, featureless backdrop. The lighting is diffuse and soft, casting subtle shadows on the underside of the wings and fuselage without harsh highlights. The overall color scheme contrasts the muted, cool-toned sky against the warm accent colors on the tail and the crisp white body, producing a clean, centered composition where the aircraft is the sole subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Aircraft, White, Large, Foreground-view, ((Rotated, Oblique), (Ahead-of, Background-view))), ((Word, Label/AIR-PACIFIC), (Top-of, Aircraft)), ((Word, Label/Fiji, Blue), (Lower-center-of, Aircraft)), ((Yellow, Orange, Red), (Part-of, Aircraft)), ((Engine, Item-count/4), (Underneath, Aircraft)), (Background-view, (Gray, Purple))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

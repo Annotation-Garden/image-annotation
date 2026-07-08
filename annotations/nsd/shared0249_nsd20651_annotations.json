@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower-center of the frame, a young person with dark, shoulder-length hair wears a bright orange short-sleeved shirt and dark navy shorts, positioned in a dynamic pose that suggests mid-motion. Their left arm extends toward the left of the frame, gripping a tennis racket whose oval head, strung with light-colored strings, reaches into the center-left region. To the lower-right of the frame, a yellow-green tennis ball hovers in the air near the player's right side, indicating an interaction of striking or preparing to strike. The background is dominated by a large wall divided horizontally: the upper two-thirds is a gray concrete surface with visible seams and a horizontal band running across, while the lower third is painted green, showing patches and uneven texture. The ground at the bottom edge appears to be a reddish-tan and greenish court surface. The overall color scheme contrasts warm orange and red tones against cool gray and green. Lighting is bright and natural, casting soft shadows and suggesting outdoor daylight. The composition centers the figure, creating a balanced yet action-oriented frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, Outdoors, ((Human-agent, (Black, Hair)), (Center-of, Lower-center-of)), (Orange, Clothing), (Navy, Clothing), ((Human-agent), Interacts-with, (Tool, Label/Tennis-racket)), ((Tool, Label/Tennis-racket), (To-left-of)), ((Yellow-color, Green-color, Label/Tennis-ball), Lower-right-of), (Building-part, Gray, (Above, (Green, Building-part))), (Terrain, Bottom-edge-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

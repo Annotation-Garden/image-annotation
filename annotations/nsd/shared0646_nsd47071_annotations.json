@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two uncooked pizzas dominate the foreground, resting on a wooden cutting board or countertop with visible horizontal grain running left to right. The pizza on the lower-left is topped with pale, circular slices of salami arranged across shredded white cheese, occupying the center-left and lower-left portions of the frame. The pizza on the right side is covered in dark green chopped spinach or herbs, dotted with several bright orange-red slices of pepperoni or sausage and scattered pale shavings of cheese, positioned in the center-right and extending toward the lower-right corner. In the background, upper-center, sits a black cylindrical appliance with a rounded top and small dials or buttons, partially visible. To the upper-left, a yellow-green object appears against a dark wall. The overall color scheme is warm, dominated by the golden-brown wood tones, contrasted with the green spinach, red toppings, and cream-colored cheese. Lighting appears artificial and comes from above, casting soft shadows beneath the pizza edges and creating slightly uneven illumination, brighter in the center and darker toward the upper corners. The composition places both circular pizzas side by side, filling most of the lower and central frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Ingestible-object/Junk-food, Savory, Circle, (Label/Salami-topping, Luminance/Pale, White), Foreground-view), (To-left-of, (Ingestible-object/Junk-food, Savory, Circle, (Green, Label/Chopped), (Orange-color, Red), (Luminance/Pale, White), Foreground-view))), ((Ingestible-object/Junk-food), Top-of, (Manufactured-material/Wood, Horizontally-oriented)), (Machine, Black, Cylinder, Background-view, Upper-center-of), (YellowGreen, Upper-left-of), (Luminance, Above), Luminance/Warm, Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

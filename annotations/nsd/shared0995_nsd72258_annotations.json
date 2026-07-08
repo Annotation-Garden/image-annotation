@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two black cattle occupy the center of the frame, positioned slightly toward the lower-middle portion of the image and standing on green grass. The animal on the left faces the viewer directly, its head turned forward with a visible nose ring and a reddish tag or tongue protruding near its mouth; its full body extends toward the right, showing its side profile and four legs planted on the ground. The second animal stands beside and slightly in front of the first, oriented to the right, its head lowered and body partially overlapping the first animal, suggesting close physical proximity. In the background, occupying the upper portion of the frame, there is a wire mesh fence supported by vertical wooden posts running horizontally across the scene. Beyond the fence, blurred tan and brown vegetation or dry field fills the upper-left and upper-right areas. The overall color scheme combines the dark black of the cattle, the vivid green of the grassy field below, and muted tan and brown tones above. Lighting appears diffuse and even, consistent with an overcast day, casting soft shadows beneath the animals and producing minimal harsh contrast throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Animal-agent, Black, Animal/Cattle), Interacts-with)), ((Center-of, Image)), (Green, Grassy-terrain), (Background-view, (Nonbiological-artifact, Label/Wire-mesh-fence, Manufactured-material, (Building-part, Manufactured-material/Wood))), (Upper-left-of, (Tan, Brown, Plant)), (Upper-right-of, (Tan, Brown, Plant)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

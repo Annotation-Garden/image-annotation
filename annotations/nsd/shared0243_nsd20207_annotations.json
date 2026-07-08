@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts a sandy beach lined with two symmetrical rows of thatched straw umbrellas that recede into the distance, creating a strong central vanishing point that converges near the horizon in the middle background. In the foreground, the lower center and left portions of the frame are dominated by rippled, golden-tan sand marked with footprints and long diagonal shadows cast by the umbrellas. On the left side, blue and yellow sun loungers are arranged beneath the umbrellas, extending from the lower-left foreground toward the background. On the right side, similar white-framed loungers appear, and in the middle-right area two people are seated together on the chairs, one interacting with the other. The umbrellas' straw canopies are a warm brown, contrasting with the deep, cloudless blue sky occupying the entire upper half of the frame. The lighting is bright and directional, consistent with strong sunlight producing pronounced shadows across the sand. The overall color scheme combines warm golds and browns in the lower portion with cool, saturated blue above. The composition is highly symmetrical and linear, emphasizing depth and perspective through the receding parallel rows.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Natural-feature, Label/Beach, (Grassy-terrain, Label/Sand, Yellow, Rough)), (Group-of, Furnishing, Label/Straw-umbrella, Brown, Symmetrical), ((Furnishing, Label/Straw-umbrella), Above, (Grassy-terrain, Label/Sand)), (Furnishing, Label/Sun-lounger, Blue, Left-side-of), (Furnishing, Label/Sun-lounger, Yellow, Left-side-of), (Furnishing, Label/Sun-lounger, White, Right-side-of), ((Human-agent), Interacts-with), (Natural-feature/Sky, Blue, Environmental-property/Cloudless), (Upper-center-of, Blue), (Lower-center-of, Yellow), (Luminance/Bright, Label/Directional)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

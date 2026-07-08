@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, spanning the lower and lower-right portion of the frame, are out-of-focus horizontal metal railings, appearing as pale gray-blue diagonal and horizontal bars that cut across the bottom third of the image, partially obscuring the scene behind. In the mid-ground center-right stands a woman holding an open yellow-green umbrella; she wears a floral short-sleeved blouse patterned with small colored dots on a light background, a dark skirt, and holds the umbrella's central shaft with one hand while her other arm hangs at her side. She occupies the center-right, positioned vertically from the upper-center (umbrella canopy) down to the lower portion (skirt). The background consists of a large orange-painted wall filling most of the frame's left and central area, with a vertical red pipe or column on the upper left and a darker doorway or shadowed recess on the right edge. A light-colored boxy structure sits at center-left in the mid-ground. The overall color scheme is warm, dominated by orange tones contrasted with the bright yellow umbrella. Lighting appears diffuse and natural, without harsh shadows. Compositionally, the woman is the focal point amid geometric architectural planes.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Man-made-object/Railing, Gray, Blue, Horizontally-oriented, Manufactured-material/Metal), (Lower-right-of, Image)), ((Human-agent, Female), Interacts-with, (Assistive-device, Yellow, Green, Open)), ((Human-agent, Female), (Center-of, Image)), (Clothing, (Label/Floral, Dots)), (Clothing, Luminance/Dark), (Background-view, Man-made-object/Wall, Orange), (Label/Vertical-oriented, Red, Building-part, (Upper-left-of, Image)), (Door, Luminance/Dark, (Right-edge-of, Image)), (Box, (Center-of, Image))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 394,
+            "total_tokens": 815
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 815
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a bathroom interior dominated by a glass-enclosed shower on the left and center of the frame, its metal-framed transparent doors reflecting light and revealing white tiled interior walls. In the foreground center-left, a chrome handheld showerhead hangs on a vertical wall-mounted rail, connected by a coiled silver hose that loops downward. To the left edge, additional chrome fixtures and a horizontal towel bar are partially visible in the foreground. On the right side of the frame, the background and midground feature a wall covered in small red and dark mosaic tiles, against which a white oval vessel sink sits atop a red countertop in the lower-right foreground. Above the sink, a wall-mounted chrome faucet extends from the tiled wall, and a rectangular mirror hangs on the upper-right wall, reflecting a lighter surface. In the lower-right corner, white folded towels rest on a dark shelf beneath the sink counter. The overall color scheme contrasts cool whites and grays of the tile and glass with the warm reds of the mosaic wall. Lighting appears artificial and even, producing reflective highlights on the glass and chrome surfaces throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, (Image, (Room, Label/Bathroom)), ((Window, (Door, Glass)), (To-left-of, (Center-of, Image))), ((White, Ceramic), Item/Wall-tile, Contained-in, (Room, Label/Bathroom)), ((Tool, Label/Showerhead, Steel), (Spatial-relation/Attached-to, (Vertically-oriented, Item/Rail))), (Tool, Label/Hose, Silver), (Tool, Label/Towel-bar, Steel, (Left-edge-of, Image)), ((Red, Item/Mosaic-tile), (To-right-of, (Center-of, Image))), ((White, Visual-attribute/Oval, Item/Sink), (Top-of, (Red, Item/Countertop))), ((Tool, Label/Faucet, Steel), (Above, (Item/Sink))), ((Rectangle, Item/Mirror), (Upper-right-of, Image)), ((White, Clothing, Label/Towels), (Lower-right-of, Image)), (White-color, Gray-color, Red-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 396,
+            "total_tokens": 817
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 817
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

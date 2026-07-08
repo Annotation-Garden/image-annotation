@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by a small bird positioned in the center-left of the frame, occupying roughly the central third and oriented with its head angled downward toward the lower-left, where its short pinkish-red conical beak nearly touches the soil. The bird displays a distinct color scheme: a warm tan-brown crown, nape, back, and wing feathers contrasting with a pale sky-blue face, throat, breast, and flank, while a long blue tail extends diagonally toward the upper-right corner. Its dark eye is visible on the head, and thin pinkish legs are planted on the ground in the lower-center. The background consists of bare, reddish-brown earth filling most of the frame, interspersed with dried, straw-colored grass stems in the lower-left and lower-center, and clusters of green succulent-like foliage appearing in the upper-center and lower-right corner. The lighting is natural and directional, illuminating the bird's left side and casting soft shadows beneath its body onto the soil. The composition places the sharply focused bird against a softer, blurred earthen backdrop, creating depth. The overall palette combines earthy browns and tans with the bird's cool blue plumage and scattered green vegetation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Animal, (Center-of, Foreground-view)), (Label/Down, Head), ((Man-made-object/Beak, Pink, Small), (Close-to, Dirt-terrain)), (Tan, Brown, (Head, Torso-back, Wave)), (Blue, (Face, Torso-chest)), (Blue, (Man-made-object/Tail, (To-right-of, Upper-right-of))), (Black, Eye), (Pink, Thin, Foot)), (Brown, Red, Dirt-terrain, Background-view), (Yellow, Plant, (Lower-left-of, Lower-center-of)), (Green, Plant, (Upper-center-of, Lower-right-of)), (Natural-feature, Left-side-of), Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 396,
+            "total_tokens": 817
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 817
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

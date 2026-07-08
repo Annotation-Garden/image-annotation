@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a person wearing a bright yellow shirt, dark blue trousers, and a dark cap stands on a red-brick platform with one arm raised toward their head in a gesture resembling a salute or wave. Directly beneath and around this figure the platform surface dominates the lower half of the frame, marked with a painted yellow safety line running diagonally and horizontally, and clusters of green potted shrubbery appear in the lower-left and center-right. In the background right, a train with a yellow, orange, and silver front sits on tracks that recede toward the center, its cars extending along the right edge. Multiple parallel railway tracks fill the mid-ground center-left. A tall lamppost rises through the upper-center, and an orange-framed canopy structure spans the left and center over an adjacent platform. Behind everything, dark green forested hills sit beneath a heavily overcast, gray-and-white cloud-filled sky occupying the upper third. The overall color scheme combines muted grays, earthy reds, and greens punctuated by the vivid yellow shirt and train. Lighting is diffuse and flat, casting soft shadows, suggesting an overcast day.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Lower-left-of, Foreground-view)), ((Yellow, Clothing), (Blue, Dark-shade, Clothing), (Dark-shade, Clothing)), ((Label/Arm, Upper-extremity))), ((Red, Building-part), (Yellow, Path)), ((Green, Plant), (Lower-left-of)), ((Green, Plant), (Center-of)), ((Train, Yellow, Orange, Silver), (Right-side-of, Background-view)), (Paved-terrain, (Center-of, Foreground-view)), (Machine, (Upper-center-of)), ((Orange, Roof), (Left-side-of)), ((Green, Dark-shade, Hill), (Background-view)), ((Gray, White, Natural-feature/Cloud), (Top-of)), (Outdoors, Environmental-property/Overcast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

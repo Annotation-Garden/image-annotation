@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the upper-center of the frame, two illuminated light fixtures with fabric shades emit a warm yellow glow against a tan-brown wall. Below them, centered and slightly left, hangs a large dark-framed mirror reflecting an interior scene including a doorway, a wall-mounted poster or notice board, and a smaller mirror on an adjacent wall. In the lower-center foreground sits a white wall-mounted sink with a metal faucet, atop which rests an orange-labeled soap dispenser and a smaller item to its left. On the left side, mounted on the wall, is a gray paper-towel dispenser with a paper sheet hanging beneath it, and in the lower-left foreground a partial dark trash can rim is visible. The lower wall features white subway tiles bordered by a horizontal band of black tiles. On the right side stands a large white surface, likely a diaper-changing station, bearing a blue circular sticker depicting a cartoon koala bear, with a paper-towel roll mounted above it. The overall color scheme combines warm browns, whites, and black accents, with the lighting concentrated at the top, creating soft shadows below.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Building-part, Room), (Center-of, (Man-made-object/Sink, White)), (Upper-center-of, ((Furnishing, Yellow), Luminance)), ((Furnishing, Large, Luminance/Dark), Lower-left-of, Center-of), (Left-side-of, (Device, Gray, Paper)), (Lower-left-of, Box), ((Manufactured-material, White), Rectangle), (Right-side-of, (Furnishing, Large, White, (Circle, Blue, Icon))), (Brown, White, Black), (Indoors, Label/Bathroom))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a white-walled building fa\u00e7ade dominating the entire background, occupying the full frame with a bright, evenly lit surface. In the upper portion, three windows are visible: two on the left and center featuring white louvered shutters with blue-gray frames, and one on the right showing blue-tinted glass panes divided into four sections. Below these, in the lower and central-left regions, two balconies with black wrought-iron railings project outward, casting soft shadows onto the wall beneath them, indicating overhead daylight. In the lower-right foreground, two traffic signs are mounted and appear closest to the viewer: an octagonal red \"STOP\" sign with white lettering positioned in the mid-right area, and beneath it a circular blue sign containing a white rightward-pointing arrow in the lower-right corner. The color scheme is dominated by white and blue-gray tones from the building, contrasted sharply by the vivid red and saturated blue of the two signs. Lighting is bright and natural, producing clear shadows. The composition balances the geometric repetition of windows and railings against the bold, rounded signage clustered in the right foreground, creating visual tension between architectural and traffic elements.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((White, Building), (Background-view, ((Building-part, Window, White, (Label/Louvered, Label/Shutter)), To-left-of, (Building-part, Window, (Blue-color, Glass))), (Building-part, Man-made-object/Railing, Black))), ((Visual-attribute/Octagon, Red, White, ID/STOP), In-front-of, (Circle, Blue, (White, Arrow, Rightward))), (Luminance/Bright, Luminance), (Natural-object, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

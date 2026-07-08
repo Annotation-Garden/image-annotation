@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A dark-plumaged bird occupies the center-right of the frame, positioned in the midground with its wings spread upward and slightly back, revealing brown and rust-toned feathers along the wing edges lit by directional sunlight coming from the right. The bird's head is angled downward and to the left, its beak pointing toward the water below it. Surrounding the bird is white, frothy sea foam that fills much of the frame, churning across the middle and upper portions of the image, creating a textured, bubbly surface. In the background at the top, a breaking wave forms a wall of white spray and foam. The lower portion of the frame, particularly the bottom-left and bottom-center, shows a smooth, wet, dark grayish-brown sand surface where the foam thins out. The overall color scheme is dominated by whites and pale grays from the foam, contrasted against the dark silhouette of the bird and the warm brown highlights on its wings. Lighting is bright and natural, casting subtle highlights on the foam's raised bubbles. The composition centers the bird against the busy, high-contrast foam backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Animal-agent, (Center-of, Image), (Wave, White, Natural-feature/Foam)), ((Animal-agent, Black), (Brown, White-color), (Wave, Spread-hands)), ((Animal-agent, Head, Lower-left-of), (Towards, Natural-feature/Water)), (Label/Label-Sunlight-Right, Right), (White, Natural-feature/Foam, (Center-of, Image)), (Wave, White, (Top-of, Image)), ((Dirt-terrain, Label/Wet, Gray-color, Brown), (Lower-left-of, Image)), (White-color, Gray-color, Black, Brown, Label/Luminance-contrast-High), (Natural-feature, Label/Ocean, Background-view), (Natural-feature, Label/Beach, Lower-left-of, Image)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 355,
+            "total_tokens": 776
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 776
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

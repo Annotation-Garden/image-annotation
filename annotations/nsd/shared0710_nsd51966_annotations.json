@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A large black bear occupies the center-to-right portion of the foreground, positioned on a paved road, its body oriented rightward with its head lowered toward the road surface near the yellow center line. The bear's dark silhouette contrasts sharply against the lighter gray asphalt beneath it. The road itself dominates the lower and central frame, curving from the lower-left toward the right, marked by a double yellow line running diagonally through the composition toward the right edge. In the background, a mountainside covered in patchy snow rises across the upper portion of the frame, with dark rock and vegetation interspersed among the white snow patches. On the right edge, a small green shrub or bush sits at the roadside in the middle distance. The lighting appears bright and natural, likely daytime, casting the bear into near-silhouette while illuminating the snow-dappled slope behind. The color scheme combines the black of the bear, gray tones of the road, white and dark mottling of the snowy mountain, and touches of green vegetation and yellow road paint. Compositionally, the bear anchors the frame centrally against the receding diagonal road and horizontal mountain backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Bear, Black, Large, Rightward), (Lower-center-of, Foreground-view)), ((Animal-agent, Label/Bear), (Above, (Road, Gray, Paved-terrain))), ((Road, Yellow), (Center-of, Road)), ((Mountain, Snow, White), Background-view), ((Plant, Green), (Right-edge-of, Road))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-center and lower-left of the frame, sits a cluster of motorcycles: several dark, saddlebag-equipped touring bikes are grouped toward the left and center, while a distinctly red motorcycle stands to the right, angled with its front wheel facing the viewer. The bikes rest on a paved road surface that curves from the lower-left upward and sweeps leftward into the middle distance. In the mid-ground, standing among and behind the motorcycles near the center, are several people wearing riding gear, some in dark jackets and helmets; one figure stands slightly apart to the right, appearing to look toward the valley. A red-and-white striped guardrail runs along the right edge. A yellow warning sign on a post appears left of center in the mid-ground. The background is dominated by steep, rugged mountains with patches of snow near their peaks, sloping down into a green valley on the right. The sky above is overcast with heavy gray-white clouds. The overall color scheme combines muted grays, greens, and browns, punctuated by the vivid red bike and guardrail, under flat, diffuse daylight lacking strong shadows.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Lower-center-of, Lower-left-of), (Group-of, Vehicle))), ((Black, Vehicle), To-left-of, (Red, Vehicle)), ((Red, Vehicle), (Foreground-view, Rightward)), ((Group-of, Vehicle), (Label/On, (Paved-terrain, Road))), (Label/Mid-ground-view, (Group-of, ((Human-agent, Experiment-actor), Clothing))), ((Human-agent), To-right-of, (Group-of, Human-agent)), ((Red, White, Rectangle), Right-edge-of), (Label/Mid-ground-view, (Yellow, Warning)), (Background-view, (Mountain, Snow)), (Background-view, ((Green, Field), To-right-of)), (Environmental-property/Overcast, Natural-feature/Cloud), (Gray, Green-color, Brown, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

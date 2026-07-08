@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and right portions of the frame, is a woman shown from the shoulders up, her head tilted slightly upward and her gaze directed to the upper right, away from the camera. She has dark hair pulled back from her face, dark eyebrows, and light skin, with her lips parted to reveal her teeth as if speaking. A silver earring is visible on her right ear at center-right. In her right hand, positioned at the lower center of the frame, she holds a dark mobile phone with a blue-lit screen pressed against the left side of her face, indicating she is engaged in a phone call. A light pink or beige scarf drapes around her neck and shoulders in the lower portion of the image. The background, which is out of focus, transitions from a bright cream or white tone on the upper left to a vivid magenta-pink area on the lower left. The lighting is bright and appears to come from the upper left, illuminating her face while casting soft shadows. The overall color scheme combines warm pinks, creams, and skin tones with the cool blue accent of the phone screen.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Female, (Head, (Rotated, Upward)), (Eye, (Label/Gaze-to, Upper-right-of)), (Hair, Black, Retract), (Eyebrow, Black), (Face, Light-shade), (Lip, Open), Teeth, Speak)), ((Human-agent), Interacts-with, (Cellphone, Black, (Computer-screen, Blue))), ((Cellphone), Close-to, (Left-side-of, Face)), (Right, Hand, (Lower-center-of, Grasp, Cellphone)), (Label/Earring, Silver, (Right, Ear, Center-of)), (Clothing, Pink, (Neck, Shoulder, Lower-center-of)), (Background-view, (Upper-left-of, White), (Lower-left-of, Magenta))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 343,
+            "total_tokens": 764
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 764
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

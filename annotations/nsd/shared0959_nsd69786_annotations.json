@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground on the right side of the frame, a large leafy green bush with bright, sunlit leaves partially obscures the view, extending from the lower-right corner upward and inward. A wire mesh fence with thin vertical and horizontal lines runs across the entire frame in the near-to-mid ground, with a prominent vertical wooden post on the far left. In the mid-ground center-to-right, three zebras stand on bare, pale dirt ground scattered with small stones; one zebra faces the camera on the left of the group while the other two stand closely together facing right, their black-and-white striped bodies overlapping. The background features a tall vertical wooden plank fence spanning the upper portion of the frame, behind which green foliage, trees, and a faint rooftop are visible in the upper-left. The ground transitions from dirt in the center to grassy patches toward the fence line. The color scheme is dominated by greens, browns, and the monochromatic black-and-white of the zebras. Lighting is bright and natural, casting soft shadows beneath the animals, indicating overhead daytime sun. The composition layers foliage, fence, animals, and fence receding in depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Foreground-view, ((Plant, Green, Large), (Right-side-of, Item)), ((Nonbiological-artifact, Label/Wire-mesh-fence), (Across-from, Item)), (Nonbiological-artifact, Label/Wooden-post, Vertically-oriented, Left-side-of), (Group-of, (Animal-agent, Animal/Zebra), Item-count/3), ((Animal-agent, Animal/Zebra), (Center-of, Item)), (Dirt-terrain, Luminance/Pale, (Mineral, Small)), (Grassy-terrain, Background-view), ((Nonbiological-artifact, Label/Wooden-plank-fence, Vertically-oriented), Background-view), ((Plant, Green), Background-view), (Roof, Upper-left-of, Background-view), (Green, Brown, Black, White), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

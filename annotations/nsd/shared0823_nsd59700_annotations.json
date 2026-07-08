@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Four people stand together in the foreground, occupying the center and spanning left to right across the middle and lower portions of the frame, each smiling and facing the camera. The leftmost person wears a red and tan jacket with a dark cap, and rests an arm around the shoulder of the second person, who wears a blue hooded jacket, black pants, and a lanyard. The third person, center-right, wears a dark blue jacket with a gray helmet, and holds ski poles. The rightmost person wears a light blue jacket and gray pants, leaning outward with one arm extended and a leg lifted behind. In the lower foreground lie skis and a snowboard resting on white snow. In the background, upper right, a ski lift with cables, towers, and chairs rises against a hazy, pale yellowish sky, while dark evergreen trees appear at the upper left. The overall color scheme combines cool blues and reds of the jackets against the muted white snow and warm cream-toned sky. Lighting is soft and diffuse, suggesting overcast conditions. The composition centers the group symmetrically with equipment anchoring the base.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, Center-of), (Human-agent, Smile, (Red, Tan, Clothing), (Dark-shade, Clothing)), (Human-agent, Smile, (Blue, Clothing), (Black, Clothing)), (Human-agent, Smile, (Blue, Clothing), (Gray, Clothing)), (Human-agent, Smile, (LightBlue, Clothing), (Gray, Clothing))), ((Human-agent), Interacts-with), (Foreground-view, Lower-center-of, Man-made-object, Snow, White), ((Background-view, Upper-right-of), (Man-made-object, Label/Ski-lift)), ((Background-view, Upper-left-of), (Plant, Dark-shade)), (Natural-feature/Sky, Yellow, Light-shade), (Outdoors, Snow, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

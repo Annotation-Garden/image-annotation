@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A herd of cattle occupies the foreground, spanning the center and left-center of the frame, positioned in the lower two-thirds of the image. In the center-left stands a reddish-brown cow with a pale muzzle, ear tags, and small horns, facing directly toward the viewer. To its right, in the center-right foreground, a tan or fawn-colored animal with prominent curved horns and a visible ear tag also faces forward. Between and behind these, darker black cattle cluster in the center and left, partially obscured, with one black head visible at the far left edge. Additional horned animals appear in the background rows, their forms overlapping. The lower portion of the frame is filled with tall green grass in which the animals stand. The upper third shows a hazy, pale blue sky with diffuse white and gray clouds, and a dense band of dark green trees forms the horizon line across the middle. Lighting is soft and even, suggesting overcast or filtered daylight without harsh shadows. The color scheme combines greens, browns, tans, and blacks below with muted blue-gray above, creating a naturalistic, horizontally balanced composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Group-of, (Animal-agent, Animal/Cattle), (Center-of, Left-side-of))), ((Animal-agent, Animal/Cattle, Brown-color), (Center-of, Left-side-of)), ((Animal-agent, Animal/Cattle, Tan), (Center-of, Right-side-of)), ((Animal-agent, Animal/Cattle, Black), (Center-of, Left-side-of)), (Background-view, (Group-of, (Animal-agent, Animal/Cattle))), (Lower-center-of, (Green, Plant, Field)), (Upper-center-of, (Blue, Natural-feature/Sky)), (White, Gray, Natural-feature/Cloud), ((Green, Dark-shade, Group-of, Plant), Center-of), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

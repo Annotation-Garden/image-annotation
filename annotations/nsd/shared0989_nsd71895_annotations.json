@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower portion of the frame across its full width, is a dense expanse of tall, dry golden-brown grass interspersed with green leafy shrubs, particularly a bushy green plant in the lower-right corner. In the middle ground, spanning the center and left of the frame, stands a group of at least four elephants with grayish-brown hides, partially obscured by the vegetation; one prominent elephant on the right faces leftward with its trunk lowered toward the grass, while others cluster to the center and left, their heads and backs visible above the grassline. The elephants appear to be feeding or moving among the brush, their bodies overlapping one another. In the background, filling the upper portion of the frame, is a sloping hillside covered in green and olive-toned trees and dense foliage under what appears to be natural daylight. The overall color scheme is dominated by earthy tones\u2014golden yellows, muted greens, and grayish-browns. The lighting is diffuse and even, without harsh shadows, suggesting overcast or soft daytime conditions. The composition is layered horizontally, with grass, animals, and hillside stacked from bottom to top.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, (Grassy-terrain, Yellow, Brown)), ((Lower-right-of, (Plant, Green)))), ((Group-of, (Animal-agent, Animal/Elephant, Gray-color, Brown)), (Center-of, Image)), (Animal-agent, Animal/Elephant, To-right-of, (Move-head, Towards, (Grassy-terrain))), (Background-view, (Hill, Sloped-terrain, (Plant, Green, Olive))), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

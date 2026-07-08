@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center of the frame, stands a white-faced calf with a predominantly dark body, its head framed directly behind the vertical bars of a metal fence; the calf's pink nose, dark eyes, and white facial markings with darker patches are clearly visible, and it faces the camera directly. The fence, rendered in rusty reddish-brown tones, extends across the lower and middle portions of the image, its vertical and horizontal bars creating a grid pattern that partitions the space into pens. To the left and behind this central calf, a dense cluster of dark-colored cattle presses together, their black hides forming a mass in the middle-left region. In the upper background, additional cattle stand on open, dry ground, including one dark animal facing forward at center and another darker form in the upper-center distance. The ground is muddy brown, matted with trampled earth and manure. The overall color scheme is muted, dominated by browns, blacks, and the rust of the metal, punctuated by the calf's white face. Lighting appears natural and bright, casting soft shadows and illuminating the calf's face prominently against the darker surrounding animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Animal-agent, Label/Animal-Calf, White, (Face, White), (Nose, Pink)), In-front-of, (Item/Fence, Red-color, Brown-color, Vertically-oriented)), ((Group-of, Animal-agent, Animal/Cattle, Black), To-left-of, (Animal-agent, Label/Animal-Calf)), (Background-view, Group-of, Animal-agent, Animal/Cattle, Black), (Muddy-terrain, Brown), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

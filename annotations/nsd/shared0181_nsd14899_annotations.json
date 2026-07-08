@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is a wading bird occupying the center and lower-center of the frame, positioned in the foreground and facing left. Its plumage is sharply divided: a black head, upper back, and wings contrast with a bright white breast, belly, and a white patch near the wing. The bird has a long, straight orange-red bill pointing to the left, a dark round eye with a reddish rim, and pale pinkish legs, one of which is lifted mid-stride, its foot partially submerged in shallow water. The background occupies the upper portion of the frame and consists of calm, rippled water in muted blue and brown tones, growing lighter toward the top. In the lower-right corner, dark clumps of what appears to be seaweed or wet debris rest on a pale, wet sandy or muddy surface, extending across the bottom edge. Lighting comes from the right, illuminating the bird's white underside and casting subtle reflections on the wet ground beneath its legs. The overall color scheme combines cool blues and browns with the striking warm orange of the bill. The composition centers the bird against an uncluttered aquatic background, emphasizing its walking posture.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, (Label/Bird, (Center-of, Foreground-view), (Spatial-relation/Facing, Leftward))), (Black, Head), (Black, (Torso-back, Upper-center-of)), (Black, Man-made-object/Wing), (White, Torso-chest), (White, (Torso-part, Lower-center-of)), (White, (Adjacent-to, Man-made-object/Wing)), ((Orange-color, Length, Visual-attribute/Straight, Man-made-object/Beak), (To-left-of, Head)), (Black, Visual-attribute/Round, Eye), (Red-color, (Label/Edge-of, Eye)), (Pink-color, Man-made-object/Leg), ((Man-made-object/Leg, Lift), (Contained-in, (Natural-feature/Water, Shallow)))), ((Natural-feature/Water, Background-view, Upper-center-of), (Blue, Brown, Smooth)), ((Plant, Lower-right-of), (Top-of, (Label/Wet, Terrain))), ((Terrain, Bottom-edge-of), Label/Wet), Blue-color, Brown-color, Orange-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

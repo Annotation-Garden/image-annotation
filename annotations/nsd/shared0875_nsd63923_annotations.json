@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned on the left and center-left of the frame, stands a woman with dark hair pulled back, wearing a black jacket and dark pants, holding an orange umbrella that occupies the upper-left quadrant and extends diagonally over her head. She is oriented in profile facing right, and her hands are positioned near the center of the frame, appearing to hold or touch something light-colored close to a wooden door. The background and right two-thirds of the image are dominated by tall wooden doors and framing with a warm honey-brown tone, featuring paneled sections in the lower portion and large glass windows in the upper portion. Through the glass, reflections and interior elements are visible, including what appear to be shelves, papers, and a row of small bottle-like objects on the center-right. The overall color scheme contrasts the vivid orange umbrella against muted browns, blacks, and cool grayish reflections. Lighting is diffuse and comes from the interior visible through the glass, producing soft illumination without harsh shadows. The composition is roughly balanced, with the human figure anchoring the left and the architectural door structure filling the right, framed by a thin black border.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Female, (Black, Clothing), (Hair, Black)), (Foreground-view, Left-side-of), (Spatial-relation/Facing, Right)), ((Human-agent), Interacts-with, (Man-made-object/Umbrella, Orange, Upper-left-of, Above)), ((Human-agent), Interacts-with, (Door, Manufactured-material)), ((Door, Manufactured-material, Brown), (Right-side-of, Background-view)), ((Window, Glass), Above), (Label/Shelf, Contained-in, (Window, Glass)), (Paper, Contained-in, (Window, Glass)), (Man-made-object/Container, Center-of), (Luminance, Low), (Black, Boundary-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

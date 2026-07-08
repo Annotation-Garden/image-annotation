@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two riders on horseback occupy the center and center-right of the frame, positioned on a light tan dirt path that dominates the lower portion of the image. The left rider wears a light-colored poncho with a dark hat and sits astride a brown horse whose head faces downward toward the lower-center; this horse's legs extend into the lower-left area. The right rider, wearing a dark reddish-brown poncho and a pale hat, sits on a white or light gray horse facing the viewer, occupying the center-right. Both riders appear to be moving forward along the path. In the background, dense green foliage and trees fill the upper two-thirds of the frame, spanning left to right, with darker shadowed vegetation on the upper-left and sunlit lighter-green grasses on the right edge. The overall color scheme combines earthy browns of the path and horses with saturated greens of the vegetation. Lighting is directional, with warm sunlight illuminating the right side and the riders' faces while the left background remains shadowed. The composition centers the two horse-and-rider pairs symmetrically against the foliage backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Clothing, Label/Poncho), (Clothing, Label/Hat)), Interacts-with, (Animal-agent, Animal/Horse, Brown)), ((Human-agent, Experiment-actor, (Clothing, Brown-color, Label/Poncho), (Clothing, Label/Hat)), Interacts-with, (Animal-agent, Animal/Horse, White)), (Center-of, ((Human-agent), (Animal-agent, Animal/Horse))), (Upper-right-of, ((Human-agent), (Animal-agent, Animal/Horse))), (Path, (Color-shade, Tan), Dirt-terrain, Lower-center-of), (Plant, Green, Background-view), (Plant/Tree, Green, Background-view), ((Plant, Dark-shade), Upper-left-of), ((Grassy-terrain, Green, Light-shade), Right-edge-of), Outdoors, Symmetrical, Forward",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

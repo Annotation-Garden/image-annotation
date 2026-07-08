@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the majority of the frame from center to right, lies a black dog with a graying muzzle, its body oriented toward the lower left while its head turns to face the camera at center-right. The dog's ears are erect, its mouth is open with the pink tongue visible, and its dark eyes catch light on the right side. A collar encircles its neck, bearing a bone-shaped metal tag that hangs at the lower center of the chest. The dog's front paws extend forward into the lower-left portion of the frame, resting on fabric. Beneath and behind the animal are textured blankets and bedding: a blue and cream patterned quilt with fringed edges dominates the lower foreground, while muted green, pink, and reddish fabrics fill the upper background. Lighting is natural and directional, striking the dog's face and back from the right, creating bright highlights on the fur and shadowed areas on the left flank. The overall color scheme combines dark blacks and browns of the animal with softer pastel greens, blues, and pinks in the surrounding textiles, producing a warm, domestic, softly illuminated composition centered on the resting dog.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Dog, Black, (Head, (Towards, Computer-screen)), (Ear, Vertically-oriented), (Mouth, Open), (Tongue, Pink), (Eye, Black)), (Center-of, Foreground-view)), ((Clothing, Label/Collar), (Around, Neck)), ((Manufactured-material, Label/Bone-shaped-tag), (Lower-center-of, Torso-chest)), ((Foot, Forward), (Lower-left-of, Foreground-view)), ((Furnishing, Label/Quilt, Blue, Beige, Pattern), (Lower-center-of, Foreground-view)), ((Furnishing, Label/Bedding, Green, Pink, Red), Background-view), (Label/Luminance-contrast-High, (Right-side-of, Head))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

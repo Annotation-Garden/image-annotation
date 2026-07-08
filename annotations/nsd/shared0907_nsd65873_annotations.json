@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two donuts occupy the foreground, resting on crumpled white parchment paper inside an open cardboard box that fills the frame; the box's brown interior flaps are visible along the upper-left and upper-right edges, forming the background. The left donut, positioned in the lower-left to center portion, is divided into two frosting colors: turquoise-blue on its left half and bright pink covered with pink sprinkles on its right half, with a visible central hole and pale fried dough along its lower rim. The right donut sits in the center-right, upper-to-middle area and is topped with dark chocolate-colored crumbles, likely cookie pieces, and drizzled with tan or caramel-colored lines running diagonally across its surface. The two donuts nearly touch near the center of the frame. The color scheme contrasts vivid blue and pink against dark brown and beige, set on white paper and framed by the muted brown box, with a small strip of pink box exterior visible at the lower edge. Lighting appears natural and directional, coming from the upper right, casting soft shadows beneath and between the donuts and illuminating the sprinkle textures clearly.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Ingestible-object/Dessert, Sweet, (Turquoise, Left-side-of), (Pink, Right-side-of), (Pink, Dots), Circle, (Lower-left-of, Center-of)), (To-left-of, (Ingestible-object/Dessert, Sweet, Brown, Tan, (Upper-center-of, Center-of)))), (White, Paper), (Brown, Box, Open), (Beige, Background-view), ((Box), Contained-in), (Light-shade, Upper-right-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

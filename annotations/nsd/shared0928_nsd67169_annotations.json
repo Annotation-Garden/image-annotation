@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Three horses graze across the center and lower-central portion of the frame, all with heads lowered toward the ground in the act of feeding. The leftmost horse, dark brown, occupies the mid-left region at roughly mid-height, positioned in the middle ground. A tan or buckskin-colored horse stands in the center of the frame, slightly forward, while a third dark brown horse is positioned center-right, its body extending toward the right edge. In the immediate foreground, the lower portion of the frame shows dry, pale-green and golden grass, where several small dark birds are scattered across the lower-center and lower-right areas, standing on the ground near the horses. The background comprises a field of light-colored flowering vegetation, transitioning upward into a darker treeline and hillside along the upper edge, with a sliver of pale sky at the top. The lighting is warm and low-angled, consistent with early morning or late-afternoon sun, casting a golden glow and producing long shadows extending leftward from the horses. The overall color scheme is dominated by warm golds, browns, and muted greens, creating a tranquil, naturalistic rural composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Horse, Brown, (Left-side-of, Image)), (Lower-head, Center-of, Image)), ((Animal-agent, Animal/Horse, Tan, Center-of, Image), Lower-head), ((Animal-agent, Animal/Horse, Brown, (Right-side-of, Image)), Lower-head), (Group-of, (Animal-agent, Animal/Bird, Black, Small), (Lower-center-of, Image)), (Grassy-terrain, Green, (Foreground-view, Image)), (Field, (Background-view, Image)), (Plant, White), (Hill, (Top-edge-of, Image)), (Grassy-terrain, (Top-of, Image)), Outdoors, Rural, (Yellow, Brown, Green)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

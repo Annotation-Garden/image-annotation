@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-left and center of the frame, sit two men on brown upholstered couches; the left man wears glasses, a blue short-sleeved shirt, and blue jeans, holding a white Wii remote in his hands, while the center man wears a black shirt, tan cargo shorts, black socks, and black shoes, also gripping a white controller. To the far lower-left edge, a partial figure in dark clothing is barely visible. In the mid-ground center-right, a woman in a green shirt with dark hair sits leaning forward on the couch, and to the right an additional man in a dark shirt appears near the upper-right corner. The right foreground contains a black glass-topped coffee table holding orange plastic cups, a clear cup, sunglasses, and assorted items. In the background, upper-left to center, are green walls, a red brick section, a wooden bookshelf with books and binders, and a tall black floor lamp. The color scheme is dominated by browns, greens, and blues, with orange accents. Lighting is warm and artificial, casting soft shadows. The composition is dense, layered, and slightly cluttered.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Male, Glasses, (Blue, Clothing)), (Interacts-with, (White, Device)))), (Foreground-view, ((Human-agent, Male, (Black, Clothing)), (Interacts-with, (White, Device)))), ((Human-agent, Male, (Black, Clothing)), Lower-left-of), (Foreground-view, (Human-agent, Female, (Green, Clothing))), (Human-agent, Male, (Black, Clothing), Upper-right-of), (Foreground-view, (Right-side-of, (Black, Furnishing, (Orange, Man-made-object, Label/Cup), Glasses))), (Background-view, ((Green, Building-part), (Red, Building-part), (Furnishing, Book), (Black, Furnishing))), (Luminance/Warm, Luminance), Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

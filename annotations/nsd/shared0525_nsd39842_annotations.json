@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central portion of the frame, a chestnut-brown horse faces the viewer, its head lowered toward the lower-center with a dark leather bridle and reins visible across its face and neck; its front legs, one wrapped in a red covering near the lower edge, are captured mid-stride on tan, sandy ground. Mounted on the horse, positioned center to upper-center, is a person wearing a dark navy short-sleeved shirt, blue jeans, and a black riding helmet, with the right arm raised and bent upward toward the head. The rider interacts directly with the horse, seated in a saddle with hands near the reins. In the background, spanning the upper and middle frame, are striped tents in green-and-white and blue-and-white patterns, a large tan or brick building at the upper left with rectangular windows, and a white structure at the right edge. Red crate-like objects sit at the middle-left. The color scheme combines earthy browns and tans with cooler greens and blues. Lighting is bright and diffuse, casting soft shadows beneath the horse. Composition centers the horse-and-rider subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Horse, Brown), (Lower-center-of, Foreground-view)), ((Label/Bridle, Black), Part-of, (Animal-agent, Animal/Horse)), ((Upper-extremity, (Red, Clothing)), Part-of, (Animal-agent, Animal/Horse)), (Dirt-terrain, Tan), ((Human-agent, Experiment-actor, ((Clothing, Blue), (Clothing, Black))), (Upper-center-of, Image)), ((Human-agent), Interacts-with, (Animal-agent, Animal/Horse)), ((Human-agent), (Ride, (Animal-agent, Animal/Horse))), ((Furnishing, (Green, White)), (Upper-center-of, Background-view)), ((Furnishing, (Blue, White)), Background-view), ((Building, Tan), (Upper-left-of, Background-view), (Window, Rectangle)), ((Building, White), (Right-edge-of, Background-view)), ((Box, Red), (Lower-left-of, Image)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

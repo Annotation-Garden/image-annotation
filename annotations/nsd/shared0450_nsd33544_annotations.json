@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an ornate clock tower that dominates the upper and central portions of the frame, rendered in pale beige and cream-colored stone. Two clock faces are visible near the top: one in the upper-left area showing dark hands against a light dial, and another in the upper-right area, both set within decorative circular surrounds. Below the clocks, the tower features arched openings with louvered shutters and columned detailing in the center of the frame, flanked by elaborate carved cornices and moldings. In the lower-right foreground, a separate building section extends diagonally, showing rows of tall arched windows with dark recessed panes and repeating pilasters along its facade. The entire left side and upper-left corner of the image consists of a clear, gradient blue sky, deepening slightly toward the top, with no clouds visible. The lighting appears natural and directional, illuminating the right-facing stone surfaces while casting the louvered openings and window recesses into shadow. The overall color scheme combines warm tan and beige stone tones against the cool blue sky. The composition is asymmetrical, with architectural mass concentrated on the right and open sky balancing the left.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Building, Label/Clock-tower), (Beige, Manufactured-material/Made-of, Steel)), ((Clock-face, Upper-left-of), (Black, Circle)), (Clock-face, Upper-right-of), ((Window, Arrow), Center-of), ((Building, Lower-right-of), (Window, Rotated)), ((Blue, Natural-feature/Sky), Left-side-of), (Natural-feature/Sky, Blue), Asymmetrical, Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

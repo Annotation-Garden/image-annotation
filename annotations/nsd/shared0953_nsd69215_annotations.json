@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The foreground occupies the lower two-thirds of the frame and consists of a large, bare, tan-colored field displaying curved plow or harvest lines that arc across the lower-center and lower-left portions of the image. In the middle distance, running horizontally across the center of the frame, a passenger train travels along an elevated embankment; the train comprises multiple silver and white carriages with darker window bands, and a locomotive positioned toward the right end. Directly behind and above the train, spanning the full width of the center, is a dense band of dark green deciduous trees. The upper portion of the frame, in the background, shows rolling hills and additional fields in muted green and beige tones receding toward the horizon, beneath a pale, hazy, nearly white-gray sky occupying the top strip. The lighting is diffuse and soft, casting no strong shadows, suggesting overcast or hazy daylight. The overall color scheme contrasts the warm tan foreground with cool green vegetation and a desaturated sky. Compositionally, strong horizontal bands stratify the image\u2014field, train, trees, hills, sky\u2014while the curved field lines add movement in the lower region. No people or animals are visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Field, Large, Tan), (Visual-attribute/Curved, Label/Line)), (Train, Silver, White, (Right-side-of, Path)), ((Group-of, Plant, Green, Dark-shade), Behind, Train), (Background-view, Hill, Field, Green, Beige), (Natural-feature/Sky, White, Above), (Outdoors, Real-world), Horizontally-oriented",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

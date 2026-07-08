@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by dark green water occupying the lower third of the frame, its surface rippled with horizontal reflective bands that lighten toward the center-right. Positioned in the center-right of the frame, wading in shallow water at the boundary between water and land, stands a white heron in profile facing left, its long neck curved in an S-shape, sharp yellow beak angled slightly downward, and thin legs submerged. The bird occupies the middle ground and spans roughly the vertical center of the image. Behind and above the heron, filling the upper two-thirds, is a rocky embankment of tan, gray, and brown boulders and cracked, dried mud, textured with crevices and irregular surfaces. In the upper-left corner, sparse green foliage and thin bare branches protrude, adding vegetation. The overall color scheme combines earthy tans and grays of the rocks, the deep green of the water, and the bright white plumage of the heron, which contrasts sharply against the darker background. Lighting appears natural and directional from the upper right, casting soft shadows among the rocks and illuminating the bird's body. The composition places the isolated heron against a rugged, dry backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((White, Animal/Heron, (Neck, Label/Curled)), (Center-of, Image)), ((Green, Dark-shade, Natural-feature/Water), (Lower-center-of, Image)), ((Rocky-terrain, (Tan, Gray, Brown, Natural-feature/Boulder)), (Above, (Animal/Heron))), ((Green, Plant), (Upper-left-of, Image)), (Natural-feature, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

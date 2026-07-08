@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-center to center-right of the frame, a person skis downhill wearing a red jacket, black pants, black helmet, and white gloves, gripping two ski poles that extend outward to both sides and planting downward into the snow. The skier's white skis are visible at their feet in the lower-center area. This individual is actively navigating a snow-covered slope that fills the entire lower and central portion of the image with white, textured snow bearing faint ski tracks curving through the middle background. The background consists of numerous tall, dark tree trunks\u2014leafless or bare-barked evergreens\u2014spanning the upper half of the frame from left to right, with green foliage clustered at the tops of some trees in the upper-left and upper-center regions. Patches of snow cling to branches in the upper portion. The overall color scheme is dominated by white snow and dark brown-to-black tree trunks, with the skier's red jacket providing the single vivid accent. The lighting appears diffuse and even, consistent with an overcast day, casting soft, minimal shadows. The composition is vertically layered, contrasting the bright snowfield below with the shadowed forest above.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-participant, (Label/Ski, (Downward, Sloped-terrain))), ((Red, Clothing, Torso-chest), (Black, Clothing, Upper-leg), (Black, Clothing, Head), (White, Clothing, Hand)), ((Human-agent), Interacts-with, (Tool, Label/Ski-poles)), (White, Tool, Label/Skis, Lower-center-of), (Snow, Sloped-terrain, White, Rough), (Path, Label/Ski-tracks, Center-of), (Plant, Brown, Vertically-oriented, Background-view), (Green, Plant, Upper-left-of), (Snow, Upper-center-of), (Environmental-property/Overcast, Luminance/Diffuse), Foreground-view",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

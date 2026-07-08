@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the right and center portions of the frame, stands a white building with a blue-framed window from which a brown-and-white dog leans out, its head and one white paw resting on the sill, positioned in the center-right at roughly mid-height. The building's textured, weathered white wall dominates the right side, receding diagonally toward the upper right. In the lower foreground, a rough cobblestone street runs from the center-left toward the background, forming a receding perspective line. In the mid-ground on the left, a person in a light shirt and dark pants walks along the street with their back partly turned, and parked cars line the left edge. In the background, upper-left center, sits a prominent church with twin towers, ornate yellow-and-white fa\u00e7ade, and a central cross, flanked by additional pale buildings. The sky above is overcast and gray-white, indicating diffuse, soft lighting without strong shadows. The overall color scheme combines muted whites, blues, browns, and grays with the warm yellow church accent. The composition uses strong diagonal lines from the street and building to draw the eye between the foreground dog and distant church.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((White, Building), In-front-of, (Foreground-view, Right-side-of)), ((Blue, Window), Part-of, (White, Building)), ((Animal-agent, (Brown, White)), (Label/Lean, (Center-of, Right-side-of, (Blue, Window)))), ((White, Head), Part-of, (Animal-agent, (Brown, White))), ((White, Label/Paw), Part-of, (Animal-agent, (Brown, White))), ((White, Rough, Man-made-object/Wall), Part-of, (White, Building)), ((Label/Cobblestone-street, Rough), (Foreground-view, Lower-center-of)), (Human-agent, (Walk, Path), (Left-side-of, Background-view)), ((Car, Group-of), (Left-edge-of)), ((Building, (Yellow, White)), (Upper-left-of, Background-view)), (Cross, Part-of, (Building, (Yellow, White))), ((Gray, White), Natural-feature/Sky), Outdoors, Urban",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

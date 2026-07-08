@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a black furry object, likely an animal or fur garment, occupies the corner, and immediately below it a human hand with fingers extended rests on the wooden desk edge, with a hint of red fabric visible at the wrist. Dominating the center foreground is a black ergonomic curved keyboard with a padded wrist rest, and a light-blue pen lies diagonally across its keys. To the right of center in the lower frame sits a silver-and-black computer mouse resting on the wood surface. In the mid-ground center-right stands a clear glass filled partway with water, positioned near the base of a black flat-panel monitor that anchors the upper-center background. The right side holds stacked papers, a dark binder with printed text, CDs, and what appears to be a document holder or speaker device. The left background contains scattered papers, envelopes, and a stack of books or notebooks. The overall color scheme combines warm wood-brown tones with black electronics and pale paper whites. Lighting is artificial and even, casting soft shadows, giving a cluttered, domestic-office composition with diagonal keyboard lines drawing the eye centrally.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, (Black, Animal, (Lower-left-of, Foreground-view)), (Human-agent, (Hand, Fingers), (Red, Clothing)), ((Hand, Fingers), Interacts-with, (Manufactured-material/Wood, Furnishing)), (Black, Keyboard, Visual-attribute/Curved, (Center-of, Foreground-view)), (Blue, Pen, (Top-of, Keyboard)), (Silver, Black, Computer-mouse, (To-right-of, Center-of)), (Glass, Man-made-object/Container, Natural-feature/Water, Label/Half), (Black, Computer-screen, Upper-center-of), (Group-of, Document, (Right-side-of, Foreground-view)), (Book, Notebook, Document, (Left-side-of, Background-view)), (Manufactured-material/Wood, Brown, Black, White), (Indoors, Room)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

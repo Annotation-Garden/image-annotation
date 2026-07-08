@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a body of dark blue water occupying the lower half of the frame, its surface rippled and reflecting light. In the foreground, positioned in the lower-right quadrant, sits a white motorboat with a dark canopy top, an outboard motor at its stern, and a tall thin antenna or fishing rod extending upward from its center; the boat faces rightward and appears to move across the water. In the background, centered and slightly left, stands a white lighthouse with a black lantern room, a green horizontal band near its top, and a small dark doorway at its base, rising vertically to occupy the upper-center portion of the frame. Surrounding the lighthouse and stretching horizontally across the middle of the image is a rocky breakwater composed of brown and gray boulders. Above this, a pale, cloudless blue sky fills the upper edge. The lighting is bright and natural, consistent with clear daytime sun casting soft shadows on the lighthouse's right side. The overall color scheme combines cool blues of water and sky with the neutral whites of the lighthouse and boat against earthy rock tones, creating a balanced, calm horizontal composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Natural-feature/Water, (Blue, Dark-shade), Below), ((Boat, White, (Roof, (Black, Dark-shade)), (Move, Rightward)), (Lower-right-of, Photograph)), ((Building, White, (Green, Top-of), (Black, Door)), (Upper-center-of, Photograph)), (Natural-object, (Brown, Gray), (Center-of, Photograph)), (Natural-feature/Sky, (Blue, Light-shade), Environmental-property/Cloudless, Top-edge-of), (Outdoors, Real-world), (Cold, Blue, Natural-feature/Water), (Cold, Blue, Natural-feature/Sky)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "I cannot verify the exact age of the person in this image, so I'll describe the observable visual elements. In the foreground, a person with blonde hair lies horizontally across the frame, their head positioned in the center-left resting on a white pillow, with eyes closed and a smiling expression showing teeth. Their left arm extends outward toward the lower-left corner of the frame, hand open and palm visible against white bedding. The person wears a pink garment with lace or ruffled detailing visible at the shoulder and chest area, positioned center-right. A taupe or grayish-brown blanket drapes diagonally across the right side of the frame, covering the lower body and extending from the upper-right toward the center. The background consists of a plain beige or tan wall occupying the upper portion of the frame behind the pillow. The overall color scheme is warm and muted, dominated by soft pinks, beiges, whites, and neutral browns. Lighting appears soft and diffuse, illuminating the face and creating gentle shadows without harsh contrasts. The composition is horizontal, with the reclining figure spanning the width, creating a relaxed, low-angle domestic scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-participant, (Hair, Yellow)), (Lie-down, (Eyes-closed), Smile, (Teeth, Label/Visible))), ((Left, Upper-extremity), (Towards, Lower-left-of)), ((Hand, Open, Palm)), ((Clothing, Pink, Label/Lace-ruffle), Upper-center-of), (White, Label/Pillow), (White, Label/Bedding), (Label/Blanket, Brown, (Right-side-of)), (Man-made-object/Wall, Beige, Upper-center-of), (Indoors, Room)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

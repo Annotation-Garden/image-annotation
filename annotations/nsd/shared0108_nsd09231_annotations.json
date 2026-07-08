@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a weathered wooden dock occupies the lower-left and extends diagonally from the lower-left corner toward the center-right, its horizontal planks clearly visible with visible grain and gaps. Moored alongside the dock in the center and right portions of the frame are several small aluminum rowboats, arranged in a row and angled so their bows point toward the upper-left. The boats contain wooden oars resting across their interiors, and some hold blue tarpaulin or cushion material visible in their hulls. Metal rails and support structures separate the boats from the dock, with ropes and tie points connecting them. The boats rest on calm, dark water that fills the lower-right area, reflecting the hulls and dock in muted tones. The background, occupying the entire upper half of the frame, is a flat, pale gray sky merging into misty, hazy conditions where water and horizon are indistinguishable. The overall color scheme is subdued and monochromatic\u2014gray, silver, and muted brown\u2014punctuated only by the small blue accents inside the boats and warm tan oars. Lighting is diffuse and overcast, producing soft shadows and low contrast throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Building-part, Label/Dock, Brown, (Manufactured-material/Wood, Horizontally-oriented))), ((Boat, Steel, Group-of), (Label/Moored-to, (Building-part, Label/Dock))), ((Boat), (Contained-in, (Tool, Label/Oars, Tan))), ((Boat), (Contained-in, (Manufactured-material, Label/Tarpaulin, Blue))), ((Boat), (Above, (Natural-object, Label/Water, Luminance/Dark, Gray))), (Background-view, (Natural-feature/Sky, Gray, Light-shade, (Environmental-property, Label/Hazy))), (Environmental-property/Overcast, Gray, Brown, Silver)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

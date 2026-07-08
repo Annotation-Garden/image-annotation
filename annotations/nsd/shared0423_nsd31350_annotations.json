@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a white, round vessel sink positioned in the center-foreground, occupying the majority of the lower and central frame; its smooth ceramic bowl contains a circular metal drain grate at its lower interior. A chrome faucet with an angular, folded spout rises from the left side, its metallic surface reflecting light against the darker background. Along the sink's upper rim, four small dark dots are visible, likely drilled holes. In the background right, two clear pump-top soap or lotion dispensers stand upright, partially lit. A brushed-metal soap pump sits at the sink's right-rear edge. The lower-right corner shows a horizontal strip of blue LED lighting, adding a cool glow that contrasts with the warm white of the basin. The upper portion of the frame contains a dark, curved reflective panel or mirror. The overall color scheme is high-contrast: warm creamy whites against deep black and dark grey surfaces, punctuated by the blue accent light and silver metallic reflections. Lighting is directional and dim, illuminating the sink's front while leaving surrounding areas in shadow, creating a moody, spotlit composition with strong tonal contrast throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((White, Circle, Center-of), (Furnishing, (Ceramic, Man-made-object/Bowl))), ((Manufactured-material/Metal, Circle), (Contained-in, (Furnishing, Man-made-object/Bowl))), ((Steel, To-left-of), Man-made-object/Faucet), ((Dots, Count/4), (Top-edge-of, Furnishing)), (Background-view, Right-side-of, (Group-of, Push-button)), ((Steel, Push-button), Right-side-of), ((Blue, LED-display, Horizontally-oriented), Lower-right-of), ((Black, Rotated), (Top-of, Furnishing, Label/Mirror)), (Label/Luminance-contrast-High, Directional-relation), (White, Black, Gray)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

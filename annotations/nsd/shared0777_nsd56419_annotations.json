@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three figures anchor the lower portion of the frame: an umpire dressed entirely in black stands at the left, crouching slightly with his back to the viewer; a catcher wearing a dark uniform and helmet with a mask squats in the lower-center; and a batter in a white uniform stands center-right, holding a bat raised over his right shoulder in a ready stance, with a small white ball visible near the lower-center dirt area suggesting an incoming pitch. The batter's stance and the catcher's crouch indicate an active moment of play. The middle ground shows brown dirt of the batter's box and home-plate area transitioning to green grass on the right. In the background, a dugout runs across the upper frame, populated by numerous seated and standing figures in light and dark uniforms behind a railing, partially shadowed. A black chain-link fence crosses the lower-right corner in the immediate foreground. The overall color scheme combines dark blacks, whites, browns, and greens under artificial nighttime lighting, which brightens the players while leaving the dugout dimmer. The composition centers attention on the batter with balanced horizontal layering.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Experimenter, Black), (Crouching, (Behind, Experiment-participant)), (To-left-of, ((Human-agent, Experiment-participant), Luminance/Dark, (Label/Wear, Clothing), (Label/Wear, Assistive-device, Label/Mask))))), ((Human-agent, Experiment-participant), Crouching, Luminance/Dark, (Label/Wear, Clothing), (Lower-center-of, Foreground-view)), ((Human-agent, Experiment-participant), White, Standing, (Hold-down, Tool), (Center-of, Foreground-view)), ((White, Circle, Small), (Lower-center-of, (Dirt-terrain))), (Label/Middle-ground-view, ((Brown, Dirt-terrain), (To-left-of, (Green, Grassy-terrain)))), (Background-view, (Building-part, (Group-of, (Human-agent, Experiment-actor)), (Sitting), (Standing), (Behind, Item))), ((Black, Nonbiological-artifact), (Lower-right-of, Foreground-view)), (Black, White, Brown, Green), (Outdoors, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

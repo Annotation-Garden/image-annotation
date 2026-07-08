@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a young foal stands prominently in the center-right of the frame, its body oriented toward the viewer with brown coloring across its head, neck, and hindquarters, and distinctive white patches on its face, chest, legs, and lower body. To the left, an adult horse occupies the mid-left and extends off the frame's left edge; it displays a mottled gray, white, and reddish-brown coat, with its head lowered and neck extending rightward, positioned behind and beside the foal, suggesting proximity between the two animals. The foal's legs are planted on green grass that fills the entire lower half and foreground. The background, occupying the upper portion, consists of a dense line of green trees and shrubbery spanning left to right, with a grassy meadow containing scattered purple and small wildflowers in the middle-right distance. The overall color scheme is dominated by greens, browns, and whites, conveying a natural outdoor setting. Lighting appears soft and diffuse, consistent with overcast daylight, casting no harsh shadows. The composition places the two horses left-of-center, balanced against the open field extending to the right.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Animal-agent, Animal/Foal, Brown, (White, Face), (White, Torso-chest), (White, Man-made-object/Leg)), (Center-of, Photograph)), ((Animal-agent, Animal/Horse, Gray, White, Brown), (Left-side-of, Photograph)), ((Animal-agent, Animal/Horse), Behind, (Animal-agent, Animal/Foal)), (Green, Grassy-terrain, Foreground-view), (Background-view, (Green, Plant)), ((Purple, Plant), (Right-side-of, Photograph)), (Outdoors, Natural-object)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

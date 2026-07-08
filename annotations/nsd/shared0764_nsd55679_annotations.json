@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center of the frame and extending into the lower-center region, a baseball pitcher stands on a raised dirt mound during the delivery of a pitch; he wears a white uniform with dark pinstripes, the number \"51\" visible on his back, a dark cap with an orange logo, and a tan glove on his left hand, while his right arm is cocked back in the upper-center holding a white ball, his legs spread in a wide stride with the front foot planted and the rear foot dragging near the white pitching rubber. The dirt mound, light brown and textured, fills the lower portion of the frame and shows a lighter linear scuff mark leading from the rubber. The entire background is a uniform expanse of bright green grass, mowed in subtle diagonal and horizontal striping, filling the upper and side portions with no visible spectators, players, or structures. The lighting is strong and directional, casting a defined shadow beneath and to the left of the pitcher onto the dirt. The overall color scheme contrasts saturated green against warm tan-brown and the white uniform, producing a clean, high-contrast, centered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Center-of, (Perform, Label/Pitch)))), ((Human-agent, (Center-of, Lower-center-of)), (Standing, (Label/On, Label/Dirt-mound))), ((Clothing, White, Label/Uniform-51), Belongs-to, Human-agent), ((Head-part, Label/Cap, Black), Orange), ((Man-made-object/Glove, Tan), (Left, Hand)), ((Upper-extremity, Right, (Above, (White, Man-made-object/Ball)))), ((Lower-extremity, Large, (To-left-of, Foot))), ((Man-made-object, White, Label/Pitching-rubber), Lower-center-of), ((Terrain, Brown-color, Rough, Label/Dirt-mound), Lower-center-of), (Background-view, (Green, Grassy-terrain, Symmetrical)), (Label/Luminance-contrast-High, (To-left-of, Human-agent)), ((Green, Label/Saturation-High), (Greater-than, (Brown-color, White)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

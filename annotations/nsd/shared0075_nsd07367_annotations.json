@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large expanse of pale blue sky occupying roughly the upper two-thirds of the frame, transitioning to a body of grayish-green water across the lower portion. In the foreground, the water's textured surface fills the bottom third, with a thin dark horizontal strip of shoreline or breakwater visible on the right side at the mid-lower edge. In the middle ground, a flat strip of land stretches horizontally across the center, showing greenish grass, low tents or structures (notably white peaked tents clustered on the left-center), and scattered small dark shapes suggesting people and equipment. A hazy blue-gray mountain range rises faintly behind this land in the background center. Numerous colorful kites populate the sky: a dense cluster of red, purple, orange, and yellow elongated kites appears on the left-center, while smaller kites and dots are scattered across the center and right at varying heights. Wispy white clouds sit low near the horizon on the right. The lighting is bright and diffuse, consistent with daytime. The overall color scheme is cool\u2014blues, greens, grays\u2014punctuated by vivid warm kite colors, creating a balanced, horizontally layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, Visual-presentation, Outdoors, (Aerial-view, (Blue, Natural-feature/Sky, Large, Upper-center-of)), ((Gray-color, Green-color, Natural-feature/Water), Lower-center-of), ((Natural-feature/Shoreline, Thin, Label/Horizontal), Right-side-of), (Field, Green, Center-of), ((White, Building, Small), Left-side-of), ((Human-agent), (Label/Equipment, Small)), ((Mountain, Blue-color, Gray-color), Background-view, Center-of), ((Red, Purple, Orange, Yellow, Man-made-object/Kite), Left-side-of), (Man-made-object/Kite, Small, Center-of, Right-side-of), ((White, Natural-feature/Cloud), Right-side-of), (Luminance/Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

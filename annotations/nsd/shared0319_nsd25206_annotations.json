@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A surfer occupies the center-right of the frame, positioned in the middle ground, crouched low on a white surfboard while riding a large breaking wave; the figure wears a dark wetsuit, arms extended for balance, with the body angled downward and forward as the board carves across the wave face. The wave itself dominates the composition, curling and cresting on the right side with a spray of white water arcing into the upper-right area, while a churning mass of foam and whitewater fills the lower-left and lower-center foreground. In the background, spanning the upper portion of the frame, dark landmasses or cliffs form a hazy horizon line under diffused light, and additional smaller waves ripple across the mid-distance on the left. The color scheme is dominated by cool tones: greens and teals in the translucent wave, whites in the foam and spray, and darker grays and browns in the distant land and the surfer's silhouette. Lighting appears soft and directional, illuminating the wave's crest and the spray while leaving the surfer partly shadowed. The composition balances dynamic motion against the horizontal background band.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Crouching, Torso, (Label/Angled-downward, Forward)), (Label/Wear, (Clothing, Luminance/Dark, Label/Wetsuit)), ((Upper-extremity), Stretch)), Interacts-with, (Man-made-object, White, Label/Surfboard)), ((Human-agent), Center-of, Foreground-view), ((Man-made-object, Label/Surfboard), (Ride, (Natural-feature, Large, Label/Breaking-wave))), ((Natural-feature, Label/Wave), (Green, Teal)), ((White, Label/Foam-spray), Upper-right-of), ((White, Label/Whitewater-foam), Lower-left-of), (Natural-feature, Label/Cliffs, Luminance/Dark, Gray, Brown, Background-view), (Natural-feature, Label/Distant-waves, To-left-of), (Label/Luminance-contrast-Low, Label/Soft-directional-light)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 351,
+            "total_tokens": 772
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 772
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

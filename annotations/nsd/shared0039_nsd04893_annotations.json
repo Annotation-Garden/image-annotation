@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower-center of the frame, a man swings a light-colored bat extended toward the left side; he wears a white jersey with black side-stripes, black shorts, and a black batting glove on his lower-left arm, his legs spread wide in a lunging follow-through stance on tan dirt. Behind him in the background, a chain-link fence runs horizontally across the mid-frame, separating the dirt playing area from a grassy zone and dark green trees along the top edge. To the right of center stands a man in a dark jersey with white sleeves and dark pants, positioned near a blue barrel and a dark trash can. Left of center, another figure in white and dark clothing stands with a raised arm near the fence. Additional seated and standing figures appear at the far left in shadow beneath a covered structure. The overall color scheme combines earthy tan dirt, green foliage, and black-and-white uniforms. Lighting is soft and diffuse, suggesting overcast or late-day conditions, casting minimal harsh shadows across the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Experiment-actor), (Label/Swing, (Tool, Label/Bat, White))), (Center-of, Lower-center-of), ((Human-agent), (Clothing, White, Label/Jersey)), ((Human-agent), (Clothing, Black, Label/Shorts)), ((Human-agent), (Clothing, Black, Label/Glove, Lower-left-of, Forearm)), ((Human-agent), Standing), (Dirt-terrain, Tan), Background-view, (Man-made-object, Label/Chain-link-fence, Horizontally-oriented), (Grassy-terrain, Green), (Plant, DarkGreen, Top-edge-of), ((Human-agent, Experiment-actor), (Clothing, Label/Jersey), Black, White, To-right-of), (Man-made-object, Label/Barrel, Blue), (Man-made-object, Label/Trash-can, DarkGreen), ((Human-agent, Experiment-actor), (Raise-eyebrows), White, Black, To-left-of), ((Human-agent, Experiment-actor), Sitting), ((Human-agent, Experiment-actor), Standing), (Luminance, Low), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 343,
+            "total_tokens": 764
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 764
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

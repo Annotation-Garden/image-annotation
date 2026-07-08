@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a white ceramic cup filled with a latte, positioned in the center-right of the frame, resting on a blue saucer in the foreground; the latte's surface displays a leaf-and-heart pattern created in the foam, and a silver spoon lies on the saucer to the left of the cup, its handle pointing toward the lower-left. The scene rests on a wooden table with prominent horizontal grain, occupying the entire background surface. In the upper-left corner, a white plate holds what appears to be a reddish-brown pastry, partially cut off by the frame's edge. Along the left side, in the middle-ground, sits a dark reddish-brown baked item on a white napkin, also partially cropped. In the upper-right corner, a clear glass of water is visible, and toward the lower-right edge, a white card or paper printed with partial black text reading \"DR\" and \"COFF\" appears. The color scheme combines warm brown wood tones with the cool blue saucer and creamy tan latte, creating contrast. Lighting is soft and diffuse, appearing natural, casting gentle shadows beneath the cup and objects, with the overall composition slightly warm-toned.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((White, Ceramic, (Man-made-object/Cup, Ingestible-object/Main-dish, Sweet)), (Center-of, Foreground-view)), ((Man-made-object/Cup, Ceramic, White), Above, (Blue, Label/Saucer)), ((Leaf-covered-terrain, Label/Heart, Pattern), Part-of, (Man-made-object/Cup, Ingestible-object/Main-dish)), ((Silver, Label/Spoon), To-left-of, (Man-made-object/Cup, Ceramic, White)), (Manufactured-material/Wooden, Man-made-object/Table, Horizontally-oriented, Background-view), ((White, Man-made-object/Plate, (Ingestible-object/Dessert, Brown-color, Red-color, Sweet)), Upper-left-of), ((Brown-color, Red-color, Ingestible-object/Staple-food), (White, Paper), Left-side-of), ((Glass, Volume, Upper-right-of)), ((White, Paper, (Character, Black, Label/DR), (Character, Black, Label/COFF)), Lower-right-of), (Brown-color, Blue, Tan), (Label/Luminance-contrast-Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

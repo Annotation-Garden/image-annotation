@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center-right of the frame and extending from the lower to upper portions, sits a transparent conical glass vase, resembling a laboratory Erlenmeyer flask, filled partway with water in which green stems are visible. Emerging from the vase and dominating the upper-center and upper-right of the image is a bouquet of predominantly white flowers with clustered blossoms, accented by a small purple bloom on the left side, surrounded by green foliage. The vase rests on a light wooden surface that spans the lower foreground horizontally. In the background, softly blurred, a red chair appears in the lower-left, while a white shelving unit holds vertically arranged books with colored spines\u2014including green, red, and white\u2014in the center-left region. Above and to the left, on an elevated wooden surface, sit colorful toy or model structures in red, yellow, and black tones. The upper-left background shows a pale, patterned wall. The overall color scheme combines neutral wood browns, crisp whites, and green foliage with vivid accents of red, purple, and yellow. Lighting is soft, natural, and diffuse, and the composition uses shallow depth of field to sharply isolate the flowers.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, Center-of), (Glass, Cone, ((Natural-feature/Water, Green), (Contained-in, Glass)))), ((Upper-center-of, Upper-right-of), (Plant, White, (Purple, To-left-of), Green)), ((Lower-center-of, Below), (Furnishing, Manufactured-material/Wood, Brown)), (Background-view, ((Lower-left-of, (Red, Furnishing)), ((Center-of, Left-side-of), (Furnishing, White, (Book, Green, Red, White))), ((Upper-left-of, To-left-of), (Object, Red, Yellow, Black)), (Upper-left-of, (Building-part/Wall, Pattern)))), Brown, White, Green, Red, Purple, Yellow, Depth, Luminance/Blurry",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

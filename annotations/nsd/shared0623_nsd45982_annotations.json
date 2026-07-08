@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This nighttime photograph depicts an urban intersection dominated by a warm amber-orange color scheme created by numerous street lamps. In the upper portion of the frame, multiple bright light sources produce distinct starburst flare patterns across the sky, which appears deep brown-black. In the mid-ground, two traffic light structures stand prominently: one on the left-center and one on the right-center, both displaying illuminated red lights on top and blue-green (cyan) lights below. A red octagonal STOP sign is positioned in the right-center of the frame, glowing under the ambient light. The lower foreground shows a broad expanse of grey asphalt roadway with a white zebra-striped pedestrian crosswalk running horizontally across the center-lower area. Long horizontal streaks of white and pale light traverse the left and right sides at mid-height, consistent with light-trail motion from vehicles during a long exposure. A dark tree line spans the background behind the traffic signals. No people or animals are visible. The composition balances the two traffic signal poles symmetrically on either side, with the illuminated signs and reflective road markings drawing focus toward the center.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, (Road, Gray, Paved-terrain), ((White, Dots), Center-of, Road), (Orange-color, Luminance), ((Star, White), Above), (Black, Brown, Background-view), ((Red, Visual-attribute/Octagon), (Label/Stop-sign), Right-side-of), ((Red, Cyan-color), To-left-of, Center-of), ((Red, Cyan-color), To-right-of, Center-of), (Tool, Symmetrical), (Vehicle, (White, Movement-artifact), Left-side-of), (Vehicle, (White, Movement-artifact), Right-side-of), (Plant, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

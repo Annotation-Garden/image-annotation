@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts two seagulls floating on calm, gray water, arranged in a horizontal composition against a pale, foggy background. The bird on the left occupies the upper-left and center-left of the frame, positioned slightly behind and higher relative to the water surface; it faces rightward with its head lowered and its dark gray-and-white wing feathers, marked with small white spots, angled upward toward the right. The bird on the right sits in the center-right and lower portion of the frame, facing left, presenting a clearer profile with a distinctly visible yellow beak bearing a red spot near the tip, a white head and breast, dark gray wings, and a pale eye. Both birds cast soft reflections on the still water directly beneath them, mirroring their forms downward. The overall color scheme is muted and monochromatic, dominated by grays and whites, with the yellow-and-red beak providing the sole vivid color accent. Lighting is diffuse and even, lacking harsh shadows, consistent with an overcast atmosphere. A faint watermark of light text appears in the lower-left corner. The two birds face one another, suggesting a spatial interaction across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Grayscale, White, Gray), Environmental-property/Foggy, ((Animal-agent, Animal/Seagull, (Left-side-of, Photograph), (Upper-left-of, Photograph), (Dark-shade, Gray, White, (Dots, White))), Interacts-with, (Animal-agent, Animal/Seagull, (Right-side-of, Photograph), (Lower-right-of, Photograph), (Yellow, (Red, Point)), White, Gray)), (Natural-feature/Water, Gray, Smooth), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a motorcycle racing scene with two riders. In the foreground, occupying the center and lower-center portion of the frame and extending toward the right, is a rider leaning steeply into a turn on a motorcycle bearing orange, blue, and white livery with visible \"ONGETTA\" lettering and the number \"33\" on a white helmet. This rider wears white, orange, and dark racing leathers, and their knee appears close to the track surface, indicating an aggressive cornering lean. In the background, positioned in the upper-center-left area and rendered in soft focus, is a second rider on a darker motorcycle, also leaning through the curve. The track surface is dark gray asphalt, bordered by a curved white line and a red-and-white curbing visible along the lower-left edge. The color scheme combines the vivid orange, blue, and white of the foreground bike against muted gray track tones and a blurred yellow-and-blue barrier or advertising boards running through the background. The lighting is diffuse and even, suggesting overcast conditions. The composition uses motion blur in the background and periphery, emphasizing speed, while the sharp foreground rider anchors the visual focus diagonally.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Image, Real-world), ((Human-agent, Experiment-actor), (Ride, (Vehicle, Label/Motorcycle))), ((Human-agent, Experiment-actor, (Lower-center-of, Foreground-view)), Interacts-with, (Vehicle, Label/Motorcycle, Orange, Blue, White, (Label/ONGETTA), (Label/33))), ((Torso, White, Orange, Dark-shade)), ((Knee, (Close-to, (Road, Gray)))), ((Human-agent, Experiment-actor, (Upper-center-of, Background-view)), Interacts-with, (Vehicle, Label/Motorcycle, Dark-shade)), (Road, Gray, Dark-shade), (White, (Boundary-of, Road)), (Red, White, (Label/Edge-of, Road), (Lower-left-of, Foreground-view)), (Yellow, Blue, (Background-view, Luminance/Blurred)), (Overt-attention, Foreground-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

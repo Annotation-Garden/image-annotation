@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a bathroom interior with a coordinated black-and-white damask pattern theme. In the left portion of the frame, a shower curtain hangs from a metal rod, displaying bold black floral scrollwork motifs against a white background, occupying the upper-left and extending down the left side. Centered in the middle-ground stands a wooden vanity cabinet with two doors, topped by a white countertop holding small blue objects near a faucet. Above the vanity, mounted on the wall, is a rectangular mirror reflecting the damask pattern, and above that a horizontal light fixture with multiple bulbs illuminates the upper-center area. On the right side in the foreground sits a white toilet with its lid closed. On the lower portion of the frame, two matching bath mats rest on a gray tiled floor: a rectangular runner in the center-left and a contoured mat encircling the toilet base on the right, both bearing white-bordered black-and-white designs. The walls are painted light gray. The lighting is warm and bright near the fixture, and the overall composition balances dark patterned textiles against neutral gray and white surfaces symmetrically across the space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, Indoors, Room, (Foreground-view, (White, Furnishing, Label/Toilet)), (Right-side-of, (White, Furnishing, Label/Toilet)), (Center-of, (Furnishing, Label/Vanity-cabinet, (Label/Wooden-material, Label/Wood))), (Above, (Rectangle, Label/Mirror)), (Above, (Display-device, Label/Light-fixture)), (Left-side-of, (Furnishing, Label/Shower-curtain, (Black, White, Pattern))), ((White, Man-made-object/Countertop, Label/Countertop), (Above, (Blue, Object))), (Lower-center-of, (Furnishing, Label/Bath-mat, (Black, White, Pattern))), (Right-side-of, (Furnishing, Label/Bath-mat, (Black, White, Pattern))), (Gray, Paved-terrain, Label/Tiled-floor), (Light-shade, Gray, Label/Wall), (Luminance/Warm, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

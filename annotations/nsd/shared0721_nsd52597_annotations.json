@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-center of the frame, a green-painted bicycle lane displays a white bicycle symbol and directional chevron markings, occupying the lower third of the image. Standing in the center-middle ground, a cyclist wearing dark clothing and a light-colored helmet stands astride a bicycle, positioned near a low concrete median with greenery. In the upper portion of the frame, multiple traffic signals appear: an amber-lit signal on the upper right attached to a black pole, another yellow signal upper left, and a \"RIGHT TURN SIGNAL\" sign center-right. Center-left, a white \"no left turn\" sign is mounted on a post. Background elements include tall multi-story buildings receding down a street toward the center vanishing point, with pedestrians visible along the sidewalks. Trees with green foliage line the left side. A dark car is parked mid-left. The color scheme combines the vivid green lane with muted grays of pavement and buildings, warm amber signal lights, and green tree tones. Lighting appears to be soft daylight, possibly overcast or early evening, casting diffuse illumination. The composition uses strong linear perspective drawing the eye toward the distant street.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-center-of, (Green, Road, Label/Bicycle-lane), (White, Bicycle, Icon), (Arrow, White)), ((Human-agent, Experiment-actor), Standing, (Luminance/Dark, Clothing), (Light-shade, Assistive-device, Label/Helmet), Interacts-with, (Bicycle)), (Center-of, (Manufactured-material/Concrete, Label/Median), Plant), (Upper-right-of, (Orange, Label/Traffic-signal), (Black, Label/Pole)), (Upper-left-of, (Yellow, Label/Traffic-signal)), (Center-of, To-right-of, (Word, Label/Right-turn-signal-sign)), (Center-of, To-left-of, (White, Label/No-left-turn-sign)), (Background-view, (Building, Large), (Urban, Road), Human), (Left-side-of, (Green, Plant)), (To-left-of, (Luminance/Dark, Car)), (Green, Gray, Orange), (Outdoors, Label/Luminance-Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

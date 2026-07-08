@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large multicolored beach umbrella in the upper-center and left portion of the frame, its canopy composed of alternating pink, purple, teal, and blue panels supported by a white pole angled downward toward the lower-left. In the foreground, positioned center-left and lower, a person wearing a wide-brimmed straw hat, a blue top, and dark shorts reclines in a low beach chair, their bare legs extended and one hand gripping the umbrella pole. In the lower-right foreground sit two bags: a green and dark duffel-style bag and a blue insulated cooler with tan trim behind it, resting on pale sand. In the background, center-right, several small figures stand and walk on the beach near a sandy dune, with one small child among them. A dense green wall of trees fills the entire upper background horizontally. Additional colorful items lie on the sand at the lower-left edge. The color scheme combines the saturated umbrella hues against neutral tan sand and deep green foliage. Lighting is bright and natural daylight, casting soft shadows beneath the chair and bags, creating a balanced, layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Man-made-object/Umbrella, Large, (Pink, Purple, Teal, Blue)), (Upper-center-of, Photograph)), ((White, Length), Angle), ((Human-agent, Experiment-participant, (Clothing, (Head)), (Blue, Clothing), (Clothing)), (Lower-left-of, Photograph)), ((Human-agent), Interacts-with, (Man-made-object/Umbrella)), ((Green, Contained-in), (Lower-right-of, Photograph)), ((Blue, Contained-in), (Lower-right-of, Photograph)), ((Group-of, Human-agent), (Center-of, Photograph)), (Hill, Background-view), ((Green, Plant), (Top-of, Photograph)), (Tan, Natural-feature/Sand), Green, Luminance/Bright, (Natural-feature/Beach, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-right and center-right of the frame, stands a weathered wooden mooring post with a vertical grain and a bright orange rectangular marker affixed to its front-facing surface in the lower portion. Perched atop this post, in the center-right upper-middle area, is a gray and white seagull facing right, its body speckled with brown-gray mottling, standing on the flat cut surface of the post. In the background, occupying the left side of the frame, a red and white lighthouse with a rounded red top rises from a rocky breakwater that extends horizontally across the middle of the image. Behind the breakwater, in the center-background, a white boat or ship sits partially visible against the water. A band of deep blue water fills the middle-lower background, while a pale blue, cloudless sky spans the upper portion. The overall color scheme contrasts warm reds and oranges against cool blues and grays. Lighting appears bright and natural, consistent with daytime sun. The composition uses shallow depth of field, rendering the background soft and blurred while the sharply focused post and bird dominate the right side.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Building, Label/Lighthouse, (Red, White)), (Left-side-of, Image)), ((Animal-agent, Animal/Seagull, (Gray, White)), (Above, (Man-made-object, Label/Mooring-post, Manufactured-material/Wooden, Vertically-oriented, (Lower-right-of, Image)))), ((Orange, Rectangle), Part-of, (Man-made-object, Label/Mooring-post)), ((Boat, White), (Background-view)), (Blue, Natural-feature/Water, (Below, Image)), (Blue, Light-shade, Outdoors), (Rocky-terrain, Label/Breakwater, Horizontally-oriented, (Center-of, Image)), Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

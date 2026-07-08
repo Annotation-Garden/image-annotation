@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A single zebra stands as the dominant foreground element, positioned in the center-right of the frame, occupying the middle vertical band and oriented in profile with its head turned toward the right side of the image, facing the viewer's right. The zebra's black-and-white striped body is fully visible, with its four legs planted in tall, dry grass that fills the entire lower portion of the frame, obscuring the lower parts of its legs. This golden-tan grassland dominates the lower two-thirds of the composition, rendered in warm straw and beige hues. The background, occupying the upper third, consists of a dense band of leafless and sparsely leaved trees and shrubs in muted greens, browns, and grays, forming a horizontal thicket across the top of the frame without a visible sky. The lighting appears diffuse and even, casting soft shadows beneath the zebra and suggesting an overcast or indirect natural light. The overall color scheme is warm and earthy, dominated by yellows and browns, with the zebra's high-contrast monochrome stripes providing the sharpest visual accent. The composition is horizontally layered, balancing the animal against textured vegetation, with no other animals, people, or objects present.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Zebra, (Black, White, Label/Striped)), (Center-of, (Foreground-view))), ((Animal-agent, Animal/Zebra), Right-side-of), (Grassy-terrain, Yellow-color, Brown-color, (Lower-center-of)), (Group-of, Plant, (Green-color, Brown-color, Gray-color), (Background-view, Top-of)), Horizontally-oriented, Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

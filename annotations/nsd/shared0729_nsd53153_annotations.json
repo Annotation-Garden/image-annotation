@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a compact kitchen interior dominated by white appliances and cabinetry. In the center foreground stands a white electric stove with four visible coil burners on its top surface, a control panel with several round knobs, and a lower oven compartment with a handle. Immediately to the left of the stove, occupying the center-left of the frame, is a tall white refrigerator with a top freezer compartment, featuring vertical handles on both the upper and lower doors. To the right of the stove, filling the right side and extending upward, is a large white cabinet or closet unit with paneled doors and a metal hinge visible along its right edge. In the upper-left background, wooden-toned cabinetry and a beige wall are partially visible, along with what appears to be additional lower cabinetry and a tiled surface at the far left. The floor in the lower left corner shows a pale, speckled tile or linoleum. The overall color scheme is neutral and muted, dominated by whites, beiges, and light browns. Lighting is soft and even, casting minimal shadows. No people or animals are present in the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Indoors, Room), ((White, Furnishing, Label/Electric-stove), (Center-of, Foreground-view)), ((White, Furnishing, Label/Refrigerator), (Left-side-of, Photograph)), ((White, Furnishing, Door, Label/Cabinet), (Right-side-of, Photograph)), ((Brown, Furnishing, Label/Wooden-cabinetry), Background-view), (Beige, Building-part, Label/Wall), (White, Building-part, Label/Tiled-floor), (Rgb-color, Label/Neutral-muted-scheme)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 350,
+            "total_tokens": 771
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 771
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

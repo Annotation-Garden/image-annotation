@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large expanse of dark blue-green water occupying roughly the lower two-thirds of the frame, its surface textured with numerous small waves and choppy ripples throughout. In the foreground, positioned center-left in the lower-middle portion, sits a red buoy or floating marker, standing out sharply against the darker water due to its bright warm hue. In the background, spanning the upper-middle region, several vessels are visible along the horizon line: on the left side sits a low, dark barge or cargo vessel with what appears to be stacked containers and an orange element near its front, while center-right shows a white ship with a raised superstructure and mast, accompanied by a smaller darker boat beside it. The upper third of the frame consists of a pale, hazy grayish-blue sky that blends softly into a faint low landmass or coastline along the distant horizon. The overall color scheme is cool and muted, combining teal, gray, and slate tones punctuated by the singular red accent. Lighting appears diffuse and overcast, producing soft shadows and low contrast. The composition places calm horizontal bands against active water texture.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Blue-color, Green-color, Natural-feature/Water, Large), (Lower-center-of, Photograph)), ((Red, Navigational-object), (Lower-left-of, Photograph)), ((Boat, Dark-shade), (Upper-left-of, Photograph)), ((White, Boat), (Upper-center-of, Photograph)), ((Blue-color, Gray-color, Light-shade, Natural-feature), (Top-of, Photograph)), (Environmental-property/Overcast, Low, Luminance-contrast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

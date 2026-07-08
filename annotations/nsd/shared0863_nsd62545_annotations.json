@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a male surfer positioned in the center of the frame, occupying the foreground, actively riding a wave. He is shirtless, wearing patterned board shorts in dark tones with red and yellow accents, and has medium-length brown hair. His body is angled in a dynamic crouched posture: his left arm extends upward and outward toward the upper-left, while his right arm bends downward near the water. His knees are bent, and his feet rest on a white surfboard visible in the lower-left portion of the frame, its nose tilted upward. The background consists of a large breaking wave that fills the upper and right portions of the image, with white foam and spray cresting at the top and along the right edge. The water displays a gradient of greenish-brown and teal hues in the wave face, transitioning to white where it breaks. Lighting appears natural, coming from the right side, illuminating the surfer's back and casting subtle highlights on his skin and the wave. The overall color scheme combines muted greens, browns, and whites. A partial watermark in white text is visible in the lower-right corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Human-agent, Male, Experiment-actor, (Brown, Hair), (Clothing, (Dark-shade, Red, Yellow)), Crouching), (Ride, (White, Item/Surfboard))), ((Human-agent), Interacts-with, (Item/Surfboard)), (Foreground-view, Center-of), ((Upper-extremity, Left, Upward), (Label/Extend, Upper-left-of)), ((Upper-extremity, Right, Downward), Bend), (Knee, Flex), (Item/Surfboard, Lower-left-of), (Natural-feature, Large, (Green-color, Brown-color, Teal), (White, Natural-feature/Foam)), (Top-of, Right-edge-of),  (Sensory-attribute, Right-side-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 346,
+            "total_tokens": 767
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 767
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

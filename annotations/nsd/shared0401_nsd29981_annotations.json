@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a diesel locomotive occupying the center and left-to-center portion of the frame, positioned in the mid-ground and extending toward the background on the right where its carriages recede diagonally. The locomotive displays a two-tone livery: a bright yellow lower front section and dark teal-blue upper body, with the identification number \"67001\" marked in black on the yellow panel at the center-left. Its front features a large angled windscreen in the upper-center, twin red buffers and coupling equipment in the lower-center, and small orange handrails flanking the nose. In the background upper-left, a light-colored building with multiple windows and the partial text \"RDIFF\" (Cardiff) is visible beneath an overhead canopy structure spanning the top of the frame. The foreground lower-right shows a wide, empty grey concrete platform with a yellow safety line running horizontally along its edge. The lighting appears natural and directional, casting soft shadows beneath the train and creating reflective highlights on the windscreen and metallic surfaces. The overall color scheme combines cool blues and greys with warm yellow accents. No people or animals are visible in the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Vehicle, Train, (Yellow, Lower-center-of), (Teal, Top-of), (Center-of, Photograph)), (ID/67001, Black, Yellow), (Window, Upper-center-of), (Red, Lower-center-of), (Orange, Label/Handrail), (Building, (Window, Some), Upper-left-of, (ID/RDIFF)), (Roof, Top-edge-of), (Gray, Path, Lower-right-of, (Yellow, Label/Safety-line)), Blue-color, Gray-color, Yellow-color, Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

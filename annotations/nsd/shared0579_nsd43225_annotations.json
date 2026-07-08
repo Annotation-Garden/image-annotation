@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-center of the frame, a large dark flat stone rests on a light gray gravel surface, its irregular shape spreading across the pebbled ground. In the mid-ground center stands a woman holding an open white or pale umbrella above her head; she wears a bright red skirt, a light-colored top, a blue sash or fabric around her waist, and pink shoes, positioned just behind a low wooden bench that spans horizontally across the center of the image. The bench sits on the gravel clearing bordered by green grassy edges. On the right side, a low bamboo fence made of vertical stakes and horizontal rails runs diagonally from the lower-right toward the mid-ground, separating the gravel area. Filling the background is dense green foliage\u2014tall trees and shrubs\u2014occupying the upper portion left, center, and right, with a calm dark body of water visible in the middle distance behind the woman. The overall color scheme is dominated by muted greens and grays, contrasted sharply by the woman's red and blue clothing. Lighting appears soft, diffuse, and overcast, casting no strong shadows across the composed, symmetrical scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Lower-center-of, ((Large, Black, Mineral), (Spatial-relation/On-top-of, (Gray, Gravel-terrain))))), ((Human-agent, Female, (Hold-down, (White, Assistive-device))), ((Red, Clothing), (Light-shade, Clothing), (Blue, Clothing), (Pink, Clothing))), (Furnishing, (Horizontally-oriented, Center-of)), (Green, Grassy-terrain), (To-right-of, (Visual-attribute/Diagonal, (Label/Vertical, Manufactured-material))), (Background-view, (Green, Plant)), (Behind, (Dark-shade, River)), (Environmental-property/Overcast, Light-shade), (Symmetrical)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

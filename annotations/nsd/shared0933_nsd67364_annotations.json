@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, six snowboards stand upright, leaning against a horizontal wooden slat wall that fills the background across the entire upper and middle portions of the frame. The boards span from the left edge to the right edge, arranged in a slightly overlapping row. The leftmost board is dark with a red rose-like design and white \"Option\" text in the lower-center area. The second board, positioned left-of-center, is dark with white \"OGARDO\"-style lettering running vertically. The center board features teal, pink, and black graphics with bold text. The fourth board, right-of-center, is light-colored, predominantly white with an arrow-like pattern. The fifth board is darker and partially obscured, while the rightmost board displays large white \"NITRO\" lettering vertically. The lower portion of the frame shows a gray concrete ground where the boards rest. The color scheme combines warm wooden browns in the background with the cooler blacks, whites, teals, and pinks of the boards. Lighting appears natural and diffuse, casting soft shadows. The composition is symmetrical and repetitive, with the vertical boards contrasting against horizontal wooden lines.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Group-of, Item, Item-count/6), (Vertically-oriented, (Label/Leaning-against, (Man-made-object/Wall, Manufactured-material/Wood, Horizontally-oriented, Brown-color)))), (Background-view, (Man-made-object/Wall, Manufactured-material/Wood, Brown-color)), ((Item, Black, (Red, Icon)), (Label/Option, White)), ((Item, Black, To-left-of, Center-of), (Label/OGARDO, White, Vertically-oriented)), (Center-of, (Item, Teal, Pink, Black)), ((Item, White, To-right-of, Center-of), (Arrow)), (Item, Dark-shade), ((Item, (Label/NITRO, White, Vertically-oriented))), (Lower-center-of, (Steel, Gray-color)), (Brown-color, Black, White, Teal, Pink), Symmetrical, Repetitive",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

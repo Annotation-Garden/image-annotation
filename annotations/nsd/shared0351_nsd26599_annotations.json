@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the left-center portion of the frame and positioned in the lower half, stands a single zebra with its head lowered toward the grass, apparently grazing. The zebra's body faces rightward, its distinctive black-and-white stripes clearly visible along the torso, neck, and legs, with its muzzle nearly touching the ground. Beneath and surrounding the zebra is a broad expanse of green grass, textured and slightly uneven, covering the entire lower half of the image and extending toward the right side, which is otherwise empty. In the background, spanning the middle horizontal band across the full width of the frame, is a dense line of trees; those on the left and center are darker green and leafy, while toward the right several bare, brownish trees with visible branching structures rise higher against the sky. The upper portion of the frame is dominated by a clear, unbroken blue sky, gradient from lighter near the horizon to deeper blue above. Lighting appears bright and natural, casting soft shadows beneath the zebra. The overall color scheme combines green, blue, and the monochrome zebra, creating balanced, calm composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Animal-agent, Animal/Zebra, (Black, White), (Lower-head, Plant/Grass)), Lower-left-of), (Background-view, (Green, Plant), (Brown, Plant)), (Blue, Natural-feature/Sky), (Green, Blue, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

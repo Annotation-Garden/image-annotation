@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a broad expanse of green grass filling the foreground and lower two-thirds of the frame, textured with variations of light and darker green and a few worn dirt patches in the lower-right and center-right areas. In the center of the image, occupying the mid-ground, a single giraffe walks toward the right, its head lowered and legs mid-stride, its reticulated brown-and-cream coat clearly visible against the grass. To the upper right, a second giraffe stands in the background near a light sandy patch of ground, its body oriented leftward and appearing smaller due to distance. The background across the upper portion of the frame contains dense green foliage and tall trees, a dark building with a reddish-brown pitched roof on the left, wooden fencing and enclosure structures, and lighter buildings toward the right. A cluster of gray rocks lines the lower-right corner, with additional rocks bordering the sandy area behind the central giraffe. The lighting is soft and diffuse, consistent with an overcast sky, producing muted shadows. The overall color scheme is dominated by greens and earthy browns, creating a naturalistic, balanced composition centered on the walking giraffe.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Grassy-terrain, Green, Foreground-view), (Dirt-terrain, (Lower-right-of, Image)), ((Animal-agent, Animal/Giraffe, Brown), (Center-of, Image), (Walk, Rightward)), ((Animal-agent, Animal/Giraffe), (Background-view, (Upper-right-of, Image)), (Leftward, Small)), (Plant, Green, Background-view), (Building, (Roof, Brown-color), (To-left-of, Image)), (Manufactured-material/Wooden, Building-part), (Building, (To-right-of, Image)), (Rocky-terrain, Gray, (Lower-right-of, Image)), (Dirt-terrain, (Behind, (Animal-agent, Animal/Giraffe))), (Outdoors, Label/Cloudy-terrain), (Green, Brown)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

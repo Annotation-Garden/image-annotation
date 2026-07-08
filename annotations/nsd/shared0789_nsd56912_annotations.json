@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center of the frame sits a small wooden platform with a natural, warm-toned grain, elevated on a white rectangular base that has an open cubby facing the viewer. Resting on the wooden surface is a miniature metallic set: a central pitcher with a curved black handle and a rounded silver body positioned in the upper-center, surrounded by four small flared silver goblets arranged around it, two toward the left and two toward the right, all reflecting light with a glossy sheen. The platform and base rest upon a darker reddish-brown wooden surface visible in the lower portion and extending toward the background. In the upper-right background sits a cluster of blue flowers in a light wooden planter box, appearing slightly out of focus. The upper-left background shows a blurred green area, suggesting foliage. The overall color scheme combines warm browns, crisp white, silver metallics, and pops of blue and green. Lighting is soft and diffused, coming from the upper area, creating gentle reflections on the metal and mild shadows beneath the platform. The composition centers the tabletop objects with balanced negative space around them.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, Center-of), (Item, Manufactured-material/Wooden, Small, ((Rectangle, White), Contained-in, (Box, Open)))), ((Item, Manufactured-material/Metal, Small), (Above, (Item, Manufactured-material/Wooden))), ((Man-made-object/Container, Silver, ((Man-made-object/Handle, Black, Visual-attribute/Curved), Part-of)), Upper-center-of), (Group-of, ((Man-made-object/Container, Silver, Small), Item-count/4), (Around, (Man-made-object/Container, Silver))), ((Item, Manufactured-material/Wooden, Red-color, Brown-color), Below), ((Group-of, (Plant, Blue), Contained-in, (Box, Manufactured-material/Wooden, Light-shade)), Upper-right-of, Background-view), ((Green, Plant), Upper-left-of, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

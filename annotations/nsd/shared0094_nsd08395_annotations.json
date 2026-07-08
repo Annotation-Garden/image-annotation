@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A brick archway frames the upper portion of the image, its curved masonry visible across the top and both upper corners, rendered in warm reddish-brown tones. Centered in the frame is a stainless steel commercial oven with a bright, glowing interior; the illuminated opening dominates the middle of the composition, radiating orange and yellow light that constitutes the primary light source. Inside this glowing aperture, a partially cooked pizza or flatbread rests on the oven floor, positioned slightly right of center in the lower-middle region. A long metal peel or paddle extends diagonally from the lower right into the oven, appearing to reach toward the food item, suggesting an act of placement or retrieval. White text reading \"Wood Stone\" appears in the upper right of the oven's interior frame. The lower foreground shows a flat metallic counter or work surface in the immediate front plane, and below it a darker paneled base with visible knobs and small labels or stickers. The overall color scheme combines cool metallic grays with warm amber and orange glows, creating strong contrast between the dark surrounding areas and the brilliantly lit central oven opening, producing a focused, radiant composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Building-part, (Top-of, Image)), (Brown, (Building-part, Manufactured-material)), ((Machine, Steel, Label/Oven), (Center-of, Image)), (Orange, Yellow, Luminance), ((Ingestible-object/Main-dish, Savory), (Lower-center-of, Image)), (Tool, (Reach, (Machine, Label/Oven))), ((Word, Label/Wood-Stone), (Upper-right-of, (Machine, Label/Oven))), ((Steel, Furnishing), Foreground-view), (Black, (Furnishing, (Push-button))), (Gray, (Orange, Luminance-contrast))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

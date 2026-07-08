@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and right portions of the frame, a person with short dark brown hair faces the camera with wide, open eyes and raised eyebrows, conveying an alert or startled expression. The individual is brushing their teeth, holding a toothbrush with a blue and clear bristle head that enters the mouth; visible white foam or toothpaste is present around the lips and lower face. The right hand grips the toothbrush handle in the lower-center of the frame, with fingers curled around it. The person wears a bright orange top, visible across the lower portion of the image, its saturated hue dominating the lower left and center. The background, positioned across the upper left and left side, is dark and out of focus, punctuated by numerous warm, golden-orange circular bokeh lights of varying sizes, indicating defocused point light sources. The overall color scheme contrasts warm oranges and golden tones against dark, shadowed areas. Lighting appears directional, illuminating the face and hand from the front-right while leaving the background dim. The composition places the face slightly right of center, with the arm forming a diagonal line across the lower frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-participant, (Face, (Hair, Brown), Widen-eyes, Raise-eyebrows, Alert), ((Right, Hand, (Fingers, Curl-toes)), Grasp, (Tool, Label/Toothbrush, (Blue, White))), (Clothing, Orange)), Interacts-with, (Tool, Label/Toothbrush)), (White, Label/Toothpaste-foam, (Spatial-relation/Near, Mouth)), (Foreground-view, (Center-of, (Right, Photograph))), (Background-view, Luminance/Dark, ((Upper-left-of, Left-side-of), Photograph), (Circle, Orange, Light-shade)), Focused-attention",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

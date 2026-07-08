@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph presents a densely packed arrangement of banana bunches organized in horizontal rows filling the entire frame, viewed from an overhead or near-overhead angle. In the foreground, multiple clusters of yellow bananas are stacked closely together, their curved forms overlapping and pointing in varied directions across the upper, center, and lower portions of the image. Several bananas display small oval stickers, predominantly red and white, positioned on individual fruits in the center-left, center, and lower regions of the frame. The bananas range in color from bright ripe yellow to greenish-yellow tones near their tips and stems, with occasional brown spots and darkened bruising marks visible on the peels, particularly toward the lower rows. Dark, shadowed gaps separate the rows, revealing what appears to be a dim gray or dark surface beneath and between the bunches, receding slightly into the background. The lighting is even and diffuse, illuminating the yellow surfaces without harsh highlights or strong directional shadows. The overall color scheme is dominated by warm yellows and greens against darker neutral separations. The composition is tightly cropped, repetitive, and pattern-like, with no visible people, animals, text, or surrounding environmental context.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Aerial-view, ((Ingestible-object/Staple-food, Sweet, Yellow, Green), Group-of), (Repetitive, Pattern), ((Visual-attribute/Oval, Red, White), (Attend-to, (Ingestible-object/Staple-food))), (Brown, Label/Bruising), (Gray, Background-view), (Luminance/Diffuse, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

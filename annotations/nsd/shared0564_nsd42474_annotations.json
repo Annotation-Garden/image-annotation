@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two ceramic vases occupy the foreground of this photograph, both set against a plain white interior background that appears to be a shelf or niche with visible corner seams meeting in the upper center and right areas. On the left side of the frame stands a large, glossy oxblood-red vase with a wide flared mouth, a rounded body, and two ornate handles that appear to depict sculpted dragon or serpent forms extending downward along its shoulders; a wavy, ribbon-like raised decoration runs across its lower body, and its surface reflects light in bright highlights along the left and upper edges. On the right side sits a smaller, matte brick-red vase with a metallic gold rim at its mouth; its surface is densely carved with intricate floral and foliate relief patterns, giving it a textured, non-reflective appearance. The two vases do not touch but are positioned close together, with the shorter carved vase in the lower-right portion of the frame. The overall color scheme is dominated by deep reds contrasted against the clean white background. Lighting comes from the upper left, casting subtle shadows and creating strong reflective highlights on the glossy left vase.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Experimental-stimulus, Visual-presentation, Photograph, (White, Background-view), ((Furnishing, Ceramic, Large, Red, (Man-made-object/Handle, Label/Dragon-handles), Left-side-of), (To-left-of, (Furnishing, Ceramic, Small, Red, (Gold, Top-edge-of), Lower-right-of))), (Foreground-view, (Group-of, Furnishing))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

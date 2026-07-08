@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a dark green-gray ocean surface occupying the entire frame, viewed from an elevated angle looking downward. In the foreground, positioned in the lower-center to left portion of the frame, a surfer wearing a black wetsuit lies prone on a surfboard, paddling through the water, with white splashing visible around them as they move along the crest of a small wave. In the lower-right and right portion of the frame, white foam and churning whitewater indicate a broken or breaking wave. In the background, upper-center, a second person in dark clothing sits or floats in the water, appearing to wait, positioned near the middle-upper area. In the upper-left corner, a third figure lies on a light-colored surfboard, distant and small relative to the others. The overall color scheme is dominated by muted greens, grays, and dark tones of the water, contrasted by bright white foam. The lighting appears diffuse and even, consistent with an overcast sky, casting no harsh shadows. The composition is diagonal, with the wave and foam sweeping from lower-right toward upper-left, distributing the three human figures across a receding depth from foreground to background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Aerial-view, (Natural-feature, Label/Ocean, (Dark-shade, Green-color, Gray-color)), ((Human-agent, Experiment-actor, (Clothing, Black)), (Lie-down, (Label/On, Label/Surfboard)), Lower-left-of), ((Human-agent, Experiment-actor, (Clothing, Dark-shade)), Sitting, Upper-center-of), ((Human-agent, Experiment-actor, (Lie-down, (Label/On, Label/Surfboard))), Upper-left-of, Far-from), (White, Label/Foam, Lower-right-of), (Environmental-property/Overcast, Label/Diffuse-lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

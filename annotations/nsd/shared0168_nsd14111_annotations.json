@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-right and center of the frame, are dark wooden and cast-iron benches with slatted seats, their metal armrests and legs visible and reflecting light off wet surfaces. A large black object, possibly a cart or container with light-colored lettering reading \"ARKWRIGHT\" and additional text on a white sign, dominates the right side. In the center-left middle ground stands a classic red telephone box with \"TELEPHONE\" printed across its top panel and multiple glass panes. Behind and above it, in the upper-center, a tree with green foliage and a pale, prominently lit trunk rises against the darkness. The background consists of a large stone building spanning the frame's upper portion, featuring tall arched windows with grid-like panes and light-colored masonry. The ground in the lower-left shows a wet, reflective paved or planked surface with visible linear seams. The overall color scheme is dominated by dark tones\u2014blacks, deep browns, and muted stone hues\u2014punctuated by the vivid red telephone box and the illuminated green tree. Lighting is artificial and nocturnal, creating strong contrasts and glossy reflections on wet surfaces throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, (Luminance/Nighttime, Label/Artificial-lighting), ((Furnishing, Black, Brown), (Lower-right-of, Center-of)), ((Man-made-object, Black, ID/ARKWRIGHT), Right-side-of), ((Label/Communication-device, Red, Label/TELEPHONE, Window), Center-of), ((Plant, Green), Upper-center-of), ((Building, Gray-color), (Window)), ((Path, Label/Wet, Smooth), Lower-left-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 390,
+            "total_tokens": 811
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 811
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

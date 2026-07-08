@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A small white single-engine propeller aircraft occupies the center and right portions of the frame, positioned on a flat expanse of light tan sand that fills the lower half of the image; the plane faces right, with its nose and spinning-blurred propeller extending toward the right edge, its high-mounted wing crossing the upper-right area, and its tail fin rising at the left-center. The fuselage bears the registration \"VH-RYT\" in blue lettering and decorative blue and teal swirl graphics along its lower side, with a row of small passenger windows above. Beneath the aircraft, its wheels rest on the sand, casting a soft shadow toward the lower-left, and faint tire or wind tracks mark the foreground sand. In the background, occupying the left and center middle band, lies a calm ocean with gentle low waves meeting the beach. The upper half of the frame shows a bright blue sky populated with numerous white and gray cumulus clouds. The overall color scheme combines tan, white, blue, and teal tones. Lighting is bright and diffuse, consistent with overcast-to-partly-sunny daylight. No people or animals are visible in the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Aircraft, White, Small, (Engine), ((Label/Nose-part), To-right-of, (Man-made-object/Tail)), (Word, ID/VH-RYT, Blue), Blue, (Window, Some), Right-side-of, Center-of), (Natural-feature/Sand, Light-shade, Tan, Below), (Path, Foreground-view), ((Aircraft), Above, (Natural-feature/Ocean)), (Natural-feature/Ocean, Background-view, Left-side-of), (Natural-feature/Sky, Blue, Above), (White, Gray, Some), (Natural-feature/Cloud, Upward), (Outdoors, Luminance/Bright, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

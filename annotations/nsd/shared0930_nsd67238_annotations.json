@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-center of the frame, sits a white plate holding a round pastry topped with glossy chocolate glaze over a lighter dough base, with a cream-colored filling visible at its side. To the right, in the mid-ground on another white plate, rests a golden-brown croissant with a flaky, curved crescent shape. On the left, partially cropped at the frame edge in the mid-ground, a third white plate holds a swirled, coiled pastry with a darker, glazed surface. Near the center, a clear glass filled partway with water stands on the dark wooden table, and behind it to the right sits a white coffee cup and saucer bearing the printed text \"B. SAMS,\" containing dark coffee. In the upper background, a person wearing a light blue-gray collared shirt holds a dark mobile phone in both hands, their face out of frame. The color scheme is warm, dominated by browns, creams, and golden tones against the dark table, with soft, directional lighting from the left casting gentle highlights and shadows. The composition arranges the plates diagonally across the reflective wooden surface.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Lower-center-of, (White, (Man-made-object/Plate, Furnishing))), ((Ingestible-object/Dessert, Sweet, Visual-attribute/Round, (Chocolate, Color)), (White, Label/Cream-color))), (Foreground-view, (Right-side-of, ((White, (Man-made-object/Plate, Furnishing)), (Ingestible-object/Dessert, Sweet, Visual-attribute/Curved, (Brown-color, Light-shade))))), (Left-side-of, ((White, (Man-made-object/Plate, Furnishing)), (Ingestible-object/Dessert, Sweet, Rotated, Dark-shade))), (Center-of, ((Glass, Label/Transparent), (Contained-in, Natural-feature/Water))), (Right-side-of, ((White, Man-made-object/Cup), (Furnishing), (Contained-in, (Brown-color, Ingestible-object)), (Word, Label/B-SAMS))), ((Brown, Manufactured-material/Wooden, Furnishing)), (Background-view, ((Human-agent), Interacts-with, (Cellphone, Dark-shade)), (Clothing, (Blue-color, Gray-color, Light-shade))), (Brown, Beige, Gold)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

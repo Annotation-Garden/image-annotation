@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-left and center portions of the frame, a large beige upholstered sofa curves diagonally, its rounded armrest closest to the viewer and a small patterned pillow resting in its center. Immediately right of center in the middle ground stands a light unfinished-wood coffee table with an open lower shelf holding a woven basket; atop it rest what appear to be dark remote controls or handheld objects. Beneath the table lies a pale rectangular area rug covering the darker hardwood floor. In the background, spanning left to right, the wall is painted warm taupe: on the upper left hang two framed photographs, a wooden door with blue clothing draped on a hook sits far left, a tall dark floor lamp with a white shade stands center against a bright window with blinds, and to the right a flat-screen monitor sits on a media unit beside a wooden chair and a green potted plant. A framed multi-panel picture hangs upper right. Lighting is bright and natural, entering from the central window. The overall color scheme is neutral\u2014beige, brown, and white\u2014with blue accents, creating a calm, balanced, symmetrical composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Large, Beige, Furnishing, Rotated), ((Furnishing, Label/Patterned), Center-of, (Large, Beige, Furnishing))), ((Light-shade, Furnishing), To-right-of, Center-of), (Furnishing, (Contained-in, Furnishing)), ((Man-made-object/Container), Contained-in, Furnishing), ((Man-made-object), Top-of, Furnishing), (Rectangle, Luminance/Pale, (Underneath, Furnishing)), ((Furnishing, Brown-color), Contained-in, Background-view), ((Man-made-object/Wall), Tan), (Group-of, (Photograph, Rectangle)), (Door, ((Clothing, Blue), Connected-to, Door)), ((Label/Tall, Luminance/Dark, Furnishing), (White, Furnishing), Center-of), (Window, (Furnishing, Contained-in, Window)), (Computer-screen, (Top-of, Furnishing)), (Furnishing, Brown-color), (Green, Plant, (Contained-in, Man-made-object/Container)), (Photograph, Rectangle, Upper-right-of), (Luminance/Bright, Outdoors, (Contained-in, Window)), (Beige, Brown, White, Blue), (Symmetrical, Label/Balanced), Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

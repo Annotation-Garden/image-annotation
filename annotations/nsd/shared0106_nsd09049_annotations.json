@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-right of the frame sits a white ceramic toilet with a closed lid and tank, its curved forms clearly visible. Mounted on the tan wall to the left of the toilet, in the center-right lower region, is a chrome double-roll toilet paper holder holding two white rolls. Occupying the left half of the image is a dark wood vanity cabinet with a black marble-patterned countertop, supporting a bronze-toned metal faucet and a round undermount sink in the lower-left foreground; a decorative bronze canister stands atop the counter's left edge. Above the vanity hangs a large rectangular mirror with a dark frame, reflecting folded white and yellow towels and a portion of the room. In the upper-left, a multi-arm chandelier with frosted glass shades emits warm light. On the upper-right wall, a black metal wire rack holds neatly folded white and yellow towels, with a longer white towel draped on a lower bar. The overall color scheme combines warm tan walls, dark wood, and white fixtures, producing soft, warm ambient lighting. The composition is balanced, dividing dark vanity elements against lighter fixtures diagonally across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((White, Ceramic, (Furnishing, Label/Toilet)), (Lower-right-of, Foreground-view)), (Tan, (Building-part, Label/Wall)), (((Furnishing, Label/Toilet-paper-holder), Steel, White), (To-left-of, (Furnishing, Label/Toilet))), ((Furnishing, Label/Vanity-cabinet), Brown, (Left-side-of, Foreground-view)), (Black, (Furnishing, Label/Countertop)), ((Tool, Label/Faucet), Brown-color), (White, (Furnishing, Label/Sink), (Lower-left-of, Foreground-view)), (Brown-color, (Furnishing, Label/Canister)), (Rectangle, (Furnishing, Label/Mirror), Black, (Above, (Furnishing, Label/Vanity-cabinet))), (White, Yellow, (Clothing, Label/Towels)), (Large, (Furnishing, Label/Chandelier), (Upper-left-of, Background-view)), (Luminance/Warm, Luminance), (Black, Steel, (Furnishing, Label/Towel-rack), (Upper-right-of, Background-view)), (White, Yellow, (Clothing, Label/Towel))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the center-background of the frame stands a tall brick clock tower with a steeply pitched dark spire, featuring a visible white-faced clock with black numerals and hands positioned in the upper-center portion of the structure; a thin flagpole rises from its peak against the sky. To the right of the tower, occupying the center-right and extending toward the frame's edge, is an ornate light-colored classical building with multiple stories, arched windows, and decorative facade detailing. In the lower-left and left-center foreground, bare tree branches with sparse twigs and a few small leaves extend inward, framing the scene and partially obscuring the background. A metal lamppost with attached vertical banners stands in the lower-center foreground. Behind the tower on the left, a construction crane and scaffolding are visible, along with additional lower buildings. The sky occupies the upper portion, showing bright blue with scattered white and gray clouds. The color scheme combines warm brick reds and cream tones against cool blue sky, with strong natural daylight creating contrast and shadowed areas on the tower's shaded side, suggesting overhead sunlight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Building, Label/Clock-tower, (Manufactured-material/Made-from, Label/Brick), (Center-of, Background-view)), (Clock-face, White, (Upper-center-of, Building)), (Pyramid, Dark-shade, Top-of, Building), (Label/Flagpole, Thin, Top-of, Building), ((Building, Label/Classical-building, Light-shade, (Window, Label/Arced-shape)), (To-right-of, (Building, Label/Clock-tower))), (Plant, Label/Bare-branches, (Lower-left-of, Foreground-view)), (Label/Lamppost, (Manufactured-material/Made-from, Steel), (Lower-center-of, Foreground-view)), (Label/Construction-crane, (Behind, (Building, Label/Clock-tower))), (Natural-feature/Sky, Blue, (Upper-center-of, Background-view)), (White, Gray, Label/Clouds), Red-color, Label/Cream-tone, Blue-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a dinner table scene with three women seated around it. In the foreground lower-center and lower-left, black plates, black stemmed glasses, and white bowls with black floral patterns rest on woven placemats atop a black-and-white patterned tablecloth. A green wine bottle stands in the lower-center foreground, and a partially eaten pizza on a pink-rimmed plate sits center-left, beside a plate holding orange slices and a clock-faced dish center-right. In the midground, a dark wine bottle and two lit candles glow near the table's center, alongside another green bottle upper-left and a red-labeled Coca-Cola bottle with a green soda bottle in the upper-center background. The three women occupy the left, upper-right, and right of the frame; the two on the right smile directly toward the camera, while the left woman gazes slightly aside. The background shows a plain white and gray wall with a radiator upper-center. The color scheme is dominated by black, white, and warm candlelit tones, with green bottle accents. Lighting is dim and warm, centered on the candles, creating soft illumination across faces and reflective glassware.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Furnishing, Label/Dinner-table), ((Human-agent, Experiment-actor), Left-side-of), ((Human-agent, Experiment-actor), Upper-right-of), ((Human-agent, Experiment-actor), Right-side-of), ((Human-agent), Interacts-with), (Smile, Face), ((Black, Ingestible-object, Label/Plate), Lower-center-of), ((Black, Ingestible-object, Label/Stemmed-glass), Lower-left-of), (White, Black, Label/Bowl), (Label/Placemat), (Black, White, Label/Tablecloth), ((Green, Label/Wine-bottle), Lower-center-of), ((Ingestible-object/Junk-food, Savory, Label/Pizza), Center-of), (Pink, Label/Plate), ((Ingestible-object/Staple-food, Sweet, Label/Orange-slices), Center-of), (Clock-face, Label/Dish, Center-of), ((Label/Wine-bottle, Dark-shade), Center-of), ((Label/Candle, Luminance), Center-of), ((Green, Label/Bottle), Upper-left-of), ((Red, Label/Coca-Cola-bottle), Upper-center-of), ((Green, Label/Soda-bottle), Upper-center-of), (White, Gray, Label/Wall), (Label/Radiator, Upper-center-of), (Luminance, Low), (Orange-color, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by two rectangular clear plastic food containers positioned side by side in the foreground, occupying nearly the entire frame. The left container holds a vegetable dish featuring bright green broccoli florets, sliced pale green celery or cabbage, orange carrot pieces, and light-colored round slices resembling mushrooms or sausage, with a white plastic fork resting inside its lower-left portion. The right container contains a darker dish composed of browned meat chunks mixed with reddish-orange and brown minced or chopped ingredients, also holding a white plastic spoon angled in its lower-center area. Both containers rest on a red-and-white checkered gingham surface, visible along the top, left edge, and bottom of the frame, establishing the background and setting. At the very top center, a small white object, possibly a plate or lid, is partially visible. The overall color scheme contrasts the fresh greens and oranges on the left against the warm browns and reds on the right, unified by the red gingham. Lighting appears bright and even, likely natural daylight, casting soft shadows and creating slight reflections on the glossy plastic container surfaces throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Rectangle, Box, Plastic, Label/Transparent, (Ingestible-object/Main-dish, (Green, Label/Broccoli), (Green, Label/Vegetable), (Orange-color, Label/Vegetable), (White-color, Label/Vegetable), Savory), (White, Plastic, Tool)), (To-left-of, (Rectangle, Box, Plastic, Label/Transparent, (Ingestible-object/Main-dish, (Brown-color, Label/Meat), (Red-color, Label/Vegetable), Savory), (White, Plastic, Tool)))), ((Red, White, Pattern, Textblock), Below, (Box)), (White-color, Object, Upper-center-of, Background-view), Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

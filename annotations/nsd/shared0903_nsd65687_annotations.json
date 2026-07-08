@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a kitchen interior dominated by wooden cabinetry occupying the upper portion of the frame, extending from the left edge across the center and to the upper right. In the foreground lower-left, a light gray-speckled granite countertop projects toward the viewer, and a matching countertop section appears on the right side. Centered in the middle-ground is a black freestanding electric range with an oven below and a flat cooktop surface, positioned between two lower wooden cabinet units. The background wall on the right is painted a warm taupe or grayish-brown, with white electrical outlets and switch plates visible at intervals along it. Additional white outlets are mounted on the countertop backsplash areas. The floor in the lower foreground consists of tan and beige tile laid in a diagonal or offset pattern. The overall color scheme combines reddish-brown wood tones, neutral gray countertops, black appliance, and warm beige-taupe walls and flooring. Lighting appears even and diffuse, likely from overhead or ambient sources, casting soft shadows beneath the cabinets. The composition is symmetrical and empty of people, emphasizing built-in fixtures within a rectangular, frontal spatial arrangement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, (Room, Label/Kitchen), (Building-part, Furnishing, (Upper-center-of, Image)), ((Mineral, Gray), (Lower-left-of, Image)), ((Mineral, Gray), (Right-side-of, Image)), (Black, Machine, (Center-of, Image)), ((Brown-color, Man-made-object/Wall), (Right-side-of, Image)), (White, Man-made-object, (Right-side-of, Image)), (White, Man-made-object), ((Tan, Beige, Path), (Lower-center-of, Image)), (Brown-color, Red-color, Gray-color, Black, Beige), (Luminance/Diffuse, Luminance), Symmetrical, Rectangle",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 398,
+            "total_tokens": 819
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 819
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A young toddler occupies the left and center of the frame, positioned as the primary subject, holding a pink hairbrush aloft in the right hand near the head, with the brush displaying a cartoon character on its oval back. The child wears a white dress patterned with red, purple, and pink floral motifs and a horizontal reddish-orange sash at the waist. The child's gaze is directed toward the left, away from the reflection. On the right side of the frame, in the foreground, appears the back of the same child's head and shoulders, its blonde hair and white patterned garment visible, indicating this is a reflection or a near view showing the back. A vertical mirror frame runs along the left edge and separates the two views, with a pale pink and white wall behind the standing child. The color scheme is soft and pastel, dominated by whites, pinks, and muted skin tones, with the orange sash providing warmth. Lighting is diffuse and natural, illuminating the child's face from the left. Compositionally, the image splits into two figures divided by the mirror's edge, creating a mirrored, balanced arrangement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-participant, Age/2, (Left-side-of, Center-of)), Primary-subtask, ((Human-agent, (Hold-down, (Pink, (Cartoon, Ellipse)))), Interacts-with, (Tool, (Pink, Label/Hairbrush))), ((Tool, (Pink, Label/Hairbrush)), Above, (Head)), ((White, Clothing, (Red, Purple, Pink)), Label/Floral-dress), (Horizontal-eye-movement-artifact), ((OrangeRed, Clothing), Around, (Waist)), ((Head), Leftward), ((Right-side-of, Foreground-view), (Head, Shoulder, (Backward))), (Head, (Yellow, Hair)), ((Window, Vertically-oriented), Left-edge-of), ((Pink, White, Building-part), Behind), (Light-shade), (Symmetrical)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 350,
+            "total_tokens": 771
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 771
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

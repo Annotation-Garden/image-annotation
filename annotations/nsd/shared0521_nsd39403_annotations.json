@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the left and lower-center of the frame, sits a burger constructed on a glazed, salt-sprinkled doughnut-style bun; visible layers include a beef patty, melted yellow cheese, and reddish-brown bacon strips protruding from the sides. To the right of center, in the mid-ground, a metal wire basket shaped like a miniature shopping cart holds golden-brown french fries lined with red-and-white checkered paper. Both items rest on a wooden serving board displaying warm brown grain patterns that span the lower and central portions of the image. In the upper-left background, a white plate holds indistinct darker food items, partially cut off by the frame edge. Behind the burger, upper-center, stands a clear glass with a curved metal handle rising above it, likely part of the basket. The overall color scheme is warm, dominated by browns, golds, and reds, with the pale bun and white plate providing lighter contrast. Lighting appears natural and soft, casting gentle shadows beneath the burger and basket onto the wooden surface. The composition places the two main food elements diagonally, creating balance across the horizontal wooden plane.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Ingestible-object/Junk-food, Savory, (Foreground-view, Left-side-of), Lower-center-of), (Label/Glazed-salt-bun, Ingestible-object/Staple-food, Salty), (Label/Beef-patty, Ingestible-object/Main-dish), (Yellow, Label/Cheese, Ingestible-object/Main-dish), (Red, Brown, Label/Bacon, Ingestible-object/Main-dish)), ((Ingestible-object/Staple-food, Label/French-fries, (Gold, Brown), Salty), (To-right-of, Center-of), Background-view), (Box, Steel, Label/Wire-basket-cart, (Red, White, Pattern, Label/Checkered-paper)), (Furnishing, Manufactured-material/Wood, Brown, Label/Serving-board, Lower-center-of), ((White, Label/Plate), Upper-left-of, Background-view), ((Glass, Label/Clear-glass), Steel, Upper-center-of, Background-view), (Luminance/Warm, Brown, Gold, Red)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

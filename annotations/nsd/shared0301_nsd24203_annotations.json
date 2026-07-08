@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A gray tabby cat occupies the center of the frame in the middle ground, positioned slightly right of center and facing forward toward the viewer, its body oriented diagonally as it rests atop a bed. The dominant foreground element is a patchwork quilt featuring colorful geometric squares in red, blue, yellow, green, and white arranged in a repeating pattern, draped across the lower and left portions of the frame with visible white quilted stitching sections showing diamond patterns. In the background, upper portion of the frame, a plain white or off-white wall fills the space, with what appears to be a dark green or olive fabric bundle and a brownish object resting in the upper right corner. A metallic horizontal bar or frame edge is visible in the upper left against the wall. The lighting is soft and appears artificial or indirect, creating gentle shadows without harsh highlights, giving the scene a muted, warm interior quality. The overall color scheme combines neutral whites and grays with scattered bright multicolored quilt patches. Compositionally, the cat serves as the focal point, framed by the textured quilting that draws the eye toward the center.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Cat, Gray), (Center-of, Foreground-view)), ((Furnishing, Label/Bed), (Below, (Animal-agent, Animal/Cat))), ((Manufactured-material/Cloth, Label/Quilt, (Red, Blue, Yellow, Green, White), Square, Repetitive), (Foreground-view, Lower-left-of)), (White, Man-made-object/Wall, Background-view), ((Manufactured-material/Cloth, Green), Upper-right-of), (Steel, Label/Bar, Upper-left-of), (Light-shade, Indoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

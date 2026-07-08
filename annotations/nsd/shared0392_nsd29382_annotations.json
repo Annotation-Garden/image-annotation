@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two white sheep occupy the foreground center-right of the frame, standing on a gray gravel path that runs diagonally across the lower portion of the image from the lower-left corner toward the middle-right. The frontmost sheep, positioned slightly left, faces the viewer directly, its head turned forward with a visible blue ear tag on its left ear; the second sheep stands closely behind and to the right, its body angled so its head points rightward while its face turns toward the camera, creating an overlapping, side-by-side arrangement suggesting physical proximity or companionship. Both animals have thick, cream-colored woolly coats and slender legs. The background fills the upper two-thirds of the frame with a broad expanse of green grass that appears coarse and slightly uneven, with taller tufts of lighter, yellow-green grass rising along the left edge near the path. The overall color scheme contrasts the muted whites and grays of the sheep and gravel against the saturated greens of the grass. Lighting is soft and diffuse, casting no harsh shadows, consistent with overcast daylight. The composition places the animals low and central, with the pathway anchoring the lower foreground.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, White, (Ear, (Blue, Label/Ear-tag))), (Center-of, Foreground-view)), ((White), Behind), (Interacts-with), (Gravel-terrain, Gray, Path, (Visual-attribute/Diagonal, Lower-left-of)), (Plant/Grass, Green, Background-view), ((Yellow, Green, Plant/Grass), Left-edge-of), (Environmental-property/Overcast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a shirtless male surfer occupies the center-right of the frame, positioned in a crouched stance on a white surfboard with a dark triangular logo visible on its lower-left surface. His body faces rightward while his right arm extends forward with a pointing gesture near the center of the image; his knees are bent, and he wears light-colored patterned board shorts. A watch or band is visible on his wrist. Water sprays upward and rightward behind him in the upper-right region, appearing white and frothy against the darker background. The background consists of the ocean surface, rendered in gradients of deep blue in the upper portion and transitioning to teal and lighter green tones in the lower-left area. Lighting comes from the right side, illuminating the surfer's back, shoulders, and the water spray, creating highlights on his skin and casting the left side of his body into shadow. The overall color scheme is dominated by cool blues and greens contrasted with the warm skin tones of the subject. A faint watermark text appears in the lower-right corner. The composition centers the active figure amid surrounding water.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Male, Experiment-actor, Crouching), Interacts-with, (Man-made-object, Label/Surfboard, White, (Triangle, Dark-shade, Lower-left-of)))), ((Human-agent, Torso-chest), (Upper-extremity, Right, (Point, Towards, Center-of))), ((Human-agent, Knee), Bend), (Clothing, Light-shade, Label/Board-shorts), ((Human-agent, Wrist), (Clock, Label/Watch)), (White, Natural-feature/Water, (Upward, Rightward, Behind), Upper-right-of), (Background-view, (Blue, Upper-center-of), (Teal, Green, Lower-left-of)), (Right, (Luminance, (Torso-back, Shoulder))), (Left-side-of, Dark-shade)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 350,
+            "total_tokens": 771
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 771
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

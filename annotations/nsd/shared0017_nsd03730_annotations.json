@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, sits a middle-aged man with gray-and-brown hair, a graying beard, and rectangular glasses; he wears a dark brown suit jacket over a white collared shirt and a dark patterned tie decorated with circular and geometric motifs. His body is angled slightly toward the right side of the frame while his face turns leftward, his gaze directed off-camera to the left. In the lower right foreground, a black microphone on a stand rises diagonally toward his mouth. His hands rest near the lower center, and a light-colored name badge is visible on his lapel. A white object, possibly a card or paper, appears at the very bottom center. The background is predominantly dark and out of focus, with a warm reddish-orange glow in the upper right and a lighter beige projected surface in the upper left, suggesting a screen behind him. The overall color scheme is warm, dominated by browns, blacks, and amber tones, with soft directional lighting illuminating the man's face and the left side of his body against the shadowed backdrop, creating strong contrast and a centered, portrait-style composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Male, (Age, Label/Middle-aged), (Head, (Hair, Gray, Brown)), Glasses), Foreground-view), (Center-of, ((Human-agent), Below)), ((Clothing, Brown, Dark-shade), (White, Clothing), (Clothing, Dark-shade, (Pattern, Circle))), ((Face, Turn, Leftward), (Stare, Left)), ((Torso, Rotated, Right)), (Lower-right-of, (Microphone, Black, (Towards, Mouth))), (Lower-center-of, (Hand, Rest)), (Label, (White, Torso-part)), (Lower-center-of, (White, Paper)), (Background-view, Dark-shade, ((Red-color, Orange-color), Upper-right-of), (Beige, Upper-left-of, Computer-screen)), ((Orange-color, Brown, Black), Luminance/Warm), (Luminance-contrast, Face)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

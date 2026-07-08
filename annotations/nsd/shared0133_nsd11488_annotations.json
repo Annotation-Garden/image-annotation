@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This nighttime outdoor photograph is dominated by lush green foliage framing the upper portion and both left and right edges, with vines and leaves hanging from a wooden pergola structure in the center-background. A bright artificial light source glows in the upper-center, casting illumination downward onto a wooden dining table positioned in the center of the frame. In the middle-ground, a man seated in a wicker chair on the left occupies the left-center, wearing a light short-sleeved shirt and holding a laptop on his lap. On the right side, two people are seated close together in the center-right, one appearing to hold or use a laptop that emits a bluish screen glow, illuminating their faces. The wooden table between them holds various small objects including what appears to be a green teapot and scattered items. In the foreground lower-left sits an empty wicker chair beside a small round table with objects on it, while the lower-right foreground shows a wooden bench with bottles. The overall color scheme combines deep greens, warm browns, and dark shadowed areas, with focal warm and cool light sources creating strong contrast against the surrounding darkness.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Building-part, Label/Pergola), (Plant, Green)), (Green, Plant, (Top-of, Photograph)), (Green, Plant, (Left-edge-of, Photograph)), (Green, Plant, (Right-edge-of, Photograph)), (Light-shade, (Upper-center-of, Photograph)), ((Furnishing, Label/Wooden-table), (Center-of, Photograph)), ((Human-agent, Male, (Sitting, (Furnishing, Label/Wicker-chair))), Interacts-with, (Laptop-computer)), ((Human-agent), Interacts-with, (Laptop-computer)), (Laptop-computer, Blue, (Label/Center-right-of, Photograph)), ((Ingestible-object/Main-dish, (Furnishing, Label/Teapot), Green), (Center-of, Photograph)), ((Furnishing, Label/Wicker-chair), (Lower-left-of, Photograph)), ((Furnishing, Label/Round-table), (Lower-left-of, Photograph)), ((Furnishing, Label/Wooden-bench), (Lower-right-of, Photograph)), (Green-color, Brown-color, Black), Luminance-contrast/0.8",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 357,
+            "total_tokens": 778
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 778
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

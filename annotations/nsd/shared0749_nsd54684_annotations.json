@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center of the frame, a skateboarder is captured mid-action riding down the curved concrete surface of a skate bowl, their body crouched low and silhouetted against the bright sky. Directly below and slightly right of the skater, a dark shadow of the figure is cast onto the sloped concrete in the lower-center portion of the frame, mirroring the crouched pose. The concrete skate park ramps and bowls dominate the lower half of the image, rendered in muted gray tones. In the background, along the middle horizontal band of the frame, numerous people stand silhouetted in dark outlines atop the ramp's edge, distributed across the left, center, and right, some appearing to watch or converse. The upper half of the frame is filled with a bright blue sky containing wispy white clouds and a diagonal streak of light or lens flare in the upper-left area. The lighting is strong and backlit, creating high contrast that turns the human figures into dark silhouettes against the luminous sky. The overall color scheme combines cool blue sky, neutral gray concrete, and dark shadowed forms, with a clear compositional emphasis on the central skater.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Center-of, (Human-agent, Crouching, (Ride, (Manufactured-material/Concrete, Sloped-terrain)))), ((Human-agent), Interacts-with, (Manufactured-material/Concrete)), (Lower-center-of, (Black, Label/Shadow-of, (Human-agent))), (Lower-left-of, (Gray, Manufactured-material/Concrete, Path)), (Background-view, (Group-of, (Human-agent, Standing, Black)), (To-left-of, Center-of, To-right-of)), (Upper-center-of, (Blue, Natural-feature/Sky)), ((White, Natural-feature/Cloud)), (Upper-left-of, (Label/Light, Visual-attribute/Diagonal)), (Label/Luminance-contrast-High, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

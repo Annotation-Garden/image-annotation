@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground on the left side of the frame, a large gray elephant is seated upright on its hindquarters atop a small metallic silver and blue pedestal, its front legs raised and body tilted upward, occupying the lower-left to center-left portion of the image. A thick beige rope extends diagonally from the upper area down across the elephant's raised front section. The elephant performs on a flat paved surface bordered by a curved brick wall that runs across the lower-center and lower-right of the frame. In the background, filling the center and right portions, a large seated crowd of spectators occupies tiered viewing areas beneath a broad white canopy or tent structure supported by dark poles and beams spanning the upper region. Green foliage and trees are visible on the far left and right edges behind the crowd. The overall color scheme combines the muted gray of the elephant, warm reddish-brown bricks, the pale white canopy, and scattered colorful clothing of the audience. Lighting appears bright and natural, with the elephant well-lit against the shaded seating area, creating a compositional contrast between the isolated performing animal and the densely packed onlookers.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, Left-side-of), (Large, Gray, Animal/Elephant, Sitting), (Above, (Small, Label/Metallic-material, Silver, Blue, Furnishing))), ((Large, Beige, Tool), (Across-from, (Animal/Elephant))), (Paved-terrain, (Bottom-edge-of, (Rotated, Brown-color, Building-part))), ((Background-view, Center-of), (Group-of, (Large, Human-agent, Sitting))), (Above, (Large, White, Building-part)), ((Left-edge-of, Right-edge-of), (Green, Plant)), ((Human-agent), Interacts-with, (Animal-agent))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

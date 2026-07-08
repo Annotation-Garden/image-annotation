@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-left stands a batter in a white uniform with dark helmet, holding a bat raised behind his shoulder in a ready stance, his feet positioned on light brown dirt near the white lines of the batter's box. To his right, in the lower-center of the frame, a catcher crouches wearing a dark uniform, blue helmet, and protective gear, facing left toward the batter. Further right stands an umpire dressed in black with a dark cap, positioned behind the catcher in the lower-right area. In the middle ground, a green dugout with a low railing spans the center-left, where several players in dark and white uniforms sit or stand. The background, occupying the upper two-thirds of the frame, is densely filled with spectators seated in tiered stadium seating, wearing varied colors including white, red, blue, and green. The overall color scheme combines brown dirt, green surfaces, and muted crowd tones. Lighting appears even and diffuse, consistent with daytime or stadium illumination, casting soft shadows beneath the standing figures. The composition layers action players in front against a textured, crowded backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Experiment-actor, Standing), (White, Clothing), (Black, Head-mounted-display), (Grasp, Tool), (Upper-center-of, Torso)), Center-of), ((Human-agent, Experiment-actor, Crouching, (Dark-shade, Clothing), (Blue, Head-mounted-display), Left), Lower-center-of), ((Human-agent, Experiment-actor, Standing, (Black, Clothing), (Dark-shade, Clothing)), Lower-right-of), (Dirt-terrain, Brown), (White, Line-noise-artifact), ((Building-part, Green, Label/Dugout), Center-of), (Group-of, (Human-agent, Experiment-actor), (Dark-shade, White, Clothing)), (Background-view, (Group-of, (Human-agent), (White, Red, Blue, Green, Clothing)), Upper-center-of), (Building-part, Label/Stadium-seating), Outdoors, (Green, Terrain), (Luminance, Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

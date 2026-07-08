@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and slightly right of the frame, stands a goalkeeper wearing a bright yellow long-sleeved jersey, black shorts with white side stripes, and black-and-white socks; he is crouched forward, clutching a white and gray soccer ball with both gloved hands against his lower torso, his gaze directed downward toward the ball. The man has short, light-colored hair and is positioned in the lower-center to lower-right region of the image. Dominating the entire frame is a dark blue goal net, its diamond-patterned mesh stretching across the foreground and creating a screen-like overlay through which the scene is viewed. A white vertical goalpost is visible on the left side and behind the player. In the blurred background, occupying the upper portion, are indistinct green trees and foliage, with a lighter, hazy area suggesting sky or distant structures at the upper left. The lower ground is covered in green grass. The overall color scheme combines the vivid yellow of the jersey with cool blues and greens, under soft, diffuse natural daylight. The composition centers the crouching figure amid the enveloping netting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Human-agent, Experiment-actor, (Crouching, (Torso, Bend))), (Foreground-view, Center-of)), ((Human-agent), Interacts-with, (Man-made-object/Ball, White, Gray)), (Yellow, Clothing), (Black, Clothing), (Hair, Light-shade), ((Hand, Grasp, Man-made-object/Ball)), (Eye, Fixate, Downward), (Window, Blue, Dark-shade, Pattern, Foreground-view), (White, Vertically-oriented, Left-side-of, Building-part), ((Green, Plant), Background-view, Foreground-view), (Green, Field, Below), (Cyan, Background-view, Upper-left-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

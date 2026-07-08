@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a person with short gray hair wears a dark blue backpack, positioned with their back partly turned. Center-frame and dominating the middle ground, several people in red uniforms carry large suitcases balanced atop their heads; the luggage is predominantly black with one maroon and one dark case, stacked at the upper-center of the frame. These porters walk along a paved platform that extends across the lower portion of the image. On the right side, a blue passenger train runs vertically from center to lower-right, its metal body reflecting light, with windows and a doorway visible. In the background, upper-left, a cylindrical water tower stands against a pale sky, alongside tall metal signal posts and overhead electrical wires crossing the upper portion. The color scheme contrasts vivid reds of the uniforms and blue of the train against muted grays, browns, and the washed-out sky. Lighting appears natural and bright, casting soft shadows on the platform, suggesting daytime. The composition is layered, with human figures clustered centrally, the train framing the right edge, and infrastructure receding into the hazy distance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, ((Human-agent, (Gray, Hair), Label/Short), (Foreground-view, Lower-left-of)), ((Blue, Dark-shade), (Contained-in, Human-agent)), ((Group-of, Human-agent, (Red, Clothing)), (Center-of)), ((Human-agent), Interacts-with, (Tool, Label/Suitcase, Large)), ((Tool, Label/Suitcase, Black), (Top-of, Head)), ((Tool, Label/Suitcase, Maroon)), ((Tool, Label/Suitcase, Dark-shade)), ((Group-of, Human-agent, Walk), (Path, Paved-terrain, (Below))), ((Train, Blue, Vertically-oriented, Steel), (To-right-of, Center-of)), (Window, (Part-of, Train)), (Door, (Part-of, Train)), ((Visual-attribute/Cylindrical, Tool, Label/Water-tower), (Background-view, Upper-left-of)), ((Tool, Label/Signal-post, Steel, Vertically-oriented)), ((Tool, Label/Electrical-wire), (Above)), (Natural-feature/Sky, Light-shade), (Gray, Brown), (Luminance/Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

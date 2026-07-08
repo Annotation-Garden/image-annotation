@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a nighttime urban scene dominated by darkness with selectively illuminated architectural features. In the upper-right portion of the frame stands a tall clock tower, its illuminated clock face visible with two round dials glowing pale white, and warm yellow-orange lights at its crown near the top edge. Below and to the right of the tower, a pale gray building facade is lit, showing narrow vertical windows glowing with amber light in the center-right area. In the center-left middle ground, a large curved roof or awning glows warm yellow-gold, crossed by a faint diamond-patterned lattice. A thin vertical pole rises through the center of the frame. In the lower portion, a horizontal railing or balustrade runs across the foreground, punctuated by small blue-white and greenish point lights that appear as scattered illuminated spots. The left and upper-left regions dissolve into near-black shadow with only faint outlines of distant buildings. The overall color scheme is dominated by deep browns, blacks, and warm ambers contrasted with cooler blue-white accents. Lighting is dramatic and low-key, with isolated pools of artificial light emerging from an otherwise dark, high-contrast composition emphasizing verticality",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, (Dark-shade, Label/Luminance-contrast-High), ((Building, Clock-face, White, Luminance/Illuminated), (Upper-right-of, Photograph)), ((Building, Yellow, Orange), (Top-edge-of, Building)), ((Building, Gray, (Window, Vertically-oriented, Orange-color)), (Lower-right-of, Building)), ((Roof, Yellow, Orange, Visual-attribute/Curved), (Center-of, Photograph)), (Pattern, Visual-attribute/Diamond), (Vertically-oriented, Label/Column), ((Building-part, Blue, White, Green), (Foreground-view, Photograph)), ((Building, Black), (Left-side-of, Photograph)), Brown, Black, Orange-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

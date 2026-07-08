@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the lower-left foreground sits a silver slider-style smartphone with its physical QWERTY keyboard extended, its illuminated screen displaying a bluish-toned interface with white text lines and small status icons near the top; a black cable plugs into its right edge and trails toward the right side of the frame. In the upper-center to upper-right of the image lies a silver flip-style clamshell phone, open with its outer surface and lens visible, its short antenna stub pointing downward toward the center. On the right edge, partially cropped, is a dark rectangular object bearing white \"Canon\" branding, likely a device or box. All items rest on a wooden surface showing warm brown horizontal grain that fills the background and lower portions. In the upper-left corner, darker and blurred elements appear, including a hint of red, receding out of focus. The overall color scheme combines metallic silver-grays of the phones against warm brown wood tones. Lighting is soft and directional, casting subtle reflections and highlights across the phones' glossy chrome surfaces and creating gentle shadows beneath them. The composition is diagonal, with the two phones angled across the frame, connected visually by the cable.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Cellphone, Silver, Keyboard, (Blue, Computer-screen, (White, Word))), Lower-left-of, Foreground-view), ((Cellphone, Silver), Upper-center-of), ((Man-made-object, Label/Canon, Black), Right-edge-of), ((Man-made-object, Label/Cable, Black), Connected-to, (Cellphone, Silver)), (Manufactured-material/Wooden, Brown, Background-view), ((Red, Luminance/Blurred), Upper-left-of), (Label/Soft, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

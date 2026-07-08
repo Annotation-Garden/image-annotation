@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two giraffes dominate the foreground of this photograph, both oriented with their heads pointing toward the left side of the frame. The nearer giraffe occupies the center and lower portion, its head positioned in the center-left area at roughly mid-height, with its long neck extending diagonally down toward the lower-right corner where its distinctly patterned brown-and-white coat is visible. Its ossicones (horn-like protrusions) and closed or downcast eye are clearly visible. The second giraffe is positioned behind and slightly higher, its head in the upper-left region, partially overlapping and echoing the pose of the front animal, creating a layered, parallel composition. Behind both animals fills a textured gray rock wall that spans the entire background, featuring irregular vertical striations, crevices, and mottled surfaces. The overall color scheme combines warm earthy browns and creams of the giraffes' reticulated coats against the cool neutral grays of the stone backdrop. The lighting appears soft and diffuse, without harsh shadows, suggesting overcast or indirect illumination. The composition uses the diagonal thrust of the necks and the near-symmetrical alignment of the two heads to draw the eye leftward across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Label/Giraffe-near, Brown, White), (Foreground-view, Center-of)), ((Animal-agent, Label/Giraffe-back, Brown, White), (Background-view, Upper-left-of)), ((Animal-agent, Label/Giraffe-near), Behind, (Animal-agent, Label/Giraffe-back)), (Gray, Natural-feature/Rock, (Background-view, Vertically-oriented, Rough)), Leftward",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

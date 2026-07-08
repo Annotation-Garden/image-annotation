@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a home office workspace centered on an L-shaped wooden desk that dominates the lower and central portions of the frame. In the foreground lower-center, a white keyboard rests on the desk surface, with a white computer mouse positioned on a dark mousepad to its right. A silver laptop with an illuminated screen sits center-frame, while a larger external monitor displaying an image occupies the right side, its screen brightest in the composition. To the left, a black printer or scanner device sits atop a lower shelf, alongside a black digital clock or calculator and scattered small objects including a white cylindrical bottle. In the background, two windows admit bright daylight, silhouetting objects against pale exterior light and creating the primary illumination source. A tall metallic thermos and a translucent bottle stand near the window's base, center-left. Beneath the desk, tangled cables, a power strip, and a gray cylindrical speaker rest on carpeted flooring. The overall color scheme combines warm wood browns, whites, and blacks against cool window light. Lighting is naturally backlit, casting shadows toward the viewer. The composition is cluttered, with objects densely arranged across horizontal desk planes.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, Visual-presentation, (Man-made-object, Label/L-shaped-desk, (Manufactured-material/Made-from, Label/Wood)), (Lower-center-of, Photograph), (White, Keyboard, (Lower-center-of, Photograph)), ((White, Computer-mouse), (To-right-of, Keyboard)), (Black, Label/Mousepad), (Silver, Laptop-computer, (Computer-screen, Luminance/Illuminated), (Center-of, Photograph)), (Display-device, (Image, Visual-presentation), (Right-side-of, Photograph)), ((Black, Man-made-object/Printer, (Left-side-of, Photograph)), (Top-of, Furnishing)), (Black, Clock), (White, Cylinder, Label/Bottle), (Window, (Background-view, Photograph)), (Manufactured-material/Metal, Label/Thermos), (Label/Translucent-bottle, (Center-of, Photograph)), (Label/Cables, Underneath, Furnishing), (Label/Power-strip), (Gray, Cylinder, Loudspeaker, (Underneath, Furnishing)), (Brown-color, White, Black), (Visual-presentation, Label/Backlit), (Label/Cluttered), Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a savanna scene dominated by tall golden-green grass filling the entire lower and central portions of the frame, constituting the foreground. In the center-right of the frame stands a single giraffe with its neck bent downward toward the grass, its patterned coat of brown patches on a tan background clearly visible; its legs are splayed as it lowers its head, suggesting it is drinking or grazing near ground level. On the left side of the image, occupying the upper-left and extending toward the center, is a large dark-green leafy tree with a substantial canopy and visible branches and trunk. To the right of the giraffe, in the background, a smaller flat-topped acacia-style tree appears against the horizon. The far background across the upper portion shows a pale, hazy gray-white sky and a low, distant treeline. In the lower-left foreground, a smaller bright-green shrub is visible. The overall color scheme combines earthy greens, yellows, and browns with a muted, overcast sky. Lighting appears diffuse and flat, lacking strong shadows, consistent with cloudy conditions. The composition places the animal off-center, balanced against the framing tree at left.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Grassy-terrain, Foreground-view, (Yellow, Green)), ((Animal-agent, Label/Giraffe), (Bend, Neck)), ((Brown, Tan), Label/Giraffe), (Plant, Green, Dark-shade, Upper-left-of), (Plant, Background-view, To-right-of, (Label/Giraffe)), (Natural-feature/Sky, Background-view, Gray, White), (Plant, Green, Lower-left-of, Foreground-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

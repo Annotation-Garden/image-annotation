@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This aerial photograph depicts a beach scene viewed from an elevated angle looking down. In the lower-left foreground, a paved gray pathway runs diagonally, where two people walk: one figure in the center-left wearing dark clothing, and another partially visible in the lower-left corner. The central and right portions of the frame are dominated by numerous open beach umbrellas, predominantly white, alongside vividly colored ones in red, yellow, blue, and green, arranged in curving rows across the sandy and pebbled terrain. Green lounge chairs are visible in the center-right, some occupied by small reclining figures. In the upper-left background, more umbrellas and scattered sunbathers appear on a lighter sandy strip. The upper-right corner shows a stone retaining wall and white directional signs with black text, one reading \"SNACK.\" A rocky, textured ground surface with shadows spans the lower-center. The overall color scheme is bright and saturated, contrasting the neutral gray-beige beach against the multicolored umbrellas. Lighting is strong and direct, consistent with midday sun, casting distinct shadows from umbrellas and rocks. The composition is densely packed with clustered objects, creating a busy, layered visual",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Aerial-view, (Outdoors, Terrain), ((Paved-terrain, Gray), Lower-left-of), ((Human-agent, Black), Walk), ((Human-agent), Lower-left-of), ((Group-of, Furnishing, Open), White, Center-of), (Furnishing, Red), (Furnishing, Yellow), (Furnishing, Blue), (Furnishing, Green), (Furnishing, Green, Lower-right-of), ((Human-agent), Prone), ((Group-of, Furnishing), Upper-left-of), ((Human-agent), Upper-left-of), (Building-part, Upper-right-of), ((Document, White, (Character, Black), Label/SNACK), Upper-right-of), (Rocky-terrain, Lower-center-of), Label/Saturation-High, Label/Luminance-contrast-High, Natural-feature/Beach",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

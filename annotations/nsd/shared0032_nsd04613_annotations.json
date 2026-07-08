@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-center of the frame sits a reddish-brown wooden trunk or chest bearing a clear glass bowl on its left side and a metallic silver serving tray resting atop it, with a dark pen visible near the bowl. The floor beneath is covered in teal-green carpet. In the middle ground, center-right, a young man with dark hair, glasses, and facial hair sits on a green upholstered sofa, holding a white plate of food in his right hand while a silver laptop, displaying a colorful screen and a sticker reading \"occult magick,\" rests on a light wooden lap-desk before him. To the left, in the background, wooden bookshelves are densely packed with books and topped with decorative figurines, adjacent to an open doorway revealing a kitchen with white cabinets, a white stove, and a refrigerator. Upper-center and right, a window with brown, swagged curtains admits bright daylight, the primary light source that illuminates the man and casts the left side into relative shadow. A woven rattan stool sits lower-left. The overall color scheme combines green, brown, and warm neutral tones, creating a domestic, casually cluttered interior composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Indoors, Room, (Foreground-view, Lower-center-of, (Manufactured-material/Wood, Box, Brown, (Glass, Man-made-object/Bowl), (Steel, Tool, Label/Serving-tray), (Pen)), (Man-made-object/Floor, Green, Label/Teal-carpet)), (Human-agent, Male, (Head, (Hair, Black), Glasses), Sitting, Furnishing, Green, (Item-index/1, Right, Hand, (White, Label/Plate, Ingestible-object/Main-dish, Savory)), ((Human-agent), Interacts-with, (Steel, Laptop-computer, (Color, Label/Screen), Label/occult-magick)), (Manufactured-material/Wood, Tool, Label/Lap-desk)), (Background-view, Left-side-of, (Manufactured-material/Wood, Furnishing, Book), (Sculpture), (Door, Open), (Room, Label/Kitchen, (White, Furnishing), (White, Machine, Label/Stove), (Machine, Label/Refrigerator))), (Upper-center-of, Right, (Window, (Brown, Clothing, Label/Curtains)), (Visual-attribute, Label/Luminance-contrast-High)), (Lower-left-of, (Furnishing, Label/Rattan-stool)), (Green, Brown)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned lower-center of the frame, a young person with curly brown hair rides a skateboard, wearing a red and black patterned long-sleeved shirt and dark pants, with arms slightly extended and head tilted downward as they balance on the board rolling across gray pavement. In the midground, occupying the central and left portions, concrete skate ramps and angular ramp structures rise, tan and gray in tone. Scattered across the background are several other individuals: one figure in the upper-left crouches or bends near a ramp, another in a red top stands center-right near a metal railing, and additional people in dark clothing stand along the right edge, one appearing to hold a skateboard. A tall chain-link fence spans the upper portion horizontally, behind which bare leafless trees and a brick building are visible in the upper-left. A blue playground structure sits center-background. The overall color scheme is muted with grays, tans, and browns, punctuated by the skater's red shirt. Lighting appears natural and bright, casting soft shadows on the pavement, suggesting daytime. The composition centers the foreground skater against receding ramps.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Luminance/Daytime, ((Human-agent, Ride, (Lower-center-of, Foreground-view)), (Label/Curly, Brown, Hair), ((Red, Black, Pattern, Clothing), (Luminance/Dark, Clothing)), ((Human-agent), Interacts-with, (Man-made-object/Skateboard))), ((Building-part, Rough, Tan, Gray), (Center-of, Label/Middleground-view)), ((Human-agent, Crouching), (Upper-left-of, Background-view)), ((Human-agent, Standing, (Red, Clothing)), (Center-of, Right-side-of, Background-view)), ((Human-agent, Standing, (Luminance/Dark, Clothing)), (Right-edge-of, Background-view)), ((Human-agent), Interacts-with, (Man-made-object/Skateboard)), ((Item, Manufactured-material/Metal), Label/Chain-link-fence, (Top-of, Background-view)), ((Plant, Brown), (Upper-left-of, Background-view)), ((Building, Brown), (Upper-left-of, Background-view)), ((Item, Blue), Label/Playground-structure, (Center-of, Background-view)), (Gray, Paved-terrain), (Label/Muted, Gray, Tan, Brown), Luminance/Bright",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

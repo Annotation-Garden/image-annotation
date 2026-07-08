@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground occupying the upper-left quadrant is a red octagonal STOP sign with bold white lettering, mounted on a metal post; directly below it, in the center-left, hangs a white rectangular sign with red text reading \"FERRY LINE STARTS HERE / BOAT EVERY / 20 MIN.\" Beneath that, in the lower-left, is a dark gray \"RATES\" sign displaying rows of smaller text on a curved-top plaque, also affixed to posts. The lower portion of the frame, spanning center to right, shows pale beige sand with visible footprints and scattered debris, including a weathered wooden or concrete block near the lower-left edge. The middle ground is dominated by a broad expanse of grayish-blue water stretching horizontally across the frame. In the background, a thin strip of distant shoreline with low buildings and green trees runs along the horizon in the center and right. The upper half of the image is a bright blue sky filled with wispy, scattered white clouds. The lighting appears natural and diurnal, casting soft shadows. The overall color scheme combines red accents, blue water and sky, and neutral sandy tones, with balanced left-weighted composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Visual-attribute/Octagon, Red, (Word, ID/STOP), White), (Upper-left-of, Foreground-view)), ((Rectangle, White, Red, (Word, ID/FERRY-LINE-STARTS-HERE-BOAT-EVERY-20-MIN)), Left-side-of), ((Man-made-object/Sign, DarkGray, (Word, ID/RATES)), Lower-left-of), ((Beige, Terrain), (Lower-center-of, Foreground-view)), (Grayscale, Blue, Natural-feature/Water, Background-view), ((Building, Plant, Green), (Background-view, Horizontally-oriented)), ((Blue, Natural-feature/Sky), (Above)), (White, Natural-feature/Cloud), (Terrain/Sand-terrain, Foreground-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the foreground is a gray military helicopter occupying nearly the entire frame, its rounded cockpit and windshield positioned in the center-left, with the tail boom extending toward the right where partial lettering reads \"MARINHA\" and the identifier \"7069\" appears in black. Landing skids and mounting hardware are visible in the lower portion, resting on a flat gray deck surface that spans the bottom of the frame. Inside the cockpit, at least two seated figures are discernible; one in the center wears a light-colored helmet with orange or reddish stripes and appears to be seated in the doorway, while another darker figure sits to the left behind the windshield. The spinning main rotor blades create a translucent blur across the upper portion of the image, above the fuselage. In the background, upper-right, a blue sky with scattered white clouds meets a horizon line of dark blue ocean water. The overall color scheme is dominated by cool grays, blues, and muted tones, with the orange helmet stripes providing the sole warm accent. Lighting appears natural and diffuse, creating soft shadows beneath the aircraft body.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Gray, Vehicle, Aircraft, Label/Helicopter, (Label/MARINHA, Label/7069))), ((Label/Cockpit, Window), Part-of, (Aircraft, Label/Helicopter)), ((Human-agent, Experiment-actor, (Head, (Light-shade, Label/Helmet)), (Orange, Label/Stripes)), Contained-in, (Label/Cockpit, Center-of)), ((Human-agent, Experiment-actor, Dark-shade), To-left-of, (Window)), (Label/Blur, Rotated, Above, (Aircraft, Label/Helicopter)), (Gray, Label/Deck, Bottom-edge-of), ((Blue, Natural-feature/Sky, (White, Natural-feature/Cloud)), Above, (Background-view, (Blue, Label/Ocean))), (Upper-right-of, (Blue, Natural-feature/Sky)), (Gray, Blue, Cold), (Orange), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

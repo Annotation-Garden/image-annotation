@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant foreground element is a giraffe's head and upper neck, occupying the center and left portions of the frame, tilted diagonally so the muzzle points toward the lower-left corner. The giraffe's face displays characteristic brown patches separated by pale cream lines, with two ossicones (horn-like structures) rising from the top of the head into the upper-center region. A dark eye is visible on the right side of the face, and the large ear extends toward the right-center edge. The neck descends toward the lower-right, showing the reticulated patterning continuing downward. In the background, a vertical wooden pole runs along the right side of the frame from top to bottom. Behind and left of the giraffe, a green grassy field stretches across the middle band, bordered by a chain-link fence and taller barrier structures near the upper-left horizon, with a pale, overexposed sky above. The lighting is bright and natural, consistent with daytime sunlight, casting soft shadows on the giraffe's face. The overall color scheme combines warm browns and creams of the animal against cooler greens and grays of the enclosure background, creating a close, portrait-style composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Giraffe, (Head, Rotated), (Center-of, Foreground-view)), (Eye, Brown), (Ear, Right-side-of), (Neck, Lower-right-of)), (Brown, Pattern), (White, Pattern), ((Man-made-object, Label/Wooden-pole, Vertically-oriented), Right-side-of), (Green, Field, Background-view), (Man-made-object, Label/Chain-link-fence), (White, Natural-feature/Sky, Upward), (Outdoors, Luminance/Daytime)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

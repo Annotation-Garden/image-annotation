@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A surfer occupies the center of the frame, positioned slightly upper-center, crouched atop a white surfboard while riding the crest of a breaking wave. The surfer wears a black wetsuit and has shoulder-length brown hair; their knees are bent, arms extended for balance, with one hand reaching forward and down. The white surfboard, angled diagonally, displays visible logos and colored markings, including a red circular emblem near its lower portion. In the foreground, the lower portion of the frame shows turquoise and teal water with rippling surface texture. The background and upper-left region contain white, frothy whitewater and spray, actively churning as the wave curls, indicating the surfer is interacting with the wave's breaking section. The right side of the frame shows a smoother, darker green wave face rising unbroken. The overall color scheme is dominated by cool greens, teals, and blues, contrasted against the bright white of the foam and the surfer's black wetsuit. Lighting appears bright and diffuse, illuminating the spray and casting soft shadows on the wave face. The composition centers the human subject dynamically against surrounding motion and water.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Crouching, (Black, Clothing), (Brown, Hair))), Interacts-with, (Natural-feature, Label/Wave, White, (Move, Upward))), (Human-agent, (Ride, (White, Tool, Label/Surfboard, Rotated, ((Red, Circle), Part-of, Tool)))), (Upper-center-of, Label/Frame), (Lower-center-of, (Natural-feature, Label/Water, Turquoise, Teal)), (Background-view, (White, Label/Whitewater, Natural-feature/Spray)), (Right-side-of, (Natural-feature, Label/Wave, DarkGreen, Smooth)), Green-color, Blue-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A skier dominates the foreground, positioned in the center and lower portion of the frame, captured mid-turn while carving downhill on a snowy slope. The person wears a white helmet, reflective goggles, a teal-blue jacket with a white geometric design, bright red pants, and black gloves, holding two ski poles with yellow and black shafts that extend outward toward the lower left and upper right. The orange-tipped skis angle across the lower center, kicking up loose snow visible as a fine spray along the lower right and center. The skier's body leans to the left, knees bent, in a dynamic athletic posture, with dark hair trailing behind the helmet. The background occupies the upper portion of the frame, showing a deep, saturated blue sky in the upper right and dark evergreen trees clustered along the upper left horizon. A metal chairlift tower with cables appears faintly on the right side, mid-height. The overall color scheme contrasts warm reds and oranges against cool blues and whites. Lighting is bright and directional, likely sunlight, casting sharp highlights on the snow and crisp shadows across the textured, groomed surface.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-participant, (Lower-center-of, Foreground-view)), ((Human-agent), (Turn, (Ride, (Path, Snow)))), (Head, (Left, Label/Leaning)), (Knee, Flex), (Hair, Black), ((White, Assistive-device), (Top-of, Head)), (Glasses), ((Teal, Clothing), (White, Pattern)), (Red, Clothing), (Black, Clothing), ((Tool, Yellow, Black), (To-left-of, Lower-left-of)), ((Tool, Yellow, Black), (To-right-of, Upper-right-of)), ((Orange, Tool), (Lower-center-of, Foreground-view)), (Snow, (Lower-right-of, Foreground-view)), (Blue, Background-view, (Upper-right-of, Background-view)), ((Plant, Dark-shade), (Upper-left-of, Background-view)), ((Steel, Assistive-device), (Right-side-of, Background-view)), (Luminance/Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

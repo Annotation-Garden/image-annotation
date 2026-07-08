@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned slightly right of center and spanning the vertical middle of the frame, a woman wearing a red safety helmet, a blue short-sleeved shirt over a darker top, and light blue jeans stands on a suspended platform. She wears an orange and gray climbing harness around her waist and thighs; her right arm reaches upward toward the upper-center, gripping a metallic pulley or trolley device attached to an overhead cable, while her left arm extends downward and outward toward the left, hand resting on a taut horizontal safety line. Her face shows a slight smile as she looks upward. A dark metal platform or ramp structure occupies the lower-right foreground beneath her feet. On the left side of the frame, a large tree trunk with grayish bark rises vertically, and a small green-and-black pulley device is mounted on a cable crossing the mid-left. The background consists of densely blurred green foliage and additional vertical tree trunks receding into shadow. The color scheme combines saturated reds, blues, and oranges against dominant greens and browns. Lighting is natural daylight, brighter on the subject, with a shallow depth of field emphasizing her.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Real-world, ((Human-agent, Experiment-actor, Female, (Head, Smile), (Move-head, Upward)), (Right-side-of, Foreground-view)), (Red, Label/Item-Clothing, Label/Safety-helmet), (Blue, Clothing), (Light-shade, Blue, Clothing, Label/Jeans), ((Orange, Gray, Clothing, Label/Climbing-harness), (Around, (Waist, Thigh))), ((Upper-extremity, Right, (Reach, Upward)), Towards, (Upper-center-of, Foreground-view)), ((Hand, Right), (Grab, (Tool, Label/Pulley-trolley))), ((Tool, Label/Pulley-trolley), Connected-to, (Above, Tool, Label/Cable)), ((Upper-extremity, Left, (Reach, (Downward, Leftward))), (Hand, Left)), ((Hand, Left), Touch, (Horizontally-oriented, Tool, Label/Safety-line)), ((Human-agent, Experiment-actor), Interacts-with, (Tool, Label/Pulley-trolley)), (Dark-shade, Steel, Furnishing, Label/Platform-ramp, (Lower-right-of, Foreground-view)), ((Gray, Plant, Label/Tree-trunk), (Vertically-oriented, Left-side-of)), ((Green, Black, Tool, Label/Pulley), (Left-side-of, Center-of)), (Green, Plant, Background-view), (Brown, Vertically-oriented, Plant, Label/Tree-trunk, Background-view), Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

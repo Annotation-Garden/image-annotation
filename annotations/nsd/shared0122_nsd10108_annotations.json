@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a person wearing a dark beanie sits in a blue folding camp chair positioned in the lower-center of the frame, their legs extended forward and a laptop resting on their lap. To their right, in the center-right, two people sit on a dark metal park bench; one wears a gray beanie and blue jacket and holds a white laptop, while the other, in a dark jacket, leans back beside them. Standing on the left side of the frame is a fourth person in a green shirt and dark cap, facing the seated group, appearing engaged in conversation and gesturing with one hand. A gray backpack rests on the paved ground beside the blue chair. The lower-left portion shows a light gray stone-tiled walkway, while scattered brown leaves cover the ground. The background is filled with dense green shrubbery and trees, with vivid yellow and orange autumn foliage in the upper-left and upper-center. Lighting is soft and diffuse, consistent with an overcast day. The overall color scheme combines muted greens, warm yellows, and cool blues, creating a balanced, naturalistic outdoor composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, (Foreground-view, (Human-agent, (Head, (Luminance/Dark, Clothing)), (Sitting, (Blue, Man-made-object/Chair)), (Lower-center-of, Photograph)), (Torso, (Below, Computing-device))), ((Human-agent), Interacts-with, (Computing-device)), (Center-of, Right-side-of, (Furnishing, (Luminance/Dark, Steel)), ((Human-agent, (Head, (Gray, Clothing)), (Blue, Clothing), (Grasp, (White, Computing-device))), Synchronous-with, (Human-agent, (Luminance/Dark, Clothing)))), (Left-side-of, (Human-agent, (Green, Clothing), (Head, (Luminance/Dark, Clothing)), Communicate-gesturally, (Move-upper-extremity))), ((Interacts-with), Communicate-vocally), (Gray, Item, (Close-to, (Blue, Man-made-object/Chair)), (Paved-terrain)), (Foreground-view, Lower-left-of, (Light-shade, Gray, Path)), (Brown, Leaf-covered-terrain), (Background-view, (Green, Plant), (Green, Natural-object)), (Upper-left-of, Upper-center-of, (Yellow, Orange, Leaf-covered-terrain)), (Light-shade, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

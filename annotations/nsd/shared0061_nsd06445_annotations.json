@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-lower portion of the frame, a cyclist wearing an orange helmet, blue shirt, khaki shorts, and a gray backpack rides away from the viewer on a black bicycle, positioned within a marked bike lane delineated by white painted lines and dashed markings on gray asphalt. To the immediate left in the foreground, a large white box truck and a white car occupy the adjacent traffic lane, moving in the same direction. On the right side of the frame, a silver Subaru station wagon is parked at the lower-right, with additional parked cars receding into the mid-ground along the right curb. In the mid-ground right, a person in dark clothing walks along the sidewalk beside beige and brick commercial buildings. The background upper-center reveals a receding urban street lined with multi-story buildings, distant high-rise towers, and traffic-light poles, beneath a sky filled with white and gray clouds. The overall color scheme combines muted grays, whites, and beiges with the cyclist's warmer orange and blue accents. Lighting appears diffuse and overcast, casting soft shadows. The composition uses strong linear perspective, drawing the eye toward the vanishing point at center.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, Foreground-view, ((Human-agent, Experiment-actor), (Ride, (Black, Bicycle)), (Backward, Away-from), (Orange, Label/Helmet), (Blue, Label/Shirt), (Khaki, Label/Shorts), (Gray, Label/Backpack)), (Lower-center-of, Background-view), ((Bicycle, Lane), (White, Label/Line), Dash, (Paved-terrain, Gray)), ((White, Truck), To-left-of, (Bicycle, Lane)), ((White, Car), Foreground-view), ((Silver, Car, Label/Subaru), Lower-right-of), (Group-of, Car, Right-side-of), ((Human-agent, Experiment-actor), Walk, (Luminance/Dark, Clothing), (Path, Right-side-of), Background-view), ((Beige, Building), (Brown, Building), Right-side-of), (Group-of, Building, Upper-center-of, Background-view), (Group-of, Road, Upper-center-of), (Natural-feature/Sky, (White, Gray), Natural-feature/Cloud, Background-view), Environmental-property/Overcast",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

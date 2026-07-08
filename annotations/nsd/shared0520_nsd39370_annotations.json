@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, lies a thick paperback book resting on a bed, angled diagonally from the lower-left toward the upper-right. Its cover is predominantly green with white text reading \"International Money and Finance\" and a smaller notation indicating \"3rd Edition,\" alongside faint imagery of banknotes and portraits in the central cover area, plus a small circular publisher logo on the lower-left of the cover. The book sits atop rumpled blue fabric, likely a blanket or bedding, which fills much of the surrounding surface and extends across the lower and central frame; a striped edge of lighter material with red and white lines appears along the lower-right. In the background, spanning the upper portion, are blurred, out-of-focus elements: a wooden headboard or furniture surface on the left, indistinct dark and reddish shapes suggesting clothing or objects on the right, and areas of brighter light near the upper center. Lighting is natural and soft, brightest toward the upper-center. The overall color scheme combines greens, blues, and warm wood tones, with the sharply focused book contrasting the hazy backdrop, creating shallow depth of field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Book, Green, Thick, (Word, ID/International Money and Finance)), (Above, (Blue, Furnishing))), (Depth, Shallow), (Foreground-view, (Center-of, Lower-center-of)), (Background-view, (Steel, Furnishing)), Indoors, Room",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a brown-and-white cow occupying the right and center portions of the frame, positioned in the foreground and standing on a grassy hillside that slopes downward toward the lower-left. The cow's body extends from the upper-right edge, with its head and horns turned toward the center-left of the frame, facing the viewer at roughly eye level; its legs are planted on the green, grass-covered slope in the lower-right and center. A dark, rocky outcrop is visible directly beneath and behind the cow's front legs in the lower-center. In the background, layered mountain ridges recede toward the left and center, appearing in progressively lighter blue-gray tones due to atmospheric distance. The upper portion of the frame contains a pale blue sky with soft, diffuse white and light clouds, and a darker cloud mass in the upper-right corner. The lighting appears backlit or side-lit, casting the cow's underside and face in shadow while the sky remains bright. The overall color scheme combines cool blues and grays in the sky and distant hills with warmer green grass and the cow's brown-and-white coat in the foreground.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal, Label/Cow, Brown, White), (Center-of, Foreground-view)), ((Animal, Label/Cow), (Above, (Grassy-terrain, Green, Hill, Sloped-terrain))), ((Rocky-terrain, Dark-shade), Below, (Animal, Label/Cow)), (Mountain, Background-view, Blue-color, Gray-color, Light-shade), (Natural-feature/Sky, Blue-color, Light-shade), (White, Natural-feature/Cloud), ((Natural-feature/Cloud, Dark-shade), Upper-right-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

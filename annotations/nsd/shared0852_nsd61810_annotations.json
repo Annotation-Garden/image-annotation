@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a cooked pizza cut into wedge-shaped slices arranged on a light gray, textured surface visible around the edges of the frame. In the foreground, occupying the lower-center and lower-left, a prominent slice extends downward with an irregular, pointed crust and toppings including sliced black olives, reddish pepperoni-like meat, melted cheese, and pale onion or garlic pieces. The upper portion and background of the frame contain additional slices radiating outward, similarly topped with black olive rings, red meat slices, and browned cheese. The composition is roughly radial, with slices fanning out from a central area toward the corners, and the crust edges appear charred with dark brown and blackened spots. The color scheme is warm, dominated by reddish-orange tones from the sauce and cheese, punctuated by the dark black olives and golden-brown crust, set against the cooler neutral gray of the underlying surface. Lighting is bright and appears to come from above, creating glossy highlights on the cheese and olives and casting soft shadows beneath the raised slice edges. Focus is sharpest on the central and lower slices, with slight softening toward the upper background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Ingestible-object/Main-dish, Savory, (Circle, (Label/Slice, Center-of))), (Red, Label/Meat)), (Black, Olive), (Label/Cheese, Yellow), (Label/Onion, White), (Label/Crust, Brown), (Gray, Label/Textured, (Label/Surface, Background-view)), (Luminance/Bright, (Luminance, From-to)), (Focused-attention, Center-of), Luminance/Warm",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

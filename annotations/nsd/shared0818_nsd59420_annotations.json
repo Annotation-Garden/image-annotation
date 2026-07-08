@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the lower-center of the frame, occupying the foreground, a person wearing a maroon sleeveless top is captured mid-motion, arms outstretched\u2014the left arm extended upward and to the right holding what appears to be a tennis racket, the right arm raised toward the upper right. The individual's head is tilted back, gaze directed upward toward a small pale yellow-green ball positioned in the upper-left-center of the frame against the treeline. Dominating the middle and lower portions of the image is a large dark green mesh windscreen or fence, its diagonal chain-link pattern visible, angling from the upper right down toward the lower left. In the background, spanning the upper third, is a row of tall dark green coniferous and leafy trees beneath a pale, washed-out sky visible at the very top left. Several teal-green metal light fixtures on poles rise along the upper portion, positioned left, center, and right. The overall color scheme is dominated by deep greens and muted teals, contrasted by the maroon clothing. Lighting appears natural and daytime, casting soft illumination on the person. The composition balances the active human figure against the geometric fencing and organic trees.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-center-of, (Human-agent, (Maroon, Clothing), ((Move-upper-extremity), Interacts-with, (Tool, Label/Tennis-racket)))), ((Small, YellowGreen, Circle), Upper-left-of), (Large, DarkGreen, (Man-made-object, Label/Windscreen-fence), Oblique), (Background-view, Upper-center-of, (DarkGreen, Plant, Group-of)), (Teal, (Man-made-object, Label/Light-fixture), Group-of), (Outdoors, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

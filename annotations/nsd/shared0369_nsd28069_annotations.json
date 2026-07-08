@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is a large gray elephant occupying the center and lower-to-middle portion of the frame, facing rightward with its trunk curving downward toward the right side; its body fills most of the horizontal space, standing on pale tan, sandy ground that spans the lower portion of the image. In the foreground upper-right, a red-and-pink brush-like or bristled object hangs vertically, partially cropped by the frame edge, and the elephant's trunk appears to reach toward or near it. A wooden or beam-like structure sits at the mid-right, adjacent to the elephant's head and the pink object, suggesting an enclosure fixture. The background contains vertical metal fence posts on the left and center-left, connected by thin horizontal cables or wires, behind which dense green foliage and tree trunks form a wall of vegetation across the upper portion. The color scheme combines earthy grays and tans with green foliage and a bright pink-red accent. Lighting is bright and natural, casting a soft shadow beneath the elephant on the sunlit ground. The composition centers the elephant with the fence receding leftward, creating depth from foreground animal to background trees.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Elephant, Gray, Large), (Center-of, Image)), ((Animal-agent, Label/Elephant), Interacts-with, (Object, Red, Pink, Label/Bristled-object)), (Sloped-terrain, Tan, (Below, (Animal-agent, Label/Elephant))), ((Object, Label/Wooden-beam), (To-right-of, (Animal-agent, Label/Elephant))), (Building-part, Label/Fence, (Left-side-of, Image)), (Plant, Green, Background-view), (Outdoors, (Luminance, High))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

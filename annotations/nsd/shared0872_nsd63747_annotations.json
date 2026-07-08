@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by an ornate astronomical clock occupying the center and right portions of the frame, with two large circular dials: the upper dial features a blue and gold face with concentric rings and radiating markings, positioned in the upper-center and cut off at the top edge, while the lower dial, a golden calendar-style disk filled with intricate radial patterns and a central circular medallion, sits in the lower-center-right and is illuminated brightly by sunlight. To the right of the lower dial, a small golden sculpted figure stands in profile against the dark stonework. The clock is set into a dark, weathered stone tower rendered in deep browns and blacks, which fills the right and lower-right foreground. On the left side, a beige-toned building wall recedes into the background, containing two rectangular windows framed in stone, and a red-and-yellow striped flag hangs diagonally from a pole in the upper-left area. The overall color scheme combines warm golds, ochres, and beiges with dark browns and blues. Lighting is directional daylight from the right, brightly illuminating the golden dial and casting the stone into shadow, creating strong tonal contrast across the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Clock, (Center-of, Photograph)), (Right-side-of, Photograph)), ((Clock-face, Circle, Large, Blue, Gold, (Upper-center-of, Photograph), (Top-edge-of, Photograph))), ((Clock-face, Circle, Large, Gold, (Lower-right-of, Photograph)), Label/Luminance-contrast-High), ((Sculpture, Gold, Small), (To-right-of, (Clock-face, Gold))), (Building-part, Mineral, (Dark-shade, Brown, Black), ((Right-side-of, Photograph), (Lower-right-of, Photograph))), ((Building, Beige, (Left-side-of, Photograph)), (Background-view)), (Window, Rectangle, Label/Two, (Contained-in, Building)), ((Red, Yellow, (Upper-left-of, Photograph))), (Outdoors, (Label/Luminance-contrast-High)), ((Rightward), (Label/Luminance-High)), (Man-made-object, Label/Flag, (Upper-left-of, Photograph))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

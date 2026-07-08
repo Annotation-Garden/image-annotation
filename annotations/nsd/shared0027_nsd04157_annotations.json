@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three fruits rest on a white cloth-covered surface: a large reddish pomegranate on the left occupies the lower-left, its brown crown-like calyx pointing upward and its skin showing red and greenish-yellow tones; a smaller green apple sits in the center-lower portion with a short brown stem at its top; a second pomegranate, larger and mottled red with tan patches, sits on the right side, also displaying a pronounced brown calyx. These three objects are grouped closely, the apple positioned slightly forward and between the two pomegranates, creating a triangular arrangement. In the background, a window with white-framed panes spans the upper portion of the frame, revealing blurred green foliage and pale sky outside. On the windowsill behind the fruit stand several containers: a white cylindrical pot with holes on the left, a small white bottle center, and a reflective metallic canister on the right. The lighting is natural and diffuse, entering from the window and softly illuminating the fruits from behind and above. The overall color scheme combines warm reds and greens against cool whites and grays, with a calm, balanced still-life composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Ingestible-object/Staple-food, Sweet, Large, Red, (Label/Pomegranate, (Brown, Label/Calyx))), Lower-left-of), ((Ingestible-object/Staple-food, Sweet, Small, Green, (Label/Apple, (Brown, Label/Stem))), Center-of), ((Ingestible-object/Staple-food, Sweet, Large, Red, Tan, (Label/Pomegranate, (Brown, Label/Calyx))), To-right-of), (Triangle, (Group-of, Ingestible-object)), (Background-view, (Window, White, ((Green, Plant), (Luminance/Pale, Natural-feature), Outside-of))), ((White, Cylinder, Man-made-object/Container), (Green, Plant)), (Upper-center-of, Window), (Natural-feature, Luminance, Behind), (Red, Green, White, Gray)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

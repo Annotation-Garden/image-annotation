@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a bearded man wearing a straw hat with a dark band, a short-sleeved patterned shirt, and dark shorts sits in the center-right of the frame on what appears to be a wooden or cardboard block, looking down at a folded map or paper he holds in both hands. To his left, occupying the center and lower-left portion, stands a green bicycle with a wire basket mounted at the front; the basket holds a tall plant bearing pink and reddish blossoms with green leaves that extend into the upper-center of the frame. Vertical wooden posts and beams frame the left and upper areas, suggesting scaffolding, with a red-and-white striped barrier visible at the lower left. In the background, spanning the upper and right portions, are blurred parked cars\u2014one light-colored, others darker\u2014alongside a fenced construction area with mounded dirt and orange traffic cones. The color scheme combines warm wooden browns and tans with green foliage, pink flowers, and gray pavement. Lighting is bright and directional, casting sunlight on the man and creating shadows below, indicating an outdoor daytime setting. The composition balances the seated figure against the bicycle and plant.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Experiment-actor, Male), Sitting, (Interacts-with, (Document, Paper)), (Hold-down, (Document, Paper))), (Head, (Hair, Label/Beard)), (Clothing, Label/Straw-hat, (Dark-shade, Label/Band)), (Clothing, Label/Patterned-shirt), (Clothing, Label/Shorts, Dark-shade), ((Human-agent, Experiment-actor), (Perceive, See), Downward), (Center-of, Foreground-view), (Bicycle, Green, (To-left-of, (Human-agent, Experiment-actor)), Lower-left-of), (Bicycle, (Contained-in, Label/Wire-basket)), (Label/Wire-basket, In-front-of, (Plant, (Pink, Label/Blossom), (Red, Label/Blossom), (Green, Plant/Leaf))), (Plant, Upper-center-of), (Building-part, Label/Scaffolding, (Left-side-of, Foreground-view)), (Building-part, Label/Post), (Building-part, Label/Beam), (Red, White, Label/Striped-barrier, Lower-left-of), Background-view, (Car, Luminance/Blurred, (Light-shade), (Dark-shade), Upper-center-of, Right-side-of), (Label/Fence, Label/Construction-area), (Dirt-terrain), (Orange, Label/Traffic-cone), Outdoors, (Luminance, High), Real-world",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

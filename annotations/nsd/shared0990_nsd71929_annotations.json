@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a single foreground subject: a young male skateboarder captured mid-air against an empty sky, positioned roughly in the center-right of the frame and occupying the majority of the vertical space. He wears a bright red short-sleeved shirt and dark blue denim jeans, with his knees bent sharply upward toward his chest in a crouched jumping posture. His arms are extended, the right arm reaching downward and forward toward the lower-right while the left arm angles upward behind him. On his feet are dark sneakers with white soles, planted on a wooden skateboard whose light tan deck and small wheels are visible in the lower portion of the frame, tilted at an angle beneath him. A red wristband is visible on his right wrist. The entire background is a uniform pale blue sky, gradating slightly lighter toward the lower edge, with no clouds, horizon, or other objects present. Lighting appears bright and natural, coming from the upper area and casting shadow on the underside of his body. The composition is framed by a thin black border. The color scheme contrasts warm red against cool blue.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Thin, Black, Boundary-of), (Foreground-view, ((Human-agent, Male, Jump), (Red, Clothing), (Blue, Clothing), ((Knee, Flex), (Torso-chest)), ((Upper-extremity, Right), (Downward, Forward)), ((Upper-extremity, Left), Upward, Behind), ((Foot), (White, Black)), (Red, Wrist), Interacts-with, ((Tan, Light-shade, Small)))), (Background-view, (Blue, Light-shade, Outdoors)), ((Red), Luminance-contrast, (Blue)), Natural-feature/Sky",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 355,
+            "total_tokens": 776
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 776
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

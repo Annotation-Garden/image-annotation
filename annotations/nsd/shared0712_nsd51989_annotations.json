@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a vast expanse of blue sky occupying roughly the upper three-quarters of the frame, transitioning from a deeper blue at the top to a paler, lighter blue near the horizon at the bottom, with faint wispy white clouds streaked diagonally across the upper-right and center regions. In the lower portion of the frame, positioned center to right and extending toward the bottom edge, is a person captured mid-motion, appearing to lunge or reach dynamically. The individual has curly brown hair and wears a dark navy or black short-sleeved shirt, blue jeans, and a red band on the upper right arm, which is raised and bent overhead. In the person's extended lower hand, positioned center-left in the lower frame, is a bright green and yellow flying disc (frisbee), suggesting an interaction of catching or throwing. The figure occupies the foreground while the sky forms the entire background, with no other objects, people, or scenery visible. Lighting appears natural and directional, illuminating the person's face and arm warmly, casting soft shadows, and indicating a low sun angle. The composition is minimalist, emphasizing negative space and isolating the single active subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Human-agent, Experiment-actor, (Reach, (Green, Yellow, Item))), Interacts-with, (Green, Yellow, Item)), ((Blue, Natural-feature/Sky), Background-view), ((White, Natural-feature/Cloud)), (Brown, Hair), (Black, Clothing), (Blue, Clothing), ((Red, Clothing), Upper-arm), (Foreground-view, (Human-agent, Experiment-actor))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

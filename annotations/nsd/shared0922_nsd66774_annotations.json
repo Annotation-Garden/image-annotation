@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph shows a young woman with blonde hair pulled back in a ponytail, positioned in the center-right of the frame, standing on a grassy field in the foreground. She wears a bright blue short-sleeved top and light gray or beige pants, and she is bent slightly forward in a crouched, ready stance, holding a yellow-green object\u2014possibly a ball\u2014in her hands near her knees, suggesting she is preparing to throw or catch. Her body faces left while she looks downward. The lower third of the frame is dominated by vibrant green grass in bright sunlight. In the background, occupying the upper portion, are tall dark green coniferous trees spanning the center and right, and on the left a cluster of pink flowering blossoms, likely cherry, adding a warm color contrast. A small strip of pale blue sky appears at the upper edge. The overall color scheme combines saturated greens, the pink blossoms, the blue shirt, and blue sky. Lighting is bright and natural, consistent with midday sun, casting clear illumination on the grass and figure. The composition places the human subject off-center against dense foliage.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Human-agent, Female, Label/Young, (Hair, Yellow), Crouching), (Interacts-with, (Man-made-object/Ball, (Yellow, Green)))), ((Human-agent), (Blue, Clothing, Torso)), ((Human-agent), (Beige, Clothing, Lower-extremity)), (Human-agent, Upper-center-of, Foreground-view), (Green, Field, Foreground-view), ((Plant, Green, Large), Background-view), ((Plant, Pink), Left-side-of), (Blue, Background-view), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

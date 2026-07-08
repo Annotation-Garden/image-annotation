@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph features two birds perched on a diagonal branch that spans from the lower right to the upper left of the frame, both positioned in the sharp foreground against a softly blurred blue water background that fills the entire backdrop. The left bird occupies the upper-left-center region, oriented rightward, displaying a green back, a red throat patch, a white forehead, and a black eye stripe, with its long tail extending downward toward the lower center. The right bird sits in the center-right, facing left toward its companion, showing a brown-tan crown and nape, a paler throat, greenish body plumage, and bluish tail feathers directed toward the lower right; its beak appears open or holding a thin dark item. The two birds face each other, suggesting an interaction across the branch. In the lower-left corner, out-of-focus green foliage intrudes into the frame. The color scheme combines the deep blue water with the birds' green, brown, red, and white tones, and the pale gray, lichen-mottled branch. Lighting is bright and directional, illuminating the birds from the upper left and casting subtle shadows, creating a crisp, high-contrast composition centered on the paired subjects.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, Visual-presentation, (Blue, Natural-feature/Water, Background-view, Luminance/Blurred), ((Animal-agent, Label/Left-bird, (Green, Torso-back), (Red, Mouth-part), (White, Forehead), (Black, Eye), (Upper-left-of, Foreground-view), Rightward), Interacts-with, (Animal-agent, Label/Right-bird, (Brown, Head), (Green, Torso), (Blue, Man-made-object/Tail), (Center-of, Foreground-view), Leftward, (Open, Mouth-part))), ((Animal-agent, Label/Left-bird), (Above, (Plant/Branch, Label/Diagonal-branch))), (Plant/Branch, Gray, (From-to, (Lower-right-of, Upper-left-of))), (Green, Plant, Lower-left-of, Luminance/Blurred, Foreground-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

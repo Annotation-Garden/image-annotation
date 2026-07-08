@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground at the lower portion of the frame, turquoise-blue water occupies the bottom third, with a bare, pale grey fallen tree branch extending diagonally from the lower-left edge toward the center-right, resting partly submerged in the water. In the middle ground, a dense mass of green foliage and shrubbery dominates the left and center, rising from the water's edge; a tall bare branch with sparse reddish-brown leaves protrudes upward near the upper-center. On the right side of the frame, in the middle ground, a single grey elephant stands on a sandy tan shoreline, facing left with its trunk lowered toward the ground, positioned near a light beige stone or rock wall behind it. In the background, additional green trees extend across the upper-right, and a bright blue sky fills the top of the frame, scattered with thin wispy white clouds and faint diagonal streaks. The lighting is bright and natural, consistent with daytime sun, casting clear illumination on the elephant and foliage. The overall color scheme combines saturated blues, vivid greens, and warm earthy tans, creating a balanced, layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Real-world, (Foreground-view, (Turquoise, Natural-feature/Water), (Below, Center-of)), ((Plant, Gray, Length), (Contained-in, Natural-feature/Water), (Lower-left-of)), (Background-view, (Green, Plant), Center-of), ((Plant, Red-color), Above), ((Animal-agent, Animal/Elephant, Gray), (Right-side-of), (Spatial-relation/Facing, Leftward)), (Beige, Building-part, Behind), (Background-view, (Green, Plant), Upper-right-of), (Background-view, (Blue, Natural-feature/Sky), Top-of), (White, Natural-feature/Cloud), Luminance/Daytime",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

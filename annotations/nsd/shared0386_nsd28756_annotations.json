@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a formation of six yellow propeller aircraft flying diagonally across a bright blue sky, arranged in a descending line from the upper-left to the lower-right of the frame. The leading aircraft sits in the upper-left region, banked at an angle, while the remaining five trail behind toward the lower-right, growing progressively closer together as they descend through the center and right portions of the frame. Each aircraft trails a thin white smoke plume, and numerous crisscrossing white contrails sweep across the entire background, curving from the upper-left, arcing through the center, and extending toward the lower edges, creating diagonal and looping lines against the sky. The aircraft occupy the foreground as sharply defined objects, while the smoke trails and open blue sky form the background. The overall color scheme is dominated by saturated blue and crisp white, with the warm yellow bodies of the planes providing contrast. Lighting appears bright and natural, consistent with clear daytime conditions, illuminating the tops and sides of the aircraft. The composition emphasizes diagonal movement, with the planes and trails guiding the eye from upper-left toward lower-right across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Image, (Foreground-view, (Group-of, Aircraft, Yellow, (Count/6))), (Background-view, (Blue, Natural-feature/Sky)), (Visual-attribute/Diagonal, Upper-left-of,  Lower-right-of)), ((Aircraft, Upper-left-of), (Ahead-of, (Group-of, Aircraft))), (Aircraft, Rotated), ((Group-of, Aircraft, White, Smooth)), (White, Visual-attribute/Curved, Background-view), (Label/Saturation-High, Blue), (White), (Yellow), (Luminance/Bright, Outdoors, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large, rustic pizza occupying nearly the entire frame, resting on a round metallic silver serving tray that fills the center and extends to all edges. The pizza displays a charred, blistered crust with distinctly blackened sections visible along the lower and left portions, indicating high-heat baking. Its surface is topped with melted golden-brown cheese, reddish tomato sauce peeking through in patches, scattered dark elements resembling mushrooms or olives concentrated in the center and upper areas, and abundant bright green fresh basil leaves distributed across the top, middle, and right regions. In the upper portion of the frame, behind the tray, a horizontal band of teal-blue and weathered wood surface is faintly visible as the background, partially blurred. The lower left corner reveals a warm brown wooden table surface. The overall color scheme combines warm earthy tones\u2014golden yellows, browns, and reddish hues\u2014contrasted with the cool teal background and vivid green herbs. Lighting appears directional from the upper area, casting soft highlights on the cheese and creating subtle shadows beneath the crust's raised edges. The composition is centered and top-down, emphasizing the circular symmetry of both p",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Ingestible-object/Main-dish, Savory, Large, Visual-attribute/Round, (Cross, Black), (Label/Cheese, Yellow-color), (Red-color), (Green, Plant)), (Top-of, (Circle, Silver))), (Center-of, Photograph), ((Teal, Steel), Background-view), ((Brown, Furnishing), Lower-left-of, Photograph), (Ingestible-object/Main-dish, Label/Pizza)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

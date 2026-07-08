@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a wooden rowing boat occupying the foreground, angled diagonally from the lower-left toward the center-right of the frame, with its bow pointing left and bearing the hand-painted name \"SHADY NOOK\" in black lettering on the white hull. The boat features a bright blue upper band and interior trim contrasting against the white lower hull; inside, near the center, sits a blue storage box, dark equipment, and a black object, while an orange coiled rope drapes over the right side and hangs down toward the lower-right. A metal pole or roller rests horizontally beneath the bow at the lower-center. The boat sits on a pale grey pebble beach that fills the middle-ground and extends leftward and rightward. In the background, a flat blue-grey sea stretches horizontally across the upper-middle portion, meeting a light, hazy sky filled with soft white and grey clouds in the upper third. The overall color scheme combines cool blues and greys with the white hull and warm orange rope accent. Lighting is diffuse and overcast, producing soft shadows and even illumination. The composition balances the detailed boat against an empty, calm seascape horizon.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Boat, White, (Word, ID/SHADY NOOK)), (Foreground-view, Center-of)), ((Blue, Label/Boat-part), Top-of, (White, Boat)), (Blue, Box, (Within, Boat)), (Black, Object, (Within, Boat)), ((Orange, Label/Rope), (Right-side-of, Boat)), ((Manufactured-material/Metal, Label/Roller), (Underneath, Boat), Lower-center-of), (Gray, Label/Pebble-beach, (Below, Boat)), (Blue, Gray, Label/Sea, Background-view), (White, Gray, Label/Cloud, (Above, Label/Sea)), (Environmental-property/Overcast, Label/Diffuse-lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

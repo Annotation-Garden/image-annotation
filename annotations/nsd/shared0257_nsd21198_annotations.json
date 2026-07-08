@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A blue rowboat occupies the center-left of the frame in the middle ground, positioned on a body of water with three people seated within it; the individuals are oriented facing left, and two wear light-colored, wide-brimmed hats while a third has darker hair. A small motor is visible at the stern on the left side of the boat, and faint ripples trail behind and beside it, indicating movement across the water. The foreground consists of the water surface, which fills the entire lower half of the frame and displays a heavily textured pattern of sparkling light reflections, particularly dense in the lower-center and lower-right regions. In the background, spanning the upper portion of the frame, is a dense tree line of dark green foliage, with a band of lighter green and tan grassy vegetation directly at the waterline behind the boat. The overall color scheme is dominated by deep greens, blues, and dark tones, with the boat's blue hull providing a saturated focal point. Lighting appears natural and directional, creating bright specular highlights on the rippled water while the trees remain shadowed and low in luminance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Boat, Blue, (Center-of, Foreground-view)), (Contained-in, (Natural-feature, Label/Water))), (Group-of, (Human-agent, Count/3, (Spatial-relation/Facing, Leftward))), (Engine, (Left-side-of, Boat)), ((Natural-feature, Label/Water-ripples), (Behind, Boat)), (Natural-feature, Label/Water, Lower-center-of, Background-view), ((Plant, Dark-shade, Green), (Behind, Boat)), ((Plant, Light-shade, Green), (Adjacent-to, (Natural-feature, Label/Water))), (Label/Luminance-contrast-High, (Natural-feature, Label/Water))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 344,
+            "total_tokens": 765
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 765
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

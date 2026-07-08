@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a wet roadway scene under an overcast, gray sky occupying the upper portion of the frame. In the immediate foreground, lower center and lower left, a dark-colored sedan with illuminated red brake lights sits on the reflective, rain-slicked asphalt, its rear license plate area partially visible. To the right of center in the mid-foreground, a dark green or gray vehicle is positioned, also showing red rear lights. Behind these, in the middle ground, multiple cars queue in traffic, their forms progressively less distinct. A red traffic signal glows in the upper center-left, mounted on posts. Several tall streetlight poles rise vertically along both sides, extending into the upper frame. On the left edge, a green freeway entrance sign with white text and a route marker reading \"60 EAST\" is visible, while on the right, additional green directional signs and a yellow diamond-shaped warning sign appear near dense green trees and shrubbery lining both roadsides. The overall color scheme is muted and desaturated, dominated by grays, greens, and dark tones, with the red brake lights and traffic signal providing the only vivid color accents against the flat, diffuse lighting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Road, Label/Wet, Paved-terrain), (Gray, Natural-feature/Sky, Above), ((Car, Black, (Red, Label/Light)), Lower-center-of), ((Car, Black, (Red, Label/Light)), Lower-left-of), ((Car, Green-color, (Red, Label/Light)), To-right-of, Center-of), (Group-of, Car, Behind), (Red, Alert, (Above, To-left-of), Label/Traffic-signal), (Group-of, Item, Vertically-oriented, Label/Streetlight-pole), ((Green-color, Document, White, Label/60-EAST), Left-edge-of), ((Green-color, Document), Right-side-of), (Yellow, Warning, Label/Diamond-sign), (Group-of, Plant, Green-color), Gray-color, Green-color, Luminance/Desaturated",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

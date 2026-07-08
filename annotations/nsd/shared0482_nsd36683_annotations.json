@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A black cat occupies the center-right foreground of the frame, seated in profile on the hood of a red car, facing toward the left; the cat's body is rendered as a dark silhouette with visible pointed ears, an arched back, and a tail curling downward, and its head is turned so it appears to look toward a green metal gate. The red car dominates the lower and right portions of the image, showing a reflective dark windshield in the upper right, a side mirror below the cat, and a glossy red hood filling the lower right corner. In the background on the left stands a green accordion-style security gate or grille with a diamond lattice pattern, set against a white wall in the upper-center, while a beige or brick wall with faint arched detailing appears at the far upper right. The lower left shows a rough gray textured wall or pavement surface. The color scheme contrasts the saturated red of the car and the green gate with the neutral white and gray walls and the black cat. Lighting appears diffuse and even, casting soft shadows, with reflections visible on the smooth car surfaces. The composition balances geometric background lines against the organic cat form.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal, Black, Foreground-view), (Center-of, Image)), ((Animal, Black), (Top-of, (Car, Red))), ((Animal, Black), (To-left-of, (Building-part, Green))), (Car, Red, (Lower-right-of, Image)), (Window, (Upper-right-of, Image)), (Building-part, Green, Label/Label-Lattice-Diamond, (Left-side-of, Image)), (White, (Upper-center-of, Image)), (Beige, (Upper-right-of, Image)), (Gray, Rough, (Lower-left-of, Image)), (Red, Green, Greater-than, (White, Gray, Black))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

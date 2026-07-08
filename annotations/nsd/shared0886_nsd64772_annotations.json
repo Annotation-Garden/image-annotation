@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-lower portion of the frame stands a young batter wearing a red helmet, a black jersey with white lettering, and pink socks or leg coverings, gripping a bat that extends toward the upper-right where a small yellow-green ball is visible mid-air, suggesting an active moment of hitting. The batter stands on a light tan dirt infield marked with white chalk lines forming the batter's box and home plate area, occupying the lower-center and lower-left region. Behind the batter, in the mid-ground, a chain-link fence spans horizontally across the frame, and seated along a green bench are several other children, some wearing dark and white uniforms and helmets, positioned across the left and center. In the background, beyond the fence, a green playing field stretches out with additional small figures of players scattered, and a dense tree line of dark green foliage rises along the upper portion beneath a pale, overcast gray-white sky. The overall color scheme combines earthy tans, greens, and muted accents of red and pink. Lighting is diffuse and soft, casting minimal harsh shadows, creating an evenly illuminated, balanced composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-center-of, (Human-agent, Experiment-actor, (Label/Hold, (Tool, Label/Bat)))), ((Red, Label/Item-Label-Helmet), (Black, Clothing), (White, Character), (Pink, Clothing)), ((Small, Yellow, Green, Circle, Label/Ball), Upper-right-of), (Dirt-terrain, Tan, Lower-center-of), (White, Line-noise-artifact, Label/Chalk-lines), ((Human-agent, Experiment-actor), (Behind, (Human-agent, Experiment-actor))), (Man-made-object, Label/Chain-link-fence, Horizontally-oriented), (Green, Furnishing, Label/Bench), (Group-of, (Human-agent, Experiment-actor)), (Background-view, (Green, Field)), (Upward, Plant, Dark-shade, Green), (Gray-color, White, Natural-feature/Sky), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

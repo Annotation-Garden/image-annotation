@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a peach-colored ceramic sink with dual chrome faucet handles extends outward, its curved basin dominating that corner, while beneath it exposed metal plumbing pipes are visible. To the right of the sink in the lower-center, a toilet with a closed frosted-glass or translucent lid sits, and resting atop its tank is a boxy object with a greenish reflective front, positioned center-frame at mid-height. In the background upper-left, a wood-paneled ceiling angles across the top, and a large mirror occupies the upper-center reflecting light. Wall-mounted shelves on the left hold a wooden bowl and various items, while a small framed picture hangs on the yellowish wall in the center. On the right side, a white shower curtain hangs from a chrome rod, spanning from upper to lower frame. Clear glass jars and containers sit on a shelf in the center-right. The overall color scheme is warm, dominated by peach, tan, and wood-brown tones against pale yellow walls. Lighting appears soft and diffuse, with brighter illumination on the right shower area and gentle shadows in corners, creating a cozy, enclosed bathroom composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Ceramic, PeachPuff, Label/Sink, Foreground-view), Lower-left-of), ((Steel, Label/Faucet-handles), Part-of, (Ceramic, Label/Sink)), ((Steel, Label/Plumbing-pipes), Below, (Ceramic, Label/Sink)), ((Label/Toilet, Glass), Lower-center-of), (((Green-color, Label/Box-object), Center-of), Top-of, (Label/Toilet-tank)), ((Building-part, Roof, Manufactured-material/Wood), Upper-left-of), ((Glass, Label/Mirror), Upper-center-of), ((Furnishing, Label/Shelves, Left-side-of), (Manufactured-material/Wood, Box)), ((Painting, Small), Center-of), (Yellow, Man-made-object/Wall), ((White, Label/Shower-curtain, Right-side-of), (Steel, Label/Rod)), ((Glass, Label/Jars), (Furnishing, Label/Shelf, Right-side-of)), (Luminance/Warm), (Room, Label/Bathroom, Indoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

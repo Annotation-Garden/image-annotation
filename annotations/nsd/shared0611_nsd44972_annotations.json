@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and slightly lower in the frame, a black and silver motorcycle is parked on its kickstand, angled toward the viewer. Behind it, occupying the midground and background, stands a vintage-style gas station painted in a patriotic red, white, and blue scheme, its lower walls decorated with white stars against blue and red horizontal bands. Two gas pumps in matching red, white, and blue stand centrally beneath a white canopy, with a \"Coca-Cola in Bottles\" sign mounted on the upper center of the building. On the left side, a white garage door is flanked by red signage reading \"Goodyear Truck Tires\" and \"Mobiloil.\" At the upper center, a red Pegasus (flying horse) statue is mounted atop the structure against a background of bare, leafless trees and a clear blue sky. On the lower right, orange traffic cones stand near white signs, one reading \"No Parking.\" Lighting appears natural and bright, casting soft shadows, suggesting daytime. The overall composition is symmetrical and dominated by red, white, and blue tones, balanced against the muted browns of the trees and gray pavement below.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Symmetrical, (Red, White, Blue)), ((Vehicle, Black, Silver, Label/Motorcycle), (Lower-center-of, Foreground-view)), ((Building, (Red, White, Blue), Label/Gas-station), Background-view), (Star, White), (Horizontal-eye-movement-artifact), ((Device, (Red, White, Blue), Label/Gas-pump), Center-of), (Icon, Label/Coca-Cola-sign), ((Door, White), Left-side-of), (Label/Goodyear-Truck-Tires, Red), (Label/Mobiloil, Red), ((Sculpture, Red, Label/Pegasus-statue), Upper-center-of), (Plant, Brown, Label/Leafless-trees), (Blue, Label/Sky), ((Navigational-object, Orange, Label/Traffic-cone), Lower-right-of), (White, Label/No-Parking-sign), (Luminance/Bright, Label/Daytime), (Gray, Path, Label/Pavement)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

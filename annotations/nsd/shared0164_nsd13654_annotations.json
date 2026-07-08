@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-right, a person wearing a dark riding helmet and a purple long-sleeved shirt with the number \"3\" sits astride a dark brown horse that dominates the lower-central portion of the frame, its legs in motion across sandy pale-brown ground. The horse faces toward the viewer, head lowered, occupying the center-to-lower region. To the left, in the mid-ground, a second person stands wearing a white hooded top and light tan trousers with brown boots, holding a thin line that extends toward the horse, suggesting a training interaction between the standing figure and the mounted rider. Directly behind the horse, center-right, stands a blue vertical jump or barrier structure with white poles. In the background, a white post-and-rail fence runs horizontally across the middle of the frame, beyond which lie green grassy fields, scattered trees, and hedgerows under a pale, overcast sky occupying the upper edge. The overall color scheme combines earthy browns and tans with green foliage, accented by the purple shirt and blue barrier. Lighting appears soft and diffuse, casting faint shadows beneath the horse, indicating an outdoor daytime setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-participant, (Sitting, (Ride, (Animal-agent, Animal/Horse)))), (Foreground-view, Center-of)), (Purple, Clothing, Torso, (Label/Number-3)), (Black, Clothing, Head), ((Brown-color, Dark-shade, Animal-agent, Animal/Horse), (Lower-center-of, Move)), (Towards, Experiment-participant), ((Label/Sandy-brown, Terrain), Terrain/Ground), ((Human-agent, (Standing, (Hold-down, (Length, Thin)))), (Left-side-of, Background-view)), (White, Clothing, Head), ((Tan, Clothing), Lower-extremity), (Brown, Clothing, Foot), ((Human-agent), Interacts-with), (Interacts-with, (Animal-agent, Animal/Horse)), ((Blue, Vertically-oriented, Building-part/Barrier), (Behind, (Animal-agent, Animal/Horse))), (White, Building-part/Pole), ((White, Building-part/Fence), Horizontally-oriented, Center-of), (Green, Grassy-terrain, Background-view), (Plant, Background-view), (White, Outdoors, Background-view), (Label/Upper-edge-of, Outdoors), (Low, Luminance-contrast/0.3), Outdoors, (Natural-feature/Sky, Environmental-property/Overcast, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

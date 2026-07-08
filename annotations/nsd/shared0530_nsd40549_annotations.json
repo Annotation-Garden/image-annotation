@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two young children occupy the foreground center of the frame, seated closely together on what appears to be a white surface at the lower portion of the image. The child on the right, wearing a green and tan short-sleeved shirt printed with \"DINO CHARGE\" and a dinosaur graphic, has short blond hair and holds a green-handled toothbrush to his mouth with his right hand while his left hand touches the side of his face. The child on the left, positioned slightly behind and to the side, has curly light-brown hair and wears a green long-sleeved shirt; he holds an orange and yellow toothbrush toward his mouth. Both children direct their gaze toward the camera. In the background, tiled walls fill the upper and side regions, showing pale yellow and cream-colored square tiles, with a band of darker tiles visible along the lower right edge. A white circular object appears in the upper left corner. The overall color scheme combines muted greens, tans, and pale yellows, with soft, even lighting suggesting an indoor bathroom setting. The composition is centered and tightly framed, emphasizing the two seated figures against the tiled backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Indoors, Foreground-view, (Center-of, Image), ((Human-agent, Label/Child), Interacts-with, (Tool, Label/Toothbrush)), ((Human-agent, Label/Child), (Green, Yellow, Clothing), (Label/Curly, Brown, Hair)), ((Human-agent, Label/Child), (Green, Tan, Clothing, Label/DINO-CHARGE), (Color/Blond, Hair), ((Right, Hand), (Hold-down, (Green, Tool, Label/Toothbrush))), ((Left, Hand), (Touch, (Label/Side-of, Face)))), (Tool, Label/Toothbrush, Green), (Tool, Label/Toothbrush, Orange, Yellow), (Background-view, (Building-part, Label/Tiled-wall, Yellow, White)), (Upper-left-of, (Circle, White)), Small, Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

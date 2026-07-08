@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A lone surfer occupies the lower-center of the frame, positioned in the foreground, standing waist-deep in the water with their back turned toward the viewer. The figure appears silhouetted in dark tones, likely wearing a wetsuit, with one arm extended to the right, resting on a partially submerged surfboard that emerges near the lower-right region of the image. The surfer's head is bald or closely shaven, and their body is oriented away, facing the incoming sea. Behind them, in the middle ground, a breaking wave forms a horizontal band of white, churning foam that stretches across the center of the frame from left to right. The background, occupying the upper portion, consists of rolling, textured ocean water with additional smaller waves and swells receding toward an unseen horizon. The overall color scheme is dominated by cool blues, teals, and greens, punctuated by white foam and warm golden highlights reflecting on the water's surface, suggesting low-angle sunlight. The lighting appears directional, illuminating the water's texture and creating luminous patches. The composition is balanced horizontally, with the human figure providing a central focal point against the expansive, dynamic water.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Lower-center-of, Image), (Standing, (Contained-in, Natural-feature/Water)), Black, (Clothing, Label/Wetsuit), (Head, Label/Bald), (Backward, (Away-from, Experiment-participant)))), ((Human-agent), Interacts-with, (Tool, Label/Surfboard, (Lower-right-of, Image))), (Label/Middle-center-of, Image, (White, Label/Breaking-wave, Horizontally-oriented)), (Background-view, (Upper-center-of, Image, Natural-feature/Water, (Rough, Label/Textured))), (Blue-color, Cyan-color, Green-color, White, Gold), (Luminance, Label/Directional), Natural-feature/Ocean",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

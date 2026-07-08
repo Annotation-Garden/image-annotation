@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A diesel locomotive dominates the center-to-right foreground, painted with a red lower body, deep blue midsection, and a yellow-outlined chevron near the front, bearing the number \"753\" on a plate below the windshield. The train advances toward the viewer along curving railway tracks that sweep from the lower-right corner toward the center, with metal rails and wooden sleepers clearly visible in the lower portion of the frame. On the left, a raised concrete platform extends into the middle ground, where a person in dark clothing stands beside a green railing and a graffiti-marked wall. Two signal posts appear on the left-center background, one showing a red light near the upper-center area. Additional signal equipment stands on the right side. A metal overhead gantry structure spans the top of the frame. Lush green foliage, including palm trees, fills the background on both left and right sides. The overall color scheme combines the vivid red, blue, and yellow of the train against muted greens and grays. Lighting is soft and diffuse, suggesting overcast conditions, and the composition is centrally weighted with converging track lines drawing focus toward the approaching locomotive.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Vehicle, Train, (Red, Blue, Yellow), Label/753, (Center-of, Foreground-view)), ((Vehicle, Train), (Towards, Experiment-participant)), (Path, Rough, (Lower-right-of, Foreground-view)), (Steel, (Part-of, Path)), (Building-part, (Left-side-of, Background-view)), ((Human-agent, (Black, Clothing)), (Left-side-of, (Path, (Green, Steel)))), (Green, Steel, (Left-side-of, Background-view)), ((Device, Red), (Upper-center-of, Background-view)), (Device, (Left-side-of, Background-view)), (Device, (Right-side-of, Background-view)), (Man-made-object, Steel, (Top-of, Background-view)), (Plant, Green, (Left-side-of, Background-view)), (Plant, Green, (Right-side-of, Background-view)), (Low, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

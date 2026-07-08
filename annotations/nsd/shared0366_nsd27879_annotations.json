@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A herd of elephants occupies the foreground of this photograph, positioned across the lower and central portions of the frame. On the left edge, a smaller elephant faces rightward, its body partially cropped, with its trunk lowered toward the tall grass in the lower-left area. In the center and right, two larger adult elephants dominate the scene; the central elephant faces right and displays a visible eye, ear, and pale ivory tusks curving downward near the lower-center. The right elephant, oriented toward the viewer with its trunk hanging straight down and tusks visible, overlaps the central animal, suggesting close proximity within the group. Their gray, textured hides show creases and folds across ears and bodies. The background consists of dense green foliage and trees occupying the upper half of the frame, with scattered reddish spots among the leaves in the upper-left region. Dry, pale golden grass fills the lower foreground, partially obscuring the elephants' legs. The overall color scheme combines earthy grays, warm greens, and tan tones. Lighting appears soft and natural, illuminating the elephants' left sides while casting subtle shadows, creating a balanced, layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Group-of, Animal/Elephant, Gray, Tactile-texture)), ((Animal/Elephant, Small, (Rightward, (Nose, Downward))), Left-edge-of), ((Animal/Elephant, Large, Rightward, (Eye, Ear, White-color)), Center-of), ((Animal/Elephant, Large, Towards, (Nose, Downward)), Right-side-of), (Background-view, (Green, Plant), Upper-center-of), ((Red, Point), Upper-left-of), (Foreground-view, (Plant, White-color), Below), (Gray-color, Green-color, Tan)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

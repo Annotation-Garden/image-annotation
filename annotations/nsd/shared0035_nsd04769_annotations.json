@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a round layered cake positioned in the center and lower portion of the frame, occupying the majority of the visual field in the foreground. The cake is covered in white frosting and rests on a white lacy paper doily, which extends beneath and around it toward the lower and right edges. On the top surface, green cursive icing spells \"Happy Birthday Joan,\" located in the upper-left and center area of the cake's top, while a cluster of red frosting flowers with green leaves sits in the upper-right region of the cake. A wedge has been cut and removed from the front-center of the cake, revealing internal layers of yellow sponge alternating with white cream and a red filling. A metal serving knife with a serrated blade lies horizontally across the lower-right foreground, its handle extending off the right edge. Loose crumbs and frosting fragments scatter on the doily near the cut. The background, visible in the upper-right corner, is a dark, indistinct brown surface. The overall color scheme centers on white with green, red, and yellow accents. Lighting appears artificial and directional, casting soft shadows and highlights across the frosting's textured surface.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Ingestible-object/Dessert, Sweet, Circle, White, (Center-of, Photograph), (Foreground-view)), (White, Paper, (Underneath, Ingestible-object/Dessert)), (Green, Word, (Top-of, Ingestible-object/Dessert), Label/Happy-Birthday-Joan), ((Red, Plant), (Green, Plant/Leaf), (Upper-right-of, Ingestible-object/Dessert)), (Yellow, (Part-of, Ingestible-object/Dessert)), (White, (Part-of, Ingestible-object/Dessert)), (Red, (Part-of, Ingestible-object/Dessert)), ((Manufactured-material/Metal, Tool, Horizontally-oriented), (Lower-right-of, Photograph)), (Brown, Dark-shade, Background-view, (Upper-right-of, Photograph))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a small bathroom dominated by white subway tile covering the walls, arranged with visible dark grout lines that create a repeating rectangular grid pattern across the background. In the center-left foreground stands a light wood, wall-mounted vanity with two horizontal drawers, supporting a white rectangular sink basin with a chrome faucet positioned at its center. A teal-blue hand towel hangs over the front-left edge of the vanity, and a matching teal cup rests on the counter's right side near a white cylindrical container. In the lower-right foreground sits a white toilet with its tank against the tiled wall. On the floor, a teal-and-white patterned bath mat occupies the lower-center, contrasting with the gray tiled floor. In the upper-center background, a wood-framed mirror reflects two teal cups sitting on a shelf, and a horizontal light fixture above it emits warm illumination, the brightest area in the frame. To the right, a wooden door frame and dark door edge are partially visible. The overall color scheme combines neutral whites, warm wood tones, and gray, punctuated by repeated teal accents, with soft, warm artificial lighting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Room, Label/Bathroom, Small), ((White, Rectangle, Repetitive, Pattern), (Boundary-of, Room)), ((Furnishing, Label/Vanity, Brown), (Horizontally-oriented, Rectangle)), (White, Rectangle, Label/Sink), (Steel, Label/Faucet, Center-of, Label/Sink), ((Clothing, Label/Towel, Cyan), (Top-of, (Left-edge-of, Furnishing))), ((Cyan, Label/Cup), (Right-side-of, Furnishing)), (White, Cylinder, Label/Container), ((White, Label/Toilet), (Lower-right-of, Room)), ((Cyan, White, Pattern, Label/Bath-mat), (Lower-center-of, Room)), (Gray, Rectangle, Label/Floor-tile), ((Brown, Label/Mirror), (Upper-center-of, Room)), ((Cyan, Label/Cup), Group-of, (Furnishing, Label/Shelf)), ((Display-device, Label/Light-fixture, Horizontally-oriented), Above, (Label/Mirror)), (High, Luminance), ((Door, Brown), (Right-side-of, Room)), (White, Brown, Gray, Cyan, Color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

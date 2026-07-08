@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two African elephants occupy the central and lower portions of the frame, standing on green grassland; the left-side elephant faces right while the right-side elephant faces left, and their trunks and heads meet near the center, with their tusks visible and appearing to interact or touch in a face-to-face engagement. The left elephant's large ear is extended outward, and its body extends toward the lower-left corner, while the right elephant's bulkier body fills the center-right and lower-right area. Both animals display grayish-brown hides with reddish-brown earthen tones, particularly on their backs and lower bodies. The background upper-left contains a tall, flat-topped acacia tree with a spreading canopy, and dense green foliage and shrubbery span the middle-to-upper portions of the frame across the horizon. The upper region shows a pale, overcast sky in muted white and light blue. The lighting is diffuse and soft, without harsh shadows, suggesting cloudy conditions. The overall color scheme is dominated by vibrant greens in the grass and vegetation, contrasted against the darker brown-gray elephants, creating a naturalistic composition centered on the two interacting animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Animal-agent, Species-identifier/African-elephant, Gray-color, Brown-color), Interacts-with)), ((Animal-agent, Species-identifier/African-elephant), Label/Face-to-face-with), (Green, Grassy-terrain), (Background-view, (Upper-left-of, Plant), (Green, Plant)), (Above, (White, Label/Light-blue, Natural-feature/Sky)), (Luminance/Diffuse, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, dominating the center and lower-center of the frame, stands the blank back side of an octagonal sign (likely a stop sign) mounted on a gray metal pole that runs vertically down the middle. Above this, in the upper-center, two green street signs with white lettering project from the pole: the upper reads \"TITANS WAY\" and the lower, larger one reads \"VICTORY AVE.\" In the background, occupying the center and right, is a large stadium structure with tiered concrete levels and horizontal railings; a red construction crane rises diagonally on the left-center behind the pole. On the right side, a dark rectangular sign displays \"LP\" in white and \"FIELD\" in orange lettering. Bare, leafless tree branches with a few clinging brown leaves intrude from the left edge and lower-left foreground. The overall color scheme is muted and cool\u2014grays, dull greens, and reds\u2014under flat, overcast lighting that casts no strong shadows and produces a hazy, pale-gray sky in the upper portion. The composition is vertically anchored by the pole, with the blank sign creating a large empty focal mass against the busier architectural background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, ((Foreground-view, Center-of, Lower-center-of), (Vertically-oriented, (Gray, Steel), Navigational-object)), ((2D-shape, Visual-attribute/Octagon), (Connected-to, (Vertically-oriented, (Gray, Steel), Navigational-object))), ((Upper-center-of), (Green, Rectangle, (Word, ID/TITANS-WAY))), ((Upper-center-of), (Green, Large, Rectangle, (Word, ID/VICTORY-AVE))), ((Center-of, Right-side-of, Background-view), (Large, Building, Steel)), ((Left-side-of, Center-of, Background-view), (Red, Machine, Oblique)), ((Right-side-of), (Black, Rectangle, (Word, ID/LP), (Orange, (Word, ID/FIELD)))), ((Left-edge-of, Lower-left-of, Foreground-view), (Brown, Plant)), (Environmental-property/Overcast, (Upper-center-of, (Gray, Light-shade)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

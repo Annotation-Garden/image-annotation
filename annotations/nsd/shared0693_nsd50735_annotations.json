@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by two parallel diesel railcars occupying the center and left-center of the frame, positioned in the middle ground with their yellow front ends facing the viewer; both display headlights, front windshields, and route indicators, with the left train showing a slightly brighter yellow front and the right train sitting marginally forward. In the lower foreground, multiple sets of steel railway tracks laid on gray gravel ballast extend diagonally from the lower-right toward the trains, converging in the center. On the left side, a concrete station platform edge runs longitudinally, bordered by a chain-link fence and a small gray shelter structure in the mid-left. To the right, a red-and-gray station building with a sloped roof and signage sits in the mid-ground. The background upper portion is filled with dense green eucalyptus trees beneath a clear, cloudless blue sky occupying the top third. Lighting is bright natural daylight, casting shadows beneath the trains and creating high contrast. The overall color scheme combines yellow trains, green foliage, blue sky, and gray gravel and concrete, producing a balanced, symmetrical composition centered on the paired trains.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Photograph, (Vehicle, Yellow, (Center-of, Image)), (Vehicle, Yellow, Light-shade), (Vehicle, Yellow, In-front-of), ((Vehicle, Yellow), Below), ((Steel, Path), Gray, (Lower-center-of, Image)), (Building-part, (Left-side-of, Image)), (Building, Red, Gray, Roof, (Right-side-of, Image)), (Plant, Green, (Upper-center-of, Image)), (Blue, (Top-of, Image)), (Outdoors, Symmetrical), (Blue, Natural-feature/Sky, (Top-of, Image)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

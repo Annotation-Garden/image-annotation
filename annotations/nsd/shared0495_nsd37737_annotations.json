@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A row of terraced brick houses dominates the right and center of the frame, extending diagonally from the lower-right foreground into the middle-background toward the left, their pitched roofs featuring triangular gabled dormers and multiple chimney stacks along the upper portion. Numerous television aerials protrude against the pale blue sky occupying the upper third, with a tall pole rising prominently in the upper-right background. In the foreground lower-right, a green plastic wheelie bin sits beside the brick wall, and a white street sign reading \"PIPPER STREET\" is mounted on the corner building at center-right. A narrow paved road curves through the center and lower-left, marked with white dashed lines and a pedestrian crossing pattern in the foreground. On the left, dense green foliage and trees flank a low wall, with parked cars barely visible in the mid-left background along the roadside. Black lampposts and bollards line the pavement in the center. The color scheme combines warm reddish-brown brickwork with green vegetation, blue sky, and white window trims. Lighting appears natural and bright, casting soft shadows, suggesting daytime. The composition uses strong diagonal perspective drawing the eye leftward down the street.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, ((Building, Brown, (Roof, Triangle), Right-side-of), (To-right-of, Center-of)), (Label/Chimney, Top-of, Building), (Label/Antenna, Above, Building), (Window, White), ((Blue, Natural-feature/Sky), Above), (Green, Plant, Plant/Tree, Left-side-of), (Road, Label/Paved, Center-of), (White, Dash, Road), ((Car, Left-side-of), Background-view), (Green, Furnishing, Label/Wheelie-bin, Lower-right-of), ((Textblock, Label/Street-sign, White, ID/PIPPER STREET), In-front-of, Building), (Machine, Label/Lamppost, Center-of), (Machine, Label/Bollard, Center-of), ((Building, Brown), To-left-of, (Green, Plant)), Luminance/Bright, Luminance/Daytime",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 394,
+            "total_tokens": 815
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 815
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

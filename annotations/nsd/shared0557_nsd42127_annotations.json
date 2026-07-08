@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A tabby cat's face dominates the foreground, positioned centrally and occupying the majority of the frame from the upper-center down to the lower portion. The cat's head rests horizontally, with its pink nose located at the center, flanked by prominent white whiskers extending outward to the left and right. Its eyes, half-closed and appearing drowsy, sit in the upper-center, showing brown and amber tones. The fur displays gray, brown, and black striping across the forehead and ears, transitioning to white around the muzzle and chin. The cat is nestled beneath and between fabric: a white blanket or sheet drapes across the entire upper portion of the frame, forming soft folds, while a textured gray knitted or woven material lies beneath the cat's chin in the lower foreground. Additional pale fabric appears on the left edge. The lighting is soft and natural, brightest in the upper-right background where the white cloth catches illumination, creating gentle shadows around the cat's face. The overall color scheme is muted and neutral, combining whites, grays, and warm browns. The composition is tightly cropped, centering on the cat's resting face, conveying an enclosed, sheltered arrangement between the surrounding textiles.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Cat), (Center-of, Foreground-view)), (Face, (Nose, Pink), (Label/Whisker, White, (To-left-of, Nose)), (Label/Whisker, White, (To-right-of, Nose)), (Eye, Eyes-closed, Drowsy, Brown, Orange-color, (Upper-center-of, Face)), (Hair, Gray, Brown, Black), (Mouth, White)), ((Clothing, White, Label/Blanket), Above, (Animal-agent, Animal/Cat)), ((Clothing, Gray, Tactile-texture, Label/Knitted-material), Below, (Animal-agent, Animal/Cat)), (Clothing, Left-edge-of), (Luminance, High, (Upper-right-of, Background-view)), (White-color, Gray-color, Brown-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 394,
+            "total_tokens": 815
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 815
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

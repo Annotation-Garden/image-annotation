@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground at the lower-left of the frame sits a dark, weathered wooden bench with black cast-iron legs curved in ornate scrollwork, resting on a snow-dusted stone surface that spans the lower portion of the image. Dominating the left side and upper-left is a large terracotta-orange wall, its plaster textured and slightly weathered, forming a vertical plane that frames the scene. A low stone parapet runs horizontally across the center-right of the frame, separating the terrace foreground from the background cityscape. In the background, occupying the center and right, a townscape unfolds with clustered rooftops bearing patches of snow, and a prominent tall church spire with a green steeple rises in the upper-center against a pale, hazy sky. Distant beyond the buildings, a faint horizon suggests water or open land under diffuse light. The overall color scheme contrasts warm orange tones of the wall with cool grays, whites, and muted reds of the snowy rooftops and overcast sky. Lighting appears soft and even, consistent with an overcast winter day, casting minimal shadows and lending a subdued, calm atmosphere across the balanced composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Furnishing, Brown, (Rough, Manufactured-material), (Black, Curl-toes, (Part-of, Furnishing))), Snow, ((Furnishing), (Lower-left-of, Photograph)), (Building-part, Orange-color, (Rough, Manufactured-material), ((Upper-left-of, Photograph), (Left-side-of, Photograph))), (Building-part, (Manufactured-material), (Center-of, Photograph)), (Building, Roof, Snow, ((Center-of, Photograph), (Right-side-of, Photograph))), (Building-part, Green, (Upper-center-of, Photograph)), (Natural-feature, (Far-from, Building)), (Orange-color, Gray-color, White, Red), (Cold, Outdoors), (Label/Luminance-contrast-Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, spanning the lower portion of the frame, a dark chain-link fence with diamond-patterned mesh and a horizontal top rail crosses the entire width, partially obscuring the scene behind it. Just beyond, in the lower-center, a young giraffe sits on sandy ground with its legs folded and neck bent downward, its head lowered near the earth. To the left of it, a fallen light-gray log lies horizontally across the mid-lower left. Behind the seated giraffe, in the center-left, an adult giraffe stands with its long neck curved downward toward a large dark tree trunk that dominates the upper-left corner. On the right side, another adult giraffe bends its neck downward over large rounded boulders that occupy the center-right background. Green shrubs and grass fill the mid-ground, while a clear, deep-blue sky spans the upper portion. The color scheme combines warm orange-brown giraffe patches, sandy tan ground, gray rock and wood, green foliage, and blue sky. Lighting appears natural and bright, casting soft shadows on the sand, suggesting sunlit daytime conditions with clear visibility throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Real-world, ((Animal, Label/Chain-link-fence), In-front-of, (Foreground-view)), ((Label/Young, Animal, Label/Giraffe, (Orange-color, Brown-color)), Sitting, Lower-center-of), ((Animal, Label/Log, Gray-color), To-left-of, (Label/Young, Animal, Label/Giraffe)), ((Animal, Label/Giraffe-adult, (Orange-color, Brown-color)), Standing, Lower-left-of), ((Natural-object, Label/Tree-trunk, Gray-color), Upper-left-of), ((Animal, Label/Giraffe-adult, (Orange-color, Brown-color)), Right-side-of), ((Natural-object, Label/Boulders, Gray-color), Center-of), (Plant, Green-color), ((Natural-feature, Label/Sky), Blue-color, Upper-center-of), (Terrain/Sandy-terrain, Label/Sand), (Outdoors, Label/Sunlit-daytime)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and right portions of the frame, a Highland cattle with long, shaggy reddish-brown fur lies on the ground; its curved horns extend outward, its head faces the viewer with a pink nose and partially closed eyes, and its body fills the lower-center to lower-right area. A second Highland cattle, similarly reddish-brown and shaggy, lies to the left in the mid-ground, its horns and head visible while its body recedes toward the frame's left edge. Both animals rest on pale, dry, straw-covered dirt ground that spans the lower half of the image. In the background, a wooden post-and-rail fence runs horizontally across the upper-middle portion, behind which lie green and brown vegetation, distant fields, and additional structures under a bright, washed-out sky visible at the upper edges. The lighting is strong daylight, casting shadows of the fence and animals onto the ground and creating bright highlights on the fur and straw. The overall color scheme is warm, dominated by reddish-browns, tans, and golden earth tones, with muted green accents in the background and light gray-white sky, producing a naturalistic, sunlit rural composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Rural, Foreground-view, ((Animal-agent, Animal/Highland-cattle, Prone, (Red-color, Brown-color), (Head, (Spatial-relation/Toward, Experiment-participant)), (Nose, Pink), (Eye, Close)), (Center-of, Photograph)), ((Animal-agent, Animal/Highland-cattle, Prone, (Red-color, Brown-color)), (Left-side-of, Photograph)), (Dirt-terrain, Label/Dry, Light-shade), (Building-part, Manufactured-material/Wooden, (Above, Terrain)), (Plant, Green-color), Field, Luminance/Daylight, (Luminance/Warm, (Red-color, Brown-color, Yellow-color))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground on the right side of the frame stands a white pedestal sink occupying the lower-right and center-right, topped by a brushed-metal faucet and a matching curved fixture mounted above it; a white cylindrical soap dispenser and a cluster of dried grass-like plant material sit at the sink's rear-left edge. Directly behind and left of the sink, in the center of the frame, a white toilet occupies the lower-center. To the left, in the background and middle ground, a white bathtub with an alcove surround runs along the lower-left, its walls tiled in beige squares accented by a horizontal band of small mosaic tiles in brown and tan tones at mid-height; a metal shower rod spans the upper-left corner. A window with white horizontal blinds sits in the upper-center, and a mirror edge appears at the upper-right. The floor in the lower portion shows dark brown and cream tiles. The overall color scheme is warm, dominated by beige, tan, and brown, with white fixtures. Lighting is soft and even, filtered through the blinds, casting gentle illumination without harsh shadows across the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((White, (Furnishing, Label/Pedestal-sink)), (Lower-right-of, Foreground-view)), ((Furnishing, Label/Faucet, Steel), Above, (Furnishing, Label/Pedestal-sink)), ((White, Cylinder, (Furnishing, Label/Soap-dispenser)), (Plant, Brown)), ((White, (Furnishing, Label/Toilet)), (Lower-center-of, Foreground-view)), ((White, (Furnishing, Label/Bathtub)), (Lower-left-of, Background-view)), (Beige, Square, (Building-part, Label/Tile-wall)), (Brown, Tan, Label/Mosaic-band), ((Steel, (Furnishing, Label/Shower-rod)), Upper-left-of), ((Window, White, (Furnishing, Label/Blinds)), Upper-center-of), ((Furnishing, Label/Mirror), Upper-right-of), (Dark-shade, Brown, Beige, (Building-part, Label/Floor-tile)), (Beige, Tan, Brown, White), (Label/Luminance-contrast-Low, Label/Soft-even-lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

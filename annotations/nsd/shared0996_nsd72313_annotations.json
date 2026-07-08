@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the left-center of the frame and occupying the lower-left region, stands a single skier wearing a bright blue jacket, dark pants, a dark helmet, and a dark backpack; this person holds two ski poles planted in the snow and stands on skis, facing away from the camera toward the upslope. The skier is the largest and most detailed element, interacting directly with the snow-covered ground and the equipment. In the background, spanning the upper-middle portion of the frame, a broad white ski slope rises gently, dotted with several small, distant figures scattered across the center and center-right, appearing as tiny dark marks. Along the upper-right edge, a row of thin poles or fence markers runs across the ridge, and a small red flag is visible near the right side. The upper portion of the image is dominated by a deep, cloudless blue sky that darkens toward the top. The overall color scheme contrasts white snow, dark blue sky, and the vivid blue of the skier's jacket. Lighting is bright and directional, casting a faint shadow beneath the foreground skier, suggesting strong daylight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Lower-left-of, Foreground-view)), Interacts-with, (Man-made-object, Label/Skis)), ((Human-agent), (Blue, Clothing), (Dark-shade, Clothing), (Dark-shade, Label/Helmet), (Dark-shade, Label/Backpack), Large), ((Human-agent), (Grasp, (Count/2, Man-made-object, Label/Ski-poles))), ((Human-agent), Backward, Standing), (White, Snow, Terrain, Foreground-view), ((Sloped-terrain, White, (Upper-center-of, Background-view)), Includes, (Group-of, Human-agent, Small, Far-from)), ((Count/2, Man-made-object, Label/Fence-markers), (Upper-right-of, Background-view)), ((Red, Man-made-object, Label/Flag), (Right-side-of, Background-view)), (Blue, Label/Sky, (Top-of, Background-view)), (Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

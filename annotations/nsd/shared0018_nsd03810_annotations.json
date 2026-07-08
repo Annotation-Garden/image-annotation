@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an open mountainous landscape divided horizontally into distinct zones. In the foreground, occupying the lower third of the frame, is a dry, arid expanse of pale tan and beige grassland scattered with small dark rocks and patches of sparse vegetation. In the middle ground, positioned across the center of the frame, a herd of roughly eight reddish-brown cattle moves toward the right; they are clustered together, with several appearing to walk or graze, and a faint cloud of dust rises behind them near the center-right, suggesting movement. The cattle are set against a band of green grass that transitions into the terrain. In the background, filling the upper-middle portion, dark green forested hills and mountain slopes rise, with the tallest peak toward the right. Above, the upper third of the frame shows a bright blue sky filled with numerous white and light-gray clouds. The overall color scheme contrasts warm earthy tans and browns in the lower and central areas with cool greens and blues above. Lighting appears bright and natural, consistent with daytime, casting soft shadows beneath the cattle. The composition is horizontally layered and balanced.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Mountain, (Foreground-view, (Field, Tan, Beige, Label/Dry), ((Small, Black, Rocky-terrain), (Plant, Label/Sparse))), (Group-of, Animal-agent, Brown, (Move, Rightward), (Count/8)), ((Animal-agent), (Above, (Green, Field))), (Background-view, (Hill, Green, Dark-shade), (Mountain, (To-right-of, All))), (Upper-center-of, (Blue, Natural-feature/Sky), (Group-of, (White, LightGray))), Real-world",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

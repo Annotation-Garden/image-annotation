@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a light tan tile countertop dominates the lower center and right of the frame, with a bunch of yellow bananas resting on the left portion and a dark object, possibly a phone or electronic device, positioned at the far lower left. Centered in the middle ground, a stainless steel sink with a curved faucet sits beneath a window, and to its immediate right on the counter rests a metallic kettle. On the right side of the frame stands a stainless steel oven and stove unit with a black cooktop and visible control panel. Dark brown, nearly black cabinetry lines the upper and lower left and extends across the upper right, mounted above beige walls. Along the very top of the frame, an elevated ledge holds decorative items including bottles, a light-colored animal-shaped figurine on the upper right, and assorted objects on the upper left. A ceiling-mounted track light with a white fixture appears at the top center. The overall color scheme is warm, dominated by amber, tan, and brown tones, with soft artificial lighting creating a dim, cozy atmosphere and gentle shadows throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, (Beige, Tan, Ceramic, Furnishing, Label/Countertop)), (Lower-center-of, Right-side-of)), ((Yellow, Ingestible-object/Staple-food, Sweet), (Left-side-of, Label/Countertop)), ((Black, Cellphone), Lower-left-of), ((Steel, Label/Sink), Center-of), (Visual-attribute/Curved, Label/Faucet, Connected-to, Label/Sink), ((Below, Window)), ((Steel, Label/Kettle), (To-right-of, Label/Sink)), ((Steel, Black, Label/Oven-stove), Right-side-of), (Dark-shade, Brown, Furnishing, Label/Cabinetry, (Upper-left-of, Lower-left-of, Upper-right-of)), (Beige, Building-part, Label/Wall), (Icon, Label/Animal-figurine, Upper-right-of), ((White, Display-device, Label/Track-light), Upper-center-of), (Orange-color, Tan, Brown, Low, Luminance), (Indoors, Room, Label/Kitchen)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

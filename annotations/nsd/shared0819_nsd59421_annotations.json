@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-left and center portions of the frame, a man in a black wetsuit with dark red accents crouches on a surfboard, his knees bent and both arms extended for balance, his left hand reaching down toward the water on the left side. He is bald and looks downward and to his right, his gaze directed toward the water below him. The surfboard beneath him is predominantly white with yellow, blue, and multicolored markings, angled diagonally across the lower-left corner, with his bare feet planted on it. The entire background, filling the upper and right portions of the frame, consists of churning white and gray whitewater, foaming and spraying turbulently, suggesting rushing or breaking water surrounding him. The color scheme is muted and desaturated, dominated by the black of the wetsuit against the white and gray tones of the frothing water, with the surfboard providing the only bright color contrast. The lighting is diffuse and overcast, producing soft shadows and no harsh highlights. Compositionally, the human figure anchors the left-center, while the dynamic water dominates the surrounding space, creating a strong figure-against-texture contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-participant, Label/Bald), (Crouching, ((Torso, Upper-extremity), Move-body-part))), ((Human-agent), Interacts-with, (Tool, Label/Surfboard)), (Clothing, Black, (Label/Dark-red-color, Label/Accents)), ((Foot, Toes), Contained-in, (Tool, Label/Surfboard)), ((Hand, Left), Reach, Downward, Towards, Label/Water-color), (Move-eyes, Downward, Right), ((Tool, Label/Surfboard), White, Yellow, Blue, Lower-left-of), (Background-view, White, Gray, Label/Foaming), (Grayscale, Luminance/Desaturated), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

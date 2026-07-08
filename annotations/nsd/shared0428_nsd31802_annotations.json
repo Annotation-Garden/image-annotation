@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph centers on a pair of orange ski boots positioned in the center and lower portion of the frame, mounted onto skis that extend diagonally from the center toward the lower-right corner. The boots display darkened buckles and hardware, with visible wear and dirt streaking the ski surfaces beneath them. Above the boots, in the upper-center, the lower legs of a person are visible, clad in dark gray or greenish pants, cut off at the top edge of the frame. Two thin ski poles descend diagonally, one entering from the upper-left and another from the upper-right, their tips planted in the snow. The entire background consists of textured white snow covering the ground, marked with numerous footprints, indentations, and pole holes throughout the surface. Lighting appears bright and directional, casting a distinct dark shadow of the skis and boots toward the lower-left of the frame, indicating strong sunlight from the upper-right. The color scheme contrasts the vivid orange boots against the predominantly white and pale-blue-shadowed snow, with the dark pants and thin black poles adding further contrast. The composition is grounded and low, emphasizing feet and equipment against the expansive snowy surface.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Orange, Clothing, Foot), (Center-of, Lower-center-of)), ((Tool, Label/Skis), (To-right-of, Lower-right-of)), (Dark-shade, Label/Buckles), ((Human-agent, Experiment-participant), (Lower-leg, (Color/Dark-gray, Clothing))), (Top-edge-of, Lower-leg), ((Tool, Label/Ski-poles), (Upper-left-of, Upper-right-of)), (Black, Label/Ski-poles), ((White, Snow), Background-view), (Label/Footprints), (Luminance/Bright, Luminance), ((Dark-shade), (Lower-left-of, Black)), ((Human-agent), Interacts-with, (Tool, Label/Skis))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

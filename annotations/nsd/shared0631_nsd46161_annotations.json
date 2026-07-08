@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large upholstered sofa occupying the center and lower two-thirds of the frame, featuring a beige and cream fabric with abstract brushstroke-like patterns in gray and muted tones. Resting on a cream-colored cushion at the center of the sofa is a gray cat, curled and facing left, forming the primary point of interaction between animal and furniture. Two fluffy light-blue pillows are positioned symmetrically, one in the left-center and one on the right side of the sofa, providing color contrast against the neutral upholstery. In the background upper-left corner sits a table lamp with a pinkish-red shade, partially cropped, glowing softly. To the upper right, a window with closed white blinds admits diffused daylight, contributing to the soft, even lighting throughout the scene without harsh shadows. The floor in the lower foreground appears as gray carpet. The wall behind is a plain beige-tan. The overall color scheme is muted and warm, dominated by beiges and creams, punctuated by the cool blue pillows and the warm lamp. The composition is balanced and centered, with the cat anchoring visual attention amid a calm, domestic interior setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Furnishing, Label/Sofa, Large, Center-of), (Beige, White-color, Pattern)), ((Animal-agent, Animal/Cat, Gray), Interacts-with, (Furnishing, Label/Sofa)), ((Furnishing, Label/Cushion, White-color, Center-of), Underneath, (Animal-agent, Animal/Cat)), (Furnishing, Label/Pillow, LightBlue, Left-side-of), (Furnishing, Label/Pillow, LightBlue, Right-side-of), ((Furnishing, Label/Table-lamp, Pink-color, Upper-left-of), Label/Emits, Luminance), (Window, White, Upper-right-of), ((Furnishing, Label/Blinds, White-color), Part-of, Window), (Path, Label/Carpet, Gray, Lower-center-of), (Building-part, Label/Wall, Beige, Behind)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the center and right of the frame is a large white Emirates Airbus A380 aircraft, its nose angled toward the lower right where the front landing gear rests on the tarmac; the fuselage bears green Arabic and English \"Emirates\" lettering and a row of dark passenger windows, while the tail fin, partially visible at upper right, displays the red, green, black, and white United Arab Emirates flag colors. In the foreground occupying the lower portion of the frame stand three ground-crew workers wearing high-visibility yellow-green safety vests; one at lower left near the aircraft's front wheels, another in the lower center, and a third toward the right beside the nose gear, appearing to service or monitor the plane. A grey paved tarmac fills the lower third, marked with faint lines. In the background at upper right, a white jet bridge with the number \"173\" connects to the aircraft door, and flat green grass with distant airport structures spans the upper left horizon beneath an overcast, pale grey sky. The lighting is diffuse and flat, producing muted tones dominated by white, grey, and green, with soft shadows and low contrast throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Vehicle, Aircraft, Large, White, (Center-of, Foreground-view), (Label/Emirates-A380)), ((Anterior, Aircraft), (To-right-of, (Lower-right-of, Foreground-view))), (Green, Word, Character, Label/Emirates), (Window, Group-of, Black), ((Man-made-object/Tail, Aircraft), Upper-right-of, (Red, Green, Black, White)), ((Human-agent, Experiment-actor, Clothing, Yellow-color, Green-color), (Lower-left-of, Foreground-view)), ((Human-agent, Experiment-actor), (Lower-center-of, Foreground-view)), ((Human-agent, Experiment-actor), (To-right-of, (Anterior, Aircraft))), (Gray, Paved-terrain, (Lower-center-of, Background-view)), ((Building, White, Label/Jet-bridge-173), (Connected-to, Aircraft), (Upper-right-of, Background-view)), (Green, Field, Grassy-terrain, (Upper-left-of, Background-view)), (Building, Far-from, (Upper-left-of, Background-view)), (Outdoors, Gray, Cold), (Label/Luminance-contrast-Low), (White, Gray, Green)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

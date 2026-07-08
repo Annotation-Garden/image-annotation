@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, occupying the lower-center and lower-right of the frame, sits a round yellow plate holding a dense arrangement of fruit: a green bell pepper at left, red apples, a large cluster of pale green grapes at center, several tan-and-red peaches in the lower-center, dark purple plums along the bottom edge, and a green pear at lower-left. To the left, in the mid-ground, orange carrots lie diagonally alongside yellow corn cobs with green husks and a green bell pepper. Center-right in the mid-ground, a curved bunch of yellow bananas rests before a metallic wire basket containing round onions\u2014some tan, one reddish-purple. To the right sits a clear plastic bag holding lighter-colored fruit. The background upper-center shows a glass vase with green leafy foliage against a plain pale wall and a wooden surface. The composition rests on a light tabletop, densely packed and overlapping, filling nearly the entire frame. Lighting is soft and natural, brighter toward the upper-left, casting gentle shadows. The overall color scheme is warm and saturated, dominated by greens, oranges, yellows, and reds.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Lower-center-of, Lower-right-of), (Visual-attribute/Round, Yellow, (Ingestible-object/Main-dish, (Green, Ingestible-object/Staple-food)), (Red, Ingestible-object/Dessert, Sweet), (Center-of, (Green, Ingestible-object/Dessert, Sweet)), (Lower-center-of, (Tan, Red, Ingestible-object/Dessert, Sweet)), (Bottom-edge-of, (Purple, Ingestible-object/Dessert, Sweet)), (Lower-left-of, (Green, Ingestible-object/Dessert, Sweet)))), ((Left-side-of, Background-view), (Orange, Ingestible-object/Staple-food), (Yellow, Green, Ingestible-object/Staple-food), (Green, Ingestible-object/Staple-food)), ((Center-of, Right-side-of, Background-view), (Yellow, Ingestible-object/Dessert, Sweet), (In-front-of, (Steel, Man-made-object/Container, (Visual-attribute/Round, Tan, Ingestible-object/Staple-food), (Purple, Ingestible-object/Staple-food)))), ((Right-side-of), (Plastic, (Contained-in, Ingestible-object/Dessert))), ((Upper-center-of, Background-view), (Glass, Man-made-object/Container, (Green, Plant)), (White, Man-made-object/Wall), (Manufactured-material/Wood, Furnishing)), (Light-shade, Furnishing), (Outdoors, Luminance-contrast/0.7), (Upper-left-of, Luminance), (Luminance/Warm, Saturation)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

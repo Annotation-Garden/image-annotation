@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two large dark reddish-brown cattle dominate the frame, with a third partially visible animal on the left edge. The central and right-side animal occupies the lower-center to right portion of the frame, its head lowered toward the ground, grazing on the dry golden grass in the lower foreground. A second animal stands in the center-left, its body oriented rightward with head also angled downward. Both animals show glossy, sunlit coats with highlights along their backs and flanks, indicating light coming from the upper right. The lower third of the frame consists of pale, dry, straw-colored grass. The middle ground shows a broad, flat harvested field in tan and yellow hues extending toward the horizon. The background upper portion contains a dense line of dark green trees spanning the left and center, transitioning to a lighter, hazy sky in the upper right. The overall color scheme combines warm earthy tones\u2014browns, golds, and tans\u2014with cooler green foliage above. Lighting appears bright and natural, suggesting daytime. Compositionally, the animals anchor the foreground while the receding field and treeline create depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Animal-agent, Large, Brown, (Attend-to, Plant)), (Lower-center-of, (Image, Foreground-view))), ((Animal-agent, Large, Brown), (Center-of, (Image, Foreground-view))), ((Animal-agent), (Left-edge-of, Image)), (Plant, Yellow, (Lower-center-of, (Image, Foreground-view))), (Field, Tan, Yellow), (Group-of, (Plant, Green, Dark-shade), (Upper-center-of, Image)), (Natural-feature/Sky, Light-shade, (Upper-right-of, Image))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

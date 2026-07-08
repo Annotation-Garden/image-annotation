@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center of the frame, a black-and-white tuxedo cat rests curled atop a striped cushion; the cat's dark body dominates the upper-central portion of this grouping, while its white chest and paws face lower and toward the viewer, with eyes closed as if resting. Beneath the cat, in the lower-center, lies a folded textile cushion displaying blue, gray, and yellow stripes and a plaid section along its lower edge. Both cat and cushion sit within a white upholstered tub chair that curves around the center and fills much of the frame, its pale fabric extending left, right, and lower. In the background, positioned in the upper region, a dark wood sideboard supports a blue-based table lamp with a white shade on the left and a vase holding bare branches toward the center-right. The overall color scheme pairs cool neutrals\u2014whites and grays\u2014with darker accents from the cat and furniture. Lighting appears soft and diffuse, entering from the upper left. The composition is centered and symmetrical, framed by a thick off-white border characteristic of an instant-photo style.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Animal/Cat, Black, White, (Eyes-closed), Resting), (Above, (Furnishing, Label/Cushion, Blue, Gray, Yellow))), (Center-of, Foreground-view), ((Furnishing, Label/Chair, White), Contained-in, (Center-of, Foreground-view)), ((Furnishing, Label/Sideboard, Brown), (Above, (Furnishing, Label/Lamp, Blue, White)), (Above, (Plant, Label/Bare-branches))), Background-view, (Upper-left-of, (Light-shade)), Symmetrical, White, Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 356,
+            "total_tokens": 777
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 777
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The foreground is dominated by an older man positioned center-to-left, occupying most of the lower and central frame, shown from the chest up in three-quarter profile facing right. He has gray, swept-back hair and is smiling, revealing his teeth. He wears formal attire: a black tuxedo jacket, a white dress shirt, and a black bow tie, all visible in the lower-center portion of the frame. In the lower-right corner, a dark cylindrical object, likely a microphone, extends toward him, suggesting an interaction such as an interview. The background, spanning the upper portion and right side, is dark and out of focus, featuring a brick building with warm orange-toned illuminated windows or lights in the upper region. Faint illuminated signage appears in the upper-right area, and what seems to be a parked vehicle with reflective surfaces is discernible on the middle-right. The overall color scheme is dark and muted, dominated by blacks and browns, punctuated by warm amber lighting in the background and the bright white of the man's shirt. The lighting is low and directional, illuminating the man's face and shirt against the shadowy nighttime setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Experiment-actor, Male, Label/Old), (Torso-chest, Head, (Gray, Hair), Smile, Teeth, (Black, Clothing), (White, Clothing)), Right, Oblique)), ((Human-agent), Interacts-with, (Microphone)), (Lower-right-of, (Microphone, Cylinder, Dark-shade)), (Background-view, Outdoors, (Building, (Manufactured-material/Brick), (Orange-color, Window)), (Vehicle), Label/Night-time-lighting), (Dark-shade, Brown, Black, (Orange-color)), (Low, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

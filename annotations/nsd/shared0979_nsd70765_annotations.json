@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground at the lower portion of the frame lies choppy blue-gray water occupying roughly the bottom third, where several small figures engage in kiteboarding and windsurfing; a windsurfer with a visible sail appears in the center-right, and darker low silhouettes of riders sit near the waterline across the center and right. Dominating the upper-left and upper-center are large, brightly colored kites\u2014a prominent red one at the top-left, a golden-yellow one just below it, and smaller kites in orange, red, and green scattered across the upper and middle background, receding in size toward the center and right, suggesting distance. In the mid-ground behind the water, a horizontal strip of low-rise buildings and a taller multi-story building on the right edge mark a coastal town. Behind this, brown-gray mountains rise across the full width of the middle band. The upper third holds a pale blue sky with substantial white and gray clouds concentrated center and right. The overall color scheme combines cool blues and grays with warm kite accents; lighting appears diffuse and natural, producing soft shadows and a balanced, horizontally layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Blue, Gray, Natural-feature/Water, Rough)), ((Human-agent), Interacts-with, (Man-made-object, Label/Kiteboard)), ((Human-agent), Interacts-with, (Man-made-object, Label/Windsurf-sail)), (Center-of, (Human-agent, Label/Windsurfer)), ((Red, Man-made-object, Label/Kite), (Upper-left-of, (Visual-presentation))), ((Yellow, Man-made-object, Label/Kite), Below), ((Orange, Man-made-object, Label/Kite)), ((Green, Man-made-object, Label/Kite)), (Background-view, (Building, Urban)), ((Building, Right-edge-of, (Visual-presentation))), (Background-view, (Mountain, Brown, Gray)), (Upper-center-of, (Natural-feature/Sky, Blue, Light-shade)), (White, Gray, Label/Clouds), (Luminance/Diffuse, Label/Lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

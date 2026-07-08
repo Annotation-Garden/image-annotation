@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central portion of the frame, sits a red-rimmed rectangular tray holding a Japanese meal: a blue-and-white rectangular plate with a piece of grilled salmon garnished with dark seaweed at center, a segmented dish containing dark round items and beige portions in the upper-center of the tray, and a blue bowl with green vegetables at the right. A pair of red-and-white chopsticks rests diagonally across a white paper wrapper in the lower-center, and a small yellow-marked white napkin lies below. To the left, two clear glasses of water sit on the wooden table surface, one in the upper-left and one in the mid-left. In the background, upper portion of the frame, a second identical tray with matching salmon plate, bowls, and dishes is positioned, and a person in a dark shirt is partially visible, their hands and forearms extending toward the food, holding chopsticks at the upper-right. The color scheme combines warm brown wood tones, red trays, and blue-white ceramics. Lighting is soft and natural, creating gentle shadows. The composition is layered front-to-back with symmetrical dual place settings.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Red, Rectangle, Man-made-object/Tray), (Ingestible-object/Main-dish, Savory))), ((Blue, White, Rectangle, Man-made-object/Plate), (Ingestible-object/Main-dish, Savory)), ((Center-of, (Blue, White, Rectangle, Man-made-object/Plate)), (Ingestible-object/Main-dish, Savory)), (Black, Ingestible-object/Main-dish), (Label/Segmented, Ingestible-object/Staple-food, Savory), ((Blue, Volume), (Green, Ingestible-object/Staple-food, Savory)), ((Red, White, Tool), Visual-attribute/Diagonal), ((White, Paper), Lower-center-of), ((White, Yellow), Below), (Left-side-of, ((Label/Clear, Glass), Volume), Natural-feature/Water), (Upper-left-of, (Label/Clear, Glass)), ((Background-view, Upper-center-of), (Red, Rectangle, Man-made-object/Tray), (Ingestible-object/Main-dish, Savory)), (Upper-right-of, ((Human-agent, (Black, Clothing)), (Hand, Forearm), (Grasp, (Red, White, Tool)))), (((Human-agent), Interacts-with, (Ingestible-object/Main-dish))), (Brown, Manufactured-material/Wood), (Symmetrical)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

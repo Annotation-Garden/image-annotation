@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's central foreground is dominated by a three-tier white fondant wedding cake, positioned slightly left of center and occupying the upper and middle portions of the frame. Each tier is wrapped with a navy blue ribbon band, and small dark reddish-purple floral accents are tucked at the base of the upper two tiers. Atop the cake sits a cluster of white flowers with green foliage, situated in the upper-center. The cake rests on a clear glass square stand, which sits on a table draped in white linen. Scattered across the tabletop, in the lower portion and foreground, are autumn-colored leaves in orange, red, yellow, and brown hues, spreading around and beneath the glass stand. On the lower right, a metallic cake server with a decorative handle lies on the table. The background, occupying the upper region, shows blurred wooden paneling with darker horizontal elements, providing a warm brown backdrop. The lighting is soft and diffused, illuminating the white cake evenly without harsh shadows. The overall color scheme contrasts crisp white and navy against warm autumnal tones, creating a balanced, centered composition with the cake as the clear focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Ingestible-object/Dessert, Sweet, White, Large), (Foreground-view, Upper-center-of)), ((Ingestible-object/Dessert, Sweet, White), ((Blue, BlueViolet), Part-of)), ((Plant, White, (Green, Leaf-covered-terrain)), (Top-of, (Ingestible-object/Dessert))), ((Glass, Square), Underneath, (Ingestible-object/Dessert)), (Furnishing, White, Manufactured-material), ((Leaf-covered-terrain, (Orange, Red, Yellow, Brown)), (Foreground-view, Lower-center-of)), ((Tool, Metadata-identifier), Lower-right-of), ((Building-part, Steel, (Brown, Horizontally-oriented)), Background-view), Label/Diffused-illumination",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

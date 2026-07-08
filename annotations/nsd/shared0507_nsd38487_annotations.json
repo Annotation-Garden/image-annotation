@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a refrigerator with its door open in an otherwise dark room, positioned in the center-right of the frame, occupying roughly the upper and middle portions. The open door swings outward toward the left, its interior surface partially visible, while the illuminated interior reveals multiple shelves holding numerous jars, bottles, and containers of varying sizes, concentrated in the center of the frame from upper to lower regions. The internal light source casts a warm yellow-orange glow that spills onto the floor, creating a diagonal shaft of light stretching across the lower-center and lower-left of the frame. The floor in the foreground displays tiled flooring with visible grid lines, most apparent in the lower portion where the light reaches. To the right, a metallic surface with horizontal handles and paneling is faintly visible, suggesting cabinetry or another appliance. The left side and upper-left corner remain in near-total darkness, providing strong contrast. The overall color scheme is dominated by warm amber, yellow, and brown tones against deep black shadows. The composition relies on high contrast between the single bright light source and surrounding darkness, drawing attention to the refrigerator's interior contents.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Man-made-object, Label/Refrigerator, (Door, Open)), (Center-of, Photograph)), ((Ingestible-object, (Group-of, Label/Jars-bottles-containers)), Contained-in, (Man-made-object, Label/Refrigerator)), (Light-shade, Yellow, Orange), (Label/Luminance-contrast-High, Black), ((Man-made-object, Label/Tiled-floor), (Lower-center-of, Photograph)), ((Man-made-object, Label/Cabinetry), (To-right-of, (Man-made-object, Label/Refrigerator)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

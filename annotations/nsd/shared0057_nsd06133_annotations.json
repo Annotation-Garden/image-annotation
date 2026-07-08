@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the right and center portions of the frame, a red-framed bicycle is locked to a metal railing; its rear wheel, black tire, and spoked design dominate the lower-center, while the handlebars extend into the upper-right corner. A black bag or covering is draped over the rear rack on the center-left of the bike, and a red reflector or light is visible near the center. A silver metal barrier with horizontal and vertical bars runs across the right side, with a lock mechanism visible at the lower-right. In the background, upper portion of the frame, a white and blue city bus with an illuminated orange destination sign reading \"EAST BASE\" is parked or stopped, spanning the upper-left to upper-center. A second similar bus appears partially behind it on the upper-right. Green shrubbery and bare branches fill the middle-ground behind the bicycle, and a gray paved sidewalk occupies the lower-left. The overall color scheme is muted, dominated by grays, greens, and the red bicycle accent, under flat, overcast daylight that produces soft shadows and a damp, low-contrast appearance consistent with wet pavement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, (Foreground-view, (Bicycle, Red, (Label/Locked, (Connected-to, Man-made-object)))), ((Man-made-object/Wheel, Black, Circle), Lower-center-of), (Label/Handlebars, Upper-right-of), ((Man-made-object/Bag, Black), Center-of), (Label/Reflector, Red, Center-of), ((Man-made-object, Silver, Horizontally-oriented, Vertically-oriented), Right-side-of), (Background-view, Upper-center-of, (Label/Bus, White, Blue, Label/EAST-BASE)), (Background-view, Upper-right-of, (Label/Bus, White, Blue)), (Label/Middle-ground-view, (Plant, Green)), (Lower-left-of, (Path, Gray, Paved-terrain)), (Gray, Green, Red), Environmental-property/Overcast, Low",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

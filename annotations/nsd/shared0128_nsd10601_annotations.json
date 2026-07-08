@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a kitchen interior dominated by dark reddish-brown wood cabinetry occupying the upper and lower portions across the entire frame. In the foreground lower-left, a black electric range with a smooth cooktop sits against the cabinets, while a black microwave is mounted in the upper-left corner above it. In the lower-right foreground, a black dishwasher stands beneath a brown countertop with a tan speckled granite-patterned surface. The center-background features a stainless-steel faucet and an undermounted sink set into the counter, positioned below a window with white frames in the upper-center of the frame; the window admits bright natural daylight that illuminates the scene. Upper cabinets line the top of the image on both left and right sides, with a beige-painted wall visible between the counter and cabinets. The floor in the lower foreground consists of tan and brown mottled tile, with a rectangular metal floor vent visible center-lower. A fluorescent light panel appears in the upper-left ceiling corner. The overall color scheme combines warm browns, beige, and black appliances. No people or animals are present; the composition is symmetrical and centered on the sink and window.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, (Room, Label/Kitchen), ((Furnishing, Label/Cabinetry, Brown, Above), (Furnishing, Label/Cabinetry, Brown, Below)), ((Machine, Label/Electric-range, Black), Lower-left-of), ((Device, Label/Microwave, Black), Upper-left-of), ((Machine, Label/Dishwasher, Black), Lower-right-of), (Furnishing, Label/Countertop, Brown, Tan), ((Tool, Label/Faucet, Steel), Center-of), ((Furnishing, Label/Sink), Center-of), ((Window, White), Upper-center-of, (Visual-presentation, Label/Daylight, Luminance/Bright)), ((Building-part, Label/Wall, Beige), Between), (Building-part, Label/Floor, Tan, Brown, Below), ((Rectangle, Label/Floor-vent, Steel), Lower-center-of), ((Display-device, Label/Fluorescent-light), Upper-left-of), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

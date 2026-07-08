@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left corner sits a white printer or scanner device, partially cropped by the frame edge, resting on the light wooden laminate floor that dominates the lower half of the image. In the center-background stands a wooden desk holding three displays: two CRT-style monitors on the left and center showing blue-toned screens, and a silver laptop on the right, also displaying a lit screen, with a white keyboard positioned in front of the central monitor. Below and left of the desk, in the mid-ground lower-left, several beige and gray computer towers are grouped on the floor against the wall. On the right side, a dark office chair with a curved backrest is partially visible in the mid-ground, and a cardboard box sits beneath the desk's right end. The upper-right corner contains a dark window or opening. The background wall is plain off-white, occupying the upper portion of the frame. The overall color scheme is muted, combining pale wall tones, warm wooden flooring, and gray-beige equipment, with cool blue accents from the illuminated screens. Lighting appears even and artificial, casting soft shadows beneath the desk and floor objects.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-left-of, (White, Man-made-object/Printer, (Spatial-relation/On-top-of, Label/Wooden-floor))), ((Center-of, Background-view), (Man-made-object/Desk, (Spatial-relation/Contains, (Display-device, Blue))), (Display-device, Blue), (Silver, Laptop-computer), (White, Keyboard)), ((Lower-left-of, (Beige, Gray, Group-of, Computing-device))), (Right, (Furnishing, Label/Office-chair)), (Below, (Box, Label/Cardboard)), (Upper-right-of, (Window, Luminance/Dark)), (Background-view, (White-color, Man-made-object/Wall)), (Label/Artificial, Label/Even-lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

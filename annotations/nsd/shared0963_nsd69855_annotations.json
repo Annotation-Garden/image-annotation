@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, a group of motorcyclists wearing helmets sits astride their motorcycles; the frontmost rider, centered and lower, wears a light-colored helmet and dark jacket, gripping the handlebars of a motorcycle with a visible chrome headlight and gauges. To this rider's left, two more helmeted figures in dark clothing are positioned closely together, and to the right, another dark-helmeted rider appears alongside additional motorcycles, including one with dark tank and chrome detailing in the lower-right corner. In the background on the left, a paved road recedes with several cars, and a tall lamppost bearing colorful banners rises into the upper-left sky. A large green leafy tree dominates the upper-center and right background, its foliage lit brightly. On the right, buildings with light-colored fa\u00e7ades line the street behind a black metal fence. The overall color scheme combines dark tones of clothing and vehicles with vivid greens of the tree and pale blues of the sky. Lighting appears natural and directional, brightening the tree and creating shadows, suggesting late-afternoon sun. The composition centers on the clustered riders.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Group-of, (Human-agent, Experiment-participant), (Man-made-object/Helmet, White)), Foreground-view, Center-of), ((Human-agent, (Sit-up, Vehicle)), Lower-center-of), (((Human-agent), Interacts-with, (Vehicle)), Center-of), ((Vehicle, (Steel, Light-shade)), Lower-center-of), ((Human-agent, Clothing, Dark-shade), Center-of), (Group-of, (Human-agent, (Man-made-object/Helmet, Dark-shade)), Left-side-of), ((Human-agent, (Man-made-object/Helmet, Dark-shade)), Right-side-of), ((Vehicle, (Steel, Dark-shade)), Lower-right-of), ((Road, Paved-terrain), Background-view, Left-side-of), (Group-of, Car, Background-view, Left-side-of), ((Building-part, Label/Lamppost), Upper-left-of), ((Plant, Green, Large), Upper-center-of), (Building, (Light-shade), Right-side-of), ((Man-made-object, Label/Metal-fence, Black), Right-side-of), (Blue, Label/Pale-shade, Above), (Outdoors), (Natural-feature/Sky, Upper-left-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

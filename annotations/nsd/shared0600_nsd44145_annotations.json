@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a circular black charcoal grill viewed from above, occupying nearly the entire frame against a gray concrete surface visible at the corners. In the upper portion, three pieces of grilled meat rest on the metal grate, showing dark char marks and browned surfaces, with visible orange flames rising between the two upper-central steaks and thin wisps of gray smoke drifting toward the upper-left corner. To the upper-right and lower-center are three foil-wrapped packets, their crinkled silver surfaces reflecting light. In the lower portion of the frame sit two triangular slices of pizza, one on the lower-left and one on the lower-right, both displaying melted cheese, browned crust edges, and scattered darker topping pieces. The overall color scheme is dominated by dark blacks of the grill, warm browns and reds of the food and flames, and metallic silver-gray from the foil, creating strong contrast. Lighting appears natural and bright, casting reflections on the foil and highlighting the meat's texture. The composition is roughly symmetrical and circular, with elements radiating around the grill's center, framed by a dark vignette darkening all four edges.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Aerial-view, (Black, Circle, (Tool, Label/Charcoal-grill))), (Gray, Manufactured-material, Background-view), ((Upper-center-of, Photograph), (Ingestible-object/Main-dish, Savory, Brown)), (Orange, Label/Flames), (Gray, Label/Smoke), ((Upper-right-of, Photograph), (Ingestible-object/Main-dish, Savory)), ((Lower-center-of, Photograph), (Ingestible-object/Main-dish, Savory)), ((Lower-left-of, Photograph), (Ingestible-object/Junk-food, Savory, (Brown, Triangle))), ((Lower-right-of, Photograph), (Ingestible-object/Junk-food, Savory, (Brown, Triangle))), (Silver, Manufactured-material, Manufactured-material/Metallic), Label/Luminance-contrast-High",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

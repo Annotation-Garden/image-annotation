@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large gray pickup truck occupying the entire foreground, positioned diagonally across the frame from the lower-left to the center-right, with its bed and rear side panel filling the left, center, and lower portions of the image. A single truck wheel with a silver rim and dark tire is visible in the lower-right corner, and a round fuel door is discernible on the truck's side panel in the lower-center. In the background, situated in the upper-center-right area, a light-tan or cream-colored dog with a dark nose peers over the top edge of the truck bed, its head and part of its neck visible above the metallic bed rail. The upper portion of the frame is filled entirely by a clear, cloudless blue sky, which forms the background behind the dog and truck. The overall color scheme combines the muted gray metallic tones of the truck, the pale beige of the dog, and the saturated blue of the sky. Lighting appears bright and natural, consistent with strong daylight, casting subtle highlights on the truck's curved surfaces. The composition places the dog as a focal point against open sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Truck, Large, Gray, Foreground-view), (Label/Diagonally, Vehicle)), ((Truck, Man-made-object/Wheel, Silver), Lower-right-of), ((Fuchsia, Door), Lower-center-of), ((Animal-agent, Animal/Dog, Beige), Behind, (Truck)), ((Animal-agent, Animal/Dog), Above, (Top-edge-of, Truck)), (Blue, Natural-feature/Sky, Background-view), (Luminance/Bright, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 352,
+            "total_tokens": 773
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 773
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A blue commuter train dominates the horizontal center of the frame, extending across the full width and positioned in the upper-middle region; it rests atop a concrete and steel bridge or viaduct that occupies the lower-middle band. The train cars display blue lower panels, a lighter turquoise stripe, and dark windows, with a pantograph visible on the right car reaching upward toward overhead catenary wires. These thin wires stretch diagonally across the upper portion of the sky, supported by a vertical mast on the right-center. In the upper-left, a large green tree rises against the sky, its dense foliage the darkest green element there. The foreground consists of thick green shrubbery and bushes filling the lower portion, most prominently across the lower-right and lower-center. Beneath the bridge, on the lower-left, a weathered concrete surface bears faint graffiti markings. The sky behind occupies the entire background as a flat, pale grayish-beige expanse, suggesting overcast or hazy lighting with soft, diffuse illumination and minimal shadows. The overall color scheme combines muted blues, greens, and neutral grays. The composition is strongly horizontal, layered from vegetation foreground to train and sky background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Vehicle, Train, Blue), (Center-of, (Horizontally-oriented, Media))), ((Vehicle, Train), (Above, (Building, Steel))), ((Vehicle, Train, Label/Lower), Blue), ((Vehicle, Train), Cyan-color), ((Vehicle, Train, Window), Black), ((Vehicle, Train), Right-side-of), ((Building, Steel), (Center-of, Lower-center-of, Media)), ((Line-noise-artifact, Thin), (Above, (Media, Upper-center-of))), ((Man-made-object, Vertically-oriented), Right), ((Plant, Green, Large), Upper-left-of), ((Plant, Green, Dark-shade), Foreground-view), ((Plant, Green), (Lower-right-of, Media)), ((Building, Steel), (Below, (Character, Lower-left-of))), (Background-view, Gray, (Boundary-of, Media)), (Overt-attention, Outdoors), Natural-feature/Sky",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 397,
+            "total_tokens": 818
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 818
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

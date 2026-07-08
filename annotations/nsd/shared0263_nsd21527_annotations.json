@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower-center of the frame, a skier descends a steep snow-covered slope, positioned slightly left of center and angled downward toward the lower right. The skier wears a red jacket, brown or tan pants, and a yellow helmet, and holds two ski poles, one extending upward and to the left, the other trailing behind. A visible spray of powdery white snow billows off the slope directly beneath and to the left of the skier, indicating active motion. The snow surface fills the lower-left and lower-center portions of the frame in bright white tones. In the background, occupying the middle and upper portions, a broad valley recedes into the distance, showing darker forested hills, patches of snow, and clusters of small buildings or structures at lower right, suggesting a developed area below the slope. The upper third of the frame contains a pale, hazy sky graduating from light blue to muted gray near the horizon. The overall color scheme combines cool whites, blues, and grays with the warm red and yellow accents of the skier. Lighting appears soft and diffuse, consistent with overcast or low-angle daylight conditions.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor), Foreground-view, (Center-of, Lower-center-of), ((Red, Clothing, Torso), (Brown, Clothing, Upper-leg), (Yellow, Head-part)), (Run, (Sloped-terrain, Snow, Deep))), ((Human-agent), Interacts-with, (Tool, Label/Ski-pole)), (Snow, White, Loudness/n-a, Lower-left-of, Lower-center-of), (Background-view, Field, Upper-center-of, (Hill, Label/Forest, Snow)), (Building, Group-of, Lower-right-of), (Natural-feature/Sky, Upper-center-of, (Light-shade, Blue, Gray)), (Outdoors, Cold)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

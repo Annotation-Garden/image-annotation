@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a snow-covered ski slope occupying the entire frame, with two snowboarders as the primary subjects. In the lower-center to center-left of the frame, a person wearing a dark jacket and tan/beige pants stands on a snowboard, positioned slightly ahead and to the left. To the right of center, in the lower-right portion, a second person wearing a white jacket, dark pants, and a white helmet rides a snowboard, appearing to descend behind and to the right of the first individual. Both figures face rightward and downhill, suggesting movement in the same direction, though they do not physically interact. The foreground consists of textured, tracked snow marked with numerous curved lines from prior passes. In the background, the upper portion of the frame shows a steep, snowy mountainside with patches of exposed brown-gray rock and earth, small dark green coniferous trees on the left and center, and a metal fence or railing running horizontally across the mid-left region. The color scheme is dominated by whites and grays with muted brown earth tones. Lighting appears bright and diffused, casting soft shadows beneath the snowboarders on the snow surface.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Snow, Sloped-terrain, Hill), ((Human-agent, (Clothing, Black), (Clothing, Tan)), (Ride, Item/Snowboard), Lower-center-of), ((Human-agent, (Clothing, White), (Clothing, Black)), (Ride, Item/Snowboard), Lower-right-of), (Foreground-view, (Snow, Rough, (Visual-attribute/Curved, Label/Line))), (Background-view, (Mountain, Snow, Label/Steep), (Brown, Gray, Mineral), (Plant, Green, Left-side-of), (Item/Fence, Horizontally-oriented)), (White, Gray, Brown), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a snow-covered slope that fills nearly the entire frame with a bright white surface marked by faint ski tracks and subtle tonal variations. In the center of the image, positioned slightly toward the lower-middle, a single skier stands in profile, facing right, dressed entirely in black clothing including a jacket, pants, a patterned knit cap, and gloves, gripping two blue ski poles that angle downward into the snow. The skier's black skis rest on the white surface, and a dark shadow extends to the left of the figure, cast across the snow. In the lower-left corner of the foreground, a large diffuse shadow, likely from the photographer or another person, intrudes onto the snow. In the upper portion of the frame, the slope rises to meet a deep, cloudless blue sky occupying the top edge, with a rocky, darker ridge visible along the upper-left horizon. Toward the upper-right, thin vertical lines suggest a distant ski-lift structure. The lighting is strong and directional, producing crisp shadows and high contrast between the black-clad figure, the white snow, and the saturated blue sky, creating a stark, minimal composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Snow, Sloped-terrain, White, Large, Background-view), ((Human-agent, Experiment-actor), (Black, Clothing), (Black, Item/Ski), ((Human-agent), Interacts-with, (Blue, Tool, Label/Ski-poles)), Center-of), (Black, Item/Shadow, To-left-of), (Foreground-view, Large, Item/Shadow, Lower-left-of), (Blue, Item/Sky, Top-edge-of), (Rocky-terrain, Dark-shade, Upper-left-of), (Vertically-oriented, Line-noise-artifact, Label/Ski-lift, Upper-right-of), (Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

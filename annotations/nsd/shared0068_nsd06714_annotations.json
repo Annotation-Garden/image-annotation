@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a concrete skatepark occupying the entire lower and central portions of the frame, its smooth gray surfaces curving into bowls and ramps that dominate the foreground. In the center-right midground, a skateboarder wearing a white long-sleeved top and light pants performs a trick mid-air along the edge of a raised ramp, board angled beneath the feet. To the right, in the midground, a second person dressed in dark clothing stands on a skateboard at the rim of a curved bowl, appearing to observe or prepare to descend. A pink-toned graffiti mark is visible on the lower-left ramp wall. In the background, a metal fence spans horizontally across the middle of the frame, behind which lush green trees and shrubbery fill the space. A tall streetlamp rises on the right side, and pale multi-story buildings are faintly visible in the upper-right distance. The sky occupies the upper portion, overcast with gray and white clouds, producing diffuse, even lighting with minimal harsh shadows. The overall color scheme combines muted grays of concrete, greens of foliage, and the neutral cloudy sky, creating a balanced, wide, horizontally composed scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Outdoors, Environmental-property/Overcast), ((Gray, Building-part, Path), (Man-made-object/Bowl, Cube)), (Man-made-object/Skateboard, (Center-of, Right-side-of), (Human-agent, (White, Clothing), (Perform, Man-made-object/Skateboard))), ((Human-agent, (Luminance/Dark, Clothing)), Interacts-with, Man-made-object/Skateboard), (Right-side-of, (Human-agent, (Standing, Man-made-object/Skateboard))), ((Pink, Drawing), (Bottom-edge-of, Left-side-of)), (Background-view, (Manufactured-material/Metal, Item), Horizontally-oriented), (Background-view, (Green, Plant)), (Right-side-of, (Tool, Item)), (Upper-right-of, (Background-view, Building)), (Upper-center-of, (Gray, White, Natural-feature/Sky)), (Luminance/Diffuse, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

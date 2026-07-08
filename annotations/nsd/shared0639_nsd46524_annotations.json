@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by a dog occupying the center and right portions of the frame, shown in profile facing left, with its head in the upper-left-center and its body extending toward the lower-right. The dog has a brindle coat of mixed brown, black, and tan fur, with white markings on its muzzle, chest, and lower legs, and large erect ears at the top of its head. A dark collar with visible reddish or patterned detail encircles its neck at the center of the frame, and a thin red leash line runs diagonally from the collar area downward toward the lower-right corner. In the lower-left corner, blades of green grass are visible in the foreground. The background consists of a pale gray concrete or paved surface filling the upper and right portions of the frame, textured with subtle cracks and mottling. Lighting is bright and natural, consistent with direct sunlight, casting soft shadows beneath the dog and creating highlights on its fur. The overall color scheme combines earthy browns and whites of the animal against the neutral gray pavement and a small accent of green grass, with the red leash providing the sole saturated color contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Animal/Dog, Foreground-view, Center-of), ((Brown, Black, Tan), (White))), ((Ear, Upper-center-of), (Head, Upper-left-of)), (Clothing, Label/Collar, (Around, Neck), Center-of), ((Red, Label/Leash), To-right-of, Lower-right-of), (Green, Plant, Label/Grass, Lower-left-of, Foreground-view), (Gray, Path, Background-view, Upper-center-of), (White, Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

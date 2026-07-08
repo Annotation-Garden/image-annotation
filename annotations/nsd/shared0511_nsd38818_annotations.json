@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a passenger train occupying the center and right portions of the frame, angled diagonally from the upper-left background toward the lower-right foreground, its front cab positioned in the center-right at mid-to-lower height. The train's nose features a bright yellow front panel with a blue lower section, while the body carries silver, white, orange, and blue horizontal striping, and the identifier \"378 218\" is visible on the lower right of the front. In the foreground, the lower portion of the frame shows railway tracks with metal rails and gray ballast stones running from the bottom edge toward the receding train. On the left side, a station platform extends diagonally into the background, marked with a yellow safety line along its edge and lined with vertical lampposts and overhead electrical wires supported by gantries crossing the upper frame. The background upper-left contains green foliage, trees, and a low building beneath a blue sky filled with white and gray clouds. Lighting appears diffuse and overcast with soft shadows. The overall color scheme combines cool greens, grays, and blues with the warm yellow and orange accents of the train, creating strong diagonal compositional lines.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, Visual-presentation, (Train, (Visual-attribute/Diagonal), (Center-of, Foreground-view), (Label/Front, ((Yellow), Below, (Blue))), (Silver, White, Orange, Blue, Horizontally-oriented), ID/378 218), (Road, (Manufactured-material/Metal), (Gray), (Bottom-edge-of, Foreground-view)), ((Building-part, Label/Station-platform), Visual-attribute/Diagonal, (Yellow), (Background-view)), (Label/Lamppost, Vertically-oriented), (Label/Electrical-wire), (Label/Gantry, (Top-of, Background-view)), ((Plant, Green), (Building), Natural-feature/Sky, (White, Gray, Natural-feature/Cloud), (Upper-left-of, Background-view)), (Blue, Natural-feature/Sky), (Label/Diffuse-lighting), (Green-color, Gray-color, Blue-color, Yellow-color, Orange-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

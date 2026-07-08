@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a single elephant occupying the center and lower two-thirds of the frame, its large gray body angled diagonally with the head and trunk positioned toward the lower right and the hindquarters receding toward the upper left. The elephant's trunk curves downward, reaching toward the ground near the bottom-right edge, and its four legs are visible, with the front feet and toenails clearly discernible in the lower-left and lower-center regions standing on pale, sandy tan-colored earth that fills the foreground. Its wrinkled, textured skin shows patches of lighter dust or dried mud across the back and head. In the background, spanning the upper portion of the frame, is a body of teal-green water running horizontally, bordered by a rocky, grayish stone wall or embankment on the upper right. The overall color scheme is muted and slightly desaturated, combining warm sandy browns in the lower half with cool green and gray tones above. The lighting appears diffuse and even, casting soft shadows beneath the elephant. The composition is centered on the animal, with a vignette-like darkening at the corners framing the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal, Label/Elephant, Gray, Large, (Center-of, Photograph)), (Man-made-object/Trunk, Downward), (Foot, Lower-left-of), (Toes, Lower-center-of)), (Terrain, Tan, Terrain/Sandy-terrain, Foreground-view), ((River, Cyan-color), Background-view, (Upper-center-of, Photograph)), (Rocky-terrain, Gray, Upper-right-of), Grayscale",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

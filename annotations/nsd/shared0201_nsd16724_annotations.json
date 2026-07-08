@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground on the left side of the frame stands a man viewed from behind, positioned in the lower-left, wearing a light blue and white short-sleeved shirt, dark shorts, and white sneakers, standing on tan sand. Dominating the right foreground and center is a red four-door Jeep with a black roof, black wheels, and a visible license plate, oriented so its front faces left toward the man. The man appears to be looking upward and outward toward multiple kites flying in the upper portion of the frame; these kites, in colors including purple, magenta, orange, pink, black, and green, are scattered across the upper-center and upper-right sky. In the background across the center-left, low sandy dunes, sparse vegetation, and small indistinct dark shapes are visible near the horizon. The sky occupies the upper half and is overcast, uniformly gray with soft, diffuse lighting producing minimal shadows. The overall color scheme contrasts the vivid red vehicle and multicolored kites against muted gray sky and neutral tan sand. Compositionally, the human and vehicle anchor the lower frame while kites draw attention upward.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Experiment-actor, Lower-left-of, Backward), ((Blue, White, Clothing), (Luminance/Dark, Clothing), (White, Clothing))), ((Human-agent), Attend-to, (Upward)), ((Car, Red, (Roof, Black), (Black, Item-count/4), (Label/License-plate), (Label/Front, To-left-of, (Human-agent))), In-front-of, Right-side-of), ((Purple, Magenta, Orange, Pink, Black, Green, Item-count/6), Upper-center-of), (Hill, Plant, Background-view, Center-of), (Natural-feature/Sky, Gray, Above), (Tan, Terrain, Below), (Label/Kite, Item-count/6, Upper-center-of), (Natural-feature/Beach, Below)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

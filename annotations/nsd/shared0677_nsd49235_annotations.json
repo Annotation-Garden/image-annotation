@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts a workspace on a wooden desk illuminated by a black desk lamp positioned in the upper-right region, whose curved shade emits warm light casting a glow onto the beige wall behind it. In the foreground-left, a silver laptop with an open lit screen displaying a blue-white document dominates the lower-left frame, resting on a dark case. To the right of the laptop, in the center-lower area, sits a light-colored computer mouse connected by a cord. An open magazine or book lies in the center-right foreground, its glossy pages showing photographs of people arranged in a grid layout. In the mid-ground on the right, near the lamp's base, there is a black cylindrical speaker, a silver handheld device or phone propped upright, and a square panel with small illuminated blue dots. Pens and colored containers are visible in the upper-right background. In the upper-left corner, a card or artwork depicting two cartoon figures with dark hair is affixed to the wall. The color scheme combines warm amber and brown tones from the wood and lighting against cooler silver and blue accents from the electronics, creating a cozy, focused nighttime study composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Furnishing, (Manufactured-material/Made-from, Manufactured-material/Wood)), ((Auditory-device, Black), Upper-right-of), ((Visual-attribute/Curved, Auditory-device), Label/Emits, (Luminance/Warm, Luminance)), ((Beige, Man-made-object/Wall), Behind), ((Laptop-computer, Silver, (Display-device, (Blue, White, Document))), (Lower-left-of, Foreground-view)), (Laptop-computer, Spatial-relation/On-top-of, (Luminance/Dark, Item)), ((Computer-mouse, Light-shade), (Lower-center-of, To-right-of, Laptop-computer)), ((Book, Open, (Photograph, (Group-of, Human-agent))), (Center-of, Foreground-view)), ((Loudspeaker, Black, Cylinder), Right-side-of), ((Cellphone, Silver), Vertically-oriented), ((Square, LED-display, (Blue, Dots)), Right-side-of), ((Pen, Man-made-object/Container), Upper-right-of, Background-view), ((Icon, (Group-of, (Cartoon, Human-agent, (Black, Hair)))), (Connected-to, Man-made-object/Wall), Upper-left-of), (Luminance/Warm, Orange-color, Brown-color), (Silver, Blue-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

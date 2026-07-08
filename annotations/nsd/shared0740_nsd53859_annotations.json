@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central portion of the frame, is a wooden bathroom vanity with a rich reddish-brown countertop and matching cabinetry beneath. Set into this counter, slightly right of center, is a white oval undermount sink accompanied by a dark bronze-toned faucet positioned to the right of the basin. On the far left, in the lower foreground, a metal towel bar is mounted to the cabinet face. The background walls are painted a pale lavender-white and feature yellow-toned beadboard wainscoting running horizontally beneath the counter and along the walls. In the upper center, a wood-framed mirrored medicine cabinet is mounted on the wall, reflecting a window with greenery visible outside. Flanking it are two wall sconces with upward-facing shades, one in the upper left and one in the upper right. On the left wall, in the upper-middle region, a small wooden shelf with a bracket projects outward. A white electrical outlet is visible on the right wall above the counter. The lighting is warm and soft, emphasizing the wood tones, creating a cozy, symmetrical composition centered on the sink and mirror.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-center-of, ((Furnishing, Label/Vanity, Manufactured-material/Wooden), ((Red-color, Brown-color), Furnishing, Label/Countertop), (Furnishing, Label/Cabinetry, Brown-color))), ((White, Ellipse, Furnishing, Label/Sink), To-right-of, Center-of), ((Brown-color, Dark-shade, Tool, Label/Faucet), To-right-of, (White, Ellipse, Furnishing, Label/Sink)), (Lower-left-of, Foreground-view, (Steel, Tool, Label/Towel-bar)), (Background-view, (Building-part, Label/Wall, (White-color, Purple-color, Light-shade))), (Building-part, Label/Beadboard, Yellow-color, Horizontally-oriented), (Upper-center-of, (Furnishing, Label/Medicine-cabinet, Manufactured-material/Wooden), Includes, (Furnishing, Label/Mirror)), ((Furnishing, Label/Mirror), (Window, (Plant, Outdoors))), (Upper-left-of, (Display-device, Label/Wall-sconce, Upward)), (Upper-right-of, (Display-device, Label/Wall-sconce, Upward)), (Upper-left-of, (Furnishing, Label/Shelf, Manufactured-material/Wooden)), (Right-side-of, Above, (White, Device, Label/Electrical-outlet)), (Symmetrical, Luminance/Warm)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

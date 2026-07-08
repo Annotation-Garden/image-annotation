@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two giraffes dominate the foreground of this photograph, positioned across the center and right portions of the frame. The first giraffe occupies the left-center, its long neck rising diagonally toward the upper-center, with its head turned rightward and downward, appearing to look toward or past the second animal. The second giraffe stands to the right, its larger body filling the right and lower-right foreground, with its neck angled upward and head reaching into the upper-center, close to the first giraffe's head, suggesting a possible interaction or shared gaze. Both display the characteristic brown-and-cream reticulated coat pattern. On the far left, a vertical tree trunk with rough gray-brown bark spans the frame's left edge from top to bottom. The background consists of dense green foliage and trees filling the upper portion, with a scattering of pale fallen branches and logs in the lower-center-right middle ground, and a strip of green grass along the bottom. The overall color scheme combines earthy browns, tans, and abundant greens. Lighting appears natural and bright, likely daylight, illuminating the giraffes' coats and casting soft contrast across the leafy backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Label/Giraffe, (Brown, White-color, Pattern), (Left-side-of, Foreground-view), (Neck, Upward), (Head, Rightward, Downward)), Interacts-with, (Animal-agent, Label/Giraffe, (Brown, White-color, Pattern), (Right-side-of, Foreground-view), (Neck, Upward), (Head, Upper-center-of))), (Plant, Label/Tree-trunk, (Gray-color, Brown, Rough), (Left-edge-of, Vertically-oriented)), (Green, Plant, Background-view, Upper-center-of), (Plant, Label/Fallen-branches, Lower-right-of), (Green, Grassy-terrain, Bottom-edge-of), (Brown, Tan, Green, Color), (Outdoors, Luminance/Daylight)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

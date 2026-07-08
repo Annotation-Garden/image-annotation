@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by the stern of a dark-hulled fishing boat occupying the left and central portions of the frame, with white lettering reading \"DIRTY DOG\" and \"PLYMOUTH\" visible on the lower-left hull. Two large gulls are the primary subjects: one stands in the lower-left-center on a wooden platform of the boat, facing right, while the second perches higher in the center, its head turned rightward and beak slightly open. Both birds share dark grey wings and white heads and bodies. In the boat's background, upper-center, a ship's steering wheel and various instruments, dials, and gauges are visible within a shaded cabin area. A metal weighing scale hangs from rigging in the upper-right corner. The foreground shows the boat's deck edge and calm water, while the entire right side and lower portion of the frame is filled with smooth, blue rippled water reflecting light. The color scheme combines the black hull, blue water, and grey-white birds. Lighting appears natural and bright, illuminating the birds and hull from the right, casting the cabin interior into relative shadow. The composition balances mechanical boat elements against the two animal subjects.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Boat, Black, (Word, Label/DIRTY-DOG), (Word, Label/PLYMOUTH)), (Left-side-of, Image)), ((Animal-agent, Animal/Gull, White, Gray), (Lower-left-of, Image)), ((Animal-agent, Animal/Gull, White, Gray, (Open, Mouth-part)), (Center-of, Image)), (Label/Steering-wheel, (Upper-center-of, (Room, Boat))), ((Measurement-device, Label/Scale), (Upper-right-of, Image)), ((Blue, Natural-feature/Water), (Right-side-of, Image)), (Natural-feature, Natural-feature/Water), (Label/Luminance-contrast-High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

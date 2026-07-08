@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's central foreground is dominated by a large gray elephant occupying the lower and central portions of the frame, oriented so its head faces right and body angles toward the viewer. Atop the elephant, seated in a metal-railed platform saddle in the center of the frame, are two people: a man on the left wearing dark sunglasses and a dark short-sleeved shirt, and a woman to his right in a pale yellow sleeveless top with dark hair, turned to face the camera. To the right, straddling the elephant's neck, sits a third person wearing a brown-blue long-sleeved shirt and a wide-brimmed hat, positioned lower and facing away toward the elephant's head, appearing to guide the animal. Ropes extend down the elephant's left side in the lower-left foreground. The background, filling the upper half, consists of dense green foliage, trees, and shrubs, with patches of blue sky and white clouds visible in the upper-right corner. A sandy dirt path appears in the lower-right. Lighting is bright natural daylight casting soft shadows. The overall color scheme combines green vegetation, gray elephant, and warm earth tones.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Large, Gray, Animal/Elephant, (Head-part, (To-right-of, Body)))), ((Human-agent, Male, (Glasses, Black), (Clothing, Black)), Interacts-with, (Animal-agent, Animal/Elephant)), ((Human-agent, Female, (Clothing, Yellow, Light-shade), (Hair, Black)), Interacts-with, (Animal-agent, Animal/Elephant)), (Center-of, (Furnishing, Steel, Label/Saddle-platform)), ((Human-agent, (Clothing, Brown, Blue), (Clothing, Label/Wide-brimmed-hat)), Interacts-with, (Animal-agent, Animal/Elephant)), ((Human-agent), (Neck, Above)), (Lower-left-of, (Tool, Label/Ropes)), (Background-view, Upper-center-of, (Green, Plant), (Green, Plant/Tree/Trees), (Plant, Label/Shrubs)), (Upper-right-of, (Blue, Natural-feature/Sky), (White, Label/Clouds)), (Lower-right-of, (Dirt-terrain, Path)), (Outdoors, Real-world), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

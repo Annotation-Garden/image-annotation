@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned center-left and occupying the lower-to-middle frame, a young man dominates the image, wearing a black flat-brimmed cap, a white short-sleeved t-shirt bearing red \"HI-TEC\" text on the chest, and dark brown or olive pants; he is captured mid-motion on a skateboard atop a dark ramp, his arms extended outward for balance, with his skateboard visible at the lower-left edge near his feet. The ramp surface, dark gray and angled, spans the lower-right portion of the frame. In the background, a crowd of spectators is seated and standing along the middle-right horizontal band, gathered near what appears to be tents and a white structure displaying partial red lettering. Above and filling the upper two-thirds behind the subject, dense green foliage and trees rise, topped by a bright blue sky with wispy clouds in the upper-left corner. The lighting is strong and natural, producing bright sunlit highlights on the trees and the subject's white shirt, with a lens flare effect visible upper-left. The color scheme combines vivid blue, saturated green, and neutral grays, and the composition places the active figure prominently against a busy, layered background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Center-of, Lower-center-of), (Black, (Clothing, Label/Cap)), (White, Clothing, (Red, Word, ID/HI-TEC)), (Clothing, Brown), (Move, (Ride, (Item, Label/Skateboard))), ((Upper-extremity), Away-from))), ((Item, Label/Ramp), Dark-shade, Gray, Rotated, Lower-right-of), (Background-view, (Group-of, Human-agent), (Sitting, Standing), Right-side-of, (Building, Label/Tent), (White, Building, (Red, Letter))), (Background-view, Green, (Plant, Label/Foliage), Upward), (Blue, Natural-feature, Label/Sky, Upper-center-of), (White, Label/Clouds, Upper-left-of), (Luminance/Bright, Luminance), (Blue, Green, Gray)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 390,
+            "total_tokens": 811
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 811
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {
