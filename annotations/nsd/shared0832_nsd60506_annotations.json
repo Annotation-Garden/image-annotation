@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, occupying the left and lower-left portion of the frame, bare leafless branches with thin twigs extend inward, some reaching toward the center. In the lower-center foreground, a partially submerged branch or piece of driftwood protrudes from the calm water surface, angled diagonally. The middle ground is dominated by a wide expanse of dark, still water spanning the entire width of the frame, occupying roughly the lower two-thirds. On the water, small dark shapes appear scattered across the center, possibly waterfowl, creating faint ripples. The background contains a dense line of bare, brownish trees stretching horizontally across the upper-center and upper-right, forming a shoreline; the tree line curves and recedes toward the center-left horizon. In the upper-right background, faint structures or buildings are partially visible through the trees. The sky occupies the uppermost portion, pale gray and overcast, providing diffuse, flat lighting with no visible shadows. The overall color scheme is muted and monochromatic, dominated by grays, browns, and desaturated tones, conveying a cold, wintry atmosphere. The composition is horizontally layered, with reflections of trees mirrored faintly on the water's surface.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, (Plant, (Left-side-of, Photograph))), (Foreground-view, (Natural-object, Water, (Lower-center-of, Photograph))), (Background-view, Water, Large, Dark-shade), (Background-view, (Group-of, Animal, (Center-of, Photograph))), (Background-view, (Group-of, Plant, Brown-color, (Top-of, Photograph))), (Background-view, (Building, (Upper-right-of, Photograph))), (Upper-center-of, (Outdoors, Gray-color, Cloud)), Cold, Grayscale)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's dominant subject is a brown bear positioned in the center-right of the frame, occupying the middle-ground and extending into the foreground; its body faces rightward while its head turns back toward the left, presenting a three-quarter profile with both rounded ears erect and its dark muzzle and eyes directed toward the viewer's left. In the foreground and lower-left portion of the frame, a large rock surface covered in vibrant green moss dominates, its texture rough and mottled with patches of gray stone showing through. Additional gray boulders appear in the lower-right corner beneath the bear. In the upper-right and right background, out-of-focus green foliage and slender tree trunks or branches are visible, receding into shadow. The upper-left contains more gray rock and darker recesses. The overall color scheme combines earthy browns of the bear's fur with saturated greens of moss and leaves and neutral grays of stone. Lighting appears diffuse and natural, illuminating the bear's flank and the moss while leaving background areas darker. Compositionally, the bear anchors the right side, balanced against the textured mossy rock filling the left, creating a diagonal division across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Animal/Bear, Brown), (Center-of, Photograph)), ((Rough, Green, Plant), (Lower-left-of, Photograph)), ((Gray, Rocky-terrain), (Lower-right-of, Photograph)), ((Green, Plant), (Background-view)), ((Gray, Rocky-terrain), (Upper-left-of, Photograph))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

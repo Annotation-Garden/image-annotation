@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A large giraffe dominates the foreground, positioned on the left and lower-center of the frame, its body extending from the bottom edge upward with its long neck and head reaching into the upper-left quadrant; its distinct reddish-brown polygonal patterning separated by cream-colored lines is clearly visible. In the middle ground, center-right, three smaller giraffes stand near gray rock formations, two facing right and one oriented differently, their coats showing similar patterned markings. The lower-center and lower-right contain clustered gray rocks and a small pool of water reflecting light at the bottom edge. A tall metal chain-link fence spans the center and right background, behind which stand dense green trees and rust-orange autumnal foliage in the upper portion of the frame. A structure with a green roof appears at the far right edge behind the fence. The lighting is diffuse and overcast, producing soft shadows and a pale gray-white sky visible at the top. The overall color scheme combines earthy browns, tans, and grays in the foreground with muted greens and oranges in the background, creating a naturalistic enclosure composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Large, Animal/Giraffe, (Red-color, Brown-color, Pattern), (Left-side-of, Lower-center-of)), ((Animal/Giraffe, (Neck, Head)), Towards, Upper-left-of)), (Background-view, (Item-count/3, Small, Animal/Giraffe, Pattern, (Center-of, Right-side-of)), (Gray, Rocky-terrain)), (Lower-center-of, Lower-right-of, (Gray, Rocky-terrain), (River, Small)), (Center-of, Right-side-of, (Metal, Assistive-device, Label/Chain-link-fence)), (Background-view, (Green, Plant, Tree), (Orange-color, Plant)), ((Roof, Green), (Right-edge-of, Building)), (Outdoors, (Overcast, Diffuse)), (Upper-center-of, (Gray, White, Field))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

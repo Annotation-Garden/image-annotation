@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a light wooden desk dominates the lower and central portion of the frame, supporting a black Samsung computer monitor positioned center-right, its screen facing left. A grey upholstered stool is tucked partially beneath the desk in the lower-center. To the lower-left, a woven wicker basket rests on the pale wooden floorboards. Below the desk on the right, stacked grey and weathered wooden boxes or planks sit on the floor. In the background against a white wall, the left side holds a shelving unit stacked with cardboard boxes, several labeled, above rows of red and dark file binders. A small red-framed picture and other small artworks and photographs hang on the upper wall, spanning left to right. A white conical pendant lamp descends from the upper-center of the frame. On the right, a ball of dark red and pink yarn sits on the desk surface. Papers and a book lie on the desktop center-left. The color scheme combines warm wood tones, white walls, and red accents. Lighting appears natural and diffuse, brightest at the window behind the monitor, creating soft, even illumination throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, Desktop-computer, Brown, (Center-of, Screen-window)), (Computer-screen, Black, Label/Samsung, (Left-side-of, Screen-window)), (Furnishing, Gray, (Lower-center-of, Screen-window)), (Container, Label/Wicker-basket, (Lower-left-of, Screen-window)), (Box, Gray, Brown, (Below, Desktop-computer)), ((Furnishing, (Contained-in, (Box, Paper))), (Background-view, (Left-side-of, Screen-window))), (Red, Document, (Background-view)), (Painting, Red, (Upper-center-of, Screen-window)), (White, (Upper-center-of, Screen-window)), (Red, Pink, (Right-side-of, Screen-window)), (Paper, Book, (Center-of, Screen-window)), (White, (Boundary-of, Room)), (Window, (Behind, Computer-screen)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

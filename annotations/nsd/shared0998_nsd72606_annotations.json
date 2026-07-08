@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is a giraffe positioned in the center of the frame, occupying the vertical extent from the lower edge to the top, with its long neck rising through the upper-center and its head partially cut off at the top edge. The giraffe faces away and slightly right, presenting its patterned flank of brown polygonal spots separated by tan lines; its four legs are visible in the lower-center portion, standing on dry, pale golden grass that fills the foreground lower third. In the background, spanning left to right across the middle band, are leafless shrubs and small trees with dense tangles of bare, thorny gray-brown branches, most prominent on the right side. The upper portion of the frame shows a flat, pale grayish-white sky with no visible sun or distinct clouds, indicating diffuse, overcast lighting that produces soft shadows. The overall color scheme is muted and earthy, dominated by browns, tans, and grays, suggesting a dry season landscape. Compositionally, the giraffe's vertical body creates a strong central axis, contrasting with the horizontal layering of grass, brush, and sky. No people or other animals are visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Animal-agent, Label/Giraffe, (Center-of, Foreground-view)), ((Animal-agent, Label/Giraffe), (Away-from, Experiment-participant)), ((Neck, Upper-center-of), (Head, Top-edge-of)), (Brown, Pattern, (Part-of, (Animal-agent, Label/Giraffe))), ((Lower-leg, Standing), (Dry, Grassy-terrain, Yellow)), (Grassy-terrain, Lower-center-of, Foreground-view), (Plant, Thin, Gray, Brown, Leaf-covered-terrain, Background-view, To-right-of), (White, Gray, Background-view, Top-of), (Overcast, Environmental-property), (Brown, Tan, Gray, Color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

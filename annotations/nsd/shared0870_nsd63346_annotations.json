@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a snow-covered ski slope with two figures. In the center foreground, positioned in the lower-middle of the frame, a skier wearing a yellow and blue jacket, red pants, and a dark helmet stands facing away from the camera, holding ski poles extended toward the right side. This figure appears to be walking or standing on skis atop the packed white snow, which fills the lower portion of the frame with visible tracks and undulating textures. To the right of center, in the middle distance, a second smaller skier dressed in dark clothing with a light-colored helmet moves across the slope. Thin vertical poles, likely slalom or boundary markers with orange and blue coloring, protrude from the snow in the left-lower and center-right areas. The background, occupying the upper half of the frame, shows a gently sloping snowy hillside dotted with dark green coniferous trees clustered along the left, center, and upper regions. The overall color scheme is dominated by cool white and gray snow tones, contrasted by the dark evergreens and the brightly colored clothing. Lighting appears diffuse and overcast, producing soft shadows and even illumination across the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Snow, Terrain, Sloped-terrain), ((Human-agent, Experiment-actor), (Yellow, Blue, Clothing), (Red, Clothing), (Black, Head-mounted-display), (Backward, Stare), (Hold-down, Tool), Lower-center-of), ((Human-agent, Experiment-actor), (Black, Clothing), (Light-shade, Head-mounted-display), Move, To-right-of), ((Vertically-oriented, Navigational-object, Orange, Blue), (Lower-left-of, Snow)), ((Plant, Green, Dark-shade), (Group-of, Above)), (White, Gray, Color), Cold, Overt-attention",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

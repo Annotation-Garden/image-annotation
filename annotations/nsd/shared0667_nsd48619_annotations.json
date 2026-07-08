@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the left and center-left of the frame is the tail section of a KLM aircraft, painted light blue with the white \"KLM\" lettering and a small crown emblem above it, extending from the upper-center down toward the lower-left where the registration \"PH-BFV\" is visible on the pale fuselage. In the background across the center and right of the frame sit additional parked aircraft, including one with a red, white, and blue tail on the right-center, positioned near airport terminal structures and tall light poles that recede toward the horizon. The lower portion of the image shows grey tarmac marked with red and yellow lines, with luggage carts or ground service containers lined up in the center-left middle ground. In the lower foreground, partially cropped white and dark vehicles\u2014appearing to be service trucks\u2014occupy the bottom edge. The upper half of the frame is filled with a bright blue sky scattered with white cumulus clouds. The overall color scheme combines blues, whites, and greys with warm tarmac tones; lighting is bright daylight casting soft shadows, and the composition balances the large angled foreground plane against the horizontal spread of distant aircraft.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Aircraft, (Light-shade, Blue), (Label/KLM), Left-side-of, Center-of), (Word, ID/KLM), (Aircraft, ((Red), (White), (Blue)), To-right-of, Center-of), (Group-of, Aircraft, Background-view), (Building, Background-view), (Assistive-device, Background-view), (Cart, Lower-center-of), (Truck, ((White), (Black)), Bottom-edge-of), (Paved-terrain, Gray, ((Red), (Yellow)), Lower-center-of), (Blue, Sky), (White, Cloud), (Bright, Luminance), Daylight",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

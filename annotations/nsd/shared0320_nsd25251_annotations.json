@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a bouquet of tulips arranged in a clear glass vase positioned in the center and lower-right portion of the frame, extending diagonally upward toward the upper-left and upper-right edges. The tulips display pale white to cream petals streaked with pink and reddish-orange markings, and their long green stems are visible through the transparent vase, along with water and cut ends resting at the bottom. Broad green leaves interweave among the stems in the middle of the composition. In the foreground and lower portion, the vase sits on a wooden surface with warm brown tones and visible plank lines and grain running diagonally. In the background, occupying the upper-left area, is a wooden chair with vertical and horizontal slats, partially out of focus. The overall color scheme combines warm brown wood tones with the soft pinks, whites, and greens of the flowers. Lighting appears natural and directional, coming from the left, casting soft shadows on the floor beneath and beside the vase. The composition is taken from an elevated angle looking downward, emphasizing the diagonal arrangement of blooms against the wooden floor.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Experimental-stimulus, Visual-presentation, Photograph, (Plant, (Green, Leaf)), ((Plant, (White, Pink, Orange-color)), Center-of), ((Plant, (Green)), (Contained-in, Glass)), (Green, Body-part), (Water, Contained-in, Glass), ((Furnishing, Wood, (Brown, Warm)), Underneath), ((Furnishing, Wood), Upper-left-of, Background-view), (Aerial-view, Downward)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by a white square plate positioned in the center and lower portion of the frame, holding a stir-fry dish. On this plate, glistening pieces of browned meat cluster in the lower-center and right areas, interspersed with vibrant green Chinese broccoli or gai lan stalks that extend across the center and upper regions of the dish. A bright red pepper slice sits prominently in the center, while a yellow pepper piece appears just below and left of it, and small green peas or edamame are scattered in the lower-center. The meat and vegetables physically overlap and intermingle, indicating they were cooked and plated together. In the background, which is soft and out of focus, additional white dishes are visible in the upper portion of the frame, including a purple flower or garnish in the upper-right and green leafy elements in the upper-left. The overall color scheme combines warm browns and reds with cool greens against neutral white. Lighting is soft and diffused, creating gentle highlights on the glossy meat surfaces. The composition uses shallow depth of field, sharply focusing the central food while blurring the surrounding table setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((White, Square, Ingestible-object/Main-dish, Savory), (Center-of, Lower-center-of)), ((Brown, Ingestible-object/Main-dish, Savory), (Lower-center-of, To-right-of)), ((Green, Plant, Ingestible-object/Staple-food, Savory), (Center-of, Upper-center-of)), ((Red, Plant, Ingestible-object/Staple-food, Savory), Center-of), ((Yellow, Plant, Ingestible-object/Staple-food, Savory), Lower-left-of), ((Green, Plant, Ingestible-object/Staple-food, Savory), Lower-center-of), (Background-view, (White, Ingestible-object/Main-dish), Upper-center-of), ((Purple, Plant), Upper-right-of), ((Green, Plant), Upper-left-of), (Luminance-contrast/Low), Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

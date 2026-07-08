@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, dark reddish-brown wooden fencing frames the lower left and lower right corners, with horizontal and angled rails creating strong diagonal lines that lead the eye toward the center. Dominating the center and right of the frame stands a large adult elephant, its gray, deeply wrinkled body occupying most of the middle ground; its head, ear, and curled trunk with a visible white tusk extend toward the right edge. Directly beneath and slightly left of the adult, a small gray baby elephant stands close against its parent's front legs, indicating a protective or nursing interaction between the two animals. In the background, a lighter wooden post-and-rail fence runs horizontally across the upper portion, behind which green foliage and grass fill the space. The ground is covered in green grass with patches of bare dirt near the animals' feet. The overall color scheme combines earthy grays of the elephants, warm reddish-browns of the near fencing, and green vegetation. Lighting appears soft and diffuse, consistent with an overcast day, producing gentle shadows. The composition balances the massive central animal against the framing fence structures on either side.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Brown-color, Dark-shade, Building-part, Label/Wooden-fence), (To-left-of, Center-of), (To-right-of, Center-of)), ((Animal-agent, Large, (Gray-color, Body)), Interacts-with, (Animal-agent, Small, (Gray-color, Body))), (Background-view, (Building-part, Label/Post-and-rail-fence), (Green-color, Plant)), (Green-color, Plant, Grassy-terrain), (Dirt-terrain, Near), (Outdoors, Cloud-covered)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

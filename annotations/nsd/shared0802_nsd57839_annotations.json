@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two chestnut-brown horses dominate the foreground, standing close together and occupying the central and lower portions of the frame, spanning from the left edge to the right. The horse on the left faces the viewer more directly, its head positioned in the upper-center with a distinctive white blaze running down the muzzle, ears erect and pointed upward. The horse on the right stands slightly behind and to the side, its head lowered and angled toward the left horse, positioned in the center-right; the two animals' heads are near one another, suggesting physical closeness. Their reddish-brown coats show lighter tan highlights along the muzzles and manes. In the background, occupying the entire upper region, is a pale, overcast sky of light blue-white tones, and along the middle-right horizon a thin band of dark green trees and vegetation is visible. The lower third shows bright green grassy field where the horses stand. Lighting appears diffuse and even, consistent with an overcast day, producing soft shadows. The overall color scheme combines warm browns of the horses with cool greens of the grass and pale sky, creating a balanced, naturalistic composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Horse, Brown, (Center-of, Foreground-view)), Interacts-with, (Animal-agent, Animal/Horse, Brown)), ((Animal-agent, Animal/Horse, (Head, White, Upper-center-of)), To-left-of, (Animal-agent, Animal/Horse, (Head, Lower, Center-of))), ((Grassy-terrain, Green), (Lower-center-of, Foreground-view)), ((Sky, Light-shade, Blue), Above), ((Plant, Green, DarkGreen), (Right-side-of, Background-view))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

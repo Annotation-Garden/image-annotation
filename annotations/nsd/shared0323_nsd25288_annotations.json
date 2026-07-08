@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, sits a white microwave oven with its door open on the left side, revealing a dark grey interior and glass panel bearing a white instructional label; two circular control dials and a smaller rectangular button are visible on the microwave's right-side control panel, which faces the viewer. The microwave rests on a wooden-topped surface with a light grey edge, situated in the lower third of the image. In the background, in the upper portion of the frame, a light wooden shelf extends horizontally, supported by a white metal bracket on the right; atop the shelf are several boxed items, including a green box on the left and additional packages with red, blue, and white coloring toward the right. The walls behind are plain and pale, off-white or light grey. The overall color scheme is dominated by whites, greys, and warm wood tones, with muted accent colors on the shelf products. Lighting appears soft and diffuse, casting gentle shadows beneath the shelf and around the microwave. The composition centers the microwave, balancing the upper shelf against the lower appliance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((White, Machine, Label/Microwave-oven), (Open, Door), (Lower-center-of, Image)), ((Gray-color, Dark-shade), Contained-in, (White, Machine, Label/Microwave-oven)), (Glass, (White, Label)), (Circle, (Part-of, (White, Machine, Label/Microwave-oven))), (Push-button, Rectangle, (Part-of, (White, Machine, Label/Microwave-oven))), (Furnishing, (Manufactured-material, Brown-color), (Light-shade, Gray-color, Edge-of, Furnishing)), Background-view, ((Manufactured-material, Brown-color, Light-shade), Above, (White, Machine, Label/Microwave-oven)), ((White, Manufactured-material), Right-side-of, (Manufactured-material, Brown-color, Light-shade)), ((Green, Box), To-left-of, (Box, Red, Blue, White)), (White-color, Light-shade), Soft",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 349,
+            "total_tokens": 770
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 770
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A cream and orange tabby kitten dominates the frame, positioned center-left, with its body extending from the lower-left corner and its head raised toward the upper-center; the kitten's face is turned to the right in profile, showing one visible eye, pink nose, and prominent white whiskers. In the foreground, occupying the lower-right and extending across the bottom, is a dark laptop keyboard with visible individual keys catching soft light. The kitten's front paw and chest rest near or upon this keyboard, suggesting direct physical contact between the animal and the device. The background is softly blurred and dimly lit, containing warm-toned surfaces, an out-of-focus reddish object at right (possibly a chair or fabric), and a small circular light source in the upper-right corner. The overall color scheme is warm, dominated by amber, tan, and brown hues with darker shadowed regions at the upper-left. Lighting is low and directional, illuminating the kitten's fur and face while leaving peripheral areas dark. The composition uses shallow depth of field, sharply focusing the kitten against the diffuse surroundings, creating a centered subject with foreground and background elements framing it.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Kitten, (Cream-color, Orange-color, Tabby)), Interacts-with, (Keyboard, Black)), ((Animal-agent, Animal/Kitten), Center-of), (Keyboard, Foreground-view, Lower-right-of), (Circle, Light-shade, Upper-right-of), (Orange-color, Blurred, Right-side-of), Depth, Focused-attention, Low, Brown-color, Orange-color, Tan",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

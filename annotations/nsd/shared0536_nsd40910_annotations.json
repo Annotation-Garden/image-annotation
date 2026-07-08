@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is a large gray elephant occupying the majority of the frame, positioned centrally and extending from the left edge to the right side, with its body filling the upper and middle portions of the image and its legs descending into the lower area. The elephant faces right, showing its head, ear, eye, curved trunk directed downward, and a single visible ivory-colored tusk in the right-center region. Its skin displays deeply wrinkled, textured folds across the body and legs, with dappled patches of light and shadow falling across its back and side, indicating sunlight filtered through overhead foliage. In the foreground and lower portion of the frame lies green grass with scattered lighter and drier vegetation. The background, visible mainly in the upper-left corner, contains blurred dark green foliage suggesting trees or bushes. The overall color scheme is muted, dominated by grays of the animal and greens of the vegetation, with the pale tusk providing contrast. Lighting appears natural and bright, casting mottled shadows on the elephant's surface. The composition centers the animal prominently, its scale emphasized by how it dominates and nearly fills the entire square frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Large, Gray, Animal, (Center-of, Image)), ((Animal, Gray, Large), (Head, Ear, Eye)), (Nose, Curved, Downward), (White, Label/Tusk), (Rough, Textured), (Green, Plant, (Foreground-view)), (Green, Dark-shade, Plant, (Background-view)), (Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

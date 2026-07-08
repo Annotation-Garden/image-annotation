@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-left of the frame, a child with blonde hair wearing a light blue jacket with black stripes holds a white object, likely a remote controller, in both hands near the bottom center. Centrally located, a second child with light brown hair sits wearing a red long-sleeved shirt bearing white and black text and graphics; this child's right hand rests near the lower center of the frame. On the right side, a third child with blonde hair wears a matching light blue jacket with black stripes and has one arm raised upward, the hand reaching toward the upper-right area near a partially visible fourth figure at the far right edge. The background consists of a solid pink wall in the upper portion, transitioning to a white horizontal molding strip, then a lighter pink lower wall. The color scheme is dominated by warm pinks, contrasted with the cool blue jackets and vivid red shirt. Lighting appears even and diffuse, coming from the front, casting soft shadows. The composition places three faces across the horizontal midline, creating a layered, seated grouping.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Head-part, Yellow), (Clothing, Light-shade, Blue, (Black, Dash)), (Lower-left-of, Computer-screen)), ((Human-agent), Interacts-with, (Joystick, White, (Hold-down, (Hand, Item-count/2))))), (Human-agent, (Head-part, Brown, Light-shade), (Clothing, Red, (White, Black, Character)), Sitting, (Center-of, Computer-screen), (Hand, Right, Lower-center-of)), (Human-agent, (Head-part, Yellow), (Clothing, Light-shade, Blue, (Black, Dash)), ((Hand, (Upper-right-of, Computer-screen)), Towards, (Human-agent, Right-edge-of)), (Right-side-of, Computer-screen)), (Background-view, (Wall, Pink, Upper-center-of), (White, Building-part, Horizontally-oriented), (Wall, Pink, Light-shade, Lower-center-of)), (Luminance, (From-to, Foreground-view))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 343,
+            "total_tokens": 764
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 764
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

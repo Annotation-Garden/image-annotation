@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A surfer in a dark wetsuit occupies the upper-center-left portion of the frame, positioned atop a surfboard that displays green and white markings along its underside. The surfer is crouched in a dynamic pose, with one arm extended forward and downward toward the left, the other bent behind, and knees flexed while riding the crest of a breaking wave. This central figure and wave constitute the middle-ground and background of the image. The wave itself curls across the upper portion of the frame, with white foam breaking and spraying at its crest along the top and upper-left edges. In the foreground, occupying the lower third of the frame, is a broad expanse of churned, foamy white and pale blue-green water. The background water shows a deeper, darker olive-green to gray-green tone. The overall color scheme is muted and cool, dominated by greens, grays, and whites, with the dark surfer providing high contrast against the lighter water and foam. Lighting appears diffuse and overcast, producing soft shadows and low saturation. The composition places the active subject off-center, creating diagonal movement across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, (Crouching, (Flex, Knee), ((Upper-arm, Forearm), Reach), ((Upper-center-of, Left-side-of), Image)), (Clothing, Black), ((Human-agent), Interacts-with, ((Green, White), Ride))), ((Green, White), Ride), ((White, Foam-covered, Wave), (Top-edge-of, Image)), ((White, (Blue-color, Green-color)), (Lower-center-of, Image)), ((Green-color, Gray-color), (Background-view, Image)), (Cold, Low), (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 351,
+            "total_tokens": 772
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 772
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

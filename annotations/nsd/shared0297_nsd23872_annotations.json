@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and slightly right of the frame, a young man with short dark hair stands in profile facing left, wearing a white short-sleeved polo shirt with dark accents at the collar and gray athletic shorts bearing three white side stripes; he grips a tennis racket with both hands, holding it upright and forward at chest level in the center of the image. A yellow-green tennis ball hovers in the lower-left center, near the racket's strings. In the background, a second person in a dark shirt stands on the court at center-right, partially behind a green net that stretches horizontally across the middle of the frame. Toward the right edge, another figure in purple with dark shorts stands near a large gray tarp or covered structure. On the left, a tall dark-green coniferous tree rises against a pale blue sky with faint clouds, and low buildings appear behind a fence. The court surface below is green and reddish-brown. The lighting is bright and natural, casting soft daylight; the color scheme combines greens, blues, whites, and earthy court tones in a balanced, centrally weighted composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Male, (Short, Hair, Black), Standing, ((Torso-chest, (White, Clothing)), (Lower-extremity, (Gray, Clothing)))), (Grasp, Tool), Center-of), ((Human-agent), Interacts-with, (Tool)), (Yellow-green, Ball, Lower-left-of), ((Human-agent, (Black, Clothing), Standing, Behind), (Green, Item), Center-of), ((Human-agent, (Purple, Clothing), (Black, Clothing), Standing), Right-edge-of), ((DarkGreen, Plant), To-left-of), (Building, Behind), (Item, Behind), ((Green, Item), (Sienna, Item), Below), (Blue, Sky), (White, Item), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 351,
+            "total_tokens": 772
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 772
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

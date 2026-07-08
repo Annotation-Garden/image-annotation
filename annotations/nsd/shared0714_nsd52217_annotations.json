@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, a skateboarder stands atop a wooden ledge or rail, balancing on a skateboard whose wheels are visible at the lower center. He wears a green and gray flat-brimmed cap, a white graphic t-shirt with colorful abstract patterns, black skinny jeans, and dark red sneakers; a green wristband is visible on his raised left arm, and both arms are extended outward and upward, suggesting active balancing. His body dominates the vertical center of the composition. In the background, spanning the middle and upper regions across the full width, a crowd of spectators stands and sits behind wooden barriers, many holding cameras and phones raised toward the skater; several wear caps and sunglasses. A white ramp structure appears at the right, and partially legible signage reading letters like \"MOUS\" and \"S\" is positioned at the left and lower right. The lighting is bright and diffuse, consistent with an overcast outdoor daytime setting, casting soft, even illumination without harsh shadows. The color scheme mixes muted grays and browns of wood and clothing against the vivid multicolored shirt, creating a strong central focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Experiment-actor), (Standing, (Balance, (Item, Label/Skateboard)))), (Green, Gray, (Clothing, Label/Cap)), (White, (Clothing, Label/T-shirt)), (Black, (Clothing, Label/Jeans)), (DarkRed, (Clothing, Label/Sneakers)), (Green, (Item, Label/Wristband), (Left, Upper-extremity)), ((Upper-extremity), Extended, Upward), ((Item, Label/Wooden-ledge), Underneath, (Human-agent)), (Background-view, (Crowd-sound, (Group-of, Human-agent), (Standing, Sitting))), ((Group-of, Human-agent), (Hold-down, (Item, Label/Camera))), ((Group-of, Human-agent), (Hold-down, Cellphone)), ((Item, Label/Barrier), In-front-of, (Group-of, Human-agent)), (White, (Item, Label/Ramp), Right-side-of), (Word, Label/MOUS, Left-side-of), (Outdoors, Cloudy, Bright, Luminance), ((Human-agent), Interacts-with, (Item, Label/Skateboard))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

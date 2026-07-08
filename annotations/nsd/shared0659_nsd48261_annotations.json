@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by architectural elements set against a vivid blue sky that fills the upper-right and background portions of the frame. In the foreground on the right side sits an ornate clock featuring a black-and-white face with Roman numerals, surrounded by gilded golden decorative scrollwork and figures, mounted on a dark base with an arched metallic support extending toward the lower-right corner. The background is occupied by a large stone tower constructed of reddish-brown masonry, positioned across the center and left of the frame, occupying the upper-left, center, and lower portions. The tower displays arched openings with louvered slats and a central niche holding a pale carved statue of a standing figure in its middle-left region. Atop the tower's upper edge, a decorative finial or sculptural element is visible against the sky. Patches of green moss or lichen appear on the stone surfaces. The lighting is bright and directional, coming from the right, illuminating the golden clock elements and casting the sky in saturated blue. The color scheme combines warm reddish-brown stone, brilliant gold, black, white, and cool blue, creating strong contrast and a balanced diagonal composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Building-part, Label/Tower, (Manufactured-material, Red-color, Brown-color), Large), (Background-view, Center-of, Left-side-of)), ((Clock, (Clock-face, Black, White), Gold, (Manufactured-material)), (Foreground-view, Right-side-of)), ((Statue, White, Light-shade), (Center-of, Left-side-of)), (Sculpture, (Top-edge-of, Label/Tower)), (Plant, Green, (Boundary-of, Manufactured-material)), (Blue, (Background-view, Upper-right-of)), (Luminance-contrast/High, Rightward)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

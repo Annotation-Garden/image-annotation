@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center, a laptop rests on a raised stand, its lid facing the viewer and covered with numerous stickers, including a prominent white Apple logo, red \"I GOT EXPRESS!\" text, and various colorful circular and rectangular decals. To the left of the laptop sits a dark drinking glass with reddish liquid and a white computer mouse on a light mouse pad, positioned on the wooden desk surface. In the lower-right foreground, papers and a pen or ruler lie scattered on the desk, alongside white cables trailing across the surface. In the background left, a older-style computer monitor sits atop a light-colored cabinet, near a small square window in the upper-center that admits bright daylight. The upper-left corner holds a framed artwork depicting pink flowers in a vase against a bordered background. On the right side, tall shelving contains rows of yellow, red, and dark binders stacked vertically and horizontally. The overall color scheme is warm and muted, dominated by browns, creams, and yellows. Lighting is dim indoors, contrasting sharply with the bright window, creating a shadowed, low-key interior composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Indoors, ((Foreground-view, Center-of), (Laptop-computer, (Above, Furnishing), (Window, White, (Man-made-object, Label/Apple-logo)), (Red, Label/I-GOT-EXPRESS-text), (Circle, Rectangle, Color))), ((To-left-of, Laptop-computer), (Container, Dark, (Ingestible-object/Main-dish, Red)), (Computer-mouse, White, (On-top-of, Furnishing))), (Furnishing, Steel), ((Lower-right-of, Foreground-view), Paper, Pen, (White, Nonbiological-artifact)), ((Background-view, Left-side-of), (Display-device, (Above, Furnishing)), Light-shade), ((Upper-center-of, Window), Bright, Luminance), ((Upper-left-of), (Painting, (Pink, Plant))), ((Right-side-of), (Furnishing, (Yellow, Red, Dark, Notebook))), (Brown, Steel, Yellow, Color-shade), (Low, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

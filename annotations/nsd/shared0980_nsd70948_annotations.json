@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-center of the frame, a person wearing a red jacket and pink snow pants stands on a red snowboard, facing the camera with a white helmet and dark goggles or glasses. Extending across the middle-ground, a group of numerous people on skis and snowboards is distributed from left to center, wearing varied colored clothing including red, black, white, and green; several hold ski poles and appear to be standing or gathering on the packed, track-marked snow. On the right side of the frame, a chairlift or gondola structure with dark cabins is visible, along with a person in an orange top and red trousers near the center-right. The background is dominated by a large snow-covered mountain slope filling the upper two-thirds of the image, dotted with sparse dark evergreen trees on the left and center. The upper portion shows a blue sky with scattered white clouds. The overall color scheme combines bright white snow, blue sky, and scattered warm reds and oranges against cooler tones. Lighting is bright and natural, casting soft shadows on the textured snow surface, suggesting strong daytime sun.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Real-world, (Snow, Mountain, Sloped-terrain), ((Human-agent, Experiment-participant), Foreground-view, Lower-center-of, Standing, (Red, Clothing), (Pink, Clothing), ((Human-agent), Interacts-with, (Red, Tool))), (Group-of, (Human-agent), (Left-side-of, Center-of), (Red, Black, White, Green, Clothing), (Standing, Tool)), ((Chairlift, Machine), Right-side-of, (Dark-shade, Room)), ((Human-agent), Upper-right-of, (Orange, Clothing), (Red, Clothing)), (Mountain, Snow, Upper-center-of), (Plant, Left-side-of, Center-of, Dark-shade), (Blue, White, Above), (White, Snow), (Blue, Above)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

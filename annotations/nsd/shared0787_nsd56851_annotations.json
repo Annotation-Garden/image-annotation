@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a person in the foreground, occupying the central and upper portions of the frame, captured mid-action on a skateboard positioned in the lower-center. The individual wears a dark maroon hooded sweatshirt with lighter lettering across the chest, dark corduroy-textured pants, and white sneakers, one of which rests on the skateboard in the lower-center-left while the other extends toward the lower-right. Their arms are bent, with the left arm angled outward toward the left of the frame. In the background, a large tree trunk rises along the left-center edge, surrounded by green foliage spanning the upper-left and upper-right corners. Behind the subject, blurred low buildings with light-colored facades and horizontal railings stretch across the middle band of the frame, alongside indistinct structures and possible signage on the far-left lower area, which appears pinkish. The ground is a gray paved surface. The overall color scheme is muted and desaturated with dark reddish-brown tones dominating the subject and cooler grays and greens in the surroundings. Lighting is diffuse and overcast, with a pale sky visible upper-right, creating soft shadows and low contrast throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Human-agent, Experiment-participant, (Foreground-view, Upper-center-of), ((Torso-chest, Clothing, Dark-shade, Maroon), (Letter, Light-shade)), ((Lower-extremity, Clothing, Dark-shade)), ((Foot, Clothing, White), (Lower-center-of)), ((Upper-extremity, Bend), (To-left-of))), ((Human-agent), Interacts-with, (Tool, Label/Skateboard)), (Tool, Label/Skateboard, Lower-center-of), (Building-part, Natural-object, Plant, (Left-side-of, Center-of)), (Green, Plant, (Upper-left-of)), (Green, Plant, (Upper-right-of)), (Building, Background-view, Light-shade, Blurred), (Gray, Paved-terrain), (White-color, Background-view, Upper-right-of), (Luminance-contrast/Low), Desaturated, (Brown-color, Dark-shade)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, occupying the lower portion of the frame, sits a wooden bench with visible horizontal slats spanning the bottom edge; two people, seen from behind as dark silhouettes, sit at the lower-center and lower-right, their heads and shoulders visible. Dominating the middle ground and center of the frame is a large white-hulled sailing vessel oriented horizontally, featuring four tall vertical masts with furled sails and extensive rigging lines; a red, white, and blue flag flies from the left mast area. Numerous small human figures line the deck of the ship, clustered along its length. On the right side, a large triangular white sail extends from the upper-right toward the vessel. The background shows a calm bluish-gray body of water beneath a pale, hazy sky, with a low horizontal landmass and small distant structures along the far shore at center-right. A tiny bird is visible mid-frame right against the sky. The overall color scheme is muted and cool, dominated by blues, grays, and whites, with soft, diffuse daylight and no harsh shadows, creating a balanced, horizontally layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Photograph, (Blue-color, Gray-color, White-color, Light-shade)), ((Furnishing, Label/Bench, (Manufactured-material, Label/Wood)), (Bottom-edge-of, Photograph)), (Lower-center-of, (Human-agent, Torso, Head)), (Lower-right-of, (Human-agent, Torso, Head)), ((Boat, White-color, Large, Horizontally-oriented, (Item-count/4, Label/Mast)), (Center-of, Photograph)), (Group-of, (Human-agent, Small)), ((Triangle, White-color, Large), (Upper-right-of, Photograph)), (Background-view, (Water, Blue-color, Gray-color)), (Background-view, (Terrain, Below, (Building, Small))), ((Animal, Small), (In-front-of, Background-view)), (Outdoors, (Sky, Light-shade))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

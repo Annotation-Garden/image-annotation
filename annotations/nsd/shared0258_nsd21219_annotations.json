@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground stands a woman positioned center-right, wearing a light cream hooded coat, black leggings with black-and-white checkered lower legs, and dark boots; she leans against a large gray cylindrical pillar on the right side of the frame and looks down at a smartphone held in both hands at chest level. To the left, in the mid-ground on a bench, two seated figures appear: a person at the far left in dark clothing holds white papers or a book, while a second person center-left wears a dark jacket, a beanie, and a red-and-black backpack, also looking downward toward their hands. The background consists of a tiled subway wall in beige and white tones, with a partially visible sign on the pillar reading \"37\" in white against dark. The overall color scheme is muted and warm, dominated by browns, creams, and grays, with the woman's pale coat forming the brightest element. Lighting is dim and artificial, casting soft illumination on the standing figure while leaving the seated figures in shadow. The composition is horizontally balanced between standing and seated groups, separated by the pillar.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Female, Standing), (Clothing, White), (Clothing, Black), (Clothing, (Black, White)), (Clothing, Black)), ((Human-agent, Female), Interacts-with, (Cellphone, (Hold-down, (Hand)))), ((Human-agent, Female), Adjacent-to, (Cylinder, Gray, Large, Right-side-of)), (Background-view, (Human-agent, Seating, Left-side-of), (Clothing, Black), (Book, White)), (Background-view, (Human-agent, Seating), (Clothing, Black), (Clothing, Black), ((Red, Black), Item)), (Building-part, Beige, White), (Character, Label/Sign-37, White), (Light-shade, Indoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 345,
+            "total_tokens": 766
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 766
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

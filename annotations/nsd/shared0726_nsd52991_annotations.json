@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a passenger train positioned at a station platform, occupying the central and right portions of the frame across the middle horizontal band. The train cars display a distinctive color scheme of vibrant blue on their lower and central bodies, transitioning to bright orange on the upper sections and around the open doorway on the right side; the roofs bear dark rooftop ventilation or air-conditioning units in a row. In the foreground, occupying the lower portion of the frame, is a pale gray concrete platform edged with a lighter tactile paving strip, and a set of steel railway tracks runs horizontally through the lower-center, resting on a bed of gray gravel ballast. In the upper-left, a dark platform canopy or roof structure extends overhead, while the background beyond the train shows muted green foliage and trees receding into a hazy, overcast sky visible in the upper-left area. The lighting is diffuse and flat, consistent with an overcast day, producing soft shadows and low contrast. The overall composition is horizontally layered\u2014platform, tracks, train, vegetation\u2014with cool blues and grays dominating alongside warm orange accents.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Train, (Blue, Lower-center-of), (Orange, Top-of), (Door, Right-side-of), (Center-of, Right-side-of)), (Path, Gray, (Lower-center-of)), (Gravel-terrain, Gray, Below), (Roof, Dark-shade, Upper-left-of), (Green, Plant, Background-view), (Outdoors, Overcast), (Horizontally-oriented, Blue, Gray, Orange)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

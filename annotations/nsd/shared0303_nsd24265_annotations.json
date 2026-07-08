@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned center-frame in the lower half, a person with dark hair stands facing away from the camera, wearing a black short-sleeved top, black shorts, and pink-and-white athletic shoes, holding a tennis racket in the right hand with the racket head resting near the ground. In the background, upper-center, a second person stands on the opposite side of a tennis net, appearing to hold a racket, suggesting the two are engaged in play across the court. A dark horizontal net spans the middle of the frame, dividing the near court from the far court. Behind the net, a tall chain-link fence runs left to right, with a low structure or building visible center-background. Above and beyond the fence, a dense line of green trees fills the upper portion of the frame, topped by a pale, overcast sky. A metal light pole rises vertically on the left side, extending above the tree line. The court surface shows two tones of green, darker in front and lighter beyond the net. The overall color scheme is muted green and gray, with flat, diffuse lighting and no strong shadows, indicating cloudy conditions.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Lower-center-of, Image), Black, (Backward, Body), (Hair, Black), (Torso, (Clothing, Black)), (Upper-leg, (Clothing, Black)), (Foot, (Clothing, Pink, White)), ((Right, Hand), (Grasp, (Tool, Label/Tennis-racket))))), (Background-view, (Human-agent, (Upper-center-of, Image), (Grasp, (Tool, Label/Tennis-racket)))), ((Human-agent), Interacts-with, (Human-agent)), (Center-of, Image, (Horizontally-oriented, Label/Tennis-net)), (Behind, (Label/Chain-link-fence)), (Center-of, Background-view, Building), (Upper-center-of, Image, (Green, Plant)), (Top-of, Image, (White, Gray, Sky)), (Left-side-of, Image, (Vertically-oriented, Tool, Label/Light-pole)), (Green, Dark-shade, Path), (Green, Light-shade, Path), (Gray, Green), (Outdoors, Cloudy)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 349,
+            "total_tokens": 770
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 770
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

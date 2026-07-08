@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a small, enclosed restroom interior dominated by warm beige and tan tones across the walls, ceiling, and toilet fixture, with a darker gray-and-brown speckled tile floor occupying the lower portion of the frame. In the foreground center-left sits a white toilet with an open, raised lid, its cover appearing to have an integrated seat unit; a folded white cloth or paper drapes over its left side, and thin cords or hoses extend from the base along the floor. On the far right foreground, a metallic silver shelf or dispenser projects from the wall, with a white paper element visible beneath it in the lower right. In the background upper-center, a recessed shelf holds two stacked white cylindrical objects resembling paper rolls, set within a tiled niche. A square access panel is mounted on the wall behind and above the toilet in the center. To the right of center on the wall is a small rectangular white control panel or switch. The lighting is soft, warm, and diffuse, casting gentle shadows on the floor. The composition is vertical, symmetrical, and tightly framed.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, Indoors, Room, (Beige, Tan, (Wall, Roof)), ((Gray-color, Brown-color, Pattern), Path), (White, Furnishing, (Open, Top-of)), (White, Cloth), (Silver, Furnishing, (Right-side-of, Wall)), (White, Paper), ((Group-of, White, Cylinder), (Contained-in, (Furnishing, Background-view))), (Square, Door, (Behind, Furnishing)), (White, Rectangle, Push-button, (To-right-of, Center-of)), (Low, Luminance), Symmetrical, Vertically-oriented",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 355,
+            "total_tokens": 776
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 776
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

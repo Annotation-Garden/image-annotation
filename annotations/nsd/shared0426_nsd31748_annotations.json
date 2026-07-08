@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three men in dark business suits walk together along a sidewalk on the left-center of the frame, occupying the lower-central portion; the leftmost wears a navy suit with a light blue tie, the central figure a dark suit with a dark tie, and the rightmost a dark suit with a red tie, and they appear to be conversing as they move forward. To their right, in the center of the frame, several dark motor scooters are parked in a row along the curb, extending into the middle distance. A young tree with green leaves stands prominently in the center foreground, its slender trunk rising vertically and dividing the composition. On the left, a large stone building with tall barred windows and a rusticated facade runs the length of the frame into the background. The street recedes diagonally toward the upper-right background, where additional buildings, parked vehicles, and hazy structures fade into bright light. The overall color scheme is muted, dominated by grays, beige stone tones, and dark suit colors, accented by green foliage. Lighting is bright daylight, casting soft shadows on the pavement, with a slightly overexposed, hazy background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, (Foreground-view, Lower-center-of, ((Group-of, Human-agent, Man, (Clothing, Black), Walk, Forward), (Communicate-vocally), Path)), ((Human-agent, (Clothing, Blue)), Interacts-with, (Human-agent)), (Left-side-of, ((Human-agent, Man, (Clothing, Blue, Label/Navy-suit, (Clothing, Blue, Label/Light-blue-tie))))), (Center-of, ((Human-agent, Man, (Clothing, Black), (Clothing, Black, Label/Dark-tie)))), (Right-side-of, ((Human-agent, Man, (Clothing, Black), (Clothing, Red, Label/Red-tie)))), (Center-of, (Group-of, Vehicle, Black, Label/Motor-scooters), (Road)), (Foreground-view, Center-of, (Plant, Green, Vertically-oriented, Label/Young-tree)), (Left-side-of, (Building, Label/Stone-building, (Window, Vertically-oriented))), (Background-view, Upper-right-of, (Road, Building, Vehicle)), (Bright), (Gray), (Beige), (Green), (Outdoors, Bright)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 356,
+            "total_tokens": 777
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 777
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

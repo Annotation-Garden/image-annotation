@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a computer workstation arranged on a wooden desk with a warm reddish-brown grain running horizontally across the frame. In the background, occupying the center and upper portion, stands a flat-panel monitor with a black bezel and a dark, powered-off screen; it is supported by a black articulating wall-mount arm visible in the upper right, attached to a plain off-white wall behind it. In the foreground lower-left sits a black ergonomic keyboard with a curved, split key layout and an integrated dark gray wrist rest, angled diagonally toward the lower-left corner. To the lower-right, closer to the camera, rests a silver and black wireless mouse with a rounded contour. The elements do not overlap significantly, though the keyboard and mouse both sit forward of the monitor, which recedes into the scene. The color scheme combines the desk's warm brown tones with the cool grays, silvers, and blacks of the electronics against the neutral pale wall. Lighting appears soft and diffuse, coming from the upper area, casting gentle shadows beneath the mouse and keyboard. The composition is diagonal, guiding the eye from the peripherals up toward the screen.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Computer-screen, Black, Off), (Above, Desktop-computer)), ((Keyboard, Black, (Split, Curved)), (Lower-left-of, Computer-screen)), ((Computer-mouse, Silver, Black), (Lower-right-of, Computer-screen)), (Desk, Brown, Wood), (Window, White), (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 388,
+            "total_tokens": 809
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 809
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

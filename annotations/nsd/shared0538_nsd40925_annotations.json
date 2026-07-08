@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and right portions of the frame, stands a large white Embraer 190 aircraft with its nose angled toward the viewer, cockpit windows visible in the upper center, and the text \"EMBRAER 190\" printed below them; the partial registration \"LH\" appears in dark lettering on the lower right of the fuselage. A white mobile staircase with steps and railings ascends to a doorway on the right side of the plane. In the lower foreground, various ground-support equipment sits on gray tarmac marked with yellow and white painted lines: a yellow-and-orange wheeled cart or generator in the lower center, and a white towbar or vehicle extending across the lower portion. In the background on the left, a second aircraft bearing \"FRANCE\" text and a small flag emblem is parked, alongside a white service truck and additional staircase. The overall color scheme is dominated by whites, grays, and muted tones, set against an overcast, cloudy gray sky in the upper region. Lighting is diffuse and flat, producing soft shadows and low contrast across the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, (White, Large, Aircraft, (Front-view, Towards), ((Window, Upper-center-of, Aircraft), (Word, ID/EMBRAER 190)), (Label/LH, Lower-right-of, Aircraft)), (White, Assistive-device, Label/Mobile-staircase, (To-right-of, (Aircraft, Door))), (Tarmac, Gray, Lower-center-of, ((Yellow, White), Line-noise-artifact)), ((Yellow, Orange, Cart), Lower-center-of), (White, Vehicle, Label/Towbar, Foreground-view), (Background-view, Left-side-of, (White, Aircraft, (Word, ID/FRANCE))), (Background-view, White, Truck), (Overcast, Gray, Label/Sky, Upper-center-of), (Diffuse, Low, Luminance-contrast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 351,
+            "total_tokens": 772
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 772
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

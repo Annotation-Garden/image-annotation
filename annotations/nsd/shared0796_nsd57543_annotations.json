@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center-right of the frame, a baseball pitcher stands mid-delivery on a dirt pitching mound that spans the lower center and right portions of the image. He wears a white pinstriped uniform bearing the name \"MILLER\" and the number \"23\" in black on the back, a dark green cap, and dark cleats; a tan glove is on his left hand extended forward, while his right arm is cocked upward behind his head, gripping a white baseball visible in the upper-center of the frame. His body is captured in a dynamic stride, front leg planted and rear leg trailing with toe touching the mound. The background, filling the upper two-thirds, shows a manicured green grass field with visible horizontal mowing stripes in the middle band, transitioning to a broad expanse of brown dirt in the upper portion of the frame. A small white base sits in the lower-left corner on the dirt. Lighting is bright and directional, consistent with strong sunlight, casting shadows beneath the player. The color scheme combines green grass, tan-brown dirt, and the white-and-black uniform, creating high contrast and a sharp, focused central subject.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Label/MILLER, ID/23)), (Perform, (White, Clothing))), ((Human-agent), Interacts-with, (White, Ball)), (Foreground-view, (Center-of, Right-side-of)), ((Human-agent), (Standing, Move-lower-extremity)), ((Green, Cap), Top-of, Head), ((Tan, Glove), (Left, Hand)), ((White, Ball), Upper-center-of), ((Dirt-terrain), Lower-center-of), ((Green, Grassy-terrain), (Horizontally-oriented, Pattern)), ((Brown, Dirt-terrain), Above), ((White, Item, Label/Base), Lower-left-of), (Bright, Luminance), (Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

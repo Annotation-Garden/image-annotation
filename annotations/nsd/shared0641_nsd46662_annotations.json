@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts numerous small fishing boats beached on a pebbled shore, arranged across the frame in overlapping rows from foreground to background. In the immediate lower foreground, a white boat with a red rim occupies the bottom edge, spanning left to center, while another white boat with a blue tarp sits at center-right. Colorful buoys\u2014orange, pink, and red spheres\u2014rest on the gray pebbles in the lower-center and left areas, alongside boxes and containers, one bright yellow crate at the lower left. The middle ground contains densely packed boats in white, blue, red, and turquoise hues, several fitted with black outboard motors visible at center and right. In the upper portion of the frame, the sea stretches horizontally in muted teal and blue-gray tones, with faint waves and a hazy shoreline or headland at the upper left. The overall color scheme combines cool blues and greens of the water with warm reds, oranges, and yellows of the boats and buoys. Lighting appears bright and natural, consistent with daytime sun, casting soft shadows beneath the hulls. No people or animals are clearly visible in the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Outdoors, Real-world, (Rocky-terrain, Gray)), ((Boat, White, (Red, Boundary-of)), Bottom-edge-of), (Boat, White, Blue), ((Sphere, Orange), (Sphere, Pink), (Sphere, Red), Lower-center-of), (Box, Yellow, Lower-left-of), (Group-of, Boat, White, Blue, Red, Turquoise, Center-of), (Engine, Black), ((Natural-object, Blue-color, Green-color), Above), (Natural-feature, Upper-left-of), Daytime, Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

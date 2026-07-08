@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the foreground, positioned in the center-right and extending from the lower to upper-middle portion of the frame, stands a fire hydrant painted green with white caps and side nozzles; silver metal chains hang from its two lower side outlets, draping across the front. The hydrant occupies a substantial visual mass and is sharply focused, contrasting with the softer background. Beneath and behind it, a paved surface of reddish-brown brick and darker gray stone fills the lower-left and mid-ground, appearing wet with reflective patches. In the middle-ground left, two human figures walk on the path; one wears a green patterned dress and boots, the other darker clothing, both partially blurred. The upper portion of the frame contains tall trees with dark green foliage against a pale, overcast sky, and a low dark building or structure sits at the left horizon. A small illuminated screen or sign glows on the right edge. The overall color scheme combines cool greens and grays with warm brick tones. Lighting is diffuse and dim, consistent with dusk or overcast conditions, and the composition uses shallow depth of field emphasizing the hydrant.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Man-made-object, Green, White, Label/Fire-hydrant, Foreground-view, Center-of, Focused-attention), (Made-of, Steel)), ((Man-made-object, Label/Chain, Silver), (Connected-to, (Man-made-object, Label/Fire-hydrant))), (Path, Paved-terrain, Red, Gray, Lower-left-of), ((Human-agent, Green, Clothing, Walk), Interacts-with, (Human-agent, Walk)), (Plant, Green, Dark-shade, Upper-center-of), (Building, Dark-shade, Left-side-of), (Display-device, Right-edge-of), (Overcast, Dim), Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

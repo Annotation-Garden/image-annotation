@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the center and lower-right of the frame is a dark green steam locomotive, numbered 7822 on its front buffer beam, angled diagonally toward the lower-right foreground as it sits on metal tracks that recede from the lower-right toward the center-left. Behind and to the left, a line of cream-and-brown passenger carriages extends into the background, curving along a platform on the left side where several people in dark clothing stand in the mid-ground. In the center-background rises a brick station building with a pitched grey-green roof and a tall chimney or tower behind it. To the right, a lighter platform runs along the lower-right foreground, bordered by a white fence and a red telephone box near the center-right. A curved metal railing appears in the lower-left foreground. The color scheme combines muted greens, reddish-browns, creams, and greys, with the red phone box providing a small accent. Lighting is flat and diffuse, consistent with an overcast sky visible faintly in the upper background, casting soft shadows. The composition is layered with strong diagonal lines from the tracks and platforms drawing the eye toward the receding train.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Image, Photograph), ((Train, (Dark, Green), ID/7822), (Center-of, (Lower-right-of, Foreground-view))), (Train, (Rotated, Diagonal)), ((Machine, Length, (Metal, Steel)), (From-to, (Lower-right-of, Center-of))), ((Vehicle, (Cream, Brown)), (Behind, (Left-side-of, Background-view))), ((Path, (Left-side-of, Foreground-view)), (Adjacent-to, (Group-of, Human-agent, (Dark, Clothing)))), ((Building, (Brick, Manufactured-material), (Roof, (Gray, Green)), Building-part), (Center-of, Background-view)), ((Path, Light-shade), (Lower-right-of, Foreground-view)), ((Man-made-object, White, Label/Fence), (Boundary-of, Path)), ((Man-made-object, Red, Label/Telephone-box), (Center-of, (Right-side-of, Foreground-view))), ((Man-made-object, (Metal, Steel), Label/Railing, Rotated), (Lower-left-of, Foreground-view)), (Green, Brown, Red, White, Gray), (Luminance-contrast/Low), (Outdoors, (Cloud, Background-view)), ((Path, Directional-relation), Towards, Train)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

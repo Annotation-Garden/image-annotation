@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three giraffes dominate the frame, their bodies oriented predominantly leftward. The most prominent giraffe occupies the center and right, its long neck stretching diagonally from the upper-center toward the lower-left where its head lowers near the ground. A second giraffe's head and neck appear in the upper-left center, angled upward and to the right, while a third giraffe's head is partially visible in the upper-left, overlapping the others. Their coats display the characteristic reticulated pattern of irregular tan-brown patches separated by lighter cream lines. Spanning horizontally across the mid-frame is a wooden post-and-rail fence with vertical support posts, behind which sits wire mesh fencing in the lower portion. Green grass fills the lower foreground, with a pile of dried hay visible at the lower-left near the giraffes' heads. The background, upper portion of the frame, contains dense green foliage and trees under diffuse, overcast daylight, producing soft shadows and even illumination. The overall color scheme combines earthy browns of the animals and fence with saturated greens of the vegetation and grass, creating a naturalistic, layered composition with the animals sharply detailed against the softer backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Animal-agent, Label/Giraffe, (Tan, Brown, Cream, Pattern), Leftward), Group-of, Item-count/3), (Animal-agent, Label/Giraffe, Center-of, Right), (Animal-agent, Label/Giraffe, Upper-left-of), ((Building-part, Label/Post-and-rail-fence, (Wood, Brown)), Horizontally-oriented), (Building-part, Label/Wire-mesh-fence, Lower-center-of), (Plant, Green, Lower-center-of, Foreground-view), (Ingestible-object/Staple-food, Label/Hay, Lower-left-of), (Plant, Green, Background-view, Upper-center-of), Outdoors, Cloudy-daylight, (Brown, Green)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 398,
+            "total_tokens": 819
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 819
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

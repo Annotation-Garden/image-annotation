@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a clock tower occupying the foreground and central portion of the frame, with its white circular clock face positioned in the upper-center area. The clock face displays black numerals and hands, with the hands indicating a time of approximately 9:47. Above the clock, a pyramidal metallic roof rises toward the top-center, topped by a slender vertical finial or weathervane element extending beyond the upper edge of the frame. The tower's body is constructed of weathered gray and beige metal paneling, with a lower section of horizontal slatted louvers visible in the lower half of the image, sloping outward toward the bottom-left and bottom-right corners. The metallic surfaces show tones of silver, gray, and pale brown, suggesting aged material. The background consists of a clear blue sky filling the upper-left and upper-right regions of the frame, free of clouds. The lighting appears natural and directional, casting subtle shadows on the tower's paneling and giving the metal a slight sheen, indicating daytime illumination. The overall composition is symmetrical and vertically oriented, with the clock centered as the primary focal point against the uniform sky backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Building-part, Label/Clock-tower), (Center-of, Foreground-view)), (Clock-face, White, Circle, (Upper-center-of, Photograph)), (Clock-face-position, Black, (Time-value/9:47)), ((Roof, Pyramid, Steel), (Top-of, Photograph)), (Vertically-oriented, (Top-edge-of, Photograph)), (Building-part, Gray, Beige, Steel), ((Building-part, Horizontally-oriented), (Lower-left-of, Photograph), (Lower-right-of, Photograph)), (Silver, Gray, Brown-color), ((Blue, Outdoors), (Upper-left-of, Photograph), (Upper-right-of, Photograph)), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two zebras dominate the foreground, positioned center to right within the frame, standing on a grassy plain. The pair face opposite directions and appear to be interacting closely, with their heads and necks overlapping near the center, one zebra's head lowered and resting against or beside the other's neck, suggesting physical contact or a nuzzling posture. The zebra on the right occupies the right and lower-center portion, its body extending toward the right edge, while the second zebra's striped body angles toward the left, its head meeting the other near the center. A third zebra is faintly visible in the far left background, partially cut off by the frame edge. The background upper portion contains a dense wall of dark green foliage and trees, out of focus, spanning the top of the image. The lower foreground is filled with dry, golden-green grass and low green shrubbery, particularly in the lower-left corner. The color scheme combines the black-and-white striping of the zebras with warm tans, greens, and browns of the vegetation. Lighting appears natural and soft, likely daylight, casting gentle illumination without harsh shadows. The composition centers on the animals' interaction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Zebra), Interacts-with, (Animal-agent, Label/Zebra)), (Animal, (Foreground-view, Center-of), Grassy-terrain), (Animal, Left-side-of, Background-view), (Green, Dark-shade, Plant, Background-view, Outdoors), (Grassy-terrain, Green, Lower-left-of), (Black, White, Brown, Tan, Green), (Outdoors, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

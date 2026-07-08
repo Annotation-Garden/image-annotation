@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned center-right and occupying the lower-to-middle portion of the frame, a shirtless male surfer crouches on a surfboard, his body angled forward and to the right with knees bent and both arms extended for balance; he wears dark shorts and has light-brown, wet hair. The surfboard beneath him, visible in the lower-center, appears pale blue and white, partially submerged in churning water. Surrounding the surfer, white foam and spray dominate the center and left portions of the frame as a breaking wave crests, creating textured white and pale-gray tones against darker water. The middle ground shows the smoother, darker blue-gray ocean surface, while the background across the upper third displays a flat horizon line separating the sea from a hazy, pale gray-blue sky that lacks visible clouds or sun. Lighting appears bright and natural, illuminating the surfer's back and casting subtle shadows on his torso and legs, suggesting the light source originates from the left. The overall color scheme is muted and cool, dominated by grays, blues, and whites, with the composition centering human motion against expansive, minimal oceanic surroundings.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Male, (Torso, (Body-part, Naked)), (Hair, Brown, Light-shade)), Experiment-actor, (Crouching, (Body, Forward, Rightward), (Knee, Flex), (Upper-extremity, Stretch))), ((Human-agent), Interacts-with, (Board, Blue, White, Pale-color)), (Foam, White, (Center-of, Foreground-view)), (Wave, (Water, Churning)), (Ocean, Blue, Gray-color, (Background-view, Middle)), (Horizon, (Boundary-of, (Sky, Gray-color, Blue))), (Luminance, (Bright, (From-to, Leftward))), (Gray-color, Blue, White, Cool)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

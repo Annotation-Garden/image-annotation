@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and slightly left, a snowboarder is captured mid-action riding along the crest of a snow ramp; the person wears a dark helmet with goggles, a black jacket, teal-green pants, and dark gloves, and stands atop a red and yellow snowboard, with both arms extended for balance and body leaning forward. Directly beneath this figure, a dark cast shadow stretches across the pale ramp surface in the lower-center of the frame. In the background, positioned center-right, a second standing figure wears a dark helmet, a light blue and black vest over a dark top, appearing to watch the snowboarder. Behind them, an orange mesh safety fence runs horizontally across the middle-right. The upper portion of the frame shows a snow-covered slope patched with exposed brown earth, creating a mottled white-and-tan texture. The overall color scheme combines cool whites and blues of the snow with the warmer greens, reds, yellows, and orange accents of the equipment and fence. Lighting is bright and diffuse, consistent with daytime outdoor snow conditions, casting a defined shadow. The composition balances the active foreground subject against a static observer and expansive snowy backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Snow, ((Human-agent, Experiment-actor), (Perform, (Ride, (Red, Yellow, Label/Snowboard)))), (Human-agent, (Head, (Dark-shade, Label/Helmet)), (Glasses, Label/Goggles), (Black, Label/Jacket), (Teal, Green, Label/Pants), (Dark-shade, Label/Gloves), (Upper-extremity, Stretch), (Torso, Forward)), (Foreground-view, Lower-left-of), ((Human-agent, Experiment-actor), (Ride, (Red, Yellow, Label/Snowboard))), ((Dark-shade, Label/Shadow), (Below, (Label/Snow-ramp))), (Lower-center-of), ((Human-agent, Experiment-actor), (Attend-to, (Human-agent, Experiment-actor)), (Head, (Dark-shade, Label/Helmet)), (LightBlue, Black, Label/Vest), (Dark-shade, Label/Top), (Standing), (Background-view, To-right-of)), ((Orange, Label/Safety-fence), (Horizontally-oriented), (To-right-of)), (Snow, (Brown, Label/Exposed-earth), (Sloped-terrain), (Above)), (White-color, Blue-color, Green-color, Red-color, Yellow-color, Orange-color), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 395,
+            "total_tokens": 816
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 816
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a large giraffe dominates the left and center of the frame, its head and long neck angled diagonally from the upper-left corner down toward the lower-center, with its snout pointing rightward near the woman. The giraffe's coat displays a tan base with distinct brown polygonal patches, and two ossicones rise from the top of its head. On the right side of the frame, occupying the middle and lower-right area, a woman is positioned in the foreground; she has short dark brown hair with bangs, wears black-framed glasses, and is smiling broadly with visible teeth. She wears a dark jacket bearing a small red-and-white emblem on the chest, and her hand appears near the giraffe's lower snout, suggesting an interaction of feeding or touching. In the background, positioned in the lower-center-left, a second, smaller giraffe stands facing forward, less detailed and softer in focus. Behind them, faint green foliage and a pale, overcast white sky fill the upper background. The overall color scheme is warm browns and tans against muted greens and white. Lighting is soft and diffuse, indicating an overcast day, producing even illumination with minimal harsh shadows.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, Large, Animal-agent, Animal/Giraffe, (Tan, Brown)), (To-left-of, (Human-agent, Experiment-participant))), ((Human-agent, Experiment-participant, Foreground-view, (Brown, Hair), Glasses, Smile, Teeth), Interacts-with, (Animal-agent, Animal/Giraffe)), (Right-side-of, (Human-agent, Experiment-participant)), (Human-agent, (Black, Clothing), (Red, White)), (Animal-agent, Animal/Giraffe, Small, Background-view, Lower-center-of), (Background-view, Green, Plant), (Background-view, White, Upward), (Outdoors, Cloudy)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

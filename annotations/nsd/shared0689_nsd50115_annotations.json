@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, occupying the lower-center and lower-right of the frame, are out-of-focus green plants with elongated leaves radiating upward, softly blurred and partially obscuring the base of the scene. Spanning horizontally across the frame at multiple heights are thin metallic cables or wires, one crossing the upper region and others cutting through the middle, forming a visual barrier consistent with an enclosure. In the mid-ground, positioned center to center-left, stand two zebras, their black-and-white striped bodies sharply defined; the left zebra faces right while the right zebra faces left, their heads nearly touching in the center, suggesting close interaction or contact. They stand on pale, sandy ground that spans the lower-middle portion. The background, filling the upper half, contains a textured gray rock or stone wall, dark shadowed recesses, and dense green foliage with dappled light along the top. The overall color scheme combines earthy browns and tans, cool grays, and greens, punctuated by the high-contrast monochrome zebras. Lighting appears natural and directional, casting shadows beneath the animals and creating bright highlights on the sandy floor and scattered leaves above.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Lower-center-of, (Green, Plant)), (Lower-right-of, (Green, Plant))), ((Manufactured-material, Metal), (Horizontally-oriented, Building-part)), ((Animal-agent, Animal/Zebra, (Black, White, Striped), To-left-of), Interacts-with, (Animal-agent, Animal/Zebra, (Black, White, Striped), To-right-of)), (Dirt-terrain, Lower-center-of), (Background-view, (Gray, Rough, Building-part), (Green, Plant)), (Natural-feature, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 388,
+            "total_tokens": 809
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 809
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

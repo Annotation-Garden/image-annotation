@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned center and extending into the lower portion of the frame, stands a child balancing on a skateboard with green wheels visible at the bottom edge. The child wears a red safety helmet, a white long-sleeved shirt, blue jeans, and red shoes, with both arms extended outward for balance\u2014the right arm reaching toward the right side of the frame and the left arm angled downward and forward. The skateboard rests on a paved surface marked with faint painted lines and curved markings. In the middle ground on the right side sits a large red-brick building with multiple windows, a peaked dark roof, and a chimney structure. To the left and center background are leafless trees, a tall street lamp post rising into the upper-center area, and a chain-link fence with some low structures behind it. The upper half of the frame is dominated by a blue sky filled with wispy, streaked white clouds. The overall color scheme combines cool blues and grays of sky and pavement with warm red tones of the brick building and helmet. Lighting appears natural and bright, casting shadows toward the lower-left, suggesting daytime sun.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Center-of, Image)), (Balance, (Human-agent, (Tool))), ((Human-agent), Interacts-with, (Tool)), (Green, (Bottom-edge-of, Image)), (Red, Head, Clothing), (White, Torso, Clothing), (Blue, Upper-leg, Clothing), (Red, Foot, Clothing), (Upper-extremity, To-right-of, Image), (Upper-extremity, Downward), (Tool, Paved-terrain), (Faint, Path)), (Middle-ground, (Right-side-of, Image), (Red, Building, Large), (Window), (Dark, Roof), (Building-part)), (Background-view, (Plant, Leaf-covered-terrain), (Tool, (Upper-center-of, Image)), (Nonbiological-artifact)), (Upper-center-of, Image, (Blue, Natural-feature)), (White, Natural-feature), (Blue, Gray, Environmental-property), (Red, Building), (Outdoors, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 357,
+            "total_tokens": 778
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 778
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

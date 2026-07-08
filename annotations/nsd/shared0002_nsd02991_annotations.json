@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground occupying the right and lower-center of the frame, a man wearing a white chef's jacket and a dark blue cap pours liquid from a stainless steel measuring pot into a larger metal stockpot positioned on a stainless steel countertop; directly below and to his right rests a portion of cooked meat, reddish-brown in color, on the metal surface. In the lower-left foreground, a second person in a white chef's jacket over a dark apron leans forward, hands reaching toward a light-colored cardboard box labeled with text including the word \"wrap,\" beside a rectangular metal tray. Both individuals interact with cooking equipment rather than each other. In the background, spanning center to left, are large stainless steel commercial ovens with multiple doors marked by red accents and vertical handles, along with a metallic overhead range hood at the upper portion of the frame from which a hanging utensil, possibly a ladle, is suspended on the upper left. The overall color scheme is dominated by silver and gray metallic tones, white uniforms, and warm ambient lighting reflecting off polished surfaces, creating a balanced, symmetrical composition centered on the two working figures.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, (Clothing, White), (Clothing, Blue)), (In-front-of, ((Right-side-of, Lower-center-of), Foreground-view))), (Human-agent, (Pour, (Metal, Container))), (((Human-agent), Interacts-with, (Metal, Container))), ((Metal, Container), (Top-of, (Metal, Furnishing))), ((Ingestible-object/Main-dish, Savory, Brown), (Below, (Metal, Furnishing))), ((Human-agent, (Clothing, White), (Clothing, Black)), ((Lower-left-of, Foreground-view))), (Human-agent, (Reach, (Box, Label/wrap))), (((Human-agent), Interacts-with, (Box, Label/wrap))), ((Rectangle, Metal, Furnishing), (Adjacent-to, (Box, Label/wrap))), ((Machine, Metal, (Door, Red)), (Background-view, (Center-of, Left-side-of))), ((Furnishing, Metal), (Upper-center-of, Background-view)), ((Tool, (Hold-down)), (Upper-left-of, Background-view)), (Silver, Gray, White), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

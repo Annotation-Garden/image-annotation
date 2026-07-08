@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, occupying the lower center and lower right of the frame, sits a dark wooden dining table bearing a terracotta pot of pale pink and white flowers, a black pepper mill, and a metal tray, all resting on the table's polished surface. Two gray upholstered chairs with curved metal frames flank the table in the mid-ground, one on the lower left and one on the center-right. The background presents a kitchen dominated by reddish-brown wood cabinets lining the upper and lower walls, arranged left, center, and right. A stainless-steel microwave sits centered above a cooktop, and a matching stainless refrigerator stands at the upper right. On the countertops appear a wooden bowl of yellow fruit at center-right, dark bottles at center, and a green wine bottle at left. The backsplash shows beige tile. The overall color scheme is warm, combining brown wood tones, beige walls, and gray chair fabric. Lighting is soft and diffuse, brightest across the table's right side, suggesting daylight. The composition centers on the table, with the kitchen receding symmetrically behind it, creating depth toward the appliances.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Lower-center-of, Lower-right-of), (Building-part, Label/Dining-table, Brown, Furnishing, ((Furnishing, Label/Terracotta-pot, Pink, White), Contained-in, (Plant)), (Tool, Label/Pepper-mill, Black), (Tool, Label/Metal-tray, Steel))), ((Furnishing, Label/Chair, Gray, Steel), (Group-of, Item-count/2), (Lower-left-of, Center-of)), (Background-view, (Room, Label/Kitchen, (Furnishing, Label/Cabinet, Brown, (Group-of, Item-count/3), (Left-side-of, Center-of, Right-side-of, Above, Below)), ((Machine, Label/Microwave, Steel), Center-of, Above, (Machine, Label/Cooktop)), (Machine, Label/Refrigerator, Steel, Upper-right-of), ((Furnishing, Label/Bowl, Brown), Contained-in, (Ingestible-object/Staple-food, Yellow, Sweet), Center-of), (Furnishing, Label/Bottle, Black, Center-of), (Furnishing, Label/Wine-bottle, Green, Left-side-of), (Building-part, Label/Backsplash, Beige))), (Warm, Brown, Beige, Gray), (Luminance, Low, Diffuse), Symmetrical, Depth",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

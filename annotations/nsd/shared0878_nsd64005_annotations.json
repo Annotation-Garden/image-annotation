@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a young female tennis player occupies the center and lower-center of the frame, wearing a light blue short-sleeved shirt and dark navy shorts, her brown hair pulled back. She is captured mid-swing, both hands gripping a red, black, and white tennis racket held to the upper-left of the frame, her arms extended across her body in a follow-through motion. Her gaze is directed toward the right side of the frame, where a bright yellow-green tennis ball hovers in the upper-right quadrant, establishing a clear interaction of anticipated contact between player and ball. Behind her, spanning the entire background, is a diamond-patterned chain-link fence rendered in gray metallic tones, creating a repetitive grid texture. Beyond and through the fence, the background dissolves into heavily blurred shapes in dark green, brown, and muted red hues, suggesting foliage or spectators but lacking definition. The lighting is bright and natural, consistent with outdoor daylight, casting soft shadows on the player's face and arms. The overall color scheme contrasts cool blues of her attire against warm earth tones and the vivid yellow ball, with the sharp subject isolated against the soft background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Experimental-stimulus, ((Human-agent, Female, Young, Experiment-participant), (Center-of, (Lower-center-of))), ((Human-agent), Interacts-with, (Tool, Label/Tennis-racket)), ((Human-agent, (Clothing, Blue, Light-shade)), (Clothing, Navy, Dark-shade)), (Brown, Hair), ((Hand, (Grasp, (Tool, Label/Tennis-racket, Red, Black, White)))), ((Tool, Label/Tennis-racket), (Upper-left-of, Screen-window)), ((Upper-extremity, Extended)), (Stare, (To-right-of, Screen-window)), ((Yellow, Green, Ball), (Upper-right-of, Screen-window)), (Background-view, (Repetitive, Pattern, Gray, Steel, Label/Chain-link-fence)), (Background-view, (Dark-shade, Green), (Brown), (Red)), (Outdoors, Bright)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 393,
+            "total_tokens": 814
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 814
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

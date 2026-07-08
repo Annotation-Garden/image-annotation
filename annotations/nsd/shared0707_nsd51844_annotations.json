@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three dogs occupy the lower and central portions of the frame within a grassy, sunlit area. On the left edge, a gray-and-white husky-type dog stands facing right, partially cropped by the frame border, positioned in the lower-left. In the lower-center, a small white fluffy dog runs forward with its mouth open, appearing mid-motion. On the right side, a large black dog with a pink collar runs energetically across a light-colored dirt or gravel path, its legs extended and mouth open, positioned in the center-right at mid-height. The three dogs appear to be actively interacting, running and playing together. The background, occupying the upper portion of the frame, contains a chain-link fence stretching horizontally and dense green foliage, trees, and shrubbery behind it. The overall color scheme is dominated by greens from the grass and vegetation, contrasted with the black, white, and gray tones of the dogs and the pale beige path. Lighting is bright and natural, consistent with daytime outdoor sun, casting soft shadows beneath the dogs. The composition balances motion and depth, with foreground activity against a static, layered natural backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Grassy-terrain, ((Animal-agent, Animal/Dog, Gray, White, Left-edge-of), (Facing, Right)), (Animal-agent, Animal/Dog, White, Small, (Run, Forward)), ((Animal-agent, Animal/Dog, Black, Large, (Run, Forward)), Interacts-with, (Animal-agent, Animal/Dog)), (Path, Beige), (Fence, Horizontally-oriented, Background-view), (Plant, Green, Background-view), Bright, (Foreground-view, Depth)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a commercial passenger aircraft occupying the central and lower portion of the frame, positioned horizontally with its nose pointing toward the right side and its tail toward the left. The aircraft bears \"Alitalia\" branding in green cursive lettering on the fuselage near the rear, with a tail fin painted in green and red, colors consistent with the Italian flag. The plane rests on the ground with its landing gear visible in the lower center, casting shadows beneath. In the immediate foreground, a grassy strip runs across the lower portion of the frame, and a row of small yellow ground markers sits in the lower-left area on the paved surface. In the background, spanning the upper half, are airport terminal buildings and structures rendered in muted grays and beiges, along with a partial view of a second aircraft displaying a dark blue tail on the left-center. A tall lattice light tower rises in the upper-center-left. The sky above is pale and hazy. The overall color scheme combines white, green, and red on the plane against neutral gray industrial tones, under bright, diffuse daylight producing soft shadows and clear visibility.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Aircraft, White, (Green, Label/Alitalia), (Green, Red)), Center-of), ((Aircraft, Horizontally-oriented), (To-right-of, Aircraft)), (Grassy-terrain, Lower-center-of), ((Yellow, Navigational-object), Lower-left-of), (Paved-terrain, Lower-center-of), ((Building, Background-view), Above), ((Aircraft, (Blue, Color-shade)), Left-side-of), (Tower, Upper-center-of), (White, Green, Red)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

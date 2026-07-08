@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A twin-engine turboprop aircraft dominates the frame, positioned center and facing the viewer with its white nose cone and cockpit windows filling the upper-center region. Two large propeller assemblies extend symmetrically to the left and right of the fuselage, each mounted on engine nacelles beneath high-set wings that stretch toward the frame edges. In the lower-center foreground, the aircraft's tricycle landing gear and front wheels rest on paved tarmac, with a folded airstair door deployed on the right side. A bright orange traffic cone sits in the lower-left foreground on the concrete surface. The tarmac fills the lower portion of the frame and displays yellow guide lines and stenciled black text reading aircraft type codes such as \"A310,\" \"A320,\" and numeric values on the lower-right. In the background, a tall communications tower rises against a pale, hazy sky in the upper-center, while distant vehicles and airport structures appear small along the horizon behind the wings. The overall color scheme is muted\u2014dominated by whites, grays, and beige tarmac\u2014accented by orange and yellow markings. Lighting is soft and diffuse, producing gentle shadows and an overcast, low-contrast atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Aircraft, White, (Center-of, Foreground-view)), ((Window, Upper-center-of), (Part-of, Aircraft)), ((Engine, To-left-of, Aircraft), (Engine, To-right-of, Aircraft)), (Runway, Paved-terrain, Lower-center-of), ((Door, Right-side-of), (Part-of, Aircraft)), (Cone, Orange, Lower-left-of), ((Yellow, Runway), (Black, Character, Label/A310, Label/A320, Lower-right-of)), (Building, Upper-center-of, Background-view), ((Vehicle, Building), Far-from, Background-view), (Gray, White, Beige), (Luminance-contrast/Low))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

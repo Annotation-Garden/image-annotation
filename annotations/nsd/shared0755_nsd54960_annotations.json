@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three human figures occupy the lower and central portions of the frame during a baseball moment. On the left-center stands a batter in a blue jersey, gray pants, and blue helmet, swinging a dark bat that extends toward the upper-left, his body twisted mid-motion with both hands gripping the handle. In the center-right, a catcher crouches, wearing a red jersey with the number 35, red helmet, white pants, and an extended brown mitt raised toward the batter. To the right, an umpire in a dark shirt, gray pants, and dark cap bends forward behind the catcher, positioned upper-right relative to him. A small white baseball is visible in the upper-left sky area, separated from the players. The background shows green grass across the upper half, a tan dirt infield in the lower-center where a white home plate and chalk baselines appear, and a dark green wall along the top edge. The color scheme combines green, tan, blue, red, and white tones. Lighting is bright and directional, casting shadows to the lower-right of each figure, indicating strong sunlight. Composition centers on the interaction between batter, ball, and catcher.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, (Blue, Clothing), (Gray, Clothing), (Blue, Head-part)), (Grasp, Tool), (Bend, Torso))), ((Human-agent, (Red, Clothing), Label/35, (Red, Head-part), (White, Clothing)), (Hold-down, Tool)), ((Human-agent, Experimenter, (Black, Clothing), (Gray, Clothing), (Black, Clothing)), Bend, (Behind, (Human-agent))), ((White, Ball), (Upper-left-of, Background-view)), (Background-view, (Green, Grassy-terrain), (Tan, Dirt-terrain), (White, Item), (Green, Item, Top-edge-of)), (Green, Tan, Blue, Red, White), (Luminance-contrast, (Lower-right-of, Human-agent)), ((Human-agent), Interacts-with, (Human-agent))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

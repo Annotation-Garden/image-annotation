@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts an outdoor zoo enclosure viewed from an elevated angle, showing several elephants distributed across a sandy, light-tan ground surface. In the background, occupying the upper portion of the frame, dense dark-green foliage forms a continuous tree line, while a large beige fabric shade canopy stretches horizontally across the upper-center and upper-left, suspended above a metal railing and elevated walkway. In the center-background stands a single large elephant facing left. In the middle ground, a large elephant occupies the center-right, walking toward the left near a fallen log, and a smaller elephant stands center-left beside a large elephant on the left. Two human figures appear in the lower-center: one wearing light clothing walks near the left elephants, and another stands in a green shirt near the central elephants. In the foreground lower-left, dark tires rest on the ground, and a large black tire lies in the lower-center-right. The lower-left corner shows a dark pool of water. The overall color scheme combines earthy browns and tans with deep greens, and lighting is bright natural sunlight casting shadows diagonally across the sandy ground.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Aerial-view, ((Animal-agent, Animal/Elephant, Large), (Center-of, Background-view), Leftward), ((Animal-agent, Animal/Elephant, Large), (To-right-of, Center-of), Leftward), ((Animal-agent, Animal/Elephant, Small), Lower-left-of), ((Animal-agent, Animal/Elephant, Large), Left-side-of), ((Human-agent, Clothing, Light-shade), (Interacts-with, (Animal-agent, Animal/Elephant)), Lower-center-of), ((Human-agent, (Clothing, Green)), (Interacts-with, (Animal-agent, Animal/Elephant)), Lower-center-of), ((Foliage, Dark-shade, Green), (Top-of, Background-view)), ((Clothing, Beige, Horizontally-oriented), Upper-center-of), Building-part, Path, ((Black, Tool), Lower-left-of), ((Black, Tool, Large), Lower-right-of), ((Water, Dark-shade), (Lower-left-of)), ((Terrain, Brown, Light-shade), Below), Plant, Brown-color, Green-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's dominant foreground element is an ornate projecting clock positioned in the center-right of the frame, mounted on a building facade and extending outward on a decorative bracket. The clock face, angled toward the viewer's left, displays a colorful design with radiating spokes in blue, red, yellow, and green, surrounded by a starburst or sunburst pattern in similar vivid hues. Above and below the clock are cylindrical decorative elements painted in matching multicolored geometric patterns. In the background occupying the left and full vertical span of the frame stand two large stone columns with fluted vertical grooves, rendered in gray tones, framing the clock. Behind and around these architectural features are rows of dark rectangular windows with visible mullions and metal railings, receding across the middle and right portions of the image. The overall color scheme contrasts the muted gray stonework and dark window recesses against the saturated primary colors of the clock. Lighting appears natural and directional, casting soft shadows on the columns and illuminating the clock's right side more brightly. The composition emphasizes verticality through the columns and centralizes the ornate timepiece.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, (Foreground-view, (Clock, (Center-of, Building)), ((Clock-face, Rotated), (Blue, Red, Yellow, Green, Star))), (Cylinder, Above, Clock), (Cylinder, Below, Clock), (Background-view, (Group-of, Building-part), (Gray, Vertically-oriented)), (Window, Rectangle, Black), (Gray, Building-part), (Directional-relation, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

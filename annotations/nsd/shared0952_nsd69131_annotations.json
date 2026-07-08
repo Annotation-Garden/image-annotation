@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned center-left and occupying the lower half of the frame, sits a white ceramic mug decorated with red flower petals and a curved green handle facing left; a metal spoon rests inside the mug, its handle protruding upward and tilting toward the right. Directly behind and to the right of the mug, in the mid-ground, lie multiple dark remote controls with numerous buttons, one bearing the visible word \"Pioneer\" along its lower edge. In the right portion of the frame, a white bowl or plate with a curved rim appears in the mid-ground, partially cut off by the edge. On the left side, stacked papers or books are visible, with partial white text including the letters \"OW\" and \"OW\" readable on their spines or covers. The background upper portion is dark and blurred, with a warm brownish surface suggesting a table receding rightward. The overall color scheme is muted and dim, dominated by dark greens, browns, and grays, punctuated by the white and red of the mug. Lighting is low and soft, entering from the upper left. Composition uses shallow depth of field, sharply focusing the mug.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((White, Ceramic, Item/Mug), (Lower-center-of, Image), (Red, Plant, Content), (Green, Left, Hand-part)), ((Steel, Tool), Contained-in, (White, Ceramic, Item/Mug)), ((Right-side-of, Image), (Background-view, Device, Dark, (Push-button, Item-count/High), (Word, ID/Pioneer))), ((Right-side-of, Image), Background-view, (White, Item/Bowl)), ((Left-side-of, Image), (Group-of, Book), (White, Word, ID/OW)), (Background-view, Dark, (Brown, Furnishing)), (Dark-shade, Low, Luminance), (Upper-left-of, Image), (Depth, Shallow)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

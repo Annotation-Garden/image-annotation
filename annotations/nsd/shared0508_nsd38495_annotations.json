@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a middle-aged man with short, light brown hair and rimless glasses occupies the center-right of the frame, dressed in a gray quarter-zip sweater over a collared shirt. He is holding up a powdered-sugar-dusted pastry in his right hand at the center-left of the image, positioned in the upper-lower midsection, while his left hand, lower in the frame, grasps crumpled white napkins or paper. He faces the camera with a slight, closed-mouth smile, his gaze directed toward the pastry or viewer. In the background, the left portion shows a light wooden door or panel with a dark frame along the far-left edge, while the upper-right corner reveals a reddish-brown brick wall, adding warm texture. The overall color scheme combines neutral grays of the sweater, warm wood tones, and the reddish brick, creating a muted, earthy palette. Lighting appears soft and even, likely from an indoor source, casting gentle shadows and illuminating the man's face and the pastry. The composition centers on the man and his interaction with the food, framed by architectural elements on both sides balancing the visual field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, Male, (Head, Hair, (Short, Brown)), Glasses, (Torso, Clothing, Gray)), Interacts-with, (Ingestible-object/Dessert, Sweet, White)), (Foreground-view, ((Human-agent), Grasp, (Ingestible-object/Dessert, Right)), ((Human-agent), Grasp, (Paper, White, Left)), Smile, Center-of), (Background-view, (Door, (Left-side-of, Image)), (Building-part, Brown-color, Upper-right-of)), (Gray, Brown-color, Red-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

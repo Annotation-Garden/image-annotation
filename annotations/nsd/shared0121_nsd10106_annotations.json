@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large commercial aircraft occupying the central and upper portions of the frame, oriented with its nose pointing toward the right and its tail toward the left. The airplane displays a white fuselage with blue lettering reading \"Air transat\" on the rear body, and its tail fin is painted blue featuring a white star emblem. The two engines mounted under the wings are visible in the lower-center region, and the landing gear appears extended and near the ground, suggesting a takeoff or landing moment as spray or mist is kicked up beneath and behind the aircraft in the lower-center area. In the foreground, a strip of green grass runs horizontally across the lower portion of the frame, while a wet, gray runway or tarmac surface stretches behind it. The background, in the upper-left and upper-right regions, shows a blurred line of green trees under an overcast, pale gray sky. The lighting is flat and diffuse, consistent with cloudy conditions, producing muted tones. The overall color scheme combines white, blue, green, and gray. A \"Copyright\" watermark is visible in the lower-right corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Aircraft, Large, White), (Upper-center-of, Image)), ((Aircraft, Ahead-of, (Right-edge-of, Image))), (Blue, Word, ID/Air transat), ((Aircraft, Blue), (Star, White)), ((Engine, Group-of), (Lower-center-of, Image)), ((Assistive-device, Label/Landing-gear), Close-to, (Terrain)), ((Green, Field), (Lower-center-of, Image)), ((Road, Gray, Wet), Behind, (Field)), ((Green, Plant, Group-of), (Background-view)), (Gray, Overcast, Sky), (White, Blue, Green, Gray), (ID/Copyright, (Lower-right-of, Image))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a large tan and cream-colored draft horse occupies the left portion of the frame, positioned in the lower-left and extending upward, harnessed with black leather straps and reddish decorative elements around its neck. The horse is walking across snow, with its front legs raised and lower portions dusted with snow. To the right and center, a green wooden sleigh sits on red metal runners in the lower-center and lower-right, carrying three people in the upper-center to upper-right. An adult wearing a dark coat and black wide-brimmed hat sits center, holding reins that connect leftward to the horse. Beside the adult, two children in blue and pink hooded jackets sit to the right, partially covered by a brown blanket. The background shows a flat expanse of white snow and, along the upper edge, a band of bare dark trees. The overall color scheme contrasts warm tans, reds, and browns against cool whites and dark neutrals. Lighting appears flat and diffuse, consistent with an overcast winter day, casting minimal shadows. The composition moves diagonally from lower-left horse to right-side passengers.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Large, Animal-agent, Animal/Horse, Tan, White), (Lower-left-of, Image)), (Animal/Horse, (Harnessed, Black), Label/Leather-straps), (Red, Label/Decorative-neck-elements, (Part-of, Animal/Horse)), ((Animal/Horse), Walk, (On-top-of, Snow)), ((Green, Man-made-object, Label/Sleigh), (Lower-center-of, Image)), ((Red, Manufactured-material, Label/Runners), (Part-of, Man-made-object, Label/Sleigh)), (Group-of, Human-agent, Item-count/3, (Upper-center-of, Image)), ((Human-agent, (Black, Clothing, Label/Coat), (Black, Clothing, Label/Wide-brimmed-hat)), (Center-of, Image)), ((Human-agent, (Grasp, Label/Reins)), Interacts-with, (Animal-agent, Animal/Horse)), (Group-of, Human-agent, Item-count/2, (Blue, Pink, Clothing, Label/Hooded-jackets), (To-right-of, Image)), ((Brown, Label/Blanket), (Above, (Group-of, Human-agent, Item-count/2))), (Background-view, White, Snow), ((Group-of, Plant, Label/Bare-trees, Dark), (Top-edge-of, Image)), (Outdoors, Cold), (Overcast, Diffuse, Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

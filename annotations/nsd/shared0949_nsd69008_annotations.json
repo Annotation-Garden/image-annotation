@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-center of the frame, a surfer crouches on a surfboard, bent forward with arms extended downward toward the board. The surfer, appearing shirtless with a tanned upper body, wears dark shorts and is oriented with their back toward the viewer. The surfboard beneath them is oriented diagonally, angling from the lower-center toward the lower-left, and displays an orange-and-white coloration with a visible pointed nose. Surrounding the surfer, white foamy water sprays outward, concentrated toward the right side and lower portion of the frame. In the background, occupying the upper and central regions, a breaking wave forms a diagonal crest running from the upper-left down toward the center-right, with a curling white lip of foam. The unbroken water surface behind appears dark teal-green and textured with ripples. The overall color scheme combines deep greens, whites, and the warm orange of the board, creating contrast between the cool water and the equipment. Lighting appears diffuse and even, without harsh shadows. The composition places the human figure as the focal point against the dynamic, motion-filled wave, emphasizing the interaction between surfer and water.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Crouching, (Torso-chest, Tan)), (Clothing, Black), (Posterior, Towards)), Lower-center-of), ((Human-agent), Interacts-with, (Tool, Orange-color, White, (Anterior, Point))), ((Tool), (To-left-of, (Lower-left-of))), (White, (Move, Water), (To-right-of, Lower-center-of)), (Background-view, (Water, (Break, Wave), White, (Upper-left-of, (To-right-of, Center-of)))), (Water, Teal, Rough), (Green-color, White, Orange-color), (Body, Focused-attention)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

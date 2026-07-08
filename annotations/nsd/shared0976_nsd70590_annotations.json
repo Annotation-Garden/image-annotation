@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two zebras occupy the center and lower-middle portion of the frame, standing on a light tan, sandy ground that dominates the foreground and extends across the lower two-thirds of the image. The zebras are positioned parallel to one another, both facing left, their black-and-white striped bodies overlapping so that the nearer animal's head extends toward the left-center while the second zebra's body is partially visible behind and to the right. In the background, a low curved stone or brick wall runs horizontally across the upper-middle region, separating the sandy enclosure from a darker area beyond. Green foliage appears in the upper-right corner, and a tree trunk rises vertically along the right edge into the top of the frame. The upper-left and background zones are cast in deep shadow, while patches of bright sunlight fall across the sandy ground and illuminate the zebras' backs and mid-sections, creating strong contrast. The overall color scheme is muted and earthy, dominated by tans and browns with the crisp black-and-white of the zebras and scattered green vegetation. The composition centers the animals against a receding, shaded backdrop, with diagonal shadows stretching across the sunlit ground.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Sand, Terrain/Sandy-terrain), Tan), ((Animal-agent, Animal/Zebra), (Center-of, Image)), ((Animal-agent, Animal/Zebra), (Lower-center-of, Image)), ((Animal-agent, Animal/Zebra), Leftward, Black, White), (Background-view, ((Building-part, Wall), Curved, (Stone, OR Manufactured-material))), ((Plant, Green), Upper-right-of, Image), ((Plant, Tree-trunk), Right-edge-of, Image, Vertically-oriented), (Upper-left-of, Image, Dark-shade), (Luminance-contrast, Bright)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-center to lower-right of the frame, a person seen from behind wears a dark jacket, with one arm raised upward, appearing to hold or control a line extending toward the sky. Dominating the upper-center and upper-left portion of the frame is an expanse of clear, deep blue sky occupying roughly the top two-thirds of the image. A red kite or windsock floats in the upper-center-left region, small against the vast blue. In the background, running horizontally across the middle-to-lower portion, are several white houses with dark and reddish roofs, positioned center and right, interspersed with dark evergreen trees and tall streetlight poles. A white car is parked in the center-right background near the buildings. The lower-left shows a flat, brownish grassy field, and beyond the houses on the left edge a thin strip of gray-blue water is visible. The overall color scheme contrasts dominant blue sky against muted earth tones and the vivid red accent of the kite. Lighting appears bright and natural, casting the raised-arm figure into partial silhouette against the sunlit sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor), (Lower-center-of, Foreground-view), (Black, Clothing), ((Upper-extremity), Raise-eyebrows)), ((Human-agent), Interacts-with, ((Red, Kite))), ((Red, Item/Kite), Upper-left-of), ((Deep, Blue, Sky), Upper-center-of), ((White, Building), (Center-of, Background-view)), (Plant, (Right-side-of, Background-view)), ((White, Car), (Center-of, Background-view)), ((Brown, Field), Lower-left-of), ((Gray, Water), Left-edge-of), Outdoors, Real-world",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

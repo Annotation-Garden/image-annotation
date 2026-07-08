@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower third of the frame, is rippling water with a greenish-gray tone and subtle reflections. Positioned in the center of the frame, standing on a bank of small gray pebbles and stones, is a brown bear facing directly toward the viewer, its head slightly lowered and eyes oriented forward. The bear's fur is medium to dark brown, lighter around the face and shoulders, with darker legs. The pebble bank spans the lower-center portion beneath the bear, and in the right-center a larger flat gray rock is visible. The background, filling the upper two-thirds behind the bear, is dense green vegetation, including tall grasses, leafy plants, and overhanging foliage that grows darker toward the upper edges. Lighting appears natural and daylight-based, brighter on the upper background greenery and on the bear's back, casting the bear's underside and legs into shadow. The overall color scheme is dominated by greens from the plants, browns from the bear, and cool grays from the stones and water. Compositionally, the centrally placed bear serves as the focal point, framed symmetrically by foliage above and water below, with no other animals or people visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Bear, Brown, (Facing-toward, Experiment-participant)), (Center-of, Image)), ((Water, Green-color, Gray-color), (Below, Image)), (Group-of, (Small, Gray, Item/Pebbles), (Lower-center-of, Image)), ((Large, Flat, Gray, Natural-object/Rock), (Right-side-of, Image)), ((Plant, Green, Dense), (Above, Image)), (Outdoors, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

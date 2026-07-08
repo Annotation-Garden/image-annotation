@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A flock of sheep occupies the foreground of this outdoor photograph, standing on a grassy slope that fills the lower two-thirds of the frame. Seven sheep are visible: in the lower-left area, two sheep with dark black faces and legs and pale cream-colored fleece stand facing rightward; near the center-lower portion, a single sheep with a lighter face faces the camera directly; toward the center-right and right edges, additional sheep, some with black faces and one with a fully white head, graze or stand at varying angles. The background consists of a dense stand of tall, leafless deciduous trees with slender bare branches spanning the upper half of the frame, their brown trunks and twigs creating a lattice against a pale, muted sky visible in gaps near the horizon on the left and right. The overall color scheme is subdued and earthy, dominated by browns, tans, and grayish-greens, with the cream and black of the sheep providing contrast. Lighting appears soft, flat, and diffuse, consistent with an overcast day, casting no strong shadows. The composition places the animals in a loosely distributed horizontal band across the middle-lower region.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Group-of, Animal/Sheep, Foreground-view), ((Animal/Sheep, (Black, Face), (Black, Leg), White), To-right-of, (Grassy-terrain, Sloped-terrain)), ((Animal/Sheep, White, Head), (Grassy-terrain, Sloped-terrain)), (Background-view, Group-of, Plant/Tree, Brown, Leaf-covered-terrain), (Sky, Pale-color), (Brown, Tan, Grayscale, Green-color), (Luminance-contrast/Low, Diffuse-lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

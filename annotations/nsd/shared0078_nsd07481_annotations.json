@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower two-thirds of the frame, sits a large circular metal pizza tray holding a thin-crust pizza sliced into multiple pieces; the pizza is topped with red tomato sauce, melted white cheese, and darker red toppings resembling tomato slices or pepperoni, with scattered green herbs, particularly visible on the left slices. The crust edges are charred with dark brown spots, especially along the lower-left and bottom portions. A metal serving spatula lies across the pizza, angled from the center toward the upper right. In the upper-right region of the frame, a child with light brown hair leans in behind the pizza, wearing a blue top, and raises a hand giving a thumbs-up gesture near the upper-center. In the background, upper-left, a second person appears seated in shadow, less distinct and darker. The overall color scheme is warm, dominated by reds, oranges, and browns from the pizza against the silver-gray metallic tray. Lighting is artificial and uneven, brightly illuminating the pizza's center while the background falls into darkness. The composition centers the food, positioning human elements peripherally behind it.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Ingestible-object/Main-dish, Savory, Circle, Large, Metal, (Red, Tomato-sauce), (White, Cheese), (Red, Topping), (Green, Herb))), ((Metal, Tool), Top-of, (Ingestible-object/Main-dish)), (Charred, Brown, Boundary-of, (Ingestible-object/Main-dish)), (Upper-right-of, (Human-agent, Experiment-actor, (Blue, Clothing), (Brown, Hair), (Thumb-up))), (Background-view, Upper-left-of, (Human-agent, Experiment-actor)), ((Human-agent), Interacts-with, (Ingestible-object/Main-dish)), (Warm, Red, Orange, Brown), (Silver, Gray, Metal), (Center-of, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

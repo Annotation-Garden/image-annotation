@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's foreground is dominated by a skier positioned in the center of the frame, occupying most of the vertical space from the lower-center to the upper-middle region. This person wears a bright pink jacket with dark vertical stripes, dark brown ski pants, gray gloves, a black helmet, and orange-tinted goggles, with visible blonde hair emerging beneath the helmet. The skier leans to their right in an active carving posture, holding a ski pole in each hand; the left pole angles downward toward the lower-left, while the right pole extends toward the right side of the frame. Skis are partially visible at the lower-center where they contact the snow. The background consists of a broad, smooth expanse of white snow covering the entire middle and upper portions of the frame, sloping gently. In the right-background, several small orange or red flags on thin poles line the slope, receding into the distance. The upper portion shows a pale, hazy gray-blue sky. The overall color scheme contrasts the vivid pink jacket against muted white, gray, and brown tones. Lighting appears diffuse and even, casting soft, minimal shadows across the snow.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Human-agent, (Blond, Hair), (Pink, Clothing, (Black, Dash)), (Brown, Clothing), (Gray, Clothing), (Black, Clothing), (Orange, Glasses)), (Center-of, Foreground-view)), ((Human-agent), Interacts-with, (Tool, Label/Ski-pole)), ((Human-agent), Interacts-with, (Tool, Label/Ski)), (White, Snow, Background-view, Sloped-terrain), ((Red, Flag, Item-count/Some), To-right-of, Background-view), (Gray, Blue, Upper-center-of), (Diffuse, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-lower portion of the frame stands an adult wearing a red jacket, black pants, and ski boots, holding two ski poles and standing on skis planted in the snow; sunglasses cover the eyes and a lanyard with a badge hangs at the chest. Directly to this adult's left, occupying the lower-left foreground, is a small child in a dark floral-patterned snowsuit with pink boots, standing close beside the adult's leg, suggesting a familial or guardian interaction. In the mid-ground right, a person in blue holds a snowboard decorated with a red-and-white pattern. The background across the center and left shows a queue of numerous people in colorful winter clothing behind blue mesh barriers, positioned near a dark ski-lift structure on the upper right labeled \"MT. JUDAH.\" The upper portion of the frame contains tall green evergreen trees and a clear blue sky. The overall color scheme combines the white snow-covered ground with bright reds, blues, and greens. Lighting is bright and natural, casting distinct shadows across the snow toward the lower-left, indicating strong directional sunlight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Snow, ((Human-agent, Experiment-actor), (Lower-center-of, Foreground-view)), ((Human-agent, Experiment-actor), Interacts-with, (Human-agent, Experiment-actor)), (Human-agent, (Red, Clothing), (Black, Clothing), (Clothing, Foot), (Glasses), (Hold-down, (Tool, Item-count/2)), (Lower-center-of, Foreground-view)), ((Human-agent, Small), (Clothing, Pink), (Lower-left-of, Foreground-view), (Close-to, Human-agent)), ((Human-agent), (Blue, Clothing), (Hold-down, (Item, (Red, White, Pattern))), (To-right-of, Center-of)), (Group-of, Human-agent, (Clothing, Color), (Behind, (Blue, Barrier)), (Background-view)), (Building, Label/MT-JUDAH, (Upper-right-of, Background-view)), ((Green, Plant), (Blue, Sky), (Top-of)), Sound-envelope",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

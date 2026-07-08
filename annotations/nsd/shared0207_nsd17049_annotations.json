@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a clear blue sky occupying the upper half of the frame, unbroken except for structures rising into it. In the foreground lower portion, a multi-lane paved road stretches across the bottom, marked with yellow dashed and solid lines running diagonally from lower left toward center-right. On the right side, an orange-and-white traffic cone or barrel sits on the roadside near a metal guardrail and chain-link fencing that extends across the center-right. Two traffic signals displaying red lights are visible: one mounted on a pole in the center-left, another on a tall lamppost at the right, which also holds a streetlight arm curving toward center. In the background, buildings fill the middle band: a white multi-story office building with numerous windows on the left, a large blue-glass tower in the center, and lower brick and concrete structures behind the fence. A white cylindrical water tower stands center-left among the buildings. The color scheme combines the dominant blue sky and glass with gray pavement, white and beige buildings, and the orange cone accent. Lighting is bright and natural, producing shadows on building facades and even daytime illumination throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Blue, Upper-center-of, Background-view), (Road, Paved-terrain, Bottom-edge-of, (Yellow, Dash), (Yellow, Line-noise-artifact)), ((Orange, White, Cone), Right-side-of), (Metal, Assistive-device, Right-side-of), ((Traffic-signal, Red), Center-of), ((Traffic-signal, Red), Right-side-of), (White, Building, Window, Left-side-of), ((Blue, Glass, Building), Center-of), (Brown, Building, Behind), ((White, Cylinder, Building), Lower-left-of), (Gray, Road), (Beige, Building), Outdoors, Bright",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

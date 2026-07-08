@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A surfer occupies the center of the frame, standing on a light blue surfboard that sits in the lower-center portion of the image; the person wears a dark navy or black full-body wetsuit and bends forward at the waist with knees flexed and arms extended slightly, balancing in an active riding posture. The surfer's board rests on churning white foam in the mid-lower center, where the wave breaks. A curling wave dominates the middle and right side of the frame, its crest peaking on the right with white spray and foam cascading down its face, while the left side shows a smoother teal-green wave wall in the foreground. The background upper portion displays deeper, darker blue-gray open ocean water with a slightly textured surface. The overall color scheme is dominated by cool tones\u2014turquoise, teal, navy, and white foam\u2014creating a monochromatic aquatic palette. Lighting appears bright and natural, likely daytime sunlight, casting mild highlights on the wave crest and the surfer's wetsuit. Compositionally, the surfer serves as the central focal point, framed between the breaking wave on the right and the descending wave slope on the left, creating diagonal movement across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-participant), (Ride, ((Light-shade, Blue, Item/Surfboard), Lower-center-of))), (Human-agent, (Clothing, Label/Wetsuit, Black)), (Human-agent, Bend, (Knee, Flex)), ((Item/Surfboard), (Contained-in, (White, Foam, Center-of))), (Item/Wave, Right-side-of, (White, Item/Spray)), (Item/Wave, Left-side-of, (Teal, Green, Foreground-view)), (Blue-color, Gray, Background-view, Water), (Turquoise, Teal, Navy, White), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, dominating the right and center of the frame, stands a grayish-brown horse with a dark mane, facing the viewer with its head lowered slightly toward the lower-right; its body extends from the vertical center down to the bottom edge, and its legs are visible in the lower portion. To the left, occupying the center-left middle ground, is a second horse of similar coloring with a dark mane and tail, positioned with its head lowered toward the grass, appearing to graze. The two horses do not visibly touch or directly interact but occupy the same grassy field. The background consists of a green grassy meadow in the middle band, transitioning to a dense line of dark and leafless trees across the upper portion of the frame, with a clear pale-blue sky visible at the very top and upper right. The lighting is bright and natural, casting shadows on the grass in the lower-left, suggesting sunlight from the right. The overall color scheme combines earthy grays and browns of the horses, green grass, dark foliage, and blue sky, creating a naturalistic outdoor composition with the nearest horse as the focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Animal-agent, Animal/Horse, Gray-color, Brown-color, (Head, Below), Right-side-of)), (Background-view, (Animal-agent, Animal/Horse, Gray-color, Brown-color, (Head, Below), Center-of, Left-side-of, Ingest)), (Grassy-terrain, Green), (Plant, Leaf-covered-terrain, Dark-shade, Top-of), (Sky, Blue), Outdoors, Natural-object",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

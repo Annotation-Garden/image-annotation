@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an urban street scene dominated by a large clear blue sky occupying roughly the upper-left two-thirds of the frame. In the foreground, at the lower portion, multiple vehicles are arranged along a roadway, including a dark sedan at the lower-left corner, several white and silver cars in the lower-center with headlights illuminated, and additional vehicles extending toward the right. In the center, mounted on a horizontal pole, is a traffic signal displaying two red lights, accompanied by white rectangular signs and a curved directional arrow marking on the right sign. The middle-ground and background on the right side feature tall buildings, including a prominent multi-story structure with a reddish-brown facade and numerous windows in the upper-right. To the left and center-left, leafless trees and dark foliage line the street, with streetlamps rising above the vehicles. The overall color scheme combines the cool blue sky with darker earth tones of the cars, trees, and pavement, plus warm reddish building tones on the right. Lighting appears to come from the left, casting the buildings' right faces in shadow, suggesting low-angle daylight. The composition is horizontally layered.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, (Street-view, (Road, (Car, Group-of))), ((Blue, Sky), Upper-left-of), ((Car, Black), Lower-left-of), ((Car, White, Group-of), Lower-center-of), ((Car, Silver, Group-of), Lower-center-of), ((Traffic-signal, ((Red, Group-of))), Center-of), ((Rectangle, White, Group-of), Center-of), ((Arrow, Curved), Right-side-of), ((Building, Large, Brown), Upper-right-of), (Window, Group-of), ((Plant, Group-of), Left-side-of), (Blue), (Brown), (Shadow), Low",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

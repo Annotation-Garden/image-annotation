@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-left and center portions of the frame, a man with graying dark hair and a mustache is shown in profile facing right, wearing what appears to be a dark textured jacket; directly behind and slightly left of him, a partial view of another person with dark hair and a hair clip is visible. Dominating the entire right side and upper portion of the frame are numerous bunches of ripe yellow bananas, many showing brown spotting, hanging vertically in overlapping clusters that recede toward the background. In the upper-left area, a purple draped fabric or awning is visible, alongside a yellow banner bearing partially legible non-Latin script. The background, seen through gaps on the left and lower-left, reveals blurred indistinct figures and structures suggesting a crowded outdoor market setting. The overall color scheme is dominated by warm yellows from the bananas, contrasted with the cooler purple fabric and the muted grays and dark tones of the man's hair and clothing. Lighting appears natural and diffuse, illuminating the bananas brightly while the human figures remain comparatively shadowed. The composition is densely packed with strong right-to-left visual weight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, Outdoors, Urban, (Human-agent, Male, (Gray, Hair), (Foreground-view, Lower-left-of)), (Human-agent, (Dark, Hair), Behind), (Ingestible-object/Staple-food, Sweet, Yellow, (Brown, Pattern), Group-of, Right-side-of), (Purple, Clothing, Upper-left-of), (Yellow, Textblock, Character, Upper-left-of), (Background-view, Crowd-sound), (Human-agent, Interacts-with, (Ingestible-object/Staple-food))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a beige upholstered sofa occupies the lower-left corner, adorned with orange and red throw pillows, while a dark red leather armchair sits in the lower-right, angled toward the center. Between them, a round glass-topped coffee table with a metal frame rests on a striped carpet in the lower-center. In the middle ground, a black glass dining table surrounded by dark metal chairs is positioned center-left, holding a small centerpiece. The background features vivid orange walls on the left and center, a green-painted door with a red frame on the far left, and a distressed teal-green cabinet on the right wall. Large windows with white horizontal blinds dominate the right side, admitting bright bluish daylight that contrasts with the warm interior tones. A ceiling fan with wooden blades hangs from a beamed wooden ceiling in the upper-center, and dark exposed beams run diagonally across the upper frame. A framed artwork depicting horses hangs on the orange wall center-left. The overall color scheme combines warm oranges and reds with cool blue window light, creating a balanced, symmetrical composition anchored by the central seating arrangement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Beige, Furnishing, Label/Sofa), (Lower-left-of, Image)), ((Orange, Furnishing, Label/Pillow), (Red, Furnishing, Label/Pillow)), ((DarkRed, Furnishing, Label/Armchair), (Lower-right-of, Image)), ((Furnishing, Glass, Circle, Label/Coffee-table), (Lower-center-of, Image)), (Furnishing, Pattern, Label/Carpet)), (Background-view, ((Black, Glass, Furnishing, Label/Dining-table), (Center-of, Image)), (DarkGray, Metal, Furnishing, Label/Chair), (Orange, Building-part, Label/Wall), ((Green, Door), (Red, Label/Frame), (Left-side-of, Image)), ((Teal, Furnishing, Label/Cabinet), (Right-side-of, Image)), ((Window, (White, Label/Blinds)), (Right-side-of, Image)), (Blue, Visual-attribute, Label/Daylight), ((Furnishing, Label/Ceiling-fan), (Upper-center-of, Image)), (Building-part, Label/Beam), ((Painting, (Animal/Horse)), (Center-of, Image))), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

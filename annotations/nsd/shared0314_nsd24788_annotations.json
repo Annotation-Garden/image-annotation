@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-left stands a person with dark hair pulled back, wearing a dark gray hooded sweatshirt, plaid pajama-style pants, and a white undershirt visible at the waist; the figure faces away from the camera toward the right, with the right arm raised holding a white Wii remote controller, indicating interaction with the gaming system. In the background center-right sits a flat-screen television on a dark media console, its screen displaying a bowling video game with a bright blue and green lane. To the left occupies a large dark fireplace with a metal-framed glass front, its reflective surface showing distorted reflections. On the right side, a lit lamp with a beige shade casts warm illumination near the wall, which is painted tan above and dark reddish-brown near the ceiling. The lower foreground shows beige carpeting scattered with white game cases, discs, and controllers. Additional objects, including books and containers, sit on the console shelves. The overall color scheme combines warm tans and browns with the cool blue-green of the screen. Lighting is dim and interior-based, dominated by the lamp and television glow, creating a domestic indoor composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Indoors, Room, ((Human-agent, Experiment-participant, (Head, Black), (Clothing, Gray, Label/Hooded-sweatshirt), (Clothing, Label/Plaid-pants), (Clothing, White, Torso-chest)), (Upper-extremity, Right, Lift)), ((Human-agent), Interacts-with, (Device, White, Label/Wii-remote)), (Display-device, (Center-of, Room), (Foreground-view, Video-clip, Label/Bowling-game, Blue, Green)), (Furnishing, Label/Media-console), (Furnishing, Large, Dark-shade, Glass, Label/Fireplace), (Furnishing, Label/Lamp, Beige, Luminance), (Wall, Tan, Brown), ((Furnishing, Beige, Label/Carpet), (Above, (Group-of, White, Media, Label/Game-cases-discs-controllers))), (Group-of, Book), Dim, Warm",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

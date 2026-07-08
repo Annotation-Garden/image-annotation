@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground on the left, a man in a blue short-sleeved shirt and khaki cargo shorts bends forward at the waist, his hands guiding a small toddler wearing a pink top and blue jeans who stands center-left reaching toward a golden retriever positioned in the lower-center of the frame; this dog sits facing left, apparently interacting with the child's outstretched hand. To the right of this dog, in the mid-ground center, a husky-type dog with gray and white fur sits near a dark metal bench where an older man in a light shirt is seated, facing rightward. A second golden retriever sits on the right side, lower frame, near the bench. In the background center-right, a man in a gray shirt and dark shorts stands upright, leaning against a black metal railing that spans the middle of the image horizontally. Beyond the railing lies a broad expanse of water and a hazy, low skyline along the upper horizon. The lighting is bright and backlit, creating a hazy, sun-washed glow. The color scheme is muted with blues, grays, golden dog tones, and the dark gray textured paving stones underfoot.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Male, (Blue, Clothing), (Khaki, Clothing), Bend), Interacts-with, (Human-agent, Age/2 years, (Pink, Clothing), (Blue, Clothing))), ((Human-agent, Age/2 years), Interacts-with, (Animal-agent, Animal/Golden-retriever, Sitting, Left)), (Animal-agent, Animal/Husky, (Gray, White), Sitting), (Human-agent, Male, (Light-shade, Clothing), Sitting, (Facing, Right)), (Animal-agent, Animal/Golden-retriever, Sitting, Right, Lower-center-of), Background-view, (Human-agent, Male, (Gray, Clothing), (Dark-shade, Clothing), Standing), (Furnishing, Black, Steel), (Furnishing, Dark-shade, Steel), (Natural-object, Volume), Bright, White-color, (Gray, Path), Blue, Gray",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

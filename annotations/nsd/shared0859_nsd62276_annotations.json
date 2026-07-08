@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large pizza occupying nearly the entire frame, positioned centrally and filling the foreground from edge to edge. The pizza is cut into multiple triangular slices, with visible cut lines radiating outward; one slice on the right side appears slightly separated from the whole. The toppings, distributed across the entire surface, include melted golden-yellow and browned cheese, red diced tomatoes or peppers, green diced bell peppers, pale chunks that resemble pineapple or onion, and pinkish curved pieces suggesting shrimp. The crust forms a raised, browned border around the perimeter, with charred darker spots visible especially along the upper and lower edges. In the upper portion of the frame, the background shows a brown cardboard pizza box, its edge and interior flap visible behind the pizza, particularly in the upper-left and upper-right corners. The pizza rests on a lighter tan surface visible faintly at the lower-right edge. The overall color scheme is warm, dominated by golds, browns, reds, and greens. Lighting appears bright and direct, coming from above, casting slight shadows in the crevices between toppings and highlighting the glossy melted cheese across the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Ingestible-object/Main-dish, Savory, Large, (Center-of, Foreground-view)), (Cross, Triangle)), ((Ingestible-object/Main-dish, Yellow, Brown), (Red), (Green), (Pink)), ((Building-part, Brown), (Behind, Ingestible-object/Main-dish)), (Tan, Lower-right-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 396,
+            "total_tokens": 817
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 817
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

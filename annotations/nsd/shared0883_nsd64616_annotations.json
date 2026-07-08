@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A dark bay horse dominates the foreground, occupying the center and lower portion of the frame, oriented with its head toward the left and its body extending to the right, its legs positioned in a mid-stride gait on light tan, sandy ground at the lower edge. Mounted on the horse sits a rider in the center-right, upper-middle region, wearing a red and white long-sleeved top, dark trousers, and a light-colored helmet, turned to face the camera. The rider holds green and dark reins that connect to the horse's bridle, establishing direct physical interaction between human and animal. Green and yellow protective boots are visible on the horse's legs. The background, filling the upper and mid portions of the frame, consists of a blurred expanse of green vegetation, low shrubs, and rows of trees receding toward a horizon, with lighter sky visible at the top. The overall color scheme combines earthy browns of the horse and ground with saturated greens of the foliage and the vivid red of the rider's garment. Lighting appears diffuse and even, suggesting overcast or soft daylight, and the composition centers the horse-and-rider subject sharply against the softened natural backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Horse, Brown, Large, (Center-of, Lower-center-of)), (Move, Leg)), ((Human-agent, Experiment-actor), Interacts-with, (Animal-agent, Animal/Horse)), (Human-agent, Experiment-actor, Upper-center-of, Right-side-of, (Sitting, (Top-of, Animal/Horse))), ((Red, White, Clothing, Torso), (Dark-shade, Clothing, Upper-leg), (Light-shade, Head)), ((Green, Dark-shade, Tool), Connected-to, (Head, Animal/Horse)), (Green, Yellow, Clothing, Leg, Animal/Horse), (Background-view, (Green, Plant), (Group-of, Plant), (Group-of, Tool)), (Blurred, Background-view), (White-color, Above, Background-view), (Outdoors, (Light-shade, Luminance))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

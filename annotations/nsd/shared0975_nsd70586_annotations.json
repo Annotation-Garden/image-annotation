@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A wooden desk dominates the foreground, angled diagonally across the lower and central portions of the frame, its light tan surface catching illumination from a lamp positioned in the upper-center. On the desk sits an open laptop in the center-right, its dark screen facing the viewer, with a keyboard and touchpad visible; a black cable trails from it across the surface and drapes toward the lower-right edge. To the left of the laptop, a clear glass filled with water rests near a pair of eyeglasses and what appears to be paper or a notebook. Another empty glass stands to the right of the laptop. In the lower-right corner, a dark object, possibly clothing or a bag, is partly visible. In the background, a closed door with a metallic handle occupies the center-left, while a mustard-yellow wall fills the upper region, holding taped white papers upper-center and a framed picture on the right. A chair back is visible at the lower foreground. The color scheme is warm, dominated by yellows, browns, and tans. Lighting is concentrated and directional from the lamp, creating strong contrast with surrounding shadowed areas.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Furnishing, Label/Desk, Tan, (Diagonal)), (Lower-center-of, Background-view)), ((Laptop-computer, Black), (Center-of, Furnishing)), (Keyboard), (Touchscreen), ((Black, Label/Cable), (Lower-right-of, Furnishing)), ((Volume, Label/Glass, Water), (To-left-of, Laptop-computer)), ((Glasses), (To-left-of, Laptop-computer)), ((Paper), (To-left-of, Laptop-computer)), ((Volume, Label/Empty-glass), (To-right-of, Laptop-computer)), ((Clothing, Black), (Lower-right-of, Background-view)), ((Door, (Label/Metal-handle)), (Left-side-of, Background-view)), ((Building-part, Label/Wall, Yellow), (Above, Background-view)), ((Paper, White), (Upper-center-of, Building-part)), ((Painting), (Right-side-of, Building-part)), ((Furnishing, Label/Chair-back), (Lower-center-of, Background-view)), (Yellow-color, Brown-color, Tan), (Light-shade, ((Device, Label/Lamp), (Upper-center-of, Background-view))), Luminance-contrast/High",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

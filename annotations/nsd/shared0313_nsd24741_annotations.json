@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A wire fence with a grid pattern extends horizontally across the frame, positioned in the foreground and occupying the middle and upper portions of the image, its metal strands appearing pale gray against the darker background. Behind and partially in front of the fence stands a sheep, centered and occupying the center-right region, with its white face and head clearly visible in the upper-right center, oriented forward toward the viewer, showing two dark eyes, a pinkish-gray muzzle, and downward-curving ears on either side. The sheep's thick, matted, cream-to-tan colored wool cascades down the left and lower-left portions of the frame in long, dreadlock-like strands. Tall grasses fill the foreground's lower portion, appearing in bright and muted greens with visible seed heads and tan-colored dried stalks in the lower-right and lower-center areas. The background consists of dense green vegetation and grass, softly blurred, spanning the upper and left regions. The overall color scheme combines greens, creams, tans, and grays. Lighting appears diffuse and natural, without harsh shadows, suggesting overcast or shaded outdoor conditions. The composition centers attention on the sheep's face through the fence's framing lines.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Animal-agent, Label/Sheep), (Center-of, Image)), ((Metadata, Label/Wire-fence, (Pattern, Gray, Horizontally-oriented, Foreground-view)), In-front-of, (Animal-agent, Label/Sheep)), (Face, White, (Upper-right-of, Image)), (Eye, Dark-shade), (Mouth, Pink-color), (Ear, Downward), (Label/Wool, Beige, (Lower-left-of, Image)), (Plant, Green, (Foreground-view, Lower-center-of, Image)), (Plant, Tan, (Lower-right-of, Image)), (Plant, Green, (Background-view, Blurred)), (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 396,
+            "total_tokens": 817
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 817
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A long-haired gray and white cat occupies the foreground, positioned in the center and extending toward the right side of the frame, lying in profile with its head facing left; its fluffy body rests on a white windowsill or ledge that spans the lower-middle portion of the image, and one front paw is visible extended forward onto the surface. The cat's fur appears predominantly light gray along its back with a white chest, face, and paws, and its ears are perked upward. Below the ledge, in the lower portion of the frame, the white surface is decorated with a spattered pattern of small blue, purple, yellow, and red paint-like dots. In the background, seen through a window that fills the upper two-thirds of the frame, there are blurred, out-of-focus elements including a leafless tree branch on the right, greenish foliage on the left, and pale building structures with window shapes. The lighting is bright and diffuse, coming from the window behind the cat, creating a soft, slightly hazy backdrop. The overall color scheme is muted with grays, whites, and soft greens, punctuated by the colorful speckles below.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Cat, Gray, White, (Torso, Prone), (Head, To-left-of, Torso), (Ear, Upward), (Foreground-view, Center-of, Image)), (To-right-of, (Window, Background-view))), ((White, Window, (Part-of, Building)), (Lower-center-of, Image)), ((Dots, Blue, Purple, Yellow, Red), (Below, White)), ((Plant, Green), To-left-of, (Window)), ((Tree), To-right-of, (Window)), (Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 351,
+            "total_tokens": 772
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 772
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

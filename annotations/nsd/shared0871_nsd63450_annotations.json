@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A male skier dominates the foreground, positioned center-frame and occupying roughly the middle-to-lower portion of the image, captured mid-turn while descending a snow-covered slope. He wears a bright orange jacket, black ski pants, black gloves, a dark gray helmet, and reflective goggles that obscure his eyes; his face is turned slightly toward the lower left. His body leans to the right of the frame as he carves, with both black skis featuring orange accents crossing the lower-center foreground, spraying loose snow that scatters upward and outward, most densely on the right side. He grips two thin ski poles that angle backward and upward toward the left. The interaction is clear: the skier's movement displaces powdery snow, creating a visible plume and fine airborne particles suspended against the sky. The background consists of a deep, saturated blue sky occupying the upper half, with scattered white snow flecks flung into the air throughout the upper region. The overall color scheme contrasts vivid orange against blue and white. Lighting is bright and directional, likely from above and the front, producing crisp shadows and highlights on the snow and figure.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Male, Experiment-actor, (Center-of, Foreground-view)), ((Human-agent), (Move, (Descend-slope))), ((Human-agent), Interacts-with, (Snow)), (Clothing, Orange, Label/Jacket), (Clothing, Black, Label/Ski-pants), (Clothing, Black, Label/Gloves), (Head-part, Dark-shade, Gray, Label/Helmet), (Glasses, Label/Goggles), ((Face), To-left-of, Foreground-view), ((Human-agent), Turn, Right), (Tool, Black, Orange, Label/Skis, (Lower-center-of, Foreground-view)), (Snow, Move, Upward, (To-right-of, Foreground-view)), (Tool, Thin, Label/Ski-poles, (Backward, Upward, To-left-of)), (Snow, (Above, Background-view)), (Blue, Snow, Upper-center-of, Background-view), (Outdoors, Terrain, Snow), (Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

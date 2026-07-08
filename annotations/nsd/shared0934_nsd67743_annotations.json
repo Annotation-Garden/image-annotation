@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three people stand centered across the frame on light tan sand, each interacting with a surfboard. On the left, a man in a white long-sleeved shirt and green-striped shorts rests his hand on a white surfboard propped vertically beside him. In the center, a young woman wearing a white long-sleeved top and multicolored patterned briefs stands with her arms around the two men, a white board angled in front of her. On the right, a man in a teal short-sleeved shirt and blue-and-white patterned shorts holds a water bottle and steadies a white-and-red surfboard. A clear water bottle rests on the sand at the group's feet in the lower center. In the background, upper portion of the frame, the ocean stretches horizontally with visible breaking waves, meeting a pale, overcast gray-blue sky at the horizon. On the left middle-distance, a smaller solitary figure stands near the shoreline. The overall color scheme is muted, dominated by tans, whites, teals, and grays, with soft, diffuse lighting suggesting an overcast day. The composition is symmetrical and centrally balanced, with the three subjects facing the camera directly.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Male), (White, Clothing), (Green, Clothing)), ((Human-agent, Female), (White, Clothing), (Clothing)), ((Human-agent, Male), (Teal, Clothing), (Blue, White, Clothing))), (Center-of, ((Human-agent), (Human-agent), (Human-agent))), ((Human-agent), Interacts-with, (Tool)), (White, Tool), (White, Red, Tool), ((Human-agent), Interacts-with, (Ingestible-object)), (Clear, Ingestible-object), (Lower-center-of, (Ingestible-object)), (Background-view, (Upper-center-of, (Natural-feature, Label/Ocean)), (Horizontally-oriented), (Gray, Blue, Sky)), (Left-side-of, (Human-agent)), (Tan, Dirt-terrain), (Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a large blue parking payment machine dominates the left portion of the frame, extending from the lower edge upward, marked with a white letter \"P\" in its upper-center area and topped by a dark solar panel angled toward the upper-left. To the right of the machine, a man stands in the center-right, wearing dark sunglasses, a vertically striped button-up shirt in muted tan and white tones, and brown corduroy pants; his hands are positioned near the front of the machine, suggesting interaction with it. To his right, in the right portion of the frame, a woman stands slightly behind him, wearing a purple short-sleeved top, dark-framed glasses, and a dark shoulder bag, holding what appears to be green and white printed papers in her hands. In the background, a wall bears black-and-white graffiti-style artwork, including a cat-like face on the upper-center and a checkerboard pattern of black and white squares on the right. The lighting is bright and natural, casting soft shadows. The color scheme contrasts the vivid blue machine and purple top against neutral grays and monochrome background imagery.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Machine, Large, Blue, (Label/P, White), (Left-side-of, (Screen-window)))), ((Human-agent, Male, (Glasses, Black), (Clothing, White)), Interacts-with, (Machine)), (Human-agent, Female, (Clothing, Purple), (Glasses, Black), (Document, Green, White)), (Background-view, (Painting, Black, White)), (Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 357,
+            "total_tokens": 778
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 778
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

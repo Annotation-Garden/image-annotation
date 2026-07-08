@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph is dominated by strong backlighting from a low sun positioned near the center of the frame, creating a silhouette effect that darkens most foreground elements against a bright, hazy sky. In the foreground lower-left, an equestrian statue depicting a horse and rider appears in solid black silhouette, mounted atop a stone pedestal, the horse facing rightward with its head raised. Dominating the right and upper-right portions of the frame are traffic signals mounted on a horizontal metal arm; one cluster hangs at upper-right with multiple stacked signal heads, while another vertical signal sits in the center-right, both rendered in dark silhouette. In the background, a multi-story building with a repetitive grid of windows and a curved roofline occupies the center and right, bearing text reading \"Roosevelt University\" along its lower facade. To the left, another building displays partial signage reading \"HOTEL\" with a flagpole and flag at its upper edge. The overall color scheme is muted and warm, dominated by pale golden and gray tones from the sun-washed sky, contrasting with the deep black silhouettes. The composition layers dark foreground objects against luminous architectural backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Backlighting, (Sun, Center-of, Luminance-contrast)), ((Sculpture, Black, (Horse, (Human-agent, Ride))), Above, (Building-part, Mineral)), ((Navigational-object, Black), (To-right-of, Foreground-view)), ((Building, (Window, Repetitive), Roof), (Label/Roosevelt-University)), ((Building, Label/HOTEL), (Left-side-of, Background-view)), (Pale, Gold, Gray, (Sky, Background-view)), (Black, Foreground-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

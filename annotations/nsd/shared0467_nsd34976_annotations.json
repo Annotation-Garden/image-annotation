@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by an expansive body of water occupying nearly the entire frame, rendered in varying shades of blue from deep navy to lighter, almost silvery blue where light reflects off the surface. The water displays a textured pattern of gentle ripples and small waves across the upper and central portions, with the surface appearing calmer and darker in the lower region. Positioned in the lower-center of the frame, slightly right of center, is a single figure who appears to be a surfer lying prone on a surfboard; the person wears a dark wetsuit and is oriented with their back and head facing toward the upper portion of the image, suggesting they are paddling or waiting. A white surfboard is partially visible beneath and to the right of the figure, and a thin cord, likely a leash, extends from the board toward the left, trailing into the water. Small white splashes of disturbed water surround the figure, indicating movement. The lighting is diffuse and even, without harsh shadows, suggesting an overcast or softly lit sky. The overall composition is minimalist, with the small human subject emphasizing the vast, monochromatic blue expanse of the sea.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Body-part, Water), Blue, Large), ((Human-agent, Experiment-actor), Prone, (Clothing, Black), Lower-center-of), ((Human-agent), Interacts-with, (Tool, White, Label/Surfboard)), (Cord, Connected-to, (Tool, Label/Surfboard)), (White, Water, Movement-artifact), Overcast",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

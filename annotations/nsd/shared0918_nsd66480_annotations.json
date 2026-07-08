@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower portion of the frame, is a grassy field rendered in golden-green tones, lit warmly suggesting low-angle sunlight. A dog with white and brown fur, featuring long fringed ears characteristic of a Papillon, is positioned on the right side, its head lowered toward the grass in the lower-right area, appearing to sniff or investigate the ground. To the left of the dog, in the lower-center-left foreground, lies a white circular disc, likely a frisbee, resting flat on the grass with a small feather or debris beside it. The background occupies the upper-left and center portions, dominated by a large cluster of dense green deciduous trees whose foliage forms an irregular silhouette against the sky. The upper portion of the frame is filled with a clear blue sky, gradient from lighter near the horizon to deeper blue at the top, with faint wispy clouds. The overall color scheme combines cool blues above with warm greens and golden grass below. Lighting is bright and directional, casting warm highlights on the grass and the dog's white fur. The composition uses a low camera angle, emphasizing the ground plane.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Grassy-terrain, Green-color, Gold, (Lower-center-of, Foreground-view)), ((Animal-agent, Animal/Dog, White, Brown), (Sniff, (Lower-right-of, Grassy-terrain))), ((Disc, White, Circle, (Lower-left-of, Foreground-view)), Label/Frisbee), (Group-of, Plant, Green-color, (Upper-left-of, Background-view)), (Blue, Sky, (Top-of, Background-view)), (Luminance, Warm-highlight))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

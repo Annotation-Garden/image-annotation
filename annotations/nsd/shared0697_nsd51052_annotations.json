@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the left and lower-left portion of the frame, is a white bathtub with a rectangular interior basin, its outer panel facing the viewer. A white towel drapes over the bathtub's front edge in the lower-center-left area. Mounted on the tiled wall above the tub's right end is a chrome faucet and mixer set with a handheld showerhead attached by a flexible metal hose, positioned in the center of the frame; a metal soap or sponge rack sits on the tub's rim nearby. Above this, in the upper-center, another chrome fixture protrudes from the wall against a bluish-gray tile. In the background right, a white toilet with a wooden or honey-colored lid and a wall-mounted cistern occupies the right and lower-right regions. The upper-right wall is painted teal, contrasting with white tiling below. The floor, visible in the lower-right, features a checkered pattern of white, reddish-brown, and green tiles. The overall color scheme combines white, chrome gray, teal, and warm brown accents. Lighting appears soft and even, without harsh shadows. The composition divides diagonally between the tub on the left and toilet on the right.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((White, Box, (Rectangle, Center-of)), (Left-side-of, Lower-left-of)), ((White, Clothing), (Front-edge-of, Box, Lower-center-of)), ((Steel, Gray, Tool), Center-of), ((Steel, Tool), (Top-of, Box)), ((Steel, Gray, Tool), Upper-center-of), ((Blue-color, Gray, Ceramic), Upper-center-of), ((White, Tool, (Brown-color, Top-of)), (Right-side-of, Lower-right-of)), ((Teal, Building-part), Upper-right-of), ((White, Ceramic), Below), ((White, Red-color, Green, Ceramic, Pattern), Lower-right-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

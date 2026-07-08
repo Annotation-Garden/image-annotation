@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an open refrigerator dominating the entire frame, illuminated from within by warm interior lighting that casts a golden-yellow glow across the scene. The refrigerator door, swung open toward the right side of the frame, occupies the left and center portions and holds numerous condiment bottles, jars, and containers arranged across four white shelf tiers; these door items appear in the foreground with visible labels, bottle caps, and varied shapes clustered from upper to lower left. In the center and right, the refrigerator's interior reveals additional shelves with boxes, jars, and packaged goods in the upper-center background, while the lower-right shows drawers and smooth white plastic compartments. The overall color scheme is warm and saturated, dominated by amber, yellow, orange, and brown tones with scattered reds, greens, and blues from product packaging, giving an almost surreal, HDR-processed appearance. Lighting emanates from the upper interior, creating bright highlights on white surfaces and shadowed recesses. The composition is vertically symmetrical and frontal, framed by darker wooden cabinetry visible at the top and dim surroundings at the edges, drawing the eye into the brightly lit contents.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Furnishing, Open, (Yellow, Orange, Brown)), ((Furnishing, Left-side-of), (Contains, (Ingestible-object/Staple-food, Container))), ((Furnishing, Center-of), (Contains, (Ingestible-object/Staple-food, Box))), (Luminance-contrast/High, Yellow), (Symmetrical, Vertically-oriented), (Wood, Above)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 396,
+            "total_tokens": 817
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 817
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph presents breakfast items arranged on a white surface, with a wooden cutting board occupying the lower-left and central-left portion of the frame. In the foreground lower-center, a bunch of ripe yellow bananas with brown spots rests on the wooden board, oriented diagonally with stems pointing toward the upper-left. On the left side, upper-center, sits a small Yoplait yogurt container with a purple and white label, positioned on the cutting board. Above and slightly left of the yogurt, a glass jar with a metallic lid appears partially visible near the frame's upper edge. Dominating the right two-thirds of the frame is a large Post \"grape nuts\" cereal box, standing upright and extending from the lower-center to the top edge; its green upper portion displays the brand name, while the lower white section shows blue text and an image of cereal with berries in a blue bowl. The color scheme combines warm yellows and browns from the bananas and board with cooler greens, blues, whites, and purples from the packaging. Lighting is bright and even, casting soft shadows beneath objects, suggesting diffused overhead or natural illumination against the clean white background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (White, Background-view), ((Wooden, Man-made-object, Label/Cutting-board), (Lower-left-of, Image)), ((Ingestible-object/Staple-food, Yellow, Brown, Sweet, Label/Bananas), (Lower-center-of, Image)), ((Ingestible-object/Dessert, Purple, White, Label/Yogurt-container, Sweet), (Upper-left-of, Image)), ((Glass, Man-made-object, Label/Jar), (Top-edge-of, Image)), ((Ingestible-object/Staple-food, Green, Blue, White, Label/Cereal-box, Sweet), (Right-side-of, Image)), (Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

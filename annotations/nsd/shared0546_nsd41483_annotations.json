@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground, yellow orchid blossoms occupy the lower-left corner while broad green leaves of a potted plant dominate the lower-right and center-right, their fronds extending upward and inward. A dark wooden table sits in the center-lower portion of the frame, holding a small brass bell-shaped object and a rounded bowl or dish toward its right side. A patterned area rug with red, tan, and dark tones covers the floor in the lower-center. In the mid-ground, a dark wooden cabinet stands on the right edge, and a tall dark display cabinet with glass-fronted upper shelves rises in the center-background, topped by a small decorative item. To the left, a wooden staircase ascends diagonally, framed by a white wall bearing several small framed pictures. The background walls are pale green and white, meeting a white ceiling fitted with recessed circular downlights. A dark hanging lantern appears in the upper-right. A framed orange-toned artwork hangs on the center-right wall. The overall color scheme combines warm browns, greens, and pale neutrals; lighting is soft and even, and composition is layered from bright foreground foliage to darker recessed interior.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Yellow, Plant), (Lower-left-of, Image))), ((Green, Plant, Large), (Lower-right-of, Image)), ((Wooden, Furnishing), Center-of, ((Metal, Buzz), (Bowl))), ((Rug, Red, Tan, Dark-shade), Lower-center-of, Image), (Background-view, ((Wooden, Furnishing), Right-edge-of, Image)), ((Wooden, Furnishing, Glass), Center-of, Background-view), ((Wooden, Path), (To-left-of, ((White, Wall), (Photograph)))), ((Green, Light-shade, Wall), (White, Wall)), (White, Roof), (Light-shade, Icon), ((Dark-shade, Light-shade), Upper-right-of, Image), ((Orange, Painting), (To-right-of, Center-of)), (Brown-color, Green-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

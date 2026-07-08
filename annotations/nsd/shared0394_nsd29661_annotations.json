@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a kitchen island dominates the lower-center and left portions of the frame, featuring glossy black glass-fronted cabinets with vertical metal handles and a butcher-block wooden countertop on its left upper surface, while a lighter countertop with an inset cooktop occupies its right side. A dark tiled floor with reflective surfaces spans the lower edge. In the middle ground, along the right, white lower cabinetry runs beneath a light countertop, and a wooden-plank backsplash panel appears on the upper right wall. Centered in the background sits a window with a partially frosted lower pane, through which green foliage is visible, and a potted white orchid rests on the counter before it. A metal-framed glass shelf on the left-center wall holds bottles and jars. A white door with a metal handle stands on the left-center background. Black appliances, including a microwave, appear on the far left. The color scheme combines white walls and cabinetry, black glossy surfaces, and warm wood tones. Natural daylight enters through the window, supplemented by recessed ceiling lights, creating a bright, balanced, symmetrical composition with strong reflective highlights.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Indoors, Room, ((Furnishing, Label/Kitchen-island), (Lower-center-of, Foreground-view)), (Black, Glass, Glossy, Furnishing, Label/Cabinets), (Wooden, Furnishing, Label/Butcher-block-countertop), (Machine, Label/Cooktop), (Black, Dark-shade, Reflective, Floor), ((White, Furnishing, Label/Lower-cabinets), (Right-side-of, Middle-ground-view)), (Wooden, Building-part, Label/Backsplash-panel), ((Window, (Center-of, Background-view)), (Green, Plant, Label/Foliage)), (White, Plant, Label/Orchid), (Metal, Glass, Furnishing, Label/Shelf), ((White, Metal, Door), (Left-side-of, Background-view)), ((Black, Machine, Label/Microwave), (Left-side-of, Foreground-view)), (White, Building-part, Label/Walls), (Auditory-attribute, Label/Natural-daylight), Symmetrical, Reflective",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

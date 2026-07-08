@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground occupying the lower and central-left portion of the frame is a bed dressed in white linens, topped with two stacked white pillows in the upper-left area and a cylindrical bolster pillow featuring red, orange, and white geometric patterns resting horizontally across the pillows. A folded blanket in salmon-pink with an orange border drapes over the lower-right portion of the bed, and beneath it a multicolored striped bed skirt in red, orange, and teal is visible along the bottom edge. In the background center-left stands a wooden nightstand supporting a lit table lamp with a beige shade emitting warm illumination, casting a soft glow onto the adjacent wall. Behind and to the center-right are tall wooden closet doors with a reddish-brown finish, set against light beige walls. The upper-right corner shows a white ceiling with a small dark object, possibly a smoke detector or vent. The overall color scheme combines warm tones\u2014orange, salmon, red, and wood browns\u2014against neutral whites and beiges. Lighting is warm and localized from the lamp, creating gentle shadows. The composition is diagonal, with the bed angling from lower-left toward center.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Furnishing, Label/Bed, Foreground-view, (Lower-center-of, Item)), (White, Clothing, Label/Linens, Part-of, (Furnishing, Label/Bed)), ((Group-of, White, Furnishing, Label/Pillows), Upper-left-of, (Furnishing, Label/Bed)), ((Cylinder, Furnishing, Label/Bolster-pillow, Horizontally-oriented, (Red, Orange, White, Pattern)), Top-of, (Group-of, White, Furnishing, Label/Pillows)), ((Clothing, Label/Blanket, Salmon, (Orange, Boundary-of)), Lower-right-of, (Furnishing, Label/Bed)), ((Clothing, Label/Bed-skirt, Red, Orange, Teal, Pattern), Bottom-edge-of, (Furnishing, Label/Bed)), (Furnishing, Label/Nightstand, Wood, Background-view, (Center-of, Item)), ((Furnishing, Label/Table-lamp, (Beige, Furnishing, Label/Shade), (Orange, Luminance)), Top-of, (Furnishing, Label/Nightstand)), ((Door, Wood, Brown, Furnishing, Label/Closet-doors), To-right-of, (Furnishing, Label/Bed)), (Beige, Building-part, Label/Walls), (White, Roof, Upper-right-of, Item), ((Small, Black, Device), Top-of, (White, Roof)), (Orange, Salmon, Red, Brown, White, Beige, Color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

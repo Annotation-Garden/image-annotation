@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by the Elizabeth Tower (commonly known as Big Ben), a tall Gothic clock tower constructed of pale tan and beige stone that occupies the center and upper portion of the frame, extending from the lower-center upward to its pointed spire near the top edge. Two clock faces are visible near the upper portion of the tower, one facing forward on the center-right and one angled on the left, both showing white faces with dark numerals. In the foreground lower portion, a dark bluish body of water (the River Thames) stretches horizontally across the bottom of the frame. To the left and lower-left, ornate stone buildings with pointed spires, arched windows, and intricate carvings extend outward, part of the same architectural complex. On the right side, a lower structure with a large angled glass or slate roof and multiple chimneys is visible. The sky occupies the upper-left and upper-right corners, appearing light blue with scattered white and gray clouds. The lighting is bright natural daylight, casting soft shadows and illuminating the stone warmly. The overall color scheme combines tan stone, blue sky, and dark water, creating a balanced vertical composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Building, Label/Elizabeth-Tower, (Tan, Beige)), (Center-of, Photograph)), ((Building, Label/Elizabeth-Tower), (Top-of, Photograph)), ((Clock-face, White, (Forward)), (Right-side-of, Building)), ((Clock-face, White, (Rotated)), (Left-side-of, Building)), ((River, Blue), (Bottom-edge-of, Photograph)), ((Building, (Window)), (Lower-left-of, Photograph)), ((Roof, Glass), (Right-side-of, Photograph)), ((Sky, Blue, (White, Gray)), (Upper-center-of, Photograph)), Outdoors, Urban",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a harbor scene dominated by moored fishing boats and vessels clustered across the middle band of the frame. In the foreground, occupying the lower portion, is a broad expanse of dark, calm gray water that reflects the boats above it. At center-lower foreground floats a small dark inflatable or workboat, while a white-hulled boat sits at the left-center, moored near a stone quay edge that runs along the far left. The central cluster includes a prominent red-hulled boat and, behind it, a taller vessel with a raised wheelhouse and mast structure rising toward the upper-center. To the right sit blue-hulled and white boats, with additional vessels extending toward the right edge. In the background, a low gray landmass or breakwater stretches horizontally across the frame beneath a pale, overcast sky. On the far left, a white cable-stayed or A-frame structure rises against the mist. The overall color scheme is muted and cool\u2014grays, whites, and blues\u2014punctuated by the red boat. Lighting is flat and diffuse under heavy cloud, producing soft shadows and a hazy, foggy atmosphere. No people or animals are clearly visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Image, (Outdoors, Real-world)), ((Boat, Group-of), Center-of), ((Water, Gray, Smooth, Reflective-terrain), Lower-center-of), ((Boat, Small, Dark), Lower-center-of), ((Boat, White), Left-side-of), ((Building-part, Stone), Left-edge-of), ((Boat, Red), Center-of), ((Boat, Tall), Upper-center-of), ((Boat, Blue), To-right-of, ((Boat, Red))), (Boat, Right-edge-of), ((Natural-feature, Gray), Background-view), ((Machine, White), Left-edge-of), (Sky, Overcast, Background-view), (Gray, White, Blue), Flat, Diffuse",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

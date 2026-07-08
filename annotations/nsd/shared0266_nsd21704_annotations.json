@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two people dominate the foreground of this photograph, both positioned prone on surfboards and oriented toward the right side of the frame. The person on the left occupies the center-left, lying on a white surfboard, while the person on the right sits slightly higher and further right, on a red-and-white surfboard that angles diagonally toward the lower-right corner. Both individuals wear dark, full-body wetsuits and have short hair; their arms are extended forward against the boards as they ride. White, churning foam and spray surround both surfers, concentrated in the lower-center and around the boards, indicating active water movement. The background consists entirely of gray-green ocean water, with a breaking wave visible across the upper-center and upper-right portions of the frame, its crest producing additional white foam. The overall color scheme is muted and desaturated, dominated by grays, dark tones from the wetsuits, and the cool green-gray of the water, punctuated only by the red of the right surfboard. Lighting appears flat and diffuse, consistent with an overcast sky, casting no strong shadows. The composition places the two figures roughly parallel, creating a sense of simultaneous motion across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Human-agent, Prone, (Ride, (White, Tool, Label/Surfboard))), (To-left-of, (Human-agent, Prone, (Ride, (Red, White, Tool, Label/Surfboard))))), ((Human-agent), Interacts-with, (Tool, Label/Surfboard)), (Human-agent, Clothing, Black, Label/Wetsuit, (Hair, Short)), (White, Label/Foam, Water, (Lower-center-of, Photograph)), (Background-view, (Gray-color, Green-color, Water)), (Upper-center-of, (White, Label/Breaking-wave)), (Grayscale, Desaturated), (Outdoors, Cloudy)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

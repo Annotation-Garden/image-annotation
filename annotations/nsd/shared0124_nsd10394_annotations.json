@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a modern kitchen dominated by dark espresso-brown cabinetry contrasted against bright white countertops, arranged in an L-shaped configuration. In the foreground, occupying the lower-center and lower-right frame, is a white countertop with a stainless steel faucet and a double-basin sink positioned center. Below and to the left, dark lower cabinets with horizontal metal handles line the wall. In the background upper-center, tall dark upper cabinets house a black microwave and a recessed dark shelving niche on the right containing what appear to be glassware or stemware. To the left of the frame, a black-framed window with multiple panes admits daylight, and a light-colored wall-mounted object, possibly a calendar or notepad, hangs beside it. On the right side, a large bright window floods the space with natural light, creating a strong highlight contrast against the darker cabinetry. The color scheme is minimalist, combining dark browns, whites, tan walls, and stainless accents. Lighting is predominantly natural, entering from both left and right windows, producing soft illumination and mild reflections on the countertop. The composition emphasizes clean lines and horizontal-vertical geometry. A wooden floor edge is faint",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Building-part, Room, Label/Kitchen), (Furnishing, Brown, Dark-shade, (Left-side-of, Building-part)), (Furnishing, White, (Lower-center-of, Photograph)), (Furnishing, White, (Center-of, Furnishing)), (Steel, (Center-of, Furnishing)), (Machine, Black, (Upper-center-of, Photograph)), (Furnishing, Dark-shade, (Right-side-of, Photograph)), (Glass, (Contained-in, Furnishing)), (Window, Black, (Left-side-of, Photograph)), (Window, (Right-side-of, Photograph)), (Wall-mounted, White, (Left-side-of, Photograph)), (Furnishing, Brown, Dark-shade, (Lower-left-of, Photograph)), (Tan, Building-part), (Outdoors, Luminance-contrast), Horizontally-oriented, Vertically-oriented",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

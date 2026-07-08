@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground occupying most of the frame's center and lower portion is a police patrol boat moving rightward across the water, its gray metallic hull topped by a blue stripe bearing the white text \"CHICAGO POLICE\" along the lower side and \"M4\" near the bow at right. A smaller \"CPD\" marking appears on the hull's left side. The boat features an enclosed cabin with tinted windows in the center, above which sits an array of antennas, a searchlight, and radar-like equipment in the upper-center region. On the left side of the deck, a person wearing a dark uniform and light-colored helmet or headgear stands near the cabin, partially visible. White churning wake and spray surround the hull's lower right, indicating motion. The background upper portion shows a pale, hazy sky meeting a flat, low horizon line, with a faint darker landmass or breakwater stretching across the middle distance and what appears to be a small distant vessel at upper right. The overall color scheme is muted, dominated by grays, blues, and beige tones. Lighting is diffuse and overcast, producing soft shadows and low contrast throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Boat, Gray, (Blue, Label/CHICAGO-POLICE), (White, Label/M4), Label/CPD, (Window, Machine)), (Moving, To-right-of, (Water))), ((Human-agent, Experiment-actor, Clothing), Standing), (Foreground-view, (Wave, White)), (Background-view, (Sky, Beige), (Terrain, Far-from), (Boat, Small)), (Overcast, Low, Luminance-contrast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

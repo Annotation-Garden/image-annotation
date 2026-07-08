@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an outdoor market scene dominated by a large mound of bright orange carrots occupying the center and lower-center foreground, spread across a dark surface. In the lower-left foreground sit red mesh bags filled with what appear to be onions or produce, and a white woven sack rests at the bottom of the frame. To the left of the carrots, in the mid-ground, are bundles of green vegetables, likely leafy greens or beans. On the right side of the frame, a man wearing a light-colored, long-sleeved shirt and dark pants leans forward over the produce, his hands reaching toward the goods, suggesting he is arranging or selecting items. In the background, positioned center and left, several people stand and move about; one figure wears a blue jacket, another a green shirt, and a woman in the upper-center wears a dark head covering. Market stalls, canopies, and a blue-patterned umbrella occupy the upper portion of the frame. The lighting is bright and natural, consistent with daytime sun, casting shadows on the ground. The overall color scheme combines vivid oranges, reds, and greens against muted browns and neutral tones, creating a busy, layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Item-count/Some, (Orange, Ingestible-object/Staple-food, Sweet), (Center-of, Foreground-view)), ((Red, Ingestible-object/Staple-food), (Lower-left-of, Foreground-view)), (White, Man-made-object, Label/Woven-sack), ((Green, Ingestible-object/Staple-food), (To-left-of, Foreground-view)), ((Human-agent, Male, (White, Clothing), (Bend, Torso)), Interacts-with, (Ingestible-object/Staple-food)), (Item-count/Some, Human-agent, Background-view), ((Human-agent, (Blue, Clothing)), Background-view), ((Human-agent, (Green, Clothing)), Background-view), ((Human-agent, Female, (Dark-shade, Clothing, Head)), Upper-center-of), (Building-part, Upper-center-of), ((Blue, Pattern, Man-made-object, Label/Umbrella), Upper-center-of), (Light-shade, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

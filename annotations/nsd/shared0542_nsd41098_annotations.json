@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's central foreground element is a bird perched on a diagonal branch that extends from the lower left toward the right-center of the frame. The bird occupies the center of the image, positioned slightly right of center, facing rightward in profile. It displays a distinct color scheme: a black head and upper back, a bright red triangular patch on its upper breast, white underparts on the lower body, and black-and-white markings on the folded wing; it has a pale, thick conical beak and a dark eye. The bird's feet grip the thick brown branch beneath it, showing direct physical interaction between animal and perch. The background fills the entire frame behind the bird with out-of-focus green foliage, darker in the upper portions and lighter green toward the lower left, creating depth through blur. Diagonal streaks of light-colored lines are visible across the frame, suggesting falling rain. The lighting is soft and diffuse, with no harsh shadows, illuminating the bird's left side. The composition places the sharp, high-contrast bird against the muted, blurred green backdrop, drawing focus to the centrally located subject through selective focus and color contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, (Black, Head), (Black, Upper-arm), (Red, Triangle, Torso-chest), (White, Torso), (Black, White, Wing)), (Center-of, Image)), ((Animal-agent), Interacts-with, (Plant, Brown, Thick)), (Foreground-view, (Animal-agent)), (Background-view, Blurred, Green, Plant), (Depth, Blurred), Rightward, Soft, Diffuse, Selective-attention, Luminance-contrast",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a glass-fronted display case filled with numerous donuts and pastries arranged on angled trays receding from the lower foreground toward the upper background. In the foreground, occupying the lower and central portions of the frame, chocolate-glazed donuts and darker pastries are visible, including twisted and ring shapes; the lower-right corner shows a very dark, textured donut. Small printed price tags with green edges and Japanese text sit along the front edges of the trays, one visibly reading \"\u00a5180.\" Moving toward the upper background, lighter glazed and sugared donuts appear in rows, with pink-frosted rings in the center-right middle ground. In the upper portion of the frame, behind the case, two people are partially visible from the neck down, wearing yellow and red uniform shirts, positioned center and right; their faces are cut off by the frame's top edge. The overall color scheme is warm, dominated by browns, tans, and golds, with accents of pink, green, red, and yellow. Lighting is bright and even, emanating from within the case, producing reflections on the glass surfaces along the top.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Glass, Furnishing, Label/Display-case), (Contained-in, (Window, Glass))), ((Ingestible-object/Dessert, Sweet, Brown, (Circle, Ring)), Foreground-view), ((Ingestible-object/Dessert, Sweet, Dark-shade, Rough), Lower-right-of), ((Label/Price-tag, Green, ID/\u00a5180), (Front-edge-of, Furnishing)), ((Ingestible-object/Dessert, Sweet, Light-shade), Background-view), ((Ingestible-object/Dessert, Sweet, Pink, Ring), Center-of), ((Human-agent, Clothing, Yellow), Center-of), ((Human-agent, Clothing, Red), Right), (Brown, Tan, Gold), Bright, ((Luminance), Within, (Window, Glass))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground at the lower left, a wooden coffee table displays a red book, a woven circular coaster or basket, and a black remote control resting on its surface. Occupying the center and right-center of the frame is a large floral-patterned sofa in muted greens, tans, and reddish tones, accented by two striped throw pillows in brown and cream at its left and right ends. Flanking the sofa are two side tables in the middle ground: the left one bears a lamp with a cream shade, while the right table in the lower right corner holds a similar lit lamp with a matching shade and a dark base. In the background, a tan-colored wall supports three framed items: two botanical leaf prints on the left and right, and a large central mirror with a wide black frame reflecting a black television screen. A small stereo or electronic device sits on a shelf in the far left background. The overall color scheme is warm, dominated by golden yellows, browns, and earthy reds. Lighting is soft and ambient, emanating from the two table lamps, creating a cozy, symmetrical, balanced composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Furnishing, Label/Coffee-table), (Foreground-view, Lower-left-of)), ((Red, Book), (Circle, Furnishing), (Black, Furnishing, Label/Remote-control)), ((Furnishing, Label/Sofa), (Green-color, Tan, Red-color, Pattern), Center-of), ((Furnishing, Label/Throw-pillow), Brown, (Furnishing, Label/Throw-pillow), White-color), ((Furnishing, Label/Side-table), Left-side-of), (Furnishing, Label/Side-table, Lower-right-of), ((Furnishing, Label/Lamp), White-color, Light-shade), ((Furnishing, Label/Lamp), White-color, Dark-shade), (Tan, Building-part, Label/Wall, Background-view), ((Painting, Label/Botanical-print), Left-side-of), ((Painting, Label/Botanical-print), Right-side-of), ((Furnishing, Label/Mirror), Black, Center-of), (Black, Display-device, Label/Television), ((Auditory-device, Label/Stereo), Far-from, Left-side-of, Background-view), (Yellow-color, Brown, Red-color), Warm, (Light-shade, Label/Ambient-lighting), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 342,
+            "total_tokens": 763
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 763
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

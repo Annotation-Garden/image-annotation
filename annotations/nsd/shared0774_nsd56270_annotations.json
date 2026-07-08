@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Three giraffes occupy the middle portion of the frame against a dry, sandy terrain. The leftmost giraffe stands in the left-center, its body oriented rightward with its long neck extended horizontally, its head reaching toward the center. A second giraffe stands in the center-background, positioned slightly higher in the frame, its neck also extended leftward so that its head appears close to the first giraffe's head, suggesting a facing interaction between them. The third and largest giraffe occupies the right-center foreground, standing with its body angled and its head turned toward the left, its patterned coat showing distinct brown patches separated by pale cream lines. In the lower foreground, tangled masses of bare, gray-brown branches and dry brush spread across the frame. The upper third is filled with dense green foliage and trees forming the background. The lighting is bright and natural, casting soft shadows beneath the animals, indicating daylight. The overall color scheme combines earthy tans and browns of the ground and giraffes with the green of the vegetation above. Compositionally, the animals are distributed horizontally across the middle band, framed between brush below and greenery above.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Animal-agent, Label/Giraffe), (Brown, White-color)), Left-side-of), (Background-view, (Animal-agent, Label/Giraffe), Upper-center-of), (Foreground-view, Large, (Animal-agent, Label/Giraffe), Right-side-of), ((Animal-agent, Label/Giraffe), Interacts-with, (Animal-agent, Label/Giraffe)), (Dirt-terrain, (Tan, Brown)), (Lower-center-of, (Plant, Gray-color, Brown)), (Upper-center-of, (Plant, Green, Tree)), (Outdoors, Daylight)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

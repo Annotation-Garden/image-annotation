@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the left and lower-left portion of the frame, is a wine glass held in a person's hand; the glass contains a pale yellow-white liquid filling roughly its lower third, and the transparent bowl and stem catch light with visible reflections. The hand gripping the stem is partially visible at the lower-left edge. Centered and extending to the right is a bald, light-skinned man with a gray and white beard and mustache, wearing thin metal-framed glasses. He wears a beige or tan button-up shirt with a collar, visible across the lower-right region. His gaze appears directed toward the glass on the left, suggesting an interaction of examination or inspection between the man and the wine glass. The background is a solid, dark reddish-brown tone filling the upper and right areas, providing no additional detail or scene context. The overall color scheme is warm, dominated by browns, tans, and muted reds, with the pale glass contents offering contrast. Lighting comes from the left, illuminating the man's face and the glass while casting subtle shadows on the right side. The composition is balanced between the glass and the face.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Bald, Head), (Gray, White, Beard), (Glasses), (Beige, Clothing)), Interacts-with, (Glass, (Yellow, White, Ingestible-object), (Human-agent, Hand))), (Foreground-view, (Glass, (Human-agent, Hand))), (Background-view, (Brown, Red, Color-shade)), (Examine)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

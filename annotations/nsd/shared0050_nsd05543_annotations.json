@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the center and slightly left of the frame, a woman stands on a tennis court wearing a white short-sleeved shirt, a blue skirt, and white sneakers, holding a tennis racket raised near her right shoulder as she appears mid-motion. Behind her, in the center-right middle ground, a second woman in similar white top and blue skirt stands holding a racket lowered at her side, facing toward the left, suggesting the two are playing together. The lower portion of the frame is dominated by the court surface, which transitions from blue playing areas to reddish-brown surrounding zones marked with white lines. A tall dark chain-link fence spans the middle of the image horizontally, separating the court from the background. In the upper and background regions, leafless brown trees fill much of the frame, with several light-colored houses and a taller white building with a peaked roof visible on the right. The lighting is flat and diffuse, consistent with an overcast sky, producing minimal shadows. The overall color scheme combines muted blues, browns, and greys, creating a subdued, cool-toned composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Female, (Upper-center-of, (Photograph, Left-side-of))), ((White, Clothing), (Blue, Clothing), (White, Clothing)), (Grasp, (Tool, Label/Tennis-racket)), (Near, Shoulder, Right)), ((Human-agent, Female, (Upper-right-of, Photograph)), ((White, Clothing), (Blue, Clothing)), (Grasp, (Tool, Label/Tennis-racket)), Leftward), ((Human-agent), Interacts-with, (Human-agent)), (Field, Blue, (Bottom-of, Photograph)), (Red-color, (Boundary-of, Field)), (White, Line-noise-artifact), ((Assistive-device, Label/Chain-link-fence), Horizontally-oriented, (Center-of, Photograph)), (Background-view, (Plant, Brown), (Building, Label/House)), ((Building, White, (Roof)), (Right-side-of, Photograph)), (Outdoors, (Overcast, Description/Diffuse-flat-lighting)), (Blue-color, Brown-color, Gray)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 355,
+            "total_tokens": 776
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 776
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

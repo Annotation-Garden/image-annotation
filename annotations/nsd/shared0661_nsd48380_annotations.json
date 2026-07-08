@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a large brown upholstered couch or sofa dominates, its cushioned armrest angling toward the center of the frame. Directly in front of it, occupying the center-lower area, sits a light wooden coffee table with tapered legs, holding several green and pink candles, a small dark object, and a white bowl or plate near its right edge. In the extreme foreground lower-center, a stack of magazines or booklets with visible printed covers rests on what appears to be another surface. The background right side is anchored by a large black flat-screen television on a black stand, flanked by black shelving units holding indistinct dark objects and a small red-and-white figurine. To the left in the background stands a dark wooden bookshelf filled with books, board-game boxes, and CDs or DVDs, topped by colorful figurines and framed pictures. A window on the upper-left admits natural daylight, illuminating the pale hardwood floor that spans the center and right. The color scheme combines warm wood tones and brown upholstery against black electronics and furniture. Lighting is soft and natural, producing gentle shadows and an evenly lit, domestic interior composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Indoors, Room, (Foreground-view, Lower-left-of, (Large, Brown, Furnishing, Label/Couch)), (Center-of, Lower-center-of, (Furnishing, Label/Coffee-table, Wheat), ((Green, Label/Candle), (Pink, Label/Candle), (Dark-shade, Object), (White, Label/Bowl))), (Foreground-view, Lower-center-of, (Group-of, Document, Label/Magazines)), (Background-view, Right-side-of, (Large, Black, Display-device, Label/Television), (Black, Furnishing, Label/Shelving), (Red, White, Label/Figurine, Small)), (Background-view, Left-side-of, (Dark-shade, Furnishing, Label/Bookshelf, (Group-of, Book), (Group-of, Label/Board-games), (Group-of, Media))), (Upper-left-of, Window), (Center-of, Right-side-of, White-color, Furnishing, Label/Hardwood-floor)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

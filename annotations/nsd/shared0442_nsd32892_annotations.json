@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a large stone or concrete pillar dominates the left side of the frame, extending from the lower edge to the upper region, supporting a canopy structure with metal beams and cables that angle from the upper-left toward the center-right. Below the pillar in the lower-left, a wooden slatted bench with metal armrests sits on a brick-paved surface that fills the lower portion of the frame. A black metal railing with vertical bars runs horizontally across the mid-lower section, spanning from center to the right edge, separating the walkway from the water. In the background, a body of water occupies the middle horizontal band, and beyond it a city skyline with numerous buildings stretches across the center and right, their windows illuminated with warm yellow and white lights. The upper portion shows a gradient blue sky transitioning from lighter near the horizon to deeper blue at the top, indicating twilight. The color scheme contrasts cool blues of sky and water with warm golden tones on the bricks, bench, and building lights. Lighting appears to come from artificial sources illuminating the foreground pavement warmly.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Building-part, Large, Left-side-of), (Steel, Ceramic)), (Furnishing, (Left-edge-of, Lower-center-of)), (Furnishing, Steel, (Lower-left-of, Center-of)), ((Path, Paved-terrain), Orange-color, Lower-center-of), ((Building-part, Vertically-oriented, Black), (To-right-of, Center-of)), (River, Center-of, Background-view), ((Building, Urban, Group-of), (Center-of, Right-side-of, Background-view)), ((Window, Illuminated), (Yellow-color, White)), (Outdoors, Blue, Upper-center-of), (Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

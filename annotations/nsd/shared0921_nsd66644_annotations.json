@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A light wooden desk dominates the center and right of the frame, extending diagonally from the lower-left toward the upper-right, occupying the foreground and midground. Resting on the desk are two illuminated screens: a laptop in the center displaying a blue swirling wallpaper, and a larger external monitor to its right showing a similar bright blue desktop image. A black mouse sits on a dark mouse pad in the lower-right foreground, positioned to the right of the laptop. Behind the laptop, in the background center, stand two white speakers flanking the screens. To the left, a spiral-bound document or booklet lies flat on the desk surface. In the lower-left foreground, a white printer rests on the floor atop a white cube-shaped object or subwoofer. Cables are visible dangling beneath the desk in the lower-center. A small white light source glows at the far left edge. The overall color scheme is warm and muted, with beige walls and carpet contrasting against the cool blue glow of the screens. Lighting is dim and ambient, with the monitors serving as the primary bright focal points, creating a balanced, technology-centered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Furnishing, Label/Desk, Beige), (Diagonal, Center-of, Foreground-view)), ((Laptop-computer, (Blue, Label/Swirling-wallpaper), Center-of)), ((Computer-screen, (Blue, Label/Desktop-image), To-right-of, Laptop-computer)), ((Computer-mouse, Black, Lower-right-of, Foreground-view), To-right-of, Laptop-computer), ((Loudspeaker, White, Group-of, Background-view), Behind, Laptop-computer), ((Document, Left-side-of), Top-of, Furnishing), ((Printer, White, Lower-left-of, Foreground-view), Top-of, (Box, White)), (Cable, Underneath, Furnishing, Lower-center-of), (Sound, Off), ((White, Luminance), Left-edge-of), (Beige, Room), (Blue, Luminance-contrast), (Low, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

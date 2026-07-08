@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower portion of the frame, sits a cluster of ground-service equipment: white and beige cargo containers or trailers spanning the lower-left to lower-center, with a boxy vehicle bearing text on its side toward the lower-right, all positioned on gray tarmac. Dominating the middle ground and stretching across the center and right of the frame is a large white commercial aircraft with the word \"THAI\" printed in blue and a purple-and-magenta emblem near its rear fuselage; its nose points leftward, its engine and landing gear visible in the center-lower area, and a row of passenger windows runs along the body. The aircraft's tail fin, colored in purple and magenta hues, appears at the left edge. A worker in a reflective vest stands near the aircraft's underside toward the lower-right. In the background, upper-center, rises a tall air-traffic-control tower with a glass observation section. The sky above fills the upper third with heavy gray, overcast clouds, producing flat, diffuse lighting and muted tones. The overall color scheme is dominated by grays, whites, and cool blues, with the aircraft livery providing the primary accent colors.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((White, Box), (Beige, Box), Lower-left-of)), ((Vehicle, Word), Lower-right-of), (Gray, Paved-terrain), ((Aircraft, White, Large), Center-of), ((Word, Label/THAI, Blue), Aircraft), ((Purple, Magenta, Icon), Aircraft), ((Aircraft, Building-part), Left-side-of), ((Engine), Lower-center-of), ((Window, Group-of), Aircraft), (((Human-agent, Experiment-actor), Clothing), Interacts-with, (Aircraft)), (Background-view, (Building, Upper-center-of, Glass)), (Upper-center-of, (Gray, Overcast, Sky)), (Gray, White, Blue)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

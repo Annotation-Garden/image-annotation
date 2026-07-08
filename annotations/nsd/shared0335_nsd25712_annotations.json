@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the center-left foreground sits a bright orange boat with a white canopy roof supported by vertical posts, floating on green algae-covered water that fills the lower two-thirds of the frame. Inside the boat, two figures are visible: one wearing a fluorescent yellow-green jacket seated on the left, and another in a darker outfit on the right beneath the canopy. A dark mechanical apparatus extends from the boat's left side toward the water surface. The water dominates the lower and central portions, displaying a mottled pattern of green algae with darker patches. In the background, occupying the upper third, stands a multi-story building with white and gray facades, numerous windows, and balconies with railings visible at the top edge. Below the building runs a horizontal concrete retaining wall in beige and gray tones, with a section of reddish-brown paneling and a doorway on the right. A grassy green bank appears in the lower-right corner. The lighting is bright and natural, casting soft shadows and suggesting daytime sun. The overall color scheme contrasts the vivid orange boat against the pervasive green water and muted architectural neutrals, creating a strong central focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Boat, Orange, Foreground-view), (Contained-in, Window)), ((Boat, Orange), (Center-of, Foreground-view)), ((Roof, White), Above, Boat), (Human-agent, Experiment-actor, (Clothing, Yellow-color, Green-color), Left-side-of), (Human-agent, Experiment-actor, (Clothing, Dark-shade), Right-side-of), ((Human-agent), Interacts-with, (Boat)), ((Machine, Dark-shade), (Connected-to, Boat)), (Green-color, Plant, (Contained-in, Volume)), (Building, Background-view, (White-color, Gray-color)), (Window, Member-of, Building), (Building-part, Top-edge-of, Building), ((Building-part, Beige, Gray-color), Below, Building), ((Building-part, Red-color, Brown-color), Right-side-of), (Door, Right-side-of), ((Plant, Green-color), Lower-right-of), Natural-feature",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

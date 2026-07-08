@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "An adult elephant occupies the center-to-right foreground of the frame, its large gray body partially submerged in water, with the head lowered and the trunk extended toward the lower-left, from which a spray of water arcs upward and leftward into the air. The water surrounding the elephant fills the lower half of the frame, appearing dark and rippled with reflections, and the misty spray creates a diffuse white plume across the center-left. In the background, occupying the upper portion of the frame, is a dense band of tall green grass or reeds, which stretches horizontally across the full width and shows some tan and brown patches, particularly toward the left and lower-left edges where the vegetation meets the waterline. The overall color scheme combines the muted grays of the elephant and water with the vivid greens of the background foliage. Lighting appears natural and even, likely daylight, casting soft illumination that highlights the water droplets in the spray. Compositionally, the horizontal division between grass and water creates two distinct bands, with the elephant serving as the dominant subject bridging the foreground water and its self-directed spraying interaction.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Elephant, Large, Gray), (Center-of, Foreground-view)), ((Animal-agent, Animal/Elephant), Interacts-with, Water), (Head, Downward), ((Water, Spray), (Above, (Animal-agent, Animal/Elephant))), (Water, Lower-center-of, Dark-shade), ((Green, Plant), (Background-view, Upper-center-of, Horizontally-oriented)), (Plant, Tan, Brown), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and right portion of the frame, a woman stands in profile facing left, wearing a black jacket with silver buttons, dark sunglasses, and a light-colored scarf around her neck; her dark hair is pulled back into a bun. She holds a small pink-and-silver camera up with both hands at roughly the upper-center of the frame, positioned as though photographing something to her left, creating an interaction between the person and the object. In the lower portion of the frame, a black metal railing runs horizontally across the width, separating the woman from the water behind her. In the background, occupying the left, center, and right, are large white cascading waterfalls with misty spray rising against a light blue sky; dark rocky cliffs and faint structures, including what appears to be a bridge on the right, are visible. Below the falls, greenish-blue water fills the middle-left and lower-left area. The lighting is bright natural daylight from behind, backlighting the woman and casting her front into shadow. The color scheme contrasts dark silhouetted tones with bright whites, blues, and greens.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Female, (Standing, (Torso, Vertically-oriented)), (Face, To-left-of), (Black, Clothing), (Silver, Push-button), (Black, Glasses), (White, Clothing, (Around, Neck)), (Black, Hair, (Back-of, Head)))), ((Human-agent), Interacts-with, ((Pink, Silver, Camera), (Hold-down, (Hand, Hand)))), (Upper-center-of, (Pink, Silver, Camera)), (Center-of, Human-agent), (Right-side-of, Human-agent), (Lower-center-of, (Black, Steel, (Horizontally-oriented, Path))), (Background-view, (White, Waterfall), (Left-side-of, Waterfall), (Center-of, Waterfall), (Right-side-of, Waterfall), (Blue, Light-shade, Sky), (Dark-shade, Rocky-terrain, Mountain), (Right-side-of, Building), ((Blue, Green, River), (Lower-left-of, River))), (Outdoors, Real-world), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 349,
+            "total_tokens": 770
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 770
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

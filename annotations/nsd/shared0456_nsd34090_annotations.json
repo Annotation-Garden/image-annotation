@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a densely wooded forest scene dominated by vertical tree trunks and thick green undergrowth. In the middle-ground on the right side, a single black-and-white cow stands in profile facing left, its body partially obscured by low vegetation. Further back, in the center-left of the frame, a cluster of three additional black-and-white cows stand among the trees, appearing smaller due to their greater distance from the camera. The foreground consists of low green ferns, leafy plants, and scattered fallen branches covering the ground. Numerous slender tree trunks rise vertically throughout the frame, several angling diagonally, creating a layered sense of depth. The upper portion of the image is filled with a dense canopy of green and occasional yellowing leaves, suggesting early autumn foliage on the right. The overall color scheme is heavily saturated with greens, punctuated by the dark brown and gray tree bark and the stark black-and-white patterning of the cattle. Lighting appears diffuse and soft, filtering through the canopy without harsh shadows or bright highlights. The composition is dense and somewhat cluttered, with the cattle providing focal points against the uniform vegetation.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Outdoors, Natural-feature, (Plant, Green)), ((Animal-agent, Animal/Cow, (Black, White)), (Right-side-of, Foreground-view)), ((Group-of, Item-count/3, (Animal-agent, Animal/Cow, (Black, White)), Far-from), (Center-of, Background-view)), (Plant, Green, (Ground-terrain, Leaf-covered-terrain)), (Green, Yellow, (Top-of, Foreground-view)), (Brown-color, Gray, Plant), Saturation, Diffuse",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

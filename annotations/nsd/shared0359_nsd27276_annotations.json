@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a single zebra occupying the foreground, positioned primarily in the center and right portions of the frame, with its head and neck angled so the muzzle points toward the lower-right corner. The zebra's body extends from the lower-left, its striped neck rising diagonally, and its head fills the central-upper region, with two erect ears at the top-center and a dark, bristly mane running along the back of the neck. The black-and-white striping is sharply defined, with vertical stripes on the face narrowing toward the muzzle, which is dark gray to black. The background, occupying the entire upper and right periphery behind the animal, consists of a dense tangle of bare, brownish branches and twigs, largely thrown into deep shadow, creating a dark, cluttered backdrop. Lighting is directional, striking the zebra from the left and illuminating its face, neck, and stripes brightly while leaving the background dim, producing strong contrast. The overall color scheme is muted and earthy\u2014blacks, whites, grays, and browns\u2014with no vivid hues. Compositionally, the sunlit zebra stands out prominently against the darker, out-of-focus vegetation, drawing the eye to the animal's face.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Photograph, (Foreground-view, (Animal-agent, Label/Zebra)), (Background-view, (Plant, Brown, Dark-shade))), ((Animal-agent, Label/Zebra), (Center-of, Photograph)), (Black, White, Gray, Brown), (Luminance-contrast/High), (Directional-relation, Left)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

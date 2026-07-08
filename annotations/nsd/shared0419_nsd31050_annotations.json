@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, sits a dark brown oval plate holding a ciabatta-style sandwich positioned in the upper-left of the plate, a bed of green romaine lettuce leaves in the center and lower area, and orange-colored carrot slices visible near the center-right beside the sandwich. Resting diagonally across the right side of the plate are two metallic forks, their tines pointing toward the upper-left and handles extending to the lower-right. The plate sits atop a light-toned wooden table showing visible grain and plank seams, which fills the lower and right portions of the frame; a crumpled white napkin appears at the left edge. In the background, upper portion of the frame, a clear empty drinking glass stands center-right, and to the upper-left a second dark platter holds additional food including dark and green elements. At the far right edge, a blurred pale object and a reddish item are partially visible. The overall color scheme combines warm browns, greens, and neutral wood tones. Lighting is soft and natural, brighter toward the upper-right, casting gentle shadows beneath the plate and utensils.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Oval, Brown, (Ingestible-object/Main-dish, Savory), (Upper-left-of, Item)), (Green, Plant, (Ingestible-object/Staple-food, Savory), Center-of), (Orange, (Ingestible-object/Staple-food, Savory), To-right-of), (Center-of, Item)), (Metadata, (Tool, Steel, Group-of, Item-count/2, (To-right-of, Item))), ((Item, Wood, Brown, Light-shade), (Lower-center-of, Item)), (White, Clothing, (Left-edge-of, Item)), (Background-view, (Glass, Empty, (Upper-center-of, Item)), (Brown, (Ingestible-object/Main-dish, Savory), (Upper-left-of, Item))), (Right-edge-of, Item), (Brown-color, Green-color, Orange-color), (Luminance, (Upper-right-of, Item))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

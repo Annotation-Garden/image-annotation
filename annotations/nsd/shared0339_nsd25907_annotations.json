@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower half of the frame, is a dark speckled granite countertop that spans horizontally and reflects light along its polished surface; beneath it, in the lower-left and lower-center, are light maple wood cabinets and drawers fitted with dark curved metal handles. On the countertop in the center-left stands a vibrant orange-red glass vase with a rounded body and narrow neck, and to its right sits a black sculptural object composed of stacked spherical and disc-like forms. Behind these, in the mid-ground, a backsplash of gray rectangular tiles rises, accented by a horizontal band of small mosaic tiles in mixed blue, gray, and beige tones. In the upper-left and upper-center background, a stainless-steel microwave with a black control panel is mounted within maple cabinetry, and to its right a shelf holds upright books. On the right side of the frame, spanning upper to lower, is a stainless-steel double wall oven with black glass fronts and digital controls. The overall color scheme combines warm wood tones with cool grays and metallic surfaces; lighting is soft and even, creating gentle reflections without harsh shadows.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Rectangle, Horizontally-oriented, Gray, Speckled-visualization), Below, (Furnishing, Label/Countertop))), ((Furnishing, Label/Cabinet, Brown), Below, (Furnishing, Label/Countertop)), (Furnishing, Label/Cabinet, (Handle, Curved, Metal, Black, Lower-left-of)), ((OrangeRed, Glass, Container, Rounded-visualization), Center-of), ((Black, Sculpture, Sphere), To-right-of, (OrangeRed, Glass, Container)), (Background-view, (Rectangle, Gray, Label/Backsplash-tile)), (Horizontally-oriented, Small, (Blue, Gray, Beige, Label/Mosaic-tile)), (Background-view, (Steel, Label/Microwave, (Black, Label/Control-panel)), Upper-left-of), (Furnishing, Label/Cabinet, Brown), ((Furnishing, Label/Shelf, (Book, Vertically-oriented)), To-right-of, (Label/Microwave)), (Right-side-of, (Steel, Label/Wall-oven, (Black, Glass))), (Brown, Gray, Steel), (Soft, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

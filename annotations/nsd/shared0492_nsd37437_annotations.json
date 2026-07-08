@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a white and blue tour bus with visible text on its side occupies the frame's bottom edge, while pedestrians walk along a paved road that stretches across the lower portion of the image. In the center foreground, a red double-decker bus is positioned on the roadway, surrounded by scattered people who appear to be crossing or standing near the street. Along the lower-right and bottom-center, clusters of red and pink flowers grow in planters, adding warm color accents. A concrete bridge or overpass dominates the middle-ground, extending from the center toward the right, supported by visible pillars and arches beneath its span. Dense green foliage and trees fill the background across the entire width, sitting below a large expanse of sky. The upper portion of the frame shows a bright blue sky with substantial white and gray cumulus clouds occupying roughly the top half. The lighting is natural daylight, casting soft shadows and suggesting an overcast-to-partly-sunny condition. The overall color scheme combines green vegetation, gray concrete, blue sky, and red accents from the bus and flowers, creating a balanced, layered urban-outdoor composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, Background-view, Outdoors, Urban, ((White, Blue, Vehicle, Word), (Lower-left-of, Bottom-edge-of)), (Group-of, (Human-agent, Walk)), ((Paved-terrain, Road), Lower-center-of), ((Red, Vehicle), Center-of), (Group-of, Human-agent), ((Red, Pink, Plant), (Lower-right-of, Lower-center-of)), (Building, Center-of, Right), (Green, Plant), Background-view, ((Blue, Sky), Upper-center-of), ((White, Gray, Sky), Top-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

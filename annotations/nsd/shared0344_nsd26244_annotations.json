@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned center-right and spanning the vertical center to lower portion of the frame, a woman stands on a green textured surface, holding a tennis racket in her right hand at waist level; she wears a blue short-sleeved t-shirt with a colorful printed graphic, black track pants with light-colored side stripes, and black athletic shoes with green-yellow soles, her brown hair pulled back into a ponytail, her head turned toward the left in profile. Behind her, occupying the middle ground across the full width of the frame, a chain-link fence runs horizontally, and a dark green net line is visible at center-left. The background upper portion is dominated by dense dark green trees and foliage, with small patches of pale sky breaking through at the upper edges. The overall color scheme combines greens of grass and trees, the blue of her shirt, and dark tones of her pants and the fence. Lighting appears natural and bright, coming from the upper left, casting soft shadows and highlighting the left side of her face and arms. The composition places the standing figure slightly off-center, framed by the receding fence and trees.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, Female, (Brown, Hair), Standing), Interacts-with, (Tool, Label/Tennis-racket)), ((Human-agent, (Right, Hand), Hold-down), (Tool, Label/Tennis-racket)), (Foreground-view, Lower-right-of), ((Blue, Clothing, Torso-chest), (Black, Clothing, Upper-leg), (Black, Clothing, Foot)), (Turn-head, Left, Lateral), ((Green, Terrain), Underneath), (Background-view, (Green, Plant)), (Middle-ground, Man-made-object, Label/Chain-link-fence), (Upper-center-of, (Green, Plant)), (Blue, Sky), (Natural-feature, Upward)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 356,
+            "total_tokens": 777
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 777
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

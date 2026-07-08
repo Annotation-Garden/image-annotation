@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A young man occupies the foreground, positioned centrally and slightly left, standing upright and filling most of the vertical frame from head near the top to legs extending toward the lower edge. He wears dark-framed rectangular glasses, a dark navy or black blazer over a light blue collared dress shirt, and a navy tie patterned with white horizontal stripes. A brown leather belt with a metal buckle spans his waist at the frame's center, above gray trousers occupying the lower portion. His head turns to his left, facing rightward in profile, with short dark hair; his arms hang down at his sides with hands partially visible near the lower left and lower right. The background consists of pale, cream-colored paneled doors or wardrobe surfaces with visible vertical seams and thin dividing lines, plus a lighter beige wall segment along the right edge. The overall color scheme contrasts dark clothing tones against neutral cream and beige surroundings. Lighting appears frontal and somewhat flat, likely from a camera flash, casting subtle shadows behind the figure and slightly illuminating the left side of his face and shirt more than the right.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Male, (Age/Young, Label/Young-man), Upright, Foreground-view, Center-of), (Glasses, Rectangle, Black), (Clothing, Navy, Label/Blazer), (Clothing, LightBlue, Label/Dress-shirt), (Clothing, Navy, White, Label/Striped-tie), (Clothing, Brown, Label/Leather-belt), (Metal, Label/Buckle), (Clothing, Gray, Label/Trousers), (Head, Turn, Rightward), (Hair, Black, Short), (Upper-extremity, Downward), ((Building-part, Cream-color, Label/Paneled-doors), Background-view), ((Building-part, Beige, Label/Wall), Right-edge-of), (Luminance-contrast/Low, Label/Flat-frontal-lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

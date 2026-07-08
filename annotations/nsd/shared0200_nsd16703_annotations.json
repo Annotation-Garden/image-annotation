@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a paved surface with regularly spaced concrete supports or beams recedes diagonally, bordered by dense green foliage and shrubs at the lower-left corner and along the left edge. Occupying the center and right-center of the frame is a dark green train composed of several connected carriages, angled diagonally from the upper-left toward the lower-right, traveling on steel rails that run through the middle-ground; the leading car shows a lighter, pale front face with red trim near its base. Tall pantographs and thin overhead catenary wires stretch across the upper portion above the tracks. Golden-brown dry grass grows in strips alongside the rails in the center. The background is dominated by a broad band of full, leafy green trees spanning the upper-middle width of the image, behind which pale multi-story buildings are partially visible on the right and center. The upper portion shows a hazy, light blue-gray sky with soft, diffuse clouds. Lighting is bright and even, suggesting overcast or midday conditions with muted shadows. The overall color scheme combines dominant greens, earthy tans, and cool grays, creating a calm, naturalistic composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Lower-left-of, (Paved-terrain, (Green, Plant))), ((Vehicle, Train, Green), (Diagonal, Steel, Path)), (Train, ((White, Front), (Red, Bottom-edge-of))), (Above, (Building-part, Wire)), (Center-of, (Grassy-terrain, Yellow-color)), (Background-view, (Green, Plant)), ((Building, Right), Behind, (Green, Plant)), (Above, (Blue, Gray, Cloud)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

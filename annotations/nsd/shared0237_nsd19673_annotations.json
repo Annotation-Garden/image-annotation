@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-right of the frame, a person wearing dark clothing, a backpack, and goggles is cross-country skiing, facing left with their body angled toward the viewer. In the middle ground, center-left, two additional skiers move in single file across the snow, both dressed in dark clothing and using ski poles; one appears to carry gear on their back, and their tracks are visible in the snow behind them, creating a linear path that connects the figures. The lower half of the frame is dominated by a broad expanse of pale, smooth snow. The background, occupying the middle horizontal band, contains a dense line of dark evergreen trees dusted with snow, extending across the width of the image. The upper half of the frame is filled with an overcast, cloudy sky, with a bright, diffused patch of light near the upper-center where the sun is obscured. The overall color scheme is nearly monochromatic, composed of muted grays, whites, and blacks, giving a cold, desaturated appearance. The lighting is flat and diffuse, and the composition balances the horizontal layers of snow, trees, and sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, (Black, Clothing), Backpack, Glasses), (Ride, (Tool, Label/Skis))), (Lower-right-of, Image)), (Background-view, (Group-of, (Human-agent, (Black, Clothing), (Grasp, (Tool, Label/Ski-poles)))), (Center-of, Image)), (Snow, Smooth, White, Lower-center-of, Image), (Group-of, (Plant, Green, Snow), (Center-of, Image)), (Sky, Upper-center-of, Image), (Luminance, High, (Upper-center-of, Image)), Grayscale",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

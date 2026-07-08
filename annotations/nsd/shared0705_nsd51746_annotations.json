@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a large tree occupying the vertical center of the frame, its thick trunk rising from the lower-center and branching into multiple limbs that spread toward the upper edges. Two giant pandas are visible within the tree; the first rests in the upper-center region, draped over a branch fork with its black-and-white body clearly distinguishable against the pale sky background, its limbs hanging downward. The second panda is positioned in the center-right of the middle portion of the frame, clinging to the trunk with its head lowered and body oriented downward, appearing to descend or grip the bark. The pandas are the primary foreground subjects, sharply contrasting with the surrounding green foliage. Leafy branches fill the left, right, and lower portions of the frame, creating a dense green border, while the upper background shows a bright, overcast white-gray sky visible through gaps in the canopy. The color scheme combines muted greens of leaves, brown-gray tones of the bark, and the black-and-white pandas. Lighting is diffuse and even, consistent with an overcast day, producing soft shadows. The composition is vertically balanced, framed by vegetation around a central trunk.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Plant, Large, Brown-color, Upper-center-of), (Lower-center-of, Image)), ((Animal-agent, Label/Giant-panda, Black, White), (Contained-in, Plant), Upper-center-of), ((Animal-agent, Label/Giant-panda, Black, White, Downward), (Center-of, Image), To-right-of), Foreground-view, (Green-color, Leaf-covered-terrain, (Left-side-of, Image)), (Green-color, Leaf-covered-terrain, (Right-side-of, Image)), (Green-color, Leaf-covered-terrain, (Lower-center-of, Image)), (White-color, Gray-color, (Upper-center-of, Image)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

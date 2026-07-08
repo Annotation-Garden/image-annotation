@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large elephant occupying the center and right portions of the frame, its body extending from the lower-center upward, with its raised trunk curling toward the upper-center against a backdrop of green foliage. The elephant faces the viewer, displaying two visible tusks and large ears, standing upon a rocky, earthen surface in the lower-center foreground where gray boulders are visible at the bottom edge. In the immediate foreground on the left, out-of-focus green pine needles and branches intrude diagonally, partially obscuring the view. A vertical tree trunk rises along the right edge of the frame, running from bottom to top. In the mid-background, a horizontal wooden railing or fence structure spans left to center, behind which several indistinct human figures appear small and blurred in the left-center distance. The upper background is filled with dense green trees and dappled light. The overall color scheme is dominated by greens and earthy browns, with the elephant's tan-brown hide contrasting the vegetation. Lighting appears natural and diffuse, with sunlight filtering through the canopy, creating a bright, slightly hazy atmosphere throughout the outdoor enclosure setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Animal-agent, Label/Elephant, (Center-of, Photograph)), ((Animal-agent, Label/Elephant), (Below, (Green, Plant))), (Tan, Brown, (Animal-agent, Label/Elephant)), (Rocky-terrain, Lower-center-of, Photograph), (Gray, (Natural-object, Label/Boulder), (Bottom-edge-of, Photograph)), (Green, Plant, Foreground-view, (Left-side-of, Photograph)), (Plant, Vertically-oriented, (Right-edge-of, Photograph)), (Man-made-object, Label/Railing, Horizontally-oriented, Background-view), (Group-of, Human-agent, Small, Background-view, (Left-side-of, Photograph)), (Green, Plant, Upper-center-of, Photograph), Brown-color, Green-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

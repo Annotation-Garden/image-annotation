@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large white ceramic bowl containing fried rice, which occupies nearly the entire frame and sits in the foreground and center. The bowl features a decorative blue geometric border pattern running along its rim, visible most clearly at the upper-left, upper-center, and lower-left edges. The fried rice itself is brown-toned, mixed with visible ingredients including sliced dark mushrooms, orange-colored carrot shreds, green leafy vegetables, and pale white bean sprouts that protrude toward the lower-right and lower-center of the bowl. In the upper-right portion of the frame, a metallic utensil with a wooden or dark handle rests inside the bowl, angling upward and out of the frame. Beneath and behind the bowl, in the background, lies a white surface with faint printed text partially visible at the top, suggesting paper or newsprint, and a strip of brown wooden surface appears along the right edge. The overall color scheme combines warm browns and oranges from the food with cool blue-and-white tones from the bowl. Lighting is soft and diffuse, coming from the upper area, creating gentle shadows and highlighting the textured, glistening surface of the rice.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Ingestible-object/Staple-food, Savory, Brown, (Center-of, Foreground-view)), (Contained-in, (Bowl, White, Ceramic, Large, ((Blue, Pattern), (Top-edge-of, Bowl))))), ((Plant, Brown), Part-of, Ingestible-object/Staple-food), ((Plant, Orange), Part-of, Ingestible-object/Staple-food), ((Plant, Green), Part-of, Ingestible-object/Staple-food), ((Plant, White, (Lower-right-of, Bowl)), Part-of, Ingestible-object/Staple-food), ((Tool, (Wave, Steel), (Upper-right-of, Bowl)), Contained-in, Bowl), (White, (Behind, Bowl), (Word, Background-view)), (Steel, (Right-edge-of, Photograph), Background-view), (Luminance, Upper-center-of), Soft",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 393,
+            "total_tokens": 814
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 814
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

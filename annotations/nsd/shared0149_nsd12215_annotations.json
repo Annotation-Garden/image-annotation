@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A formation of aircraft occupies the central and left-central portion of the frame, positioned in the mid-to-upper region against an expansive sky. The planes are small, dark silhouettes arranged in a diagonal grouping that descends from upper-right toward lower-left, with roughly seven distinguishable aircraft clustered together. Trailing behind each aircraft are long streams of smoke, predominantly white, that extend diagonally across the frame from the upper-right corner toward the aircraft, creating parallel linear bands. Among the white smoke trails, subtle traces of red and blue coloration appear, suggesting tinted vapor. The background consists entirely of a clear, deep blue sky that dominates the left, upper, and central areas, while the smoke concentrates in the right and lower-right portions, becoming denser and hazier toward the bottom-right corner. The lighting is bright and even, consistent with daytime outdoor conditions, casting the aircraft as dark shapes against the luminous sky. The overall color scheme is dominated by blue and white, with minor red accents. The composition emphasizes diagonal movement and negative space, with the aircraft as the focal convergence point of the trailing lines.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Image, (Aircraft, Small, Black, Group-of, Item-count/7, (Upper-center-of, Field)), ((Smoke, White), Behind, Aircraft), ((Smoke, Red), (Smoke, Blue)), (Blue, Sky, Background-view), (Outdoors, Daytime))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

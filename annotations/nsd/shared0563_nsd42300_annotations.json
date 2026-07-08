@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph shows two zebras positioned in the center of the frame, oriented facing toward the right, with their distinctive black-and-white striped heads and necks clearly visible above tall, dry golden grass that dominates the lower and central portions of the image. The zebras' bodies are largely obscured by the grass, which occupies the foreground and lower two-thirds of the frame, rendered in warm tan, beige, and pale yellow tones. In the extreme foreground, along the left edge and lower corners, there are heavily blurred dark green and brown vegetative shapes, likely out-of-focus branches or leaves, creating a soft framing effect. The background, occupying the upper portion of the frame, contains an out-of-focus dark ridge or hillside in muted grayish-blue and green hues, above which sits a hazy, pale gray sky. The lighting appears soft and diffused, with warm illumination on the grasses suggesting low-angle sunlight. The overall color scheme is dominated by earthy golds and browns contrasted against the cooler, desaturated background. The composition uses shallow depth of field, keeping the zebras relatively sharp while foreground and background elements remain blurred, drawing visual focus to the two animals resting closely",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Label/Zebra), (Group-of, Item-count/2), Rightward, Center-of), ((Plant, Label/Grass, Dry), (Tan, Beige, Yellow), (Foreground-view, Lower-center-of)), ((Plant, (Dark-shade, Green), Brown), Foreground-view, Left-edge-of), ((Natural-feature, Label/Hillside), (Blue, Green), Background-view, Upper-center-of), ((Natural-feature, Label/Sky), (Light-shade, Gray), Background-view), (Depth-of-field, Shallow)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

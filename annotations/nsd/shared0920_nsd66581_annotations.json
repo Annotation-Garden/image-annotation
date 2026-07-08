@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is a young child positioned in the center and lower portion of the frame, occupying the foreground. The child has curly brown hair and is smiling widely, showing teeth, with the face angled slightly toward the viewer. The child wears a dark navy blazer, a white collared shirt, and a striped tie in blue, yellow, and dark tones, suggesting a school uniform, and a small pen or object is visible clipped near the chest area. In the background, spanning the upper and central regions, is an outdoor architectural setting: a large light-gray or white building facade with tall vertical dark window panels on the left, and red brick walls appearing toward the center and right. A broad expanse of gray paved ground fills the middle-right area behind the child. The lighting is bright and appears overexposed in the upper background, washing out detail, while the child's face is well-lit and sharply focused. The overall color scheme contrasts the warm reddish bricks and dark blazer against cool grays and whites. The composition is tilted slightly, framed by a thin white border and a surrounding black margin.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Age/8 years, (Hair, Brown, Curl-toes)), (Face, Smile, Teeth), (Clothing, Blue, Label/Blazer), (Clothing, White, Label/Collared-shirt), (Clothing, Label/Striped-tie, Blue, Yellow), (Pen, Near, Torso-chest)), (Center-of, Lower-center-of)), (Background-view, (Building, Large, LightGray, (Window, Vertically-oriented, Dark, Left-side-of)), (Building-part, Red, Brown, Center-of), (Path, Gray, Paved-terrain, Lower-right-of)), (Luminance-contrast/High, Upper-center-of), (Rotated), White, Black",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 345,
+            "total_tokens": 766
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 766
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A large black steam locomotive dominates the foreground, positioned in the center and right portions of the frame, angled diagonally from the upper-center toward the lower-right corner where its red cowcatcher (pilot) extends prominently. The locomotive features distinct red-rimmed wheels arranged along the lower-center, a tall black smokestack in the upper-center, and red accent lines tracing its black body. Attached behind it, in the left-center and left edge, are passenger cars, one showing a maroon-red hue and another darker green tone. In the lower portion of the frame, brown wooden railroad ties and metal rails run across the gravel track bed, extending from the lower-left toward the center. The background upper-left and upper portions show a blue sky filled with soft white and gray clouds, while green foliage and trees occupy the upper-right area behind the locomotive. Faint white steam or smoke is visible near the wheels in the lower-center. The overall color scheme combines deep blacks, vivid reds, natural greens, and sky blues. Lighting appears bright and natural, casting highlights on the locomotive's rounded metal surfaces, suggesting daytime outdoor sunlight. The composition emphasizes diagonal depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Train, Large, Black, (Center-of, Photograph)), (Rotated, (Towards, Lower-right-of))), ((Red, (Part-of, Train)), (Bottom-of, Train)), (Black, (Part-of, Train)), ((Red, (Part-of, Train))), (Circle, Red, (Part-of, Train), (Lower-center-of, Photograph)), ((Black, (Part-of, Train)), (Upper-center-of, Photograph)), ((Maroon, (Part-of, Train)), (Left-side-of, Photograph)), ((DarkGreen, (Part-of, Train)), (Left-side-of, Photograph)), (Brown, Path, (Lower-center-of, Photograph)), (Steel, (Lower-left-of, Photograph)), ((Blue, (Upper-left-of, Photograph)), (Above, (White, Gray))), (Green, Plant, (Upper-right-of, Photograph)), (White, (Lower-center-of, Photograph)), (Bright)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

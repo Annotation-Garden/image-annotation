@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a catcher wearing a dark helmet with a face mask occupies the left edge of the frame, positioned in the lower-left and center-left, crouching with a brown mitt extended on his left hand toward the center. A batter dominates the center-right foreground, wearing a maroon jersey with the visible number \"5,\" gray pants, a dark batting helmet, and a black glove, holding a bat that extends horizontally across the center of the frame toward the catcher. Both figures stand on a tan dirt surface that fills the lower portion of the image. In the background, a tall chain-link fence and metal backstop structure spans the upper-center and left, behind which several seated and standing spectators are faintly visible. A dark green coniferous tree rises on the upper-right, and additional distant figures appear scattered across the right-center on the field. The sky occupies the top of the frame, showing pale blue with soft clouds. The overall color scheme combines warm earth tones, maroon, and gray with cooler blues above. Lighting is warm and directional, suggesting low-angle late-day sun casting long shadows across the dirt.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, Crouching, (Head, (Black, Assistive-device)), ((Left, Hand), (Brown, Tool))), (Left-edge-of, Foreground-view)), ((Human-agent, Experiment-actor, (Torso, (Maroon, Clothing, Label/5)), (Lower-extremity, (Gray, Clothing)), (Head, (Black, Assistive-device)), ((Hand), (Black, Clothing)), (Grasp, Tool)), (Center-of, Foreground-view)), ((Human-agent), Interacts-with, (Human-agent)), (Tan, Dirt-terrain, Lower-center-of), ((Metal, Building-part), (Upper-center-of, Background-view)), (Group-of, Human-agent, Background-view), ((DarkGreen, Plant), (Upper-right-of, Background-view)), (Group-of, Human-agent, (Right-side-of, Field)), (LightBlue, Sky, Top-of), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

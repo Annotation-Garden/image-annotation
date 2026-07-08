@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower-center of the frame, a rider on a blue and white dirt bike faces left, wearing a black jumpsuit with white accents, white gloves, white boots, and a white helmet with a dark visor; the motorcycle displays \"YAMAHA\" lettering on its side and a number plate near the front. The bike's knobbed tires press into green grass that fills the lower and central portions of the image. In the mid-ground on the left, a man walks toward the viewer holding a microphone to his mouth, dressed in a dark t-shirt with white print and denim shorts. Behind them, spanning the upper third, a metal barrier fence separates the action from a dense crowd of spectators standing and watching; several white and colored signage banners are visible along and above the fence line on the right. The overall color scheme combines vivid green grass, the blue bike, and muted tones of the crowd's clothing. Lighting appears diffuse and overcast, producing soft shadows beneath the bike. Compositionally, the rider dominates the center while the crowd forms a horizontal background band.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Experiment-actor), (Center-of, Lower-center-of), (Ride, (Vehicle, Blue, White, Label/Yamaha, Label/Dirt-bike))), (Clothing, Black, White, Label/Jumpsuit), (Clothing, White, Label/Gloves), (Clothing, White, Label/Boots), (Head-mounted-display, White, Label/Helmet), ((Human-agent), Interacts-with, (Vehicle, Label/Dirt-bike)), (Green, Grassy-terrain, Lower-center-of), (Background-view, (Human-agent, Walk, (Hold-down, (Microphone))), (Clothing, Black, White, Label/T-shirt), (Clothing, Label/Shorts)), (Background-view, Above, (Man-made-object, Label/Barrier-fence, Metal)), (Background-view, (Group-of, Human-agent, Label/Crowd)), (Background-view, To-right-of, (White, Label/Banner)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

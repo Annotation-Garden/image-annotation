@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and occupying the lower-to-middle portion of the frame, stands a white or light-gray pony facing the viewer, its head lowered slightly toward the lower-center with a dark bridle and reins visible across its muzzle. Mounted on the pony's back, positioned in the center and extending into the upper-middle region, sits a young rider wearing a black riding helmet, a black zip-up jacket, dark riding breeches, and tall black riding boots, with hands holding the reins that connect down to the pony's head, indicating direct interaction between rider and animal. The rider's boots rest against the pony's flanks on both left and right sides. In the background, spanning the full width of the upper half, stands a dense line of leafless, brown-toned trees and bushes with thin bare branches, suggesting an autumn or winter setting. The lower background shows a flat gray gravel or paved ground surface. The overall color scheme is muted and desaturated, dominated by grays, browns, and blacks, with soft, diffuse, overcast lighting that produces minimal shadows. The composition is symmetrical and centrally balanced, drawing focus to the vertically aligned rider-and-pony pair.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-actor, (Head, (Black, Man-made-object, Label/Helmet)), ((Torso, Upper-extremity), (Black, Clothing)), ((Lower-extremity), (Black, Clothing))), (Animal-agent, Animal/Pony, (White, Foreground-view), (Head, (Black, Tool, Label/Bridle))), ((Human-agent), Interacts-with, (Animal-agent)), (Center-of, (Human-agent, Animal-agent)), (Background-view, Group-of, (Brown, Plant, Label/Leafless-trees)), (Background-view, (Gray, Terrain, Paved-terrain)), (Gray, Brown, Black, Color), (Symmetrical), Outdoors, Overcast",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 390,
+            "total_tokens": 811
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 811
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

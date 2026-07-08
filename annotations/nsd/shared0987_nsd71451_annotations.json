@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Three people stand in the foreground, positioned across the lower and central portions of the frame, each wearing skis and holding ski poles in both hands. The person on the left occupies the left-center, dressed in a black jersey marked \"9\" over dark pants, wearing reflective blue sunglasses and a dark cap; he has facial hair. The central figure wears a red and gray jacket with dark pants and a helmet, standing directly in the middle of the frame and smiling toward the camera. The person on the right wears a white jersey marked \"51\" over gray pants and dark headwear, positioned in the right-center. All three stand on snow-covered ground that fills the lower half of the image. In the background, small distant figures appear on the snow at center-right, near a vertical pole. A dense line of dark green evergreen trees spans the middle-left and center horizontally, behind which snow-covered mountains rise toward the upper portion. The sky above is pale blue with scattered clouds. The color scheme combines white snow, dark clothing, and blue sky. Lighting is bright and even, consistent with daylight, producing soft shadows beneath the figures.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Human, (Lower-center-of, Image)), (Human-agent, Human, (Center-of, Image)), (Human-agent, Human, (Lower-right-of, Image))), ((Human-agent, (Wear, Clothing), (Hold, Tool)), (Human-agent, (Wear, Clothing), (Hold, Tool)), (Human-agent, (Wear, Clothing), (Hold, Tool))), ((Human-agent, (Left-side-of, Image)), (Wear, (Black, Clothing, Label/9)), (Wear, (Dark-shade, Clothing)), (Wear, (Blue, Glasses)), (Wear, (Dark-shade, Clothing))), ((Human-agent, (Center-of, Image)), (Wear, (Red, Gray, Clothing)), (Wear, (Dark-shade, Clothing)), Smile, Attend-to), ((Human-agent, (Right-side-of, Image)), (Wear, (White, Clothing, Label/51)), (Wear, (Gray, Clothing)), (Wear, (Dark-shade, Clothing))), (White, Snow, (Below, Image)), (Background-view, (Human, Small, (Center-of, Image)), (Plant, Small)), (Group-of, (Dark-shade, Green, Plant), (Center-of, Image)), (Snow, Mountain, (Upper-center-of, Image)), (Blue, Light-shade, (Above, Image)), (Outdoors, Daylight)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

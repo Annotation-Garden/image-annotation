@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an ocean scene dominated by a large breaking wave that spans the upper portion of the frame from left to right, its white crest curling and spraying against a darker sky-lit horizon. In the mid-ground, three surfers ride down the sloping face of the wave, positioned roughly left-of-center, center, and right-of-center; the leftmost and central figures stand on shorter boards while the rightmost surfer appears to ride a longer board, all leaning forward in dynamic descent. In the lower foreground, spread across the frame, are several people on personal watercraft (jet skis) and others lying prone in the darker, calmer water, watching or waiting; two jet skis are visible at the lower left and lower right, with figures in dark wetsuits between them. The overall color scheme is muted and cool, dominated by deep greens, blacks, and teals in the water, contrasted by the bright white foam of the wave crest illuminated by warm, low-angle light suggesting early morning or late afternoon. The composition layers foreground observers, mid-ground surfers, and background wave, creating depth and directing attention toward the breaking swell.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Natural-feature, Label/Ocean, (Green-color, Black, Teal)), (Natural-feature/Wave, White, Foam, Top-of), ((Human-agent, Ride, Board), Count/3, Center-of), ((Human-agent, Ride, Board), Left-side-of), ((Human-agent, Ride, Board), Right-side-of), ((Human-agent, Interacts-with, (Vehicle, Label/Jet-ski)), Lower-left-of), ((Human-agent, Interacts-with, (Vehicle, Label/Jet-ski)), Lower-right-of), ((Human-agent, Prone, Clothing), Foreground-view), (Luminance, Low), (Foreground-view, Background-view, Depth)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

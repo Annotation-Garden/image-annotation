@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an old church occupying the center and right portions of the frame, with a tall brick tower rising in the upper center-right, topped by a black-faced clock and small vented openings near its peak. The church's roofs are covered in reddish-brown tiles, while the lower walls are rendered in pale white and gray plaster, punctuated by arched windows outlined in red brick on the left-center and a covered timber porch entrance in the center. In the foreground, a light beige gravel path curves from the lower center toward the porch, bordered by green grass that fills the lower portion of the frame. Numerous weathered gray gravestones are scattered across the grass in the lower-left, lower-center, and lower-right, some leaning at angles. A small black object rests on the grass in the lower-right corner. Bare, leafless trees appear in the upper-right background, indicating cool-season conditions. The overall color scheme combines earthy reds, muted whites, grays, and green, under soft, diffuse, overcast lighting that produces minimal shadows. The composition balances the vertical tower against horizontal roof lines and the curving foreground path.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Building, Label/Church, (Center-of, Photograph)), ((Building-part, Label/Tower, Brick), Above, (Building, Label/Church)), (Clock-face, Black, (Top-of, (Building-part, Label/Tower))), ((Roof, Red-color, Brown-color), Top-of, (Building, Label/Church)), (Building-part, White, Gray-color), ((Window, Red, (Building-part, Label/Arched)), Left-side-of, (Building, Label/Church)), (Door, (Building-part, Label/Timber-porch), Center-of, (Building, Label/Church)), (Path, Beige, Gravel-terrain, (Lower-center-of, Photograph)), (Grassy-terrain, Green, (Below, Photograph)), (Group-of, Sculpture, Gray-color, Label/Gravestones, (Lower-left-of, Photograph)), (Object, Black, (Lower-right-of, Photograph)), (Group-of, Plant, Label/Bare-trees, (Upper-right-of, Photograph)), (Luminance-contrast/Low, Label/Overcast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

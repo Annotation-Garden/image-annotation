@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and dominating the frame, is a young man with voluminous curly light-brown hair, wearing thin wire-framed glasses. His face is turned slightly to his left, and his mouth is open as though speaking, revealing his teeth. He holds a silver flip-style mobile phone in his right hand against the right side of his face (viewer's right, lower-center), while his left hand is raised and pressed against the left side of his head near his ear (viewer's left, center). A blue light or glow emanates from the phone, casting a cool bluish streak across his lower-right cheek and chin, contrasting with the otherwise warm lighting. He wears a textured knit sweater in muted grey, teal, and brown tones, visible across the lower portion of the frame. The background, softly out of focus, shows warm amber and dark tones, with a dark patterned area to the upper left and lighter rectangular shapes suggesting posters or wall features on the right. The overall color scheme is warm\u2014dominated by oranges, browns, and skin tones\u2014punctuated by the single cool blue accent. Lighting appears frontal and warm, illuminating the face while the background recedes into shadow.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Young, Male, (Hair, Curly, Brown), Glasses), Interacts-with, (Cellphone, Silver)), (Foreground-view, (Human-agent)), ((Mouth, Open), Teeth), ((Human-agent, (Hold-down, Cellphone)), (Right-side-of, Face)), ((Human-agent, (Right, Hand))), ((Human-agent, (Left, Hand)), Above, (Left-side-of, Head, Ear)), (Blue, Luminance, (From-to, (Cellphone))), (Clothing, (Gray-color, Teal, Brown-color)), (Background-view, (Orange-color, Brown-color, Blurred))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

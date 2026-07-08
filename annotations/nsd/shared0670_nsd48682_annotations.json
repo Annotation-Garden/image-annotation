@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an office cubicle workspace with an L-shaped desk arrangement. In the foreground, occupying the lower-center of the frame, is a maroon or burgundy padded office chair with a rolling base, positioned facing away from the viewer toward the desk. Centered in the middle ground, an open silver laptop displays a lit screen showing text or a document. To the right of the laptop, in the center-right, sits a black desk telephone with a cord and handset, alongside a smaller black object that may be a second phone or device. On the left side of the frame, in the middle ground, a wire file organizer holds green and yellow folders, and a clear glass or vase with red-and-black decorative elements stands nearby. The background consists of tall gray fabric cubicle partition walls rising across the upper portion of the frame, with papers and small notes pinned to the right partition. The desk surface is light beige or tan, contrasting with darker cabinetry below. The overall color scheme is muted\u2014grays, beige, and black\u2014punctuated by the maroon chair and red accents. Lighting appears artificial and even, casting soft shadows beneath the desk.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Lower-center-of, Furnishing, Maroon)), (Center-of, (Laptop-computer, Silver, (Computer-screen, Word))), ((To-right-of, Center-of), (Cellphone, Black)), (Left-side-of, ((Tool, (Holds, (Document, Green))), (Document, Yellow))), (Left-side-of, (Container, Glass, (Red, Black))), (Background-view, (Upper-center-of, (Building-part, Gray))), (Right-side-of, (Paper, Note)), (Furnishing, Beige), (Furnishing, Dark-shade)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

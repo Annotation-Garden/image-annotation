@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground and occupying the center of the frame is a surfer riding a wave, positioned slightly toward the upper-center and extending downward through the middle of the image. The surfer wears a dark wetsuit with a green upper section on the torso and arms, and is bent forward in a crouched stance with knees flexed and arms outstretched for balance. Beneath the surfer is a white surfboard angled diagonally, its nose lifted toward the upper left while the tail dips into churning water at the lower center. Surrounding the surfer is a large breaking wave, with white foam and spray erupting on the right side and lower portion of the frame, fanning outward in fine droplets. The background fills the upper region with darker gray-green ocean water, relatively flat and textured with small ripples, contrasting the turbulent white whitewater below. The overall color scheme is muted and cool, dominated by grays, greens, and whites, suggesting overcast or diffuse lighting without harsh shadows. The composition centers the human figure against the dynamic wave, with the interaction between surfer, board, and breaking water forming the primary focal point.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor), (Crouching, Flex, (Upper-extremity, Away-from))), ((Human-agent), Interacts-with, (Tool, Label/Surfboard)), (Green, Clothing, Torso), (Clothing, Dark-shade), ((Human-agent), Above, (Tool, Label/Surfboard)), (White, Tool, Label/Surfboard, (Rotated, (Upper-left-of))), ((Tool, Label/Surfboard), Contained-in, (Natural-feature, Label/Ocean)), (White, Natural-feature, Label/Ocean, (Right-side-of)), (Natural-feature, Label/Ocean, Lower-center-of), (Gray-color, Green-color, Water, Background-view, Upper-center-of), (Smooth, Water), (Center-of, Foreground-view, (Human-agent)), (Gray-color, Green-color, White-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

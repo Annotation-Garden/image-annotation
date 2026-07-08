@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground and occupying the center of the frame is a white ceramic bowl decorated with an intricate blue speckled or floral pattern along its interior and a thin blue rim; the bowl rests on a dark surface that appears to be a table. Inside the bowl sit approximately eight round citrus fruits, predominantly orange in color, clustered together and filling the bowl's interior. One fruit in the lower-center-right displays a distinct yellow-and-orange gradient, differentiating it from the uniformly orange others. The fruits touch one another, layered so that some in the upper-center rest slightly higher than those in the lower foreground. Behind and beneath the bowl, in the background, a dark blue textured fabric or placemat is partially visible in the upper portion of the frame, bearing faint lighter markings. The overall color scheme is dominated by warm oranges contrasted against cool blues and dark tones. Lighting appears soft and directional, illuminating the fruits and the bowl's front interior while the upper background falls into shadow. The composition is centered and symmetrical, drawing the eye to the bowl's contents, with the surrounding darkness framing the brightly lit fruit.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((White, Ceramic, (Blue, Pattern), Volume), Center-of), ((Ingestible-object/Staple-food, Sweet, Orange, Round, Item-count/8), Contained-in, (White, Ceramic, Volume)), ((Ingestible-object/Staple-food, Yellow, Orange), Lower-right-of), (Blue, (Textblock, Background-view)), (Furnishing, Underneath)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

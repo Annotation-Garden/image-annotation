@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A polar bear dominates the foreground, positioned in the center of the frame with its head and upper shoulders emerging from dark water; the animal faces directly toward the viewer, its black nose, dark eyes, and slightly parted mouth clearly visible near the lower-center region. The bear's wet fur appears cream to off-white, with darker gray tones where water saturates the coat around the muzzle and neck. Rippling water surrounds the bear on all sides, creating churned, foamy white disturbances toward the lower-left and left edges where the animal appears to be moving. The water occupies most of the frame, rendered in muted greens, grays, and dark olive tones with visible surface ripples and reflections. In the background, along the upper-right and right edge, a large rock formation displays warmer tan, brown, and ochre hues, contrasting with the cooler water. Lighting is diffuse and even, suggesting overcast or shaded conditions, with no harsh shadows or bright highlights except subtle reflections on the water surface. The composition centers the bear's face as the focal point, framed by the surrounding water and anchored by the rocky element occupying the upper-right corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Polar-bear), (Center-of, Foreground-view)), ((Animal-agent, Label/Polar-bear), Facing/Towards), ((Head, (Center-of, Foreground-view)), (Black, Nose), (Dark-shade, Eye), (Mouth, Open)), (White-color, Gray-color, Hair), (Man-made-object/Pool, (Around, (Animal-agent, Label/Polar-bear))), (White, Lower-left-of), (Green-color, Gray-color, DarkOliveGreen, Man-made-object/Pool), ((Rocky-terrain, (Upper-right-of, Background-view)), Tan, Brown-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

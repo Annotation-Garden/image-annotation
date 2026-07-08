@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-center of the frame sits a white ceramic plate holding a wedge of pale cake or dessert with visible crumbs, positioned on a dark brown surface that fills the lower edge. Occupying the center of the frame is a young child seated in a green high chair, wearing a long-sleeved shirt with a red and gray horizontal-striped front panel and solid red sleeves; the child's hands are raised and pressed over the face, obscuring the eyes, with fingers spread across the forehead and cheeks. The child interacts directly with the high chair, seated within it, and the plate of food sits before them, suggesting a mealtime arrangement. The green high chair, bearing whitish smears on its surface, occupies the center-left and extends upward with a gray fabric strap crossing the child's torso. The background upper region is dark and blurred, with faint warm-toned indistinct shapes on the upper right. The overall color scheme combines the vivid green chair, red striped clothing, and neutral browns and whites. Lighting is soft and directional from the upper left, illuminating the child's hands and face while leaving the background in shadow.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((White, Ceramic, (Plant, Label/Plate)), (Lower-center-of, Item)), (Ingestible-object/Dessert, Sweet, (White, (Label/Crumbs))), ((Brown, Dark-shade), (Bottom-edge-of, Item)), (Human-agent, Experiment-participant, Child, Sitting, ((Red, Gray, Horizontally-oriented, Clothing), (Torso-chest, (Contained-in, Clothing))), (Red, Clothing, (Upper-arm)), (Move-upper-extremity, ((Hand), (Above, Face))), (Fixate, (Eye, (Contained-in, Hand))), ((Finger, Spread-hands), (Contained-in, (Forehead, Cheek)))), ((Human-agent), Interacts-with, (Furnishing, Label/High-chair)), (Green, Furnishing, Label/High-chair, (Center-of, Item), (White, (Label/Smears))), ((Gray, Clothing, Label/Strap), (Across-from, Torso)), ((Background-view, Dark-shade), (Upper-center-of, Item)), (Luminance, (Upper-left-of, Item))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

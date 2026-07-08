@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A light rail train dominates the left and center of the frame, positioned in the foreground and extending diagonally from the lower-left toward the background at center, where it recedes along the tracks. The train is predominantly white with horizontal yellow and orange stripes near its lower body, and displays an illuminated destination sign reading \"Los Angeles\" on its front upper section, along with an \"M\" logo in a circle at the lower front. A tall black cylindrical pole rises vertically through the center-right of the image, spanning foreground to upper frame, with a signal or camera device mounted at its top. On the right side, in the mid-ground, two people stand on the platform; one wears light-colored clothing and appears near an illuminated backlit map display or information panel with a white and yellow diagram. Overhead electrical wires and a pantograph atop the train are visible against a clear pale-blue sky in the upper portion. Lighting is bright and natural, consistent with daytime sun, casting shadows on the concrete platform. The overall color scheme combines white, yellow, black, and gray tones, with a horizontal, layered composition emphasizing depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Train, White, (Yellow, Horizontal-eye-movement-artifact)), (Center-of, Foreground-view)), (Train, (Word, ID/Los Angeles)), (Train, (Circle, Letter, ID/M)), ((Black, Cylinder, Vertically-oriented), (Center-of, Image)), ((Human-agent), (Human-agent)), ((Human-agent, (White, Clothing)), Near, (Display-device, Map-view)), (Blue, Sky), (Daytime), (Concrete, Path), (Layered-composition)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

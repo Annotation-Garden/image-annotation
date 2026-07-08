@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two twin beds occupy the lower half of the frame, positioned center and right, each dressed in white linens with maroon and patterned runners draped across their lower portions, and topped with white and dark purple pillows in the upper-middle area of each bed. Between the two beds, slightly left of center, sits a dark wooden nightstand holding a small pink orchid flower and what appears to be a telephone. In the background, an upholstered padded headboard wall spans the center and left, composed of rectangular tan and brown panels reaching toward the upper frame. A wall-mounted sconce light glows on the right-center, casting a warm downward illumination. To the right, a glass partition reveals a bathroom containing a shower with a visible showerhead, mosaic-tiled walls, and hanging towels. The overall color scheme is warm, dominated by orange, tan, brown, and cream tones, accented by deep maroon and purple textiles. Lighting is soft and warm, with recessed ceiling spotlights visible in the upper-left creating bright circular pools on the orange upper wall. The composition is balanced and symmetrical, centered on the paired beds.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Foreground-view, ((Furnishing, Label/Twin-bed, White), (Furnishing, Label/Twin-bed, White)), (Center-of)), ((Furnishing, Label/Nightstand, Brown), (Between, ((Furnishing, Label/Twin-bed), (Furnishing, Label/Twin-bed)))), ((Plant, Pink, Label/Orchid), (Cellphone), (Furnishing, Label/Nightstand)), (Background-view, (Furnishing, Label/Headboard-wall, (Rectangle, Tan, Brown))), (Label/Sconce-light, Luminance), ((Glass, Label/Partition), (Room, Label/Bathroom)), (Orange, Tan, Brown, Label/Cream), (Maroon, Purple))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

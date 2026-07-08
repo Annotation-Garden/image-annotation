@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "An orange tabby cat occupies the center of the frame, positioned in the middle ground, peering out from a narrow gap between two white doors or door-frame panels. The cat's head is tilted slightly downward and to the left, with its ears alert and eyes directed toward the lower-left area of the frame; its body recedes into the darker interior space behind it. In the foreground, a white paneled door dominates the left side, showing a recessed rectangular molding detail, while another white vertical surface with faint pinkish-brown streaks frames the right edge. The lower portion of the frame shows a threshold or doorsill with tan, brown, and rust-colored mottled tiling or weathered flooring, positioned in the lower-center and lower-left. The background behind the cat appears dim and indistinct, suggesting an enclosed interior. The overall color scheme is dominated by whites and neutral grays from the doors, warm orange and cream tones from the cat, and earthy browns along the base. Lighting is soft and diffuse, brighter on the left door surface and dimmer within the central gap. The composition uses the vertical door edges to frame and enclose the centrally placed animal.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Orange-tabby-cat, Orange-color, (Center-of, Foreground-view)), (Between, (Door, White, Two))), (Door, White, Rectangle, (Left-side-of, Foreground-view)), (White, (Right-edge-of, Foreground-view)), (Terrain, Brown-color, (Lower-center-of, Foreground-view)), (Background-view, Low, Indoors), (White-color, Gray-color, Orange-color, Brown-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

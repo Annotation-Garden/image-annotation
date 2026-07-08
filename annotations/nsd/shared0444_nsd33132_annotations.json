@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-left and lower-right corners, are two red upholstered chairs with visible plush texture; a young person with long light-brown hair sits in the left chair, facing right and wearing a blue sleeveless top and white shorts, while a woman in the right foreground wears glasses, a gray-and-tan striped sleeveless top, and khaki shorts, seated and turned toward the camera. A long light-colored table extends diagonally from the lower-center into the background, densely covered with numerous clear wine glasses, some containing pinkish liquid, arranged in rows. In the mid-ground center-right sits a man in a blue-and-white checkered shirt, and beside him a woman with short reddish hair. In the background, upper-left and center, additional seated people appear near a red bench and a green floral arrangement. The upper frame shows dark wall panels with framed artwork and recessed ceiling lights. The color scheme combines warm reds, neutral beiges, and cool blues. Lighting is bright and even, entering from the right, illuminating the glasses. Composition uses the receding table as a strong diagonal line.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Red, Tactile-texture, Furnishing), (Lower-left-of, Furnishing), (Lower-right-of, Furnishing))), ((Human-agent, (Hair, Brown, Length/Long)), (Sitting, (Left-side-of, Furnishing)), (Blue, Clothing), (White, Clothing)), ((Human-agent, Female, Glasses), Sitting, (Gray, Clothing), (Tan, Clothing), (Khaki, Clothing)), ((Furnishing, Diagonal), (Center-of, Background-view)), (Group-of, (Glass, Ingestible-object/Dessert, Sweet, Pink)), (Midground-view, (Human-agent, Male, (Blue, White, Clothing))), (Human-agent, Female, (Hair, Red, Small)), (Background-view, (Group-of (Human-agent, Sitting)), (Red, Furnishing), (Green, Plant)), (Upper-center-of, ((Dark, Building-part), Painting, (Roof, Light))), (Red, Beige, Blue), (High, Luminance), (Rightward, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

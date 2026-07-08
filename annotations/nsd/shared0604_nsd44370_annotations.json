@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the vertical center of the frame, stands a person wearing ski-jumping equipment, positioned slightly right of center in the upper portion and extending downward into the lower-center region. The individual wears a white and orange helmet marked with text, a purple, blue, yellow, and white racing suit, and dark gloves raised toward the face. Long skis extend across the lower portion of the frame from lower-left toward lower-right, angled diagonally, with the person's boots bound to them near center-bottom. The background consists of a large expanse of white and gray snow that dominates the upper and left portions, sloping and curving across the scene. A dark curved line, possibly a barrier or edge, runs horizontally through the upper-left and center, with faint text visible on the left side reading partially \"LAHOPANE.\" The overall color scheme is dominated by cool whites, grays, and blues, punctuated by the warmer orange of the helmet and yellow suit accents. Lighting appears diffuse and flat, consistent with overcast snowy conditions, casting soft shadows beneath the skis and minimal contrast across the bright snowfield.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Upper-center-of, (Right-side-of, Photograph)))), ((Head-part, White, Orange, (Word)), Upper-center-of), ((Clothing, Purple, Blue, Yellow, White), (Human-agent)), ((Hand, Black), (Towards, Face)), ((Tool, Horizontally-oriented, Oblique), (Lower-left-of, Photograph)), ((Foot, Contained-in, Tool), Lower-center-of), (Background-view, (Snow, White, Gray, Sloped-terrain, (Upper-left-of, Photograph))), ((Line-noise-artifact, Black, Rotated), (Upper-left-of, Photograph)), ((Word, ID/LAHOPANE), Left-side-of), (Outdoors, Cold), (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the center-right of the frame, occupying the middle ground and extending into the foreground, a person is skiing downhill on snow, facing toward the viewer; they wear a gray puffy jacket, dark pants, dark sunglasses, and hold a ski pole in each hand, the right pole angled outward and the left extending down and forward. The skis are visible in the lower-center of the frame, kicking up a spray of fine snow that blurs across the lower portion of the image, indicating motion. The foreground is dominated by white snow with subtle blue-gray shadows and tracked, uneven texture. In the background, spanning the upper portion of the frame, a snow-covered slope rises, dotted with several small green coniferous trees on the left and upper-left, and additional darker vegetation along the upper edge. A round object, possibly a sign, appears on a pole in the upper-left area. The overall color scheme is cool, dominated by whites, blues, and grays, contrasted by the green trees and the skier's dark clothing. Lighting is bright and directional, casting shadows to the left and suggesting strong sunlight. The composition centers the skier against the expansive snowy field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-participant, ((Move, Speed), (Center-of, (Snow, Sloped-terrain))), (Gray, Clothing), (Black, Clothing), (Black, Glasses), ((Right, Hand), Grasp, Tool), ((Left, Hand), Grasp, Tool)), (Snow, Foreground-view, (Blue, Gray), Rough), ((Green, Plant), Background-view, Upper-left-of), (Circle, Upper-left-of), (Bright, Luminance), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

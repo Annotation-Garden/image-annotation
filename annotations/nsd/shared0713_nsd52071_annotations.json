@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is a red and white motorcycle occupying the central and right portions of the frame in the foreground, angled diagonally with its front wheel toward the lower-right corner and its rear extending toward the upper-left. The motorcycle features a windscreen at the upper-center, a black headlight fairing with a large round headlamp on the right side, and a black seat with the \"YAMAHA\" name visible in white lettering on the red fuel tank at the center-left. Black-and-white striping decorates the tank and side panels, and chrome exhaust pipes run along the lower-left. The front fork bears blue \"Lockheed\" branding near the disc brake at the lower-right. The background consists of a beige-tan brick or block wall spanning the upper half of the frame, showing horizontal mortar lines and some texture variation. The lower portion of the background reveals a dark purplish-gray carpeted floor on which the motorcycle stands. Lighting appears soft and even, likely indoor, casting subtle shadows beneath and behind the machine. The overall color scheme combines the saturated red and white of the bike against the muted neutral tan wall and dark floor, creating strong foreground contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Vehicle, Label/Motorcycle, Red, White, Foreground-view, (Center-of, Photograph)), ((Vehicle, Label/Motorcycle), (To-right-of, (Center-of, Photograph))), (Window, Upper-center-of), (Black, Label/Headlight-fairing), (Circle, Label/Headlamp, Right-side-of), (Black, Label/Seat), (Word, ID/YAMAHA, White, (Red, Label/Fuel-tank, Center-of, Photograph)), (Black, White, Label/Striping), (Steel, Label/Exhaust-pipe, Lower-left-of), (Blue, Word, ID/Lockheed, Lower-right-of), (Building-part, Label/Brick-wall, Beige, Background-view, Upper-center-of), (Horizontally-oriented, Label/Mortar-lines), (Furnishing, Label/Carpeted-floor, Purple, Gray, Background-view), ((Vehicle, Label/Motorcycle), (Above, (Furnishing, Label/Carpeted-floor))), (Indoors, Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

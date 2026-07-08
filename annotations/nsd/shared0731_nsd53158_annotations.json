@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-lower portion of the frame sits a person on a pale stone bench, wearing a bright blue short-sleeved top and light blue jeans, with short brown hair, resting one arm along the bench back and looking toward the camera. A dark shoulder bag hangs beside them on the bench. In the lower-center foreground, a black-and-white cat sits on the dirt ground facing the viewer, while a mostly black cat rests on the bench to the person's right. Another gray tabby cat sits on the ground at the left edge in the mid-ground near a second stone bench pillar. In the upper-right background, an orange cat perches atop a stone post. The background is filled with dense green foliage, palm fronds, dark tree trunks, and shrubs, with a large tree trunk dominating the upper-right. Lighting is dappled sunlight filtering through trees, creating bright highlights on the bench and person's blue shirt against shadowed greenery. The color scheme combines saturated greens, earthy brown dirt, gray stone, and the vivid blue of the clothing, giving a naturalistic, high-contrast outdoor park composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, (Foreground-view, Lower-center-of, ((Human-agent, Experiment-participant, (Brown, Hair)), (Blue, Clothing), ((Blue, Clothing), Lower-extremity), Sitting)), ((Human-agent), Interacts-with, (Animal-agent)), (Furnishing, Label/Stone-bench), ((Black, White, Animal), Sitting, (Dirt-terrain, Lower-center-of, Foreground-view)), ((Black, Animal), Resting, (To-right-of, (Human-agent))), ((Gray, Animal), Sitting, (Left-edge-of, Background-view)), ((Orange, Animal), (Upper-right-of, Background-view)), (Background-view, (Green, Plant)), (Background-view, (Brown, Plant)), (Dappled-lighting, (Luminance-contrast/High)), ((Green, Saturation), (Brown, Dirt-terrain), (Gray, Steel), (Blue, Clothing))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

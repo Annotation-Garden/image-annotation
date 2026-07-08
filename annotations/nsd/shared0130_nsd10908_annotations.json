@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a bathroom interior with a large oval white bathtub occupying the foreground on the right and lower-center of the frame, set into a dark tiled surround. The bathtub features a silver faucet fixture mounted on its near edge. The floor throughout the foreground and midground consists of dark gray square tiles arranged in a grid pattern. On the left and center-background sits a wooden vanity cabinet with dark countertops, holding two white sinks with silver faucets. Above the vanity, a large mirror covers the upper-center-left wall, reflecting a window and additional interior space. A window with a partially raised blind appears in the upper-left background, admitting bright natural light that illuminates the room. The walls are painted a warm peach or tan tone, contrasting with the cooler dark tiling. A doorway is visible on the far left edge, and a light switch panel is mounted on the left wall. The overall color scheme combines warm beige walls and wood cabinetry with cool dark-gray tile and white fixtures. Lighting is natural and even, entering from the window. Composition uses diagonal floor lines drawing the eye toward the background vanity.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, Room, ((Large, Oval, White, Bathtub), (Lower-center-of, Photograph)), (Silver, Faucet), (Dark-shade, Gray, Square, Tile, Path), ((Furnishing, Label/Wooden-vanity-cabinet), (Dark-shade, Countertop)), (White, Sink), (Silver, Faucet), ((Large, Furnishing, Label/Mirror), (Upper-center-of, Photograph)), ((Window, (Furnishing, Label/Blind)), (Upper-left-of, Photograph)), (Bright, Visual-presentation, Label/Natural-light), (Beige, Wall), (Door), (Furnishing, Label/Light-switch)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

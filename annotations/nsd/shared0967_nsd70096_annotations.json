@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and occupying the vertical midline of the frame, a man in a black-and-red wetsuit walks forward while carrying a bodyboard tucked under his left arm; the board, predominantly white with green and teal accents, angles across the lower-left portion of the frame, and a coiled leash with attached swim fins hangs near his midsection. The wetsuit displays the text \"ONDA\" across the chest in white lettering. His face, tilted slightly and looking toward the right, is lit from the upper left, casting soft highlights on his forehead and cheek. The lower edge of the frame shows a sandy beach strewn with dark strands of seaweed or debris. The background is filled with the ocean: turquoise and teal water occupies the upper two-thirds, with a band of white breaking surf directly behind and to the right of the man. The overall color scheme combines cool blues and greens of the water with the warmer reds and blacks of the wetsuit and the pale sand. Lighting appears bright and natural, suggesting daytime. The composition is vertically oriented, with the standing figure anchoring the center.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Male, (Clothing, Black, Red, Label/ONDA), (Walk, Forward), (Center-of, Foreground-view)), ((Human-agent), Interacts-with, (Tool, White, Green, Label/Bodyboard, (Lower-left-of, Foreground-view))), (Tool, Label/Leash), (Tool, Label/Swim-fins), (Face, (To-right-of, Foreground-view)), (Sand, Seaweed, (Bottom-edge-of, Foreground-view)), (Natural-feature, Label/Ocean, Turquoise, (Background-view, Upper-center-of)), (White, (Background-view, Right-side-of)), (Outdoors, Daytime), Vertically-oriented",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

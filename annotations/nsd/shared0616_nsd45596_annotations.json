@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a dark green wine bottle with a red foil top and a white label bearing partially legible text stands center-right, while a tall clear glass bottle containing amber-brown liquid, sealed with a cork and marked with red lettering, stands center-left. Two stemmed wine glasses appear in the lower foreground: one at the lower left holding a small amount of amber liquid, and another at the lower right also containing pale golden liquid. These objects rest on a dark, speckled granite countertop that reflects light. In the background, a man wearing a black shirt with a yellow wristband stands at the left, positioned near another person partially visible center-left. On the right side, another person in dark clothing is partially framed. The upper portion of the frame shows a dark ceiling with mounted track lighting and a warm-toned pendant lamp at the upper right. The overall color scheme combines dark browns, greens, and blacks with warm amber highlights from the liquids and lighting. The composition is layered, with foreground bottles and glasses dominating and human figures softly blurred behind them.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Dark-shade, Green, Ingestible-object/Main-dish), (Red, Top-of), (White, Label))), (Foreground-view, ((Brown, Ingestible-object/Main-dish), (Red, Character))), (Lower-left-of, ((Ingestible-object/Main-dish, Brown), Container)), (Lower-right-of, ((Ingestible-object/Main-dish, Yellow), Container)), ((Furnishing, Dark-shade, Gray), Underneath), (Background-view, ((Human-agent, (Black, Clothing)), Interacts-with, (Human-agent))), (Right-side-of, (Human-agent, (Dark-shade, Clothing))), (Top-of, (Dark-shade, Light-shade)), (Upper-right-of, Light-shade)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 346,
+            "total_tokens": 767
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 767
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

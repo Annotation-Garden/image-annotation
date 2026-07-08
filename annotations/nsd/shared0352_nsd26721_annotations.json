@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-right portion of the frame, sits a gray-brown upholstered office chair with a curved black armrest, angled toward the desk. Dominating the center is an L-shaped dark-gray desk with a pull-out keyboard tray holding a white keyboard and a white computer mouse positioned to its right. In the center-background rests a flat-panel monitor displaying a bright screen with visible interface elements. To the right of the monitor sits a silver horned Viking-style helmet, and further right on the desk are black over-ear headphones. On the upper-right wall hangs a calendar with an orange-toned image and a smaller framed picture above it. The upper-left and left walls are beige cubicle partitions, with framed photographs and pictures mounted and propped along the left side, including landscape images and a small framed portrait in the center-left. A spiral notebook and open white pad lie on the lower-left desk surface near a dark mug. The overall color scheme is muted\u2014beige, gray, and brown tones\u2014with soft, even lighting, likely from overhead, creating a calm, balanced, symmetrical cubicle composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Lower-right-of, (Gray, Brown, Furnishing, (Black, Furnishing)))), (Center-of, (Dark-shade, Gray, Furnishing, (Keyboard, White), (White, Computer-mouse))), (Background-view, Center-of, (Computer-screen, (Icon))), (To-right-of, (Silver, Clothing, Label/Viking-helmet)), (Black, Headphones), (Upper-right-of, Document), (Upper-left-of, (Building-part, Beige)), (Left-side-of, (Photograph)), (Center-of, (Left-side-of, (Photograph))), (Lower-left-of, (Notebook, (White, Paper), (Dark-shade, Ingestible-object))), (Beige, Gray, Brown), (Symmetrical)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

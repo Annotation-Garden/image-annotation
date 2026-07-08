@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph centers on a white ceramic bowl filling most of the frame, containing a stir-fried dish shot from a slightly elevated angle. In the foreground, occupying the lower and central portions, are cubed white and browned tofu or radish pieces, alongside irregular clumps of golden-brown fried or crumbled meat and darker cooked greens. Scattered across the top surface, chiefly in the upper-center and upper-right, are bright green sliced scallion rings that provide vivid color contrast against the warmer tones below. Small pale spherical items, possibly quail eggs or garlic cloves, appear in the center and lower-right of the dish. In the upper background, out of focus, the white rim of the bowl curves along with a blurred dark horizontal band and a faint pale object at the top edge, likely a spoon handle or utensil. The overall color scheme is dominated by warm browns, golden oranges, and off-white ceramic, punctuated by the green scallions. Lighting is soft and directional, brightening the upper-left food surfaces while casting subtle shadows in the crevices. The composition is tightly cropped, filling the frame and emphasizing texture, with shallow depth of field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Ingestible-object/Main-dish, Savory), (Center-of, (White, Ceramic, Bowl))), ((Cube, White, Ingestible-object/Main-dish), Lower-center-of), (Brown, Ingestible-object/Main-dish), ((Green, Ingestible-object/Main-dish), Upper-right-of), ((White, Ingestible-object/Main-dish), Lower-right-of), (Background-view, (White, Ceramic, Bowl)), (Shallow, Depth), Aerial-view",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

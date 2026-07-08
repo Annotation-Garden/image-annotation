@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant foreground element is a yellow school bus occupying the left and lower-left portion of the frame, oriented diagonally with its rear and side visible, facing toward the center-right where a two-lane paved road recedes into the distance. The bus displays dark windows along its side, a black stripe, and partial lettering; a stop sign or signal appears near its lower-right edge. The road, positioned in the center and lower-center, curves gently rightward toward the background, where a small dark vehicle is faintly visible traveling in the distance near the center-right horizon. Background elements include a line of green trees along the right and center-right middle ground, flat grassy fields in muted green and tan tones on both sides of the road, and a utility pole on the right edge. The upper two-thirds of the frame is filled by a bright blue sky dotted with numerous white and gray cumulus clouds. The overall color scheme contrasts the saturated yellow bus against cool blues and greens. Lighting is bright and natural, consistent with daytime sun, casting soft shadows beneath the bus. The composition balances the large left-side bus against expansive open sky and receding road.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Car, Yellow, Large), (To-left-of, (Road, Paved))), ((Road, Paved), (Center-of, Image)), (Car, Dark, (Far-from, Center-of)), (Window, Dark), (Stop-signal), (Group-of, Plant, Green, (To-right-of, (Road, Paved))), (Field, Green, Grassy-terrain), (Man-made-object, Label/Utility-pole, Right-edge-of), (Sky, Blue, Upper-center-of), (Group-of, White, Gray), Outdoors, Real-world",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

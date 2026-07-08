@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a surfer occupies the center-right of the frame, positioned atop a bright yellow-green surfboard that angles diagonally upward toward the upper right. The surfer wears a dark, full-length wetsuit and is captured mid-maneuver, with the body crouched and leaning back, the left arm raised upward and outward toward the upper-left, while the board's nose lifts as it carves along the wave's crest. Directly beneath and surrounding the surfer, a curling wave of teal-green water breaks into white foam and spray, dominating the lower and central portions of the image; frothy white water fills the lower-left and lower-center. In the background, a large hillside or headland spans the upper portion of the frame, rendered in muted grayish-green and brown tones under a hazy, overcast sky that lacks strong directional shadows. The ocean between the wave and the distant land appears choppy and grayish. The overall color scheme combines cool greens, grays, and whites, punctuated by the vivid yellow-green of the board. Lighting is diffuse and flat, consistent with cloud cover. The composition emphasizes dynamic diagonal motion against the horizontal background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Human-agent, Experiment-actor), Crouching, (Ride, (Yellow, Green, Item)))), ((Human-agent), Interacts-with, (Yellow, Green, Item)), (Wetsuit, Black), ((Left, Upper-extremity), Upward), ((Teal, Water), (White, Foam), Lower-left-of), ((Teal, Water), Center-of), (Background-view, (Hill, Gray, Green, Brown)), (Ocean, Gray), (Outdoors, Overcast), (Diffuse-light)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

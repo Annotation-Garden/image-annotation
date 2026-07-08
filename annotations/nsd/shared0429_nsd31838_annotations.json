@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a small bathroom viewed through a doorway, with a dark vertical door frame edge visible on the left side of the frame in the foreground. In the lower-left and center foreground sits a white toilet with a closed lid, positioned against the left wall. To the right of center, in the middle ground, stands a white vanity cabinet with two doors and metal knobs, topped with a light countertop that holds a dark cylindrical vase or object and a faucet fixture. In the upper-right corner, partially cropped, hangs a round mirror reflecting light. Centrally located between the toilet and vanity is a black wrought-iron plant or candle stand with curved decorative legs, holding a pale cylindrical object. On the lower floor, two dark gray bath mats rest on light-colored tile flooring in the center and lower portions of the frame. The walls are painted a warm beige or tan tone. The overall color scheme combines neutral beige walls, white fixtures, black accents, and gray mats. Lighting appears soft and even, likely artificial, with mild reflections on the mirror and countertop, creating a clean, balanced composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Room, Indoors, (Beige, Wall)), ((White, Item), (Left-side-of, Room)), ((White, Furnishing, Door), (Left-side-of, Foreground-view)), ((White, Furnishing), (To-right-of, Center-of)), ((Black, Furnishing, Plant), (Center-of, Room)), ((Round, Item), (Upper-right-of, Room)), ((Gray, Item), Group-of, (Center-of, Room)), (Light-shade, Item, (Bottom-edge-of, Room))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

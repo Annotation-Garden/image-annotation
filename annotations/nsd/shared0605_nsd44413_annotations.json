@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by an orange pickup truck occupying the foreground, positioned across the center and lower portion of the frame, oriented in profile with its front facing rightward. The truck displays visible rust and wear, particularly along its lower body panels and cab, and features chrome-trimmed wheels with silver hubcaps in the lower center and lower right. Multiple stickers appear on the rear cab window in the left portion of the truck. Behind the vehicle, spanning the middle band of the image, stands a horizontal wooden fence made of stacked planks, running left to right. Above and behind the fence, in the background upper portion, is a terraced landscape with tiered retaining walls, green shrubs, plants, and dry, brownish vegetation climbing the slope. The lower foreground shows a gray paved surface transitioning to a strip of green grass at the bottom edge. The overall color scheme combines the truck's warm orange with the tan wooden fence and muted greens and browns of the foliage. Lighting appears bright and natural, consistent with daytime sun, casting soft shadows beneath the truck. The composition is horizontally layered, with the truck anchoring the visual weight centrally.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Truck, Orange, Foreground-view, Rotated, (Rightward, Ahead-of)), (Center-of, Image)), (Truck, Rough), ((Wheel, Silver, Steel), Lower-center-of, Lower-right-of), ((Label/Stickers, Window), Left-side-of, Truck), (((Building-part, Length/Horizontal, Wood), Behind, Truck), Center-of, Image), ((Terrain, Sloped-terrain, Background-view, Upper-center-of), Behind, (Building-part, Wood)), (Plant, Green), (Plant, Brown), ((Path, Paved-terrain, Gray), Foreground-view), ((Terrain, Grassy-terrain, Green), Bottom-edge-of, Image), (Outdoors, Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 388,
+            "total_tokens": 809
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 809
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central portions of the frame, three zebras stand close together with their heads lowered toward a muddy waterhole at the bottom edge, apparently drinking; their black-and-white striped bodies dominate the left, center, and right of the composition, with their hindquarters and tails visible in the upper-middle area and their muzzles converging near the wet, brown, partially reflective water surface at the lower center. In the background, positioned in the upper-center and upper-right, stands a lone antelope-type animal (an impala, identifiable by its reddish-brown coat and single visible set of curved, ridged horns) facing rightward, partially obscured behind the zebras. The setting is an open, arid landscape with dry, tan-colored earth and sparse patches of green and yellowish grass scattered across the upper background. The overall color scheme combines the high-contrast monochrome of the zebra stripes with warm earth tones of brown, tan, and muted green. Lighting appears bright and diffuse, consistent with daytime outdoor conditions, casting soft illumination without harsh shadows. The composition is densely packed in the lower half, with the animals filling most of the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, (Item-count/3, (Animal-agent, Animal/Zebra, (Black, White, Striped)), (Lower-center-of, Photograph)), ((Animal-agent, Animal/Zebra), (Drop, Head)), ((Animal-agent, Animal/Zebra), Interacts-with, (Mud, Water, Brown, Wet)), (Water, Brown, Wet, (Lower-center-of, Photograph)), (Background-view, (Animal-agent, Animal/Impala, Brown-color), (Upper-right-of, Photograph)), (Outdoors, Terrain, Dry, (Brown-color, Tan)), (Plant, Green, Yellow, (Upper-center-of, Photograph)), (Luminance-contrast/High), Bright",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, three people stand and walk on a wet, reflective pavement during rainfall. On the left, a man in a white and blue raglan-sleeve shirt and gray cargo shorts walks toward the right, holding a blue umbrella overhead with his left hand while wearing dark clog-style shoes and carrying a bag over his shoulder. In the center-right, a woman in a short black dress and turquoise patterned rubber boots stands facing right, her arm around a man in a red shirt and gray shorts on the far right, who holds a large pink-red umbrella. She carries a light-colored handbag. The background, upper portion of the frame, shows a storefront with red and white signage, including partial text reading \"help,\" and glass windows reflecting the scene. Lower left displays white plastic bags near a blue surface. The color scheme contrasts cool blues and grays with warm reds and pinks. Lighting is flat and diffuse, consistent with overcast rainy conditions, producing wet-surface reflections on the gray stone ground. Compositionally, the three figures are arranged horizontally across the lower-center frame, with umbrellas framing the upper space.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, (Rainy, Environmental-property), ((Gray, Paved-terrain, Smooth), Wet), (Overcast, Environmental-property), (Human-agent, Male, (Walk, Forward), (White, Blue, Clothing), (Gray, Clothing), (Left-side-of, Foreground-view), ((Hold-down, (Blue, Umbrella)), Performed-using, Hand), (Clothing, Black), (Interacts-with, (Item))), ((Human-agent, Female, Standing, (Black, Clothing), (Turquoise, Clothing), (Light-shade, Item)), Interacts-with, (Human-agent, Male, (Red, Clothing), (Gray, Clothing), (Hold-down, (Pink-color, Red, Umbrella)))), (Center-of, Foreground-view), (Building, (Red, White, Icon), (Word, Label/help), (Window, (Reflected, Visual-attribute)), Background-view, Upper-center-of), ((White, Man-made-object), (Blue, Item), Lower-left-of, Background-view)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

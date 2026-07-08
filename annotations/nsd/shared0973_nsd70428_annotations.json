@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, center-frame and occupying the lower to middle portion, a baseball pitcher wearing a white pinstriped uniform stands on a raised dirt mound in mid-windup, his left leg lifted and bent while his gloved right hand is held near his chest, his body turned slightly to the right. He wears a dark cap and his uniform bears the partially visible number \"26.\" In the mid-ground, two additional players in gray uniforms are positioned on the dirt infield, one at the left edge and one at the right edge of the frame, both standing on the lighter brown dirt against the green grass. The background, spanning the upper half, contains a green outfield wall covered with multiple advertising signs, including a prominent white \"PM\" Paul L. Miers Engineering sign center-frame and a \"WISHING MATTHEW PAUL\" banner on the right. Above the wall are tall metal light poles, bleacher structures, and bare leafless trees under an overcast gray sky. The color scheme is dominated by greens, browns, and grays, with soft, diffuse lighting producing minimal shadows and an even, muted overall tone.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Center-of, (Human-agent, (White, Clothing), (Cap, Black), (Label/Number-26), (Standing, Dirt-terrain), (Lift, (Left, Upper-leg)), (Bend, (Left, Upper-leg)), (Hold-down, (Right, Hand)), (Right, Rotated))), (Center-of, (Dirt-terrain, Brown)), ((Human-agent, (Gray, Clothing), (Left-edge-of, (Dirt-terrain, Brown))), (Human-agent, (Gray, Clothing), (Right-edge-of, (Dirt-terrain, Brown)))), (Background-view, (Green, Building-part), (Icon, Label/PM-Paul-L-Miers-Engineering, Center-of), (Icon, Label/Wishing-Matthew-Paul, Right-side-of)), (Above, ((Metal, Tool), Building-part, (Plant, Brown))), (Overcast, Gray, Outdoors), (Green-color, Brown-color, Gray-color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

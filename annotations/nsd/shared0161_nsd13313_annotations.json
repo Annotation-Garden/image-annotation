@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground occupying the lower portion of the frame is a rumpled light-blue and white fabric, likely bedding or cushioning, with a wooden bed frame or headboard rail visible above it bearing a turned wooden finial post at its center-right, and a white book or booklet rests atop the pale fabric at lower-left. In the mid-ground center-right stands a yellow metal chair with a curved oval back and white tubular armrests, positioned on a reddish-brown floor surface. To the left in the mid-ground are additional metal chairs, one blue and one green with woven or webbed seating, clustered together. A brick pillar rises through the upper-left and center of the frame, and a white ledge or mantel runs horizontally behind the chairs, holding a potted plant with green foliage on its right end and other small objects. Beyond an opening or window, dense green trees and sunlit foliage fill the entire background. The overall color scheme combines warm reds and yellows with cool blues and abundant greens. Lighting appears natural and bright outdoors, contrasting with the shaded, dimmer interior porch space, creating a soft, diffused composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, (Foreground-view, ((Blue, White, Furnishing), (Above, (Wooden, Building-part)))), ((White, Book), (Bottom-edge-of, (Blue, White, Furnishing))), ((Yellow, Furnishing), (Center-of, (Red, White))), ((Blue, Furnishing), (Green, Furnishing), (To-left-of, (Yellow, Furnishing))), (Brick, Building-part), (White, Building-part), ((Green, Plant), (Top-of, (White, Building-part))), (Window, (Background-view, (Green, Plant)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

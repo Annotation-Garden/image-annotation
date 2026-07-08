@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a person wearing an orange and gray raglan T-shirt stands with their back to the camera on the left side of the frame, their right arm raised upward with the thumb extended, positioned in the upper left. In the center foreground, a blonde-haired individual in a white shirt holds a white flying disc at their lower torso, gripping it with both hands, standing in the lower-center region. To the right, two additional people wear orange and gray shirts; one with short dark hair stands in the center-right middle ground, while another, partially cropped, occupies the far right edge of the frame from top to bottom. The background shows a blue interior wall with horizontal structural elements, consistent with an indoor sports hall, and the floor appears as a light gray surface in the lower portion. The overall color scheme is dominated by orange, gray, white, and blue tones. Lighting is diffuse and even, without harsh shadows, suggesting indoor artificial illumination. The composition places the disc-holding figure centrally, framed by teammates, with the raised-arm gesture drawing attention to the upper left corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, Indoors, ((Human-agent, Foreground-view, Left-side-of), (Clothing, Orange, Gray), (Upper-extremity, Upward), (Thumb, Upward), Upper-left-of), ((Human-agent, Foreground-view, Lower-center-of), (Clothing, White), ((Hand, Hand), Interacts-with, (Man-made-object, Label/Flying-disc, White))), ((Human-agent, Background-view, Center-of, Right-side-of), (Clothing, Orange, Gray)), ((Human-agent, Background-view, Right-edge-of), (Clothing, Orange, Gray)), (Building-part, Blue, Horizontally-oriented), (Path, Gray, Light-shade, Lower-center-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 352,
+            "total_tokens": 773
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 773
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

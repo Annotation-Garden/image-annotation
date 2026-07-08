@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the foreground is a white sedan positioned across the center and lower portion of the frame, its body angled so the front faces rightward, revealing chrome wheels with visible tread and a \"Century\" script badge on the lower door. A small, curly-haired tan dog occupies the center of the composition, leaning out of the front passenger window with both front paws resting on the door and its head turned toward the right side of the frame. Inside the vehicle, partially obscured by reflections on the windshield and window glass, a person with light-colored hair sits in the driver's seat on the left, faintly visible through the glass. The background, occupying the upper portion, contains multiple gray and dark stone headstones or monuments of varying heights arranged across a green grassy area, along with a vertical green pole on the upper left. The color scheme centers on the white car contrasting against muted greens and grays behind it, with the warm tan of the dog providing a focal accent. Lighting appears soft and diffuse, consistent with an overcast day, casting minimal harsh shadows across the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Car, White, Label/Century, Foreground-view), (Center-of, (Rotated, (Front-of, Rightward)))), (Car, (Chrome, Label/Wheels)), ((Animal-agent, (Tan, Small)), Center-of), ((Animal-agent), (Lean, (Out-of, Window))), ((Animal-agent), Interacts-with, (Car)), ((Human-agent, (Light-shade, Hair)), (Contained-in, Car)), (Left-side-of, Human-agent), ((Gray, Building-part, Label/Headstones), Background-view), (Green, Field), ((Green, Label/Pole), Upper-left-of), (Outdoors, Cloud-cover)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 339,
+            "total_tokens": 760
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 760
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the lower portion of the frame, occupying the horizontal center and extending toward the right, a blue and yellow train crosses a low trestle bridge, with the locomotives positioned center-right and the connected cars trailing off toward the left edge; the word \"ALASKA\" is legible in yellow lettering along the side of the lead engine. Beneath the train, in the foreground lower half, pale greenish-gray water reflects the bridge structure and creates a muted mirrored surface. Directly behind and above the train, filling the middle band of the image, is a dense forest of dark green coniferous trees spanning left to right. In the upper background rises a steep mountain slope, its upper reaches showing patches of white snow interspersed with exposed gray rock and scattered vegetation, positioned across the top of the frame and partially cut off at the upper edge. The overall color scheme combines cool blues and greens with warm yellow accents from the train. Lighting appears diffuse and overcast, producing soft shadows and even tones. The composition layers water, train, forest, and mountain in stacked horizontal zones from bottom to top.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Train, Blue, Yellow, (Word, ID/ALASKA), Lower-center-of), (Vehicle, To-right-of, (Left-edge-of)), (Building, Bridge, Below), (Water, Green, Gray, Foreground-view, Reflect), (Plant, Green, Dark-shade, Center-of), (Mountain, Sloped-terrain, Snow, White, Gray, Rocky-terrain, Top-of), (Outdoors, Overcast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

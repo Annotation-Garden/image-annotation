@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and right portions of the frame, four young men sit in a row along the edge of a wooden dock, positioned in the lower and middle regions of the image; each holds a hand to his ear in the gesture of talking on a phone, and they face rightward in profile. The nearest man, on the right, wears a white short-sleeved shirt with red trim; the man beside him wears a straw hat and a sleeveless dark top; the two farther left wear tank tops, one with an armband and one shirtless-appearing figure. Their bare and tanned arms are prominent, and the man in front wears olive-green shorts with legs bent over the dock's edge. The dock's weathered wooden planks run diagonally into the lower-right corner. Behind them, in the background, dark blue lake water spans the middle-left area, bordered by a dense treeline of green foliage across the horizon. The upper portion shows a bright blue sky scattered with white clouds. The color scheme combines greens, blues, and warm skin tones, lit by strong daylight casting clear shadows, creating a receding, layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Group-of, Human-agent, (Male, Age/Young)), Count/4), ((Human-agent), (Sitting, (Edge-of, (Building-part, Label/Wooden-dock)))), (Facing/Rightward, 2D-view), ((Human-agent), (Hold-down, (Hand, (Adjacent-to, Ear)))), ((Human-agent), Interacts-with, (Communicating-device, Label/Phone)), (White, (Clothing, Label/Short-sleeved-shirt), (Red, Label/Trim)), (Clothing, Label/Straw-hat), (Dark-shade, (Clothing, Label/Sleeveless-top)), (Clothing, Label/Tank-top), (Upper-extremity, Brown-color), (Green, (Clothing, Label/Shorts)), (Lower-extremity, Bend), ((Building-part, Label/Wooden-planks), Rough, (Oblique, (Towards, Lower-right-of))), (Background-view, ((Blue, Water, (Natural-feature, Label/Lake)), (Center-of, Left-side-of))), (Green, Plant, Label/Treeline), (Upper-center-of, (Blue, Sky)), (White, (Natural-feature, Label/Clouds)), (Outdoors, (Sensory-attribute, Label/Daylight))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 357,
+            "total_tokens": 778
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 778
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

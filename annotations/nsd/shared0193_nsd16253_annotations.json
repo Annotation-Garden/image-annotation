@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts a densely packed fruit market stall arranged in tiered displays. In the foreground, occupying the lower portion of the frame, are woven baskets and boxes brimming with fruit: bright red pomegranates on the lower left, dark purple grapes and figs in center-lower baskets, and green limes or plantains spilling across the lower right. A white electronic scale sits in the lower-center-right, its display facing outward. The middle ground shows tiered rows of yellow mangoes, oranges, red apples, and green apples rising upward, with kiwis and packaged berries in punnets scattered throughout the center. In the background, upper region, hang framed photographs and a prominent blue-and-white \"VISA\" sign flanked by \"PREFERIMOS\" text in the upper-center, with additional promotional signage on the right. Warm ambient lighting illuminates the produce, producing a saturated, vibrant color scheme dominated by reds, oranges, yellows, and greens against darker upper shadows. The composition is symmetrically dense and layered, with no visible people or animals, drawing the eye across a continuous, richly textured wall of stacked fruit from bottom to top.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Image, Saturation/High), ((Ingestible-object/Staple-food, Sweet, Red, (Label/Pomegranate)), (Lower-left-of, Image)), ((Ingestible-object/Dessert, Sweet, Purple, (Label/Grapes)), (Lower-center-of, Image)), ((Ingestible-object/Dessert, Sweet, Purple, (Label/Figs)), (Lower-center-of, Image)), ((Ingestible-object/Staple-food, Sour, Green, (Label/Limes)), (Lower-right-of, Image)), ((Measurement-device, White, (Label/Scale)), (Lower-center-of, Image)), ((Ingestible-object/Staple-food, Sweet, Yellow, (Label/Mangoes)), (Center-of, Image)), ((Ingestible-object/Staple-food, Sweet, Orange, (Label/Oranges)), (Center-of, Image)), ((Ingestible-object/Staple-food, Sweet, Red, (Label/Apples)), (Center-of, Image)), ((Ingestible-object/Staple-food, Sweet, Green, (Label/Green-apples)), (Center-of, Image)), ((Ingestible-object/Dessert, Sweet, (Label/Berries)), (Center-of, Image)), ((Photograph), (Upper-center-of, Image)), ((Icon, Blue, White, (Label/VISA-sign)), (Upper-center-of, Image)), (Word, (Label/PREFERIMOS), (Upper-center-of, Image)), (Indoors, Outline-visualization)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

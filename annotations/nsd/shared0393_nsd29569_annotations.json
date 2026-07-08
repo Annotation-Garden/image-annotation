@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower-center of the frame, stands a wading bird\u2014likely a marbled godwit\u2014with mottled brown and tan plumage, a long, slightly upturned bill that transitions from pinkish-orange at the base to dark at the tip, and thin gray legs partially submerged in shallow water at the lower edge of the image. The bird faces left, its head and bill oriented toward the upper-left, while its body angles rightward. It stands atop a rocky, mud-colored mound covered with clumps of greenish-brown algae or seaweed, which spans the lower-center and lower-left portions of the frame. Surrounding this mound is calm, reflective water filling the background across the upper and outer regions, with scattered floating vegetation and blurred green plant matter dispersed throughout, particularly in the upper-left and right areas. The overall color scheme is muted and earthy, dominated by browns, tans, olive greens, and soft grays, with the bird's warm plumage blending into the substrate. Lighting appears diffuse and natural, casting soft illumination without harsh shadows. The composition centers the bird prominently, creating a clear focal point against the textured environment.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Animal-agent, Label/Marbled-godwit, (Brown, Tan))), ((Animal-agent, Label/Marbled-godwit), (Center-of, Lower-center-of)), ((Animal-agent, Label/Marbled-godwit), (Contained-in, Shallow)), ((Head, (To-left-of, Torso))), (Natural-object, Rocky, Brown, (Plant, Green, Brown), (Lower-center-of, Lower-left-of)), (Background-view, Water, (Plant, Green, Blurred)), (Brown, Tan, Olive, Gray), (Diffuse)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground on the right side of the frame, occupying the lower and central-right portions, sits a gray cat viewed in profile, facing left; its pointed ears, whiskers, muzzle, and dense fur are clearly visible, with its body extending downward and off the bottom edge. The cat appears to face a reflective surface, as its gaze is directed toward the left of the frame. In the background, occupying the upper-left region, a person is visible within what appears to be a mirror; this individual has light-colored hair and holds a camera up to their face, obscuring part of it, suggesting a self-portrait captured in reflection. Below and around the mirror, the lower-left and central areas show tiled walls and a ledge in warm peach and beige tones, along with a faucet or fixture near the bottom-left corner. The overall color scheme is warm, dominated by soft peach, tan, and brown hues, with the gray cat providing tonal contrast. The lighting is soft and diffuse, casting gentle warmth across the scene. Compositionally, the cat and the reflected photographer are positioned on opposing diagonal sides, creating a visual relationship across the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Cat, Gray, (Foreground-view, Right-side-of)), (Attend-to, (Human-agent, Leftward))), ((Human-agent, Background-view, Upper-left-of), Interacts-with, (Camera)), (Wall, (Tactile-texture, Beige)), Peru, Warm, (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, a female tennis player is captured mid-motion, wearing a blue sleeveless top, a white pleated skirt, a white visor, and blue-and-white athletic shoes; her body is twisted with her back partially toward the viewer, arms extended to her right side as if completing a swing, and her brown hair is pulled back in a braid. Behind her, in the background upper-center and slightly right, a second person stands upright holding a yellow tennis racket across their body, wearing a white top, a purple-and-blue skirt, and a white cap, positioned near a dark blue barrier wall. That wall spans the upper and middle background, bearing white \"Emirates\" text and \"US OPEN SERIES\" logos on the left side, with a green tennis net visible above it in the upper-left corner. The court surface transitions from teal-green in the upper area to blue in the lower foreground, marked with a white line. The overall color scheme combines blues, greens, and whites; lighting is bright and even, consistent with outdoor daylight, casting soft shadows beneath both figures.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Human-agent, Female, Experiment-participant, (Foreground-view, Lower-center-of)), (Blue, Clothing), (White, Clothing), (White, Clothing), (Blue, White, Clothing), (Brown, Hair), (Move, (Upper-extremity, Right-side-of))), ((Human-agent, (Background-view, Upper-center-of, Right)), (White, Clothing), (Purple, Blue, Clothing), (White, Clothing), ((Human-agent), Interacts-with, (Yellow, Tool))), ((Blue, Dark-shade, Building-part), (White, Word, ID/Emirates), (White, Icon, Label/US-OPEN-SERIES)), ((Green, Item, Label/Tennis-net), (Upper-left-of, Background-view)), ((Teal, Green, Blue, Field), (White, Line)), (Bright, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

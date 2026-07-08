@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts five dark-colored birds, likely cormorants, perched on and flying near bare, leafless tree branches set against a soft blue sky with hazy white clouds in the background. In the foreground, the branches form a network of diagonal and curving lines spanning the frame. In the upper-left, one bird perches on a thin branch, facing right; in the upper-right, a second bird sits atop a branch with its body angled downward. A third bird occupies the center-right area with wings spread wide in mid-flight or landing, showing extended feathers. In the center-left, a fourth bird stands upright on a horizontal branch, and in the lower-left, a fifth bird perches with a raised crest or head tuft. The birds' plumage appears dark brown to black, illuminated warmly on their undersides and edges by low-angle sunlight, suggesting early morning or late afternoon light coming from the lower-right. The color scheme contrasts the warm-lit brown branches and birds against the cool blue and white sky. The composition is diagonal and layered, with the branches creating dynamic lines that guide the eye across the scattered avian subjects.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Experimental-stimulus, Visual-presentation, Photograph, (Item-count/5, (Animal-agent, Animal/Cormorant, Brown-color, Black)), (Plant, Brown-color), Blue, White, ((Animal-agent, Animal/Cormorant), Upper-left-of, (Plant, Thin)), ((Animal-agent, Animal/Cormorant), Upper-right-of, Plant), ((Animal-agent, Animal/Cormorant, Move), Center-of, Right), ((Animal-agent, Animal/Cormorant, Standing), Center-of, Left), ((Animal-agent, Animal/Cormorant), Lower-left-of, Plant), (Oblique, Line-noise-artifact)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

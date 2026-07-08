@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a snowboarder positioned in the upper-center of the frame, actively carving down a snow-covered slope, with their body angled and knees bent in a dynamic posture. The individual wears a red and gray jacket, dark pants, gloves, and a helmet, with arms extended outward for balance; the snowboard beneath them is oriented diagonally, kicking up loose snow near its edge in the center of the frame. In the foreground, the lower portion of the image is dominated by textured white snow showing carved tracks, ridges, and shadowed indentations that convey movement across the slope. In the background, the upper region reveals a broad expanse of snow extending upward, punctuated by a thin line of small dark posts or markers running diagonally from center toward the right, suggesting a boundary or fence. The overall color scheme is muted and monochromatic, dominated by whites and grays, with the snowboarder's red jacket providing the sole vivid accent. Lighting appears flat and diffuse, consistent with overcast conditions, producing soft shadows in the snow's contours. The composition centers the subject against a minimalist, uniform snowy environment, emphasizing isolation and motion.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Human-agent, Experiment-actor, (Upper-center-of, Photograph), ((Red, Gray, Clothing), (Clothing), (Glasses), (Clothing)), ((Ride, Tool), Oblique, (Center-of, Photograph))), (Snow, Terrain, Sloped-terrain), ((Foreground-view, (White, Snow, Rough)), (Background-view, (Snow, (Dots, To-right-of, Center-of)))), (Grayscale, Overcast), (Diffuse-lighting, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

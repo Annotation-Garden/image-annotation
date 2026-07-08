@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a tall white clock tower positioned in the upper-left and center-left of the frame, rising vertically and topped with a pointed golden or beige spire that extends to the top edge. The tower features a round clock face near its upper section and multiple arched windows descending its height. In the foreground lower portion, a white multi-story building extends across the center and right, characterized by a repeating row of tall arched windows along its curved facade, with additional rectangular windows below. Behind and between these white structures, in the mid-ground, sits a gray concrete building with a flat industrial appearance and rectangular window openings, occupying the center. Green foliage from trees appears in the lower-left corner of the foreground. The background is filled by a deep, vivid blue sky occupying the entire upper-right region, with faint wispy clouds near the right edge. The lighting is bright and natural, consistent with strong daytime sunlight casting subtle shadows on the building surfaces. The overall color scheme contrasts crisp white architecture and gray concrete against the saturated blue sky, creating a clean, high-contrast composition with strong vertical and horizontal architectural lines.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((White, Building, Clock, Vertically-oriented, (Upper-left-of, Left-side-of)), (Beige, Star, Top-edge-of), (Circle, Clock-face), Arch), ((White, Building, Foreground-view, Center-of, Right-side-of), Arch, Window), ((Gray, Building, Steel, Background-view, Center-of), Window), ((Green, Plant, Leaf-covered-terrain), (Lower-left-of, Foreground-view)), ((Blue, Sky, Saturation, (Upper-right-of, Above)), (White, Cloud, Right-edge-of)), (Bright, Luminance), Luminance-contrast",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

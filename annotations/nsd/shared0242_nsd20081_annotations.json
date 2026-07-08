@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph presents a pastoral landscape divided horizontally into distinct zones. In the foreground, occupying the lower third of the frame, lies a flat expanse of vibrant green grassland that spans left to right. A small stream or water channel with muddy banks cuts through the lower-center to lower-left area, exposing brown earth against the surrounding green. In the middle ground, across the center of the frame, a scattered herd of small white animals, appearing to be sheep, graze along the grassland, distributed from left to right at varying distances. Behind them, filling the upper-left and center portions, rises a large rounded green hill or mountain with visible darker patches of exposed rock or shadow on its lower slopes. Additional gentler green slopes recede toward the right background. The upper portion of the frame shows a blue sky with soft white clouds concentrated in the upper-center and upper-right. The overall color scheme is dominated by saturated greens and blues, suggesting bright daylight with clear, even natural lighting. The composition is layered and horizontal, with the sheep providing scale and the hill anchoring the visual weight toward the left.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Green, Grassy-terrain, Foreground-view), (Lower-center-of, Image)), ((Brown, River, Muddy-terrain), (Lower-left-of, Image)), (Group-of, (White, Animal/Sheep), (Center-of, Image)), ((Green, Hill, Large), (Upper-left-of, Image)), ((Green, Hill), (Right-side-of, Background-view)), ((Blue, Sky), (White, Cloud), (Upper-center-of, Image)), Saturation, Green-color, Blue-color, Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

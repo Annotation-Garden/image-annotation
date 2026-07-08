@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph depicts an urban pedestrian underpass or covered walkway shot from within a shadowed tunnel looking outward toward a bright exterior. In the foreground, the lower portion of the frame is dominated by a wooden plank walkway that recedes toward the center, drawing the eye into the composition. On the left side, a tiled wall with small rectangular white and beige bricks runs diagonally into the distance, topped by a dark metal railing. In the lower-left middle ground, a seated figure in dark clothing rests against the wall, hunched, with a lighter-colored object or bag beside them on the ground. In the center of the frame, a standing figure walks away from the camera holding an open black umbrella, silhouetted against the bright light beyond. The background reveals daylight, tall buildings, an ornate lamppost on the right, and diffuse gray sky, suggesting an overcast or wet day. The ceiling overhead consists of a dark metal grid framework with visible beams. Warm-toned lights glow on the upper right. The overall color scheme is muted, dominated by dark browns, blacks, and cool grays, with strong backlighting creating high contrast between the shadowed interior and luminous exterior.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, (Path, (Made-from, Wood)), ((Human-agent, Sitting), (Close-to, (Tiled-wall))), ((Human-agent, Walk), Interacts-with, (Umbrella)), (Building, Background-view), (Gray, Sky), Dark-shade, Luminance-contrast/High",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 395,
+            "total_tokens": 816
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 816
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

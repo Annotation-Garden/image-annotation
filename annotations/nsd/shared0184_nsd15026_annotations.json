@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a skier occupying the center and lower-center of the frame in the foreground, dressed in a bright orange jacket and black pants, crouched in a dynamic carving posture with the body leaning to the left. The skier wears a dark helmet and goggles, and holds ski poles that extend outward, with one pole angling sharply up and to the left across the upper-left portion of the frame. The skis are visible beneath the figure in the lower-center, cutting into the snow. The background consists almost entirely of a smooth, snow-covered slope filling the middle and upper portions of the image, rendered in pale white and grey tones. In the upper-left corner sit dark evergreen trees and sparse bare branches, providing the only strong vertical contrast. In the mid-right area, a small dark rounded object, possibly a marker or equipment, rests on the snow. The overall color scheme is muted and cool, dominated by white and grey, punctuated sharply by the vivid orange of the jacket. Lighting appears flat and diffuse, consistent with overcast conditions, producing soft shadows beneath the skier and minimal glare on the snow.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Human-agent, Experiment-actor, Crouching, (Torso, (Leftward, Rotated))), (Lower-center-of, Foreground-view)), ((Orange, Clothing, Label/Jacket), Upper-extremity), ((Black, Clothing, Label/Pants), Lower-extremity), (Black, Glasses), (Dark-shade, Assistive-device, Label/Helmet), ((Assistive-device, Label/Ski-pole), (Upper-left-of, Foreground-view)), ((Assistive-device, Label/Skis), (Lower-center-of, Foreground-view)), ((Snow, Sloped-terrain, White, Smooth), (Center-of, Background-view)), ((Plant, Dark-shade, Green), (Upper-left-of, Background-view)), ((Dark-shade, Small, Object), (To-right-of, Center-of)), White, Gray, Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

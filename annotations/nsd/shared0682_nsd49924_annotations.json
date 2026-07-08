@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned center-frame and slightly lower, a person wearing a light pink jacket, dark navy pants, and a pink knit hat skis away from the camera; they carry a dark backpack on their shoulders and grip two ski poles, one extending to each side, with skis visible beneath them on the snow. In the background, center-frame and higher up, a second, smaller figure in darker clothing skis further along the same snowy path, indicating a shared route or activity. The middle ground is dominated by a wide, gently sloping expanse of white snow that fills the lower and central portions of the frame. Flanking both sides are rocky outcrops partly covered in snow; the left and right upper regions contain tall, dark green coniferous trees rising against a pale, overcast gray-white sky at the top center. The overall color scheme is muted, dominated by whites, grays, and dark greens, with the pink jacket providing the only vivid accent. Lighting appears flat and diffuse, consistent with overcast conditions, casting minimal shadows. The composition draws the eye upward along the snow toward the distant skier.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Experiment-participant, (Ski-poles, (Grasp, Ski-poles)), (Clothing, Pink, Light-shade), (Clothing, Navy, Dark-shade), (Clothing, Pink), ((Human-agent), Interacts-with, (Man-made-object)), (Lower-center-of, Background-view))), (Background-view, (Human-agent, (Clothing, Dark-shade), Small), Upper-center-of), (Center-of, (Snow, White, Large)), (Left-side-of, (Natural-object, Rocky-terrain, Snow)), (Right-side-of, (Natural-object, Rocky-terrain, Snow)), (Upper-left-of, (Plant, Dark-shade, Green)), (Upper-right-of, (Plant, Dark-shade, Green)), (Top-of, (Center-of, (WhiteSmoke, Gray))), (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 359,
+            "total_tokens": 780
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 780
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

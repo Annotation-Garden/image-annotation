@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-center and lower-right, a patterned area rug with red, blue, orange, and cream geometric designs rests on dark gray carpeting, while a dark wood-framed rectangular coffee table sits atop it in the center, holding stacked books and small items. To the left of center in the mid-ground, a gray-brown upholstered sofa carries two orange-red throw pillows, and a black lamp stands at the far upper-left corner beside a dark television or monitor and a wooden cabinet in the lower-left foreground. Along the right side, a low dark credenza extends toward the background, topped with books, papers, and objects, with additional books shelved beneath it. In the lower-right foreground, a black metal-and-fabric chair partially enters the frame. Filling the entire upper and central background, floor-to-ceiling windows with warm wooden mullions reveal green treetops on the left and a distant cityscape with buildings under a pale sky on the right. The lighting is natural daylight streaming through the glass, casting bright patches onto the rug and floor. The overall color scheme combines warm wood tones, neutral grays, and vivid rug reds against lush exterior greenery.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Lower-center-of, Lower-right-of), (Pattern, Furnishing, (Red, Blue, Orange, White-color)), (Gray, Furnishing)), ((Wood, Rectangle, Furnishing), (Top-of, (Pattern, Furnishing)), (Center-of, Foreground-view), (Book, Group-of)), (Foreground-view, (Left-side-of, Center-of), (Gray, Brown, Furnishing), ((Orange, Red, Furnishing), Item-count/2)), (Upper-left-of, Background-view, (Black, Furnishing)), ((Black, Display-device), Furnishing), (Lower-center-of, Foreground-view, (Wood, Furnishing)), (Right-side-of, (Dark-shade, Wood, Furnishing), (Towards, Background-view), (Book, Group-of)), (Lower-right-of, Foreground-view, (Black, Metal-and-fabric, Furnishing)), (Background-view, (Window, (Wood, Building-part)), ((Left-side-of, (Green, Plant)), (Right-side-of, (Building, Group-of, Far-from)))), (Visual-attribute, (Outdoors, Luminance), (Glass, Window)), (Warm, Wood, Gray, (Red, Pattern, Furnishing), (Green, Plant))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

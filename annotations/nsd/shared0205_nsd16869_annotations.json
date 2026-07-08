@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower-center of the frame, a large gray granite rock formation rises from calm water, its rounded surfaces mottled with lighter and darker patches. Perched atop and along this rock is a group of dark, nearly black birds, likely cormorants; one stands prominently on the upper-left portion of the rock in the center-left, while a cluster of roughly seven or eight birds gathers in the center, some standing upright and others crouched, and a couple more appear on the right edge of the rock. Their positioning creates a loose social grouping across the stone. The background, filling the upper half of the frame, shows a broad expanse of grayish-blue water dotted with scattered brown and tan patches of floating kelp or debris, growing denser toward the top. On the far right edge, a smaller bird sits on another partially submerged rock. The overall color scheme is muted, dominated by cool grays and blues with earthy brown accents. Lighting appears diffuse and natural, casting soft shadows beneath the birds. The composition is horizontally balanced, with the rock anchoring the lower center.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Large, Gray, Natural-object, (Center-of, AND Lower-center-of))), ((Natural-object, Gray, Large), (Center-of, Foreground-view)), (Animal-agent, Black, (Upper-left-of, (Natural-object))), (Group-of, (Animal-agent, Black), (Center-of, (Natural-object))), ((Animal-agent, Black), Standing), ((Animal-agent, Black), Crouching), (Animal-agent, Black, (Right-edge-of, (Natural-object))), (Background-view, (Gray-color, Blue-color, Water)), (Brown, Plant, (Contained-in, Water)), (Animal-agent, Small, (Right-edge-of, (Natural-object))), (Gray-color, Blue-color, Brown)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

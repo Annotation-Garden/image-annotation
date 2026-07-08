@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a small bathroom with light blue painted walls forming the background across the upper and middle portions of the frame. In the lower-left foreground sits a white toilet with a closed lid, its tank positioned along the left wall; atop the tank rests a teal-patterned tissue box on the left and a white roll of toilet paper to its right. On the right side of the frame stands a white pedestal sink occupying the center-right, extending from the upper portion down to the tiled floor; it features a chrome faucet with two handles mounted on its back edge. The lower third of the image shows a tiled floor composed of small square tiles in muted beige, tan, and gray tones, with a pale baseboard visible along the wall edges. Lighting appears soft and even, likely from an overhead source, casting minimal harsh shadows though slightly darker areas appear behind the toilet and beneath the sink. The overall color scheme combines the cool blue walls with white fixtures and neutral flooring. The composition balances two porcelain fixtures on opposing sides, creating symmetry, with the tissue box providing the only notable color accent.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Room, Label/Bathroom), ((Light-shade, Blue, Building-part), Background-view), ((White, Item, Label/Toilet), (Lower-left-of, Photograph)), ((Cyan-color, Item, Label/Tissue-box), Top-of, (White, Item, Label/Toilet)), (White, Item, Label/Toilet-paper-roll), ((White, Item, Label/Pedestal-sink), (To-right-of, (White, Item, Label/Toilet))), (Steel, Item, Label/Faucet), ((Beige, Tan, Gray, Item, Label/Tile-floor), (Lower-center-of, Photograph)), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

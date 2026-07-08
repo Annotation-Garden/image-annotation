@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant element is an elephant occupying the foreground, positioned across the center and left portions of the frame, its body facing right with its head, trunk, and two visible white tusks reaching toward the lower-right center. The elephant's skin displays a reddish-brown to gray coloration, appearing dusty, with visible wrinkles and folds across its trunk, legs, and torso; its large ear is turned toward the viewer on the left-center. The elephant stands on a grassy surface in the lower half of the frame, where the ground shows a mix of green and dried yellow-tan grasses with small scattered plants. The background, filling the upper half, consists of dense vegetation including dark green shrubs, brush, and a large cactus-like plant with rounded pads visible in the upper-left and upper-center regions. The lighting is bright and natural, consistent with daytime sun, casting soft shadows beneath the elephant's body. The overall color scheme combines earthy browns, muted greens, and golden-tan tones. Compositionally, the elephant anchors the frame as the singular subject, with no other animals, people, or man-made objects visible, and the vegetation provides a textured backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Foreground-view, (Animal-agent, Animal/Elephant, (Reddish-brown, Gray), (Torso, (Facing, Right)), (Head, Trunk, (Two, White, Tusk)), (Ear, (Left-side-of, Foreground-view)))), ((Grassy-terrain, Green, Yellow), (Lower-center-of, Foreground-view)), ((Plant, Small), Group-of), (Background-view, (Upper-center-of, Foreground-view), (Plant, (Dark-shade, Green)), (Plant, (Rounded, (Upper-left-of, Foreground-view)))), (Bright, (Natural-object, Sun)), (Shadow, (Underneath, Torso)), (Brown, Green, Gold)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

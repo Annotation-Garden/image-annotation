@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a man positioned in the center-right of the frame, occupying the foreground; he wears rectangular glasses with visible light reflections on the left lens, has short dark hair, and dark facial stubble along his jaw. His hands are raised to his face, holding food wrapped in a light-colored paper or napkin that extends into the lower-center and lower-left portions of the frame. He appears to be biting into or eating the food item, which is pale yellow, suggesting an interaction of consumption between his mouth, hands, and the wrapped object. His fingers and knuckles are prominently lit in the center of the image. The overall color scheme is warm, with dominant amber, golden, and orange tones bathing the skin and food, contrasted against darker shadowed areas in the upper-left and lower-right corners. In the upper-right background, there are faint bluish highlights and blurred out-of-focus light streaks, indicating an unfocused environment behind the subject. The lighting is directional, striking the man's face and hands from the lower-left, creating strong highlights and deep shadows. The composition is tight and intimate, cropping the subject closely.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Human-agent, Experiment-actor, (Face, (Glasses, Rectangle, (Left, (Reflection, Light))), Hair, Black, (Facial-hair, Black))), (Center-of, Foreground-view)), ((Human-agent), Interacts-with, (Ingestible-object/Main-dish, Yellow, Savory, (Wrapped-in, (Paper, White)), (Lower-center-of, Foreground-view))), ((Human-agent, (Hand, Fingers, Knuckles)), (Towards, (Face, Mouth))), (Eat, (Human-agent, (Ingestible-object/Main-dish))), (Center-of, (Fingers, Knuckles, Light)), (Orange-color, Yellow-color), (Upper-left-of, Dark-shade), (Lower-right-of, Dark-shade), (Upper-right-of, Background-view, Blue-color, (Light, Flickering)), (Lower-left-of, (Light, Directional-relation))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

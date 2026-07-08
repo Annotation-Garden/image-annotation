@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A wooden bench occupies the foreground in the lower-right portion of the frame, angled so its slatted seat and supporting legs are clearly visible against a strip of green grass. A pale, unpaved gravel path dominates the center and lower-center of the composition, curving from the foreground toward the middle distance where it narrows and bends leftward before disappearing into darker terrain. Flanking the path are patches of green grass on the left and lower areas, with brownish, dried vegetation visible on the right side in the mid-ground. The background is filled with a dense line of leafless, dark trees stretching across the middle of the frame from left to right, their bare branches silhouetted. Above them, the upper half of the image shows a cloudy sky with layered gray and blue tones, where breaks reveal lighter patches near the center and left. The overall color scheme is muted and cool, dominated by dark greens, grays, and browns, with the sky providing the brightest values. Lighting is dim and overcast, casting the lower scene into shadow while the sky remains comparatively luminous, creating a somber, low-contrast atmosphere.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Image, ((Furnishing, Wood, Label/Bench), (Lower-right-of, Foreground-view)), ((Gravel-terrain, Path), (Center-of, Image)), ((Grassy-terrain, Green), (Left-side-of, Image)), ((Plant, Brown, Label/Dried-vegetation), (Right-side-of, Image)), ((Group-of, Plant, Dark, Label/Leafless-trees), (Center-of, Image)), ((Outdoors, Cloudy-sky, Gray, Blue), (Upper-center-of, Image)), (Dim, Overcast, Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two polar bears dominate this photograph, positioned in the foreground against a rocky enclosure. The upper bear occupies the upper-center to upper-right portion of the frame, standing in profile facing right, its head lowered with a visible black nose and dark eye. The lower bear is positioned in the center-right foreground, also facing right in profile, with its mouth slightly open revealing teeth, its front legs extended downward toward the lower edge of the frame where water is visible in the bottom-right corner, tinted pale turquoise. A large gray boulder occupies the left side of the frame, extending from upper to lower edges, partially obscuring the lower bear's hindquarters. The background consists of textured, striated rock formations in muted gray and brown tones filling the upper-right and center portions. The overall color scheme is subdued, dominated by whites and off-whites of the bears' fur, grays and beiges of the rock, with the small patch of teal water providing the only cool color accent. Lighting appears diffuse and even, casting soft shadows without harsh highlights, consistent with overcast conditions. The composition stacks the two animals diagonally, creating layered depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Label/Polar-bear), (Upper-center-of, Image)), ((Animal-agent, Label/Polar-bear), (Center-of, Image)), ((White, Animal), (Foreground-view, (Rocky-terrain))), (Gray, Boulder, (Left-side-of, Image)), (Brown, Rocky-terrain, (Background-view)), ((Turquoise, Water), (Lower-right-of, Image)), (White-color, Gray-color, Beige)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

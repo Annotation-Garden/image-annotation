@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the lower-right portion of the frame, stands an adult figure bending forward toward two smaller children; the adult wears a dark blue top and light tan pants, while the children, located in the lower-center, wear a white hooded garment and a red top respectively, with one child appearing to hold a light-colored bucket. A dirt or gravel pathway runs diagonally through the lower-left area of the frame. In the middle ground, several black cattle graze along a grassy field bordered by a wooden and wire fence that stretches horizontally across the center. The background reveals rolling green hills receding toward the horizon, with scattered bare and autumn-toned trees on the left and center, and small distant structures visible on the upper-right hillside. The upper portion of the image is dominated by a bright, pale, nearly white sky, suggesting strong overhead or hazy lighting. The overall color scheme combines warm golden-green grass, dark cattle silhouettes, and muted earth tones, framed by a thin white border. The composition places human-animal proximity in the lower right, balanced against expansive open landscape.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, (Lower-right-of, Foreground-view), (Bend, Forward), ((Blue, Dark-shade), Clothing), ((Tan, Light-shade), Clothing)), Interacts-with, ((Human-agent, (Lower-center-of, Foreground-view), (White, Clothing)), (Human-agent, (Lower-center-of, Foreground-view), (Red, Clothing), (Grasp, (Box, Light-shade))))), ((Dirt-terrain, Path), (Lower-left-of, Foreground-view)), (Group-of, (Animal, (Black, Grassy-terrain)), Background-view), (Fence, (Manufactured-material, Center-of)), ((Green, Hill), Background-view), ((Plant, Leaf-covered-terrain), (Left-side-of, Background-view)), (Building, (Upper-right-of, Background-view)), ((White, Light-shade), Outdoors), (White, Boundary-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

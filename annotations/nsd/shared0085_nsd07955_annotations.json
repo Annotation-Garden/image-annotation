@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower portion of the frame, calm dark-gray water spans the entire width, reflecting the boats and dock structures above it. Centered and slightly left, a fishing boat with a white cabin and a blue-and-red hull sits prominently in the middle ground, its tall masts and rigging extending upward. To its right, multiple white boats are moored along a dock; a gray-roofed building with white siding appears at the right edge in the middle ground. On the far left, a smaller white boat floats near vertical wooden pilings. Numerous thin masts rise vertically across the central and right portions, creating a linear pattern against the darker backdrop. The background is dominated by a dense evergreen forest of tall green conifers covering the middle and upper regions, rising up a hillside. Above and behind the trees, in the upper portion, low gray-white fog or mist partially obscures the treetops beneath an overcast, pale gray sky. The overall color scheme combines muted greens, grays, and whites, with the boat's blue and red providing the only vivid accents. Lighting is diffuse and flat, consistent with overcast conditions.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, (Foreground-view, (Water, Dark-shade, Gray)), ((Boat, White, (Cabin)), (Blue, Red)), (Center-of, Foreground-view), (Boat, White, Group-of), (To-right-of, (Boat, White)), ((Building, White, (Roof, Gray)), Right-edge-of), ((Boat, White, Small), To-left-of, (Wooden, Pilings)), (Background-view, (Plant, Green, Tall, Group-of, Hill)), (Upper-center-of, (Gray, White)), (Overcast, Gray, Sky)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

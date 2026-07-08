@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two women dominate the frame center, engaged in an Ultimate Frisbee interaction; the woman on the right, wearing a dark long-sleeved shirt and dark leggings, has just released a white flying disc visible in the upper-center-right, her right arm extended following through the throw. To her left stands the second woman in a white jersey marked \"seattleriot\" and the number \"31,\" wearing dark shorts and cropped leggings, positioned in a defensive crouch with arms outstretched, occupying the center-left. Both women have their hair pulled back and lean forward athletically. The background, upper portion of the frame, shows a green grassy field, a chain-link fence, dark coniferous trees, and a long light-colored building; multiple seated and standing figures appear along the fence line, blurred and distant, in the upper-right and upper-left. The color scheme combines vivid green grass in the lower two-thirds with muted grays, greens, and whites above. Lighting appears diffuse and overcast, casting soft shadows beneath the players. The composition centers the active players sharply against a softly blurred, horizontally banded background, emphasizing motion and depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Female, (Torso, Clothing, Black), (Upper-leg, Clothing, Black)), ((Right, Upper-extremity), (Release, (White, Disc, Circle))), (Upper-right-of, Photograph)), ((Human-agent, Female, (Torso, Clothing, White, Label/Seattleriot), Label/Number-31, (Upper-leg, Clothing, Black)), Crouching, (Upper-extremity, Stretch), (Center-of, Photograph)), (((Human-agent, Female), Interacts-with, (Human-agent, Female)), Perform), (Foreground-view, (Human-agent, Female)), (Background-view, (Grassy-terrain, Green), (Manufactured-material, Label/Chain-link-fence), (Plant, Black), (Building, Length)), (Background-view, (Group-of, Human-agent), (Upper-right-of, Photograph), (Upper-left-of, Photograph)), (Green, Grassy-terrain), (Gray, White, Green), (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

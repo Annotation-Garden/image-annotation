@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, a young man is captured in a dynamic crouched pose while riding a skateboard, his body angled diagonally from the upper-left toward the lower-center. He wears a dark sleeveless jersey with orange trim and white lettering, gray pinstriped shorts, black knee pads on both legs, and sneakers with orange accents; an orange glove covers his left hand, which reaches forward and downward. The skateboard, oriented horizontally across the lower-center of the frame, has visible orange wheels and rests on gray asphalt pavement that spans the entire lower half. Behind him, a low concrete or stone barrier wall runs horizontally across the middle of the image, separating the road from the background. The upper background contains a row of green trees and foliage on the left and right, with a small reddish structure faintly visible among them, beneath a pale, overcast gray-white sky occupying the top edge. The overall color scheme combines muted grays of the road and wall with green vegetation and pops of orange. Lighting is diffuse and soft, consistent with an overcast day, minimizing harsh shadows.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Crouching, (Ride, Skateboard))), ((Human-agent), Interacts-with, (Skateboard)), (Skateboard, Horizontally-oriented, (Lower-center-of, Image)), ((Orange, Wheel), Part-of, Skateboard), (Jersey, Black, (Orange, White)), (Shorts, Gray), ((Black, Assistive-device), (On, Knee)), (Clothing, Orange), ((Orange, Glove), (Left, Hand)), (Road, Gray, (Below, Skateboard)), ((Concrete, Boundary-of, Road), Horizontally-oriented, (Center-of, Image)), (Background-view, (Green, Plant), (Left-side-of, Image)), (Background-view, (Green, Plant), (Right-side-of, Image)), (Background-view, (Red, Building)), (Sky, Gray, White, (Top-edge-of, Image)), (Overcast)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

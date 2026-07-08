@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph presents an overhead view of a white square plate filled with food, occupying the entire frame. In the upper-center to upper-right, a baked potato sits split open, garnished with green parsley leaves scattered across its light brown skin. Dominating the right and lower-center portions, a large grilled steak displays dark brown, charred surfaces with visible grill marks and a slightly reddish interior tone. On the left side, spanning upper to lower positions, green vegetables appear: saut\u00e9ed asparagus spears with charred tips cluster in the middle-left, while bright green broccoli florets occupy the lower-left corner. Two red cherry tomatoes rest in the lower-right, providing a color accent against the dark meat and white plate. The color scheme combines earthy browns of the steak and potato, vibrant greens of the vegetables, red tomato accents, and the neutral white plate bordered by a thin black frame. Lighting comes from the upper area, casting soft shadows toward the lower portions and highlighting the glossy, moist textures of the food. The composition is densely packed, with foreground food elements filling nearly all space and minimal empty plate visible. A signature appears in the lower-right corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Aerial-view, ((White, Square, Furnishing, Label/Plate), (Contained-in, Black)), (Ingestible-object/Staple-food, Savory, Label/Baked-potato, Brown, (Upper-center-of, Label/Plate), (Green, Plant, Label/Parsley)), (Ingestible-object/Main-dish, Savory, Label/Steak, Brown, (Lower-right-of, Label/Plate)), (Ingestible-object/Staple-food, Savory, Green, Label/Asparagus, (Left-side-of, Label/Plate)), (Ingestible-object/Staple-food, Savory, Green, Label/Broccoli, (Lower-left-of, Label/Plate)), (Ingestible-object/Staple-food, Savory, Red, Label/Cherry-tomato, (Lower-right-of, Label/Plate)), (Label/Signature, (Lower-right-of, Label/Plate))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant foreground element is a large gray elephant occupying the central and left-to-center portion of the frame, standing on a curved sandy platform bordered by a concrete retaining wall that runs across the lower third of the image. The elephant faces right, with its trunk extending downward toward the sandy surface in the lower-right area, and two visible white tusks protrude from its mouth on the right side of its head. The sandy enclosure surface fills the lower-right quadrant, lighter tan in color against the elephant's darker gray body. In the background, the upper portion of the frame contains dense green foliage and tree branches occupying the left and upper-left region, while a beige and gray building with rectangular windows appears on the right side; the building's wall bears silhouette decorations resembling giraffe shapes in the center-right. The overall color scheme combines earthy grays, tans, and greens under bright, diffuse daylight that produces soft shadows beneath the elephant. The composition balances the massive animal against the natural and architectural backdrop, with the horizontal concrete wall grounding the lower boundary and the vegetation framing the top.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Large, Gray, Animal/Elephant), (Above, (Sandy-terrain, Lower-right-of))), ((Animal/Elephant, Center-of), (To-left-of, (Beige, Gray, Building, (Right-side-of, Window, Rectangle)))), ((White, Teeth), Part-of, (Animal/Elephant, Head)), (Green, Plant, Upper-left-of), (Gray, Building-part, Lower-center-of, Boundary-of), (Bright, Daylight, Diffuse)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

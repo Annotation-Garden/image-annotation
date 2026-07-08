@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an elegantly arranged table set diagonally across the frame, receding from the lower-left foreground toward the upper-right background. In the immediate foreground, positioned center-left and lower, stands a wine glass filled with dark red liquid, its bowl catching soft reflections; behind it, slightly right, sits a clear water glass filled with liquid and small bubbles. A second dark-red wine glass appears in the middle-left area, and multiple empty stemmed glasses cluster along the left edge, their transparent bowls overlapping in the mid-ground. To the right of center, a white rectangular plate holds small portions of food, including pale strips and darker morsels, resting on the dark tabletop. Further back, additional plates with food and more glasses recede into a shallow, blurred depth of field, growing increasingly out of focus toward the upper right. The color scheme is dominated by warm browns, ambers, and deep reds against the dark reflective table surface, punctuated by cooler transparent glass tones. Lighting is warm and directional, producing bright highlights on the glassware and liquid surfaces while surrounding areas fall into shadow, creating an intimate, restaurant-like ambiance.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Furnishing, Label/Table, Oblique), ((Glass, Label/Wine-glass), (Red, Ingestible-object/Main-dish)), ((Glass, Label/Water-glass), Contained-in), ((Glass, Label/Wine-glass), Red), (Group-of, (Glass, Label/Wine-glass)), ((White, Rectangle, Label/Plate), (Ingestible-object/Main-dish, Savory)), (Depth, Background-view), (Brown, Orange-color, Red), Warm",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 394,
+            "total_tokens": 815
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 815
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

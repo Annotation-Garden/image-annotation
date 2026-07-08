@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph's dominant subject is a small brown bird perched in the upper-center to upper-left region of the frame, occupying the foreground with sharp focus. The bird faces left in profile, showing muted brownish-gray plumage on its back, a paler grayish breast, dark eye, and thin legs gripping a curved dark surface. This surface, a black or dark-toned rounded edge, spans diagonally across the center of the image and constitutes the mounting point where the bird stands; it appears to be the upper rim of a car side mirror. The lower and central portion of the frame is filled by a large reflective glass surface, the mirror itself, which displays blurred reflections in blue-gray, green, and lighter tones, indicating an out-of-focus background of foliage and possibly built structures. The overall color scheme is subdued and cool, dominated by browns, grays, blues, and greens. Lighting is soft and diffuse, without harsh shadows or bright highlights, suggesting overcast or shaded conditions. In the lower-left corner, faint text reading \".77studioz.com\" appears as a watermark. The composition places the sharp bird against a soft, reflective backdrop, creating clear foreground-background separation through depth of field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Photograph, Sensory-event, Visual-presentation, (Animal, Brown, Small, (Upper-center-of, Foreground-view)), ((Animal, Brown), (Above, (Car, Label/Side-mirror))), ((Car, Label/Side-mirror), (Black, Curved, Rotated)), (Glass, Reflective, Blurred, Blue-color, Green-color, Gray-color, Lower-center-of), (Foliage, Background-view, Blurred), (Soft, Luminance-contrast/Low), (Word, ID/.77studioz.com, Lower-left-of), (Depth, Focused-attention)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 399,
+            "total_tokens": 820
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 820
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

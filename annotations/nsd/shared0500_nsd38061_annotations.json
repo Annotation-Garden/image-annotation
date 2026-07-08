@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A group of elephants dominates the foreground of this photograph, positioned across the center and left of the frame, standing on a patch of green grass in the lower portion of the image. The most prominent elephant occupies the left-center foreground, its gray body facing rightward with a visible ear, eye, and trunk extending downward toward the ground. A second elephant stands in the center, distinguished by a lighter, tan-brown hide with darker mottled patches on its head and face, its trunk curling downward and eyes visible. A third elephant is partially obscured behind these two, its darker gray form visible in the upper-center and right portions. The elephants stand closely together, bodies touching, suggesting proximity within the herd. Behind them, the background shows churned brown mud or earth on the right side, a thin light-colored fence line, and blurred green foliage and trees along the upper edge. The overall color scheme combines earthy grays, browns, and greens under soft, diffuse, overcast lighting without harsh shadows. The composition places the animal cluster as the central mass, with the natural setting receding into a hazy, out-of-focus background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Group-of, Animal/Elephant)), ((Group-of, Animal/Elephant), (Center-of, Photograph)), ((Group-of, Animal/Elephant), Standing, (Green, Grassy-terrain)), ((Animal/Elephant, Gray, (Ear, Eye, Nose)), (Lower-left-of, Photograph)), ((Animal/Elephant, Tan, Brown, (Head, Face, Eye, Nose)), (Center-of, Photograph)), ((Animal/Elephant, DarkGray), (Upper-right-of, Photograph)), (Group-of, Animal/Elephant, Close-to), (Background-view, (Brown, Muddy-terrain), (Right-side-of, Photograph)), (Background-view, (Green, Plant)), (Background-view, Gray, Brown, Green), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the center-lower portion of the frame, a surfer in a black wetsuit is captured mid-action, crouched with knees bent and arms outstretched for balance atop a pale, cream-colored surfboard. His body is angled slightly to the right, with dark hair and a focused expression visible on his downturned face; the white board tilts diagonally beneath him. Surrounding him in the foreground and lower frame is a breaking wave, producing abundant white foam and spray, with droplets flung upward and to the right of the rider. The wave's churning white water dominates the lower and right sections, while smoother, darker blue-gray water occupies the mid and left areas. In the background, a flat horizon line divides the composition roughly one-third from the top, separating the deep blue ocean from a paler, hazy blue sky above. The lighting appears natural and diffuse, casting soft shadows on the surfer's wetsuit and illuminating the white spray brightly. The overall color scheme is cool, dominated by blues, grays, black, and white. The composition places the dynamic human subject centrally against the expansive, textured seascape backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, (Black, Clothing), (Brown, Hair), Focused-attention, Crouching), Interacts-with, (Item, Label/Surfboard, Cream)), ((Human-agent), (Grasp, (Item, Label/Surfboard))), (Item, Label/Surfboard, White, Rotated, (Below, (Human-agent))), (Natural-feature, Label/Wave, (White, Water)), (Foreground-view, (White, Label/Foam)), (Lower-right-of, (White, Label/Spray)), ((Blue, Gray, Water), Left-side-of), (Background-view, (Blue, Label/Ocean), Below, (Blue, Light-shade, Label/Sky)), (Horizontally-oriented, Label/Horizon), (Center-of, (Human-agent)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the frame's center and lower portion is a double-decker bus, painted predominantly yellow with blue accents along its lower panels, angled diagonally so its front faces the lower-left while its body recedes toward the upper-right. An illuminated destination display across the upper front reads \"Manchester X41\" in orange text, and a registration plate is visible on the lower front. The bus occupies the foreground, positioned on a grey road surface that spans the lower edge. In the background, filling the upper and left portions, dense green foliage from large trees creates a leafy canopy, with a substantial tree trunk rising in the center-right, partially overlapping the bus. To the right and center-right, at mid-distance, sit low brick buildings with dark rooflines and storefronts, alongside parked and moving cars\u2014a dark hatchback near center-right and a lighter silver vehicle further right. The color scheme combines the vivid yellow bus against saturated greens and muted brick reds and greys. Lighting appears natural and diffuse, consistent with an overcast or partly shaded daytime scene, casting soft shadows beneath the trees. The composition balances the bright vehicle against organic and architectural background elements.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Vehicle, Yellow, Blue, Label/Double-decker-bus), (Center-of, Image)), ((Vehicle, Yellow, Blue), (Rotated, Oblique)), (Visual-presentation, (Word, ID/Manchester X41), Orange), (Vehicle, (Bottom-edge-of, Image)), (Road, Gray, (Bottom-edge-of, Image)), (Background-view, (Plant, Green), (Upper-left-of, Image)), ((Plant, Large), (Center-of, Image)), (Building, Brown, (Right-side-of, Image)), (Car, Dark-shade, (Center-of, Image)), (Car, Silver, (Right-side-of, Image)), (Yellow, Green, Brown-color, Gray), (Outdoors, Light-shade), Diffuse",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 387,
+            "total_tokens": 808
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 808
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

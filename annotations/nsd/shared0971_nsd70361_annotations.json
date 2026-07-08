@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a small bathroom rendered predominantly in white and cream tones, with a cool blue accent visible on the doorframe at the far left edge of the frame. In the lower-left foreground sits a white vanity cabinet with a countertop supporting a white sink basin; a blue-and-white pump bottle of soap rests on the counter near the faucet, positioned center-left. Above the vanity, occupying the upper-left and center portions, hangs a large rectangular mirror reflecting a white shower curtain and part of the room. In the center-right lower area stands a white toilet with its lid down, its base on a pale tiled floor. To the right, spanning the background and mid-ground, a white shower curtain hangs from a rod along a bathtub enclosure, with a silver-toned faucet and spout visible at the lower right against the tub. The lighting is soft and even, appearing to come from overhead, casting minimal shadows and lending a slightly dim, muted quality. Compositionally, the elements recede diagonally from the foreground vanity toward the background tub, creating depth. No people or animals are present in the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Room, Label/Bathroom, (White, Label/Cream)), ((Blue, Door), Left-edge-of, Photograph), ((White, Furnishing, Label/Vanity-cabinet), Lower-left-of, Photograph), (White, Furnishing, Label/Sink-basin), ((Blue, White, Label/Soap-bottle), Center-of, Photograph), ((Rectangle, Label/Mirror), Upper-left-of, Photograph), ((White, Furnishing, Label/Toilet), Lower-right-of, Photograph), (White, Furnishing, Label/Shower-curtain), (Silver, Label/Faucet), (White, Label/Bathtub), (Depth), (Low, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-center and right portions of the frame, a man with short dark hair wears a red short-sleeved T-shirt bearing a printed graphic and blue denim jeans; he is seated on a white plastic chair, leaning forward with both hands resting near a small round metal table topped with food on white plates, holding utensils as if in the act of eating. On the table's left side sits a clear plastic bottle with an orange label containing orange-colored liquid, alongside a partially filled glass of the same orange beverage. Additional white plastic chairs are visible in the mid-ground to the right, unoccupied. The background is dominated by a textured wall painted bright red on the left and yellow on the right, with a gray doorway and window frames in the upper-center. The lower-left ground shows gray cobblestone paving. The color scheme is vivid, contrasting red, yellow, and orange with the man's red shirt and blue jeans. Lighting is bright natural daylight, casting distinct shadows and creating strong highlights on the man's face and the glossy tabletop, indicating an outdoor sunny setting.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Human-agent, Experiment-actor, (Head, Hair, Black), (Torso, (Red, Clothing)), (Lower-extremity, (Blue, Clothing))), (Sit-down, (White, Chair)), Lower-center-of, Right-side-of), ((Human-agent), Interacts-with, ((Ingestible-object/Main-dish, Savory), (White, Tool))), ((Human-agent), Interacts-with, (Table, Small, Circle, Steel)), (Table, To-left-of, ((Orange-color, Content), (Tool, Label/Bottle), (Orange, Label))), (Glass, (Orange-color, Content)), (White, Chair, Right-side-of, Background-view), (Building-part, Red, To-left-of, (Building-part, Yellow), Background-view), (Door, Gray, Upper-center-of, Background-view), (Window, Upper-center-of, Background-view), (Terrain, Gray, Paved-terrain, Lower-left-of), (Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower portion of the frame, a white table draped with a light cloth holds several printed papers, a white smartphone at center, and a display board on the right edge decorated with green-bordered text panels and small illustrations. On the left side of the frame stands a tall man in a dark charcoal suit, white dress shirt, and dark tie; he is positioned in the center-left, bending slightly forward with his head tilted down and hands together near his waist, appearing to look at the table's contents. To his right, in the center of the frame, stands a young girl with long light-brown hair wearing a dark patterned dress with a name tag on her chest; she faces the man, creating an interaction between the two figures across the table. In the background, a green-and-white banner with maroon lettering reading fragments like \"BRO\" and \"SCHOOL\" hangs behind them, alongside wooden paneling and what appears to be an easel on the upper right. The color scheme combines dark suit tones, warm wood, white cloth, and green-maroon accents. Lighting is soft and even, illuminating both faces. A watermark reads \"Connecticut Senate Democrats.\"",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (White, Table, (Boundary-of, (Light-shade, Clothing)))), (Document, Item-count/2), (White, Cellphone, Center-of), ((Right-edge-of, (Display-device, (Green, Textblock))), (Small, Drawing)), ((Human-agent, Male, (Clothing, Dark-shade), Standing, Bend, (Head, Downward)), Left-side-of), ((Human-agent, Female, (Hair, Brown, Length), (Clothing, Dark-shade, Pattern), (Label, Chin)), Center-of), (((Human-agent, Male), Interacts-with, (Human-agent, Female))), (Background-view, ((Green, White, Textblock), (Maroon, Letter))), (Background-view, (Wood, Building-part)), (Upper-right-of, Tool), (Soft, Luminance), (Label/Connecticut-Senate-Democrats)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

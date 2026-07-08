@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, a man stands on the right side of the frame, occupying the lower-center to right region; he wears a dark red short-sleeved shirt, blue jeans, and a gray brimmed hat, with his right arm raised diagonally upward toward the upper right, extended toward the sky. To his left, positioned in the lower-center of the frame, stands a child wearing a yellow-green short-sleeved shirt, dark shorts with light trim, white socks, and a gray hat; the child faces away and slightly left, appearing to look upward. Both stand in tall green grass dotted with small white and yellow flowers, which fills the lower third of the image. In the upper-left portion of the frame, against the sky, a small multicolored kite with a trailing tail is airborne. The background consists of an expansive pale blue sky filled with soft, diffuse gray-white clouds spanning the upper two-thirds. The lighting is even and overcast, producing muted, soft shadows. The overall color scheme combines green grass, blue and gray sky, and the figures' red, yellow, and denim tones, arranged in a balanced open composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, (Lower-center-of, Right-side-of)), (Standing, ((Red, Clothing), (Blue, Clothing), (Gray, Clothing)), (Upper-extremity, Right, (Above, Towards)))), ((Human-agent, Lower-center-of), (Standing, ((YellowGreen, Clothing), (Clothing), (White, Clothing), (Gray, Clothing)), Look-at)), (Green, Field, Tall), ((White, Plant), (Yellow, Plant)), (Upper-left-of, (Icon, Multicolored)), Background-view, (Blue, Azure, Above), (Gray, White, Above), Overt-attention",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

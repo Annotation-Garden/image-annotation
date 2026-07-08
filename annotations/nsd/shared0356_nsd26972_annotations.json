@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The foreground is dominated by a single male tennis player positioned slightly left of center, occupying the lower and central portions of the frame from roughly waist height downward and extending upward to his head. He wears a bright orange short-sleeved shirt with darker orange vertical stripes on one side, dark gray shorts, and a white cap bearing a visible logo. His body is turned to his right in a two-handed backhand stance, both hands gripping the handle of a tennis racket held near his left shoulder; the racket's black frame with red accents and white strings extends into the upper-left region of the image. A white wristband is visible on his lower left arm. His knees are bent and legs spread in an athletic ready position, with bare arms and legs exposed. The background fills the entire frame behind him with a uniform muted green surface, likely a court wall, showing faint irregular lighter streaks but no distinct objects, people, or horizon lines. The lighting is even and diffuse, casting soft shadows and creating no harsh highlights. The overall color scheme contrasts warm orange against cool green, with the centered subject creating a balanced, isolated composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Male, Human-agent, Experiment-participant, (Standing, (Knee, Flex))), ((Human-agent), Interacts-with, (Tool, Label/Tennis-racket)), ((Orange, Clothing), (Gray, Clothing), (White, Clothing)), (Tool, Label/Tennis-racket, (Black, Red, White)), ((Male, Human-agent), To-left-of, (Center-of, Image)), (Background-view, Green, (Building-part))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

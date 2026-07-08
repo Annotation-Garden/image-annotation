@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a large, steep mountainside covered in green vegetation that fills the entire upper two-thirds of the frame, sloping downward from upper right to lower left. The mountain shows varied textures with darker patches of trees clustered along its face and lighter, sunlit grassy meadows, particularly toward the upper center and left where sunlight catches the slope. In the far upper left, a pale gray rocky peak is faintly visible against a clear blue sky occupying the top-left corner. In the middle background, running horizontally across the lower portion of the mountain, sits a band of small buildings and structures forming a settlement at the water's edge, positioned mostly center and right. The foreground and lower half of the frame consist of a broad expanse of calm, reflective blue-green water that mirrors muted tones of the landscape above. A single small blue boat, the only clear human-associated object, sits in the lower-right-center of the water, appearing occupied but distant. The overall color scheme is dominated by greens and blues, with soft, natural daylight illuminating the scene, creating a tranquil, balanced composition split between mountain and lake.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Mountain, Large, Green, Steep), (Above, Water)), (Mountain, (Contained-in, (Plant, Green))), (Rocky-terrain, Gray, Upper-left-of), (Sky, Blue, Clear, Top-edge-of), ((Group-of, Building), (Center-of, Photograph)), (Water, Blue-color, Green-color, Lower-center-of), ((Boat, Small, Blue), (Lower-right-of, Water)), Outdoors, Real-world",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

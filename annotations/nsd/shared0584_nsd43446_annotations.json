@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A young person occupies the central foreground of the frame, positioned slightly right of center and extending from the upper-middle portion down to the lower edge. They have short dark hair and are wearing a white short-sleeved shirt with a dark logo on the left chest area, layered over a dark long-sleeved undershirt, along with dark shorts featuring a red accent on the right side. In the lower-left portion of the foreground, the person holds a bright yellow-green soccer ball with black stripes and orange coloring against their left hip, cradled by their left arm, establishing a direct physical interaction between hand and object. Their right arm hangs down along the body. The background fills the entire frame behind the subject with an expansive, uniformly green grassy field that recedes toward a lighter horizon line near the top edge. The lighting appears soft and diffuse, casting no harsh shadows, illuminating the subject's face and white shirt evenly. The overall color scheme is dominated by green tones from the field, contrasted by the white shirt and the vivid yellow-green ball, creating a balanced, centered composition with the subject standing frontally facing the viewer.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Young, (Hair, Short, Black), (Clothing, White, Label/Shirt), (Clothing, Black, Label/Undershirt), (Clothing, Black, Label/Shorts, Red)), ((Human-agent), Interacts-with, (Ball, Yellow-color, Black, Orange, Label/Soccer-ball)), (Ball, (Contained-in, (Hand, Left))), (Grassy-terrain, Green, Background-view), (Luminance-contrast/Low), ((White, Label/Shirt), To-right-of, Center-of), (Foreground-view, Center-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 366,
+            "total_tokens": 787
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 787
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

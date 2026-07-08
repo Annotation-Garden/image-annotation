@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, a person rides a motorcycle, positioned facing toward the viewer; the rider wears a white and gray horizontally striped short-sleeved shirt, dark pants, a dark helmet, and a black face mask, with hands gripping the handlebars. The motorcycle is silver and black with a visible front headlight, spoked wheels, and dual exhaust pipes, traveling along a gray paved road that fills the lower edge of the image. Behind the rider, in the background across the middle and upper portions of the frame, stands a large modern building constructed of glass and metal, featuring a distinctive sloped, angular glass fa\u00e7ade and a curved rounded section on the left. A circular emblem is mounted at the top center of the building against the sky. A strip of green grass and low shrubs separates the road from the structure, running horizontally through the middle. The overall color scheme is muted, dominated by grays, silvers, and greens, with cool tones from the glass building. Lighting appears bright and diffused, suggesting daylight, casting soft shadows beneath the motorcycle. The composition is balanced and centrally weighted.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-participant, (Ride, Vehicle)), (Foreground-view, Center-of, Lower-center-of)), (Vehicle, Silver, Black, Foreground-view), ((White, Gray, Horizontally-oriented, Clothing), (Description, Label/Striped-short-sleeved-shirt)), (Dark-shade, Clothing), (Dark-shade, Assistive-device), (Black, Clothing), ((Human-agent, (Grab, Vehicle))), (Gray, Paved-terrain, Road, Bottom-edge-of), ((Building, Large, Glass, Steel), (Background-view, Upper-center-of)), (Sloped-terrain, Glass), (Circle, Icon, Top-of, Building), (Green, Grassy-terrain, Plant, Center-of), ((Human-agent), Interacts-with, (Vehicle)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 378,
+            "total_tokens": 799
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 799
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

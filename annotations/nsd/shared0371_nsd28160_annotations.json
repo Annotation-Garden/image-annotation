@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a metal roasting pan filled with assorted roasted vegetables, occupying nearly the entire frame and photographed from a slightly elevated angle. The dark gray pan has raised edges visible along all four sides, with a reflective black surface beneath and behind it in the upper portion of the frame, suggesting a glossy countertop or stovetop. The vegetables are distributed across the pan's center and fill both foreground and background: purple onion wedges appear in the upper-left, upper-right, and center-lower areas, showing charred brown edges; bright yellow parsnips or squash spears radiate throughout, including center and lower-left; orange baby carrots cluster in the center and left; green broccoli florets are scattered across the middle and lower regions; and round red radishes with pinkish-red skins dot the left, right, and lower portions alongside red cherry tomatoes. The color scheme is warm and varied\u2014yellows, oranges, purples, greens, and reds\u2014set against cool gray metal. Lighting appears artificial and directional, creating bright highlights on the wet, glistening vegetable surfaces and pan edges, with reflections in the upper background. The composition is densely packed, roughly centered, and lacks any people or",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Image, (Aerial-view, Densely-packed)), (Tool, Gray, (Metal, Steel), (Contained-in, ((Ingestible-object/Staple-food, Savory), (Purple, Onion), (Yellow, Parsnip), (Orange, Carrot), (Green, Broccoli), (Red, Radish), ((Red, Tomato), Sweet)))), (Black, (Background-view, (Reflective, Surface)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

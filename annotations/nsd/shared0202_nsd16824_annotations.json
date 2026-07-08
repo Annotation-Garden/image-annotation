@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A line of cross-country skiers traverses the frame from lower-left to center, positioned along the lower-middle horizontal band of the image. The nearest skier, in the foreground on the left, wears a red jacket, dark pants with red side stripes, and carries a large green backpack with a red top; this person grips ski poles that plant into the snow. Behind this figure, additional skiers recede in a diminishing line toward the center-right, becoming smaller and less distinct as they approach the background, several appearing as small colored dots in red and dark tones. Parallel ski tracks and trail lines cut through the snow, leading the eye toward the center. The foreground and midground consist of a vast flat expanse of white snow. In the background, a low mountain range spans the horizon under a bright blue, cloudless sky occupying the upper two-thirds of the frame. The sun blazes in the upper-center-right, producing a starburst flare and washing out surrounding sky. The color scheme is dominated by white snow, blue sky, and accents of red clothing. Lighting is harsh and high-contrast, casting shadows leftward from the skiers.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-actor, ((Red, Clothing), (Dark-shade, Clothing, (Red, Label/Side-stripes)), (Large, Green, Backpack, (Red, Top-of)), (Grasp, Tool), Foreground-view, Lower-left-of)), (Group-of, Human-agent, (Small, Red), (Small, Dark-shade), Background-view, Center-of), ((Human-agent), Interacts-with, (Tool)), (Path, White, Snow, (Towards, Center-of)), (Large, Flat, White, Snow, Foreground-view), (Mountain, Background-view, (Below, Sky)), (Blue, Sky, (Top-of, Image)), (Sun, Upper-right-of, (Luminance-contrast/High)), (Luminance-contrast/High), (Leftward, Label/Shadows)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph presents a plated meal shot from an elevated angle against a red surface visible at the upper edges. In the lower-left and center foreground, a green salad dominates, composed of leafy greens, shredded pale cheese, cubed golden croutons, and dark olives, with a slice of cucumber and a red-skinned radish positioned at the lower-left edge. In the upper-left, a small clear plastic cup holds a translucent red liquid, likely a dressing, resting on a lighter plate surface. Toward the center and upper-right, curved slices of golden-brown toasted bread lean diagonally, accompanied by ruffled green lettuce leaves. In the upper-right corner, a breaded, fried item appears partially cut off by the frame. The lower-right foreground contains a white cup filled with a chunky, creamy white sauce, likely tartar. The overall color scheme combines vibrant greens, warm golden-browns, creamy whites, and accents of red from the surface and dressing. Lighting is bright and natural, casting soft shadows beneath the cups and food items. The composition fills nearly the entire frame with food, arranged densely with overlapping textures and no visible people or animals.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Aerial-view, ((Red, Background-view)), (Ingestible-object/Main-dish, Green, Savory, (Plant, Leaf-covered-terrain)), ((Ingestible-object/Staple-food, Yellow, Savory), Label/Croutons), ((Ingestible-object/Staple-food, Black, Savory), Label/Olives), ((Ingestible-object/Staple-food, Green), Label/Cucumber), ((Ingestible-object/Staple-food, Red), Label/Radish), ((Red, Content), (Contained-in, Box), Label/Dressing), ((Ingestible-object/Staple-food, Brown, Savory), Label/Toast), ((Ingestible-object/Junk-food, Brown, Savory), Label/Fried-item), ((White, Content), (Contained-in, Box), Label/Sauce), Bright, Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 390,
+            "total_tokens": 811
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 811
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

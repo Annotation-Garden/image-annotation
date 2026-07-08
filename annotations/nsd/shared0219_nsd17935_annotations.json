@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, four people sit around a red diner table positioned in the lower-center of the frame, each holding a hot dog or sandwich in a paper wrapper, all facing the camera. On the left, a man in a dark shirt with short blond hair opens his mouth widely while holding food near his face; beside him and slightly behind, a second man in a light shirt also grips a sandwich. On the right side, a woman with reddish-brown hair holds her food up, and a man with glasses and curly hair smiles broadly while holding a sandwich in the lower-right corner. The red table holds a yellow \"PEPSI\" cup, additional clear plastic cups, red-and-white paper food trays, and a small container of red sauce in the center. In the background, the upper portion of the frame displays yellow walls covered with framed collages of many small photographs, plus a red sign on the upper right listing white text about beef and buns, and a blue-and-white circular emblem. The color scheme is dominated by bright yellow, red, and white, with even indoor lighting and a centered, symmetrical group composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, Indoors, (Symmetrical, Center-of, Group-of, Human-agent), ((Red, Furnishing, Label/Diner-table), (Lower-center-of, Screen-window)), ((Human-agent, Male, (Black, Clothing), (Short, Hair, Yellow)), (Open, Mouth), Interacts-with, (Ingestible-object/Junk-food, Savory, Label/Hot-dog)), ((Human-agent, Male, (Light-shade, Clothing)), Behind, Interacts-with, (Ingestible-object/Staple-food, Savory, Label/Sandwich)), ((Human-agent, Female, (Brown, Hair)), (Right-side-of, Screen-window), Interacts-with, (Ingestible-object/Staple-food, Savory, Label/Sandwich)), ((Human-agent, Male, Glasses, Hair, Smile), (Lower-right-of, Screen-window), Interacts-with, (Ingestible-object/Staple-food, Savory, Label/Sandwich)), (Yellow, Ingestible-object, Label/Pepsi-cup), (White, Plastic, Label/Cup), ((Red, White), Paper, Label/Food-tray), (Red, Ingestible-object/Main-dish, Savory, Label/Sauce, Center-of), (Background-view, Upper-center-of, (Yellow, Building-part, Label/Wall)), (Photograph, Group-of, Label/Collage), ((Red, Label/Sign), Upper-right-of, White, Character), ((Blue, White), Circle, Label/Emblem), (Yellow, Red, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 348,
+            "total_tokens": 769
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 769
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

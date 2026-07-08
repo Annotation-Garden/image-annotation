@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph centers on a man kitesurfing, positioned in the middle-right of the frame in the foreground, his torso and head upright while he leans back. He wears a dark long-sleeved wetsuit and a harness around his waist, gripping a control bar with both hands; his right arm extends toward the lower-right while multiple thin control lines run diagonally upward from the bar toward the upper-left corner of the frame, exiting beyond view. Beneath and in front of him, in the lower-center, is a gray and white surfboard partially submerged, with white foam and spray churning around it and to the left, indicating active motion through the water. The background consists entirely of green-gray seawater filling the entire frame, with a slightly darker band of water and a small breaking wave crest across the upper portion. The overall color scheme is muted, dominated by grayish-green tones with the man's black wetsuit providing contrast. Lighting appears diffuse and even, consistent with an overcast sky, casting no harsh shadows. The composition is dynamic, with diagonal lines and off-center placement. Small white text reading \"(C) David G\u00f3m\" appears in the lower-right corner.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Human-agent, Male, (Torso, Upright), (Lean-back), ((Torso, Torso-chest), (Contained-in, Clothing)), (Waist, (Contained-in, Assistive-device)), ((Human-agent), Interacts-with, (Tool, Label/Control-bar))), (Grasp, (Tool, Label/Control-bar)), ((Upper-extremity, Right), (Towards, Lower-right-of)), ((Item, Label/Control-lines), (Towards, Upper-left-of)), ((Gray, White, Tool, Label/Surfboard), (Lower-center-of, Photograph)), (White, Label/Foam-and-spray, Move), (Green-color, Gray, Water, Background-view), (Label/Wave-crest, (Top-of, Photograph)), (Overcast, Diffuse), (White, Textblock, ID/(C) David G\u00f3m, (Lower-right-of, Photograph))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

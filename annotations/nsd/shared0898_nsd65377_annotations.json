@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and right portions of the frame, stands a bright yellow fire hydrant with a rounded cap, two side outlet caps secured by chains, and a larger front outlet cap; it is planted in a small dirt patch containing dry twigs and debris, lower center-right. A gray concrete sidewalk fills the left and lower-left of the frame, meeting a red-painted curb that runs diagonally along the lower-left edge. In the background, upper portion of the frame, a paved street runs horizontally with several parked vehicles: a silver sedan on the left, a white station wagon in the center-left, and a darker sedan center-right, all facing rightward along the far curb. Above and behind them, a light-colored building with windows and a doorway spans the upper edge, alongside a signpost near the upper right. The color scheme is dominated by muted grays of pavement, the saturated yellow hydrant, and the red curb accent. Lighting appears diffuse and overcast, producing soft shadows beneath the hydrant and cars. The composition places the hydrant as the dominant central subject against a receding urban backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Yellow, Item), (Center-of, (Photograph))), ((Item, Yellow), (Contained-in, (Dirt-terrain, Lower-center-of))), (Gray, Path, Left-side-of), ((Red, Boundary-of, Road), Lower-left-of), (Background-view, Road, Upper-center-of), ((Silver, Car), (Left-side-of, Road)), ((White, Car), (Center-of, Road)), ((Gray, Car), (Center-of, Road)), (Rightward, (Car)), ((Light-shade, Building, (Window), (Door)), Top-edge-of), (Item, Upper-right-of), Outdoors, Urban, Overcast",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

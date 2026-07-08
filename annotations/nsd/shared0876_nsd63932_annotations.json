@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-right portion of the frame, stands a golden-brown Cocker Spaniel with long, wavy, damp fur on the white bow of a green-hulled boat; its body faces left while its head turns toward the viewer, and its four paws are planted on the pale deck. To the left and extending across the center, a second green boat with a white upper edge floats parallel, partially visible and empty. Beneath both boats, in the lower-left and central foreground, dark green water reflects rippling light and pale streaks. In the background, spanning the upper portion of the frame, a weathered red-brick wall shows visible mortar lines, cracks, and areas of discoloration; at upper-left a grayish horizontal ledge or step protrudes. The overall color scheme combines warm reddish-browns of the brick and dog against cooler greens of the boats and water, creating contrast. Lighting appears soft and diffuse, without harsh shadows, suggesting an overcast day. Compositionally, the diagonal boat edges lead toward the dog, which serves as the focal point, while the horizontal brick wall anchors the upper background firmly.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Animal-agent, (Animal/Cocker-spaniel, Brown, Wet)), (Center-of, (Boat, Green))), (Lower-right-of, (Animal/Cocker-spaniel)), ((Boat, Green, White), To-left-of, (Boat, Green)), (Lower-left-of, (Water, Green, Dark-shade)), (Background-view, (Building-part, Red, Brown)), (Upper-left-of, (Building-part, Gray)), (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two black bears rest on reddish-brown rock formations that occupy the lower and central portions of the frame. The first bear lies on the left-center, its body stretched horizontally with its head resting toward the lower left, eyes appearing closed, and one paw extended forward across the rock. The second bear is positioned in the lower-right foreground, facing the camera with its head raised; its fur shows brown and reddish tones around the muzzle and chest, and its snout is tan-colored, resting near the rock's edge. Behind the bears, in the upper-right background, a large tan and gray log or fallen tree trunk spans horizontally. The upper portion of the frame contains green foliage and trees under a clear blue sky occupying the upper-left corner. The lighting is bright and natural, consistent with daytime sun, casting soft shadows beneath the bears on the rock surfaces. The overall color scheme combines the dark black bear fur, warm reddish-brown rocks, green vegetation, and blue sky, creating strong contrast. Compositionally, the two bears anchor the lower two-thirds, while natural background elements fill the upper region, balancing organic textures throughout.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Bear, Black, Resting), (Center-of, Foreground-view)), ((Animal-agent, Animal/Bear, Black, Resting), (Lower-right-of, Foreground-view)), ((Rough, Red, Brown), (Lower-center-of)), ((Natural-object, Label/Log, Tan, Gray), (Upper-right-of, Background-view)), (Plant, Green), (Sky, Blue, Clear), (Outdoors, Bright)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

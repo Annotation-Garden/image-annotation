@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and dominating the frame, is a light pink plush teddy bear held up in front of a person's face; the bear displays two black oval eyes in its upper-center region, a black triangular nose at the center, and a curved black stitched smile in the lower-center. Two human hands grasp the bear symmetrically, the left hand at the bear's left side and the right hand at the right side, both showing red-painted fingernails. Behind and above the bear, a white brimmed hat occupies the upper portion of the frame, partially obscuring the person's head, while strands of light blonde hair are visible on the left side. The person appears to wear a gray knitted garment, visible in the lower-left and lower-right corners. In the background at right, a white flower with green foliage is partly visible, and blurred reddish-orange tones appear on the left. The overall color scheme is soft and pastel, dominated by pinks, whites, and muted grays. Lighting is bright and diffuse, creating gentle shadows. The composition is symmetrical and tightly framed, emphasizing the central bear.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Toy, Label/Teddy-bear, Pink, Light-shade, (Foreground-view, Center-of)), ((Black, Oval, Eye), (Upper-center-of, Toy)), ((Black, Triangle, Nose), (Center-of, Toy)), ((Black, Curved, Smile), (Lower-center-of, Toy))), ((Human-agent, Experiment-participant), Interacts-with, (Toy, Label/Teddy-bear)), (Symmetrical, ((Left, Hand), (Left-side-of, Toy)), ((Right, Hand), (Right-side-of, Toy)), ((Red, Fingers))), ((White, Clothing, Label/Brimmed-hat), (Above, Toy), (Upper-center-of)), ((Blonde, Hair, Light-shade), (Left-side-of)), ((Gray, Clothing), (Lower-left-of), (Lower-right-of)), ((White, Plant), (Green, Leaf-covered-terrain), (Right-side-of, Background-view)), ((Orange, Red), (Left-side-of, Background-view)), (Pink, White, Gray)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 348,
+            "total_tokens": 769
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 769
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

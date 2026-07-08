@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a single zebra positioned in the center-right of the frame, occupying the foreground and standing in profile facing right. The zebra's body extends horizontally across the middle of the image, with its head raised and ears erect in the upper-right region, and its tail visible at the left edge of its body in the center-left. Its black-and-white striped coat is the most striking visual element, with vertical stripes along the neck and torso transitioning to more horizontal banding on the legs and hindquarters. The lower foreground contains green grass and vegetation, with a pale, bare branch or log extending diagonally across the lower portion of the frame beneath the zebra's legs. The background consists of blurred dark green and brown foliage, trees, and shrubbery filling the upper half of the image, creating depth through soft focus. The overall color scheme combines the monochromatic zebra against natural greens and earthy browns. Lighting appears diffuse and even, consistent with overcast or shaded daylight, producing soft shadows. The composition centers the animal against a naturalistic vegetative backdrop, with no other animals, people, or manmade objects visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Animal-agent, (Center-of, Foreground-view), Horizontally-oriented, Rightward, (Black, White, Pattern)), ((Head, Upper-right-of), Upward), (Ear, Upward), ((Torso, Neck), Vertically-oriented), ((Lower-leg, (Lower-center-of, Foreground-view)), Horizontally-oriented), (Green, Plant, (Lower-center-of, Foreground-view)), (Path, White, (Below, Lower-leg)), (Background-view, (Dark-shade, Green, Brown), Plant), (Outdoors, Cloudy)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 370,
+            "total_tokens": 791
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 791
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

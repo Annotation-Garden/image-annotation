@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the left and center portions of the frame, a man wearing a white chef's hat and white T-shirt leans forward while using both hands to prepare a pizza that rests on a round plate in the lower-center of the image; the pizza displays a red tomato base with scattered pale toppings. On the right side of the frame, stacked diagonally from the lower-center toward the upper-right, sits a tall column of cardboard pizza boxes printed with bold red \"PIZZA\" lettering on a tan background, positioned in the middle ground. In the background, occupying the upper-center and upper-right, dark metal equipment and machinery are visible, including a cylindrical component and shelving, partly obscured and dimly lit. The upper-right corner shows a bright vertical strip of warm light. The overall color scheme is dominated by warm tones\u2014reds, tans, and browns\u2014contrasted against the man's white clothing and the darker background. Lighting appears warm and artificial, casting soft illumination on the man's face and hands while leaving background areas in shadow. The composition is diagonal, with the box stack drawing the eye rightward and the man's action anchoring the left.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Human-agent, Experiment-actor, (White, Clothing), ((Bend, Forward), (Grasp, (Ingestible-object/Main-dish, Savory, Red, (Center-of, Circle))))), ((Human-agent), Interacts-with, (Ingestible-object/Main-dish)), ((Box, Red, Tan, Word, Label/PIZZA), (To-right-of, (Human-agent))), (Machine, (Cylinder), Background-view, Black), (Warm, Light-shade, Upper-right-of), (Foreground-view, Left-side-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 377,
+            "total_tokens": 798
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 798
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

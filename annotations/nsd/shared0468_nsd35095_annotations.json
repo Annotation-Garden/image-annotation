@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Two geese dominate the foreground of this photograph, positioned centrally and occupying the majority of the frame. The frontmost goose stands on the right side, its body angled toward the left, with an orange beak, gray-brown head, and a prominent gray wing spread outward and downward, revealing layered feathers with darker edges; its orange legs and webbed feet are visible in the lower center resting on grass. The second goose stands behind and to the left, its long neck extending upward into the upper-left portion of the frame, also displaying an orange beak and grayish plumage with white underparts. The two birds overlap spatially, their bodies close together, creating a sense of paired proximity though no direct interaction is evident. The background consists of a flat expanse of green grass with patches of brown, dried vegetation, extending across the upper and lower edges of the frame. The overall color scheme combines muted grays and browns of the birds against the green and tan ground, with orange accents from the beaks and feet. Lighting appears natural and directional from the right, casting soft shadows beneath the geese and illuminating their feathered textures.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Animal-agent, Label/Goose, ((Orange, Label/Beak), (Gray-color, Brown-color, Head), (Gray-color, Wave, Label/Wing), (Orange, Lower-extremity), (Orange, Foot))), (Animal-agent, Label/Goose, ((Orange, Label/Beak), (Gray-color, White, Neck)))), (((Animal-agent, Label/Goose), Close-to, (Animal-agent, Label/Goose)), Center-of), (Background-view, (Green, Grassy-terrain), (Brown-color, Plant)), (Green-color, Brown-color, Gray-color, Orange), (Outdoors, Rural)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

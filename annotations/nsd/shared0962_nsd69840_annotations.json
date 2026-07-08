@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A stack of cookbooks and magazines dominates the left and center of the frame, arranged in a leaning vertical pile that occupies the upper and middle portions, transitioning into horizontally stacked books in the lower foreground. In the immediate foreground at the bottom, two books are visible with legible spines reading \"ONE POT COOKING\" and \"PRESERVES & PICKLES,\" their covers displaying food photography including what appears to be a roasted dish with vegetables. Behind and above these, additional titles are readable, including \"Cooking with Style PASTA\" at the top, \"GOOD COOKING\" and \"Good Housekeeping\" in the center-left, and \"AUSTRALIAN LIFESTYLE COOKBOOK\" on a dark blue spine. On the right side of the frame stands a white microwave or oven appliance with a vertical control panel featuring buttons and text labels such as \"POWER LEVEL\" and \"STOP CLEAR.\" The lighting is warm and artificial, casting a yellowish glow across the upper books. The color scheme combines warm reds, oranges, and yellows from the book covers with the neutral white of the appliance. The composition is densely packed, with books interacting by leaning and stacking against one another and against",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Book, Label/ONE-POT-COOKING), (Book, Label/PRESERVES-AND-PICKLES), (Book, Label/Cooking-with-Style-PASTA), (Book, Label/GOOD-COOKING), (Book, Label/Good-Housekeeping), (Book, Label/AUSTRALIAN-LIFESTYLE-COOKBOOK, Blue), (Ingestible-object/Main-dish, Savory), (Left-side-of, Center-of), Red, Orange, Yellow), (Machine, White, Right-side-of), (Push-button, Label/POWER-LEVEL), (Push-button, Label/STOP-CLEAR), Indoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 400,
+            "total_tokens": 821
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 821
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

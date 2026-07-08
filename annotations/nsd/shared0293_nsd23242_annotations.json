@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a laptop displays a decorative lid featuring a cartoon penguin wearing headphones, surrounded by colorful dots and musical notes on a blue background, with blue string lights glowing along its base. In the foreground right, a man with glasses and short dark hair rests his cheek against his left hand, elbow propped, gazing downward with a neutral expression; he wears a plaid blue shirt partially draped with a multicolored knit blanket, and his right hand rests near a computer mouse on a glass surface. Beside him, lower-center-right, a gray cat lies quietly against his body. In the background left, a second man with glasses and a beard, wearing a brownish long-sleeved shirt, sits and appears to look toward the laptop. Behind both figures stand tall wooden bookshelves filled with books and media, and a lit floor lamp in the center-background casts warm illumination. The overall color scheme combines warm ambient browns and yellows from the lamp with cooler blues from the laptop and string lights. Lighting is dim and indoor, creating soft shadows. The composition is horizontally balanced between two seated figures framing the central bright lamp.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Indoors, Dim, (Foreground-view, Lower-left-of, (Laptop-computer, (Cartoon, (Animal-agent, Label/Penguin, Headphones), Dots, (Musical-sound, Blue), Blue))), (Lower-left-of, (Laptop-computer, (Blue, Label/String-lights, Luminance))), (Foreground-view, Right, ((Human-agent, Glasses, (Head, Hair, Black)), (Cheek, (Contained-in, (Left, Hand))), (Elbow, Support), Downward, Emotionally-neutral, (Torso-chest, (Blue, Clothing, Label/Plaid)), (Clothing, Label/Knit-blanket, Multicolored))), ((Human-agent), Interacts-with, (Computer-mouse, (Right, Hand))), ((Human-agent), Interacts-with, (Animal-agent, Label/Cat, Gray)), (Lower-center-of, Right, (Animal-agent, Label/Cat, Gray, Lie-down)), (Background-view, Left, ((Human-agent, Glasses, (Face, Hair)), Sitting, (Clothing, Brown), (Attend-to, Laptop-computer))), (Behind, (Building-part, Wooden, Book, Media)), (Center-of, Background-view, (Furnishing, Label/Floor-lamp, (Yellow, Luminance))), (Brown, Yellow, Blue), (Center-of, Background-view, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

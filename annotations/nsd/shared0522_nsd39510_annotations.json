@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Three zebras occupy the foreground, positioned across the lower-central band of the frame on a grassy plain; one stands at the left of center with its head lowered and turned toward the viewer's left as it grazes, a second stands at the center facing away with its striped rump toward the camera, and a third appears on the right, also with its head lowered toward the ground, grazing. The grass in the foreground is a mix of green and yellowish-brown, sparse and patchy, with visible bare soil and a small dark mound in the lower-left area. In the background, occupying the upper portion of the frame, is a dense pinkish-white band that appears to be a large flock of flamingos or birds clustered along the horizon, and above and behind them sits a blurred dark green line of vegetation or trees. The lighting is soft and diffuse, suggesting overcast or hazy conditions, casting no harsh shadows. The color scheme combines the black-and-white of the zebras, the muted greens and browns of the field, and the pale pink upper strip. The composition is horizontally layered, balanced, and evenly distributed left to right.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Animal-agent, Label/Zebra), (Lower-center-of, Grassy-terrain))), ((Animal-agent, Label/Zebra), (Lower-left-of, Grassy-terrain), (Black, White, Lower-head)), ((Animal-agent, Label/Zebra), (Center-of, Grassy-terrain), (Black, White, Backward)), ((Animal-agent, Label/Zebra), (Lower-right-of, Grassy-terrain), (Black, White, Lower-head)), (Grassy-terrain, Green, Yellow, Brown, Sparse), (Dirt-terrain, Lower-left-of), (Background-view, (Group-of, (Animal-agent, Label/Flamingo), Pink, White, (Above, Horizontally-oriented))), (Background-view, (Plant, Dark-shade, Green, Blurry)), (Outdoors, Field)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-center to lower-left portion of the frame, rest two handheld electronic devices lying on a light gray, speckled granite or concrete surface; the upper device is predominantly yellow with a black rounded top and a dark rectangular screen, while the lower device, positioned slightly right and below it, is black with a small blue-tinted screen and a black rounded end, and the two devices lie close together, nearly touching, angled diagonally. The background, filling the upper half and right side of the frame, consists of dense green foliage with pointed, serrated leaves interspersed with numerous clusters of small yellow and orange flowers, most concentrated in the upper-left, upper-right, and right-center areas. The overall color scheme pairs the cool neutral gray of the stone surface with warm yellows and oranges of the flowers and the yellow device, balanced against the abundant green vegetation. Lighting appears soft and diffuse, without harsh shadows, suggesting overcast or shaded outdoor daylight. Compositionally, the smooth gray surface anchors the lower-left, contrasting with the textured floral background, and the two devices form the clear focal point against the plain ground.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Item, Yellow, (Top-of, Black), (Rectangle, Black)), (Close-to, (Item, Black, (Blue, Screen-window))), (Lower-center-of, (Steel, Gray, Speckled))), (Background-view, (Plant, Green, (Serrated, Leaf)), (Yellow, Orange), Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

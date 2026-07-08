@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A tabby cat dominates the foreground, positioned across the center and lower portion of the frame, lying down with its body extending from the center toward the lower-right corner where its striped hindquarters and tail are visible. The cat's head is oriented toward the upper-center-left, with both ears erect and its yellow-green eyes gazing directly forward toward the viewer. Its fur displays brown, tan, and black tabby striping, with a lighter cream-colored chest and muzzle, and dark M-shaped markings on the forehead. To the left of the frame is a reddish-brown wooden surface, appearing as vertical and diagonal slats or panels, occupying the left-center and upper-left region. In the background, spanning the upper-center and upper-right, is a dark green metal structure with ornate curved, scrolling patterns, suggesting decorative ironwork. The overall color scheme is warm, dominated by browns, tans, and rust-reds, contrasted by the darker green background. Lighting appears soft and natural, illuminating the cat's face and body from the front, casting subtle shadows. The composition places the cat centrally as the focal subject, with the animal resting against the wooden and metal surfaces behind it.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Cat), (Center-of, Foreground-view)), ((Animal-agent, Animal/Cat), Prone), ((Torso, (Brown, Tan, Black, Pattern)), (Lower-right-of, Foreground-view)), (Head, (Upper-center-of, Left-side-of)), (Ear, Vertically-oriented), (Eye, Yellow, Green, (Stare, Towards)), (Torso-chest, White-color), (Mouth-part, White-color), (Forehead, Black, Pattern), ((Wood, Red-color, Brown-color, Vertically-oriented), (Left-side-of, Upper-left-of)), ((Steel, DarkGreen, Pattern), (Upper-center-of, Upper-right-of))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 392,
+            "total_tokens": 813
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 813
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

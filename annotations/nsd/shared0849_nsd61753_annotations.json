@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center-left, a long-haired brown and gray tabby cat sits upright with its front paws resting on the keyboard of an open black laptop, positioned in the lower-center of the frame, creating an interaction where the cat appears to be touching or using the device. The laptop's screen faces right toward the viewer. Occupying the lower-center and lower-right foreground is a brightly multicolored crocheted zigzag blanket featuring red, orange, yellow, green, blue, purple, and white chevron stripes spread across a bed. In the background right, a wooden nightstand with two visible drawers holds a lit lamp with a white shade in the upper-right corner and an orange-mottled glass base, plus a white patterned paper cup beside it. On the left side of the frame is a rough-textured rock or slate formation against a green-painted wall, while the right background wall is pink-purple with a visible electrical outlet. Lighting emanates warmly from the lamp, illuminating the cat and surroundings against dimmer edges. The overall color scheme combines cool green and purple walls with vivid, saturated blanket hues, producing a visually busy, warmly lit domestic composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Animal-agent, Animal/Cat, Brown, Gray)), (Sitting, (Animal-agent, Animal/Cat)), ((Animal-agent, Animal/Cat), Interacts-with, (Laptop-computer, Black, Open)), ((Laptop-computer), (Lower-center-of, Screen-window)), (Computer-screen, Part-of, Laptop-computer), (Lower-center-of, (Furnishing, Label/Bed)), (Lower-right-of, (Furnishing, Label/Bed)), ((Furnishing, Label/Blanket, (Pattern, Label/Zigzag-chevron), Red, Orange, Yellow, Green, Blue, Purple, White), Contained-in, (Furnishing, Label/Bed)), (Background-view, Right-side-of, (Furnishing, Label/Nightstand, Wood)), ((Furnishing, Label/Lamp, White, Orange, Glass), Upper-right-of, (Furnishing, Label/Nightstand)), ((Ingestible-object, Label/Paper-cup, White, Pattern), (Adjacent-to, (Furnishing, Label/Lamp))), (Left-side-of, (Natural-object, Rocky-terrain, Rough)), ((Building-part, Label/Wall), Green, (Left-side-of, Screen-window)), ((Building-part, Label/Wall), Purple, Pink, Right-side-of), ((Device, Label/Electrical-outlet), Part-of, (Building-part, Label/Wall)), (Luminance-contrast/High, (Furnishing, Label/Lamp)), (Warm, Color)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

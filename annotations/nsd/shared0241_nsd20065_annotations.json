@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant foreground element is an orange-and-white cat occupying the center and lower portion of the frame, its body oriented diagonally with the head in the center-right and one white-pawed front leg extended toward the lower-left corner. The cat's face shows amber-yellow eyes, a pink nose, and prominent white whiskers, and it wears a thin collar visible at the neck. The cat rests inside an open suitcase whose gray-taupe fabric interior forms a textured, quilted surface beneath and around it. In the upper-left and upper-center background sits a crumpled white cloth or garment, and toward the upper-right there is a pile of folded clothing in muted purple and pink tones inside the suitcase lid. Surrounding the suitcase edges at the top and left are darker brown and olive-toned bag materials. The upper-right and lower-right corners reveal a pale blue-green quilted bedspread beneath the luggage. The overall color scheme is muted and warm, combining orange, white, tan, and gray with soft pastel accents. Lighting appears diffuse and natural, casting gentle shadows without harsh highlights. The composition centers attention on the reclining cat looking upward toward the viewer.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Animal-agent, Animal/Cat, (Orange, White), (Center-of, (Rotated, Body))), ((Head, (To-right-of, Center-of)), (Upper-extremity, White, (Towards, Lower-left-of)))), ((Eye, Yellow), (Nose, Pink), White, Clothing, (Attach-to, Neck)), ((Animal-agent, Animal/Cat), Contained-in, (Box, Open, (Gray, Tan, Tactile-texture))), (White, Clothing, (Upper-left-of, Background-view)), (Clothing, (Purple, Pink), (Upper-right-of, Contained-in, Box)), ((Brown, Olive), Man-made-object, (Boundary-of, Box)), (Blue-color, Green, Furnishing, (Lower-right-of, Underneath, Box)), (Item-count/Some, (Orange, White, Tan, Gray)), (Fixate, (Animal-agent, Animal/Cat), Upward)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 394,
+            "total_tokens": 815
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 815
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

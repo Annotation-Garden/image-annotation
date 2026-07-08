@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two giraffes occupy the central and left portions of the frame; a large adult giraffe stands center-right with its long neck bent downward and to the left, lowering its head toward a smaller juvenile giraffe positioned in the lower-left center, and their heads nearly touch, suggesting close physical interaction. The adult's body extends rightward, with its legs planted on a bare dirt surface in the lower-right region, while the juvenile stands on green grass at the left. A thin black fence line runs vertically through the lower-center foreground, crossing in front of and behind the animals' legs. In the background, a dense row of green trees and foliage spans the upper portion of the image, and a tall gray pole rises vertically on the left side. A large grayish rock sits in the mid-right background on the grass. The color scheme combines earthy browns and tans of the giraffes' patterned coats with vivid green grass and darker green trees, plus muted gray tones. Lighting appears soft and diffuse, consistent with an overcast day, producing even illumination and minimal harsh shadows across the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Adult-giraffe, Large), Interacts-with, (Animal-agent, Label/Juvenile-giraffe, Small)), ((Animal-agent, Label/Adult-giraffe), (Center-of, Foreground-view)), ((Animal-agent, Label/Juvenile-giraffe), (Lower-left-of, Foreground-view)), ((Head, (Bend, Downward, Leftward)), Part-of, (Animal-agent, Label/Adult-giraffe)), ((Brown-color, Tan), (Animal-agent, Label/Adult-giraffe)), ((Dirt-terrain), (Lower-right-of, Foreground-view)), ((Grassy-terrain, Green), Left-side-of), ((Nonbiological-artifact, Label/Fence, Black, Vertically-oriented), (Lower-center-of, Foreground-view)), ((Plant, Green, Group-of), (Top-of, Background-view)), ((Item, Label/Gray-pole, Vertically-oriented, Gray-color), (Left-side-of, Background-view)), ((Natural-object, Label/Rock, Large, Gray-color), (Right-side-of, Background-view)), (Luminance-contrast/Low, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 354,
+            "total_tokens": 775
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 775
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

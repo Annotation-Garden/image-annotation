@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned in the center-left of the frame and occupying the lower-middle region, a surfer in a dark wetsuit rides a light-colored surfboard along a breaking wave. The surfer is bent at the knees in a crouched stance, arms slightly extended for balance, actively interacting with the white, frothing whitewater of the wave that curls and sprays to their left. This foaming wave dominates the lower-left quadrant, with churned white water and turquoise tones where the wave crests. The mid-ground consists of deep blue ocean water extending across the full width of the frame, its surface textured with small ripples and darker patches. In the background, spanning the upper portion, several small sailboats with white and one reddish sail appear as distant specks along the horizon line, set against a hazy blue-gray landmass or mountain range beneath a lighter sky. The overall color scheme is dominated by cool blues and whites, with the surfer's dark form providing contrast. Lighting appears bright and natural, casting clear definition on the wave's spray. The composition places the surfer off-center, following a diagonal wave line.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Experiment-actor, (Clothing, Black), (Lower-center-of, Image))), ((Human-agent), Interacts-with, (Board, Light-shade)), ((Human-agent), Interacts-with, (Natural-object, White, (Water, Turquoise))), (Crouching, Bend, (Knee)), ((Upper-extremity), Extended), (Wave, White, Turquoise, (Lower-left-of, Image)), (Background-view, (Natural-object, Blue, Ocean, (Center-of, Image))), (Background-view, (Boat, White, (Group-of, Boat)), (Sail, Red), (To-right-of, Horizon)), (Mountain, Blue-color, Gray, (Above, Horizon)), (Blue, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 361,
+            "total_tokens": 782
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 782
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

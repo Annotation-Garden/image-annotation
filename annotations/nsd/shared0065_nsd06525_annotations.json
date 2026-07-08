@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, centered and occupying the lower-middle portion of the frame, a person is snowboarding down a snow-covered slope, positioned slightly below center and facing away from the viewer. The individual wears a red jacket, dark pants, a dark knit cap with a small pom, dark gloves, and has both arms extended outward for balance, the left arm reaching toward the left side and the right arm toward the right. A dark bag or pouch is visible at the person's waist. Snow spray is faintly kicked up near their feet in the lower center. The background, filling the upper two-thirds of the frame, consists of numerous bare, leafless trees with dark brown and gray trunks rising vertically across the entire width, denser toward the upper left. A low stone wall appears in the middle-left background, partially covered in snow. Small clusters of brownish dried leaves cling to lower branches on the left. The overall color scheme is muted and cool, dominated by white snow, gray-brown trees, with the red jacket providing the sole vivid accent. Lighting appears diffuse and even, consistent with an overcast winter day, casting minimal shadows.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Ride, (Below, Center-of)))), ((Human-agent, (Red, Clothing)), (Dark-shade, Clothing), (Dark-shade, Clothing, Head-part), (Dark-shade, Clothing, Hand-part)), (Human-agent, ((Left, Upper-extremity), Leftward), ((Right, Upper-extremity), Rightward)), (Dark-shade, Assistive-device, (Center-of, Waist)), (Snow, Lower-center-of), (Background-view, (Upper-center-of, Field), (Plant, Brown-color, Gray-color, Vertically-oriented)), ((Building-part, Mineral, Snow), (Left-side-of, Center-of)), (Brown-color, Leaf-covered-terrain, Left-side-of), (Snow, White, Gray-color, Brown-color), (Outdoors, Cold), (Luminance-contrast/Low, Grayscale)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

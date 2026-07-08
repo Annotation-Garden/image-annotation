@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an interior room dominated by an ornate patterned tile floor featuring a repeating geometric design in gray, white, and dark tones, which occupies the entire lower foreground and extends toward the background. In the foreground lower-left, a yellow-striped cushioned bench or daybed with wooden legs is partially visible. In the center-background, a low bookshelf filled with colorful book spines stretches horizontally, above which hangs a rectangular abstract painting in blue, black, and white on a pale pinkish-beige wall. In front of the bookshelf, in the center-middle ground, stand metal-framed chairs with white seats around a table area. To the right side, a boxy older-style television set sits on a black wheeled cart in the middle ground, with a wooden stool or bench beside it in the lower-right foreground. A tall floor lamp stands center-right in the background. On the left, white-framed glass doors and windows admit soft daylight, and a bright window on the right emits strong light. The overall color scheme is warm and muted with beige walls, contrasted by the cooler patterned floor, producing balanced, naturally lit, symmetrically composed interior.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, (Room, (Beige, Wall)), (Cross, Pattern, (Gray, White, Dark-shade), Boundary-of), (Foreground-view, Lower-left-of, (Furnishing, (Yellow, Horizontally-oriented))), (Center-of, Background-view, (Furnishing, Book)), (Above, (Rectangle, Painting, (Blue, Black, White))), (Center-of, (Furnishing, White)), (To-right-of, (Display-device, (Black, Cart))), (Lower-right-of, Foreground-view, Furnishing), (Center-of, Background-view, (Furnishing, Label/Floor-lamp)), (Left-side-of, (Door, Window, (White, Glass))), (Right-side-of, (Window, Luminance-contrast/high)), Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 380,
+            "total_tokens": 801
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 801
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

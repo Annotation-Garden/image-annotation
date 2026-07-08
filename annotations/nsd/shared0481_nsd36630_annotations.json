@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a park bench occupying the foreground, extending diagonally from the lower-left corner toward the center-right of the frame. The bench features horizontal wooden slats, weathered brown in tone, forming both the seat and the backrest, supported by ornate cast-iron armrests and legs painted green. The nearest armrest, positioned in the lower-left foreground, displays a decorative scrollwork pattern with curled, spiral detailing. A second armrest is visible at the center of the composition, dividing the seating area. Behind the bench, in the background, dense green foliage fills the upper portion of the frame, including narrow leaves, shrubbery, and small light-colored blossoms scattered near the top. A trimmed hedge runs horizontally behind the bench's backrest. In the lower-right corner, a paved gray surface, likely a path, is partially visible. The overall color scheme combines warm brown wood tones with cool greens from the metal and vegetation. Lighting appears natural and bright, with sunlight illuminating portions of the wooden slats and casting soft shadows across the seat, suggesting daytime outdoor conditions. The composition emphasizes the bench through its diagonal placement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Furnishing, Label/Park-bench, Brown, (Wooden-material)), (Center-of, Foreground-view)), (Furnishing, Label/Wooden-slats, Horizontally-oriented, Brown), (Metal, Green, Label/Cast-iron-armrest), ((Metal, Green, Label/Armrest, Pattern), (Lower-left-of, Foreground-view)), (Plant, Green, (Background-view)), (Leaf-covered-terrain, Green), (Plant, Label/Blossoms, Light-shade), (Plant, Label/Hedge, (Behind, (Furnishing, Label/Park-bench))), ((Path, Gray, Paved-terrain), (Lower-right-of, Foreground-view)), (Brown, Green), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 396,
+            "total_tokens": 817
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 817
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground lower-left, a tan and white dog stands in profile facing right, its body positioned on gray pavement. In the lower-center of the frame, two cardboard boxes filled with orange tomatoes or persimmons rest directly on the ground, one bearing red printed text. Centered in the mid-ground stands a man wearing a red cap, white short-sleeved shirt, and gray trousers, facing right in profile. To the right, in the mid-ground, a person bends forward at the waist over a lower crate, wearing dark clothing, obscuring their upper body. Behind them, a fruit stall occupies the background, with numerous yellow banana bunches suspended from horizontal racks across the upper portion of the frame. Below, stacked cardboard boxes hold oranges and other produce on the left, while shelving and refrigerated cases fill the right side. Ceiling fans and hanging elements appear at the top. The color scheme is dominated by warm yellows from the bananas, oranges from the fruit, and muted grays and browns of the boxes and pavement. Lighting is flat and natural, consistent with an overcast day, casting soft, minimal shadows across the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Tan, White, Animal/Dog, Standing, Horizontally-oriented, Rightward), (Lower-left-of, Photograph)), ((Gray, Paved-terrain), Below), ((Box, (Ingestible-object/Staple-food, Orange-color, Sweet), (Red, Word)), (Lower-center-of, Photograph)), ((Human-agent, Experiment-actor, (Red, Clothing), (White, Clothing), (Gray, Clothing), Standing, Rightward, Horizontally-oriented), (Center-of, Photograph)), ((Human-agent, Experiment-actor, Bend, (Black, Clothing)), (To-right-of, Photograph)), Background-view, ((Yellow, Ingestible-object/Staple-food, Sweet), (Top-of, Photograph)), (Box, (Orange-color, Ingestible-object/Staple-food, Sweet), (Left-side-of, Photograph)), (Furnishing, (Right-side-of, Photograph)), (Yellow, Orange-color, Gray, Brown), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

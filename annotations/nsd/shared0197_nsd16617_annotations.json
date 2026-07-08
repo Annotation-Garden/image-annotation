@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an interior living space dominated by a warm color palette of terracotta-toned tile flooring in the foreground and lower portion of the frame, complemented by pale yellow-green walls in the background. In the lower-center and center of the frame, a patterned area rug displays cream, dark navy, and reddish geometric and figural motifs bordered by a dark band. Resting atop the rug in the center is a wooden coffee table holding a small green potted plant with pink blooms and a clear glass object. On the right side, occupying the middle-ground, sits a beige upholstered sofa with a wooden frame and visible cushions. In the upper-right corner hangs a small framed picture on the wall. On the left and background, a curtained doorway with beige drapes leads to an adjoining area where a round glass-topped table with a metal base is visible, alongside reflective glass surfaces suggesting a window or door. The lighting is warm and artificial, appearing dim and yellowish, casting soft illumination without harsh shadows. The composition balances the empty foreground floor against the furnished right and background, creating an asymmetrical, domestic arrangement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Indoors, Room, ((Tactile-texture, Ceramic, Orange-color), Bottom-edge-of), ((Yellow-color, Green-color), Background-view), ((Rectangle, Pattern, (White-color, Navy, Red)), Center-of), ((Furnishing, Wooden, Label/Coffee-table), Center-of), (Plant, Green-color, (Pink-color, Label/Blooms)), (Glass, Object), ((Furnishing, Wooden, Beige, Label/Sofa), Right-side-of, Medial), ((Painting, Small), Upper-right-of), ((Furnishing, Beige, Label/Curtained-doorway), Left-side-of), (Furnishing, Glass, Steel, Label/Round-table), (Glass, Window), (Luminance/Low, Yellow-color), Asymmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

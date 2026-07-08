@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A male alpine skier dominates the foreground, positioned center-to-left and occupying the lower and central portions of the frame, captured mid-turn in a deeply crouched racing posture with knees bent and torso leaned forward and rightward. He wears a blue and white long-sleeved racing suit, a white bib bearing partially visible text and Olympic rings on the shoulder, dark reflective goggles, a dark headband, and orange ski boots visible in the lower-center. His skis, yellow with dark markings, cut across the snow in the lower foreground, angled diagonally. He grips two ski poles, one extending to the right side of the frame, the other angled leftward, his hands in dark gloves. Behind him, a blue slalom gate pole rises vertically through the center-left, and a red gate marker appears at the upper right. The background consists of packed white and pale-blue snow with churned, textured surfaces, and orange safety netting stretches horizontally across the upper region. The color scheme combines cool blues and whites with warm orange accents. Lighting is bright and diffuse, consistent with overcast daylight, producing soft shadows beneath the skier and low overall contrast across the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Male, Experiment-actor, (Crouching, Bend, (Lower-extremity, Flex))), (Foreground-view, Lower-center-of)), (Clothing, Blue, White, Label/Racing-suit), (Clothing, White, Label/Bib, (Word, Icon)), (Glasses, Black, Label/Goggles), (Clothing, Black, Label/Headband), (Clothing, Orange, Label/Ski-boots, Lower-center-of), ((Tool, Yellow, Black, Label/Skis, Oblique), (Contained-in, (Snow, Lower-center-of, Foreground-view))), ((Human-agent), Interacts-with, (Tool, Label/Ski-pole, To-right-of)), ((Human-agent), Interacts-with, (Tool, Label/Ski-pole, Leftward)), (Clothing, Black, Label/Gloves), (Navigational-object, Blue, Vertically-oriented, Label/Slalom-gate, Center-of), (Navigational-object, Red, Upper-right-of, Label/Gate-marker), (Snow, White, Blue-color, Rough, Background-view), (Man-made-object, Orange, Horizontally-oriented, Label/Safety-netting, Above), (Blue, White, Orange), (Luminance-contrast/Low, Outdoors)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

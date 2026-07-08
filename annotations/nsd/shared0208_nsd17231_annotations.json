@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the center and upper portion of the frame is a stone structure featuring a tiled conical roof in reddish-brown tones, supported by multiple thick columns made of pinkish-red stone with lighter capitals and bases, positioned in the mid-ground. Rising above this roof at the center-top is a square clock tower with a green patinated section, a white clock face showing black numerals and hands, and a small spire crowned by a finial silhouetted against a bright, pale sky. In the upper-left, a large green leafy tree fills the background, while the upper-right shows more sky and a faint suggestion of distant rooftops. In the lower-right foreground, a light-colored building with visible windows appears, along with several small standing human figures near its base. A small blue and a lighter-colored car are parked in the lower-left mid-ground behind the columns. Orange and red flowers bloom in the lower-left foreground. The overall color scheme combines warm reddish-browns and pinks of the stonework with cooler greens of foliage and pale sky. Lighting appears bright and natural, casting shadows beneath the roof, suggesting daytime outdoor illumination with a centered, symmetrical composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Real-world, ((Building, (Roof, (Reddish-brown)), (Building-part, (Cylinder), Pink)), (Center-of, Photograph)), ((Building-part, Square, (White, Clock-face)), (Above, (Building))), ((Green, Plant), (Upper-left-of, Photograph)), ((White, Building, (Window)), (Lower-right-of, Photograph)), (Group-of, (Human-agent, Standing)), ((Blue, Car), (Lower-left-of, Photograph)), ((Orange, Plant), (Lower-left-of, Photograph)), ((Red, Plant), (Lower-left-of, Photograph)), (Manufactured-material), Symmetrical, Bright",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

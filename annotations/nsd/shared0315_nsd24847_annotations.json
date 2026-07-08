@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph presents a savanna landscape divided into distinct horizontal bands. The foreground, occupying the lower half of the frame, consists of tall, dry golden grass that fills the entire width, its blades leaning and textured, catching light across the lower-left and lower-center regions. In the middle band, running horizontally across the center of the frame, three elephants stand among darker green shrubbery and vegetation; two are clustered together on the left-center, appearing close to one another with bodies nearly touching, while a third elephant is positioned separately to the right, facing leftward toward the pair. The elephants are gray and partially obscured by the grass and bushes at their lower bodies. Behind them, in the background, a large gently sloping hill or ridge covered in dense low green and brownish vegetation rises across the upper-center and upper-right portions. Above this, the uppermost band shows a pale, hazy blue-gray sky. The overall color scheme combines warm golden-yellow tones in the foreground with muted greens and grays in the middle and upper regions. Lighting appears diffuse and natural, suggesting daytime, with soft, even illumination and minimal harsh shadows across the scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Natural-feature, Terrain, Outdoors), ((Grassy-terrain, Yellow, Dry, Foreground-view, Textured), (Lower-center-of, Photograph)), ((Group-of, Animal-agent, Animal/Elephant, Gray, Three), (Center-of, Photograph)), (((Animal-agent, Animal/Elephant), (Animal-agent, Animal/Elephant)), Close-to), ((Animal-agent, Animal/Elephant), (To-right-of, ((Animal-agent, Animal/Elephant), (Animal-agent, Animal/Elephant)))), ((Plant, Green, Dark-shade), (Center-of, Photograph)), ((Hill, Green, Brown, Sloped-terrain, Background-view), (Upper-right-of, Photograph)), ((Sky, Blue, Gray, Light-shade), (Top-of, Photograph)), (Outdoors, Daytime)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

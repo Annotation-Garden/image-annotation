@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts an elephant occupying the center and right portions of the frame, positioned in the middle ground with its head lowered toward the lower-left area. The elephant's gray, textured skin dominates the composition, showing wrinkled folds around its trunk, ear, and eye, which is visible in the center of the frame. Two small pale tusks protrude downward near the lower-center, angling toward the ground. In the foreground, tall green blades of grass rise vertically across the entire frame, particularly dense on the left and right edges, partially obscuring the animal and creating a layered depth. The background, occupying the upper-left and upper portions, consists of dark, dense foliage with green leaves and shadowed areas, suggesting a heavily vegetated environment. The overall color scheme is dominated by greens and grays, with the muted gray of the elephant contrasting against the vibrant and darker green vegetation. The lighting appears soft and diffused, with subtle highlights on the elephant's skin and the grass blades, and no harsh shadows. Compositionally, the elephant is framed by vegetation, its downward head posture suggesting it is feeding or foraging among the low plants in the lower region.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Animal-agent, Gray, (Skin, Rough, Wrinkled), (Head, Below), (Center-of, Right-side-of)), (Middle-ground)), ((Tusk, Small, Pale, Two), (Lower-center-of, Downward)), ((Plant, Green, Vertically-oriented, Foreground-view), (Left-edge-of, Right-edge-of)), ((Leaf, Green, Dark), (Upper-left-of, Upper-center-of, Background-view)), Gray-color, Green-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 386,
+            "total_tokens": 807
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 807
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

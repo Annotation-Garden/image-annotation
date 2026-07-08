@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A modern passenger train dominates the middle-ground and foreground of the frame, extending horizontally across the entire width and positioned in the center-to-right portion of the image; its front cab faces left, showing angled windows, windshield wipers, and a partial identification number reading \"465919\" on the lower-left nose. The train's livery combines white body panels with prominent yellow accents along the lower edge and front, and dark tinted passenger windows run along its side, with the blue text \"first class\" visible on the lower-right white panel. In the lower foreground, a weathered brick and concrete retaining wall runs horizontally, topped by metal railings and scattered debris, while a small green plant sprouts at the lower-left. In the upper-left background stands a tall architectural tower or turret featuring a domed, greenish oxidized-copper roof with a pointed finial. The upper-right contains a dark angular light fixture or signal mounted against the sky. The overall sky is overcast, pale gray, and flat, producing diffuse, low-contrast lighting without harsh shadows. The color scheme balances muted grays and whites with saturated yellow highlights, creating a horizontally layered, structured composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Train, White, Yellow), (Center-of, Image)), ((Train, Window, Black), Right-side-of, Train), (Word, Label/first-class, (Blue, Right-side-of, Train)), (ID/465919, (Left-side-of, Train)), ((Building-part, Rough), (Below, Train)), ((Roof, Green), (Upper-left-of, Image)), ((Device), (Upper-right-of, Image)), ((Plant, Green, Small), (Lower-left-of, Image)), (Outdoors, Gray), Horizontally-oriented",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 382,
+            "total_tokens": 803
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 803
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

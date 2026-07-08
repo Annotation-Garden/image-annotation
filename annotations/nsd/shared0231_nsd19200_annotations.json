@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower-third and extending toward the center of the frame, are multiple parallel railroad tracks with metal rails and brown wooden ties set into gray gravel ballast, running diagonally from the lower-right toward the center-left. The primary subject, a locomotive, sits in the center-left middle ground, angled toward the viewer; it displays a silver body with a dark gray roof, a red and white chevron pattern on its front, and the number \"401\" visible near the top front. Behind the locomotive, extending to the right, are several passenger railcars with silver, ribbed metal sides and blue and gray horizontal striping. In the upper-right background, a metal signal gantry spans overhead, holding multiple circular signal lights mounted on its structure. Bare and partially leafless trees, some with orange and yellow autumn foliage, fill the background across the upper portion of the frame beneath a pale, hazy sky. The lighting appears to be low-angle daylight, casting soft illumination on the train's left side and creating gentle shadows. The overall color scheme combines cool silvers, grays, and blues with warm earthy browns and muted autumnal oranges.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Path, (Made-from, Metal)), (Brown, Wood), (Gray, Gravel-terrain), (Diagonal, Oriented)), (Primary-subtask, (Train, Silver, (Roof, DarkGray), (Red, White, Pattern), Label/401)), (Background-view, (Train, Silver, Metal, (Blue, Gray, Pattern))), (Upper-right-of, (Machine, Metal, Above)), (Background-view, (Plant, (Orange, Yellow))), (Upper-center-of, (White, Sky))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the center and lower portion of the frame, a tennis player dressed entirely in white shorts and a white short-sleeved shirt with pink and blue diagonal stripes stands on green grass, his body leaning forward and his legs bent in a dynamic lunging posture. He wears a white cap, white wristbands, and white shoes, and he grips a black tennis racket in his lowered right hand near the lower-left region of the image, while a yellow-green tennis ball hovers in the air to his left, mid-frame. His extended left arm reaches forward toward the center. Behind him, a low dark green barrier runs horizontally across the middle of the frame, separating the court from a densely packed crowd of spectators filling the entire upper background. The spectators, seated and standing, wear varied clothing in blues, blacks, grays, and one visible teal shirt on the right. The overall color scheme is dominated by green grass, white attire, and muted crowd tones. Lighting appears soft and diffuse, consistent with overcast daylight, casting minimal harsh shadows across the scene and player.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Experiment-actor, (White, Clothing), (Pink, Blue, Clothing), (White, Label/Cap), (White, Label/Wristband), (White, Label/Shoe), (Lunging, Label/Posture), (Bend, Upper-extremity), (Bend, Lower-extremity))), (Human-agent, (Grasp, (Black, Label/Tennis-racket))), ((Human-agent), Interacts-with, (Black, Label/Tennis-racket)), (Yellow, Green, Ball, To-left-of, (Human-agent)), (Green, Grassy-terrain), ((Dark-shade, Green, Label/Barrier), (Center-of, Image)), (Background-view, (Group-of, (Human-agent, Clothing)), (Blue, Black, Gray, Teal, Clothing)), (Outdoors, Overt-attention), Low, (Soft, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

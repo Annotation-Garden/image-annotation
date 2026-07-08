@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground center of the frame, a person rides a mountain bike directly toward the viewer, positioned in the lower-central portion of the image. The cyclist wears a purple and white helmet, dark sunglasses, a blue and yellow sleeveless top, black shorts, blue gloves, and dark shoes, with hands gripping the handlebars and feet on the pedals, actively balancing on the bicycle. The bike has a reddish-orange frame with visible wheels, forks, and a water bottle mounted below. The person straddles the bike on a dirt trail that runs vertically through the center of the composition, extending from the lower foreground into the background. Flanking the path on both left and right sides are numerous tall, thin tree trunks and green foliage, occupying the middle and upper portions of the frame. Sunlight filters through the canopy, casting diagonal shadows across the pale, sandy-brown trail, particularly in the lower-right foreground. The overall color scheme combines earthy browns of the path, greens of the vegetation, and the cyclist's brighter blue and yellow accents. Lighting is natural and dappled, creating contrast between sunlit patches and shaded areas throughout the wooded scene.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, Center-of, (Human-agent, Ride, (Bicycle, (Red-color, Orange)))), ((Human-agent), Interacts-with, (Bicycle)), (Human-agent, (Purple, White, (Head, Clothing)), (Black, Glasses), (Blue, Yellow, (Torso, Clothing)), (Black, Clothing), (Blue, (Hand, Clothing)), (Grasp, Bicycle), (Press-foot, Pedal), (Standing, Bicycle)), (Bicycle, (Red-color, Orange), Volume), (Path, Dirt-terrain, SandyBrown, Vertically-oriented, Center-of), (Foreground-view, Path), (Background-view, Path), (Plant, To-left-of, Path), (Plant, To-right-of, Path), (Green, Plant), (Outdoors, Rural), (Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 395,
+            "total_tokens": 816
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 816
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

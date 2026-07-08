@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a tall historic tower situated in the upper-center to right portion of the frame, rising vertically against an expansive cloudy sky. The tower features a distinctive golden or copper-colored domed cap at its apex, topped by a thin spire, and displays a large circular clock face on its upper section, positioned in the center-right of the image. Below the ornate clock tower, the building broadens into a rectangular multi-story structure with numerous rows of windows arranged in a grid pattern, occupying the lower-right quadrant. In the lower-right foreground, a plainer brick building with a flat tan facade and small windows partially obscures the base of the taller structure. The sky, filling the left and upper portions of the frame, contains voluminous gray and white clouds with patches of blue peeking through, suggesting overcast but partially clearing conditions. The lighting appears diffused, with warm sunlight striking the tower's dome and upper facade from the left, creating subtle contrast against the shadowed lower sections. The overall color scheme combines muted earth tones of stone and brick with cool grays and blues in the sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Building, Label/Historic-tower, Vertically-oriented), (Upper-center-of, Photograph)), ((Building-part, Label/Domed-cap, Gold), Top-of, (Building, Label/Historic-tower)), (Clock-face, Circle, (Center-of, Photograph)), ((Building, Rectangle, Window), (Lower-right-of, Photograph)), ((Building, Label/Brick-building, Tan, Window), (Lower-right-of, Photograph)), ((Cloud, Gray, White, Blue), (Upper-center-of, Photograph)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 365,
+            "total_tokens": 786
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 786
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

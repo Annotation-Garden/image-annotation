@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is taken from inside a moving vehicle, evidenced by the dark dashboard occupying the lower foreground and edge, spanning the bottom-center and lower-right of the frame. In the immediate foreground, a multi-lane highway extends from the lower-center toward the background, marked by white dashed and solid lane lines that recede toward a central vanishing point. A single dark car is visible in the mid-ground, centered on the road, traveling ahead. Flanking the highway are bare, leafless trees in dark brown and gray tones, densely filling the left and right sides of the frame from foreground to background. In the upper-center and upper-right, green overhead highway signs are mounted on a horizontal metal gantry; the signs display white text reading directions such as \"Cabin John Pkwy,\" \"Glen Echo,\" \"Beltway,\" \"Northern Virginia,\" and \"Fairfax.\" A tall gray light pole rises along the right side, curving over the roadway. The upper portion of the frame shows a bright blue sky with wispy white clouds. The overall color scheme contrasts cool blues and muted browns; lighting appears natural and daytime, with the sky notably brighter than the shadowed, dim lower foreground.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (Vehicle, Dark, (Lower-center-of, (Bottom-edge-of, Photograph)))), ((Road, (Multiple-of, Lane)), (Lower-center-of, Photograph)), ((Car, Dark), (Center-of, Road), Ahead-of), ((Plant, Brown, Gray), (Left-side-of, Photograph)), ((Plant, Brown, Gray), (Right-side-of, Photograph)), ((Icon, Green, (Word, White)), (Upper-center-of, Photograph)), ((Device, Gray, Vertically-oriented), (Right-side-of, Photograph)), ((Background-view, Blue, White), (Top-of, Photograph)), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 396,
+            "total_tokens": 817
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 817
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

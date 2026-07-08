@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground at the lower-center and lower-right of the frame is the handlebar and instrument cluster of a motorcycle, including a round analog gauge with a visible needle and a curved, transparent windscreen rising upward from center. The road dominates the middle of the composition, running from the lower foreground into the background center, marked by a solid yellow line on the left edge and dashed white lines toward the right. In the mid-ground, center-right, several other motorcycles and riders travel ahead along the same road, with a dark car and additional vehicles slightly further away near the center. To the left, a grassy green field with scattered trees occupies the mid-left, alongside a red-and-white striped roadside marker in the lower-left corner. The background shows low buildings and structures across the center-right horizon, with hazy blue-gray mountains beyond them. Above, a clear, deep-blue sky fills the upper portion of the frame. The overall color scheme combines warm gray asphalt, green vegetation, and blue sky, under bright, direct daylight producing strong illumination and sharp shadows, with a wide, receding perspective.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Real-world, Foreground-view, ((Vehicle, Label/Motorcycle), (Lower-center-of, Foreground-view)), ((Clock-face, Circle), Lower-center-of), ((Window, Label/Windscreen), Upper-center-of), ((Road, (Yellow, Left-edge-of), (Dots, White, Right-side-of)), Center-of), ((Group-of, (Vehicle, Label/Motorcycle), Human-agent), Center-of, Ahead-of), ((Car, Black), Center-of), ((Field, Green, (Group-of, Plant)), Left-side-of), ((Navigational-object, Red, White), Lower-left-of), ((Building), Center-of, Background-view), ((Mountain, Blue, Gray), Background-view), ((Sky, Blue), Above), Bright, Luminance-contrast/High",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

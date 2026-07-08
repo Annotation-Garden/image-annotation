@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a white plate rimmed with green stripes occupying most of the frame, holding an assortment of doughnuts in the foreground center and lower portion. Two doughnuts on the right and lower-center are coated in white powdered sugar, showing distinct ring holes, while doughnuts on the upper area are topped with chopped nuts and darker brown glaze. On the left side, several doughnuts are covered in a glossy chocolate or caramel-colored icing that pools thickly over their surfaces. In the upper-right corner, a person's right hand, adorned with a gold ring on the ring finger and another on the index finger, holds a metallic knife that is inserted into a nut-topped doughnut, indicating an act of cutting or serving. The background at the top-left reveals a red cloth or napkin and a small portion of a gray surface, along with the faint edge of another plate at the far upper right. The color scheme centers on warm browns, creams, and whites, punctuated by the vivid red fabric and green plate rim. Lighting is soft and even, casting gentle shadows beneath the doughnuts, with the composition tightly filling the frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((White, Furnishing, Label/Plate), (Green, Boundary-of)), ((Ingestible-object/Dessert, Sweet), (White, Label/Powdered-sugar)), ((Ingestible-object/Dessert, Sweet), (Brown, Label/Nut-glaze)), ((Ingestible-object/Dessert, Sweet), (Chocolate, Label/Chocolate-icing)), (Foreground-view, (Group-of, Ingestible-object/Dessert)), ((Human-agent, (Right, Hand)), Interacts-with, (Metadata-identifier, Label/Knife)), ((Human-agent, (Right, Hand)), (Grasp, Tool)), ((Tool, Label/Knife), (Contained-in, Ingestible-object/Dessert)), ((Ring-finger, (Gold, Label/Ring)), (Index-finger, (Gold, Label/Ring))), (Upper-left-of, (Red, Clothing, Label/Napkin)), (Gray, Label/Surface), ((Human-agent), Interacts-with, (Ingestible-object/Dessert))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

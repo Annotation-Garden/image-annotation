@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The dominant foreground element is a baseball player positioned in the center of the frame, occupying roughly the vertical middle-left portion, dressed in a white pinstriped uniform with red lettering reading \"Phillies\" across the chest, a red cap, and a gray sleeve visible on his right arm. He holds a dark, nearly black leather glove in his lowered left hand, situated in the lower-left region of the image, and his gaze is directed downward and to the left. His skin tone is dark, and his posture is relaxed while standing. The background occupies the entire upper portion and consists of a large dark electronic scoreboard or display on the left and upper-left showing partial illuminated numerals including \"10\" and \"0:10\" in white, alongside a tan or beige vertical wall segment on the upper right. Below and behind the player stretches a green grassy field filling the lower-right and mid-right areas. The overall color scheme combines muted greens, whites, reds, and dark tones. Lighting appears diffuse and daytime, casting soft shadows beneath the figure. The composition centers the standing figure against a horizontally divided backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, (Human-agent, Experiment-actor, Standing, (Body-part, Face, (Attend-to, (Downward, Leftward))), (White, Clothing, Label/Phillies, Red), (Red, Clothing, Head), (Gray, Clothing, Upper-arm), Center-of), ((Human-agent), Interacts-with, (Black, Clothing, Hand, Lower-left-of)), (Background-view, (Display-device, Black, (Left-side-of, Upper-left-of), (Label/10, White), (Label/0-10, White))), (Beige, Building-part, Upper-right-of), (Green, Grassy-terrain, Lower-right-of), (Diffuse, Luminance)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 364,
+            "total_tokens": 785
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 785
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

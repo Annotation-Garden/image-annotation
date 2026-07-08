@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower third of the frame, is dense green and yellowish-brown vegetation including tall grasses and weeds that spread across the bottom, extending from left to right. Reddish-brown earth is visible in the lower-left area between patches of grass. Multiple sets of steel railroad tracks run diagonally through the lower-right and center, curving from the right edge toward the middle distance. In the center and left-center of the frame, at middle distance, sits a yellow diesel locomotive facing the viewer, its front angled slightly leftward, with darker green freight cars trailing behind it on the left. To its right, positioned center-right, stands a dark maroon or red locomotive on an adjacent track, partially parallel to the yellow one. Behind and above the trains, in the background, are green trees and shrubs along the right and left edges. The upper portion of the frame shows a pale blue, clear sky crisscrossed by numerous overhead electrical wires and thin utility poles. Lighting is bright natural daylight, casting soft shadows. The overall color scheme combines yellows, reds, greens, and blues, with a horizontally layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Foreground-view, Lower-center-of), (Plant, Green, Yellow, Label/Tall-grasses-and-weeds)), (Lower-left-of, (Dirt-terrain, Red, Brown)), ((Train, Steel, Label/Railroad-tracks), (Lower-right-of, Center-of)), (Center-of, (Train, Yellow, Label/Diesel-locomotive)), ((Train, Green, Dark-shade, Label/Freight-cars), (Left-side-of, (Train, Yellow, Label/Diesel-locomotive))), (Center-of, Right, (Train, Maroon, Label/Locomotive)), (Background-view, (Plant, Green, Label/Trees-and-shrubs)), (Above, (Sky, Blue, Light-shade)), (Label/Overhead-electrical-wires, Label/Utility-poles), (Sunlight, Label/Bright-natural-daylight), (Yellow, Red, Green, Blue)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 376,
+            "total_tokens": 797
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 797
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

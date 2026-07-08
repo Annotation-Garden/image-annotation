@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "This photograph displays an arrangement of fruits and vegetables on a woven straw mat with a diagonal weave pattern visible throughout. In the foreground lower-left and lower-center, several round oranges cluster together, their textured rinds catching light. To the center-right of the foreground sit two orange tomatoes, one larger and one smaller. In the center, a bunch of yellow bananas curves horizontally, with a red-and-green apple resting just below and in front of them. On the left side, multiple green pears stack vertically from upper to lower frame. In the background upper-left, orange carrots lie horizontally, while the upper-right corner contains a red mesh bag filled with brown-skinned onions. Along the right edge, two cream-colored parsnips extend diagonally. The overall color scheme is warm and saturated, dominated by oranges, yellows, greens, and reds against the neutral tan mat. Lighting appears natural and directional, coming from the upper area, casting soft shadows beneath the produce toward the lower-right. The composition is densely packed and layered, filling the entire frame with overlapping items arranged in a roughly triangular, abundant cluster.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Ingestible-object/Staple-food, Sweet, Circle, Orange-color, (Lower-left-of, Foreground-view)), (Ingestible-object/Staple-food, Sweet, Orange-color, (Lower-center-of, Foreground-view)), (Ingestible-object/Staple-food, Savory, Orange-color, Large, (Center-of, Foreground-view)), (Ingestible-object/Staple-food, Savory, Orange-color, Small, (Center-of, Foreground-view)), (Ingestible-object/Staple-food, Sweet, Yellow-color, Horizontally-oriented, (Center-of, Image)), ((Ingestible-object/Staple-food, Sweet, Red-color, Green-color), (Below, (Center-of, Image))), (Ingestible-object/Staple-food, Sweet, Green-color, Vertically-oriented, (Left-side-of, Image)), (Ingestible-object/Staple-food, Sweet, Orange-color, Horizontally-oriented, (Upper-left-of, Background-view)), (Ingestible-object/Staple-food, Savory, Brown-color, (Upper-right-of, Image)), (Red-color, (Contained-in, (Upper-right-of, Image))), (Ingestible-object/Staple-food, Sweet, Rotated, (Right-edge-of, Image)), (Tan, (Contained-in, Image)), (Diagonal, Pattern)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a grassy meadow occupying the entire frame, dominated by varying shades of green ranging from bright yellow-green in the sunlit patches to darker olive tones. In the foreground, positioned in the lower-center and slightly right of the frame, a large black bear stands in profile facing rightward, its dark fur contrasting sharply against the surrounding light-green grass, with its head lowered toward the ground as if grazing or foraging. The bear's body occupies a substantial portion of the lower-central region. In the background, in the upper-right portion of the frame, a second, smaller dark animal is visible, appearing brownish-black and partially obscured by the tall grass, positioned near what looks like a lighter dirt or worn patch of ground. Between and around both animals, the meadow contains scattered taller grass stalks and small green shrubs distributed throughout. The lighting appears natural and diffuse, consistent with daytime, casting soft illumination without harsh shadows. The overall composition places the two dark animal forms diagonally across the frame, from lower-center to upper-right, creating visual separation through depth. The color scheme is predominantly green with the two dark animal silhouettes providing tonal contrast.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Grassy-terrain, Green, (Background-view, Field)), ((Animal-agent, Black, (Lower-center-of, Photograph)), (To-right-of, (Animal-agent, Brown-color, Small, (Upper-right-of, Photograph)))), (Plant, Green, Tall), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 397,
+            "total_tokens": 818
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 818
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a bus station or urban street scene under a clear blue sky occupying the upper portion of the frame. In the foreground, occupying the lower-left and center-left, sits a red single-decker bus parked at an angle, its front facing the viewer with a visible license plate and destination signage. Adjacent to it, in the center-left middle ground, stands a blue double-decker bus oriented longitudinally along the street. Further back in the center and center-right, additional buses are visible, including a white and red single-decker and an orange or yellow bus, receding into the distance. A large beige building bearing the red \"wilkinson\" storefront sign dominates the background center, with a peaked gray roof rising above it. Black lampposts punctuate the left edge and midground. The road surface, gray asphalt, sweeps across the lower and right portions of the frame, largely empty. The overall color scheme combines warm reds and the cool blue bus against neutral beige buildings and gray pavement. Lighting is bright and directional, consistent with daytime sun, casting shadows beneath the vehicles. The composition uses receding perspective drawing the eye rightward down the street.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, (Road, Gray), (Blue, Above, Sky), ((Red, Vehicle, Label/Single-decker-bus), Foreground-view), ((Blue, Vehicle, Label/Double-decker-bus), (Center-of, Background-view)), ((White, Red, Vehicle, Label/Single-decker-bus), Background-view), ((Orange, Vehicle), Background-view), ((Building, Beige, (Roof, Gray), Label/wilkinson), (Center-of, Background-view)), (Black, Label/Lamppost, Left-side-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 374,
+            "total_tokens": 795
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 795
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower center to lower right of the frame, a white sailboat\u2014specifically a catamaran with twin hulls\u2014floats on greenish-blue water; its tall white mainsail rises through the vertical center of the image, and a smaller navy-blue portion appears near the sail's lower section. The sailboat's deck shows a canopy or bimini structure in the center. Behind it, in the background across the middle horizontal band, sits a large industrial cargo ship with a red-and-blue hull and a white upper superstructure on its left portion, positioned in the upper left and center. To the right of the ship, dark gantry cranes with angular metal frames extend upward against the sky. A white tent-like or peaked structure appears in the background on the right side. Industrial buildings and pale storage tanks line the horizon behind the water. The upper portion of the frame is filled with a cloudy, overcast gray-blue sky. The overall color scheme combines cool blues, greens, and grays with red accents from the ship, under diffuse, even lighting suggesting an overcast day, creating a layered horizontal composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, ((Boat, White, Foreground-view), (Lower-center-of, Image)), ((Boat, White, Foreground-view), (Lower-right-of, Image)), (Boat, (Height, Vertically-oriented), White), (Boat, Navy), (Boat, Furnishing, Center-of), ((Boat, (Green-color, Blue-color)), Contained-in, Water), ((Boat, (Red-color, Blue-color), White, Background-view), (Upper-left-of, Image)), (Machine, (Right-side-of, Boat)), ((Tool, DarkGray, Background-view), Upward), ((Building, White, Background-view), (Right-side-of, Image)), (Building, Background-view), (Volume, Background-view), (Sky, Gray-color, Blue-color, Upper-center-of, Cloudy)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 360,
+            "total_tokens": 781
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 781
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central-to-right portion of the frame, stands a gray horse shown in profile facing right, its body extending from the lower-left across to the right edge; the horse wears a brown leather saddle, a red-and-white rope or rein coiled near its neck, and a bridle with a numbered tag visible on its cheek. Seated atop the horse, positioned center to upper-center of the frame, is a person wearing a white cap with red detailing, a blue sleeveless vest over a light gray shirt, dark jeans, and leather chaps with worn brown boots resting in a stirrup; the rider's hands rest near the saddle horn, holding the reins, establishing direct interaction with the horse. The background fills the upper two-thirds of the image with tall, vividly green grass and a strip of darker green trees along the top edge, with a thin fence line faintly visible. The overall color scheme contrasts saturated greens against the muted grays, browns, and blues of the horse and rider. Lighting appears diffuse and even, consistent with overcast daylight, casting soft shadows beneath the horse. The composition centers the subjects against an unbroken natural backdrop.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Foreground-view, ((Human-agent, Experiment-actor), Interacts-with, (Animal-agent, Animal/Horse)), ((Animal-agent, Animal/Horse, Gray), (Right, 2D-view)), (Brown, Assistive-device, Label/Saddle), ((Red, White), Assistive-device, Label/Rope-rein), (Assistive-device, Label/Bridle, (ID/Tag-number)), ((Human-agent, Experiment-actor), Upper-center-of), (White, Red, Clothing, Label/Cap), (Blue, Clothing, Label/Vest), (Light-shade, Gray, Clothing, Label/Shirt), (Dark-shade, Clothing, Label/Jeans), (Brown, Clothing, Label/Chaps-boots), ((Human-agent), (Grasp, Label/Reins)), (Background-view, (Green, Grassy-terrain)), (Background-view, (Dark-shade, Green, Plant, Label/Trees)), (Background-view, Man-made-object, Label/Fence), Green, Gray, Brown, Blue, Outdoors, Overcast, (Luminance-contrast/Low)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 385,
+            "total_tokens": 806
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 806
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

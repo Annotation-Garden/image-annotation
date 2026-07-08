@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A flock of gulls occupies the lower and central portions of the frame, standing on pale beige sand that fills the foreground and lower-left region. The birds are clustered mainly in the center and center-right, their bodies predominantly white and light gray with darker gray wings; several display black-tipped tails and orange or yellow legs visible against the sand. In the lower-left foreground, one gull appears mottled brown, distinguishing it from the paler adults nearby. At the far left edge, a partial gull with an outstretched wing is captured, its feathers spread as if mid-movement. The upper half of the image contains the background: a body of turquoise and teal water with numerous white, foaming wave crests breaking horizontally across the frame. A dark rocky outcrop sits in the upper-left corner where the water meets the shoreline. The lighting is bright and natural, casting soft shadows beneath the birds onto the sand, suggesting daylight. The overall color scheme combines cool blues and greens of the sea with warm neutral tans of the beach and the muted grays and whites of the gulls, creating a balanced horizontal composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Animal/Gull, White, Gray, Group-of), (Lower-center-of, Image)), ((Animal-agent, Animal/Gull), (Center-of, Image)), ((Animal-agent, Animal/Gull, Brown), (Lower-left-of, Image)), ((Animal-agent, Animal/Gull, (Wave)), (Left-edge-of, Image)), (Beige, Sand, Foreground-view), ((Turquoise, Teal, River), (Above, (Beige, Sand))), (White, Wave), ((Rocky-terrain, Black), (Upper-left-of, Image)), (Outdoors, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 363,
+            "total_tokens": 784
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 784
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

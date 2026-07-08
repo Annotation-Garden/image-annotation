@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the right foreground stands a cluster of signs mounted on a metal pole: a \"STOP\" sign occupies the center-right, an \"ONE WAY\" sign with a black arrow pointing right sits above it in the upper-right, and a smaller \"3-WAY\" placard hangs below the stop sign in the lower-right; icicles dangle from the upper edges of the stop and one-way signs, indicating cold conditions. The background left-of-center features a multi-story brick building with several illuminated windows glowing warm yellow. Center and center-left show a snow-covered street with several parked cars, partially obscured by snow, positioned in the mid-ground near leafless, bare trees whose branches spread across the upper-center portion of the frame. The foreground lower half is dominated by textured, tire-tracked snow covering the ground. The sky in the upper portion is overcast, tinged with an ambient orange-brown hue from artificial lighting. The overall color scheme is warm, dominated by amber, brown, and orange tones with the deep red of the signs providing contrast. Lighting appears to be nighttime with artificial street and window illumination creating a soft, glowing composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Outdoors, Urban, ((Sign, Label/STOP, Red, (Center-of, Foreground-view)), (To-right-of, (Metal))), ((Sign, Label/ONE-WAY, (Arrow, Black, Rightward), (Upper-right-of, Foreground-view))), ((Sign, Label/3-WAY, (Lower-right-of, Foreground-view))), ((Building, Manufactured-material, (Left-side-of, Background-view)), (Window, Yellow, Illuminated)), ((Road, Snow, (Center-of, Background-view)), (Car, Snow)), (Plant, (Upper-center-of, Background-view)), (Snow, Cold, (Lower-center-of, Foreground-view)), (Cloud, Overcast, (Upper-center-of, Background-view)), (Orange-color, Brown-color, Amber), Low, Night",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

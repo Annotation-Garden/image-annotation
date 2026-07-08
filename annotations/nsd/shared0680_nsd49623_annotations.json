@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, positioned on the left side of the frame and extending from the upper-middle to the lower portion, stands a man wearing glasses, a light blue button-up dress shirt, a green and white diagonally striped tie, khaki trousers, and a dark belt; both his hands are inserted into his front pockets, and he faces slightly toward the camera with a neutral expression. His body occupies the left-center vertically. In the lower-right foreground, a light gray stone surface, mottled with greenish moss, angles across the corner of the frame. The background contains a weathered stone wall built from irregular gray and tan blocks, spanning the upper and central right portions of the image, with green climbing vegetation and leafy branches draping over its upper-left area. A dark metal chair is partially visible in the mid-ground, center-right, near the base of the wall. A patch of green grass fills the lower-center background behind the man. The overall color scheme combines earthy grays, tans, and greens with the cooler blue of the shirt. Lighting appears soft and diffuse, consistent with overcast daylight, casting no harsh shadows.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, Male, (Glasses), (Clothing, Blue, Light-shade), (Clothing, Green, White), (Clothing, Khaki), (Clothing, Dark-shade), ((Hand), Contained-in, (Clothing)), Emotionally-neutral), (Left-side-of, Computer-screen)), ((Mineral, Light-shade, Gray, Green), (Lower-right-of, Computer-screen)), (Background-view, ((Building-part, Gray, Tan), (Plant, Green), (Upper-left-of, Computer-screen))), ((Furnishing, Dark-shade, Steel), (Center-of, Computer-screen)), ((Plant, Green), (Lower-center-of, Computer-screen))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 362,
+            "total_tokens": 783
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 783
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

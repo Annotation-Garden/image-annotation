@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a ski slope under a clear blue sky, with the sun positioned in the upper-center of the frame, emitting a bright glare that dominates the upper portion and creates a strong backlit effect. In the foreground, occupying the lower-center and lower-left, a group of approximately five skiers stands on packed snow, casting long dark shadows that extend diagonally toward the lower-left, indicating a low sun angle. These skiers wear dark and colored jackets\u2014one in green at center-right, others in darker tones\u2014and hold ski poles, appearing stationary and clustered together as though gathered or preparing to descend. In the middle-ground on the left side sits a dark-roofed building, likely a lodge, with additional small figures nearby. Behind and above, the background shows a forested mountainside with snow-covered ski trails carving vertical paths through dark green evergreen trees, and a ski lift line with cables and towers running upward through the center-right of the frame. The overall color scheme contrasts cool blues and whites of the snow and sky against dark greens and silhouetted figures. Lighting is high-contrast, with brilliant highlights and deep shadows throughout the composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Outdoors, Sloped-terrain, Snow), ((Blue, Sky), Above), ((Sun, Luminance-contrast/High), Upper-center-of), (Group-of, Human-agent, Item-count/5, (Standing, Lower-center-of)), ((Green, Clothing), (Human-agent, To-right-of, Center-of)), (Human-agent, (Hold-down, Tool)), ((Dark-shade, Roof, Building), Left-side-of), (Hill, Plant, Green-color, Background-view), ((Assistive-device, Path), Upper-right-of), (Luminance-contrast/High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 384,
+            "total_tokens": 805
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 805
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

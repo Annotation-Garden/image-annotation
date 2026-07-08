@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a marina scene divided horizontally into water below and buildings under sky above. In the foreground, occupying the lower-left and center of the frame, several white motorboats with dark canopies are moored; two prominent vessels sit in the center-left, their glossy white hulls reflecting on the calm water. A dark wooden dock extends diagonally from the center toward the right side of the frame, punctuated by vertical mooring posts, one prominent post standing at center. In the middle ground and background, spanning the upper portion, sit multiple large buildings: a pale terracotta-and-cream multi-story structure at center-left, and to the right a lighter building with a curved glass facade and a red-topped tower. Trees and smaller structures fill gaps between buildings. The upper-right corner shows a clear, cloudless blue sky. The overall color scheme combines deep blue water, white boats, warm beige and pink building tones, and green foliage. Lighting appears bright and natural, consistent with daytime sun, casting soft reflections and mild shadows on the boats. The composition balances horizontal layering with the diagonal dock creating depth. No people or animals are clearly visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Real-world, (Water, Below, Blue), ((White, Boat), (Above, Water)), ((Boat, White), Center-of), ((Dock, Brown), (To-right-of, Center-of)), (Building, Upper-center-of), ((Building, Beige), Center-of), ((Building, Pink), (To-right-of, Center-of)), (Tower, Red), (Plant, Green), ((Sky, Blue), Upper-right-of), Daytime",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 383,
+            "total_tokens": 804
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 804
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

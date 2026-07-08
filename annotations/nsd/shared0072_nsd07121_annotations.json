@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A lone surfer occupies the center of the frame in the middle ground, standing on a wet, reflective beach and carrying a large surfboard tucked vertically under the right arm, the board's pale surface angled with its top toward the upper left and its base near the lower center. The figure is rendered largely as a dark silhouette, walking across the sand, and a faint mirrored reflection of the person and board appears directly below on the lower-center wet surface. In the background, occupying the upper portion of the frame, a large dark headland or cliff rises and slopes downward from left to right, with a hazy, misty atmosphere softening its edges. To the left of center in the background, two tiny distant figures are barely visible along the shoreline. Breaking waves and surf spread across the right and central background. The entire image is dominated by a warm monochromatic sepia and golden-orange color scheme, consistent with backlit sunrise or sunset conditions, producing strong glare and low contrast in silhouettes. The composition is framed by a white border, with the horizontal shoreline dividing lower foreground sand from upper background sea and cliff.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Image, Sepia, (White, Boundary-of)), ((Human-agent, Experiment-actor, (Center-of, Image)), Interacts-with, (Board, (Right, Upper-extremity-part))), (Walk, Away-from), (Human-agent, Black), (Board, Light-shade, (Top-of, Upper-left-of), (Below, Lower-center-of)), (Beige, Path, (Below, Foreground-view)), ((Human-agent), (Below, Lower-center-of)), (Hill, Black, (Above, Background-view), (Sloped-terrain, From-to)), ((Group-of, Human-agent), Small, Far-from, (To-left-of, Background-view)), (Sound, (Right, Background-view)), (Orange-color, Luminance-contrast/Low), (Horizontally-oriented, Boundary-of)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts five small shorebirds standing on a wet, sandy surface amid shallow water, arranged in a roughly horizontal line across the center of the frame. Reading left to right, one bird is at the far left edge in the lower-left region, a second stands just right of it, a third is positioned at center facing rightward, a fourth stands to its right in the center-right area, and a fifth is placed at the far right edge. Each bird casts a distinct vertical reflection in the still water directly beneath it, occupying the lower portion of the frame. The two central birds appear oriented toward one another, their beaks angled inward, suggesting a possible interaction. The background, filling the upper half, shows rippling water with soft horizontal wave lines and a darker sandbar band running behind the birds. The overall color scheme is dominated by warm golden, amber, and orange tones, indicative of low-angle light consistent with sunrise or sunset. The lighting is soft and directional, rimming the birds' backs and creating gentle contrast. The composition is balanced and horizontally symmetrical, with the birds and their mirrored reflections forming the primary visual structure.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Item-count/5, (Animal-agent, Small)), (Outdoors, Field), ((Animal-agent, Lower-left-of), To-left-of, (Animal-agent)), ((Animal-agent), To-left-of, (Center-of)), ((Animal-agent, Center-of), Rightward), ((Animal-agent), To-right-of, (Center-of)), ((Animal-agent), Right-edge-of), (((Animal-agent), Interacts-with, (Animal-agent)), Center-of), (Shallow, Water, Wet), (Below, Symmetrical), (Horizontally-oriented), (Background-view, Water, Rippling), (Posterior, Field), (Orange-color, Yellow-color), (Low, Angle), (Smooth, Luminance-contrast), (Symmetrical)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 372,
+            "total_tokens": 793
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 793
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

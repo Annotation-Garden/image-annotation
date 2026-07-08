@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the center and left-center of the frame is a baseball player in a white pinstriped uniform bearing the name \"ZAMBRANO\" and the number \"38\" in dark lettering across the upper back, positioned in the lower and middle portions of the image; he wears a blue batting helmet and grips a light brown bat that extends diagonally upward toward the upper-center, his body twisted in mid-swing with legs braced apart and weight shifted, indicating an active interaction between the batter and the bat. Overlaying the entire photograph is a dark diagonal chain-link fence mesh, most visible in the right and lower portions, creating a grid pattern across the scene. In the background, occupying the upper and right sections, is a green playing field with lighter tan dirt patches forming the infield, and near the top edge a densely textured green wall, likely ivy-covered. A white home-plate marking appears in the lower-right foreground on the dirt. The overall color scheme combines whites, greens, and browns with the blue helmet accent. Lighting is bright and natural, casting soft shadows beneath the player, suggesting daytime outdoor conditions.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, ((Human-agent, Experiment-actor, (Torso-chest, (Clothing, White, Label/ZAMBRANO)), (Head, (Clothing, Blue))), Interacts-with, (Tool, Brown, Label/Bat)), (Center-of, Human-agent), ((Human-agent), (Left-side-of, Image)), (Man-made-object, Label/Chain-link-fence, Pattern, (Right-side-of, Image), (Lower-center-of, Image)), (Field, Green, (Background-view, Upper-center-of, Image)), (Dirt-terrain, Tan, (Background-view)), (Plant, Green, (Top-edge-of, Image)), (Man-made-object, White, Label/Home-plate, (Lower-right-of, Image)), (Luminance, High)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

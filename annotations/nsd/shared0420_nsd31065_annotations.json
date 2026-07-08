@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower portion of the frame, a grassy shoreline of yellow-green vegetation stretches across the bottom, brightest and most saturated in the lower-left. Standing in the lower-center-right is a person, seen from behind, wearing patterned blue-and-orange swim shorts, bare-backed, appearing to hold a line angled upward toward the upper-left. Immediately to their right sits a light-colored dog facing left toward the person, suggesting a shared attentiveness between the two. In the upper-left quadrant, a kite with blue and white coloring and a long trailing tail hangs against the sky, connecting spatially to the standing figure via the implied line. The middle ground shows a broad expanse of blue water spanning the center horizontally, its surface textured with small ripples. The background features a low, distant shoreline with muted green and tan tones and small indistinct structures beneath a pale horizon. The upper half is dominated by a bright blue sky with thin, wispy white clouds. Lighting is bright and even, consistent with daytime sun, producing a vivid, high-saturation palette of blues, greens, and yellows with balanced, horizontally layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Grassy-terrain, Yellow, Green), Bottom-edge-of, Foreground-view), ((Human-agent, Experiment-actor, (Torso-back), (Clothing, Blue, Orange, Pattern)), Lower-center-of), (((Human-agent), Interacts-with, (Animal-agent, Light-shade)), Lower-right-of), ((Human-agent), Interacts-with, (Kite, Blue, White)), ((Kite, Blue, White, (Tail)), Upper-left-of, Background-view), ((Volume, Blue, Ripple), Center-of), ((Boundary-of, Green, Tan, Building), Background-view), (Sky, Blue, Upper-center-of), (White, Cloud), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A group of horses occupies the foreground, positioned across the center and lower portion of the frame, standing on a grassy slope scattered with pale rocks. The horses vary in coloring: several display reddish-brown coats, while one on the right side has a lighter tan body with a flowing blonde mane and tail. The animals cluster closely together, some facing left and others facing right, with their bodies overlapping, suggesting proximity within the herd; a smaller, lighter horse in the lower center appears among the larger adults. In the background, a mountain ridge extends across the middle of the frame from left to right, rendered in muted gray and brown tones with sparse greenery on its lower slopes. Above, a large, bright white cumulus cloud sits in the upper center against a deep, saturated blue sky that darkens toward the top of the frame. The lighting appears natural and directional, illuminating the horses' backs and the grass from the upper area, casting soft shadows beneath the animals. The overall color scheme contrasts warm earth tones of the foreground with the cool blues of the sky, creating a balanced, layered composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Group-of, Animal/Horse), (Reddish-brown, Color), Grassy-terrain, Sloped-terrain, (Gray, Rocky-terrain)), ((Group-of, Animal/Horse), (Reddish-brown, Color)), (Animal/Horse, Right-side-of, Tan, (Blonde, Hair)), (Animal/Horse, Small, Light-shade, Lower-center-of), (Background-view, Mountain, (Gray, Brown, Color), Plant), (Upper-center-of, White, Natural-object), (Blue, Sky), Natural-feature",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 358,
+            "total_tokens": 779
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 779
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

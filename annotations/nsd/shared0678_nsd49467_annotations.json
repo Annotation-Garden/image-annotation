@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A single zebra dominates the foreground, positioned at the center of the frame and facing directly toward the viewer, its body occupying roughly the central and lower-central portions of the image while its ears extend into the upper-center region. The zebra's black-and-white striped coat is the primary visual element, with vertical stripes along the face and neck transitioning to broader, angled stripes across the torso and legs; its dark muzzle appears in the center, and a black-tufted tail swings to the right side of the animal's hindquarters. The background fills the upper and peripheral areas with a blurred expanse of dry, tan and beige grasses and thin brownish shrubbery, along with reddish-brown soil visible in the lower background, indicating a savanna-like setting. Lighting appears natural and diffuse, illuminating the zebra's frontal surface fairly evenly without harsh shadows, and the background is softly out of focus, isolating the sharp, detailed subject. The overall color scheme contrasts the high-contrast monochrome zebra against warm, muted earth tones of tan, brown, and rust. Compositionally, the centered subject and shallow depth of field draw attention forward, with no other animals, people, or distinct objects visible.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Zebra, (Black, White, Striped), Center-of), (Foreground-view, Focused-attention)), ((Head, Torso, Lower-extremity), Part-of, (Animal-agent, Label/Zebra)), (Face, Vertically-oriented, Striped), (Torso, Oblique, Striped), (Mouth-part, Black, Center-of), ((Tail, Black), To-right-of, (Animal-agent, Label/Zebra)), (Background-view, (Grassy-terrain, Tan, Beige), (Plant, Brown), (Dirt-terrain, Brown-color)), (Outdoors, Rural), (Natural-feature, Label/Savanna)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 397,
+            "total_tokens": 818
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 818
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

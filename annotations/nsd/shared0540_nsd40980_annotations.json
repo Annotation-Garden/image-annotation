@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower half of the frame, is a broad expanse of white snow with subtle textural ridges and shadowed undulations, particularly visible in the lower-left and lower-center areas where the surface appears rippled. Positioned slightly right of center in the middle ground stands a single skier wearing a white or light-colored jacket, black pants, and dark headwear, with both arms raised upward and outward, each hand gripping a ski pole angled outward, suggesting a moment of celebration or balance. Behind and above the skier, in the background, rises a dramatic mountain range with jagged snow-covered peaks, most prominent in the upper-center and upper-left of the frame. A band of low white clouds or fog sits among the mountains in the center. To the upper right, a dark structure resembling a tower or lift pylon breaks the ridgeline against the sky. The upper portion shows a blue sky streaked with thin, wispy white clouds. The overall color scheme is dominated by cool whites, blues, and grays, with bright, even daylight illumination casting soft shadows, creating a crisp, high-contrast, expansive alpine composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Snow, White, Foreground-view, Lower-center-of), (Rough, Texture)), ((Human-agent, Experiment-actor), (Center-of, Foreground-view), (White, Clothing), (Black, Clothing), (Dark-shade, Clothing, Head), ((Upper-extremity), (Raise-eyebrows)), (Grasp, Tool)), ((Mountain, White, Snow, Background-view, Upper-center-of), Rough), (White, Cloud), ((Building-part, Dark-shade, Upper-right-of), (Above, Mountain)), (Blue, Sky, Above), ((White, Cloud), Thin), (Outdoors, Real-world)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

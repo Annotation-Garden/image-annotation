@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the foreground and occupying the center of the frame is a large octagonal red stop sign bearing the white capitalized word \"STOP,\" framed by a thin white border; the sign is mounted slightly above center and extends from roughly the upper-left toward the lower-right. Directly beneath it, in the lower-center of the frame, hangs a smaller rectangular red sign reading \"4-WAY\" in white letters, attached to a gray metal post visible below it. Two small circular bolts are visible on the stop sign, one near its upper interior and one lower. In the background, bare, leafless tree branches extend across the upper-right and lower portions of the frame, silhouetted against the sky, with additional thin branches intruding from the upper edge. The sky fills the remaining background with a pale blue tone interspersed with soft gray and white clouds. The overall color scheme contrasts the saturated deep red of the signs against the muted blue-gray sky and dark brown branches. Lighting appears diffuse and overcast, casting no strong shadows. Compositionally, the centered signage creates a stable, symmetrical focal point surrounded by organic branch textures.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Octagon, Red, Large, (Word, ID/STOP), (White, Boundary-of)), Center-of), (Rectangle, Red, Small, (Word, ID/4-WAY), Lower-center-of), ((Steel, Post), Below), (Circle, (Part-of, Octagon)), (Plant, (Upper-right-of, Background-view)), (Blue, Gray, White, (Natural-feature, Label/Clouds)), (Overcast, Label/Diffuse-lighting)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 373,
+            "total_tokens": 794
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 794
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

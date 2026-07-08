@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph presents a plate of sliced fruit occupying nearly the entire frame, positioned in the center and extending toward the edges. The plate is white with a pale green rim, resting on a dark reddish-brown wooden surface visible in the upper-left and upper-right corners as the background. In the foreground and center, several thick banana slices, cream-colored with small brown seed specks at their cut faces, cluster in the lower-center and center of the plate. Surrounding them, particularly on the left, upper, and right portions, are numerous orange segments; some retain their curved wedge shape with visible membrane, while others on the right appear as peeled, glistening orange sections without skin. The color scheme is dominated by warm tones: bright orange, pale yellow-white banana, and the darker brown table, contrasted against the cool white plate. Lighting appears natural and diffuse, coming from the upper area, producing soft highlights on the moist orange segments and gentle shadows beneath the fruit pieces. The composition is centered and filled, with the fruit interacting by overlapping and touching one another, creating a densely packed arrangement across the plate's surface.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Photograph, (Center-of, (Image))), ((White, Furnishing, (Green, Boundary-of)), (Top-of, (Steel, Brown, Furnishing))), ((Ingestible-object/Staple-food, Sweet, (Cream-color, Brown, (Lower-center-of, (White, Furnishing)))), Interacts-with, (Ingestible-object/Dessert, Sweet, Sour, (Orange, (Left-side-of, (White, Furnishing))))), (Natural-object, (Upper-center-of, (Luminance)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 371,
+            "total_tokens": 792
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 792
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

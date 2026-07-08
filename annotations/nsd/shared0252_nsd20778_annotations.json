@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A tall stack of red plastic cups dominates the center of the frame, positioned slightly left of center and extending vertically from the lower portion up to the upper edge, occupying the majority of the image's height. The cups are nested tightly, creating a repeating horizontal ridge pattern along the stack's length, with the topmost cup showing an open rim. In the foreground, resting on a reddish-brown horizontal surface in the lower right region, lies an orange-handled tool with a silver metallic shaft extending toward the right edge, appearing to be a screwdriver. The stack of cups rests on the same surface, which occupies the lower quarter of the frame. The background consists of a plain, pale gray-white wall that fills the upper and central portions behind the cups, with a faint vertical seam or edge visible on the right side. The lighting is soft and diffuse, casting a gentle shadow of the cup stack toward the lower left and creating subtle highlights on the cups' curved surfaces. The overall color scheme is warm, dominated by the saturated red and orange tones against the neutral gray wall and darker brown surface, with a slightly vignetted, muted composition.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Red, (Cylinder, Repetitive), Plastic, Large, Vertically-oriented, Center-of), (Above, (Tool, Orange, Silver, (Right-edge-of, Image)))), (Gray, White, Background-view), Warm",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 375,
+            "total_tokens": 796
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 796
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

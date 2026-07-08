@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the lower and central portions of the frame, a large mass of white, churning foam and spray dominates, created by a breaking wave. Rising from the center of the image is a surfer, positioned slightly left of center in the middle vertical band, riding a white surfboard with dark markings and text on its underside. The surfer wears a black wetsuit and is captured mid-maneuver, with one arm raised upward and bent above the head while the body leans and twists toward the left, the board angled steeply as it carves against the wave's face. Behind and to the right, in the background, a curling teal-and-blue wave rises and breaks, its crest feathering into white spray. The upper portion of the frame shows deep blue ocean water extending toward a distant horizon, with darker ripples and small texture across the surface. The overall color scheme is dominated by blues and teals contrasted against bright whites of the foam and board, with the black wetsuit providing a dark focal point. Lighting appears bright and natural, casting clear highlights on the water and defining the wave's spray sharply.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Foreground-view, (White, White, Environmental-sound, Water)), (Lower-center-of, (White, Water)), ((Human-agent, Experiment-actor, (Black, Clothing)), Interacts-with, (Man-made-object, Label/Surfboard, White)), (Center-of, (Human-agent, Experiment-actor)), (To-left-of, Center-of), ((Human-agent, Experiment-actor), (Move-upper-extremity, Upper-extremity)), (Move-torso, Leftward), (Background-view, (Blue, Teal, Water)), (To-right-of, (Blue, Teal, Water)), (Upper-center-of, (Blue, Water)), (Blue, Teal, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 345,
+            "total_tokens": 766
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 766
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

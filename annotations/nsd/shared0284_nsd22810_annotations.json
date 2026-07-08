@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a tall stone tower dominating the frame, positioned centrally and extending from the lower edge to the upper edge, occupying roughly the left two-thirds of the image. The tower is constructed of irregular sandstone blocks in warm tan, beige, and golden-brown hues, showing variation in color and weathering across the masonry. Near the upper portion of the tower, slightly right of center, a circular clock face or disc is mounted, appearing pale and reflective against the stonework. Above it, a small rectangular arched opening or window is visible in the upper section. Several narrow slit-like openings appear vertically down the tower's face. The tower is topped with crenellations or a battlement edge silhouetted against the sky. At the lower portion, a rectangular plaque or inscribed stone is affixed, though its text is not legible. The entire right side and background consist of a clear, cloudless deep blue sky, providing strong contrast. Lighting is bright and directional, coming from the left, illuminating the stone warmly while casting subtle shadows in the recesses. The composition uses an upward, tilted angle, emphasizing height and monumentality against the plain sky.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Building-part, Label/Tower), (Center-of, Photograph)), ((Building-part, Label/Tower), (Made-from, Mineral)), (Tan, Beige, DarkGoldenRod), ((Clock-face, White), (Upper-right-of, (Building-part, Label/Tower))), ((Window, Rectangle), (Above, (Clock-face))), (Blue, Sky, Background-view), (Bright, (To-right-of, (Building-part, Label/Tower)))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

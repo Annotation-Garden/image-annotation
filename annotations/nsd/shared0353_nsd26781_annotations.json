@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph depicts a narrow urban alleyway receding toward the background center, creating a strong sense of linear perspective. In the foreground lower-right, a row of parked motor scooters lines the right side, angling diagonally into the middle distance; the nearest scooters are dark-colored with visible windshields and mirrors. On the foreground left edge, a display of flowers and possibly merchandise is partially visible, along with what appears to be posters or signage on the wall. The buildings flanking both sides rise vertically, their reddish-brown and terracotta facades bearing windows, shutters, and air-conditioning units in the upper portions. A green awning extends along the right-side building in the middle ground, above an illuminated shop entrance glowing warm yellow at lower right. In the background center, a lone human figure stands in the distance along the cobblestone street, small and indistinct. Hanging signs project from the left wall in the middle distance. The overall color scheme is dark and muted, dominated by browns, deep reds, and shadow, with brighter daylight visible at the far background. Lighting is dim in the foreground, contrasting the sunlit distant opening, emphasizing depth.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Outdoors, Urban, (Path, Paved-terrain, Background-view, Center-of), (Dark-shade, (Red-color, Brown-color)), ((Building, Vertically-oriented, Red-color), To-left-of, (Building, Vertically-oriented, Brown-color)), ((Window, Building-part), Upper-center-of), ((Vehicle, Dark-shade, Lower-right-of), (Foreground-view, To-right-of)), (Plant, Left-edge-of, Foreground-view), ((Icon, Communicate), Left-side-of), ((Human-agent, Experiment-actor), Background-view, Center-of, Far-from), ((Door, Yellow-color, Luminance/High), Lower-right-of), (Depth, Increasing), (Luminance-contrast, (Foreground-view, Low), (Background-view, High))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 381,
+            "total_tokens": 802
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 802
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

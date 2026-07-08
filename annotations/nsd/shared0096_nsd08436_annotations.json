@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the foreground and occupying the lower-center of the frame is a round cake resting on a pale gray plate; the cake bears a drizzled glaze of white and caramel-brown tones spread across its upper surface, with a textured, cracked crumb visible along its lower edge. In the background upper-right sits a white ceramic mug printed with the word \"Coffee\" in dark lettering, filled with a dark black liquid, positioned partly off the frame's right edge. In the upper-left background stands a dark, cylindrical metallic vessel, likely a stovetop coffee maker, with brownish and grayish mottled surfaces catching light. The surfaces beneath and behind the objects show a mottled, weathered beige-and-gray texture, with a woven placemat visible at the lower-left. The overall color scheme is warm and muted, dominated by browns, creams, grays, and tans. Lighting appears soft and directional, entering from the upper right and casting gentle shadows beneath the plate and mug. Compositionally, the cake anchors the center while the mug and vessel frame the upper corners, creating a balanced, diagonal arrangement across a shallow, tabletop-oriented depth of field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Ingestible-object/Dessert, Sweet, Round, (Lower-center-of, Foreground-view)), ((Ingestible-object/Dessert, Sweet, Round, (White, Brown)), (Top-of, (Gray, Item))), (Gray, Item), (White, Ceramic, (Word, ID/Coffee), (Contained-in, (Black)), (Upper-right-of, Background-view)), (Cylinder, Metal, (Brown, Gray), Tool, (Upper-left-of, Background-view)), (Beige, Gray, Rough, (Behind, Item)), (Item, (Lower-left-of, Item)), (Brown, Cream, Gray, Tan), (Luminance, (Upper-right-of, Foreground-view)), Shallow",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 391,
+            "total_tokens": 812
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 812
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

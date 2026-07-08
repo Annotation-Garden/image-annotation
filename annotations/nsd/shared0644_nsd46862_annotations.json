@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a lit table lamp positioned in the center of the frame, its cream-colored fabric shade occupying the upper-center region and glowing brightly from the illuminated bulb within, casting warm light that spreads across the surrounding surfaces. The lamp's base, visible in the lower-center, consists of an amber-toned glass reservoir atop an ornate metal pedestal, with decorative metallic scrollwork beneath the shade. This lamp rests on a wooden nightstand or table occupying the lower portion of the frame, its brown surface catching the lamp's warm glow. A thin electrical cord trails down from the lamp base across the tabletop toward the lower-left. In the background at left, a green-painted wall shows a soft shadow cast by the lampshade. On the right side of the frame, in the middle-to-background depth, a dark wooden bed headboard with vertical slats is visible, accompanied by white bedding and a pillow in the lower-right foreground. The overall color scheme is warm, dominated by yellows, ambers, and greens, with the lamp serving as the primary light source, creating high contrast between the bright shade and the dimmer surrounding room.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, ((Furnishing, Label/Table-lamp), (Center-of, Photograph)), ((Furnishing, Label/Lampshade, Cloth), (Upper-center-of, Photograph)), (Furnishing, Label/Lampshade, (Luminance-contrast/High)), (Light-shade, (Yellow, Orange)), ((Furnishing, Label/Lamp-base, Glass, Orange), (Lower-center-of, Photograph)), (Metadata-identifier, Label/Metal-scrollwork), ((Furnishing, Label/Nightstand, Manufactured-material, Brown), (Below, (Furnishing, Label/Table-lamp))), ((Manufactured-material, Label/Electrical-cord), (Lower-left-of, Photograph)), ((Building-part, Green), (Left-side-of, Photograph)), ((Furnishing, Label/Bed-headboard, Manufactured-material), (Right-side-of, Photograph)), ((Furnishing, Label/Bedding, White), (Lower-right-of, Photograph)), (Yellow, Orange, Green)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 388,
+            "total_tokens": 809
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 809
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

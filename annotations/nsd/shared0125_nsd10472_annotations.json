@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, occupying the right and center-right of the frame, a female tennis player lunges forward and to the left, her body extended in a low reaching posture; she wears a white visor, a white sleeveless top with dark trim, and a dark navy skirt, along with white shoes and white socks, one bearing a black band. Her right arm extends leftward, gripping a tennis racket with blue and yellow accents, which reaches toward a yellow-green tennis ball positioned in the center-left of the frame at mid-height. She occupies the lower and central portions of the composition, positioned on green grass that fills the lower half. In the background, upper-center-left, a person in dark clothing and light trousers stands upright near a large blue barrier wall displaying partial white text reading \"EGON\" and \"INTERNATIONAL.\" The color scheme is dominated by blues in the upper background and greens in the lower foreground, with white accents from the player's clothing and text. Lighting appears bright and natural, casting soft shadows beneath the player and highlighting the grass texture across the lower frame.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Human-agent, Experiment-actor, Female), (Grasp, (Blue, Yellow, Tool, Label/Tennis-racket))), (White, Clothing, Label/Visor), (White, Clothing, Label/Sleeveless-top), (Navy, Clothing, Label/Skirt), (White, Clothing, Label/Shoes), (White, Clothing, Label/Socks), ((Blue, Yellow, Tool, Label/Tennis-racket), (Towards, (Yellow-color, Green-color, Label/Tennis-ball))), (Green-color, Grassy-terrain), ((Human-agent, Experiment-actor), Standing, (Behind, (Blue, Label/Barrier-wall))), (White, Word, ID/EGON), (White, Word, ID/INTERNATIONAL), Outdoors",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 345,
+            "total_tokens": 766
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 766
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

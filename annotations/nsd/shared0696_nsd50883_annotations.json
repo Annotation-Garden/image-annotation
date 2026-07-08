@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the foreground, two elephants dominate the frame, positioned across the center and occupying the majority of the image. The larger adult elephant fills the left and upper-center portions, its massive head, wide ear, tusk, and trunk clearly visible, with the eye and wrinkled skin texture prominent on the left side. A smaller, younger elephant appears on the right side, its head lowered and trunk extended toward the adult, and the two trunks appear to touch or intertwine near the center of the frame, suggesting a direct physical interaction between them. Surrounding both animals in the lower portion and lower-right of the frame are pale, dry, thorny shrubs and branches, some bearing small white flowers or buds. In the background, occupying the upper-right and right regions, green foliage and bushes are visible, providing contrast to the animals. The overall color scheme is warm and earthy, dominated by tan, brown, and gray tones of the elephants and dry vegetation, offset by green foliage. Lighting appears natural and directional, casting warm illumination on the elephants' skin and creating soft shadows, consistent with low-angle sunlight.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, ((Animal-agent, Label/Adult-elephant, Large), Interacts-with, (Animal-agent, Label/Young-elephant, Small)), (Foreground-view, ((Animal-agent, Label/Adult-elephant), (To-left-of, (Animal-agent, Label/Young-elephant)))), ((Animal-agent, Label/Adult-elephant), (Head, Ear, (Tusk, Label/Tusk), Nose, Eye, (Tactile-texture, Label/Wrinkled))), ((Animal-agent, Label/Young-elephant), (Head, Downward), (Nose, Extended)), ((Nose, Nose), Interacts-with, Center-of), (Lower-center-of, (Plant, Label/Thorny-shrubs, Dry, (White, Label/Flowers))), (Background-view, Upper-right-of, (Plant, Green, Label/Foliage)), (Tan, Brown, Gray), (Warm), (Outdoors, Natural-feature)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

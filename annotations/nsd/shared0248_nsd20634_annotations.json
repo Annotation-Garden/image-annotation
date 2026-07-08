@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph displays a bento-style meal arranged on a speckled gray countertop, shot from an overhead angle. On the left side of the frame sits a yellow two-tiered lunchbox; the upper container holds green broccoli florets in its left portion, several whole green beans arranged centrally, and a brown noodle-like dish in the upper right, with a pinkish round item partially visible at the far left edge. The lower yellow container in the left-center contains rice balls wrapped in dark nori seaweed strips, interspersed with bright red cherry tomatoes positioned at the left, center, and right. To the right of the frame, occupying the upper and lower right regions, is a transparent plastic container with a blue rim holding red-skinned apple slices with white flesh, fanned out and overlapping one another. The overall color scheme combines vibrant reds, greens, and yellows against the neutral gray background. Lighting appears bright and diffuse, casting soft shadows beneath the containers, particularly along their lower edges. The composition divides roughly into a left-side food cluster and a right-side apple container, creating a balanced two-part arrangement.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, Aerial-view, ((Gray, Rough, Furnishing, Label/Countertop), (Center-of, Photograph)), (Yellow, Container, (Left-side-of, Photograph)), ((Green, Ingestible-object/Staple-food, Label/Broccoli, Savory), (Upper-left-of, Photograph)), ((Green, Ingestible-object/Staple-food, Label/Green-beans, Savory), (Upper-center-of, Photograph)), ((Brown, Ingestible-object/Main-dish, Label/Noodles, Savory), (Upper-right-of, Photograph)), ((Pink, Ingestible-object/Staple-food, Savory), (Left-edge-of, Photograph)), ((Ingestible-object/Staple-food, Label/Rice-balls, Savory), (Black, Ingestible-object/Staple-food, Label/Nori-seaweed, Savory), (Lower-left-of, Photograph)), ((Red, Ingestible-object/Staple-food, Label/Cherry-tomatoes, Savory), (Center-of, Photograph)), ((White, Blue, Plastic, Container), (Right-side-of, Photograph)), ((Red, White, Ingestible-object/Staple-food, Label/Apple-slices, Sweet), (Upper-right-of, Photograph)), (Red, Green, Yellow), (Gray, Background-view), Luminance-contrast/Low, Symmetrical",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 369,
+            "total_tokens": 790
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 790
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "Dominating the foreground and occupying the center and lower portion of the frame is a baseball player captured mid-pitch, his body twisted with the right arm cocked back above his head gripping a white ball, while the left arm extends downward and forward wearing a dark fielding glove. He wears an orange jersey bearing the black outlined word \"GIANTS\" across the chest, a black cap displaying an \"SF\" logo, white pants, and dark cleats, with his legs spread in a wide stride atop the tan dirt of the pitching mound in the lower center. Surrounding this mound, filling the middle ground and background, is bright green grass with a lighter mowed stripe curving across the upper portion. In the upper left corner, a beige dirt strip appears, and in the extreme upper right, partial lower legs and orange-and-white cleats of another out-of-frame person are visible. The lighting is warm and directional, casting soft shadows to the left, suggesting sunlight from the right. The overall color scheme contrasts vivid orange and green with neutral tan and white, and the composition centers the athlete diagonally against an open, uncluttered field.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, (Human-agent, (Perform, Task), (Grasp, (White, Ball)))), ((Upper-extremity, Right, (Above, Head)), (Item, Retract)), ((Upper-extremity, Left, Forward, Downward), (Clothing, Dark, Label/Fielding-glove)), (Clothing, Orange, Label/Jersey, (Word, ID/GIANTS, Black, Outline-visualization)), (Clothing, Black, Label/Cap, (Word, ID/SF)), (Clothing, White, Label/Pants), (Clothing, Dark, Label/Cleats), ((Lower-extremity), Large, Standing), (Lower-center-of, (Tan, Dirt-terrain, Label/Pitching-mound)), (Background-view, (Green, Grassy-terrain, Bright)), (Upper-center-of, (Light-shade, Label/Mowed-stripe)), (Upper-left-of, (Beige, Dirt-terrain)), (Upper-right-of, (Human-agent, (Lower-leg), (Clothing, Orange, White, Label/Cleats))), (Luminance, Warm), (Directional-relation, (Rightward)), ((Item), To-left-of, Label/Soft-shadows), (Orange, Green, Tan, White)",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 367,
+            "total_tokens": 788
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 788
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

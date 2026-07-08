@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "The photograph is dominated by a dark-colored vehicle occupying most of the frame, its glossy black surfaces reflecting light across the lower and right portions of the image. In the center-left foreground, a tan and brown dog leans out of an open rear window, its head and upper body extending outward while its mouth is open and its gaze directed toward the right side of the frame; the dog wears a light-colored collar around its neck. The dog's body is illuminated by bright, directional sunlight that highlights its fur against the surrounding shadowed interior and dark vehicle panels. In the background, positioned in the upper right, a white sign with red and dark lettering stands on a pole, partially legible but not fully clear. Blurred green and dark foliage fills the upper background behind and around the vehicle, suggesting an outdoor setting. The overall color scheme contrasts warm tans and browns of the dog against cool, deep blacks of the car and shadowed areas, with strong highlights from sunlight. The composition places the illuminated dog as the focal point amid predominantly dark, reflective surfaces, creating high tonal contrast between light and shadow.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, Photograph, (Car, Black, (Reflective-relation)), ((Animal-agent, Animal/Dog), (Tan, Brown, Illuminated)), ((Animal-agent, Animal/Dog), (Lean, (Out-of, (Window, Open)))), ((Animal-agent, Animal/Dog), (Open, Mouth)), ((Clothing, Light-shade), (Around, Neck)), ((White, Red, Label/Sign), (On, (Vertically-oriented, Building-part))), (Upper-right-of, Background-view), (Green, Plant, (Boundary-of, Background-view)), Outdoors, Luminance-contrast/High",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 368,
+            "total_tokens": 789
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 789
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

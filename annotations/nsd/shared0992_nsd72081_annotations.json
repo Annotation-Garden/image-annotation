@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "In the immediate foreground at the lower left and lower right corners, two dark, blurred vehicle bodies partially frame the scene, with a white car visible at the lower right edge. The central and lower-center foreground is occupied by a group of cyclists riding toward the camera on an urban street; several individuals wear dark clothing and helmets, seated on bicycles, spread across the center and center-left of the frame. Behind them in the mid-ground, additional cars\u2014including a dark sedan on the right and lighter vehicles to the left\u2014populate the roadway, with their headlights illuminated. The background upper portion shows a yellow railway overpass or bridge structure spanning horizontally across the center, above which tall gray and beige high-rise buildings recede into a hazy sky. On the left edge, a dark storefront displays partially legible signage reading \"Emmit's\" and \"Pub.\" Traffic lights and street signs punctuate the mid-left. The overall color scheme is muted and cool, dominated by grays, blacks, and the yellow bridge accent. Lighting appears diffuse and overcast, casting soft shadows. The composition is horizontally layered, with converging street lines drawing the eye toward the background.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Foreground-view, ((Dark, Vehicle), (Lower-left-of, Photograph)), ((Dark, Vehicle), (Lower-right-of, Photograph)), ((White, Car), (Right-edge-of, Photograph))), (Foreground-view, Center-of, Group-of, (Human-agent, Ride, Bicycle, (Dark, Clothing), Assistive-device), Towards), (Background-view, ((Yellow, Building, Road), (Above, ((Gray, Beige, Building), (Contained-in, Outdoors)))), ((Dark, Building), Label/Emmits-Pub, (Left-edge-of, Photograph))), (Car, (Dark, Car), (To-right-of, Photograph)), Cloud, Gray-color, Black, Yellow-color",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 389,
+            "total_tokens": 810
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 810
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {

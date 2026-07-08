@@ -23,6 +23,28 @@
   },
   "annotations": [
     {
+      "model": "claude-opus-4-8",
+      "temperature": 1.0,
+      "prompts": {
+        "vision_neuro": {
+          "prompt_text": "You are describing a photograph for a neuroscience visual-perception study. Analyze the visual elements and their spatial locations: state which are in the foreground vs background and their position in the frame (left/center/right, upper/lower). Note any interactions between elements (people, animals, objects, scene). Describe the overall color scheme, lighting, and visual composition. Ground every statement in clearly visible detail; do not infer context you cannot see. Write one continuous paragraph, 150-200 words.",
+          "response": "A large flat-panel LCD monitor dominates the left and center of the frame, its screen glowing a bright blue that occupies the majority of the visual field and serves as the primary light source contrast against warmer tones; it rests on a curved metallic silver stand positioned in the lower-center foreground. A white keyboard lies in the lower foreground, angled diagonally across the bottom-right, with a matching white computer mouse sitting on the wooden desk surface to the right of center in the mid-ground. Thin white and gray cables trail across the desk between these peripherals, creating looping linear elements. In the background center-right stands a gray teardrop-shaped speaker beside a small silver device, and at the far right edge rises a tall brass-and-wood lamp base extending vertically upward. The desk itself is a medium-brown wood grain surface spanning the lower and right portions. The overall color scheme juxtaposes cool blue screen light with warm amber and yellow illumination washing the right side and back wall. Lighting appears soft and artificial, casting gentle shadows. The composition is diagonally organized, drawing the eye from the bright monitor toward the warmer right side.",
+          "response_format": "text",
+          "response_data": null,
+          "error": null,
+          "hed_annotation": "Sensory-event, Visual-presentation, (Display-device, Large, (Blue, Luminance), (Left-side-of, Foreground-view)), ((Computer-screen, Blue), Center-of), (Assistive-device, Silver, (Lower-center-of, Foreground-view)), (Keyboard, White, (Lower-right-of, Foreground-view)), (Computer-mouse, White, (Right-side-of, Foreground-view)), (Loudspeaker, Gray, (Center-of, Background-view)), (Machine, Silver, (Background-view)), (Furnishing, Brown, (Lower-right-of)), ((White, Gray), (Across-from, Furnishing)), (Yellow, Orange, (Right-side-of, Background-view))",
+          "token_metrics": {
+            "input_tokens": 421,
+            "output_tokens": 379,
+            "total_tokens": 800
+          }
+        }
+      },
+      "metrics": {
+        "total_tokens": 800
+      }
+    },
+    {
       "model": "qwen2.5vl:7b",
       "temperature": 0.3,
       "prompts": {
