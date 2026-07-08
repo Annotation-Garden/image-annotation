@@ -159,6 +159,10 @@ export default function Dashboard() {
 
           // Keep sticky selection or set new defaults
           const hasModel = data.annotations.some((a: Annotation) => a.model === selectedModel)
+          if (selectedModel && !hasModel) {
+            // The expected model is absent for this image; don't swap silently.
+            console.warn(`Model "${selectedModel}" not found for image ${imageId}; falling back to "${firstAnnotation.model}"`)
+          }
           if (!hasModel || !selectedModel) {
             setSelectedModel(firstAnnotation.model)
             const firstPromptKey = Object.keys(firstAnnotation.prompts)[0]
