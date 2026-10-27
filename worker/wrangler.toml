@@ -1,0 +1,36 @@
+# Image Annotation frontend: serves ../frontend/out at annotation.garden/image-annotation/
+# Deployed by .github/workflows/deploy.yml on pushes to main (build first:
+# `cd frontend && pnpm run build:static`). Manual deploy:
+#   bunx cfman wrangler --account <account> deploy
+
+name = "image-annotation-web"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+# Served only through the routes below; no account-scoped workers.dev name.
+workers_dev = false
+
+# The bare-path route has no wildcard, so it does not match
+# "/image-annotation?x=1"; that request falls through to the main
+# annotation.garden site. A Worker route takes precedence over the main
+# site's Pages project on the same hostname.
+routes = [
+  { pattern = "annotation.garden/image-annotation/*", zone_name = "annotation.garden" },
+  { pattern = "annotation.garden/image-annotation", zone_name = "annotation.garden" },
+]
+
+# Workers Logs, so misconfiguration and asset failures logged by index.js are
+# retained (otherwise visible only to a live `wrangler tail`).
+[observability]
+enabled = true
+head_sampling_rate = 1.0
+
+# run_worker_first: every request goes through index.js, which strips the
+# mount prefix before looking up the asset.
+[assets]
+directory = "../frontend/out"
+binding = "ASSETS"
+run_worker_first = true
+
+[vars]
+MOUNT_PREFIX = "/image-annotation"
