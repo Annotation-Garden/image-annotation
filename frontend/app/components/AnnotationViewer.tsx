@@ -191,7 +191,7 @@ export default function AnnotationViewer({ annotation, platform }: AnnotationVie
               <div className="text-xs text-agi-teal-500 dark:text-zinc-500 italic">
                 No HED annotation available.{' '}
                 <a
-                  href="https://hed-bot.pages.dev"
+                  href="https://annotation.garden/hedit/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-agi-orange hover:underline inline-flex items-center gap-1"
