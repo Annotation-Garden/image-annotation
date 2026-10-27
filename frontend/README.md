@@ -31,8 +31,8 @@ pnpm run build:static
 # 3. Export as static HTML to out/
 ```
 
-The site is served at https://annotation.garden/image-annotation/ by the `image-annotation-web` Worker (`../worker/`), which serves `out/` as static assets.
-GitHub Actions deploys it on every push to main (see below).
+The site is served at https://annotation.garden/image-annotation/ by the `image-annotation-web` Worker (`../worker/`), a static-assets-only Worker; `../worker/stage.sh` copies `out/` under `image-annotation/` before deploy.
+GitHub Actions deploys it on pushes to main that touch the frontend, the worker or the data (see below).
 
 ## Available Scripts
 
@@ -97,7 +97,7 @@ Run `pnpm run copy-assets` to copy these to the public folder.
 
 ## 🚢 GitHub Actions Deployment
 
-`.github/workflows/deploy.yml` builds the static export and smoke-tests the Worker under `wrangler dev` (`../worker/smoke-test.sh`) on every pull request. On a push to main it also deploys the Worker.
+`.github/workflows/deploy.yml` builds the static export, stages it, and smoke-tests the Worker under `wrangler dev` (`../worker/smoke-test.sh`) on pull requests and pushes that touch the frontend, the worker or the data. On main it also deploys the Worker.
 
 Its Cloudflare credentials (`CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`) are repository secrets synced from Infisical (project `annot-garden`, `prod` `/image-annotation/ci`); change them there, not in GitHub.
 

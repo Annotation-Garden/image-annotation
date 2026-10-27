@@ -1,8 +1,9 @@
 name: Frontend Worker
 
 # Builds the static export and serves it from the image-annotation-web Worker
-# at annotation.garden/image-annotation/. Pull requests build and smoke-test
-# only; pushes to main also deploy.
+# (static assets only) at annotation.garden/image-annotation/. Pull requests
+# build and smoke-test only; pushes to main, and manual runs on main, also
+# deploy.
 #
 # CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID are repository secrets synced
 # from Infisical (project annot-garden, prod /image-annotation/ci). Change them
@@ -23,6 +24,9 @@ on:
     paths:
       - 'frontend/**'
       - 'worker/**'
+      - 'data/**'
+      - 'images/downsampled/**'
+      - 'annotations/nsd/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
@@ -32,6 +36,10 @@ concurrency:
 
 permissions:
   contents: read
+
+env:
+  # One exact version for the smoke test and the deploy
+  WRANGLER_VERSION: '4.149.0'
 
 jobs:
   build-and-deploy:
@@ -60,11 +68,14 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm run build:static
 
+      - name: Stage the export under /image-annotation
+        run: bash worker/stage.sh
+
       - name: Smoke-test the Worker under wrangler dev
         run: bash worker/smoke-test.sh
 
       - name: Deploy
-        if: github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         working-directory: worker
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -74,4 +85,4 @@ jobs:
             echo "::error::CLOUDFLARE_API_TOKEN or CLOUDFLARE_ACCOUNT_ID is not set; they are synced from Infisical (annot-garden, prod /image-annotation/ci)"
             exit 1
           fi
-          bunx wrangler@4 deploy
+          bunx "wrangler@${WRANGLER_VERSION}" deploy

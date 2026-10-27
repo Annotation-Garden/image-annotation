@@ -53,7 +53,7 @@ python -m image_annotation.services.vlm_service
 
 # Run frontend dashboard (with AGI branding)
 cd frontend && npm run dev
-# Visit http://localhost:3000
+# Visit http://localhost:3000/image-annotation/
 
 # Configuration
 cp config/config.example.json config/config.json
