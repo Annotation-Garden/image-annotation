@@ -120,7 +120,6 @@ frontend/public/*
 !frontend/public/favicon.ico
 !frontend/public/image-list.json
 !frontend/public/copy-static-assets.sh
-!frontend/public/.assetsignore
 !frontend/public/human-hed.json
 !frontend/public/og-image.png
 !frontend/public/og-image-dark.png
@@ -135,3 +134,6 @@ annotations/test/
 
 # wrangler dev local state
 .wrangler/
+
+# Staged deploy directory built by worker/stage.sh
+worker/dist/
