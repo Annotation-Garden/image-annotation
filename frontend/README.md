@@ -15,7 +15,7 @@ pnpm run copy-assets
 pnpm run dev
 ```
 
-Visit http://localhost:3000 to see the dashboard.
+Visit http://localhost:3000/image-annotation/ to see the dashboard (the app is built with `basePath: '/image-annotation'`).
 
 ## Deployment
 
@@ -31,7 +31,8 @@ pnpm run build:static
 # 3. Export as static HTML to out/
 ```
 
-The site is deployed to Cloudflare Pages automatically via GitHub Actions.
+The site is served at https://annotation.garden/image-annotation/ by the `image-annotation-web` Worker (`../worker/`), which serves `out/` as static assets.
+GitHub Actions deploys it on every push to main (see below).
 
 ## Available Scripts
 
@@ -96,13 +97,9 @@ Run `pnpm run copy-assets` to copy these to the public folder.
 
 ## 🚢 GitHub Actions Deployment
 
-The project includes automated deployment via GitHub Actions. On push to main branch:
+`.github/workflows/deploy.yml` builds the static export and smoke-tests the Worker under `wrangler dev` (`../worker/smoke-test.sh`) on every pull request. On a push to main it also deploys the Worker.
 
-1. Assets are automatically copied
-2. Site is built as static HTML
-3. Deployed to GitHub Pages
-
-See `.github/workflows/deploy.yml` for details.
+Its Cloudflare credentials (`CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`) are repository secrets synced from Infisical (project `annot-garden`, `prod` `/image-annotation/ci`); change them there, not in GitHub.
 
 ## 📄 License
 
